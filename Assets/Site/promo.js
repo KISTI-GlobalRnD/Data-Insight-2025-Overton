@@ -347,6 +347,7 @@
   function initScrolly(sectionEl) {
     const steps = Array.from(sectionEl.querySelectorAll(".promo-step[data-figure]"));
     const figures = Array.from(sectionEl.querySelectorAll(".promo-figure[data-figure-id]"));
+    const sticky = sectionEl.querySelector(".promo-scrolly__sticky");
 
     if (steps.length === 0 || figures.length === 0) return;
 
@@ -388,31 +389,45 @@
       ticking = false;
 
       const viewportH = window.innerHeight || 1;
-      const focusY = viewportH * 0.62;
+      let focusY = viewportH * 0.62;
+      let range = viewportH * 0.68;
+
+      if (sticky) {
+        const stickyRect = sticky.getBoundingClientRect();
+        const stickyBottom = Math.min(viewportH, Math.max(0, stickyRect.bottom));
+        const available = viewportH - stickyBottom;
+        if (available >= 120) {
+          focusY = stickyBottom + available * 0.55;
+          range = Math.max(220, available * 1.35);
+        }
+      }
       let candidate = steps[0];
       let bestDist = Number.POSITIVE_INFINITY;
+      let focusStep = null;
 
       for (const step of steps) {
         const rect = step.getBoundingClientRect();
         const center = rect.top + rect.height / 2;
         const dist = Math.abs(center - focusY);
+        const containsFocus = rect.top <= focusY && rect.bottom >= focusY;
+        if (containsFocus) focusStep = step;
         if (dist < bestDist) {
           bestDist = dist;
           candidate = step;
         }
 
         if (!prefersReducedMotion) {
-          const range = viewportH * 0.68;
           const normalized = Math.min(1, dist / (range || 1));
           const eased = Math.pow(1 - normalized, 2);
-          const opacity = 0.08 + eased * 0.92;
+          const opacity = 0.12 + eased * 0.88;
           const signed = Math.max(-1, Math.min(1, (center - focusY) / (range || 1)));
-          const translate = signed * 18;
+          const translate = signed * 12;
           step.style.opacity = opacity.toFixed(3);
           step.style.transform = `translateY(${translate.toFixed(2)}px)`;
         }
       }
 
+      if (focusStep) candidate = focusStep;
       setActive(candidate.dataset.figure);
 
       if (!prefersReducedMotion && candidate) {
