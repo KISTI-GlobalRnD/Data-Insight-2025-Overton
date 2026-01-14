@@ -1,0 +1,205 @@
+[
+  {
+    "objectID": "SI/figures.html",
+    "href": "SI/figures.html",
+    "title": "Additional Figures (상세본에서만 제공)",
+    "section": "",
+    "text": "보고서(요약본)은 핵심 내러티브를 위해 일부 그림을 본문에서 제외했다. 아래는 상세본(v1)에 포함돼 있던 “보조 설명용” 그림이다."
+  },
+  {
+    "objectID": "SI/figures.html#top-n-토픽세부분야",
+    "href": "SI/figures.html#top-n-토픽세부분야",
+    "title": "Additional Figures (상세본에서만 제공)",
+    "section": "Top-N 토픽/세부분야",
+    "text": "Top-N 토픽/세부분야"
+  },
+  {
+    "objectID": "SI/figures.html#유형토픽열지도",
+    "href": "SI/figures.html#유형토픽열지도",
+    "title": "Additional Figures (상세본에서만 제공)",
+    "section": "유형×토픽(열지도)",
+    "text": "유형×토픽(열지도)"
+  },
+  {
+    "objectID": "SI/figures.html#oa도메인유형",
+    "href": "SI/figures.html#oa도메인유형",
+    "title": "Additional Figures (상세본에서만 제공)",
+    "section": "OA(도메인/유형)",
+    "text": "OA(도메인/유형)"
+  },
+  {
+    "objectID": "SI/figures.html#자국-인용-비중-top10",
+    "href": "SI/figures.html#자국-인용-비중-top10",
+    "title": "Additional Figures (상세본에서만 제공)",
+    "section": "자국 인용 비중 (Top10)",
+    "text": "자국 인용 비중 (Top10)"
+  },
+  {
+    "objectID": "SI/coverage.html",
+    "href": "SI/coverage.html",
+    "title": "Coverage (Overton 커버리지)",
+    "section": "",
+    "text": "이 페이지는 Overton의 정책 문헌 커버리지가 국가·언어권에 따라 균등하지 않을 수 있음을 직관적으로 보여주기 위한 보조자료다."
+  },
+  {
+    "objectID": "SI/coverage.html#policy-documents-by-policy-source-country",
+    "href": "SI/coverage.html#policy-documents-by-policy-source-country",
+    "title": "Coverage (Overton 커버리지)",
+    "section": "Policy documents by policy source country",
+    "text": "Policy documents by policy source country\n\n데이터: Output/Data_Insight/20251026_country_policy_docs.csv (정책 출처 국가별 정책 문헌 수)\n표시 기준: country 태그 중 최상위 국가만 포함(예: USA &gt; California 같은 하위 태그 제외), IGO/EU 제외\n색상: 정책 문헌 수의 log10 스케일(국가 간 편차가 커서 로그 스케일로 시각화)"
+  },
+  {
+    "objectID": "SI/coverage.html#subnational-tags-a-b와-hong-kong-이슈",
+    "href": "SI/coverage.html#subnational-tags-a-b와-hong-kong-이슈",
+    "title": "Coverage (Overton 커버리지)",
+    "section": "Subnational tags (A > B)와 “Hong Kong” 이슈",
+    "text": "Subnational tags (A &gt; B)와 “Hong Kong” 이슈\nOverton의 policy_source_country 태그는 종종 국가 단위(USA, UK) 외에 하위 지역 단위(USA &gt; California 같은 형태)를 함께 포함한다. 본 보고서(요약본)에서는 OpenAlex의 국가코드(ISO2 기반)와 의미를 맞추기 위해, 기본 집계에서 하위 태그(A &gt; B)를 제외하고 최상위 국가만 사용했다.\n다만 이 선택은 “국가 단위 비교”를 단순화하는 대신, 다음과 같은 부작용(=해석 주의점)을 만든다.\n\n하위 태그가 많은 국가에서는, policy_source_country 커버리지/인용이 최상위 국가 하나로만 요약되지 않는다.\n일부 하위 태그는 행정구역(주/주정부/지역정부 등)이지만, 일부는 홍콩처럼(OpenAlex에서 별도 연구국으로 잡히는) 특수한 지리 단위와 맞물릴 수 있다.\n\n\n20251026 스냅샷: 하위 태그가 얼마나 많나?\n아래 수치는 Output/Data_Insight/20251026_country_policy_docs.csv와 Output/Data_Insight/20251026_policy_country_research_country.csv(policy→research 매트릭스)에서 계산한 요약이다.\n\n정책문서 수(policy_docs) 기준: 하위 태그 합계 200,381건(전체 1,671,835건의 12.0%)\nDOI 인용 링크(citation_rows) 기준: 하위 태그 합계 3,488,024건(전체 48,456,680건의 7.2%)\n\n하위 태그 기여가 큰 상위 부모(국가)는 대체로 USA, Spain, Canada, Australia, UK 순으로 나타난다.\n\n\n하위 태그 상위 예시(정책문서 수 기준)\n\n\n\npolicy_source_country\npolicy_docs\n\n\n\n\nUSA &gt; California\n17,599\n\n\nUSA &gt; New York\n14,110\n\n\nUSA &gt; Washington\n13,969\n\n\nUSA &gt; Alaska\n9,421\n\n\nCanada &gt; Québec\n8,453\n\n\nUSA &gt; Texas\n7,648\n\n\nAustralia &gt; Western Australia\n7,169\n\n\nSpain &gt; Catalunya\n6,632\n\n\nUSA &gt; Minnesota\n4,918\n\n\nSpain &gt; Euskadi\n4,725\n\n\n\n\n\nHong Kong은 “중국으로 합쳐진” 것인가?\n현재 스냅샷에서 Overton의 정책 출처에는 Hong Kong이 국가처럼 직접 등장하지 않고, China &gt; Hong Kong 형태로만 관측된다(정책문서 1,182편). 반면 OpenAlex의 연구국은 HK → Hong Kong으로 별도 코드를 쓴다.\n그래서 정책 출처를 국가 단위로 제한(하위 태그 제외)하면, China &gt; Hong Kong에서 발행된 문서는 정책 출처 노드에서 빠지고, Hong Kong은 연구국 노드로만 남아 “cited only”처럼 보이는 효과가 생길 수 있다.\n중요한 점은, 이 현상이 “홍콩 연구가 중국(CN)으로 분류된다”는 의미는 아니라는 것이다. (정책 출처 쪽에서 하위 태그로 들어가 필터링된 결과에 가깝다.)\n본 보고서의 네트워크 그림(그림 13)에서는 이 혼동을 줄이기 위해 예외 처리를 적용했다. - China &gt; Hong Kong은 정책 출처 노드에서 Hong Kong으로 별도 분리 - USA &gt; Georgia는 Georgia(국가)와 충돌을 피하기 위해 Georgia (USA)로 별도 분리\n\n\n실무적 주의: 하위 태그를 단순 치환하면 안 되는 경우\n하위 태그를 무조건 A &gt; B → B로 치환하면, 예를 들어 USA &gt; Georgia(미국 조지아주)가 Georgia(국가)와 섞이는 동명이인 충돌이 생길 수 있다. 따라서 하위 태그를 국가 단위로 재귀속시키려면, (1) 부모 국가로 올리는 방식(A &gt; B → A)과 (2) 예외 처리(홍콩처럼 별도 단위로 둘지)를 분리해 설계하는 편이 안전하다."
+  },
+  {
+    "objectID": "SI/index.html",
+    "href": "SI/index.html",
+    "title": "Supplementary (보조자료)",
+    "section": "",
+    "text": "이 Supplementary는 보고서(요약본)에서 지면상 생략된 정의·전처리·추가 결과와, 읽다 보면 자연스럽게 생길 수 있는 질문을 모아 정리한다.\n\n데이터/매칭/집계에서 자주 생기는 질문\n지표 정의(HHI, 최근성(recent share), 인용 강도(intensity), 자국 인용 비중 등)\n해석 주의사항(토픽/출처 유형의 다중라벨, 국가코드 결측 등)\nv1에만 있던 추가 그림(OA, Top-N, 유형×토픽 열지도 등)"
+  },
+  {
+    "objectID": "SI/index.html#무엇이-들어있나",
+    "href": "SI/index.html#무엇이-들어있나",
+    "title": "Supplementary (보조자료)",
+    "section": "",
+    "text": "이 Supplementary는 보고서(요약본)에서 지면상 생략된 정의·전처리·추가 결과와, 읽다 보면 자연스럽게 생길 수 있는 질문을 모아 정리한다.\n\n데이터/매칭/집계에서 자주 생기는 질문\n지표 정의(HHI, 최근성(recent share), 인용 강도(intensity), 자국 인용 비중 등)\n해석 주의사항(토픽/출처 유형의 다중라벨, 국가코드 결측 등)\nv1에만 있던 추가 그림(OA, Top-N, 유형×토픽 열지도 등)"
+  },
+  {
+    "objectID": "SI/index.html#어디서-보나",
+    "href": "SI/index.html#어디서-보나",
+    "title": "Supplementary (보조자료)",
+    "section": "어디서 보나",
+    "text": "어디서 보나\n\nFAQ: SI/faq.qmd\nCoverage: SI/coverage.qmd\nInteractive: SI/interactive.qmd\nAdditional Figures: SI/figures.qmd\nNext Questions: SI/next_questions.qmd"
+  },
+  {
+    "objectID": "SI/index.html#업데이트-방법그림노트북",
+    "href": "SI/index.html#업데이트-방법그림노트북",
+    "title": "Supplementary (보조자료)",
+    "section": "업데이트 방법(그림/노트북)",
+    "text": "업데이트 방법(그림/노트북)\n그림/노트북 복사본은 아래 스크립트로 갱신한다(태그 자동 추론 또는 RUN_TAG=YYYYMMDD 고정).\n\npython3 scripts/sync_data_insight_assets.py"
+  },
+  {
+    "objectID": "SI/faq.html",
+    "href": "SI/faq.html",
+    "title": "FAQ (보고서 독자를 위한 보조설명)",
+    "section": "",
+    "text": "보고서(요약본)는 “읽히는 글”을 목표로 해서, 본문 흐름을 방해하는 세부 정의/추가 결과를 최소화했다.\n대신 아래 유형의 내용은 Supplementary로 분리해 논문처럼 참조할 수 있게 했다.\n\n용어/지표 정의(예: HHI, 최근성(recent share), 인용 강도(intensity), 자국 인용 비중)\n해석 주의사항(토픽/출처 태그의 다중라벨, 국가코드 결측 등)\nv1(상세본)에만 있던 추가 그림(OA, Top-N, 유형×토픽 열지도 등)"
+  },
+  {
+    "objectID": "SI/faq.html#q0.-왜-supplementary를-따로-만들었나-요약본-vs-상세본",
+    "href": "SI/faq.html#q0.-왜-supplementary를-따로-만들었나-요약본-vs-상세본",
+    "title": "FAQ (보고서 독자를 위한 보조설명)",
+    "section": "",
+    "text": "보고서(요약본)는 “읽히는 글”을 목표로 해서, 본문 흐름을 방해하는 세부 정의/추가 결과를 최소화했다.\n대신 아래 유형의 내용은 Supplementary로 분리해 논문처럼 참조할 수 있게 했다.\n\n용어/지표 정의(예: HHI, 최근성(recent share), 인용 강도(intensity), 자국 인용 비중)\n해석 주의사항(토픽/출처 태그의 다중라벨, 국가코드 결측 등)\nv1(상세본)에만 있던 추가 그림(OA, Top-N, 유형×토픽 열지도 등)"
+  },
+  {
+    "objectID": "SI/faq.html#q1.-97.6가-doi-논문을-인용한다는-무엇을-뜻하나",
+    "href": "SI/faq.html#q1.-97.6가-doi-논문을-인용한다는-무엇을-뜻하나",
+    "title": "FAQ (보고서 독자를 위한 보조설명)",
+    "section": "Q1. “97.6%가 DOI 논문을 인용한다”는 무엇을 뜻하나?",
+    "text": "Q1. “97.6%가 DOI 논문을 인용한다”는 무엇을 뜻하나?\nOverton 정책 문헌을 policy_document_id 기준으로 중복 제거해 고유 정책 문헌 1,381,084편을 만들고, 각 문헌이 DOI 기반 학술 인용을 1건 이상 포함하는지 여부를 집계했다.\n그 결과 1,347,563편(97.6%)이 DOI 인용을 포함했다.\n주의할 점은, 이 수치는 “정책 문헌이 학술 근거를 사용한다”는 방향성은 보여주지만, DOI가 없는 인용(서술 인용/보고서/법령/웹 등) 은 포함하지 못한다는 한계가 있다."
+  },
+  {
+    "objectID": "SI/faq.html#q1-1.-중복-제거는-무엇을-의미하나",
+    "href": "SI/faq.html#q1-1.-중복-제거는-무엇을-의미하나",
+    "title": "FAQ (보고서 독자를 위한 보조설명)",
+    "section": "Q1-1. “중복 제거”는 무엇을 의미하나?",
+    "text": "Q1-1. “중복 제거”는 무엇을 의미하나?\nOverton 원본 정책 문헌 1,471,454건은 같은 문헌의 버전/재게시, 언어 변형, 메타데이터 중복 등으로 인해 중복이 포함될 수 있다.\n이 프로젝트에서는 분석 단위를 “고유 정책 문헌”으로 맞추기 위해 policy_document_id 기준으로 통합했다."
+  },
+  {
+    "objectID": "SI/faq.html#q2.-인용수로그와-고유-논문수works는-왜-구분하나",
+    "href": "SI/faq.html#q2.-인용수로그와-고유-논문수works는-왜-구분하나",
+    "title": "FAQ (보고서 독자를 위한 보조설명)",
+    "section": "Q2. “인용수(로그)”와 “고유 논문수(works)”는 왜 구분하나?",
+    "text": "Q2. “인용수(로그)”와 “고유 논문수(works)”는 왜 구분하나?\n\n인용수(로그): 정책 문헌이 어떤 DOI를 몇 번 호출했는지의 총합(중복 제거 후)\n\n고유 논문수(works): 인용된 논문을 “서로 다른 논문” 기준으로 중복 제거한 개수\n\n정책이 “몇 번이나 근거를 호출했는가(빈도)”와 “얼마나 넓은 논문 풀을 썼는가(다양성)”는 다른 질문이어서 둘을 분리해 해석한다."
+  },
+  {
+    "objectID": "SI/faq.html#q3.-토픽도메인-집계에서-합이-100를-넘는-이유는",
+    "href": "SI/faq.html#q3.-토픽도메인-집계에서-합이-100를-넘는-이유는",
+    "title": "FAQ (보고서 독자를 위한 보조설명)",
+    "section": "Q3. 토픽/도메인 집계에서 합이 100%를 넘는 이유는?",
+    "text": "Q3. 토픽/도메인 집계에서 합이 100%를 넘는 이유는?\nOpenAlex 토픽은 다중라벨(multi-label) 이다. 논문 1편이 여러 토픽에 동시에 속할 수 있어, 토픽/도메인/세부분야 기준으로 집계하면 중복 합산이 발생한다.\n따라서 토픽 기반 수치는 “토픽 인스턴스 기준”으로 이해해야 한다."
+  },
+  {
+    "objectID": "SI/faq.html#q4.-출처-국가출처-유형-집계도-합이-커질-수-있나",
+    "href": "SI/faq.html#q4.-출처-국가출처-유형-집계도-합이-커질-수-있나",
+    "title": "FAQ (보고서 독자를 위한 보조설명)",
+    "section": "Q4. 출처 국가/출처 유형 집계도 합이 커질 수 있나?",
+    "text": "Q4. 출처 국가/출처 유형 집계도 합이 커질 수 있나?\n그럴 수 있다. Overton의 출처 국가/유형 태그는 상호배타적 분류가 아니라 태그 기반(상위–하위 동시 부여 포함) 이라서, 문헌 1편이 여러 범주에 동시에 잡힐 수 있다."
+  },
+  {
+    "objectID": "SI/faq.html#q5.-hhi집중도는-무엇이고-0.292는-어떻게-해석하나",
+    "href": "SI/faq.html#q5.-hhi집중도는-무엇이고-0.292는-어떻게-해석하나",
+    "title": "FAQ (보고서 독자를 위한 보조설명)",
+    "section": "Q5. HHI(집중도)는 무엇이고, “0.292”는 어떻게 해석하나?",
+    "text": "Q5. HHI(집중도)는 무엇이고, “0.292”는 어떻게 해석하나?\nHHI(Herfindahl–Hirschman Index)는 범주별 점유율 \\(s_i\\)의 제곱합 \\(\\sum_i s_i^2\\)로 계산한다(\\(0 \\le \\mathrm{HHI} \\le 1\\)). 값이 클수록 소수 범주에 집중(편중)돼 있다는 뜻이다.\n본 프로젝트에서는 도메인 수준에서 HHI=0.292로 관측되어, 정책 인용이 소수 대분야에 강하게 몰려 있음을 시사한다."
+  },
+  {
+    "objectID": "SI/faq.html#q5-1.-연도-추세에서-2022년-이후-하락은-정책이-과학을-덜-쓴다는-뜻인가",
+    "href": "SI/faq.html#q5-1.-연도-추세에서-2022년-이후-하락은-정책이-과학을-덜-쓴다는-뜻인가",
+    "title": "FAQ (보고서 독자를 위한 보조설명)",
+    "section": "Q5-1. 연도 추세에서 2022년 이후 하락은 “정책이 과학을 덜 쓴다”는 뜻인가?",
+    "text": "Q5-1. 연도 추세에서 2022년 이후 하락은 “정책이 과학을 덜 쓴다”는 뜻인가?\n그렇게 단정하기 어렵다. 정책 문헌 수집/정리의 시차(커버리지 지연)와 발행 직후 인용 로그가 완전히 누적되지 않는 효과가 함께 작동했을 가능성이 크다.\n따라서 최근 연도 수치는 “실시간 감소”라기보다 관측 시차가 섞인 신호로 해석하는 편이 안전하다."
+  },
+  {
+    "objectID": "SI/faq.html#q6.-최근성recent-share과-인용-강도intensity는-어떻게-계산했나",
+    "href": "SI/faq.html#q6.-최근성recent-share과-인용-강도intensity는-어떻게-계산했나",
+    "title": "FAQ (보고서 독자를 위한 보조설명)",
+    "section": "Q6. “최근성(recent share)”과 “인용 강도(intensity)”는 어떻게 계산했나?",
+    "text": "Q6. “최근성(recent share)”과 “인용 강도(intensity)”는 어떻게 계산했나?\n보고서 v1의 정의를 그대로 사용한다.\n\n최근성(Recent share): 2022–2024 발행 논문이 차지하는 정책 인용 비중\n인용 강도(Intensity): 토픽(또는 집계 단위) 내 고유 논문 1편당 평균 정책 인용수 = 인용수 / 고유 논문수\n\n이 두 축을 함께 보면, “대규모지만 정체(성숙)” vs “중규모지만 고성장” 토픽을 직관적으로 분리할 수 있다."
+  },
+  {
+    "objectID": "SI/faq.html#q7.-oa오픈액세스-논문이-정책-인용에서-높게-보이는-건-인과인가",
+    "href": "SI/faq.html#q7.-oa오픈액세스-논문이-정책-인용에서-높게-보이는-건-인과인가",
+    "title": "FAQ (보고서 독자를 위한 보조설명)",
+    "section": "Q7. OA(오픈액세스) 논문이 정책 인용에서 높게 보이는 건 ’인과’인가?",
+    "text": "Q7. OA(오픈액세스) 논문이 정책 인용에서 높게 보이는 건 ’인과’인가?\n관측적으로는 정책 인용에서 OA 비중이 높게 나타난다. 다만 이것이 “OA라서 더 인용된다”는 인과로 바로 이어지지는 않는다.\n정책 관련 연구가 OA로 출판될 가능성, 공공 펀딩 구조, 분야 구성 차이 등 교란 요인이 존재한다.\n추가 그림(보고서 v1에서만 제공):"
+  },
+  {
+    "objectID": "SI/faq.html#q8.-자국-인용-비중self-citation-share은-어떻게-계산했나",
+    "href": "SI/faq.html#q8.-자국-인용-비중self-citation-share은-어떻게-계산했나",
+    "title": "FAQ (보고서 독자를 위한 보조설명)",
+    "section": "Q8. 자국 인용 비중(self-citation share)은 어떻게 계산했나?",
+    "text": "Q8. 자국 인용 비중(self-citation share)은 어떻게 계산했나?\n정책국 태그를 ISO2 국가코드로 매핑한 뒤(예: USA→US, UK→GB), 1저자 소속국 코드가 확인되는 인용만 분모로 삼아 계산했다.\n즉 자국 인용 비중은 “전체 인용”이 아니라 1저자 국가코드가 확인되는 인용에서의 패턴이다."
+  },
+  {
+    "objectID": "SI/faq.html#q9.-왜-1저자-국가로-정책국연구국-흐름을-정의했나",
+    "href": "SI/faq.html#q9.-왜-1저자-국가로-정책국연구국-흐름을-정의했나",
+    "title": "FAQ (보고서 독자를 위한 보조설명)",
+    "section": "Q9. 왜 ’1저자 국가’로 정책국→연구국 흐름을 정의했나?",
+    "text": "Q9. 왜 ’1저자 국가’로 정책국→연구국 흐름을 정의했나?\n가장 일관되게 추출 가능한 국가 속성이 1저자(First author) 소속국이었기 때문이다.\n다만 공동저자 분포, 교신저자, 다기관 소속 등을 반영하지 못하므로 “대표성 있는 근사”로 해석해야 한다."
+  },
+  {
+    "objectID": "SI/faq.html#q10.-v1에만-있는-추가-그림은-어디서-보나",
+    "href": "SI/faq.html#q10.-v1에만-있는-추가-그림은-어디서-보나",
+    "title": "FAQ (보고서 독자를 위한 보조설명)",
+    "section": "Q10. v1에만 있는 추가 그림은 어디서 보나?",
+    "text": "Q10. v1에만 있는 추가 그림은 어디서 보나?\n요약본에서 생략된 추가 그림(Top-N 토픽/세부분야, 유형×토픽 열지도, 자국 인용 비중 Top10 등)은 아래 페이지에 모아뒀다.\n\nAdditional Figures"
+  },
+  {
+    "objectID": "SI/faq.html#q11.-그림노트북이-업데이트되면-supplementary도-자동으로-갱신되나",
+    "href": "SI/faq.html#q11.-그림노트북이-업데이트되면-supplementary도-자동으로-갱신되나",
+    "title": "FAQ (보고서 독자를 위한 보조설명)",
+    "section": "Q11. 그림/노트북이 업데이트되면 Supplementary도 자동으로 갱신되나?",
+    "text": "Q11. 그림/노트북이 업데이트되면 Supplementary도 자동으로 갱신되나?\n네. 보고서/사이트는 고정 경로의 복사본을 참조하므로, 노트북 실행으로 Output/...이 갱신된 뒤 아래 스크립트를 실행하면 된다.\n\npython3 scripts/sync_data_insight_assets.py"
+  },
+  {
+    "objectID": "SI/interactive.html",
+    "href": "SI/interactive.html",
+    "title": "Interactive Plots (Plotly)",
+    "section": "",
+    "text": "보고서 본문에 있는 주요 Bar/Line/Scatter 그림은, 향후 웹 공개를 위해 Plotly 기반 인터랙티브 버전을 함께 제공한다."
+  },
+  {
+    "objectID": "SI/interactive.html#report-figures",
+    "href": "SI/interactive.html#report-figures",
+    "title": "Interactive Plots (Plotly)",
+    "section": "Report figures",
+    "text": "Report figures\n\nFigure 1 (pubyear trend): pubyear_trend.html\nFigure 2 (domain top10): domain_top10.html\nFigure 3 (topic scatter): topic_scatter_citations_vs_papers.html\nFigure 4 (intensity vs recency): topic_intensity_vs_recency.html\nFigure 5 (country top10 + KR): country_citations_top10.html\nFigure 7 (source type top10): source_type_citations_top10.html\nFigure 8 (citations per doc): source_type_citations_per_policy_doc.html\nFigure 11 (self-citation share): policy_country_self_share_selected.html\nFigure 12 (Korea flows): korea_policy_research_flows_top10.html\nFigure 13 (policy–research flow network, ForceAtlas2): policy_research_flow_network_fa2.html"
+  }
+]

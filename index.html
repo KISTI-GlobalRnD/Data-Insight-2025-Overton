@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title data-i18n="meta.title">Overton × OpenAlex — Data Insight</title>
+    <meta
+      name="description"
+      data-i18n-attr="content:meta.description"
+      content="Overton 정책문헌 인용 데이터와 OpenAlex 메타데이터를 결합해 정책이 과학을 언제·무엇을·어디서 가져오는지 한 페이지로 정리한다."
+    />
+    <link rel="stylesheet" href="Assets/Site/promo.css" />
+  </head>
+  <body>
+    <div class="promo-bg" aria-hidden="true"></div>
+    <div class="promo-wrap">
+      <a class="promo-skip" href="#story" data-i18n="skip.link">본문으로 건너뛰기</a>
+
+      <div class="promo-lang-switch" role="group" data-i18n-attr="aria-label:lang.aria" aria-label="언어 선택">
+        <button type="button" class="promo-lang-btn is-active" data-lang="ko" aria-pressed="true">KOR</button>
+        <button type="button" class="promo-lang-btn" data-lang="en" aria-pressed="false">ENG</button>
+      </div>
+
+      <section class="promo-hero" id="top">
+        <div class="promo-hero__visual" aria-hidden="true">
+          <img src="Assets/Landing/hero_network.png" alt="" loading="lazy" />
+        </div>
+
+        <div class="promo-hero__inner">
+          <p class="promo-kicker" data-reveal data-reveal-delay="0" data-i18n="hero.kicker">2025 DATA INSIGHT</p>
+          <p class="promo-brand" data-reveal data-reveal-delay="25" data-i18n="hero.brand">KISTI 글로벌R&amp;D분석센터</p>
+          <h1 class="promo-title" data-reveal data-reveal-delay="50" data-i18n="hero.title">
+            과학은 정책으로 이동한다. 하지만 경로는 균등하지 않다.
+          </h1>
+          <p class="promo-lede" data-reveal data-reveal-delay="110" data-i18n="hero.lede">
+            정책문헌은 대부분 학술 연구를 인용한다. 그렇다면 어떤 분야와 토픽이 반복적으로 호출되고,
+            어떤 국가·기관이 그 흐름의 중심에 서게 될까?
+          </p>
+          <p
+            class="promo-lede promo-lede--secondary"
+            data-reveal
+            data-reveal-delay="160"
+            data-i18n-html="hero.lede2"
+          >
+            Overton 인용 로그와 OpenAlex 메타데이터를 결합해 정책이 과학을
+            <strong>언제·무엇을·어디서</strong> 가져오는지 한 페이지로 정리했다.
+          </p>
+
+          <div
+            class="promo-actions"
+            role="group"
+            data-i18n-attr="aria-label:hero.actions.aria"
+            aria-label="빠른 이동"
+            data-reveal
+            data-reveal-delay="220"
+          >
+            <a class="promo-btn promo-btn--primary" href="#intro" data-i18n="hero.cta.summary">핵심 요약 보기</a>
+            <a class="promo-btn promo-btn--ghost" href="./SI/index.html" data-i18n="hero.cta.si">Supplementary로 이동</a>
+          </div>
+
+          <div class="promo-scroll" aria-hidden="true" data-reveal data-reveal-delay="280">
+            <span class="promo-scroll__label">Scroll</span>
+            <span class="promo-scroll__bar"></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="promo-bridge" id="lead" data-i18n-attr="aria-label:bridge.aria" aria-label="핵심 메시지">
+        <div class="promo-bridge__inner">
+          <p class="promo-bridge__eyebrow" data-reveal data-reveal-delay="0" data-i18n="bridge.eyebrow">
+            왜 이 지도가 필요한가
+          </p>
+          <h2 class="promo-bridge__title" data-reveal data-reveal-delay="70">
+            <span data-i18n="bridge.title">정책 근거는 “얼마나”보다 “어떻게” 흐르는지가 더 큰 차이를 만든다.</span>
+          </h2>
+          <p class="promo-bridge__body" data-reveal data-reveal-delay="140" data-i18n="bridge.body">
+            정책문헌의 인용은 단순한 총량이 아니라 연결(경로)이다. 어떤 연구가 어떤 채널을 통해 반복 호출되는지,
+            그리고 그 과정에서 어떤 국가·기관·토픽이 허브가 되는지를 보면 정책–과학 연결의 구조가 드러난다.
+          </p>
+          <p
+            class="promo-bridge__body promo-bridge__body--muted"
+            data-reveal
+            data-reveal-delay="200"
+            data-i18n-html="bridge.body2"
+          >
+            이 페이지는 DOI 기반 인용을 바탕으로 정책이 과학을 <strong>언제·무엇을·어디서</strong> 가져오는지
+            단계적으로 풀어 보여준다.
+          </p>
+
+          <div
+            class="promo-bridge__chips"
+            role="list"
+            data-i18n-attr="aria-label:bridge.chips.aria"
+            aria-label="읽는 순서"
+            data-reveal
+            data-reveal-delay="260"
+          >
+            <span class="promo-chip" role="listitem" data-i18n="bridge.chip.when">언제: 성장과 인용 밀도</span>
+            <span class="promo-chip" role="listitem" data-i18n="bridge.chip.what">무엇: 도메인·토픽의 편중</span>
+            <span class="promo-chip" role="listitem" data-i18n="bridge.chip.where">어디서: 국가·기관의 허브</span>
+          </div>
+
+          <div
+            class="promo-bridge__actions"
+            role="group"
+            data-i18n-attr="aria-label:bridge.actions.aria"
+            aria-label="다음으로"
+            data-reveal
+            data-reveal-delay="320"
+          >
+            <a class="promo-btn promo-btn--primary" href="#intro" data-i18n="bridge.cta.summary">규모 요약 보기</a>
+            <a class="promo-btn promo-btn--ghost" href="#story" data-i18n="bridge.cta.story">스크롤 스토리로</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="promo-intro" id="intro">
+        <div class="promo-intro__inner">
+          <h2 class="promo-section-title" data-reveal data-reveal-delay="0" data-i18n="intro.title">한눈에 보는 규모</h2>
+          <p class="promo-section-lede" data-reveal data-reveal-delay="70" data-i18n="intro.lede">
+            DOI 기반으로 연결된 정책→연구 인용을 기준으로, 전체 규모와 커버리지를 먼저 확인한다.
+            정의/제약/지표 설명은 Supplementary에서 확인할 수 있다.
+          </p>
+
+          <div class="promo-stats" data-i18n-attr="aria-label:intro.stats.aria" aria-label="요약 지표">
+            <div class="promo-stat" data-reveal data-reveal-delay="140">
+              <div class="promo-stat__value" data-i18n="intro.stat.links.value">2,337만</div>
+              <div class="promo-stat__label" data-i18n="intro.stat.links">정책→연구 인용 연결</div>
+            </div>
+            <div class="promo-stat" data-reveal data-reveal-delay="170">
+              <div class="promo-stat__value" data-i18n="intro.stat.docs.value">138만</div>
+              <div class="promo-stat__label" data-i18n="intro.stat.docs">정책문서(중복 제거)</div>
+            </div>
+            <div class="promo-stat" data-reveal data-reveal-delay="200">
+              <div class="promo-stat__value" data-i18n="intro.stat.dois.value">653만</div>
+              <div class="promo-stat__label" data-i18n="intro.stat.dois">인용된 DOI(고유)</div>
+            </div>
+            <div class="promo-stat" data-reveal data-reveal-delay="230">
+              <div class="promo-stat__value" data-i18n="intro.stat.coverage.value">97.6%</div>
+              <div class="promo-stat__label" data-i18n="intro.stat.coverage">정책문서 중 인용 포함</div>
+            </div>
+          </div>
+
+          <div class="promo-intro__meta" data-reveal data-reveal-delay="300">
+            <p class="promo-meta" data-i18n="intro.meta.snapshot">데이터 스냅샷: Overton 2025.02 · OpenAlex 2025.06 · DOI 기반 매칭</p>
+            <a class="promo-link" href="#story" data-i18n="intro.meta.link">이제 스크롤로 보기</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="promo-scrolly" id="story" data-scrolly>
+        <div class="promo-scrolly__sticky">
+          <div class="promo-scrolly__stage">
+            <figure class="promo-figure is-active" data-figure-id="korea" aria-hidden="false">
+              <img
+                src="Assets/Landing/korea_flows.png"
+                data-i18n-attr="alt:fig.korea.alt"
+                alt="한국 정책–연구의 두 방향 흐름(유입/조달; 상위 10개)"
+                loading="lazy"
+              />
+            </figure>
+
+            <figure class="promo-figure" data-figure-id="network" aria-hidden="true">
+              <img
+                src="Assets/Landing/flow_network.png"
+                data-i18n-attr="alt:fig.network.alt"
+                alt="정책–연구 근거 흐름 네트워크(상위 50개 국가; 각 노드 상위 3개 유입/조달)"
+                loading="lazy"
+              />
+            </figure>
+
+            <figure class="promo-figure" data-figure-id="hub" aria-hidden="true">
+              <img
+                src="Assets/Landing/country_citations_top10.png"
+                data-i18n-attr="alt:fig.hub.alt"
+                alt="정책 출처 국가별 정책 인용(상위 10개+한국)"
+                loading="lazy"
+              />
+            </figure>
+
+            <figure class="promo-figure" data-figure-id="domain" aria-hidden="true">
+              <img
+                src="Assets/Landing/domain_top10.png"
+                data-i18n-attr="alt:fig.domain.alt"
+                alt="도메인별 정책 인용 상위 10개"
+                loading="lazy"
+              />
+            </figure>
+
+            <figure class="promo-figure" data-figure-id="topics" aria-hidden="true">
+              <img
+                src="Assets/Landing/topic_intensity_vs_recency.png"
+                data-i18n-attr="alt:fig.topics.alt"
+                alt="토픽별 인용 강도 vs 최근성"
+                loading="lazy"
+              />
+            </figure>
+
+            <figure class="promo-figure" data-figure-id="pubyear" aria-hidden="true">
+              <img
+                src="Assets/Landing/pubyear_trend.png"
+                data-i18n-attr="alt:fig.pubyear.alt"
+                alt="정책 문헌 발행연도별 인용수·문헌수·문헌당 인용수"
+                loading="lazy"
+              />
+            </figure>
+          </div>
+        </div>
+
+        <div class="promo-scrolly__steps" data-i18n-attr="aria-label:story.steps.aria" aria-label="스토리 단계">
+          <div class="promo-step is-active" data-figure="korea" aria-current="step">
+            <p class="promo-step__kicker" data-i18n="story.korea.kicker">1 · 거울</p>
+            <h2 class="promo-step__title" data-i18n="story.korea.title">한국: 들어가는 길과 가져오는 길이 다르다</h2>
+            <p class="promo-step__body" data-i18n="story.korea.body">
+              한국을 기준으로 보면 “한국 연구가 글로벌 정책에 인용되는 길(유입)”과 “한국 정책이 근거로 끌어오는 길(조달)”이
+              같은 형태로 움직이지 않는다. 유입은 영국·국제기구·미국 같은 허브를 통해 많이 관측되는 반면, 조달은 특정 경로(예:
+              미국 비중)에 더 집중되는 경향이 두드러진다.
+            </p>
+          </div>
+
+          <div class="promo-step" data-figure="network">
+            <p class="promo-step__kicker" data-i18n="story.network.kicker">2 · 지도</p>
+            <h2 class="promo-step__title" data-i18n="story.network.title">근거는 ‘직행’보다 ‘환승’으로 확산된다</h2>
+            <p class="promo-step__body" data-i18n="story.network.body">
+              상위 50개 정책 출처·연구국을 대상으로, 각 노드의 유입(수입)·조달(수출) 상위 3개 연결만 남겨 흐름의 골격을 그렸다.
+              연결은 고르게 퍼지기보다 몇 개의 허브를 중심으로 굵게 이어지고, 한국이 어떤 허브에 걸려 있는지도 한눈에 드러난다.
+            </p>
+          </div>
+
+          <div class="promo-step" data-figure="hub">
+            <p class="promo-step__kicker" data-i18n="story.hub.kicker">3 · 허브</p>
+            <h2 class="promo-step__title" data-i18n="story.hub.title">정책 근거는 소수 출처에 축적된다</h2>
+            <p class="promo-step__body" data-i18n="story.hub.body">
+              정책 인용의 총량은 국제기구(IGO), 미국, 영국, EU 등 소수 출처에 크게 집중된다. 네트워크에서 보이는 “허브”가 감각이
+              아니라 정량적 사실(규모 집중)로 확인되는 지점이다.
+            </p>
+          </div>
+
+          <div class="promo-step" data-figure="domain">
+            <p class="promo-step__kicker" data-i18n="story.domain.kicker">4 · 편중</p>
+            <h2 class="promo-step__title" data-i18n="story.domain.title">많이 인용하지만, ‘모든 과학’을 인용하진 않는다</h2>
+            <p class="promo-step__body" data-i18n="story.domain.body">
+              도메인 수준에서 정책 인용은 상위 분야에 강하게 쏠린다. 그래서 “정책이 과학을 많이 쓴다”는 말은 곧바로 “다양한 과학을
+              폭넓게 쓴다”는 뜻이 아니다. 정책문헌이라는 장르가 근거를 필요로 하는 지점이 어디에 몰려 있는지 보여준다.
+            </p>
+          </div>
+
+          <div class="promo-step" data-figure="topics">
+            <p class="promo-step__kicker" data-i18n="story.topics.kicker">5 · 속도</p>
+            <h2 class="promo-step__title" data-i18n="story.topics.title">성숙 의제와 급성장 의제는 다르게 움직인다</h2>
+            <p class="promo-step__body" data-i18n="story.topics.body">
+              토픽을 인용 강도(논문 1편당 정책 인용)와 최근성(최근 3년 비중)으로 보면, 꾸준히 호출되는 성숙 토픽과 짧은 기간 급상승하는
+              고성장 토픽이 분리된다. 팬데믹·기후 같은 충격 의제는 최근성·강도가 함께 올라가며, 인프라성 의제는 비교적 안정적으로 유지된다.
+            </p>
+          </div>
+
+          <div class="promo-step" data-figure="pubyear">
+            <p class="promo-step__kicker" data-i18n="story.pubyear.kicker">6 · 규모</p>
+            <h2 class="promo-step__title" data-i18n="story.pubyear.title">정책 인용은 늘었고, ‘인용 밀도’는 요동친다</h2>
+            <p class="promo-step__body" data-i18n="story.pubyear.body">
+              2010년대 이후 정책문헌의 DOI 인용과 문헌 수가 빠르게 증가하며 2021년 전후 정점을 보인다. 문헌 수와 문헌당 평균 인용을 함께
+              보면, 정책이 근거를 “얼마나 촘촘히” 담는지(밀도)의 변화도 읽을 수 있다. 최근 4~5년 구간은 정책 인용이 성숙(누적)되기까지
+              시간이 걸리기 때문에 낮게 관측되는 구간으로 해석하는 것이 자연스럽다.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="promo-explore" id="explore">
+        <div class="promo-explore__inner">
+          <h2 class="promo-section-title" data-reveal data-reveal-delay="0" data-i18n="explore.title">더 궁금하다면</h2>
+          <p class="promo-section-lede" data-reveal data-reveal-delay="70" data-i18n="explore.lede">
+            전체 보고서(PDF)와 본문의 Figure의 Interactive version, Supplementary를 이어서 확인할 수 있다.
+          </p>
+
+          <div
+            class="promo-explore__actions"
+            role="group"
+            data-i18n-attr="aria-label:explore.actions.aria"
+            aria-label="추가 보기"
+            data-reveal
+            data-reveal-delay="140"
+          >
+            <a class="promo-btn promo-btn--primary" href="./Report/Report_final.pdf" target="_blank" rel="noopener">
+              <span data-i18n="explore.cta.report">보고서 PDF 보기</span>
+            </a>
+            <a class="promo-btn promo-btn--ghost" href="./SI/interactive.html" data-i18n="explore.cta.interactive">
+              Figure Interactive 보기
+            </a>
+            <a class="promo-btn promo-btn--ghost" href="./SI/index.html" data-i18n="explore.cta.si">Supplementary 보기</a>
+          </div>
+        </div>
+      </section>
+
+      <footer class="promo-footer">
+        <div class="promo-footer__inner">
+          <div class="promo-footer__brand">
+            <div class="promo-footer__lockup">
+              <img class="promo-footer__logo" src="Assets/Site/Brand/kisti_logo.png" alt="KISTI" loading="lazy" />
+              <div class="promo-footer__org" data-i18n-html="footer.org">
+                <div class="promo-footer__org-primary">KISTI 글로벌R&amp;D분석센터</div>
+                <div class="promo-footer__org-secondary">KISTI Center for Global R&amp;D Analysis</div>
+              </div>
+            </div>
+
+            <div class="promo-footer__project">
+              <div class="promo-footer__title">Overton × OpenAlex Data Insight</div>
+              <div class="promo-footer__report-title" data-i18n="footer.report.title">
+                과학에서 정책으로: OpenAlex-Overton 네트워크로 본 지식 확산의 지도
+              </div>
+              <div class="promo-footer__report-author" data-i18n-html="footer.report.author">
+                김영진 · KISTI 글로벌R&amp;D분석센터 ·
+                <a class="promo-footer__mailto" href="mailto:kimyoungjin06@kisti.re.kr">kimyoungjin06@kisti.re.kr</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="promo-footer__aside">
+            <img
+              class="promo-footer__character"
+              src="Assets/Site/Brand/kisti_character.png"
+              data-i18n-attr="alt:footer.character.alt"
+              alt="KISTI 글로벌R&amp;D분석센터 캐릭터"
+              loading="lazy"
+            />
+            <nav class="promo-footer__nav" data-i18n-attr="aria-label:footer.nav.aria" aria-label="하단 링크">
+              <a class="promo-footer__link" href="#top" data-i18n="footer.link.top">맨 위로</a>
+              <a
+                class="promo-footer__link"
+                href="./Report/Report_final.pdf"
+                target="_blank"
+                rel="noopener"
+                data-i18n="footer.link.report"
+              >
+                보고서 PDF
+              </a>
+              <a class="promo-footer__link" href="./SI/index.html" data-i18n="footer.link.si">Supplementary</a>
+            </nav>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script defer src="Assets/Site/promo.js"></script>
+  </body>
+</html>
