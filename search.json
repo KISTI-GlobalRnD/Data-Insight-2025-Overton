@@ -200,6 +200,20 @@
     "href": "SI/interactive.html#report-figures",
     "title": "Interactive Plots (Plotly)",
     "section": "Report figures",
-    "text": "Report figures\n\nFigure 1 (pubyear trend): pubyear_trend.html\nFigure 2 (domain top10): domain_top10.html\nFigure 3 (topic scatter): topic_scatter_citations_vs_papers.html\nFigure 4 (intensity vs recency): topic_intensity_vs_recency.html\nFigure 5 (country top10 + KR): country_citations_top10.html\nFigure 7 (source type top10): source_type_citations_top10.html\nFigure 8 (citations per doc): source_type_citations_per_policy_doc.html\nFigure 11 (self-citation share): policy_country_self_share_selected.html\nFigure 12 (Korea flows): korea_policy_research_flows_top10.html\nFigure 13 (policy–research flow network, ForceAtlas2): policy_research_flow_network_fa2.html"
+    "text": "Report figures\n\nFigure 1 (pubyear trend): pubyear_trend.html\nFigure 2 (domain top10): domain_top10.html\nFigure 3 (topic scatter): topic_scatter_citations_vs_papers.html\nFigure 4 (intensity vs recency): topic_intensity_vs_recency.html\nFigure 5 (country top10 + KR): country_citations_top10.html\nFigure 7 (domain demand vs supply mismatch; top50 / default top10+KR): country_domain_demand_supply_scatter_top50.html\nFigure 8 (citations per doc): source_type_citations_per_policy_doc.html\nFigure 11 (self-citation share): policy_country_self_share_selected.html\nFigure 12 (Korea flows): korea_policy_research_flows_top10.html\nFigure 13 (policy–research flow network, ForceAtlas2): policy_research_flow_network_fa2.html"
+  },
+  {
+    "objectID": "SI/figures.html#openalex-subfield-overton-domain-네트워크-top-100",
+    "href": "SI/figures.html#openalex-subfield-overton-domain-네트워크-top-100",
+    "title": "Additional Figures (상세본에서만 제공)",
+    "section": "OpenAlex subfield → Overton domain 네트워크 (Top 100)",
+    "text": "OpenAlex subfield → Overton domain 네트워크 (Top 100)\nOpenAlex 세부분야(subfield)가 Overton 정책 분류(2nd_class)로 어떻게 “근거를 수출(export)”하는지(인용 흐름) 네트워크로 그렸다.\n레이아웃은 시드에 따라 달라질 수 있어, 5개 시드 결과를 함께 제공한다(노드=100, 각 노드 상위 3개 in/out 연결만 유지). 노드 크기는 선택된 노드 집합 내 총 흐름(전체 엣지 합)으로 산정했으며, 이는 연결선 표시용 top-k 필터와 독립적이다."
+  },
+  {
+    "objectID": "SI/interactive.html#additional",
+    "href": "SI/interactive.html#additional",
+    "title": "Interactive Plots (Plotly)",
+    "section": "Additional",
+    "text": "Additional\n\nSource type (top 10, total citations): source_type_citations_top10.html"
   }
 ]

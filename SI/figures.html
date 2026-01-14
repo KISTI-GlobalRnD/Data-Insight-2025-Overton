@@ -131,6 +131,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#유형토픽열지도" id="toc-유형토픽열지도" class="nav-link" data-scroll-target="#유형토픽열지도">유형×토픽(열지도)</a></li>
   <li><a href="#oa도메인유형" id="toc-oa도메인유형" class="nav-link" data-scroll-target="#oa도메인유형">OA(도메인/유형)</a></li>
   <li><a href="#자국-인용-비중-top10" id="toc-자국-인용-비중-top10" class="nav-link" data-scroll-target="#자국-인용-비중-top10">자국 인용 비중 (Top10)</a></li>
+  <li><a href="#openalex-subfield-overton-domain-네트워크-top-100" id="toc-openalex-subfield-overton-domain-네트워크-top-100" class="nav-link" data-scroll-target="#openalex-subfield-overton-domain-네트워크-top-100">OpenAlex subfield → Overton domain 네트워크 (Top 100)</a></li>
   </ul>
 </nav>
     </div>
@@ -174,6 +175,16 @@ ul.task-list li input[type="checkbox"] {
 <section id="자국-인용-비중-top10" class="level2">
 <h2 class="anchored" data-anchor-id="자국-인용-비중-top10">자국 인용 비중 (Top10)</h2>
 <p><img src="../Assets/Figures/v1/policy_country_self_share_top10.png" class="img-fluid" style="width:90.0%" alt="상위 10개 정책국 자국 인용 비중"></p>
+</section>
+<section id="openalex-subfield-overton-domain-네트워크-top-100" class="level2">
+<h2 class="anchored" data-anchor-id="openalex-subfield-overton-domain-네트워크-top-100">OpenAlex subfield → Overton domain 네트워크 (Top 100)</h2>
+<p>OpenAlex 세부분야(subfield)가 Overton 정책 분류(2nd_class)로 어떻게 “근거를 수출(export)”하는지(인용 흐름) 네트워크로 그렸다.<br>
+레이아웃은 시드에 따라 달라질 수 있어, 5개 시드 결과를 함께 제공한다(노드=100, 각 노드 상위 3개 in/out 연결만 유지). 노드 크기는 <strong>선택된 노드 집합 내 총 흐름(전체 엣지 합)</strong>으로 산정했으며, 이는 연결선 표시용 top-k 필터와 독립적이다.</p>
+<p><img src="../../Output/Data_Insight/report_figures/20251026_overton_domain_subfield_network_n100_k3_drl_seed7.png" class="img-fluid" style="width:100.0%" alt="OpenAlex subfield → Overton domain network (seed 7)"></p>
+<p><img src="../../Output/Data_Insight/report_figures/20251026_overton_domain_subfield_network_n100_k3_drl_seed13.png" class="img-fluid" style="width:100.0%" alt="OpenAlex subfield → Overton domain network (seed 13)"></p>
+<p><img src="../../Output/Data_Insight/report_figures/20251026_overton_domain_subfield_network_n100_k3_drl_seed42.png" class="img-fluid" style="width:100.0%" alt="OpenAlex subfield → Overton domain network (seed 42)"></p>
+<p><img src="../../Output/Data_Insight/report_figures/20251026_overton_domain_subfield_network_n100_k3_drl_seed101.png" class="img-fluid" style="width:100.0%" alt="OpenAlex subfield → Overton domain network (seed 101)"></p>
+<p><img src="../../Output/Data_Insight/report_figures/20251026_overton_domain_subfield_network_n100_k3_drl_seed2026.png" class="img-fluid" style="width:100.0%" alt="OpenAlex subfield → Overton domain network (seed 2026)"></p>
 
 
 </section>
