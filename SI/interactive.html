@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Overton × OpenAlex - Interactive Plots (Plotly)</title>
+<title>Overton × OpenAlex - 인터랙티브(확장 탐색)</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -92,25 +92,40 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../SI/index.html"> 
-<span class="menu-text">Supplementary</span></a>
+    <a class="nav-link" href="../Report/Report_final.pdf"> 
+<span class="menu-text">보고서(PDF)</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../SI/faq.html"> 
-<span class="menu-text">FAQ</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-supplementary(si" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Supplementary(SI)</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-supplementary(si">    
+        <li>
+    <a class="dropdown-item" href="../SI/index.html">
+ <span class="dropdown-text">개요(읽는 순서)</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../SI/coverage.html"> 
-<span class="menu-text">Coverage</span></a>
+        <li>
+    <a class="dropdown-item" href="../SI/interactive.html">
+ <span class="dropdown-text">인터랙티브(확장 탐색)</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link active" href="../SI/interactive.html" aria-current="page"> 
-<span class="menu-text">Interactive</span></a>
+        <li>
+    <a class="dropdown-item" href="../SI/figures.html">
+ <span class="dropdown-text">추가 그림(확장팩)</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../SI/figures.html"> 
-<span class="menu-text">Additional Figures</span></a>
+        <li>
+    <a class="dropdown-item" href="../SI/coverage.html">
+ <span class="dropdown-text">데이터 커버리지·태깅</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="../SI/faq.html">
+ <span class="dropdown-text">정의·해석 FAQ</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../SI/next_questions.html">
+ <span class="dropdown-text">다음 질문(후속 분석)</span></a>
+  </li>  
+    </ul>
+  </li>
 </ul>
           </div> <!-- /navcollapse -->
           <div class="quarto-navbar-tools">
@@ -127,8 +142,29 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#report-figures" id="toc-report-figures" class="nav-link active" data-scroll-target="#report-figures">Report figures</a></li>
-  <li><a href="#additional" id="toc-additional" class="nav-link" data-scroll-target="#additional">Additional</a></li>
+  <li><a href="#시간정책-문헌-연도" id="toc-시간정책-문헌-연도" class="nav-link active" data-scroll-target="#시간정책-문헌-연도">시간(정책 문헌 연도)</a>
+  <ul class="collapse">
+  <li><a href="#그림-1.-정책-문헌-발행연도별-인용수문헌수문헌당-인용수" id="toc-그림-1.-정책-문헌-발행연도별-인용수문헌수문헌당-인용수" class="nav-link" data-scroll-target="#그림-1.-정책-문헌-발행연도별-인용수문헌수문헌당-인용수">그림 1. 정책 문헌 발행연도별 인용수·문헌수·문헌당 인용수</a></li>
+  </ul></li>
+  <li><a href="#분야토픽정책이-무엇을-호출하는가" id="toc-분야토픽정책이-무엇을-호출하는가" class="nav-link" data-scroll-target="#분야토픽정책이-무엇을-호출하는가">분야·토픽(정책이 무엇을 호출하는가)</a>
+  <ul class="collapse">
+  <li><a href="#그림-2.-도메인별-정책-인용-상위-10개" id="toc-그림-2.-도메인별-정책-인용-상위-10개" class="nav-link" data-scroll-target="#그림-2.-도메인별-정책-인용-상위-10개">그림 2. 도메인별 정책 인용 상위 10개</a></li>
+  <li><a href="#그림-3.-토픽별-인용수-vs-고유-논문수점-크기oa-비중" id="toc-그림-3.-토픽별-인용수-vs-고유-논문수점-크기oa-비중" class="nav-link" data-scroll-target="#그림-3.-토픽별-인용수-vs-고유-논문수점-크기oa-비중">그림 3. 토픽별 인용수 vs 고유 논문수(점 크기=OA 비중)</a></li>
+  <li><a href="#그림-4.-토픽별-인용-강도-vs-최근성" id="toc-그림-4.-토픽별-인용-강도-vs-최근성" class="nav-link" data-scroll-target="#그림-4.-토픽별-인용-강도-vs-최근성">그림 4. 토픽별 인용 강도 vs 최근성</a></li>
+  </ul></li>
+  <li><a href="#허브누가-근거를-축적하는가" id="toc-허브누가-근거를-축적하는가" class="nav-link" data-scroll-target="#허브누가-근거를-축적하는가">허브(누가 근거를 축적하는가)</a>
+  <ul class="collapse">
+  <li><a href="#그림-5.-정책-출처-국가별-인용-상위-10개한국" id="toc-그림-5.-정책-출처-국가별-인용-상위-10개한국" class="nav-link" data-scroll-target="#그림-5.-정책-출처-국가별-인용-상위-10개한국">그림 5. 정책 출처 국가별 인용 상위 10개(+한국)</a></li>
+  <li><a href="#그림-7.-선택-국가별-분야-구성의-불일치상위-50개국-초기에는-상위-10개한국만-표시" id="toc-그림-7.-선택-국가별-분야-구성의-불일치상위-50개국-초기에는-상위-10개한국만-표시" class="nav-link" data-scroll-target="#그림-7.-선택-국가별-분야-구성의-불일치상위-50개국-초기에는-상위-10개한국만-표시">그림 7. 선택 국가별 분야 구성의 불일치(상위 50개국; 초기에는 상위 10개+한국만 표시)</a></li>
+  <li><a href="#그림-8.-출처-유형별-총-인용-vs-문헌당-인용" id="toc-그림-8.-출처-유형별-총-인용-vs-문헌당-인용" class="nav-link" data-scroll-target="#그림-8.-출처-유형별-총-인용-vs-문헌당-인용">그림 8. 출처 유형별 총 인용 vs 문헌당 인용</a></li>
+  </ul></li>
+  <li><a href="#한국흐름정책연구-연결의-두-방향" id="toc-한국흐름정책연구-연결의-두-방향" class="nav-link" data-scroll-target="#한국흐름정책연구-연결의-두-방향">한국·흐름(정책–연구 연결의 두 방향)</a>
+  <ul class="collapse">
+  <li><a href="#그림-11.-정책-출처-국가-자국-인용-비중상위-7개국한국" id="toc-그림-11.-정책-출처-국가-자국-인용-비중상위-7개국한국" class="nav-link" data-scroll-target="#그림-11.-정책-출처-국가-자국-인용-비중상위-7개국한국">그림 11. 정책 출처 국가 자국 인용 비중(상위 7개국+한국)</a></li>
+  <li><a href="#그림-12.-한국-정책연구의-두-방향-흐름유입조달-상위-10개" id="toc-그림-12.-한국-정책연구의-두-방향-흐름유입조달-상위-10개" class="nav-link" data-scroll-target="#그림-12.-한국-정책연구의-두-방향-흐름유입조달-상위-10개">그림 12. 한국 정책–연구의 두 방향 흐름(유입/조달; 상위 10개)</a></li>
+  <li><a href="#그림-13.-정책연구-근거-흐름-네트워크forceatlas2" id="toc-그림-13.-정책연구-근거-흐름-네트워크forceatlas2" class="nav-link" data-scroll-target="#그림-13.-정책연구-근거-흐름-네트워크forceatlas2">그림 13. 정책–연구 근거 흐름 네트워크(ForceAtlas2)</a></li>
+  </ul></li>
+  <li><a href="#참고-출처-유형별-총-인용-top10" id="toc-참고-출처-유형별-총-인용-top10" class="nav-link" data-scroll-target="#참고-출처-유형별-총-인용-top10">(참고) 출처 유형별 총 인용 Top10</a></li>
   </ul>
 </nav>
     </div>
@@ -137,7 +173,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Interactive Plots (Plotly)</h1>
+<h1 class="title">인터랙티브(확장 탐색)</h1>
 </div>
 
 
@@ -154,31 +190,184 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>보고서 본문에 있는 주요 Bar/Line/Scatter 그림은, 향후 웹 공개를 위해 <strong>Plotly 기반 인터랙티브 버전</strong>을 함께 제공한다.</p>
-<ul>
-<li>생성 스크립트: <code>scripts/make_report_interactive_plots.py</code></li>
-<li>파일 위치: <code>Data_Insight/Assets/Interactive/</code> (Quarto 렌더링 시 <code>docs/Assets/Interactive/</code>로 복사됨)</li>
-</ul>
-<section id="report-figures" class="level2">
-<h2 class="anchored" data-anchor-id="report-figures">Report figures</h2>
-<ul>
-<li>Figure 1 (pubyear trend): <a href="../Assets/Interactive/pubyear_trend.html">pubyear_trend.html</a></li>
-<li>Figure 2 (domain top10): <a href="../Assets/Interactive/domain_top10.html">domain_top10.html</a></li>
-<li>Figure 3 (topic scatter): <a href="../Assets/Interactive/topic_scatter_citations_vs_papers.html">topic_scatter_citations_vs_papers.html</a></li>
-<li>Figure 4 (intensity vs recency): <a href="../Assets/Interactive/topic_intensity_vs_recency.html">topic_intensity_vs_recency.html</a></li>
-<li>Figure 5 (country top10 + KR): <a href="../Assets/Interactive/country_citations_top10.html">country_citations_top10.html</a></li>
-<li>Figure 7 (domain demand vs supply mismatch; top50 / default top10+KR): <a href="../Assets/Interactive/country_domain_demand_supply_scatter_top50.html">country_domain_demand_supply_scatter_top50.html</a></li>
-<li>Figure 8 (citations per doc): <a href="../Assets/Interactive/source_type_citations_per_policy_doc.html">source_type_citations_per_policy_doc.html</a></li>
-<li>Figure 11 (self-citation share): <a href="../Assets/Interactive/policy_country_self_share_selected.html">policy_country_self_share_selected.html</a></li>
-<li>Figure 12 (Korea flows): <a href="../Assets/Interactive/korea_policy_research_flows_top10.html">korea_policy_research_flows_top10.html</a></li>
-<li>Figure 13 (policy–research flow network, ForceAtlas2): <a href="../Assets/Interactive/policy_research_flow_network_fa2.html">policy_research_flow_network_fa2.html</a></li>
-</ul>
+<p>보고서 본문 그림 가운데 “확대/토글/호버”가 유용한 그림은 <strong>웹에서 더 자유도 높게 탐색</strong>할 수 있도록 Plotly 버전을 제공한다.<br>
+아래 플롯은 <strong>버튼을 눌러야 로드</strong>되므로, 페이지 자체는 가볍게 열린다.</p>
+<p><strong>사용 팁</strong> - 범례 클릭: 항목 토글(숨김/표시) - 호버: 지표 값 확인 - 새 창: 브라우저 전체 화면으로 보기</p>
+<hr>
+<section id="시간정책-문헌-연도" class="level2">
+<h2 class="anchored" data-anchor-id="시간정책-문헌-연도">시간(정책 문헌 연도)</h2>
+<section id="그림-1.-정책-문헌-발행연도별-인용수문헌수문헌당-인용수" class="level3">
+<h3 class="anchored" data-anchor-id="그림-1.-정책-문헌-발행연도별-인용수문헌수문헌당-인용수">그림 1. 정책 문헌 발행연도별 인용수·문헌수·문헌당 인용수</h3>
+<div class="si-plot" data-src="../Assets/Interactive/pubyear_trend.html" data-height="650">
+  <div class="si-plot__actions">
+    <a class="si-plot__link" href="../Assets/Interactive/pubyear_trend.html" target="_blank" rel="noopener">새 창으로 열기</a>
+    <button type="button" class="si-plot__btn">플롯 로드</button>
+  </div>
+</div>
+<hr>
 </section>
-<section id="additional" class="level2">
-<h2 class="anchored" data-anchor-id="additional">Additional</h2>
-<ul>
-<li>Source type (top 10, total citations): <a href="../Assets/Interactive/source_type_citations_top10.html">source_type_citations_top10.html</a></li>
-</ul>
+</section>
+<section id="분야토픽정책이-무엇을-호출하는가" class="level2">
+<h2 class="anchored" data-anchor-id="분야토픽정책이-무엇을-호출하는가">분야·토픽(정책이 무엇을 호출하는가)</h2>
+<section id="그림-2.-도메인별-정책-인용-상위-10개" class="level3">
+<h3 class="anchored" data-anchor-id="그림-2.-도메인별-정책-인용-상위-10개">그림 2. 도메인별 정책 인용 상위 10개</h3>
+<div class="si-plot" data-src="../Assets/Interactive/domain_top10.html" data-height="650">
+  <div class="si-plot__actions">
+    <a class="si-plot__link" href="../Assets/Interactive/domain_top10.html" target="_blank" rel="noopener">새 창으로 열기</a>
+    <button type="button" class="si-plot__btn">플롯 로드</button>
+  </div>
+</div>
+</section>
+<section id="그림-3.-토픽별-인용수-vs-고유-논문수점-크기oa-비중" class="level3">
+<h3 class="anchored" data-anchor-id="그림-3.-토픽별-인용수-vs-고유-논문수점-크기oa-비중">그림 3. 토픽별 인용수 vs 고유 논문수(점 크기=OA 비중)</h3>
+<div class="si-plot" data-src="../Assets/Interactive/topic_scatter_citations_vs_papers.html" data-height="750">
+  <div class="si-plot__actions">
+    <a class="si-plot__link" href="../Assets/Interactive/topic_scatter_citations_vs_papers.html" target="_blank" rel="noopener">새 창으로 열기</a>
+    <button type="button" class="si-plot__btn">플롯 로드</button>
+  </div>
+</div>
+</section>
+<section id="그림-4.-토픽별-인용-강도-vs-최근성" class="level3">
+<h3 class="anchored" data-anchor-id="그림-4.-토픽별-인용-강도-vs-최근성">그림 4. 토픽별 인용 강도 vs 최근성</h3>
+<div class="si-plot" data-src="../Assets/Interactive/topic_intensity_vs_recency.html" data-height="750">
+  <div class="si-plot__actions">
+    <a class="si-plot__link" href="../Assets/Interactive/topic_intensity_vs_recency.html" target="_blank" rel="noopener">새 창으로 열기</a>
+    <button type="button" class="si-plot__btn">플롯 로드</button>
+  </div>
+</div>
+<hr>
+</section>
+</section>
+<section id="허브누가-근거를-축적하는가" class="level2">
+<h2 class="anchored" data-anchor-id="허브누가-근거를-축적하는가">허브(누가 근거를 축적하는가)</h2>
+<section id="그림-5.-정책-출처-국가별-인용-상위-10개한국" class="level3">
+<h3 class="anchored" data-anchor-id="그림-5.-정책-출처-국가별-인용-상위-10개한국">그림 5. 정책 출처 국가별 인용 상위 10개(+한국)</h3>
+<div class="si-plot" data-src="../Assets/Interactive/country_citations_top10.html" data-height="650">
+  <div class="si-plot__actions">
+    <a class="si-plot__link" href="../Assets/Interactive/country_citations_top10.html" target="_blank" rel="noopener">새 창으로 열기</a>
+    <button type="button" class="si-plot__btn">플롯 로드</button>
+  </div>
+</div>
+</section>
+<section id="그림-7.-선택-국가별-분야-구성의-불일치상위-50개국-초기에는-상위-10개한국만-표시" class="level3">
+<h3 class="anchored" data-anchor-id="그림-7.-선택-국가별-분야-구성의-불일치상위-50개국-초기에는-상위-10개한국만-표시">그림 7. 선택 국가별 분야 구성의 불일치(상위 50개국; 초기에는 상위 10개+한국만 표시)</h3>
+<div class="si-plot" data-src="../Assets/Interactive/country_domain_demand_supply_scatter_top50.html" data-height="820">
+  <div class="si-plot__actions">
+    <a class="si-plot__link" href="../Assets/Interactive/country_domain_demand_supply_scatter_top50.html" target="_blank" rel="noopener">새 창으로 열기</a>
+    <button type="button" class="si-plot__btn">플롯 로드</button>
+  </div>
+</div>
+</section>
+<section id="그림-8.-출처-유형별-총-인용-vs-문헌당-인용" class="level3">
+<h3 class="anchored" data-anchor-id="그림-8.-출처-유형별-총-인용-vs-문헌당-인용">그림 8. 출처 유형별 총 인용 vs 문헌당 인용</h3>
+<div class="si-plot" data-src="../Assets/Interactive/source_type_citations_per_policy_doc.html" data-height="650">
+  <div class="si-plot__actions">
+    <a class="si-plot__link" href="../Assets/Interactive/source_type_citations_per_policy_doc.html" target="_blank" rel="noopener">새 창으로 열기</a>
+    <button type="button" class="si-plot__btn">플롯 로드</button>
+  </div>
+</div>
+<hr>
+</section>
+</section>
+<section id="한국흐름정책연구-연결의-두-방향" class="level2">
+<h2 class="anchored" data-anchor-id="한국흐름정책연구-연결의-두-방향">한국·흐름(정책–연구 연결의 두 방향)</h2>
+<section id="그림-11.-정책-출처-국가-자국-인용-비중상위-7개국한국" class="level3">
+<h3 class="anchored" data-anchor-id="그림-11.-정책-출처-국가-자국-인용-비중상위-7개국한국">그림 11. 정책 출처 국가 자국 인용 비중(상위 7개국+한국)</h3>
+<div class="si-plot" data-src="../Assets/Interactive/policy_country_self_share_selected.html" data-height="650">
+  <div class="si-plot__actions">
+    <a class="si-plot__link" href="../Assets/Interactive/policy_country_self_share_selected.html" target="_blank" rel="noopener">새 창으로 열기</a>
+    <button type="button" class="si-plot__btn">플롯 로드</button>
+  </div>
+</div>
+</section>
+<section id="그림-12.-한국-정책연구의-두-방향-흐름유입조달-상위-10개" class="level3">
+<h3 class="anchored" data-anchor-id="그림-12.-한국-정책연구의-두-방향-흐름유입조달-상위-10개">그림 12. 한국 정책–연구의 두 방향 흐름(유입/조달; 상위 10개)</h3>
+<div class="si-plot" data-src="../Assets/Interactive/korea_policy_research_flows_top10.html" data-height="650">
+  <div class="si-plot__actions">
+    <a class="si-plot__link" href="../Assets/Interactive/korea_policy_research_flows_top10.html" target="_blank" rel="noopener">새 창으로 열기</a>
+    <button type="button" class="si-plot__btn">플롯 로드</button>
+  </div>
+</div>
+</section>
+<section id="그림-13.-정책연구-근거-흐름-네트워크forceatlas2" class="level3">
+<h3 class="anchored" data-anchor-id="그림-13.-정책연구-근거-흐름-네트워크forceatlas2">그림 13. 정책–연구 근거 흐름 네트워크(ForceAtlas2)</h3>
+<div class="si-plot" data-src="../Assets/Interactive/policy_research_flow_network_fa2.html" data-height="820">
+  <div class="si-plot__actions">
+    <a class="si-plot__link" href="../Assets/Interactive/policy_research_flow_network_fa2.html" target="_blank" rel="noopener">새 창으로 열기</a>
+    <button type="button" class="si-plot__btn">플롯 로드</button>
+  </div>
+</div>
+<hr>
+</section>
+</section>
+<section id="참고-출처-유형별-총-인용-top10" class="level2">
+<h2 class="anchored" data-anchor-id="참고-출처-유형별-총-인용-top10">(참고) 출처 유형별 총 인용 Top10</h2>
+<div class="si-plot" data-src="../Assets/Interactive/source_type_citations_top10.html" data-height="650">
+  <div class="si-plot__actions">
+    <a class="si-plot__link" href="../Assets/Interactive/source_type_citations_top10.html" target="_blank" rel="noopener">새 창으로 열기</a>
+    <button type="button" class="si-plot__btn">플롯 로드</button>
+  </div>
+</div>
+<style>
+.si-plot {
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 12px;
+  padding: 0.75rem;
+  background: rgba(255,255,255,0.6);
+}
+.si-plot__actions {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+  justify-content: flex-start;
+}
+.si-plot__link {
+  text-decoration: none;
+}
+.si-plot__btn {
+  border: 1px solid rgba(0,0,0,0.12);
+  border-radius: 999px;
+  padding: 0.35rem 0.75rem;
+  background: rgba(255,255,255,0.9);
+  cursor: pointer;
+}
+.si-plot__btn:hover {
+  background: rgba(255,255,255,1);
+}
+.si-plot iframe {
+  width: 100%;
+  border: 0;
+  margin-top: 0.8rem;
+  border-radius: 10px;
+}
+</style>
+
+<script>
+(function () {
+  function mountIframe(container) {
+    if (!container || container.querySelector('iframe')) return;
+    var src = container.getAttribute('data-src');
+    var height = container.getAttribute('data-height') || '650';
+    if (!src) return;
+
+    var iframe = document.createElement('iframe');
+    iframe.src = src;
+    iframe.height = height;
+    iframe.loading = 'lazy';
+    iframe.setAttribute('title', 'Interactive plot');
+    container.appendChild(iframe);
+  }
+
+  document.querySelectorAll('.si-plot').forEach(function (container) {
+    var btn = container.querySelector('.si-plot__btn');
+    if (!btn) return;
+    btn.addEventListener('click', function () {
+      mountIframe(container);
+      btn.remove();
+    });
+  });
+})();
+</script>
 
 
 </section>

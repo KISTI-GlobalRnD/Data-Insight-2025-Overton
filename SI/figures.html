@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Overton × OpenAlex - Additional Figures (상세본에서만 제공)</title>
+<title>Overton × OpenAlex - 추가 그림(확장팩)</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -92,25 +92,40 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../SI/index.html"> 
-<span class="menu-text">Supplementary</span></a>
+    <a class="nav-link" href="../Report/Report_final.pdf"> 
+<span class="menu-text">보고서(PDF)</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../SI/faq.html"> 
-<span class="menu-text">FAQ</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-supplementary(si" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Supplementary(SI)</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-supplementary(si">    
+        <li>
+    <a class="dropdown-item" href="../SI/index.html">
+ <span class="dropdown-text">개요(읽는 순서)</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../SI/coverage.html"> 
-<span class="menu-text">Coverage</span></a>
+        <li>
+    <a class="dropdown-item" href="../SI/interactive.html">
+ <span class="dropdown-text">인터랙티브(확장 탐색)</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../SI/interactive.html"> 
-<span class="menu-text">Interactive</span></a>
+        <li>
+    <a class="dropdown-item" href="../SI/figures.html">
+ <span class="dropdown-text">추가 그림(확장팩)</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link active" href="../SI/figures.html" aria-current="page"> 
-<span class="menu-text">Additional Figures</span></a>
+        <li>
+    <a class="dropdown-item" href="../SI/coverage.html">
+ <span class="dropdown-text">데이터 커버리지·태깅</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="../SI/faq.html">
+ <span class="dropdown-text">정의·해석 FAQ</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../SI/next_questions.html">
+ <span class="dropdown-text">다음 질문(후속 분석)</span></a>
+  </li>  
+    </ul>
+  </li>
 </ul>
           </div> <!-- /navcollapse -->
           <div class="quarto-navbar-tools">
@@ -140,7 +155,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Additional Figures (상세본에서만 제공)</h1>
+<h1 class="title">추가 그림(확장팩)</h1>
 </div>
 
 
@@ -157,7 +172,7 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>보고서(요약본)은 핵심 내러티브를 위해 일부 그림을 본문에서 제외했다. 아래는 상세본(v1)에 포함돼 있던 “보조 설명용” 그림이다.</p>
+<p>보고서(요약본)은 핵심 내러티브를 위해 일부 그림을 본문에서 제외했다. 이 페이지는 본문의 흐름을 해치지 않으면서도 “더 깊게” 보고 싶은 독자를 위해, <strong>추가 그림을 묶음으로 제공</strong>한다.</p>
 <section id="top-n-토픽세부분야" class="level2">
 <h2 class="anchored" data-anchor-id="top-n-토픽세부분야">Top-N 토픽/세부분야</h2>
 <p><img src="../Assets/Figures/v1/topic_top15.png" class="img-fluid" style="width:90.0%" alt="상위 15개 토픽 인용"></p>
@@ -180,11 +195,11 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="openalex-subfield-overton-domain-네트워크-top-100">OpenAlex subfield → Overton domain 네트워크 (Top 100)</h2>
 <p>OpenAlex 세부분야(subfield)가 Overton 정책 분류(2nd_class)로 어떻게 “근거를 수출(export)”하는지(인용 흐름) 네트워크로 그렸다.<br>
 레이아웃은 시드에 따라 달라질 수 있어, 5개 시드 결과를 함께 제공한다(노드=100, 각 노드 상위 3개 in/out 연결만 유지). 노드 크기는 <strong>선택된 노드 집합 내 총 흐름(전체 엣지 합)</strong>으로 산정했으며, 이는 연결선 표시용 top-k 필터와 독립적이다.</p>
-<p><img src="../../Output/Data_Insight/report_figures/20251026_overton_domain_subfield_network_n100_k3_drl_seed7.png" class="img-fluid" style="width:100.0%" alt="OpenAlex subfield → Overton domain network (seed 7)"></p>
-<p><img src="../../Output/Data_Insight/report_figures/20251026_overton_domain_subfield_network_n100_k3_drl_seed13.png" class="img-fluid" style="width:100.0%" alt="OpenAlex subfield → Overton domain network (seed 13)"></p>
-<p><img src="../../Output/Data_Insight/report_figures/20251026_overton_domain_subfield_network_n100_k3_drl_seed42.png" class="img-fluid" style="width:100.0%" alt="OpenAlex subfield → Overton domain network (seed 42)"></p>
-<p><img src="../../Output/Data_Insight/report_figures/20251026_overton_domain_subfield_network_n100_k3_drl_seed101.png" class="img-fluid" style="width:100.0%" alt="OpenAlex subfield → Overton domain network (seed 101)"></p>
-<p><img src="../../Output/Data_Insight/report_figures/20251026_overton_domain_subfield_network_n100_k3_drl_seed2026.png" class="img-fluid" style="width:100.0%" alt="OpenAlex subfield → Overton domain network (seed 2026)"></p>
+<p><img src="../Assets/Figures/si/overton_domain_subfield_network_n100_seed7.png" class="img-fluid" style="width:100.0%" alt="OpenAlex subfield → Overton domain network (seed 7)"></p>
+<p><img src="../Assets/Figures/si/overton_domain_subfield_network_n100_seed13.png" class="img-fluid" style="width:100.0%" alt="OpenAlex subfield → Overton domain network (seed 13)"></p>
+<p><img src="../Assets/Figures/si/overton_domain_subfield_network_n100_seed42.png" class="img-fluid" style="width:100.0%" alt="OpenAlex subfield → Overton domain network (seed 42)"></p>
+<p><img src="../Assets/Figures/si/overton_domain_subfield_network_n100_seed101.png" class="img-fluid" style="width:100.0%" alt="OpenAlex subfield → Overton domain network (seed 101)"></p>
+<p><img src="../Assets/Figures/si/overton_domain_subfield_network_n100_seed2026.png" class="img-fluid" style="width:100.0%" alt="OpenAlex subfield → Overton domain network (seed 2026)"></p>
 
 
 </section>

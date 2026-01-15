@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Overton × OpenAlex - Coverage (Overton 커버리지)</title>
+<title>Overton × OpenAlex - 데이터 커버리지·태깅(Overton)</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -92,25 +92,40 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../SI/index.html"> 
-<span class="menu-text">Supplementary</span></a>
+    <a class="nav-link" href="../Report/Report_final.pdf"> 
+<span class="menu-text">보고서(PDF)</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../SI/faq.html"> 
-<span class="menu-text">FAQ</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-supplementary(si" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Supplementary(SI)</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-supplementary(si">    
+        <li>
+    <a class="dropdown-item" href="../SI/index.html">
+ <span class="dropdown-text">개요(읽는 순서)</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link active" href="../SI/coverage.html" aria-current="page"> 
-<span class="menu-text">Coverage</span></a>
+        <li>
+    <a class="dropdown-item" href="../SI/interactive.html">
+ <span class="dropdown-text">인터랙티브(확장 탐색)</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../SI/interactive.html"> 
-<span class="menu-text">Interactive</span></a>
+        <li>
+    <a class="dropdown-item" href="../SI/figures.html">
+ <span class="dropdown-text">추가 그림(확장팩)</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../SI/figures.html"> 
-<span class="menu-text">Additional Figures</span></a>
+        <li>
+    <a class="dropdown-item" href="../SI/coverage.html">
+ <span class="dropdown-text">데이터 커버리지·태깅</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="../SI/faq.html">
+ <span class="dropdown-text">정의·해석 FAQ</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../SI/next_questions.html">
+ <span class="dropdown-text">다음 질문(후속 분석)</span></a>
+  </li>  
+    </ul>
+  </li>
 </ul>
           </div> <!-- /navcollapse -->
           <div class="quarto-navbar-tools">
@@ -127,10 +142,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#policy-documents-by-policy-source-country" id="toc-policy-documents-by-policy-source-country" class="nav-link active" data-scroll-target="#policy-documents-by-policy-source-country">Policy documents by policy source country</a></li>
+  <li><a href="#정책-문헌-커버리지-정책-출처-국가별-정책-문헌-수" id="toc-정책-문헌-커버리지-정책-출처-국가별-정책-문헌-수" class="nav-link active" data-scroll-target="#정책-문헌-커버리지-정책-출처-국가별-정책-문헌-수">정책 문헌 커버리지: 정책 출처 국가별 정책 문헌 수</a></li>
   <li><a href="#subnational-tags-a-b와-hong-kong-이슈" id="toc-subnational-tags-a-b와-hong-kong-이슈" class="nav-link" data-scroll-target="#subnational-tags-a-b와-hong-kong-이슈">Subnational tags (<code>A &gt; B</code>)와 “Hong Kong” 이슈</a>
   <ul class="collapse">
-  <li><a href="#스냅샷-하위-태그가-얼마나-많나" id="toc-스냅샷-하위-태그가-얼마나-많나" class="nav-link" data-scroll-target="#스냅샷-하위-태그가-얼마나-많나">20251026 스냅샷: 하위 태그가 얼마나 많나?</a></li>
+  <li><a href="#데이터-스냅샷2025-10-26-하위-태그가-얼마나-많나" id="toc-데이터-스냅샷2025-10-26-하위-태그가-얼마나-많나" class="nav-link" data-scroll-target="#데이터-스냅샷2025-10-26-하위-태그가-얼마나-많나">데이터 스냅샷(2025-10-26): 하위 태그가 얼마나 많나?</a></li>
   <li><a href="#하위-태그-상위-예시정책문서-수-기준" id="toc-하위-태그-상위-예시정책문서-수-기준" class="nav-link" data-scroll-target="#하위-태그-상위-예시정책문서-수-기준">하위 태그 상위 예시(정책문서 수 기준)</a></li>
   <li><a href="#hong-kong은-중국으로-합쳐진-것인가" id="toc-hong-kong은-중국으로-합쳐진-것인가" class="nav-link" data-scroll-target="#hong-kong은-중국으로-합쳐진-것인가">Hong Kong은 “중국으로 합쳐진” 것인가?</a></li>
   <li><a href="#실무적-주의-하위-태그를-단순-치환하면-안-되는-경우" id="toc-실무적-주의-하위-태그를-단순-치환하면-안-되는-경우" class="nav-link" data-scroll-target="#실무적-주의-하위-태그를-단순-치환하면-안-되는-경우">실무적 주의: 하위 태그를 단순 치환하면 안 되는 경우</a></li>
@@ -143,7 +158,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Coverage (Overton 커버리지)</h1>
+<h1 class="title">데이터 커버리지·태깅(Overton)</h1>
 </div>
 
 
@@ -160,14 +175,28 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>이 페이지는 Overton의 정책 문헌 커버리지가 <strong>국가·언어권에 따라 균등하지 않을 수 있음</strong>을 직관적으로 보여주기 위한 보조자료다.</p>
-<section id="policy-documents-by-policy-source-country" class="level2">
-<h2 class="anchored" data-anchor-id="policy-documents-by-policy-source-country">Policy documents by policy source country</h2>
+<p>이 페이지는 Overton의 정책 문헌 커버리지가 <strong>국가·언어권에 따라 균등하지 않을 수 있음</strong>을 직관적으로 보여주기 위한 보조자료다.<br>
+즉, 본문에서 보인 “허브 구조”는 데이터/언어/수집의 편향이 섞일 수 있어, <strong>해석 전에 커버리지 자체를 함께 확인</strong>하는 편이 안전하다.</p>
+<section id="정책-문헌-커버리지-정책-출처-국가별-정책-문헌-수" class="level2">
+<h2 class="anchored" data-anchor-id="정책-문헌-커버리지-정책-출처-국가별-정책-문헌-수">정책 문헌 커버리지: 정책 출처 국가별 정책 문헌 수</h2>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>표시 기준(요약)</strong></p>
 <ul>
-<li>데이터: <code>Output/Data_Insight/20251026_country_policy_docs.csv</code> (정책 출처 국가별 정책 문헌 수)</li>
-<li>표시 기준: <code>country</code> 태그 중 <strong>최상위 국가만</strong> 포함(예: <code>USA &gt; California</code> 같은 하위 태그 제외), <code>IGO</code>/<code>EU</code> 제외</li>
-<li>색상: 정책 문헌 수의 <code>log10</code> 스케일(국가 간 편차가 커서 로그 스케일로 시각화)</li>
+<li>국가 태그 중 <strong>최상위 국가만</strong> 사용(예: <code>USA &gt; California</code> 같은 하위 태그 제외)</li>
+<li><code>IGO</code>/<code>EU</code> 제외</li>
+<li>국가 간 편차가 커서 <strong><code>log10</code> 스케일</strong>로 색상 표시</li>
 </ul>
+</div>
+</div>
 <iframe src="../Assets/Interactive/coverage_policy_docs_map.html" width="100%" height="650" style="border:0;" title="Overton coverage map">
 </iframe>
 </section>
@@ -179,9 +208,29 @@ ul.task-list li input[type="checkbox"] {
 <li>하위 태그가 많은 국가에서는, <code>policy_source_country</code> 커버리지/인용이 <strong>최상위 국가 하나로만 요약되지 않는다</strong>.</li>
 <li>일부 하위 태그는 행정구역(주/주정부/지역정부 등)이지만, 일부는 <strong>홍콩처럼(OpenAlex에서 별도 연구국으로 잡히는) 특수한 지리 단위</strong>와 맞물릴 수 있다.</li>
 </ul>
-<section id="스냅샷-하위-태그가-얼마나-많나" class="level3">
-<h3 class="anchored" data-anchor-id="스냅샷-하위-태그가-얼마나-많나">20251026 스냅샷: 하위 태그가 얼마나 많나?</h3>
-<p>아래 수치는 <code>Output/Data_Insight/20251026_country_policy_docs.csv</code>와 <code>Output/Data_Insight/20251026_policy_country_research_country.csv</code>(policy→research 매트릭스)에서 계산한 요약이다.</p>
+<section id="데이터-스냅샷2025-10-26-하위-태그가-얼마나-많나" class="level3">
+<h3 class="anchored" data-anchor-id="데이터-스냅샷2025-10-26-하위-태그가-얼마나-많나">데이터 스냅샷(2025-10-26): 하위 태그가 얼마나 많나?</h3>
+<p>아래 수치는 이 보고서와 동일한 데이터 스냅샷에서 계산한 요약이다.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>(유지보수 메모) 입력 파일</strong></p>
+<ul>
+<li>정책 출처 국가별 정책 문헌 수: <code>Output/Data_Insight/20251026_country_policy_docs.csv</code></li>
+<li>정책국→연구국 매트릭스: <code>Output/Data_Insight/20251026_policy_country_research_country.csv</code></li>
+</ul>
+</div>
+</div>
+</div>
 <ul>
 <li>정책문서 수(<code>policy_docs</code>) 기준: 하위 태그 합계 200,381건(전체 1,671,835건의 <strong>12.0%</strong>)</li>
 <li>DOI 인용 링크(<code>citation_rows</code>) 기준: 하위 태그 합계 3,488,024건(전체 48,456,680건의 <strong>7.2%</strong>)</li>
