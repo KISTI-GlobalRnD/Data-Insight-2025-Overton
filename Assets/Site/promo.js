@@ -86,9 +86,9 @@
     "story.topics.body":
       "Plotting topics by citation intensity (policy citations per paper) and recency (share in the last three years) separates mature topics that are steadily cited from high-growth topics that surge quickly. Shock-driven agendas like pandemics or climate can see both recency and intensity rise together, while infrastructural agendas tend to remain steadier.",
     "story.pubyear.kicker": "6 · Scale",
-    "story.pubyear.title": "Citations grew — while citation density fluctuated",
+    "story.pubyear.title": "Policy citations keep rising",
     "story.pubyear.body":
-      "Since the 2010s, DOI citations and the number of policy documents rose rapidly, peaking around 2021. Looking at document counts alongside average citations per document reveals how densely policy documents pack evidence. The most recent 4–5 years appear lower because policy citations take time to mature and accumulate.",
+      "Since the 2010s, DOI citations and the number of policy documents rose rapidly, peaking around 2021. Average citations per document can spike in specific years, but in the longer run it stays around ~18 on average. The most recent 4–5 years may appear lower because policy citations take time to accumulate after publication.",
     "explore.title": "Explore further",
     "explore.lede":
       "Continue with the full report (PDF), interactive versions of the figures, and the Supplementary.",
