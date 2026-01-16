@@ -28,7 +28,7 @@
       "By combining Overton citation logs with OpenAlex metadata, we summarize in one page <strong>when, what, and where</strong> policy pulls evidence from science.",
     "hero.actions.aria": "Quick links",
     "hero.cta.summary": "View key summary",
-    "hero.cta.si": "Go to Supplementary",
+    "hero.cta.si": "Go to Supplementary Information",
     "bridge.aria": "Key message",
     "bridge.eyebrow": "Why this map matters",
     "bridge.title": "How evidence flows can matter more than how much.",
@@ -45,7 +45,7 @@
     "bridge.cta.story": "Jump to scrolly story",
     "intro.title": "At a glance",
     "intro.lede":
-      "Start with overall scale and coverage, based on DOI-linked policy→research citations. Definitions, constraints, and metric notes are in the Supplementary.",
+      "Start with overall scale and coverage, based on DOI-linked policy→research citations. Definitions, constraints, and metric notes are in the Supplementary Information.",
     "intro.stats.aria": "Summary metrics",
     "intro.stat.links": "Policy → research citation links",
     "intro.stat.links.value": "23.37M",
@@ -91,11 +91,11 @@
       "Since the 2010s, DOI citations and the number of policy documents rose rapidly, peaking around 2021. Average citations per document can spike in specific years, but in the longer run it stays around ~18 on average. The most recent 4–5 years may appear lower because policy citations take time to accumulate after publication.",
     "explore.title": "Explore further",
     "explore.lede":
-      "Continue with the full report (PDF), interactive versions of the figures, and the Supplementary.",
+      "Continue with the full report (PDF), interactive versions of the figures, and the Supplementary Information.",
     "explore.actions.aria": "More",
     "explore.cta.report": "Open report PDF",
     "explore.cta.interactive": "Interactive figures",
-    "explore.cta.si": "Open Supplementary",
+    "explore.cta.si": "Open Supplementary Information",
     "footer.org": "<div class=\"promo-footer__org-primary\">KISTI Center for Global R&amp;D Analysis</div><div class=\"promo-footer__org-secondary\">KISTI 글로벌R&amp;D분석센터</div>",
     "footer.report.title": "From Science to Policy: Mapping Knowledge Diffusion through the OpenAlex–Overton Network",
     "footer.report.author":
@@ -104,7 +104,7 @@
     "footer.nav.aria": "Footer links",
     "footer.link.top": "Back to top",
     "footer.link.report": "Report PDF",
-    "footer.link.si": "Supplementary",
+    "footer.link.si": "Supplementary Information",
   };
 
   function captureBaseline() {
