@@ -181,6 +181,7 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<p><a href="../SI/index.html"><code>← SI 개요</code></a> · <a href="../Report/Report_final.pdf"><code>보고서(PDF)</code></a></p>
 <section id="q0.-왜-보조자료를-따로-만들었나" class="level2">
 <h2 class="anchored" data-anchor-id="q0.-왜-보조자료를-따로-만들었나">Q0. 왜 보조자료를 따로 만들었나</h2>
 <p>보고서(요약본)는 “읽히는 글”을 목표로 해서, 본문 흐름을 방해하는 세부 정의/추가 결과를 최소화했다.<br>
@@ -236,7 +237,7 @@ ul.task-list li input[type="checkbox"] {
 <li>상위 1% 문서의 인용 기여는 2012년이 단독으로 튀지 않는다. 따라서 “2012년 피크”를 단일한 소수 문서의 효과로만 해석하기는 어렵다.</li>
 </ul>
 <p>추가로 2012년의 상위 1% 문서를 출처 유형 기준으로 보면, 정부와 국제기구 문서가 큰 비중을 차지한다. 다만 Overton 출처 유형 태그는 다중라벨 구조이므로, 이 비교에서는 문서별 “대표 유형”을 하나로 정해 요약했다.</p>
-<p>관련 수치 파일 - <code>../Assets/Figures/si/pubyear_citations_per_doc_diagnostics.csv</code> - <code>../Assets/Figures/si/pubyear_2012_top1_source_type.csv</code> - <code>../Assets/Figures/si/pubyear_citations_per_doc_by_source_type_primary.csv</code></p>
+<p>관련 수치 파일 - (필요 시) <code>../Assets/Figures/si/pubyear_citations_per_doc_diagnostics.csv</code> - (필요 시) <code>../Assets/Figures/si/pubyear_2012_top1_source_type.csv</code> - (필요 시) <code>../Assets/Figures/si/pubyear_citations_per_doc_by_source_type_primary.csv</code></p>
 </section>
 <section id="q6.-최근성recent-share과-인용-강도intensity는-어떻게-계산했나" class="level2">
 <h2 class="anchored" data-anchor-id="q6.-최근성recent-share과-인용-강도intensity는-어떻게-계산했나">Q6. “최근성(recent share)”과 “인용 강도(intensity)”는 어떻게 계산했나?</h2>
@@ -274,10 +275,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="q11.-그림노트북이-업데이트되면-보조자료도-자동으로-갱신되나" class="level2">
 <h2 class="anchored" data-anchor-id="q11.-그림노트북이-업데이트되면-보조자료도-자동으로-갱신되나">Q11. 그림/노트북이 업데이트되면 보조자료도 자동으로 갱신되나?</h2>
-<p>네. 보고서/사이트는 고정 경로의 복사본을 참조하므로, 노트북 실행으로 <code>Output/...</code>이 갱신된 뒤 아래 스크립트를 실행하면 된다.</p>
-<ul>
-<li><code>python3 scripts/sync_data_insight_assets.py</code></li>
-</ul>
+<p>그렇다. 이 보조자료는 보고서 본문과 같은 그림 파일을 참조하므로, 그림이 갱신되면 SI에서도 같은 변경이 반영된다.</p>
 
 
 </section>
