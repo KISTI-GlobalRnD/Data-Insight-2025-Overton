@@ -147,7 +147,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#인용-건수와-고유-논문-수는-왜-구분하나" id="toc-인용-건수와-고유-논문-수는-왜-구분하나" class="nav-link" data-scroll-target="#인용-건수와-고유-논문-수는-왜-구분하나">“인용 건수”와 “고유 논문 수”는 왜 구분하나?</a></li>
   <li><a href="#최근성과-인용-강도는-어떻게-계산했나" id="toc-최근성과-인용-강도는-어떻게-계산했나" class="nav-link" data-scroll-target="#최근성과-인용-강도는-어떻게-계산했나">“최근성”과 “인용 강도”는 어떻게 계산했나?</a></li>
   <li><a href="#자국-인용-비중self-citation-share은-어떻게-계산했나" id="toc-자국-인용-비중self-citation-share은-어떻게-계산했나" class="nav-link" data-scroll-target="#자국-인용-비중self-citation-share은-어떻게-계산했나">자국 인용 비중(self-citation share)은 어떻게 계산했나?</a></li>
-  <li><a href="#왜-1저자-소속국으로-정책국연구국-흐름을-정의했나" id="toc-왜-1저자-소속국으로-정책국연구국-흐름을-정의했나" class="nav-link" data-scroll-target="#왜-1저자-소속국으로-정책국연구국-흐름을-정의했나">왜 1저자 소속국으로 정책국→연구국 흐름을 정의했나?</a></li>
+  <li><a href="#왜-1저자-소속국으로-정책-출처-국가연구국-흐름을-정의했나" id="toc-왜-1저자-소속국으로-정책-출처-국가연구국-흐름을-정의했나" class="nav-link" data-scroll-target="#왜-1저자-소속국으로-정책-출처-국가연구국-흐름을-정의했나">왜 1저자 소속국으로 정책 출처 국가→연구국 흐름을 정의했나?</a></li>
   <li><a href="#토픽도메인-집계에서-합이-100를-넘는-이유는" id="toc-토픽도메인-집계에서-합이-100를-넘는-이유는" class="nav-link" data-scroll-target="#토픽도메인-집계에서-합이-100를-넘는-이유는">토픽/도메인 집계에서 합이 100%를 넘는 이유는?</a></li>
   <li><a href="#출처-국가출처-유형-집계도-합이-커질-수-있나" id="toc-출처-국가출처-유형-집계도-합이-커질-수-있나" class="nav-link" data-scroll-target="#출처-국가출처-유형-집계도-합이-커질-수-있나">출처 국가/출처 유형 집계도 합이 커질 수 있나?</a></li>
   <li><a href="#연도-추세에서-2022년-이후-하락은-정책이-과학을-덜-쓴다는-뜻인가" id="toc-연도-추세에서-2022년-이후-하락은-정책이-과학을-덜-쓴다는-뜻인가" class="nav-link" data-scroll-target="#연도-추세에서-2022년-이후-하락은-정책이-과학을-덜-쓴다는-뜻인가">연도 추세에서 2022년 이후 하락은 “정책이 과학을 덜 쓴다”는 뜻인가?</a></li>
@@ -366,11 +366,11 @@ Note
 </section>
 <section id="자국-인용-비중self-citation-share은-어떻게-계산했나" class="level3">
 <h3 class="anchored" data-anchor-id="자국-인용-비중self-citation-share은-어떻게-계산했나">자국 인용 비중(self-citation share)은 어떻게 계산했나?</h3>
-<p>정책국 태그를 2자리 국가코드로 매핑한 뒤(예: USA→US, UK→GB), 1저자 소속국 코드가 확인되는 인용만 분모로 삼아 계산했다.<br>
+<p>정책 출처 국가 태그를 2자리 국가코드로 매핑한 뒤(예: USA→US, UK→GB), 1저자 소속국 코드가 확인되는 인용만 분모로 삼아 계산했다.<br>
 즉 자국 인용 비중은 “전체 인용”이 아니라 <strong>1저자 국가코드가 확인되는 인용</strong>에서의 패턴이다.</p>
 </section>
-<section id="왜-1저자-소속국으로-정책국연구국-흐름을-정의했나" class="level3">
-<h3 class="anchored" data-anchor-id="왜-1저자-소속국으로-정책국연구국-흐름을-정의했나">왜 1저자 소속국으로 정책국→연구국 흐름을 정의했나?</h3>
+<section id="왜-1저자-소속국으로-정책-출처-국가연구국-흐름을-정의했나" class="level3">
+<h3 class="anchored" data-anchor-id="왜-1저자-소속국으로-정책-출처-국가연구국-흐름을-정의했나">왜 1저자 소속국으로 정책 출처 국가→연구국 흐름을 정의했나?</h3>
 <p>가장 일관되게 추출 가능한 국가 속성이 1저자(First author) 소속국이었기 때문이다.<br>
 다만 공동저자 분포, 교신저자, 다기관 소속 등을 반영하지 못하므로 “대표성 있는 근사”로 해석해야 한다.</p>
 
@@ -494,9 +494,9 @@ Note
 </section>
 <section id="c4.-자국-인용-비중top10" class="level3">
 <h3 class="anchored" data-anchor-id="c4.-자국-인용-비중top10">C4. 자국 인용 비중(Top10)</h3>
-<p>본문 그림 11은 비교를 위해 선택 국가만 제시했다. 아래 그림은 상위 10개 정책국을 더 넓게 보여준다.<br>
+<p>본문 그림 11은 비교를 위해 선택 국가만 제시했다. 아래 그림은 상위 10개 정책 출처 국가를 더 넓게 보여준다.<br>
 이 지표는 1저자 국가코드가 확인되는 인용만 대상으로 계산한다는 점에 유의해야 한다.</p>
-<p><img src="../Assets/Figures/v1/policy_country_self_share_top10.png" class="img-fluid" style="width:92.0%" alt="상위 10개 정책국 자국 인용 비중"></p>
+<p><img src="../Assets/Figures/v1/policy_country_self_share_top10.png" class="img-fluid" style="width:92.0%" alt="상위 10개 정책 출처 국가 자국 인용 비중"></p>
 </section>
 <section id="c5.-openalex-subfield-overton-domain-네트워크top-100" class="level3">
 <h3 class="anchored" data-anchor-id="c5.-openalex-subfield-overton-domain-네트워크top-100">C5. OpenAlex subfield → Overton domain 네트워크(Top 100)</h3>
