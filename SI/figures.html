@@ -194,9 +194,10 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="openalex-subfield-overton-domain-네트워크-top-100" class="level2">
 <h2 class="anchored" data-anchor-id="openalex-subfield-overton-domain-네트워크-top-100">OpenAlex subfield → Overton domain 네트워크 (Top 100)</h2>
-<p>OpenAlex 세부분야(subfield)가 Overton 정책 분류(2nd_class)로 어떻게 “근거를 수출(export)”하는지(인용 흐름) 네트워크로 그렸다.<br>
-레이아웃은 시드에 따라 달라질 수 있어, 이 페이지에서는 시드를 고정한 결과만 제공한다(노드=100, 각 노드 상위 3개 in/out 연결만 유지). 노드 크기는 <strong>선택된 노드 집합 내 총 흐름(전체 엣지 합)</strong>으로 산정했으며, 이는 연결선 표시용 top-k 필터와 독립적이다.</p>
-<p><img src="../Assets/Figures/si/overton_domain_subfield_network_n100.png" class="img-fluid" style="width:100.0%" alt="OpenAlex subfield → Overton domain network (seed fixed)"></p>
+<p>OpenAlex 세부분야(subfield)와 Overton 정책 분류(2nd_class) 사이의 인용 흐름을 네트워크로 나타냈다.<br>
+레이아웃은 초기 배치에 따라 달라질 수 있어, 이 페이지에서는 같은 조건으로 고정한 결과만 제공한다.</p>
+<p>표시 규칙은 다음과 같다. - 노드는 상위 100개만 표시했다. - 연결선은 복잡도를 줄이기 위해, 각 노드에서 규모가 큰 상위 3개 연결만 남겼다. - 노드 크기는 선택된 노드 집합 안에서의 총 흐름으로 정의했다. 이는 연결선을 일부만 남기는 과정과는 별개다.</p>
+<p><img src="../Assets/Figures/si/overton_domain_subfield_network_n100.png" class="img-fluid" style="width:100.0%" alt="OpenAlex subfield → Overton domain network"></p>
 
 
 </section>

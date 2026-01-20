@@ -6,7 +6,7 @@
                             
 (function() {
   var gd = document.getElementById('country_domain_demand_supply_scatter_top50');
-  if (!gd || !window.Plotly || !Plotly.Fx) return;
+  if (!gd || !window.Plotly) return;
 
   function isSizeLegendTrace(tr) {
     if (!tr) return false;
@@ -28,18 +28,21 @@
   var lock = false;
   var lastGroup = null;
 
-  function crossHover(groupName) {
+  var DEFAULT_STYLE = {
+    'marker.line.color': 'white',
+    'marker.line.width': 1,
+    'marker.opacity': 0.78,
+  };
+  var HIGHLIGHT_STYLE = {
+    'marker.line.color': '#111827',
+    'marker.line.width': 3,
+    'marker.opacity': 1.0,
+  };
+
+  function styleGroup(groupName, style) {
     var idx = groupToIdx[groupName] || [];
     if (!idx.length) return;
-    var pts = [];
-    for (var j = 0; j < idx.length; j++) {
-      pts.push({curveNumber: idx[j], pointNumber: 0});
-    }
-    Plotly.Fx.hover(gd, pts);
-  }
-
-  function clearHover() {
-    Plotly.Fx.unhover(gd);
+    Plotly.restyle(gd, style, idx);
   }
 
   gd.on('plotly_hover', function(ev) {
@@ -53,7 +56,8 @@
 
     lock = true;
     try {
-      crossHover(groupName);
+      if (lastGroup) styleGroup(lastGroup, DEFAULT_STYLE);
+      styleGroup(groupName, HIGHLIGHT_STYLE);
       lastGroup = groupName;
     } finally {
       lock = false;
@@ -65,7 +69,7 @@
     if (!lastGroup) return;
     lock = true;
     try {
-      clearHover();
+      styleGroup(lastGroup, DEFAULT_STYLE);
       lastGroup = null;
     } finally {
       lock = false;
