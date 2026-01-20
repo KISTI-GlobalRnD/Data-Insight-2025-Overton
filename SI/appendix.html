@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.550">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Overton × OpenAlex - 부록(데이터·정의·추가그림)</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Overton × OpenAlex</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../Report/Report_final.pdf"> 
+<span class="menu-text">보고서(PDF)</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-si" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">보조자료(SI)</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-si">    
+        <li>
+    <a class="dropdown-item" href="../SI/index.html">
+ <span class="dropdown-text">개요(읽는 순서)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../SI/interactive.html">
+ <span class="dropdown-text">인터랙티브(확장 탐색)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../SI/appendix.html">
+ <span class="dropdown-text">부록(데이터·정의·추가그림)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../SI/next_questions.html">
+ <span class="dropdown-text">다음 질문(후속 분석)</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#appendix-a" id="toc-appendix-a" class="nav-link active" data-scroll-target="#appendix-a">A. 데이터 커버리지·태깅</a>
+  <ul class="collapse">
+  <li><a href="#a1.-정책-문헌-커버리지-지도정책-출처-국가별-문헌-수" id="toc-a1.-정책-문헌-커버리지-지도정책-출처-국가별-문헌-수" class="nav-link" data-scroll-target="#a1.-정책-문헌-커버리지-지도정책-출처-국가별-문헌-수">A1. 정책 문헌 커버리지 지도(정책 출처 국가별 문헌 수)</a></li>
+  <li><a href="#a2.-하위-태그a-b와-최상위-국가만을-쓴-이유" id="toc-a2.-하위-태그a-b와-최상위-국가만을-쓴-이유" class="nav-link" data-scroll-target="#a2.-하위-태그a-b와-최상위-국가만을-쓴-이유">A2. 하위 태그(<code>A &gt; B</code>)와 “최상위 국가만”을 쓴 이유</a></li>
+  <li><a href="#a3.-hong-konggeorgia-예외-처리는-왜-필요했나현상원인조치" id="toc-a3.-hong-konggeorgia-예외-처리는-왜-필요했나현상원인조치" class="nav-link" data-scroll-target="#a3.-hong-konggeorgia-예외-처리는-왜-필요했나현상원인조치">A3. Hong Kong/Georgia 예외 처리는 왜 필요했나(현상→원인→조치)</a></li>
+  </ul></li>
+  <li><a href="#appendix-b" id="toc-appendix-b" class="nav-link" data-scroll-target="#appendix-b">B. 정의·해석</a>
+  <ul class="collapse">
+  <li><a href="#가-doi-논문을-인용한다는-무엇을-뜻하나" id="toc-가-doi-논문을-인용한다는-무엇을-뜻하나" class="nav-link" data-scroll-target="#가-doi-논문을-인용한다는-무엇을-뜻하나">“97.6%가 DOI 논문을 인용한다”는 무엇을 뜻하나?</a></li>
+  <li><a href="#중복-제거는-무엇을-의미하나" id="toc-중복-제거는-무엇을-의미하나" class="nav-link" data-scroll-target="#중복-제거는-무엇을-의미하나">“중복 제거”는 무엇을 의미하나?</a></li>
+  <li><a href="#인용-건수와-고유-논문-수는-왜-구분하나" id="toc-인용-건수와-고유-논문-수는-왜-구분하나" class="nav-link" data-scroll-target="#인용-건수와-고유-논문-수는-왜-구분하나">“인용 건수”와 “고유 논문 수”는 왜 구분하나?</a></li>
+  <li><a href="#최근성과-인용-강도는-어떻게-계산했나" id="toc-최근성과-인용-강도는-어떻게-계산했나" class="nav-link" data-scroll-target="#최근성과-인용-강도는-어떻게-계산했나">“최근성”과 “인용 강도”는 어떻게 계산했나?</a></li>
+  <li><a href="#자국-인용-비중self-citation-share은-어떻게-계산했나" id="toc-자국-인용-비중self-citation-share은-어떻게-계산했나" class="nav-link" data-scroll-target="#자국-인용-비중self-citation-share은-어떻게-계산했나">자국 인용 비중(self-citation share)은 어떻게 계산했나?</a></li>
+  <li><a href="#왜-1저자-소속국으로-정책국연구국-흐름을-정의했나" id="toc-왜-1저자-소속국으로-정책국연구국-흐름을-정의했나" class="nav-link" data-scroll-target="#왜-1저자-소속국으로-정책국연구국-흐름을-정의했나">왜 1저자 소속국으로 정책국→연구국 흐름을 정의했나?</a></li>
+  <li><a href="#토픽도메인-집계에서-합이-100를-넘는-이유는" id="toc-토픽도메인-집계에서-합이-100를-넘는-이유는" class="nav-link" data-scroll-target="#토픽도메인-집계에서-합이-100를-넘는-이유는">토픽/도메인 집계에서 합이 100%를 넘는 이유는?</a></li>
+  <li><a href="#출처-국가출처-유형-집계도-합이-커질-수-있나" id="toc-출처-국가출처-유형-집계도-합이-커질-수-있나" class="nav-link" data-scroll-target="#출처-국가출처-유형-집계도-합이-커질-수-있나">출처 국가/출처 유형 집계도 합이 커질 수 있나?</a></li>
+  <li><a href="#연도-추세에서-2022년-이후-하락은-정책이-과학을-덜-쓴다는-뜻인가" id="toc-연도-추세에서-2022년-이후-하락은-정책이-과학을-덜-쓴다는-뜻인가" class="nav-link" data-scroll-target="#연도-추세에서-2022년-이후-하락은-정책이-과학을-덜-쓴다는-뜻인가">연도 추세에서 2022년 이후 하락은 “정책이 과학을 덜 쓴다”는 뜻인가?</a></li>
+  <li><a href="#년-무렵-문헌당-평균-인용-수가-특히-높게-보이는-이유는" id="toc-년-무렵-문헌당-평균-인용-수가-특히-높게-보이는-이유는" class="nav-link" data-scroll-target="#년-무렵-문헌당-평균-인용-수가-특히-높게-보이는-이유는">2012년 무렵 “문헌당 평균 인용 수”가 특히 높게 보이는 이유는?</a></li>
+  <li><a href="#oa오픈액세스-논문이-정책-인용에서-높게-보이는-건-인과인가" id="toc-oa오픈액세스-논문이-정책-인용에서-높게-보이는-건-인과인가" class="nav-link" data-scroll-target="#oa오픈액세스-논문이-정책-인용에서-높게-보이는-건-인과인가">OA(오픈액세스) 논문이 정책 인용에서 높게 보이는 건 인과인가?</a></li>
+  </ul></li>
+  <li><a href="#appendix-c" id="toc-appendix-c" class="nav-link" data-scroll-target="#appendix-c">C. 추가 그림(확장팩)</a>
+  <ul class="collapse">
+  <li><a href="#c1.-본문-2장-확장-top-n-토픽세부분야" id="toc-c1.-본문-2장-확장-top-n-토픽세부분야" class="nav-link" data-scroll-target="#c1.-본문-2장-확장-top-n-토픽세부분야">C1. 본문 2장 확장: Top-N 토픽/세부분야</a></li>
+  <li><a href="#c2.-본문-3장-확장-출처-유형-토픽열지도" id="toc-c2.-본문-3장-확장-출처-유형-토픽열지도" class="nav-link" data-scroll-target="#c2.-본문-3장-확장-출처-유형-토픽열지도">C2. 본문 3장 확장: 출처 유형 × 토픽(열지도)</a></li>
+  <li><a href="#c3.-oa-참고-그림도메인출처-유형" id="toc-c3.-oa-참고-그림도메인출처-유형" class="nav-link" data-scroll-target="#c3.-oa-참고-그림도메인출처-유형">C3. OA 참고 그림(도메인/출처 유형)</a></li>
+  <li><a href="#c4.-자국-인용-비중top10" id="toc-c4.-자국-인용-비중top10" class="nav-link" data-scroll-target="#c4.-자국-인용-비중top10">C4. 자국 인용 비중(Top10)</a></li>
+  <li><a href="#c5.-openalex-subfield-overton-domain-네트워크top-100" id="toc-c5.-openalex-subfield-overton-domain-네트워크top-100" class="nav-link" data-scroll-target="#c5.-openalex-subfield-overton-domain-네트워크top-100">C5. OpenAlex subfield → Overton domain 네트워크(Top 100)</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">부록(데이터·정의·추가그림)</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p><a href="../SI/index.html"><code>← SI 개요</code></a> · <a href="../SI/interactive.html"><code>인터랙티브</code></a> · <a href="../Report/Report_final.pdf"><code>보고서(PDF)</code></a></p>
+<p>이 부록은 본문에서 지면상 생략된 <strong>세부 근거(커버리지·정의·추가 그림)</strong>를 한 덩어리로 묶었다.<br>
+권장 읽는 순서는 A → B → C다.</p>
+<p><strong>이 페이지에서 얻는 것(5줄)</strong></p>
+<ul>
+<li>국가·언어권 편향을 포함한 <strong>커버리지</strong>를 먼저 확인한다.</li>
+<li>본문에서 쓰인 <strong>지표/집계 단위</strong>를 빠르게 찾아볼 수 있다.</li>
+<li>토픽 다중라벨, 국가코드 결측, 관측 시차 같은 <strong>해석 주의</strong>를 한 곳에서 본다.</li>
+<li>본문 그림을 보완하는 <strong>추가 그림(확장팩)</strong>을 묶음으로 확인한다.</li>
+<li>Hong Kong/Georgia 같은 <strong>예외 처리의 이유</strong>를 짧게 이해한다.</li>
+</ul>
+<p><strong>바로가기</strong>: <a href="#appendix-a">A. 데이터 커버리지·태깅</a> · <a href="#appendix-b">B. 정의·해석</a> · <a href="#appendix-c">C. 추가 그림</a></p>
+<hr>
+<section id="appendix-a" class="level2">
+<h2 class="anchored" data-anchor-id="appendix-a">A. 데이터 커버리지·태깅</h2>
+<p>이 섹션은 “허브 구조”를 읽기 전에, Overton 정책 문헌의 <strong>관측 범위가 균등하지 않을 수 있음</strong>을 먼저 확인하기 위한 최소 근거다.</p>
+<section id="a1.-정책-문헌-커버리지-지도정책-출처-국가별-문헌-수" class="level3">
+<h3 class="anchored" data-anchor-id="a1.-정책-문헌-커버리지-지도정책-출처-국가별-문헌-수">A1. 정책 문헌 커버리지 지도(정책 출처 국가별 문헌 수)</h3>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>표시 기준(요약)</strong></p>
+<ul>
+<li>국가 태그 중 <strong>최상위 국가만</strong> 사용(예: <code>USA &gt; California</code> 같은 하위 태그 제외)</li>
+<li><code>IGO</code>/<code>EU</code> 제외</li>
+<li>국가 간 편차가 커서 <strong>로그 스케일</strong>로 색상 표시</li>
+</ul>
+</div>
+</div>
+<div class="si-plot" data-src="../Assets/Interactive/coverage_policy_docs_map.html" data-height="650">
+  <div class="si-plot__actions">
+    <a class="si-plot__link" href="../Assets/Interactive/coverage_policy_docs_map.html" target="_blank" rel="noopener">새 창으로 열기</a>
+    <button type="button" class="si-plot__btn">플롯 로드</button>
+  </div>
+</div>
+</section>
+<section id="a2.-하위-태그a-b와-최상위-국가만을-쓴-이유" class="level3">
+<h3 class="anchored" data-anchor-id="a2.-하위-태그a-b와-최상위-국가만을-쓴-이유">A2. 하위 태그(<code>A &gt; B</code>)와 “최상위 국가만”을 쓴 이유</h3>
+<p>Overton의 정책 출처 국가 태그는 <strong>국가 단위(예: USA, UK)</strong> 외에 <strong>하위 지역 단위(예: USA &gt; California)</strong>를 함께 포함한다. 본 보고서(요약본)는 OpenAlex의 국가코드와 의미를 맞추기 위해, 기본 집계에서 하위 태그를 제외하고 <strong>최상위 국가만</strong> 사용했다.</p>
+<p>이 선택은 “국가 단위 비교”를 단순화하는 대신, 하위 태그 기여가 큰 출처에서는 국가별 비교가 <strong>과소/과대 해석될 여지</strong>를 남긴다. 따라서 본문에서 국가 비교를 읽을 때는, 커버리지 자체를 함께 확인하는 편이 안전하다.</p>
+</section>
+<section id="a3.-hong-konggeorgia-예외-처리는-왜-필요했나현상원인조치" class="level3">
+<h3 class="anchored" data-anchor-id="a3.-hong-konggeorgia-예외-처리는-왜-필요했나현상원인조치">A3. Hong Kong/Georgia 예외 처리는 왜 필요했나(현상→원인→조치)</h3>
+<p>정책 출처 국가 태그는 <code>China &gt; Hong Kong</code>, <code>USA &gt; Georgia</code>처럼 <strong>하위 태그로 관측</strong>될 수 있다.<br>
+최상위 국가만 쓰면 이런 하위 태그는 정책 출처 노드에서 빠져, 네트워크에서 <strong>“인용만 되는 노드(cited only)”처럼 보이는 효과</strong>가 생길 수 있다.<br>
+그래서 네트워크 그림에서는 <code>China &gt; Hong Kong</code>을 <code>Hong Kong</code>으로 분리했고, <code>USA &gt; Georgia</code>는 <code>Georgia (USA)</code>로 분리했다.</p>
+<details>
+<summary>
+<strong>자세히 보기: 하위 태그 규모, 예시, Hong Kong 표기</strong>
+</summary>
+<section id="데이터-스냅샷-overton-2025.02" class="level4">
+<h4 class="anchored" data-anchor-id="데이터-스냅샷-overton-2025.02">데이터 스냅샷: Overton 2025.02</h4>
+<p>아래 수치는 Overton 2025.02 스냅샷에서 계산한 요약이다.</p>
+<ul>
+<li>정책문서 수 기준: 하위 태그 합계 200,381건, 전체 1,671,835건의 12.0%</li>
+<li>DOI 인용 기록 수 기준: 하위 태그 합계 3,488,024건, 전체 48,456,680건의 7.2%</li>
+</ul>
+<p>하위 태그 기여가 큰 상위 부모(국가)는 대체로 <code>USA</code>, <code>Spain</code>, <code>Canada</code>, <code>Australia</code>, <code>UK</code> 순으로 나타난다.</p>
+</section>
+<section id="하위-태그-상위-예시정책문서-수-기준" class="level4">
+<h4 class="anchored" data-anchor-id="하위-태그-상위-예시정책문서-수-기준">하위 태그 상위 예시(정책문서 수 기준)</h4>
+<table class="table">
+<thead>
+<tr class="header">
+<th>출처 국가 태그</th>
+<th style="text-align: right;">정책문헌 수</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>USA &gt; California</td>
+<td style="text-align: right;">17,599</td>
+</tr>
+<tr class="even">
+<td>USA &gt; New York</td>
+<td style="text-align: right;">14,110</td>
+</tr>
+<tr class="odd">
+<td>USA &gt; Washington</td>
+<td style="text-align: right;">13,969</td>
+</tr>
+<tr class="even">
+<td>USA &gt; Alaska</td>
+<td style="text-align: right;">9,421</td>
+</tr>
+<tr class="odd">
+<td>Canada &gt; Québec</td>
+<td style="text-align: right;">8,453</td>
+</tr>
+<tr class="even">
+<td>USA &gt; Texas</td>
+<td style="text-align: right;">7,648</td>
+</tr>
+<tr class="odd">
+<td>Australia &gt; Western Australia</td>
+<td style="text-align: right;">7,169</td>
+</tr>
+<tr class="even">
+<td>Spain &gt; Catalunya</td>
+<td style="text-align: right;">6,632</td>
+</tr>
+<tr class="odd">
+<td>USA &gt; Minnesota</td>
+<td style="text-align: right;">4,918</td>
+</tr>
+<tr class="even">
+<td>Spain &gt; Euskadi</td>
+<td style="text-align: right;">4,725</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="hong-kong은-중국으로-합쳐진-것인가" class="level4">
+<h4 class="anchored" data-anchor-id="hong-kong은-중국으로-합쳐진-것인가">Hong Kong은 “중국으로 합쳐진” 것인가?</h4>
+<p>현재 스냅샷에서 Overton의 정책 출처에는 <code>Hong Kong</code>이 국가처럼 직접 등장하지 않고, <code>China &gt; Hong Kong</code> 형태로만 관측된다(정책문서 1,182편). 반면 OpenAlex의 연구국은 <code>HK → Hong Kong</code>으로 별도 코드를 쓴다.</p>
+<p>따라서 “최상위 국가만” 기준으로 정책 출처를 집계하면, <code>China &gt; Hong Kong</code>에서 발행된 문서는 정책 출처 쪽에서 빠지고, <code>Hong Kong</code>은 연구국 노드로만 남아 <strong>인용만 되는 노드처럼 보일 수 있다</strong>.</p>
+</section>
+<section id="실무적-주의-하위-태그의-단순-치환은-충돌을-만든다" class="level4">
+<h4 class="anchored" data-anchor-id="실무적-주의-하위-태그의-단순-치환은-충돌을-만든다">실무적 주의: 하위 태그의 단순 치환은 충돌을 만든다</h4>
+<p>하위 태그를 무조건 <code>A &gt; B → B</code>로 치환하면, 예를 들어 <code>USA &gt; Georgia</code>(미국 조지아주)가 <code>Georgia</code>(국가)와 섞이는 동명이인 충돌이 생길 수 있다.<br>
+따라서 하위 태그를 국가 단위로 재귀속시키려면, (1) 부모 국가로 올리는 방식(<code>A &gt; B → A</code>)과 (2) 예외 처리(홍콩처럼 별도 단위로 둘지)를 분리해 설계하는 편이 안전하다.</p>
+</section></details>
+<hr>
+</section>
+</section>
+
+<section id="appendix-b" class="level2">
+<h2 class="anchored" data-anchor-id="appendix-b">B. 정의·해석</h2>
+<p>이 섹션은 본문에서 사용한 집계 단위와 지표를 “필요할 때 찾아볼 수 있도록” 정리했다.</p>
+<details>
+<summary>
+<strong>1) 데이터 단위</strong> — 고유 정책 문헌, DOI 매칭 범위
+</summary>
+<section id="가-doi-논문을-인용한다는-무엇을-뜻하나" class="level3">
+<h3 class="anchored" data-anchor-id="가-doi-논문을-인용한다는-무엇을-뜻하나">“97.6%가 DOI 논문을 인용한다”는 무엇을 뜻하나?</h3>
+<p>Overton 정책 문헌을 <code>policy_document_id</code> 기준으로 중복 제거해 고유 정책 문헌 1,381,084편을 만들고, 각 문헌이 DOI 기반 학술 인용을 1건 이상 포함하는지 여부를 집계했다.<br>
+그 결과 1,347,563편(97.6%)이 DOI 인용을 포함했다.</p>
+<p>주의할 점은, 이 수치는 “정책 문헌이 학술 근거를 사용한다”는 방향성은 보여주지만 <strong>DOI가 없는 인용(서술 인용/보고서/법령/웹 등)</strong> 은 포함하지 못한다는 한계를 가진다.</p>
+</section>
+<section id="중복-제거는-무엇을-의미하나" class="level3">
+<h3 class="anchored" data-anchor-id="중복-제거는-무엇을-의미하나">“중복 제거”는 무엇을 의미하나?</h3>
+<p>Overton 원본 정책 문헌은 같은 문헌의 버전/재게시, 언어 변형, 메타데이터 중복 등으로 인해 중복이 포함될 수 있다.<br>
+이 프로젝트에서는 분석 단위를 “고유 정책 문헌”으로 맞추기 위해 <code>policy_document_id</code> 기준으로 통합했다.</p>
+</section></details>
+<details>
+<summary>
+<strong>2) 지표 정의</strong> — 인용 건수 vs 고유 논문 수, 최근성, 강도, 자국 인용
+</summary>
+</details></section>
+<section id="인용-건수와-고유-논문-수는-왜-구분하나" class="level3">
+<h3 class="anchored" data-anchor-id="인용-건수와-고유-논문-수는-왜-구분하나">“인용 건수”와 “고유 논문 수”는 왜 구분하나?</h3>
+<ul>
+<li><strong>인용 건수</strong>: 정책 문헌이 DOI 논문을 몇 번 호출했는지의 총합. 즉 DOI 인용 기록의 개수<br>
+</li>
+<li><strong>고유 논문 수</strong>: 인용된 논문을 “서로 다른 논문” 기준으로 중복 제거한 개수</li>
+</ul>
+<p>정책이 “몇 번이나 근거를 호출했는가(빈도)”와 “얼마나 넓은 논문 풀을 썼는가(다양성)”는 다른 질문이어서 둘을 분리해 해석한다.</p>
+</section>
+<section id="최근성과-인용-강도는-어떻게-계산했나" class="level3">
+<h3 class="anchored" data-anchor-id="최근성과-인용-강도는-어떻게-계산했나">“최근성”과 “인용 강도”는 어떻게 계산했나?</h3>
+<ul>
+<li><strong>최근성(Recent share)</strong>: <code>2022–2024</code> 발행 논문이 차지하는 정책 인용 비중<br>
+</li>
+<li><strong>인용 강도(Intensity)</strong>: 집계 단위 내 고유 논문 1편당 평균 정책 인용수 = <code>인용수 / 고유 논문수</code></li>
+</ul>
+</section>
+<section id="자국-인용-비중self-citation-share은-어떻게-계산했나" class="level3">
+<h3 class="anchored" data-anchor-id="자국-인용-비중self-citation-share은-어떻게-계산했나">자국 인용 비중(self-citation share)은 어떻게 계산했나?</h3>
+<p>정책국 태그를 ISO2 국가코드로 매핑한 뒤(예: USA→US, UK→GB), 1저자 소속국 코드가 확인되는 인용만 분모로 삼아 계산했다.<br>
+즉 자국 인용 비중은 “전체 인용”이 아니라 <strong>1저자 국가코드가 확인되는 인용</strong>에서의 패턴이다.</p>
+</section>
+<section id="왜-1저자-소속국으로-정책국연구국-흐름을-정의했나" class="level3">
+<h3 class="anchored" data-anchor-id="왜-1저자-소속국으로-정책국연구국-흐름을-정의했나">왜 1저자 소속국으로 정책국→연구국 흐름을 정의했나?</h3>
+<p>가장 일관되게 추출 가능한 국가 속성이 1저자(First author) 소속국이었기 때문이다.<br>
+다만 공동저자 분포, 교신저자, 다기관 소속 등을 반영하지 못하므로 “대표성 있는 근사”로 해석해야 한다.</p>
+
+<details>
+<summary>
+<strong>3) 해석 주의</strong> — 다중라벨, 태그 중복, 국가코드 결측, 관측 시차
+</summary>
+</details></section>
+<section id="토픽도메인-집계에서-합이-100를-넘는-이유는" class="level3">
+<h3 class="anchored" data-anchor-id="토픽도메인-집계에서-합이-100를-넘는-이유는">토픽/도메인 집계에서 합이 100%를 넘는 이유는?</h3>
+<p>OpenAlex 토픽은 다중라벨(multi-label) 구조다. 논문 1편이 여러 토픽에 동시에 속할 수 있어, 토픽/도메인/세부분야 기준으로 집계하면 중복 합산이 발생한다.<br>
+따라서 토픽 기반 수치는 “토픽 인스턴스 기준”으로 이해해야 한다.</p>
+</section>
+<section id="출처-국가출처-유형-집계도-합이-커질-수-있나" class="level3">
+<h3 class="anchored" data-anchor-id="출처-국가출처-유형-집계도-합이-커질-수-있나">출처 국가/출처 유형 집계도 합이 커질 수 있나?</h3>
+<p>그럴 수 있다. Overton의 출처 국가/유형 태그는 상호배타적 분류가 아니라 태그 기반(상위–하위 동시 부여 포함)이라서, 문헌 1편이 여러 범주에 동시에 잡힐 수 있다.</p>
+</section>
+<section id="연도-추세에서-2022년-이후-하락은-정책이-과학을-덜-쓴다는-뜻인가" class="level3">
+<h3 class="anchored" data-anchor-id="연도-추세에서-2022년-이후-하락은-정책이-과학을-덜-쓴다는-뜻인가">연도 추세에서 2022년 이후 하락은 “정책이 과학을 덜 쓴다”는 뜻인가?</h3>
+<p>그렇게 단정하기 어렵다. 정책 문헌 수집/정리의 시차(커버리지 지연)와 발행 직후 인용 기록이 완전히 누적되지 않는 효과가 함께 작동했을 가능성이 크다.<br>
+따라서 최근 연도 수치는 “실시간 감소”라기보다 관측 시차가 섞인 신호로 해석하는 편이 안전하다.</p>
+
+<details>
+<summary>
+<strong>4) 특정 논점</strong> — 2012 평균, OA는 탐색 표식
+</summary>
+</details></section>
+<section id="년-무렵-문헌당-평균-인용-수가-특히-높게-보이는-이유는" class="level3">
+<h3 class="anchored" data-anchor-id="년-무렵-문헌당-평균-인용-수가-특히-높게-보이는-이유는">2012년 무렵 “문헌당 평균 인용 수”가 특히 높게 보이는 이유는?</h3>
+<p>문헌당 평균 인용 수는 분포의 꼬리가 긴 경우 영향을 크게 받는다. 그래서 “평균”이 높게 보일 때는, 일부 극단값의 영향인지, 아니면 분포 전체가 오른쪽으로 이동했는지부터 분리해 확인하는 편이 안전하다.</p>
+<p>아래 그림은 연도별로 평균과 함께 중앙값, 절단평균을 같이 보여준다. 또한 상위 1% 문서가 해당 연도 전체 인용에서 차지하는 비중을 함께 표시했다.</p>
+<p><img src="../Assets/Figures/si/pubyear_citations_per_doc_diagnostics.png" class="img-fluid" style="width:92.0%" alt="연도별 문헌당 인용 분포 진단: 평균·중앙값·절단평균과 상위 1% 기여"></p>
+<p>이 그림이 주는 핵심 메시지는 다음과 같다.</p>
+<ul>
+<li>2012년의 상승은 평균만의 현상이라기보다 중앙값과 절단평균에서도 함께 나타난다. 즉 일부 극단값만으로 설명되기보다 분포 전반의 변화가 섞였을 가능성이 있다.</li>
+<li>상위 1% 문서의 인용 기여는 2012년이 단독으로 튀지 않는다. 따라서 “2012년 피크”를 단일한 소수 문서의 효과로만 해석하기는 어렵다.</li>
+</ul>
+</section>
+<section id="oa오픈액세스-논문이-정책-인용에서-높게-보이는-건-인과인가" class="level3">
+<h3 class="anchored" data-anchor-id="oa오픈액세스-논문이-정책-인용에서-높게-보이는-건-인과인가">OA(오픈액세스) 논문이 정책 인용에서 높게 보이는 건 인과인가?</h3>
+<p>관측적으로는 정책 인용에서 OA 비중이 높게 나타난다. 다만 이것이 “OA라서 더 인용된다”는 인과로 바로 이어지지는 않는다.<br>
+정책 관련 연구가 OA로 출판될 가능성, 공공 펀딩 구조, 분야 구성 차이 등 교란 요인이 존재한다.</p>
+<p>추가 참고 그림은 아래 C 섹션에 묶어서 제공한다.</p>
+
+<hr>
+</section>
+
+<section id="appendix-c" class="level2">
+<h2 class="anchored" data-anchor-id="appendix-c">C. 추가 그림(확장팩)</h2>
+<p>이 섹션은 본문에서 “그림 수”를 줄이기 위해 제외했던 보조 근거를 묶어서 제공한다.<br>
+그림을 나열하기보다, 본문에서 어느 부분을 보완하는지 기준으로 묶어 두었다.</p>
+<section id="c1.-본문-2장-확장-top-n-토픽세부분야" class="level3">
+<h3 class="anchored" data-anchor-id="c1.-본문-2장-확장-top-n-토픽세부분야">C1. 본문 2장 확장: Top-N 토픽/세부분야</h3>
+<p>본문의 토픽 분석(그림 3–4)을 “목록 형태”로 보완하기 위한 참고 그림이다.</p>
+<p><img src="../Assets/Figures/v1/topic_top15.png" class="img-fluid" style="width:92.0%" alt="상위 15개 토픽 인용"></p>
+<p><img src="../Assets/Figures/v1/subfield_top15.png" class="img-fluid" style="width:92.0%" alt="상위 15개 세부분야 인용"></p>
+</section>
+<section id="c2.-본문-3장-확장-출처-유형-토픽열지도" class="level3">
+<h3 class="anchored" data-anchor-id="c2.-본문-3장-확장-출처-유형-토픽열지도">C2. 본문 3장 확장: 출처 유형 × 토픽(열지도)</h3>
+<p>본문 그림 9(출처 유형 × 도메인)을 토픽 수준으로 확장해, 유형별 “근거 조달의 결”을 더 세밀하게 보려는 참고 그림이다.</p>
+<p><img src="../Assets/Figures/v1/source_type_topic_heatmap.png" class="img-fluid" style="width:100.0%" alt="출처 유형×토픽 인용 열지도"></p>
+</section>
+<section id="c3.-oa-참고-그림도메인출처-유형" class="level3">
+<h3 class="anchored" data-anchor-id="c3.-oa-참고-그림도메인출처-유형">C3. OA 참고 그림(도메인/출처 유형)</h3>
+<p>본문 2.3의 OA 논의는 “가능한 설명 요인”을 남겨두는 수준으로만 다뤘다. 아래는 OA 비중을 요약한 참고 그림이다.</p>
+<p><img src="../Assets/Figures/v1/domain_oa_share.png" class="img-fluid" style="width:92.0%" alt="도메인별 OA/비OA 인용 비중"></p>
+<p><img src="../Assets/Figures/v1/source_type_oa_share.png" class="img-fluid" style="width:92.0%" alt="출처 유형별 OA 인용 비중"></p>
+</section>
+<section id="c4.-자국-인용-비중top10" class="level3">
+<h3 class="anchored" data-anchor-id="c4.-자국-인용-비중top10">C4. 자국 인용 비중(Top10)</h3>
+<p>본문 그림 11은 비교를 위해 선택 국가만 제시했다. 아래 그림은 상위 10개 정책국을 더 넓게 보여준다.<br>
+이 지표는 1저자 국가코드가 확인되는 인용만 대상으로 계산한다는 점에 유의해야 한다.</p>
+<p><img src="../Assets/Figures/v1/policy_country_self_share_top10.png" class="img-fluid" style="width:92.0%" alt="상위 10개 정책국 자국 인용 비중"></p>
+</section>
+<section id="c5.-openalex-subfield-overton-domain-네트워크top-100" class="level3">
+<h3 class="anchored" data-anchor-id="c5.-openalex-subfield-overton-domain-네트워크top-100">C5. OpenAlex subfield → Overton domain 네트워크(Top 100)</h3>
+<p>OpenAlex 세부분야(subfield)와 Overton 정책 분류(2nd_class) 사이의 인용 흐름을 네트워크로 나타냈다.</p>
+<ul>
+<li>노드는 상위 100개만 표시했다.</li>
+<li>연결선은 복잡도를 줄이기 위해, 각 노드에서 규모가 큰 상위 3개 연결만 남겼다.</li>
+<li>노드 크기는 선택된 노드 집합 안에서의 총 흐름으로 정의했다. 이는 연결선을 일부만 남기는 과정과는 별개다.</li>
+</ul>
+<p><img src="../Assets/Figures/si/overton_domain_subfield_network_n100.png" class="img-fluid" style="width:100.0%" alt="OpenAlex subfield → Overton domain network"></p>
+<style>
+.si-plot {
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 12px;
+  padding: 0.75rem;
+  background: rgba(255,255,255,0.6);
+}
+.si-plot__actions {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+  justify-content: flex-start;
+}
+.si-plot__link {
+  text-decoration: none;
+}
+.si-plot__btn {
+  border: 1px solid rgba(0,0,0,0.12);
+  border-radius: 999px;
+  padding: 0.35rem 0.75rem;
+  background: rgba(255,255,255,0.9);
+  cursor: pointer;
+}
+.si-plot__btn:hover {
+  background: rgba(255,255,255,1);
+}
+.si-plot iframe {
+  width: 100%;
+  border: 0;
+  margin-top: 0.8rem;
+  border-radius: 10px;
+}
+</style>
+
+<script>
+(function () {
+  function mountIframe(container) {
+    if (!container || container.querySelector('iframe')) return;
+    var src = container.getAttribute('data-src');
+    var height = container.getAttribute('data-height') || '650';
+    if (!src) return;
+
+    var iframe = document.createElement('iframe');
+    iframe.src = src;
+    iframe.height = height;
+    iframe.loading = 'lazy';
+    iframe.setAttribute('title', 'Interactive plot');
+    container.appendChild(iframe);
+  }
+
+  document.querySelectorAll('.si-plot').forEach(function (container) {
+    var btn = container.querySelector('.si-plot__btn');
+    if (!btn) return;
+    btn.addEventListener('click', function () {
+      mountIframe(container);
+      btn.remove();
+    });
+  });
+})();
+</script>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
