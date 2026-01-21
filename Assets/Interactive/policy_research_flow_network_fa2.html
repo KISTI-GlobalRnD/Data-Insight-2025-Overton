@@ -190,57 +190,94 @@
 
 	    function arrowFor(xs, ys, dstId) {
 	      if (!xs || !ys || xs.length < 2 || ys.length < 2) return [null, null, 0];
-	      var x0 = xs[xs.length - 2];
-	      var y0 = ys[ys.length - 2];
-	      var x1 = xs[xs.length - 1];
-	      var y1 = ys[ys.length - 1];
-
 	      var xa = (gd._fullLayout || {}).xaxis;
 	      var ya = (gd._fullLayout || {}).yaxis;
-	      var x0p = axisToPx(xa, x0, false);
-	      var y0p = axisToPx(ya, y0, true);
-	      var x1p = axisToPx(xa, x1, false);
-	      var y1p = axisToPx(ya, y1, true);
 
-	      if (x0p === null || y0p === null || x1p === null || y1p === null) {
-	        var dx0 = x1 - x0;
-	        var dy0 = y1 - y0;
+	      // Convert curve points to pixels so we can place the arrow a fixed distance
+	      // away from the destination node along the *curve* (not just the last segment).
+	      var px = [];
+	      var py = [];
+	      for (var i = 0; i < xs.length; i++) {
+	        var xpi = axisToPx(xa, xs[i], false);
+	        var ypi = axisToPx(ya, ys[i], true);
+	        if (xpi === null || ypi === null) {
+	          px = null;
+	          py = null;
+	          break;
+	        }
+	        px.push(xpi);
+	        py.push(ypi);
+	      }
+
+	      var xEnd = xs[xs.length - 1];
+	      var yEnd = ys[ys.length - 1];
+
+	      // Fallback: no pixel conversion available; use a simple data-space arrow.
+	      if (!px || !py) {
+	        var xPrev = xs[xs.length - 2];
+	        var yPrev = ys[ys.length - 2];
+	        var dx0 = xEnd - xPrev;
+	        var dy0 = yEnd - yPrev;
 	        var dist0 = Math.sqrt(dx0 * dx0 + dy0 * dy0);
-	        if (!dist0) return [x1, y1, 0];
+	        if (!dist0) return [xEnd, yEnd, 0];
 	        var ux0 = dx0 / dist0;
 	        var uy0 = dy0 / dist0;
 	        var off0 = Math.min(0.06, dist0 * 0.25);
-	        var ax0 = x1 - ux0 * off0;
-	        var ay0 = y1 - uy0 * off0;
+	        var ax0 = xEnd - ux0 * off0;
+	        var ay0 = yEnd - uy0 * off0;
 	        var rad0 = Math.atan2(dy0, dx0);
 	        var deg0 = (90 - (rad0 * 180 / Math.PI)) % 360;
 	        if (deg0 < 0) deg0 += 360;
 	        return [ax0, ay0, deg0];
 	      }
 
-	      var dx = x1p - x0p;
-	      var dy = y1p - y0p;
-	      var dist = Math.sqrt(dx * dx + dy * dy);
-	      if (!dist) return [x1, y1, 0];
-	      var ux = dx / dist;
-	      var uy = dy / dist;
+	      var totalLen = 0.0;
+	      for (var i = 1; i < px.length; i++) {
+	        var sdx = px[i] - px[i - 1];
+	        var sdy = py[i] - py[i - 1];
+	        totalLen += Math.sqrt(sdx * sdx + sdy * sdy);
+	      }
+	      if (!totalLen) return [xEnd, yEnd, 0];
 
 	      var dstSize = nodeSize[dstId];
 	      var dstRadius = (dstSize !== undefined && dstSize !== null && isFinite(dstSize)) ? (dstSize / 2.0) : 7.0;
 	      var pad = 8.0;
-	      var off = dstRadius + pad;
-	      off = Math.min(off, dist * 0.75);
+	      var targetOff = dstRadius + pad;
+	      if (targetOff >= totalLen) targetOff = totalLen * 0.5;
+	      targetOff = Math.min(targetOff, totalLen * 0.9);
 
-	      var axp = x1p - ux * off;
-	      var ayp = y1p - uy * off;
+	      // Walk backwards from the destination to find a point `targetOff` away along the curve.
+	      var acc = 0.0;
+	      var axp = px[px.length - 1];
+	      var ayp = py[py.length - 1];
+	      var tanDx = px[px.length - 1] - px[px.length - 2];
+	      var tanDy = py[py.length - 1] - py[py.length - 2];
+
+	      for (var i = px.length - 1; i > 0; i--) {
+	        var dx = px[i] - px[i - 1];
+	        var dy = py[i] - py[i - 1];
+	        var segLen = Math.sqrt(dx * dx + dy * dy);
+	        if (!segLen) continue;
+	        if (acc + segLen >= targetOff) {
+	          var back = (targetOff - acc) / segLen;
+	          axp = px[i] - back * dx;
+	          ayp = py[i] - back * dy;
+	          tanDx = dx;
+	          tanDy = dy;
+	          break;
+	        }
+	        acc += segLen;
+	      }
+
 	      var ax = pxToAxis(xa, axp, false);
 	      var ay = pxToAxis(ya, ayp, true);
 	      if (ax === null || ay === null) {
-	        ax = x1;
-	        ay = y1;
+	        ax = xEnd;
+	        ay = yEnd;
 	      }
 
-	      var rad = Math.atan2(dy, dx);
+	      // Plotly marker angles are screen-based; y increases downward in pixels.
+	      var rad = Math.atan2(-tanDy, tanDx);
 	      var deg = (90 - (rad * 180 / Math.PI)) % 360;
 	      if (deg < 0) deg += 360;
 	      return [ax, ay, deg];
