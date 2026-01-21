@@ -61,6 +61,7 @@
   }
 
   var nodePos = {};
+  var nodeSize = {};
   var nodeIndexByTrace = {};
   for (var ti = 0; ti < nodeTraceIdx.length; ti++) {
     var idx = nodeTraceIdx[ti];
@@ -68,6 +69,7 @@
     var cd = trn.customdata || [];
     var xs = trn.x || [];
     var ys = trn.y || [];
+    var ms = (trn.marker || {}).size;
     var map = {};
     for (var j = 0; j < cd.length; j++) {
       var row = cd[j] || [];
@@ -75,6 +77,12 @@
       if (!nodeId) continue;
       map[nodeId] = j;
       nodePos[nodeId] = [xs[j], ys[j]];
+      var s = null;
+      if (Array.isArray(ms)) s = ms[j];
+      else if (ms !== undefined && ms !== null) s = ms;
+      if (s !== null && isFinite(s)) {
+        if (nodeSize[nodeId] === undefined || s > nodeSize[nodeId]) nodeSize[nodeId] = s;
+      }
     }
     nodeIndexByTrace[idx] = map;
   }
@@ -156,21 +164,82 @@
 	    var koreaAy = [];
 	    var koreaAa = [];
 
-	    function arrowFor(xs, ys) {
+	    function axisToPx(axis, v, isY) {
+	      if (!axis) return null;
+	      if (typeof axis.l2p === 'function') return axis.l2p(v);
+	      if (typeof axis.d2p === 'function') return axis.d2p(v);
+	      if (typeof axis.c2p === 'function') return axis.c2p(v);
+	      var r = axis.range;
+	      if (!r || r.length !== 2 || axis._length === undefined || axis._offset === undefined) return null;
+	      var frac = (v - r[0]) / (r[1] - r[0]);
+	      if (isY) frac = 1 - frac;
+	      return axis._offset + frac * axis._length;
+	    }
+
+	    function pxToAxis(axis, p, isY) {
+	      if (!axis) return null;
+	      if (typeof axis.p2l === 'function') return axis.p2l(p);
+	      if (typeof axis.p2d === 'function') return axis.p2d(p);
+	      if (typeof axis.p2c === 'function') return axis.p2c(p);
+	      var r = axis.range;
+	      if (!r || r.length !== 2 || axis._length === undefined || axis._offset === undefined) return null;
+	      var frac = (p - axis._offset) / axis._length;
+	      if (isY) frac = 1 - frac;
+	      return r[0] + frac * (r[1] - r[0]);
+	    }
+
+	    function arrowFor(xs, ys, dstId) {
 	      if (!xs || !ys || xs.length < 2 || ys.length < 2) return [null, null, 0];
 	      var x0 = xs[xs.length - 2];
 	      var y0 = ys[ys.length - 2];
 	      var x1 = xs[xs.length - 1];
 	      var y1 = ys[ys.length - 1];
-	      var dx = x1 - x0;
-	      var dy = y1 - y0;
+
+	      var xa = (gd._fullLayout || {}).xaxis;
+	      var ya = (gd._fullLayout || {}).yaxis;
+	      var x0p = axisToPx(xa, x0, false);
+	      var y0p = axisToPx(ya, y0, true);
+	      var x1p = axisToPx(xa, x1, false);
+	      var y1p = axisToPx(ya, y1, true);
+
+	      if (x0p === null || y0p === null || x1p === null || y1p === null) {
+	        var dx0 = x1 - x0;
+	        var dy0 = y1 - y0;
+	        var dist0 = Math.sqrt(dx0 * dx0 + dy0 * dy0);
+	        if (!dist0) return [x1, y1, 0];
+	        var ux0 = dx0 / dist0;
+	        var uy0 = dy0 / dist0;
+	        var off0 = Math.min(0.06, dist0 * 0.25);
+	        var ax0 = x1 - ux0 * off0;
+	        var ay0 = y1 - uy0 * off0;
+	        var rad0 = Math.atan2(dy0, dx0);
+	        var deg0 = (90 - (rad0 * 180 / Math.PI)) % 360;
+	        if (deg0 < 0) deg0 += 360;
+	        return [ax0, ay0, deg0];
+	      }
+
+	      var dx = x1p - x0p;
+	      var dy = y1p - y0p;
 	      var dist = Math.sqrt(dx * dx + dy * dy);
 	      if (!dist) return [x1, y1, 0];
 	      var ux = dx / dist;
 	      var uy = dy / dist;
-	      var off = Math.min(0.06, dist * 0.25);
-	      var ax = x1 - ux * off;
-	      var ay = y1 - uy * off;
+
+	      var dstSize = nodeSize[dstId];
+	      var dstRadius = (dstSize !== undefined && dstSize !== null && isFinite(dstSize)) ? (dstSize / 2.0) : 7.0;
+	      var pad = 8.0;
+	      var off = dstRadius + pad;
+	      off = Math.min(off, dist * 0.75);
+
+	      var axp = x1p - ux * off;
+	      var ayp = y1p - uy * off;
+	      var ax = pxToAxis(xa, axp, false);
+	      var ay = pxToAxis(ya, ayp, true);
+	      if (ax === null || ay === null) {
+	        ax = x1;
+	        ay = y1;
+	      }
+
 	      var rad = Math.atan2(dy, dx);
 	      var deg = (90 - (rad * 180 / Math.PI)) % 360;
 	      if (deg < 0) deg += 360;
@@ -191,7 +260,7 @@
 	      var xs = c[0];
 	      var ys = c[1];
 	      var isK = (s === koreaLabel) || (t === koreaLabel);
-	      var arr = arrowFor(xs, ys);
+	      var arr = arrowFor(xs, ys, t);
 
 	      if (isK) {
 	        koreaX = koreaX.concat(xs, [null]);
