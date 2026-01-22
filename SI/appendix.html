@@ -410,6 +410,50 @@ Note
 <p><strong>자국 인용 비중(self-citation share)은 어떻게 계산했나?</strong></p>
 <p>정책 출처 국가 태그를 2자리 국가코드로 매핑한 뒤(예: USA→US, UK→GB), 1저자 소속국 코드가 확인되는 인용만 분모로 삼아 계산했다.<br>
 즉 자국 인용 비중은 “전체 인용”이 아니라 <strong>1저자 국가코드가 확인되는 인용</strong>에서의 패턴이다.</p>
+<p><span id="self-citation-context"></span></p>
+<p>아래 표는 자국 인용 비중을 일부 비교 집단에서 요약한 것이다. 자국 인용 비중은 1저자 국가코드가 확인되는 인용만 분모로 쓴다.<br>
+국가 간 비교는 정책 문헌의 커버리지와 출처 구성 차이가 섞일 수 있어, “높다”나 “낮다”로 단정하기보다 점검 지표로 두는 것이 좋다.</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>정책 출처</th>
+<th style="text-align: right;">1저자 국가코드 확인 인용 수</th>
+<th style="text-align: right;">자국 인용 비중</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>미국</td>
+<td style="text-align: right;">8,167,080</td>
+<td style="text-align: right;">62.9%</td>
+</tr>
+<tr class="even">
+<td>영국</td>
+<td style="text-align: right;">7,193,932</td>
+<td style="text-align: right;">19.6%</td>
+</tr>
+<tr class="odd">
+<td>독일</td>
+<td style="text-align: right;">2,335,571</td>
+<td style="text-align: right;">11.7%</td>
+</tr>
+<tr class="even">
+<td>네덜란드</td>
+<td style="text-align: right;">371,817</td>
+<td style="text-align: right;">11.9%</td>
+</tr>
+<tr class="odd">
+<td>일본</td>
+<td style="text-align: right;">162,595</td>
+<td style="text-align: right;">28.9%</td>
+</tr>
+<tr class="even">
+<td>한국</td>
+<td style="text-align: right;">30,648</td>
+<td style="text-align: right;">4.1%</td>
+</tr>
+</tbody>
+</table>
 <p><strong>왜 1저자 소속국으로 정책 출처 국가→연구국 흐름을 정의했나?</strong></p>
 <p>가장 일관되게 추출 가능한 국가 속성이 1저자(First author) 소속국이었기 때문이다.<br>
 다만 공동저자 분포, 교신저자, 다기관 소속 등을 반영하지 못하므로 “대표성 있는 근사”로 해석해야 한다.</p>
@@ -511,18 +555,30 @@ Note
 그림을 나열하기보다, 본문에서 어느 부분을 보완하는지 기준으로 묶어 두었다. 아래 일부 그림은 v1에서 가져온 참고 그림이라 본문과 스타일이 다를 수 있다.</p>
 <section id="c1.-본문-2장-확장-top-n-토픽세부분야" class="level3">
 <h3 class="anchored" data-anchor-id="c1.-본문-2장-확장-top-n-토픽세부분야">C1. 본문 2장 확장: Top-N 토픽/세부분야</h3>
-<p>본문의 토픽 분석(그림 3–4)을 “목록 형태”로 보완하기 위한 참고 그림이다.</p>
+<p>이 그림은 본문에서 토픽 산점도로 본 패턴을, 상위 목록으로 빠르게 확인하기 위한 참고 자료다.</p>
+<ul>
+<li>본문 보완: 그림 3–4</li>
+<li>독자 질문: 정책에서 많이 호출된 토픽과 세부분야는 무엇인가</li>
+</ul>
 <p><img src="../Assets/Figures/v1/topic_top15.png" class="img-fluid" style="width:92.0%" alt="상위 15개 토픽 인용"></p>
 <p><img src="../Assets/Figures/v1/subfield_top15.png" class="img-fluid" style="width:92.0%" alt="상위 15개 세부분야 인용"></p>
 </section>
 <section id="c2.-본문-3장-확장-출처-유형-토픽열지도" class="level3">
 <h3 class="anchored" data-anchor-id="c2.-본문-3장-확장-출처-유형-토픽열지도">C2. 본문 3장 확장: 출처 유형 × 토픽(열지도)</h3>
-<p>본문 그림 9(출처 유형 × 도메인)을 토픽 수준으로 확장해, 유형별 “근거 조달의 결”을 더 세밀하게 보려는 참고 그림이다.</p>
+<p>본문 그림 9를 토픽 수준으로 확장해, 유형별로 어떤 토픽을 더 자주 호출하는지의 결을 확인하기 위한 참고 그림이다.</p>
+<ul>
+<li>본문 보완: 그림 9</li>
+<li>독자 질문: 같은 출처 유형이라도 근거의 분야와 토픽 구성이 달라지는가</li>
+</ul>
 <p><img src="../Assets/Figures/v1/source_type_topic_heatmap.png" class="img-fluid" style="width:100.0%" alt="출처 유형×토픽 인용 열지도"></p>
 </section>
 <section id="c3.-oa-참고-그림도메인출처-유형" class="level3">
 <h3 class="anchored" data-anchor-id="c3.-oa-참고-그림도메인출처-유형">C3. OA 참고 그림(도메인/출처 유형)</h3>
 <p>본문 2.3의 OA 논의는 “가능한 설명 요인”을 남겨두는 수준으로만 다뤘다. 아래는 OA 비중을 요약한 참고 그림이다.</p>
+<ul>
+<li>본문 보완: 2.3 OA 표식</li>
+<li>해석 주의: 이 그림만으로 OA 효과를 인과로 단정하지 않는다</li>
+</ul>
 <p><img src="../Assets/Figures/v1/domain_oa_share.png" class="img-fluid" style="width:92.0%" alt="도메인별 OA/비OA 인용 비중"></p>
 <p><img src="../Assets/Figures/v1/source_type_oa_share.png" class="img-fluid" style="width:92.0%" alt="출처 유형별 OA 인용 비중"></p>
 </section>
@@ -530,16 +586,21 @@ Note
 <h3 class="anchored" data-anchor-id="c4.-자국-인용-비중top10">C4. 자국 인용 비중(Top10)</h3>
 <p>본문 그림 11은 비교를 위해 선택 국가만 제시했다. 아래 그림은 상위 10개 정책 출처 국가를 더 넓게 보여준다.<br>
 이 지표는 1저자 국가코드가 확인되는 인용만 대상으로 계산한다는 점에 유의해야 한다.</p>
+<ul>
+<li>본문 보완: 4.2 그림 11</li>
+<li>독자 질문: 선택 국가 밖에서도 자국 인용 비중은 어느 정도 범위에 분포하는가</li>
+</ul>
 <p><img src="../Assets/Figures/v1/policy_country_self_share_top10.png" class="img-fluid" style="width:92.0%" alt="상위 10개 정책 출처 국가 자국 인용 비중"></p>
 </section>
 <section id="c5.-openalex-subfield-overton-domain-네트워크top-100" class="level3">
 <h3 class="anchored" data-anchor-id="c5.-openalex-subfield-overton-domain-네트워크top-100">C5. OpenAlex subfield → Overton domain 네트워크(Top 100)</h3>
 <p>OpenAlex 세부분야(subfield)와 Overton 정책 분류(2nd_class) 사이의 인용 흐름을 네트워크로 나타냈다.</p>
 <ul>
-<li>노드는 상위 100개만 표시했다.</li>
-<li>연결선은 복잡도를 줄이기 위해, 각 노드에서 규모가 큰 상위 3개 연결만 남겼다.</li>
-<li>노드 크기는 선택된 노드 집합 안에서의 총 흐름으로 정의했다. 이는 연결선을 일부만 남기는 과정과는 별개다.</li>
+<li>본문 보완: 3장과 4장의 “허브 구조”를 분류 수준에서 참고로 확장한다</li>
+<li>독자 질문: 어떤 세부분야가 어떤 정책 분류로 더 자주 이동하는가</li>
 </ul>
+<p><strong>표시 규칙</strong> - 노드는 상위 100개만 표시했다. - 연결선은 복잡도를 줄이기 위해, 각 노드에서 규모가 큰 상위 3개 연결만 남겼다. - 노드 크기는 선택된 노드 집합 안에서의 총 흐름으로 정의했다. 이는 연결선을 일부만 남기는 과정과는 별개다.</p>
+<p><strong>해석 주의</strong> - 표시 규칙은 가독성을 위한 제한이다. 그림에 보이는 연결이 전체 연결을 의미하지 않는다.</p>
 <p><img src="../Assets/Figures/si/overton_domain_subfield_network_n100.png" class="img-fluid" style="width:100.0%" alt="OpenAlex subfield → Overton domain network"></p>
 <style>
 .si-plot {
