@@ -60,7 +60,7 @@
     "fig.korea.alt": "Korea policy–research flows in two directions (inbound/sourcing; top 10)",
     "fig.network.alt":
       "Policy–research evidence flow network (top 50 nodes; top-3 inbound/outbound links per node)",
-    "fig.hub.alt": "Policy citations by policy source country (top 10 + Korea)",
+    "fig.hub.alt": "Policy citations by policy source entity (top 10 + Korea)",
     "fig.domain.alt": "Policy citations by domain (top 10)",
     "fig.topics.alt": "Topics: citation intensity vs recency",
     "fig.pubyear.alt": "Policy citations, document counts, and average citations per document by publication year",
@@ -68,27 +68,27 @@
     "story.korea.kicker": "1 · Mirror",
     "story.korea.title": "Korea: inbound and sourcing paths diverge",
     "story.korea.body":
-      "From Korea’s perspective, the path through which Korean research is cited in global policy (inbound) and the path through which Korean policy pulls evidence (sourcing) do not move in the same way. Inbound citations are often observed via hub routes such as the UK, international organizations, and the US, while sourcing shows stronger dependence on specific channels (e.g., a higher US share).",
+      "Inbound citations of Korean research are distributed across multiple hubs (UK, IGOs, US), while Korea’s sourcing is more concentrated—over half of outbound citations point to the United States. The inbound and sourcing paths diverge.",
     "story.network.kicker": "2 · Map",
     "story.network.title": "Evidence spreads via transfers, not direct flights",
     "story.network.body":
-      "We focus on the top 50 policy sources and research countries, keeping only each node’s top-3 inbound and top-3 outbound links to reveal the backbone of the flow. Connections concentrate around a few hubs, making it easier to see which hubs Korea is tied to.",
+      "Keeping only the top-3 inbound and outbound links per node still reveals the backbone of the network. Evidence flows cluster around a few transfer hubs rather than moving via direct one-to-one routes.",
     "story.hub.kicker": "3 · Hubs",
     "story.hub.title": "Policy evidence accumulates in a few sources",
     "story.hub.body":
-      "Total policy citations are highly concentrated in a small set of sources—IGOs, the United States, the United Kingdom, and the EU. This anchors the “hub” pattern as a quantitative fact, not just a visual impression.",
+      "Total policy citations concentrate in a small set of source entities—IGOs, the United States, the United Kingdom, and the EU—with a steep drop after the top tier.",
     "story.domain.kicker": "4 · Skew",
     "story.domain.title": "High volume doesn’t mean citing all science",
     "story.domain.body":
-      "At the domain level, policy citations are heavily skewed toward a few fields. So “policy uses a lot of science” doesn’t automatically mean it draws on a wide range of science; it shows where policy documents most often require evidence.",
+      "Social Sciences account for the largest share of policy citations, followed by Health and Physical Sciences. High volume does not imply broad coverage; demand concentrates in a few domains.",
     "story.topics.kicker": "5 · Pace",
     "story.topics.title": "Mature and fast-rising agendas move differently",
     "story.topics.body":
-      "Plotting topics by citation intensity (policy citations per paper) and recency (share in the last three years) separates mature topics that are steadily cited from high-growth topics that surge quickly. Shock-driven agendas like pandemics or climate can see both recency and intensity rise together, while infrastructural agendas tend to remain steadier.",
+      "Plotting topics by citation intensity and recency separates high-intensity policy/economics topics from shock-driven agendas (e.g., pandemics, environment) that spike in recent years.",
     "story.pubyear.kicker": "6 · Scale",
     "story.pubyear.title": "Policy citations keep rising",
     "story.pubyear.body":
-      "Since the 2010s, DOI citations and the number of policy documents rose rapidly, peaking around 2021. Average citations per document can spike in specific years, but in the longer run it stays around ~18 on average. The most recent 4–5 years may appear lower because policy citations take time to accumulate after publication.",
+      "DOI-linked citations and policy documents rise rapidly after the 2010s, peaking around 2021. The most recent years appear lower because citations accumulate with lag; citations per document hover in the mid-teens to ~20.",
     "explore.title": "Explore further",
     "explore.lede":
       "Continue with the full report (PDF), interactive versions of the figures, and the Supplementary Information.",
