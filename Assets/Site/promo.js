@@ -57,18 +57,18 @@
     "intro.stat.coverage.value": "97.6%",
     "intro.meta.snapshot": "Data snapshot: Overton 2025.02 · OpenAlex 2025.06 · DOI-based matching",
     "intro.meta.link": "Scroll the story",
-    "fig.korea.alt": "Korea policy–research flows in two directions (inbound/sourcing; top 10)",
+    "fig.korea.alt": "Korea policy–research flows (inbound/sourcing) with expected-baseline comparison (top 10)",
     "fig.network.alt":
       "Policy–research evidence flow network (top 50 nodes; top-3 inbound/outbound links per node)",
-    "fig.hub.alt": "Policy citations by policy source entity (top 10 + Korea)",
+    "fig.hub.alt": "Policy citations by policy source entity (total vs per-document; top 10 + Korea)",
     "fig.domain.alt": "Policy citations by domain (top 10)",
     "fig.topics.alt": "Topics: citation intensity vs recency",
     "fig.pubyear.alt": "Policy citations, document counts, and average citations per document by publication year",
     "story.steps.aria": "Story steps",
     "story.korea.kicker": "1 · Mirror",
-    "story.korea.title": "Korea: inbound and sourcing paths diverge",
+    "story.korea.title": "Korea: inbound and sourcing take different routes",
     "story.korea.body":
-      "Inbound citations of Korean research are distributed across multiple hubs (UK, IGOs, US), while Korea’s sourcing is more concentrated—over half of outbound citations point to the United States. The inbound and sourcing paths diverge.",
+      "Inbound citations of Korean research spread across multiple hubs, while Korea’s sourcing is far more concentrated—more so than an expected baseline would suggest. The map for “what comes in” is not the same as the map for “what gets pulled in.”",
     "story.network.kicker": "2 · Map",
     "story.network.title": "Evidence spreads via transfers, not direct flights",
     "story.network.body":
@@ -76,11 +76,11 @@
     "story.hub.kicker": "3 · Hubs",
     "story.hub.title": "Policy evidence accumulates in a few sources",
     "story.hub.body":
-      "Total policy citations concentrate in a small set of source entities—IGOs, the United States, the United Kingdom, and the EU—with a steep drop after the top tier.",
+      "By total volume, citations concentrate in a small set of sources (IGOs, the US, the UK, the EU). But per-document intensity reshuffles the ranking slightly—“more” and “denser” are not always the same.",
     "story.domain.kicker": "4 · Skew",
     "story.domain.title": "High volume doesn’t mean citing all science",
     "story.domain.body":
-      "Social Sciences account for the largest share of policy citations, followed by Health and Physical Sciences. High volume does not imply broad coverage; demand concentrates in a few domains.",
+      "Social Sciences dominate policy citations, followed by Health and Physical Sciences. A non-trivial slice also stays in “other / unclassified” because field-level tags are missing.",
     "story.topics.kicker": "5 · Pace",
     "story.topics.title": "Mature and fast-rising agendas move differently",
     "story.topics.body":
