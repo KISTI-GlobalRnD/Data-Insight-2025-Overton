@@ -4,7 +4,7 @@
     "href": "SI/next_questions_en.html",
     "title": "Next questions",
     "section": "",
-    "text": "← SI Overview · Report (PDF, rev) · Korean page\nThis page lists three follow-up questions worth checking after reading the report.\nThey focus on analyses needed to validate the observed patterns or to explain “why this pattern emerges.”"
+    "text": "← SI Overview · Report (PDF) · Korean page\nThis page lists three follow-up questions worth checking after reading the report.\nThey focus on analyses needed to validate the observed patterns or to explain “why this pattern emerges.”"
   },
   {
     "objectID": "SI/next_questions_en.html#prioritized-follow-up-questions-3",
@@ -25,7 +25,7 @@
     "href": "SI/interactive_en.html",
     "title": "Interactive",
     "section": "",
-    "text": "← SI Overview · Report (PDF, rev) · Korean page\nAmong the figures in the report, the ones worth zooming in, toggling items, and inspecting values are provided here as interactive versions for freer web exploration.\nThe plots below are loaded only after you click the button, so the page itself opens quickly.\nRecommended order\nTips\nCaptions"
+    "text": "← SI Overview · Report (PDF) · Korean page\nAmong the figures in the report, the ones worth zooming in, toggling items, and inspecting values are provided here as interactive versions for freer web exploration.\nThe plots below are loaded only after you click the button, so the page itself opens quickly.\nRecommended order\nTips\nCaptions"
   },
   {
     "objectID": "SI/interactive_en.html#time-policy-publication-year",
@@ -67,7 +67,7 @@
     "href": "SI/next_questions.html",
     "title": "다음 질문",
     "section": "",
-    "text": "← SI 개요 · 보고서(PDF, rev)\n이 페이지는 보고서를 읽고 이어서 확인해볼 만한 후속 질문 3가지를 정리한다.\n관측을 한 단계 더 검증하거나, “왜 이런 패턴이 나오는가”를 설명하기 위해 필요한 분석을 중심으로 뽑았다."
+    "text": "← SI 개요 · 보고서(PDF)\n이 페이지는 보고서를 읽고 이어서 확인해볼 만한 후속 질문 3가지를 정리한다.\n관측을 한 단계 더 검증하거나, “왜 이런 패턴이 나오는가”를 설명하기 위해 필요한 분석을 중심으로 뽑았다."
   },
   {
     "objectID": "SI/next_questions.html#우선순위-확장-질문3개",
@@ -88,7 +88,7 @@
     "href": "SI/interactive.html",
     "title": "인터랙티브",
     "section": "",
-    "text": "← SI 개요 · 보고서(PDF, rev)\n보고서 본문 그림 가운데 확대해서 보고, 항목을 켜고 끄고, 값도 바로 확인하면 좋은 그림은 웹에서 더 자유도 높게 탐색할 수 있도록 인터랙티브 버전을 제공한다.\n아래 플롯은 버튼을 눌러야 로드되므로, 페이지 자체는 가볍게 열린다.\n추천 탐색 순서\n사용 팁\n캡션 언어"
+    "text": "← SI 개요 · 보고서(PDF)\n보고서 본문 그림 가운데 확대해서 보고, 항목을 켜고 끄고, 값도 바로 확인하면 좋은 그림은 웹에서 더 자유도 높게 탐색할 수 있도록 인터랙티브 버전을 제공한다.\n아래 플롯은 버튼을 눌러야 로드되므로, 페이지 자체는 가볍게 열린다.\n추천 탐색 순서\n사용 팁\n캡션 언어"
   },
   {
     "objectID": "SI/interactive.html#시간정책문헌-연도",
@@ -165,7 +165,7 @@
     "href": "SI/index.html#바로가기",
     "title": "보조자료(SI) — 개요",
     "section": "바로가기",
-    "text": "바로가기\n\n보고서(PDF, rev)\n인터랙티브\n부록\n다음 질문"
+    "text": "바로가기\n\n보고서(PDF)\n인터랙티브\n부록\n다음 질문"
   },
   {
     "objectID": "SI/index.html#업데이트",
@@ -179,7 +179,7 @@
     "href": "SI/appendix.html",
     "title": "부록",
     "section": "",
-    "text": "← SI 개요 · 인터랙티브 · 보고서(PDF, rev)\n본문에서 언급한 수치와 패턴을 더 안전하게 해석할 수 있도록, 커버리지·태깅, 지표 정의·해석 주의, 추가 그림을 정리했다.\n바로가기: A. 데이터 커버리지·태깅 · B. 정의·해석 · C. 추가 그림"
+    "text": "← SI 개요 · 인터랙티브 · 보고서(PDF)\n본문에서 언급한 수치와 패턴을 더 안전하게 해석할 수 있도록, 커버리지·태깅, 지표 정의·해석 주의, 추가 그림을 정리했다.\n바로가기: A. 데이터 커버리지·태깅 · B. 정의·해석 · C. 추가 그림"
   },
   {
     "objectID": "SI/appendix.html#appendix-a",
@@ -242,7 +242,7 @@
     "href": "SI/index_en.html#links",
     "title": "Supplementary (SI) — Overview",
     "section": "Links",
-    "text": "Links\n\nReport (PDF, rev)\nInteractive\nAppendix\nNext questions"
+    "text": "Links\n\nReport (PDF)\nInteractive\nAppendix\nNext questions"
   },
   {
     "objectID": "SI/index_en.html#updates",
@@ -256,7 +256,7 @@
     "href": "SI/appendix_en.html",
     "title": "Appendix",
     "section": "",
-    "text": "← SI Overview · Interactive · Report (PDF, rev) · Korean page\nThis appendix compiles coverage & tagging notes, metric definitions & interpretation cautions, and additional figures so the numbers and patterns in the main text can be interpreted more safely.\nJump to: A. Coverage & tagging · B. Definitions & interpretation · C. Additional figures"
+    "text": "← SI Overview · Interactive · Report (PDF) · Korean page\nThis appendix compiles coverage & tagging notes, metric definitions & interpretation cautions, and additional figures so the numbers and patterns in the main text can be interpreted more safely.\nJump to: A. Coverage & tagging · B. Definitions & interpretation · C. Additional figures"
   },
   {
     "objectID": "SI/appendix_en.html#appendix-a",
