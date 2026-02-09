@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
 
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.4.550">
@@ -53,21 +53,22 @@ ul.task-list li input[type="checkbox"] {
   ],
   "show-item-context": false,
   "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
+    "search-no-results-text": "일치 없음",
+    "search-matching-documents-text": "일치된 문서",
+    "search-copy-link-title": "검색 링크 복사",
+    "search-hide-matches-text": "추가 검색 결과 숨기기",
+    "search-more-match-text": "추가 검색결과",
+    "search-more-matches-text": "추가 검색결과",
+    "search-clear-button-title": "제거",
     "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
+    "search-detached-cancel-button-title": "취소",
+    "search-submit-button-title": "검색",
+    "search-label": "검색"
   }
 }</script>
 
 
+<link rel="stylesheet" href="../Assets/Site/si.css">
 </head>
 
 <body class="nav-fixed">
@@ -81,8 +82,8 @@ ul.task-list li input[type="checkbox"] {
     <span class="navbar-title">Overton × OpenAlex</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+            <div id="quarto-search" class="" title="검색"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="탐색 전환" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -131,7 +132,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
+    <h2 id="toc-title">목차</h2>
    
   <ul>
   <li><a href="#appendix-a" id="toc-appendix-a" class="nav-link active" data-scroll-target="#appendix-a">A. 데이터 커버리지·태깅</a>
@@ -189,7 +190,7 @@ ul.task-list li input[type="checkbox"] {
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Note
+노트
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -207,7 +208,7 @@ Note
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Tip
+힌트
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -231,7 +232,7 @@ Tip
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Note
+노트
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -365,7 +366,7 @@ Note
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Note
+노트
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -947,98 +948,13 @@ Note
 </summary>
 <p><img src="../Assets/Figures/si/country_domain_demand_supply_delta_heatmap.png" class="img-fluid" style="width:96.0%" alt="Domain demand minus supply delta heatmap"></p>
 </details>
-<style>
-.si-plot {
-  border: 1px solid rgba(0,0,0,0.08);
-  border-radius: 12px;
-  padding: 0.75rem;
-  background: rgba(255,255,255,0.6);
-}
-.si-plot__actions {
-  display: flex;
-  gap: 0.6rem;
-  align-items: center;
-  justify-content: flex-start;
-}
-.si-plot__link {
-  text-decoration: none;
-}
-.si-plot__btn {
-  border: 1px solid rgba(0,0,0,0.12);
-  border-radius: 999px;
-  padding: 0.35rem 0.75rem;
-  background: rgba(255,255,255,0.9);
-  cursor: pointer;
-}
-.si-plot__btn:hover {
-  background: rgba(255,255,255,1);
-}
-.si-plot__badge {
-  border: 1px solid rgba(0,0,0,0.12);
-  border-radius: 999px;
-  padding: 0.2rem 0.6rem;
-  background: rgba(255,255,255,0.9);
-  font-size: 0.85rem;
-  color: rgba(17,24,39,0.85);
-}
-.si-plot iframe {
-  width: 100%;
-  border: 0;
-  margin-top: 0.8rem;
-  border-radius: 10px;
-}
-</style>
-
-<script>
-(function () {
-  function openDetailsForHash() {
-    if (!window.location.hash) return;
-    var id = window.location.hash.slice(1);
-    if (!id) return;
-    var target = document.getElementById(id);
-    if (!target) return;
-
-    var details = target.closest('details');
-    while (details) {
-      details.open = true;
-      details = details.parentElement ? details.parentElement.closest('details') : null;
-    }
-  }
-
-  function mountIframe(container) {
-    if (!container || container.querySelector('iframe')) return;
-    var src = container.getAttribute('data-src');
-    var height = container.getAttribute('data-height') || '650';
-    var title = container.getAttribute('data-title') || 'Interactive plot';
-    if (!src) return;
-
-    var iframe = document.createElement('iframe');
-    iframe.src = src;
-    iframe.height = height;
-    iframe.loading = 'lazy';
-    iframe.setAttribute('title', title);
-    container.appendChild(iframe);
-  }
-
-  document.querySelectorAll('.si-plot').forEach(function (container) {
-    var btn = container.querySelector('.si-plot__btn');
-    if (!btn) return;
-    btn.addEventListener('click', function () {
-      mountIframe(container);
-      btn.remove();
-    });
-  });
-
-  openDetailsForHash();
-  window.addEventListener('hashchange', openDetailsForHash);
-})();
-</script>
 
 
 </section>
 </section>
 
 </main> <!-- /main -->
+<script defer="" src="../Assets/Site/si.js"></script>
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -1093,12 +1009,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // flash "checked"
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "Copied!");
+    button.setAttribute("title", "복사완료!");
     let tooltip;
     if (window.bootstrap) {
       button.setAttribute("data-bs-toggle", "tooltip");
       button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "Copied!");
+      button.setAttribute("data-bs-title", "복사완료!");
       tooltip = new bootstrap.Tooltip(button, 
         { trigger: "manual", 
           customClass: "code-copy-button-tooltip",

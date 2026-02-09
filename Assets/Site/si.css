@@ -1,0 +1,137 @@
+:root {
+  --si-switch-border: rgba(255, 255, 255, 0.18);
+  --si-switch-bg: rgba(8, 10, 16, 0.22);
+  --si-switch-text: rgba(255, 255, 255, 0.76);
+  --si-switch-text-strong: rgba(255, 255, 255, 0.92);
+  --si-switch-active-bg: rgba(255, 255, 255, 0.16);
+  --si-focus: rgba(122, 166, 255, 0.75);
+}
+
+/* Language switch (SI pages) */
+.si-lang-switch {
+  display: inline-flex;
+  gap: 0.25rem;
+  padding: 0.25rem;
+  border-radius: 999px;
+  border: 1px solid var(--si-switch-border);
+  background: var(--si-switch-bg);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.26);
+}
+
+.si-lang-switch--floating {
+  position: fixed;
+  top: 0.95rem;
+  right: 1rem;
+  z-index: 9999;
+}
+
+.si-lang-btn {
+  appearance: none;
+  border: none;
+  border-radius: 999px;
+  padding: 0.48rem 0.76rem;
+  background: transparent;
+  color: var(--si-switch-text);
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+  cursor: pointer;
+  text-decoration: none;
+  line-height: 1;
+}
+
+.si-lang-btn:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--si-switch-text-strong);
+}
+
+.si-lang-btn.is-active {
+  background: var(--si-switch-active-bg);
+  color: var(--si-switch-text-strong);
+}
+
+.si-lang-btn:focus-visible {
+  outline: 2px solid var(--si-focus);
+  outline-offset: 2px;
+}
+
+/* SI interactive helpers (shared across SI pages) */
+.si-caption-en {
+  margin: 0.35rem 0 0.65rem 0;
+  font-size: 0.95rem;
+  color: rgba(17, 24, 39, 0.65);
+  font-style: italic;
+}
+
+.si-guidance {
+  margin: 0.35rem 0 0.85rem 0;
+}
+
+.si-guidance ul {
+  margin: 0.25rem 0 0 1.1rem;
+}
+
+.si-section-ref {
+  margin: 0.2rem 0 0.8rem 0;
+  color: rgba(17, 24, 39, 0.75);
+}
+
+.si-section-ref a {
+  text-decoration: none;
+}
+
+.si-plot {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  padding: 0.75rem;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.si-plot__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.si-plot__link {
+  text-decoration: none;
+}
+
+.si-plot__btn {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 999px;
+  padding: 0.35rem 0.75rem;
+  background: rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+}
+
+.si-plot__btn:hover {
+  background: rgba(255, 255, 255, 1);
+}
+
+.si-plot__badge {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 999px;
+  padding: 0.2rem 0.6rem;
+  background: rgba(255, 255, 255, 0.9);
+  font-size: 0.85rem;
+  color: rgba(17, 24, 39, 0.85);
+}
+
+.si-plot iframe {
+  width: 100%;
+  border: 0;
+  margin-top: 0.8rem;
+  border-radius: 10px;
+}
+
+@media (max-width: 991px) {
+  /* Avoid covering the navbar toggler on smaller screens */
+  .si-lang-switch--floating {
+    top: 4.2rem;
+  }
+}
