@@ -28,6 +28,7 @@
       "By combining Overton citation logs with OpenAlex metadata, we summarize in one page <strong>when, what, and where</strong> policy pulls evidence from science.",
     "hero.actions.aria": "Quick links",
     "hero.cta.summary": "View key summary",
+    "hero.cta.report": "Report PDF",
     "hero.cta.si": "Go to Supplementary Information",
     "bridge.aria": "Key message",
     "bridge.eyebrow": "Why this map matters",
