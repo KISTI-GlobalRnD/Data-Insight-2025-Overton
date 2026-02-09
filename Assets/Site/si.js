@@ -1,7 +1,8 @@
 (function () {
   "use strict";
 
-  const LANG_STORAGE_KEY = "si_lang";
+  const LANG_KEYS = ["promo_lang", "si_lang"];
+  const SUPPORTED_LANGS = ["ko", "en"];
 
   function getFileName() {
     try {
@@ -14,65 +15,80 @@
   }
 
   function isSIPage(fileName) {
+    if (!isInSIDir()) return false;
     return (
       fileName === "index.html" ||
       fileName === "interactive.html" ||
       fileName === "appendix.html" ||
-      fileName === "next_questions.html" ||
-      fileName === "index_en.html" ||
-      fileName === "interactive_en.html" ||
-      fileName === "appendix_en.html" ||
-      fileName === "next_questions_en.html"
+      fileName === "next_questions.html"
     );
   }
 
-  function computeLangUrls(fileName) {
-    const isEn = fileName.endsWith("_en.html");
-    const base = fileName.replace(/_en\.html$/, "").replace(/\.html$/, "");
-    const korFile = `${base}.html`;
-    const enFile = `${base}_en.html`;
-
-    const url = new URL(window.location.href);
-    const params = new URLSearchParams(url.search);
-    params.delete("lang");
-    const search = params.toString() ? `?${params.toString()}` : "";
-    const hash = url.hash || "";
-
-    return {
-      isEn,
-      base,
-      korHref: `${korFile}${search}${hash}`,
-      enHref: `${enFile}${search}${hash}`,
-    };
+  function isInSIDir() {
+    try {
+      const url = new URL(window.location.href);
+      return url.pathname.split("/").includes("SI");
+    } catch (_err) {
+      return false;
+    }
   }
 
   function getPreferredLang() {
-    const url = new URL(window.location.href);
-    const param = (url.searchParams.get("lang") || "").toLowerCase();
-    if (param === "en" || param === "ko") return param;
+    let paramLang = null;
     try {
-      const saved = window.localStorage.getItem(LANG_STORAGE_KEY);
-      if (saved === "en" || saved === "ko") return saved;
+      const url = new URL(window.location.href);
+      paramLang = (url.searchParams.get("lang") || "").toLowerCase();
     } catch (_err) {
       // ignore
     }
-    return "ko";
+    if (SUPPORTED_LANGS.includes(paramLang)) return paramLang;
+
+    for (const k of LANG_KEYS) {
+      try {
+        const saved = window.localStorage.getItem(k);
+        if (SUPPORTED_LANGS.includes(saved)) return saved;
+      } catch (_err) {
+        // ignore
+      }
+    }
+
+    const browserLang = (navigator.language || "").toLowerCase();
+    return browserLang.startsWith("en") ? "en" : "ko";
   }
 
   function setPreferredLang(lang) {
-    try {
-      window.localStorage.setItem(LANG_STORAGE_KEY, lang);
-    } catch (_err) {
-      // ignore
+    const safe = SUPPORTED_LANGS.includes(lang) ? lang : "ko";
+    for (const k of LANG_KEYS) {
+      try {
+        window.localStorage.setItem(k, safe);
+      } catch (_err) {
+        // ignore
+      }
     }
   }
 
-  function maybeRedirectForLang(fileName) {
-    if (!isSIPage(fileName)) return;
-    const pref = getPreferredLang();
-    const { isEn, korHref, enHref } = computeLangUrls(fileName);
-    if (pref === "en" && !isEn) window.location.replace(enHref);
-    if (pref === "ko" && isEn) window.location.replace(korHref);
+  function withLangParam(rawHref, lang) {
+    if (!rawHref) return rawHref;
+    try {
+      const url = new URL(rawHref, window.location.href);
+      if (lang === "en") url.searchParams.set("lang", "en");
+      else url.searchParams.set("lang", "ko");
+      return url.toString();
+    } catch (_err) {
+      // Fallback: best-effort append.
+      const sep = rawHref.includes("?") ? "&" : "?";
+      return `${rawHref}${sep}lang=${encodeURIComponent(lang)}`;
+    }
+  }
+
+  function setUrlLangParam(lang) {
+    try {
+      const url = new URL(window.location.href);
+      url.searchParams.set("lang", lang);
+      window.history.replaceState({}, "", url.toString());
+    } catch (_err) {
+      // ignore
+    }
   }
 
   function mountIframe(container) {
@@ -134,49 +150,42 @@
     if (btn) btn.remove();
   }
 
-  function setLanguageSwitchInNavbarForEnglish() {
-    const isEnglish = (document.documentElement.lang || "").toLowerCase().startsWith("en");
-    if (!isEnglish) return;
+  function updatePlotLinksAndFrames(lang) {
+    const safe = SUPPORTED_LANGS.includes(lang) ? lang : "ko";
+    const targetOrigin = window.location.origin === "null" ? "*" : window.location.origin;
 
-    const mappings = [
-      { selector: 'a.nav-link[href$="Report/Report_final_rev.pdf"] .menu-text', text: "Report (PDF, rev)" },
-      { selector: "#nav-menu-si .menu-text", text: "Supplementary (SI)" },
-      { selector: 'a.dropdown-item[href$="SI/index.html"] .dropdown-text', text: "Overview", hrefSuffix: "index_en.html" },
-      {
-        selector: 'a.dropdown-item[href$="SI/interactive.html"] .dropdown-text',
-        text: "Interactive",
-        hrefSuffix: "interactive_en.html",
-      },
-      { selector: 'a.dropdown-item[href$="SI/appendix.html"] .dropdown-text', text: "Appendix", hrefSuffix: "appendix_en.html" },
-      {
-        selector: 'a.dropdown-item[href$="SI/next_questions.html"] .dropdown-text',
-        text: "Next questions",
-        hrefSuffix: "next_questions_en.html",
-      },
-    ];
+    document.querySelectorAll(".si-plot").forEach((container) => {
+      const rawSrc = container.dataset.srcBase || container.getAttribute("data-src") || "";
+      if (!container.dataset.srcBase && rawSrc) container.dataset.srcBase = rawSrc;
 
-    mappings.forEach((m) => {
-      const el = document.querySelector(m.selector);
-      if (!el) return;
-      el.textContent = m.text;
+      if (rawSrc) container.setAttribute("data-src", withLangParam(rawSrc, safe));
 
-      if (!m.hrefSuffix) return;
-      const link = el.closest("a");
-      if (!link) return;
-      const href = link.getAttribute("href");
-      if (!href) return;
-      const next = href.replace(/SI\/index\.html$/, `SI/${m.hrefSuffix}`)
-        .replace(/SI\/interactive\.html$/, `SI/${m.hrefSuffix}`)
-        .replace(/SI\/appendix\.html$/, `SI/${m.hrefSuffix}`)
-        .replace(/SI\/next_questions\.html$/, `SI/${m.hrefSuffix}`);
-      link.setAttribute("href", next);
+      const link = container.querySelector("a.si-plot__link");
+      if (link) {
+        const rawHref = link.dataset.hrefBase || link.getAttribute("href") || "";
+        if (!link.dataset.hrefBase && rawHref) link.dataset.hrefBase = rawHref;
+        if (rawHref) link.setAttribute("href", withLangParam(rawHref, safe));
+      }
+
+      const iframe = container.querySelector("iframe");
+      if (iframe && iframe.contentWindow) {
+        try {
+          iframe.contentWindow.postMessage({ type: "si:setLang", lang: safe }, targetOrigin);
+        } catch (_err) {
+          // ignore
+        }
+      }
     });
+  }
+
+  function applyLanguage(lang) {
+    const safe = SUPPORTED_LANGS.includes(lang) ? lang : "ko";
+    document.documentElement.dataset.siLang = safe;
+    updatePlotLinksAndFrames(safe);
   }
 
   function insertLanguageSwitch(fileName) {
     if (!isSIPage(fileName)) return;
-
-    const { isEn, korHref, enHref } = computeLangUrls(fileName);
 
     const wrapper = document.createElement("div");
     wrapper.className = "si-lang-switch";
@@ -185,25 +194,38 @@
 
     const korBtn = document.createElement("button");
     korBtn.type = "button";
-    korBtn.className = `si-lang-btn${isEn ? "" : " is-active"}`;
+    korBtn.className = "si-lang-btn";
     korBtn.dataset.lang = "ko";
-    korBtn.setAttribute("aria-pressed", isEn ? "false" : "true");
     korBtn.textContent = "KOR";
 
     const enBtn = document.createElement("button");
     enBtn.type = "button";
-    enBtn.className = `si-lang-btn${isEn ? " is-active" : ""}`;
+    enBtn.className = "si-lang-btn";
     enBtn.dataset.lang = "en";
-    enBtn.setAttribute("aria-pressed", isEn ? "true" : "false");
     enBtn.textContent = "ENG";
 
-    function go(lang) {
-      setPreferredLang(lang);
-      window.location.href = lang === "en" ? enHref : korHref;
+    function setButtons(active) {
+      [korBtn, enBtn].forEach((btn) => {
+        const isActive = btn.dataset.lang === active;
+        btn.classList.toggle("is-active", isActive);
+        btn.setAttribute("aria-pressed", isActive ? "true" : "false");
+      });
     }
 
-    korBtn.addEventListener("click", () => go("ko"));
-    enBtn.addEventListener("click", () => go("en"));
+    function go(next) {
+      const safe = SUPPORTED_LANGS.includes(next) ? next : "ko";
+      setPreferredLang(safe);
+      setUrlLangParam(safe);
+      setButtons(safe);
+      applyLanguage(safe);
+    }
+
+    wrapper.addEventListener("click", (event) => {
+      const btn = event.target.closest("button[data-lang]");
+      if (!btn) return;
+      event.preventDefault();
+      go(btn.dataset.lang);
+    });
 
     wrapper.appendChild(korBtn);
     wrapper.appendChild(enBtn);
@@ -211,16 +233,23 @@
     const navbarTools = document.querySelector(".quarto-navbar-tools");
     if (navbarTools) {
       navbarTools.appendChild(wrapper);
-      return;
+    } else {
+      wrapper.classList.add("si-lang-switch--floating");
+      document.body.appendChild(wrapper);
     }
 
-    wrapper.classList.add("si-lang-switch--floating");
-    document.body.appendChild(wrapper);
+    // initial state
+    const initial = getPreferredLang();
+    setButtons(initial);
   }
 
   document.addEventListener("DOMContentLoaded", () => {
     const fileName = getFileName();
-    maybeRedirectForLang(fileName);
+    if (!isSIPage(fileName)) return;
+
+    const initialLang = getPreferredLang();
+    setPreferredLang(initialLang);
+    applyLanguage(initialLang);
 
     initPlotLoaders();
     openDetailsForHash();
@@ -232,7 +261,5 @@
     });
 
     insertLanguageSwitch(fileName);
-    setLanguageSwitchInNavbarForEnglish();
   });
 })();
-
