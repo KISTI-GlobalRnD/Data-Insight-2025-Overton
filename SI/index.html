@@ -92,8 +92,8 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../Report/Report_final.pdf"> 
-<span class="menu-text">보고서(PDF)</span></a>
+    <a class="nav-link" href="../Report/Report_final_rev.pdf"> 
+<span class="menu-text">보고서(PDF, rev)</span></a>
   </li>  
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-si" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -135,6 +135,8 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#구성" id="toc-구성" class="nav-link active" data-scroll-target="#구성">구성</a></li>
+  <li><a href="#si-구조고정" id="toc-si-구조고정" class="nav-link" data-scroll-target="#si-구조고정">SI 구조(고정)</a></li>
+  <li><a href="#report-si-map" id="toc-report-si-map" class="nav-link" data-scroll-target="#report-si-map">본문 ↔︎ SI 연결</a></li>
   <li><a href="#quick-find" id="toc-quick-find" class="nav-link" data-scroll-target="#quick-find">빠른 찾기</a></li>
   <li><a href="#바로가기" id="toc-바로가기" class="nav-link" data-scroll-target="#바로가기">바로가기</a></li>
   <li><a href="#업데이트" id="toc-업데이트" class="nav-link" data-scroll-target="#업데이트">업데이트</a></li>
@@ -163,7 +165,8 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>보조자료(Supplementary Information, SI)는 보고서 본문(PDF)에서 지면상 생략된 <strong>정의·전처리·추가 그림·인터랙티브 탐색</strong>을 모아, 본문의 스토리라인을 “확장팩”처럼 이어준다.</p>
+<p>보조자료(Supplementary Information, SI)는 보고서 본문(PDF)에서 지면상 생략된 <strong>정의·전처리·추가 그림·인터랙티브 탐색</strong>을 모아, 본문을 더 안전하게 해석하고 확장 탐색할 수 있도록 보완한다.</p>
+<p>보고서(PDF)의 그림 캡션은 한국어로만 제공하고, 영문 캡션은 인터랙티브 페이지에서 그림 제목 아래에 함께 제공한다.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -192,6 +195,92 @@ Note
 <li><strong>다음 질문</strong>: 본문에서 남겨 둔 질문을 후속 분석의 체크리스트로 정리한다.</li>
 </ol>
 </section>
+<section id="si-구조고정" class="level2">
+<h2 class="anchored" data-anchor-id="si-구조고정">SI 구조(고정)</h2>
+<table class="table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>페이지</th>
+<th>역할</th>
+<th>포함 범위</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>index.qmd</code></td>
+<td>입구/내비게이션</td>
+<td>본문↔︎SI 연결표, 빠른 찾기, 업데이트</td>
+</tr>
+<tr class="even">
+<td><code>interactive.qmd</code></td>
+<td>탐색</td>
+<td>본문 그림 1–12의 인터랙티브</td>
+</tr>
+<tr class="odd">
+<td><code>appendix.qmd</code></td>
+<td>근거/정의/추가 자료</td>
+<td>커버리지·태깅, 분모/정의, 민감도, 추가 그림</td>
+</tr>
+<tr class="even">
+<td><code>next_questions.qmd</code></td>
+<td>후속 과제</td>
+<td>확장 질문과 분석 우선순위</td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>구버전 초안 페이지(<code>coverage.qmd</code>, <code>faq.qmd</code>, <code>figures.qmd</code>)의 내용은 <code>appendix.qmd</code>로 통합했다.<br>
+현재 사이트에서는 위 4페이지만 공식 동선으로 사용한다.</p>
+</div>
+</div>
+</section>
+<section id="report-si-map" class="level2">
+<h2 class="anchored" data-anchor-id="report-si-map">본문 ↔︎ SI 연결</h2>
+<table class="table">
+<thead>
+<tr class="header">
+<th>보고서 본문</th>
+<th>SI에서 더 볼 것</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2.1 시간(그림 1)</td>
+<td><a href="../SI/interactive.html#si-fig-1">인터랙티브: 그림 1</a> · <a href="../SI/appendix.html#why-2012">부록: 2012 진단</a> · <a href="../SI/appendix.html#recent-years-decline">부록: 최근 연도 하락</a></td>
+</tr>
+<tr class="even">
+<td>2.2 분야(그림 2)</td>
+<td><a href="../SI/interactive.html#si-fig-2">인터랙티브: 그림 2</a> · <a href="../SI/appendix.html#data-fitness">부록: 매칭·결측 요약</a></td>
+</tr>
+<tr class="odd">
+<td>2.3–2.4 토픽(그림 3–4)</td>
+<td><a href="../SI/interactive.html#si-fig-3">인터랙티브: 그림 3</a> · <a href="../SI/interactive.html#si-fig-4">인터랙티브: 그림 4</a> · <a href="../SI/appendix.html#recency-intensity">부록: 최근성/인용 강도</a> · <a href="../SI/appendix.html#multilabel">부록: 다중라벨</a></td>
+</tr>
+<tr class="even">
+<td>3장 허브(그림 5–8)</td>
+<td><a href="../SI/interactive.html#si-fig-5">인터랙티브: 그림 5</a> · <a href="../SI/interactive.html#si-fig-6">그림 6</a> · <a href="../SI/interactive.html#si-fig-7">그림 7</a> · <a href="../SI/interactive.html#si-fig-8">그림 8</a> · <a href="../SI/appendix.html#appendix-a">부록: 커버리지·태깅</a></td>
+</tr>
+<tr class="odd">
+<td>4장 국제흐름·한국(그림 9–12)</td>
+<td><a href="../SI/interactive.html#si-fig-9">인터랙티브: 그림 9</a> · <a href="../SI/interactive.html#si-fig-10">그림 10</a> · <a href="../SI/interactive.html#si-fig-11">그림 11</a> · <a href="../SI/interactive.html#si-fig-12">그림 12</a> · <a href="../SI/appendix.html#self-citation-share">부록: 자국 인용 비중</a></td>
+</tr>
+</tbody>
+</table>
+</section>
 <section id="quick-find" class="level2">
 <h2 class="anchored" data-anchor-id="quick-find">빠른 찾기</h2>
 <table class="table">
@@ -219,8 +308,8 @@ Note
 <td><a href="../SI/appendix.html#self-citation-share">부록: 자국 인용 비중</a></td>
 </tr>
 <tr class="odd">
-<td>네트워크(그림 13)를 웹에서 보고 싶다</td>
-<td><a href="../SI/interactive.html#si-fig-13">인터랙티브: 그림 13</a></td>
+<td>네트워크(그림 12)를 웹에서 보고 싶다</td>
+<td><a href="../SI/interactive.html#si-fig-12">인터랙티브: 그림 12</a></td>
 </tr>
 <tr class="even">
 <td>후속 분석 체크리스트를 보고 싶다</td>
@@ -232,7 +321,7 @@ Note
 <section id="바로가기" class="level2">
 <h2 class="anchored" data-anchor-id="바로가기">바로가기</h2>
 <ul>
-<li><a href="../Report/Report_final.pdf">보고서(PDF)</a></li>
+<li><a href="../Report/Report_final_rev.pdf">보고서(PDF, rev)</a></li>
 <li><a href="../SI/interactive.html">인터랙티브</a></li>
 <li><a href="../SI/appendix.html">부록</a></li>
 <li><a href="../SI/next_questions.html">다음 질문</a></li>
@@ -241,8 +330,10 @@ Note
 <section id="업데이트" class="level2">
 <h2 class="anchored" data-anchor-id="업데이트">업데이트</h2>
 <ul>
-<li>2026-01-22: 그림 13 인터랙티브의 이웃 포커스, 곡선/화살표, hover 가독성을 개선했다.</li>
+<li>2026-01-22: 그림 12 인터랙티브의 이웃 포커스, 곡선/화살표, hover 가독성을 개선했다.</li>
 <li>2026-01-22: 빠른 찾기 표와 딥 링크를 추가했다.</li>
+<li>2026-02-05: 보고서(PDF) 그림 캡션에서 영문을 제거하고, 영문 캡션은 인터랙티브 페이지로 이관했다.</li>
+<li>2026-02-05: 본문 ↔︎ SI 연결 표를 추가하고, 인터랙티브 페이지의 그림 제목을 정리했다.</li>
 </ul>
 
 
