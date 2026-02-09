@@ -20,7 +20,11 @@
       fileName === "index.html" ||
       fileName === "interactive.html" ||
       fileName === "appendix.html" ||
-      fileName === "next_questions.html"
+      fileName === "next_questions.html" ||
+      fileName === "index_en.html" ||
+      fileName === "interactive_en.html" ||
+      fileName === "appendix_en.html" ||
+      fileName === "next_questions_en.html"
     );
   }
 
@@ -33,7 +37,7 @@
     }
   }
 
-  function getPreferredLang() {
+  function getPreferredLang(fileName) {
     let paramLang = null;
     try {
       const url = new URL(window.location.href);
@@ -42,6 +46,9 @@
       // ignore
     }
     if (SUPPORTED_LANGS.includes(paramLang)) return paramLang;
+
+    // English pages default to English unless explicitly overridden via ?lang=
+    if (typeof fileName === "string" && fileName.endsWith("_en.html")) return "en";
 
     for (const k of LANG_KEYS) {
       try {
@@ -247,7 +254,7 @@
     const fileName = getFileName();
     if (!isSIPage(fileName)) return;
 
-    const initialLang = getPreferredLang();
+    const initialLang = getPreferredLang(fileName);
     setPreferredLang(initialLang);
     applyLanguage(initialLang);
 

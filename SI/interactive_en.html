@@ -1,24 +1,858 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="robots" content="noindex" />
-    <meta http-equiv="refresh" content="0; url=interactive.html?lang=en" />
-    <link rel="canonical" href="interactive.html?lang=en" />
-    <title>Redirecting…</title>
-    <script>
-      (function () {
-        try {
-          localStorage.setItem("si_lang", "en");
-          localStorage.setItem("promo_lang", "en");
-        } catch (_err) {}
-        var target = "interactive.html?lang=en" + (window.location.hash || "");
-        window.location.replace(target);
-      })();
-    </script>
-  </head>
-  <body>
-    <p>Redirecting to <a href="interactive.html?lang=en">Interactive</a>…</p>
-  </body>
-</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.550">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Overton × OpenAlex - Interactive</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<meta name="robots" content="noindex, nofollow">
+
+
+
+<link rel="stylesheet" href="../Assets/Site/si.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Overton × OpenAlex</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../Report/Report_final_rev.pdf"> 
+<span class="menu-text">보고서(PDF, rev)</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-si" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">보조자료(SI)</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-si">    
+        <li>
+    <a class="dropdown-item" href="../SI/index.html">
+ <span class="dropdown-text">개요</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../SI/interactive.html">
+ <span class="dropdown-text">인터랙티브</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../SI/appendix.html">
+ <span class="dropdown-text">부록</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../SI/next_questions.html">
+ <span class="dropdown-text">다음 질문</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    </div>
+<!-- main -->
+<main class="content column-page" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Interactive</h1>
+</div>
+
+
+
+<div class="quarto-title-meta column-page">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+<nav id="TOC" role="doc-toc">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#time-policy-publication-year" id="toc-time-policy-publication-year">Time (policy publication year)</a></li>
+  <li><a href="#domains-and-topics-what-policy-cites" id="toc-domains-and-topics-what-policy-cites">Domains and topics (what policy cites)</a></li>
+  <li><a href="#hubs-who-accumulates-evidence" id="toc-hubs-who-accumulates-evidence">Hubs (who accumulates evidence)</a></li>
+  <li><a href="#international-flows-policy-source-research-country" id="toc-international-flows-policy-source-research-country">International flows (policy source → research country)</a></li>
+  <li><a href="#korea-flows-two-directions-in-policyresearch-linkage" id="toc-korea-flows-two-directions-in-policyresearch-linkage">Korea flows (two directions in policy–research linkage)</a></li>
+  </ul>
+</nav>
+<p><a href="../SI/index_en.html"><code>← SI Overview</code></a> · <a href="../Report/Report_final_rev.pdf"><code>Report (PDF, rev)</code></a> · <a href="../SI/interactive.html"><code>Korean page</code></a></p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Internal draft (English)</strong></p>
+<p>This English SI is for internal review and may lag the Korean SI.</p>
+</div>
+</div>
+<p>Among the figures in the report, the ones worth <strong>zooming in, toggling items, and inspecting values</strong> are provided here as interactive versions for freer web exploration.<br>
+The plots below are <strong>loaded only after you click the button</strong>, so the page itself opens quickly.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>How this page complements the report</strong></p>
+<ul>
+<li>It extends Figures 1–12 into interactive web versions (zoom, legend toggle, value inspection).</li>
+<li>It lets you check detailed values that are hard to include on paper.</li>
+<li>For network layouts, treat positions and distances as a visual aid, not as precise measurements.</li>
+</ul>
+</div>
+</div>
+<p><strong>Recommended order</strong></p>
+<ul>
+<li>Start with time trends, domain distribution, and topic scatter plots.</li>
+<li>Then move to mismatch across countries, Korea flows, and the network.</li>
+</ul>
+<p><strong>Tips</strong></p>
+<ul>
+<li>Click legends: toggle series on/off</li>
+<li>Hover: inspect metric values</li>
+<li>Open in new tab: use full browser viewport</li>
+</ul>
+<p><strong>Captions</strong></p>
+<ul>
+<li>Report (PDF): Korean captions only</li>
+<li>SI Interactive: English captions are provided under each figure title</li>
+</ul>
+<hr>
+<section id="time-policy-publication-year" class="level2">
+<h2 class="anchored" data-anchor-id="time-policy-publication-year">Time (policy publication year)</h2>
+<div class="si-section-ref">
+<p>Main report: §2.1 · Related: <a href="../SI/appendix_en.html#why-2012">Appendix: Why 2012?</a>, <a href="../SI/appendix_en.html#recent-years-decline">Appendix: Recent-year decline</a></p>
+</div>
+<section id="si-fig-1" class="level3">
+<h3 class="anchored" data-anchor-id="si-fig-1">Figure 1. Policy documents by publication year: citations, documents, and citations per document</h3>
+<div class="si-guidance">
+<p><strong>What to look for</strong></p>
+<ul>
+<li>Whether the rise in “citations per document” around 2012 also appears in robust summaries (median / trimmed mean)</li>
+<li>Whether the post-2022 decline is a real change or a lag/accumulation artifact</li>
+</ul>
+</div>
+<div class="si-plot" data-src="../Assets/Interactive/pubyear_trend.html?lang=en" data-height="650" data-title="Interactive plot: Figure 1 — Policy documents by publication year">
+  <div class="si-plot__actions">
+    <a class="si-plot__link" href="../Assets/Interactive/pubyear_trend.html?lang=en" target="_blank" rel="noopener">Open in new tab</a>
+    <button type="button" class="si-plot__btn">Load plot</button>
+  </div>
+</div>
+<hr>
+</section>
+</section>
+<section id="domains-and-topics-what-policy-cites" class="level2">
+<h2 class="anchored" data-anchor-id="domains-and-topics-what-policy-cites">Domains and topics (what policy cites)</h2>
+<div class="si-section-ref">
+<p>Main report: §2.2–2.4 · Related: <a href="../SI/appendix_en.html#data-fitness">Appendix: Matching &amp; missingness</a>, <a href="../SI/appendix_en.html#multilabel">Appendix: Multi-label topics</a></p>
+</div>
+<section id="si-fig-2" class="level3">
+<h3 class="anchored" data-anchor-id="si-fig-2">Figure 2. Field composition within top policy-cited domains</h3>
+<div class="si-guidance">
+<p><strong>What to look for</strong></p>
+<ul>
+<li>How concentrated each domain is in its “top 3 fields” (how simple/peaked the composition is)</li>
+<li>Whether some domains have a large “field missing” segment (interpretation caution)</li>
+</ul>
+</div>
+<div class="si-plot" data-src="../Assets/Interactive/domain_top10.html?lang=en" data-height="650" data-title="Interactive plot: Figure 2 — Policy citations by domain (top 4; stacked by field)">
+  <div class="si-plot__actions">
+    <a class="si-plot__link" href="../Assets/Interactive/domain_top10.html?lang=en" target="_blank" rel="noopener">Open in new tab</a>
+    <button type="button" class="si-plot__btn">Load plot</button>
+  </div>
+</div>
+</section>
+<section id="si-fig-3" class="level3">
+<h3 class="anchored" data-anchor-id="si-fig-3">Figure 3. Topics: policy citations vs unique papers (bubble size: OA share)</h3>
+<div class="si-guidance">
+<p><strong>What to look for</strong></p>
+<ul>
+<li>Topics that receive disproportionately high policy citations relative to their paper counts (demand–supply mismatch points)</li>
+<li>Whether bubble sizes (OA marker) appear clustered in specific regions (treat as a candidate factor, not causality)</li>
+</ul>
+</div>
+<div class="si-plot" data-src="../Assets/Interactive/topic_scatter_citations_vs_papers.html?lang=en" data-height="750" data-title="Interactive plot: Figure 3 — Topic scatter (citations vs papers)">
+  <div class="si-plot__actions">
+    <a class="si-plot__link" href="../Assets/Interactive/topic_scatter_citations_vs_papers.html?lang=en" target="_blank" rel="noopener">Open in new tab</a>
+    <span class="si-plot__badge">May load slowly</span>
+    <button type="button" class="si-plot__btn">Load plot</button>
+  </div>
+</div>
+</section>
+<section id="si-fig-4" class="level3">
+<h3 class="anchored" data-anchor-id="si-fig-4">Figure 4. Topics: citation intensity vs recency</h3>
+<div class="si-guidance">
+<p><strong>What to look for</strong></p>
+<ul>
+<li>Upper-right (high recency and intensity): candidates for fast-rising agendas</li>
+<li>Upper-left (high intensity, low recency): candidates for accumulated/mature evidence bases</li>
+</ul>
+</div>
+<div class="si-plot" data-src="../Assets/Interactive/topic_intensity_vs_recency.html?lang=en" data-height="750" data-title="Interactive plot: Figure 4 — Topic intensity vs recency">
+  <div class="si-plot__actions">
+    <a class="si-plot__link" href="../Assets/Interactive/topic_intensity_vs_recency.html?lang=en" target="_blank" rel="noopener">Open in new tab</a>
+    <span class="si-plot__badge">May load slowly</span>
+    <button type="button" class="si-plot__btn">Load plot</button>
+  </div>
+</div>
+<hr>
+</section>
+</section>
+<section id="hubs-who-accumulates-evidence" class="level2">
+<h2 class="anchored" data-anchor-id="hubs-who-accumulates-evidence">Hubs (who accumulates evidence)</h2>
+<div class="si-section-ref">
+<p>Main report: §3 · Related: <a href="../SI/appendix_en.html#appendix-a">Appendix: Coverage &amp; tagging</a></p>
+</div>
+<section id="si-fig-5" class="level3">
+<h3 class="anchored" data-anchor-id="si-fig-5">Figure 5. Policy sources: total citations vs citations per document, and domain composition (top 10 + Korea)</h3>
+<div class="si-guidance">
+<p><strong>What to look for</strong></p>
+<ul>
+<li>Whether “total volume” and “per-document intensity” move differently for some sources</li>
+<li>How different the domain portfolios are across sources (composition comparison)</li>
+</ul>
+</div>
+<div class="si-plot" data-src="../Assets/Interactive/country_citations_top10.html?lang=en" data-height="650" data-title="Interactive plot: Figure 5 — Country citations (total, per policy doc, and domain composition)">
+  <div class="si-plot__actions">
+    <a class="si-plot__link" href="../Assets/Interactive/country_citations_top10.html?lang=en" target="_blank" rel="noopener">Open in new tab</a>
+    <button type="button" class="si-plot__btn">Load plot</button>
+  </div>
+</div>
+</section>
+<section id="si-fig-6" class="level3">
+<h3 class="anchored" data-anchor-id="si-fig-6">Figure 6. Domain mix mismatch (top 50): policy-cited research vs research cited by global policy</h3>
+<div class="si-guidance">
+<p><strong>What to look for</strong></p>
+<ul>
+<li>Above/below the diagonal: which domains are cited more on the “global citation of a country’s research” side vs “the country’s own policy sourcing” side</li>
+<li>Whether the direction flips across domains within the same country (hard to reduce to a single story)</li>
+</ul>
+</div>
+<div class="si-plot" data-src="../Assets/Interactive/country_domain_demand_supply_scatter_top50.html?lang=en" data-height="820" data-title="Interactive plot: Figure 6 — Domain mix mismatch (demand vs supply)">
+  <div class="si-plot__actions">
+    <a class="si-plot__link" href="../Assets/Interactive/country_domain_demand_supply_scatter_top50.html?lang=en" target="_blank" rel="noopener">Open in new tab</a>
+    <span class="si-plot__badge">May load slowly</span>
+    <button type="button" class="si-plot__btn">Load plot</button>
+  </div>
+</div>
+</section>
+<section id="si-fig-7" class="level3">
+<h3 class="anchored" data-anchor-id="si-fig-7">Figure 7. Source types: total citations vs citations per policy document</h3>
+<div class="si-guidance">
+<p><strong>What to look for</strong></p>
+<ul>
+<li>Separate “large because it produces many documents” vs “large because each document is evidence-dense”</li>
+<li>If a type has high per-document citations, connect it to the hypothesis about document types (briefs, guidelines, syntheses) and flag it for follow-up</li>
+</ul>
+</div>
+<p>Source type labels are tag-based (not mutually exclusive), so a single document can carry multiple type tags.<br>
+Interpret the values below as summaries by source-type tag.</p>
+<div class="si-plot" data-src="../Assets/Interactive/source_type_citations_per_policy_doc.html?lang=en" data-height="650" data-title="Interactive plot: Figure 7 — Citations per policy document by source type">
+  <div class="si-plot__actions">
+    <a class="si-plot__link" href="../Assets/Interactive/source_type_citations_per_policy_doc.html?lang=en" target="_blank" rel="noopener">Open in new tab</a>
+    <button type="button" class="si-plot__btn">Load plot</button>
+  </div>
+</div>
+</section>
+<section id="si-fig-8" class="level3">
+<h3 class="anchored" data-anchor-id="si-fig-8">Figure 8. Share heatmap: source type × domain (major types and top domains)</h3>
+<div class="si-guidance">
+<p><strong>What to look for</strong></p>
+<ul>
+<li>How much a domain’s share shifts across source types (composition differences)</li>
+<li>If “unspecified” is large for a type, treat it as a signal of missing fine-grained tagging</li>
+</ul>
+</div>
+<p>Values are normalized within each source type (shares by domain within the type).<br>
+Use it to compare <strong>composition</strong>, not total volume.</p>
+<div class="si-plot" data-src="../Assets/Interactive/source_type_domain_heatmap.html?lang=en" data-height="760" data-title="Interactive plot: Figure 8 — Source type × domain share heatmap">
+  <div class="si-plot__actions">
+    <a class="si-plot__link" href="../Assets/Interactive/source_type_domain_heatmap.html?lang=en" target="_blank" rel="noopener">Open in new tab</a>
+    <button type="button" class="si-plot__btn">Load plot</button>
+  </div>
+</div>
+<hr>
+</section>
+</section>
+<section id="international-flows-policy-source-research-country" class="level2">
+<h2 class="anchored" data-anchor-id="international-flows-policy-source-research-country">International flows (policy source → research country)</h2>
+<div class="si-section-ref">
+<p>Main report: §4.1 · Related: <a href="../SI/appendix_en.html#self-citation-share">Appendix: Self-citation denominator (first author)</a></p>
+</div>
+<section id="si-fig-9" class="level3">
+<h3 class="anchored" data-anchor-id="si-fig-9">Figure 9. Policy source → research country matrix: absolute volume and within-source share</h3>
+<div class="si-guidance">
+<p><strong>What to look for</strong></p>
+<ul>
+<li>Read absolute volume (left) vs share (right) separately: “more citing” and “biased sourcing lines” are not the same</li>
+<li>Whether multi-lateral sources (e.g., IGOs) are less concentrated on specific research countries (breadth of sourcing)</li>
+</ul>
+</div>
+<p>The left panel shows absolute volume on a log scale; the right panel shows within-policy-source shares.<br>
+Research countries not in the policy-source list are grouped into regions.</p>
+<div class="si-plot" data-src="../Assets/Interactive/policy_to_research_country_heatmap.html?lang=en" data-height="820" data-title="Interactive plot: Figure 9 — Policy source → research country citations">
+  <div class="si-plot__actions">
+    <a class="si-plot__link" href="../Assets/Interactive/policy_to_research_country_heatmap.html?lang=en" target="_blank" rel="noopener">Open in new tab</a>
+    <span class="si-plot__badge">May load slowly</span>
+    <button type="button" class="si-plot__btn">Load plot</button>
+  </div>
+</div>
+<hr>
+</section>
+</section>
+<section id="korea-flows-two-directions-in-policyresearch-linkage" class="level2">
+<h2 class="anchored" data-anchor-id="korea-flows-two-directions-in-policyresearch-linkage">Korea flows (two directions in policy–research linkage)</h2>
+<div class="si-section-ref">
+<p>Main report: §4.2–4.3 · Related: <a href="../SI/appendix_en.html#self-citation-share">Appendix: Self-citation share</a>, <a href="../SI/appendix_en.html#self-citation-context">Appendix: Self-citation context</a></p>
+</div>
+<section id="si-fig-10" class="level3">
+<h3 class="anchored" data-anchor-id="si-fig-10">Figure 10. Self-citation share vs expected, and domain mix of self vs non-self citations (top 7 + Korea)</h3>
+<div class="si-guidance">
+<p><strong>What to look for</strong></p>
+<ul>
+<li>Confirm that self-citation share is computed over citations with known first-author country codes (not over all citations)</li>
+<li>Check whether some countries are strongly positive/negative in actual−expected (domain-weighted baseline)</li>
+</ul>
+</div>
+<div class="si-plot" data-src="../Assets/Interactive/policy_country_self_share_selected.html?lang=en" data-height="650" data-title="Interactive plot: Figure 10 — Self-citation share vs expected and domain portfolio">
+  <div class="si-plot__actions">
+    <a class="si-plot__link" href="../Assets/Interactive/policy_country_self_share_selected.html?lang=en" target="_blank" rel="noopener">Open in new tab</a>
+    <button type="button" class="si-plot__btn">Load plot</button>
+  </div>
+</div>
+</section>
+<section id="si-fig-11" class="level3">
+<h3 class="anchored" data-anchor-id="si-fig-11">Figure 11. Korea evidence flows (inbound vs sourcing) and domain composition (top 10)</h3>
+<div class="si-guidance">
+<p><strong>What to look for</strong></p>
+<ul>
+<li>Read inbound (Korean research → global policy) and sourcing (Korean policy → research) separately</li>
+<li>Check whether deviations from the “expected share” repeat for specific counterpart routes (structural tendency vs noise)</li>
+</ul>
+</div>
+<div class="si-plot" data-src="../Assets/Interactive/korea_policy_research_flows_top10.html?lang=en" data-height="820" data-title="Interactive plot: Figure 11 — Republic of Korea evidence flows and domain portfolios (top 10)">
+  <div class="si-plot__actions">
+    <a class="si-plot__link" href="../Assets/Interactive/korea_policy_research_flows_top10.html?lang=en" target="_blank" rel="noopener">Open in new tab</a>
+    <button type="button" class="si-plot__btn">Load plot</button>
+  </div>
+</div>
+</section>
+<section id="si-fig-12" class="level3">
+<h3 class="anchored" data-anchor-id="si-fig-12">Figure 12. Policy–research evidence flow network</h3>
+<div class="si-guidance">
+<p><strong>What to look for</strong></p>
+<ul>
+<li>Where thick links connected to Korea (highlighted) lead to, as a backbone map (top links only)</li>
+<li>Treat layout as exploratory: read the structure of “who connects to whom,” not metric distances</li>
+</ul>
+</div>
+<p>Layout is an exploratory aid. Distances between nodes are not absolute measurements; do not interpret “closeness” quantitatively.</p>
+<p>Notation: <code>EU</code> = European Union, <code>IGO</code> = International organizations.</p>
+<div class="si-plot" data-src="../Assets/Interactive/policy_research_flow_network_drl.html?lang=en" data-height="820" data-title="Interactive plot: Figure 12 — Policy–research evidence flows">
+  <div class="si-plot__actions">
+    <a class="si-plot__link" href="../Assets/Interactive/policy_research_flow_network_drl.html?lang=en" target="_blank" rel="noopener">Open in new tab</a>
+    <span class="si-plot__badge">May load slowly</span>
+    <button type="button" class="si-plot__btn">Load plot</button>
+  </div>
+</div>
+<hr>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script defer="" src="../Assets/Site/si.js"></script>
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
