@@ -99,13 +99,21 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">보고서(PDF)</span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-si" role="button" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">보조자료(SI)</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-extended-report" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Extended Report</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-si">    
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-extended-report">    
         <li>
     <a class="dropdown-item" href="../SI/index.html">
  <span class="dropdown-text">개요</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../SI/extended_report.html">
+ <span class="dropdown-text">확장 본문</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../SI/methods.html">
+ <span class="dropdown-text">방법론·정합성</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../SI/interactive.html">
@@ -183,7 +191,7 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><a href="../SI/index_en.html"><code>← SI Overview</code></a> · <a href="../SI/interactive_en.html"><code>Interactive</code></a> · <a href="../Report/Report_final.pdf"><code>Report (PDF)</code></a> · <a href="../SI/appendix.html"><code>Korean page</code></a></p>
+<p><a href="../SI/index_en.html"><code>← Extended Report Overview</code></a> · <a href="../SI/interactive_en.html"><code>Interactive</code></a> · <a href="../Report/Report_final.pdf"><code>Report (PDF)</code></a> · <a href="../SI/appendix.html"><code>Korean page</code></a></p>
 <div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -195,10 +203,11 @@ Warning
 </div>
 <div class="callout-body-container callout-body">
 <p><strong>Internal draft (English)</strong></p>
-<p>This English SI is for internal review and may lag the Korean SI.</p>
+<p>This English Extended Report is for internal review and may lag the Korean pages.</p>
 </div>
 </div>
-<p>This appendix compiles <strong>coverage &amp; tagging notes</strong>, <strong>metric definitions &amp; interpretation cautions</strong>, and <strong>additional figures</strong> so the numbers and patterns in the main text can be interpreted more safely.</p>
+<p>This appendix compiles <strong>coverage &amp; tagging notes</strong>, <strong>metric definitions &amp; interpretation cautions</strong>, and <strong>additional figures</strong>.<br>
+The goal is to support safer interpretation of the numbers and patterns in the Data Brief text.</p>
 <p><strong>Jump to</strong>: <a href="#appendix-a">A. Coverage &amp; tagging</a> · <a href="#appendix-b">B. Definitions &amp; interpretation</a> · <a href="#appendix-c">C. Additional figures</a></p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -210,7 +219,7 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><strong>How this page complements the report</strong></p>
+<p><strong>How this page complements the Data Brief</strong></p>
 <ul>
 <li>Before reading cross-country comparisons and hub structure, confirm Overton coverage and tagging characteristics.</li>
 <li>Summarize interpretation cautions: denominators, multi-label topics, missing country codes, observation/accumulation lags.</li>
@@ -239,7 +248,8 @@ Tip
 <hr>
 <section id="appendix-a" class="level2">
 <h2 class="anchored" data-anchor-id="appendix-a">A. Coverage &amp; tagging</h2>
-<p>This section provides the minimum evidence to confirm that the observable policy-document universe in Overton may be uneven across countries, before reading “hub structure.”</p>
+<p>This section provides the minimum evidence needed before reading “hub structure.”<br>
+It shows that the observable policy-document universe in Overton may be uneven across countries.</p>
 <section id="a1.-policy-document-coverage-map-documents-by-policy-source-country" class="level3">
 <h3 class="anchored" data-anchor-id="a1.-policy-document-coverage-map-documents-by-policy-source-country">A1. Policy document coverage map (documents by policy source country)</h3>
 <div class="callout callout-style-default callout-note callout-titled">
@@ -271,14 +281,16 @@ Note
 <section id="a2.-why-exclude-sub-tags-a-b-and-keep-top-level-country-tags-only" class="level3">
 <h3 class="anchored" data-anchor-id="a2.-why-exclude-sub-tags-a-b-and-keep-top-level-country-tags-only">A2. Why exclude sub-tags (<code>A &gt; B</code>) and keep top-level country tags only</h3>
 <p>Overton policy source country tags include <strong>country-level tags (e.g., USA, UK)</strong> and <strong>sub-regional tags (e.g., USA &gt; California)</strong>.<br>
-To align the meaning with OpenAlex country codes, this report uses <strong>top-level country tags only</strong> for the default aggregations.</p>
-<p>This simplifies country-level comparisons, but it also leaves room for <strong>under/over-interpretation</strong> for sources where sub-tags contribute heavily.<br>
+To align meaning with OpenAlex country codes, this report uses <strong>top-level country tags only</strong> for default aggregations.</p>
+<p>This simplifies country-level comparisons.<br>
+But it also leaves room for <strong>under/over-interpretation</strong> for sources where sub-tags contribute heavily.<br>
 Therefore, when reading country comparisons, it is safer to check coverage itself as well.</p>
 </section>
 <section id="a3.-why-do-we-need-exceptions-for-hong-kong-georgia-symptom---cause---action" class="level3">
 <h3 class="anchored" data-anchor-id="a3.-why-do-we-need-exceptions-for-hong-kong-georgia-symptom---cause---action">A3. Why do we need exceptions for Hong Kong / Georgia: symptom -&gt; cause -&gt; action</h3>
 <p>Policy source country tags can appear only as sub-tags such as <code>China &gt; Hong Kong</code> and <code>USA &gt; Georgia</code>.<br>
-If we keep only top-level tags, these can be filtered out from the policy-source side, making them look like “policy sources that do not exist” in the network view.<br>
+If we keep only top-level tags, these can be filtered out from the policy-source side.<br>
+That can make them look like “policy sources that do not exist” in the network view.<br>
 Therefore, in network figures, we split <code>China &gt; Hong Kong</code> into <code>Hong Kong</code> and split <code>USA &gt; Georgia</code> into <code>Georgia (USA)</code>.</p>
 <details>
 <summary>
@@ -291,7 +303,7 @@ Therefore, in network figures, we split <code>China &gt; Hong Kong</code> into <
 <li>By policy document counts: sub-tags total 200,381 out of 1,671,835 (12.0%)</li>
 <li>By DOI citation records: sub-tags total 3,488,024 out of 48,456,680 (7.2%)</li>
 </ul>
-<p>Here, “DOI citation records” are raw-record totals, and may differ from analysis-ready deduplicated counts in the report (e.g., the §6.1 citation count).</p>
+<p>Here, “DOI citation records” are raw-record totals, and may differ from analysis-ready deduplicated counts in the Data Brief (e.g., the §6.1 citation count).</p>
 <p>Top-level parents with large sub-tag contributions are typically <code>USA</code>, <code>Spain</code>, <code>Canada</code>, <code>Australia</code>, <code>UK</code> (in that order).</p>
 </section>
 <section id="top-sub-tag-examples-by-policy-document-counts" class="level4">
@@ -349,14 +361,18 @@ Therefore, in network figures, we split <code>China &gt; Hong Kong</code> into <
 </section>
 <section id="is-hong-kong-merged-into-china-here" class="level4">
 <h4 class="anchored" data-anchor-id="is-hong-kong-merged-into-china-here">Is Hong Kong “merged into China” here?</h4>
-<p>In the current snapshot, Overton policy sources do not include <code>Hong Kong</code> as a top-level country tag; it is observed only as <code>China &gt; Hong Kong</code> (1,182 policy documents).<br>
+<p>In the current snapshot, Overton policy sources do not include <code>Hong Kong</code> as a top-level country tag.<br>
+It is observed only as <code>China &gt; Hong Kong</code> (1,182 policy documents).<br>
 By contrast, OpenAlex research countries use a separate code <code>HK -&gt; Hong Kong</code>.</p>
-<p>If we aggregate policy sources using top-level tags only, documents under <code>China &gt; Hong Kong</code> drop from the policy-source side, while <code>Hong Kong</code> remains only as a research-country node, which can make it look like a “cited-only node.”</p>
+<p>If we aggregate policy sources using top-level tags only, documents under <code>China &gt; Hong Kong</code> drop from the policy-source side.<br>
+Meanwhile, <code>Hong Kong</code> remains only as a research-country node.<br>
+This can make it look like a “cited-only node.”</p>
 </section>
 <section id="practical-caution-naive-sub-tag-replacement-causes-collisions" class="level4">
 <h4 class="anchored" data-anchor-id="practical-caution-naive-sub-tag-replacement-causes-collisions">Practical caution: naive sub-tag replacement causes collisions</h4>
 <p>If you naively map <code>A &gt; B -&gt; B</code>, then <code>USA &gt; Georgia</code> (the US state) collides with <code>Georgia</code> (the country).<br>
-If you want to re-attribute sub-tags at country scale, it is safer to separate (1) lifting to parent (<code>A &gt; B -&gt; A</code>) and (2) exception handling (whether to treat Hong Kong as its own unit).</p>
+If you want to re-attribute sub-tags at country scale, it is safer to separate two steps:<br>
+(1) lifting to parent (<code>A &gt; B -&gt; A</code>) and (2) exception handling (whether to treat Hong Kong as its own unit).</p>
 </section></details>
 <hr>
 </section>
@@ -364,7 +380,7 @@ If you want to re-attribute sub-tags at country scale, it is safer to separate (
 
 <section id="appendix-b" class="level2">
 <h2 class="anchored" data-anchor-id="appendix-b">B. Definitions &amp; interpretation</h2>
-<p>This section compiles the aggregation units and metrics used in the report so readers can look them up when needed.</p>
+<p>This section compiles the aggregation units and metrics used in the Data Brief so readers can look them up when needed.</p>
 <section id="appendix-b-quick" class="level3">
 <h3 class="anchored" data-anchor-id="appendix-b-quick">B0. Quick definitions (summary)</h3>
 <ul>
@@ -396,7 +412,7 @@ Note
 </ul>
 </div>
 </div>
-<p>These are summaries at the level of “DOI citation records,” and may differ from analysis-ready, deduplicated counts in the main report.</p>
+<p>These are summaries at the level of “DOI citation records,” and may differ from analysis-ready, deduplicated counts in the Data Brief.</p>
 <details>
 <summary>
 <strong>Examples by policy source (share with first-author country codes)</strong>
@@ -437,13 +453,16 @@ Note
 <strong>1) Data units</strong> — confirm analysis units and DOI matching coverage
 </summary>
 <p><span id="doi-share"></span></p>
-<p><strong>What does “97.6% cite DOI papers” mean?</strong></p>
-<p>We deduplicated Overton policy documents by <code>policy_document_id</code> to build 1,381,084 unique policy documents, then counted whether each document contains at least one DOI-based scholarly citation.<br>
+<p><strong>What does “97.6% cite DOI papers” mean in this analysis snapshot?</strong></p>
+<p>We deduplicated Overton policy documents by <code>policy_document_id</code> to build 1,381,084 unique policy documents.<br>
+Then we counted whether each document contains at least one DOI-based scholarly citation.<br>
 As a result, 1,347,563 documents (97.6%) contain at least one DOI citation.</p>
-<p>This indicates that policy documents frequently cite scholarly evidence, but it also comes with a clear limitation: it does <strong>not</strong> capture citations without DOIs (narrative citations, reports, legislation, web sources, etc.).</p>
+<p>Within this analysis snapshot, policy documents frequently cite DOI-identifiable scholarly evidence.<br>
+But it also has a clear limitation: it does <strong>not</strong> capture citations without DOIs (narrative citations, reports, legislation, web sources, etc.).</p>
 <p><strong>How different is the DOI-citation coverage across source types?</strong></p>
 <p>The table below summarizes, by Overton source-type tag, the share of unique policy documents that contain at least one DOI-based scholarly citation.<br>
-Since source-type tags are multi-label, a single document can carry multiple tags; the row totals do not need to sum to the site-wide total.</p>
+Since source-type tags are multi-label, a single document can carry multiple tags.<br>
+So the row totals do not need to sum to the site-wide total.</p>
 <details>
 <summary>
 <strong>Table: DOI-citation coverage by source-type tag</strong>
@@ -660,7 +679,8 @@ Since source-type tags are multi-label, a single document can carry multiple tag
 </table>
 </details>
 <p>Document-type breakdown is not available in the current output files and will be added in a future update.</p>
-<p>For reference, in this analysis we matched about 95% of DOIs extracted from Overton DOI citations (about 6.87M unique DOIs after deduplication) to OpenAlex works (about 6.53M). The remaining ~0.34M DOIs did not match; formatting errors were rare and most were “DOI-like strings,” suggesting coverage/normalization differences are a more likely cause than syntax errors.</p>
+<p>For reference, in this analysis we matched about 95% of DOIs extracted from Overton DOI citations (about 6.87M unique DOIs after deduplication) to OpenAlex works (about 6.53M).<br>
+The remaining ~0.34M DOIs did not match. Formatting errors were rare and most were “DOI-like strings,” suggesting coverage/normalization differences are a more likely cause than syntax errors.</p>
 <p><strong>What does “deduplication” mean here?</strong></p>
 <p>Raw Overton policy documents can include duplicates (versions, re-posts, language variants, metadata duplication).<br>
 For analysis, we unify them at the <code>policy_document_id</code> level to treat them as unique policy documents.</p>
@@ -685,13 +705,16 @@ For analysis, we unify them at the <code>policy_document_id</code> level to trea
 <p><span id="self-citation-share"></span></p>
 <p><strong>How is self-citation share computed?</strong></p>
 <p>We map policy source country tags to 2-letter country codes (e.g., USA -&gt; US, UK -&gt; GB), and compute self-citation share using only citations with known first-author country codes as the denominator.<br>
-That is, self-citation share is not a pattern over “all citations” but a pattern over citations where the first-author country code is available.</p>
+That is, self-citation share is not a pattern over “all citations.”<br>
+It is a pattern over citations where the first-author country code is available.</p>
 <p><strong>How is expected self-citation share computed?</strong></p>
-<p>For each policy source country, we first compute its domain mix of cited research. For each domain, we multiply by the country’s <strong>global research production share</strong> in that domain (OpenAlex), then sum across domains.<br>
+<p>For each policy source country, we first compute its domain mix of cited research.<br>
+For each domain, we multiply by the country’s <strong>global research production share</strong> in that domain (OpenAlex), then sum across domains.<br>
 Conceptually:</p>
 <p><code>expected = sum( policy_citation_domain_share * global_production_share_in_domain )</code></p>
 <p><span id="self-citation-context"></span></p>
-<p>The table below summarizes self-citation share for a small comparison set. Since self-citation share is computed only over citations with known first-author country codes, it is better treated as a diagnostic metric rather than a ranking.</p>
+<p>The table below summarizes self-citation share for a small comparison set.<br>
+Since self-citation share is computed only over citations with known first-author country codes, it is better treated as a diagnostic metric rather than a ranking.</p>
 <table class="table">
 <colgroup>
 <col style="width: 20%">
@@ -746,7 +769,8 @@ Conceptually:</p>
 </tr>
 </tbody>
 </table>
-<p>Here, “share known” is the fraction of DOI citation records for that policy source where the first-author country code is available. For sources with many sub-regional tags (e.g., USA, UK), we aggregated sub-tags back up to the parent country for this summary.</p>
+<p>Here, “share known” is the fraction of DOI citation records for that policy source where the first-author country code is available.<br>
+For sources with many sub-regional tags (e.g., USA, UK), we aggregated sub-tags back up to the parent country for this summary.</p>
 <p><strong>Why define policy-source -&gt; research-country flows by first-author country?</strong></p>
 <p>First-author affiliation country is the most consistently extractable country attribute.<br>
 However, it does not reflect coauthor distributions, corresponding authors, or multi-affiliation cases, so it must be interpreted as an “approximation with limited representativeness.”</p>
@@ -757,15 +781,18 @@ However, it does not reflect coauthor distributions, corresponding authors, or m
 </summary>
 <p><span id="multilabel"></span></p>
 <p><strong>Why can topic/domain shares exceed 100%?</strong></p>
-<p>OpenAlex topics are multi-label. A single work can belong to multiple topics simultaneously, so aggregations by topic/domain/subfield can double-count.<br>
+<p>OpenAlex topics are multi-label.<br>
+A single work can belong to multiple topics simultaneously, so aggregations by topic/domain/subfield can double-count.<br>
 Topic-based numbers should be read as “topic-instance based.”</p>
-<p>In the topic data used here, a single policy citation is linked to about 2.8 topics on average. Therefore, summing by domain/topic yields totals larger than raw citation counts.</p>
+<p>In the topic data used here, a single policy citation is linked to about 2.8 topics on average.<br>
+Therefore, summing by domain/topic yields totals larger than raw citation counts.</p>
 <p>However, if we fractionally allocate each citation across the work’s topic count, the domain ranking is preserved and the top-3 domain share changes only slightly (e.g., 88.8% -&gt; 88.5%).</p>
 <p><strong>Can source-country / source-type totals also grow beyond 100%?</strong></p>
 <p>Yes. Overton source country/type labels are tag-based (including parent/child tags), so a single document can be counted in multiple categories.</p>
 <p><span id="recent-years-decline"></span></p>
 <p><strong>Does the post-2022 decline in the time trend mean “policy cites science less”?</strong></p>
-<p>It is difficult to conclude that directly. Coverage delays (collection/processing lags) and the fact that citations accumulate after publication likely act together.<br>
+<p>It is difficult to conclude that directly.<br>
+Coverage delays (collection/processing lags) and the fact that citations accumulate after publication likely act together.<br>
 It is safer to read recent years as signals mixed with observation lag rather than as real-time decreases.</p>
 </details>
 <details>
@@ -774,7 +801,8 @@ It is safer to read recent years as signals mixed with observation lag rather th
 </summary>
 <p><span id="why-2012"></span></p>
 <p><strong>Why does “citations per policy document” look especially high around 2012?</strong></p>
-<p>When the distribution has a long tail, averages are strongly affected. When the average looks high, it is safer to first separate whether it is driven by a few extreme documents or whether the whole distribution shifted rightward.</p>
+<p>When the distribution has a long tail, averages are strongly affected.<br>
+When the average looks high, it is safer to first separate whether it is driven by a few extreme documents or whether the whole distribution shifted rightward.</p>
 <p>Trimmed means exclude extreme values and help diagnose whether the average is being pulled by outliers.</p>
 <p>The figure below shows, by year, the mean along with the median and trimmed mean. It also reports the share of citations contributed by the top 1% of documents.</p>
 <p><img src="../Assets/Figures/si/pubyear_citations_per_doc_diagnostics.png" class="img-fluid" style="width:92.0%" alt="Diagnostics for citations-per-document distribution by year (mean, median, trimmed mean, top 1% share)"></p>
@@ -785,10 +813,12 @@ It is safer to read recent years as signals mixed with observation lag rather th
 </ul>
 <p><span id="oa-interpretation"></span></p>
 <p><strong>Is higher OA (open access) share in policy citations causal?</strong></p>
-<p>Observationally, OA share tends to be higher in policy-cited works. But this does not immediately imply causality (“OA causes more policy citation”).<br>
+<p>Observationally, OA share tends to be higher in policy-cited works.<br>
+But this does not immediately imply causality (“OA causes more policy citation”).<br>
 Confounders include the likelihood that policy-relevant work is published OA, public funding structure, and domain composition.</p>
 <p>However, even when we split by domain and publication-year windows among policy-cited works, the pattern that OA works have higher average policy citations per paper largely remains.<br>
-The table below compares 2000-2009 and 2010-2019; recent years are excluded due to stronger observation-lag effects.</p>
+The table below compares 2000-2009 and 2010-2019.<br>
+Recent years are excluded due to stronger observation-lag effects.</p>
 <table class="table">
 <colgroup>
 <col style="width: 15%">
@@ -837,7 +867,8 @@ The table below compares 2000-2009 and 2010-2019; recent years are excluded due 
 </tr>
 </tbody>
 </table>
-<p>However, medians are mostly around 1-2 and show small differences. The mean gap may be influenced by the long tail (highly repeatedly cited works).<br>
+<p>However, medians are mostly around 1-2 and show small differences.<br>
+The mean gap may be influenced by the long tail (highly repeatedly cited works).<br>
 Therefore, use this table only as supporting context for “candidate explanatory factors.”</p>
 <p>Additional OA reference figures are provided in Section C below.</p>
 </details>
@@ -847,7 +878,8 @@ Therefore, use this table only as supporting context for “candidate explanator
 <section id="appendix-c" class="level2">
 <h2 class="anchored" data-anchor-id="appendix-c">C. Additional figures</h2>
 <p>This section groups reference figures omitted from the main PDF due to space.<br>
-Each item is folded by default for quick scanning. Some figures may differ in presentation from the main report.</p>
+Each item is folded by default for quick scanning.<br>
+Some figures may differ in presentation from the Data Brief.</p>
 <section id="c1.-extended-for-chapter-2-top-n-topics-subfields" class="level3">
 <h3 class="anchored" data-anchor-id="c1.-extended-for-chapter-2-top-n-topics-subfields">C1. Extended for Chapter 2: Top-N topics / subfields</h3>
 <p>This set provides a list view to quickly validate the pattern shown in the topic scatter plots.</p>
@@ -895,7 +927,7 @@ The figures below summarize OA shares for reference.</p>
 </section>
 <section id="c4.-self-citation-share-top-10" class="level3">
 <h3 class="anchored" data-anchor-id="c4.-self-citation-share-top-10">C4. Self-citation share (Top 10)</h3>
-<p>Figure 10 in the main text shows selected countries for comparison.<br>
+<p>Figure 10 in the Data Brief shows selected countries for comparison.<br>
 The figure below expands it to the top 10 policy source countries.</p>
 <p>This metric is computed only over citations with known first-author country codes.</p>
 <ul>

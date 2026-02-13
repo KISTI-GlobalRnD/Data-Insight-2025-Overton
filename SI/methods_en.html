@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Overton × OpenAlex - Next questions</title>
+<title>Overton × OpenAlex - Methods &amp; Data Validity</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -145,13 +145,11 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#prioritized-follow-up-questions-3" id="toc-prioritized-follow-up-questions-3" class="nav-link active" data-scroll-target="#prioritized-follow-up-questions-3">Prioritized follow-up questions (3)</a>
-  <ul class="collapse">
-  <li><a href="#next-q1" id="toc-next-q1" class="nav-link" data-scroll-target="#next-q1">Q1. If we include citations between policy documents, how do evidence routes change?</a></li>
-  <li><a href="#next-q2" id="toc-next-q2" class="nav-link" data-scroll-target="#next-q2">Q2. If we read citation context, can the same citation mean different things?</a></li>
-  <li><a href="#next-q3" id="toc-next-q3" class="nav-link" data-scroll-target="#next-q3">Q3. From a network perspective, what diffusion patterns does evidence follow?</a></li>
-  </ul></li>
-  <li><a href="#additional-extension-ideas-optional" id="toc-additional-extension-ideas-optional" class="nav-link" data-scroll-target="#additional-extension-ideas-optional">Additional extension ideas (optional)</a></li>
+  <li><a href="#method-scope" id="toc-method-scope" class="nav-link active" data-scroll-target="#method-scope">1) Analysis scope</a></li>
+  <li><a href="#method-matching" id="toc-method-matching" class="nav-link" data-scroll-target="#method-matching">2) Matching &amp; missingness checks</a></li>
+  <li><a href="#method-metrics" id="toc-method-metrics" class="nav-link" data-scroll-target="#method-metrics">3) Core metric definitions (summary)</a></li>
+  <li><a href="#method-guardrails" id="toc-method-guardrails" class="nav-link" data-scroll-target="#method-guardrails">4) Interpretation guardrails</a></li>
+  <li><a href="#method-protocol" id="toc-method-protocol" class="nav-link" data-scroll-target="#method-protocol">5) Recompute/update protocol</a></li>
   </ul>
 </nav>
     </div>
@@ -160,7 +158,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Next questions</h1>
+<h1 class="title">Methods &amp; Data Validity</h1>
 </div>
 
 
@@ -177,7 +175,7 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><a href="../SI/index_en.html"><code>← Extended Report Overview</code></a> · <a href="../Report/Report_final.pdf"><code>Report (PDF)</code></a> · <a href="../SI/next_questions.html"><code>Korean page</code></a></p>
+<p><a href="../SI/index_en.html"><code>← Extended Report Overview</code></a> · <a href="../SI/extended_report_en.html"><code>Extended text</code></a> · <a href="../SI/appendix_en.html"><code>Appendix</code></a> · <a href="../Report/Report_final.pdf"><code>Report (PDF)</code></a> · <a href="../SI/methods.html"><code>Korean page</code></a></p>
 <div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -189,11 +187,18 @@ Warning
 </div>
 <div class="callout-body-container callout-body">
 <p><strong>Internal draft (English)</strong></p>
-<p>This English Extended Report is for internal review and may lag the Korean pages.</p>
+<p>This English page is for internal review and may lag the Korean page.</p>
 </div>
 </div>
-<p>This page lists three follow-up questions worth checking after reading the report.<br>
-They focus on analyses needed to validate the observed patterns or to explain “why this pattern emerges.”</p>
+<p>This page summarizes method notes from the Data Brief as <strong>verifiable checkpoints</strong>.<br>
+For detailed tables and diagnostics, use the linked appendix sections.</p>
+<section id="method-scope" class="level2">
+<h2 class="anchored" data-anchor-id="method-scope">1) Analysis scope</h2>
+<ul>
+<li>Snapshot versions: Overton 2025.02 and OpenAlex 2025.06</li>
+<li>Unit of analysis: unique policy documents deduplicated by <code>policy_document_id</code></li>
+<li>Citation scope: DOI-identified scholarly citations extracted from policy references</li>
+</ul>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -204,53 +209,47 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><strong>How this page complements the report</strong></p>
+<p><strong>Interpretation boundary</strong></p>
 <ul>
-<li>It turns the “check questions” left in the main text into a follow-up checklist.</li>
-<li>Each question is framed as a next step for validation, not as a way to lock in a conclusion.</li>
+<li>Results are not a full census of all policy documents. They are observations within the current snapshot and matching scope.</li>
+<li>Non-DOI evidence (reports, legal texts, web sources) is outside the default indicator set.</li>
 </ul>
 </div>
 </div>
-<section id="prioritized-follow-up-questions-3" class="level2">
-<h2 class="anchored" data-anchor-id="prioritized-follow-up-questions-3">Prioritized follow-up questions (3)</h2>
-<section id="next-q1" class="level3">
-<h3 class="anchored" data-anchor-id="next-q1">Q1. If we include citations between policy documents, how do evidence routes change?</h3>
-<p>Beyond policy documents directly citing research, adding a layer of policy-to-policy citations can change what “hubs” mean.</p>
+</section>
+<section id="method-matching" class="level2">
+<h2 class="anchored" data-anchor-id="method-matching">2) Matching &amp; missingness checks</h2>
 <ul>
-<li>In the <strong>policy-to-policy citation network</strong> (not the research citation network), who are the hubs?</li>
-<li>Which documents function as “evidence synthesizers” (collecting and summarizing evidence)?</li>
-<li>During crises, does evidence flow come directly from papers, or does it get amplified through policy-to-policy citations?</li>
+<li>DOI -&gt; OpenAlex matching rate and country-code missingness are key safety checks.</li>
+<li>For country comparisons, always check the known-citation condition first (citations with known first-author country codes).</li>
 </ul>
+<p>Jump links: - <a href="../SI/appendix_en.html#data-fitness">Appendix B0-1. Matching &amp; missingness</a> - <a href="../SI/appendix_en.html#appendix-b-quick">Appendix B0. Quick definitions</a></p>
 </section>
-<section id="next-q2" class="level3">
-<h3 class="anchored" data-anchor-id="next-q2">Q2. If we read citation context, can the same citation mean different things?</h3>
-<p>Even for the same DOI citation, the function differs (evidence, background, criticism). Context lets us read citations as meaning, not just counts.</p>
+<section id="method-metrics" class="level2">
+<h2 class="anchored" data-anchor-id="method-metrics">3) Core metric definitions (summary)</h2>
 <ul>
-<li>Can we represent the meaning of citation sentences/paragraphs as vectors and classify <strong>citation functions</strong>?</li>
-<li>If we separate “citations used as evidence” from “incidental mentions,” do the hubs change?</li>
-<li>Can shifts in context embeddings act as early signals that policy synthesis for a topic has matured?</li>
+<li>Citation counts vs unique works: separate frequency from breadth</li>
+<li>Recency: share of policy citations to works published in <code>2022-2024</code></li>
+<li>Citation intensity: <code>citation counts / unique works</code> within an aggregation unit</li>
+<li>Self-citation share: denominator includes only citations with known first-author country codes</li>
 </ul>
+<p>Jump links: - <a href="../SI/appendix_en.html#citations-vs-works">Citations vs works</a> - <a href="../SI/appendix_en.html#recency-intensity">Recency / intensity</a> - <a href="../SI/appendix_en.html#self-citation-share">Self-citation share</a></p>
 </section>
-<section id="next-q3" class="level3">
-<h3 class="anchored" data-anchor-id="next-q3">Q3. From a network perspective, what diffusion patterns does evidence follow?</h3>
-<p>If we treat policy evidence flows as diffusion over a network, we can describe spikes, hub dependence, and vulnerability differently.</p>
+<section id="method-guardrails" class="level2">
+<h2 class="anchored" data-anchor-id="method-guardrails">4) Interpretation guardrails</h2>
 <ul>
-<li>Why do some evidence items spread quickly <strong>through a small number of hubs</strong>?</li>
-<li>During crises, does diffusion cross a threshold (tipping-point behavior)?</li>
-<li>If a hub is removed, how fragile is the flow, and how resilient is the network?</li>
+<li>Multi-label topics can produce totals above 100%.</li>
+<li>Recent-year decline can reflect observation/accumulation lag rather than structural reversal.</li>
+<li>The 2012 mean spike should be interpreted with distribution diagnostics (median/trimmed mean), not a single average.</li>
 </ul>
+<p>Jump links: - <a href="../SI/appendix_en.html#multilabel">Multi-label topics</a> - <a href="../SI/appendix_en.html#recent-years-decline">Recent-year decline caution</a> - <a href="../SI/appendix_en.html#why-2012">Why 2012 looks high</a></p>
 </section>
-</section>
-<section id="additional-extension-ideas-optional" class="level2">
-<h2 class="anchored" data-anchor-id="additional-extension-ideas-optional">Additional extension ideas (optional)</h2>
-<p>The following directions can “update” or “extend” the observations in this report.</p>
+<section id="method-protocol" class="level2">
+<h2 class="anchored" data-anchor-id="method-protocol">5) Recompute/update protocol</h2>
 <ul>
-<li><strong>Recompute after NKIS linkage</strong>: Link domestic policy documents (NKIS) and global policy documents (Overton) via identifiers, then recompute Korea-related metrics in the same frame.<br>
-With a larger sample, sensitivity checks become feasible for self-citation share, sourcing lines, and hub structure.</li>
-<li><strong>Break down by SDGs / agendas</strong>: Read policy agenda tags together with OpenAlex topics to compare which agendas repeatedly call upon which evidence.<br>
-Breaking country/source-type differences down by SDGs may sharpen the message.</li>
-<li><strong>Include evidence beyond DOIs</strong>: First quantify where and how much non-DOI evidence appears (reports, legislation, web sources).<br>
-Then combine with DOI citations to expand the map of evidence that policy actually consumes.</li>
+<li>Recompute the same indicators quarterly or biannually and monitor directional state (rising/stable/easing).</li>
+<li>Keep the main brief headline-focused, while updating formulas/sensitivity checks/extended tables in the Extended Report layer.</li>
+<li>Record all figure/text changes and rebuilt outputs in <code>Data_Insight/Report/Report_Update_Log.md</code>.</li>
 </ul>
 
 

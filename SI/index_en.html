@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Overton × OpenAlex - Supplementary (SI) — Overview</title>
+<title>Overton × OpenAlex - Extended Report — Overview</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -99,13 +99,21 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">보고서(PDF)</span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-si" role="button" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">보조자료(SI)</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-extended-report" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Extended Report</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-si">    
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-extended-report">    
         <li>
     <a class="dropdown-item" href="../SI/index.html">
  <span class="dropdown-text">개요</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../SI/extended_report.html">
+ <span class="dropdown-text">확장 본문</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../SI/methods.html">
+ <span class="dropdown-text">방법론·정합성</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../SI/interactive.html">
@@ -138,8 +146,8 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#structure" id="toc-structure" class="nav-link active" data-scroll-target="#structure">Structure</a></li>
-  <li><a href="#si-pages-fixed" id="toc-si-pages-fixed" class="nav-link" data-scroll-target="#si-pages-fixed">SI Pages (Fixed)</a></li>
-  <li><a href="#report-si-map" id="toc-report-si-map" class="nav-link" data-scroll-target="#report-si-map">Report ↔︎ SI Map</a></li>
+  <li><a href="#extended-report-pages-fixed" id="toc-extended-report-pages-fixed" class="nav-link" data-scroll-target="#extended-report-pages-fixed">Extended Report Pages (Fixed)</a></li>
+  <li><a href="#brief-extended-map" id="toc-brief-extended-map" class="nav-link" data-scroll-target="#brief-extended-map">Data Brief ↔︎ Extended Report Map</a></li>
   <li><a href="#quick-find" id="toc-quick-find" class="nav-link" data-scroll-target="#quick-find">Quick Find</a></li>
   <li><a href="#links" id="toc-links" class="nav-link" data-scroll-target="#links">Links</a></li>
   <li><a href="#updates" id="toc-updates" class="nav-link" data-scroll-target="#updates">Updates</a></li>
@@ -151,7 +159,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Supplementary (SI) — Overview</h1>
+<h1 class="title">Extended Report — Overview</h1>
 </div>
 
 
@@ -179,12 +187,11 @@ Warning
 </div>
 <div class="callout-body-container callout-body">
 <p><strong>Internal draft (English)</strong></p>
-<p>This English SI is for internal review and may lag the Korean SI.</p>
+<p>This English Extended Report is for internal review and may lag the Korean pages.</p>
 </div>
 </div>
 <p><a href="../SI/index.html"><code>Korean page</code></a></p>
-<p>The Supplementary Information (SI) complements the main report (PDF) by collecting <strong>definitions, preprocessing notes, additional figures, and interactive exploration</strong> that were omitted for space. It is intended to make the main text safer to interpret and easier to extend.</p>
-<p>Figure captions in the report PDF are provided in Korean only. English captions are available in SI Interactive (use the <code>KOR/ENG</code> toggle on the Korean page).</p>
+<p>The Extended Report is the companion layer to the main Data Brief. While the PDF keeps headline messages short, this web layer keeps the extended narrative, methods, diagnostics, and interactive exploration in one place.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -195,26 +202,29 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><strong>What this SI adds</strong></p>
+<p><strong>Role split</strong></p>
 <ul>
-<li>Definitions and interpretation notes omitted from the main text</li>
-<li>Interactive exploration of key figures</li>
-<li>A checklist of follow-up questions for extended analysis</li>
+<li><strong>Data Brief (PDF)</strong>: concise headline messages</li>
+<li><strong>Extended Report (web)</strong>: extended text, method checks, interpretation guardrails, and follow-up diagnostics</li>
 </ul>
 </div>
 </div>
 <section id="structure" class="level2">
 <h2 class="anchored" data-anchor-id="structure">Structure</h2>
 <ol type="1">
-<li><strong>Interactive</strong>: Explore the main figures on the web (zoom, toggle items, inspect values).<br>
+<li><strong>Extended text</strong>: narrative expansion of the brief<br>
 </li>
-<li><strong>Appendix</strong>: Coverage/tagging notes, metric definitions, interpretation cautions, and extra figures in one place.<br>
+<li><strong>Methods &amp; data validity</strong>: scope, denominators, matching/missingness, guardrails<br>
 </li>
-<li><strong>Next questions</strong>: A prioritized checklist for follow-up validation and extensions.</li>
+<li><strong>Interactive</strong>: zoom/toggle/inspect key figures<br>
+</li>
+<li><strong>Appendix</strong>: coverage/tagging notes and extra figures<br>
+</li>
+<li><strong>Next questions</strong>: follow-up checklist</li>
 </ol>
 </section>
-<section id="si-pages-fixed" class="level2">
-<h2 class="anchored" data-anchor-id="si-pages-fixed">SI Pages (Fixed)</h2>
+<section id="extended-report-pages-fixed" class="level2">
+<h2 class="anchored" data-anchor-id="extended-report-pages-fixed">Extended Report Pages (Fixed)</h2>
 <table class="table">
 <colgroup>
 <col style="width: 33%">
@@ -232,22 +242,32 @@ Note
 <tr class="odd">
 <td><code>index.qmd</code></td>
 <td>Entry / navigation</td>
-<td>report↔︎SI map, quick find, updates</td>
+<td>brief↔︎extended map, quick find, updates</td>
+</tr>
+<tr class="even">
+<td><code>extended_report.qmd</code></td>
+<td>Extended text</td>
+<td>narrative context and chapter-level interpretation</td>
+</tr>
+<tr class="odd">
+<td><code>methods.qmd</code></td>
+<td>Method checks</td>
+<td>scope/denominators/missingness/guardrails</td>
 </tr>
 <tr class="even">
 <td><code>interactive.qmd</code></td>
 <td>Exploration</td>
-<td>Interactive versions of Figures 1–12</td>
+<td>interactive versions of Figures 1-12</td>
 </tr>
 <tr class="odd">
 <td><code>appendix.qmd</code></td>
 <td>Evidence / definitions / extras</td>
-<td>coverage &amp; tagging, denominators &amp; definitions, sensitivity notes, extra figures</td>
+<td>coverage &amp; tagging, detailed definitions, extra figures</td>
 </tr>
 <tr class="even">
 <td><code>next_questions.qmd</code></td>
 <td>Follow-up</td>
-<td>Next-step questions and analysis priorities</td>
+<td>next-step questions and analysis priorities</td>
 </tr>
 </tbody>
 </table>
@@ -261,40 +281,39 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Legacy draft pages (<code>coverage.qmd</code>, <code>faq.qmd</code>, <code>figures.qmd</code>) were consolidated into <code>appendix.qmd</code>.<br>
-Only the four pages above are used as the official reading path on the website.</p>
+<p>For link stability, the site path remains <code>/SI/...</code> for now. Public-facing naming is unified as <strong>Extended Report</strong>.</p>
 </div>
 </div>
 </section>
-<section id="report-si-map" class="level2">
-<h2 class="anchored" data-anchor-id="report-si-map">Report ↔︎ SI Map</h2>
+<section id="brief-extended-map" class="level2">
+<h2 class="anchored" data-anchor-id="brief-extended-map">Data Brief ↔︎ Extended Report Map</h2>
 <table class="table">
 <thead>
 <tr class="header">
-<th>Main report</th>
-<th>See more in SI</th>
+<th>Main brief</th>
+<th>See more in Extended Report</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td>§2.1 Time (Figure 1)</td>
-<td><a href="../SI/interactive_en.html#si-fig-1">Interactive: Fig. 1</a> · <a href="../SI/appendix_en.html#why-2012">Appendix: Why 2012?</a> · <a href="../SI/appendix_en.html#recent-years-decline">Appendix: Recent-year decline</a></td>
+<td><a href="../SI/interactive_en.html#si-fig-1">Interactive: Fig. 1</a> · <a href="../SI/appendix_en.html#why-2012">Appendix: Why 2012?</a></td>
 </tr>
 <tr class="even">
 <td>§2.2 Domain (Figure 2)</td>
-<td><a href="../SI/interactive_en.html#si-fig-2">Interactive: Fig. 2</a> · <a href="../SI/appendix_en.html#data-fitness">Appendix: Matching &amp; missingness</a></td>
+<td><a href="../SI/interactive_en.html#si-fig-2">Interactive: Fig. 2</a> · <a href="../SI/methods_en.html">Methods</a> · <a href="../SI/appendix_en.html#data-fitness">Appendix: Matching &amp; missingness</a></td>
 </tr>
 <tr class="odd">
-<td>§2.3–2.4 Topics (Figures 3–4)</td>
-<td><a href="../SI/interactive_en.html#si-fig-3">Interactive: Fig. 3</a> · <a href="../SI/interactive_en.html#si-fig-4">Interactive: Fig. 4</a> · <a href="../SI/appendix_en.html#recency-intensity">Appendix: Recency / intensity</a> · <a href="../SI/appendix_en.html#multilabel">Appendix: Multi-label topics</a></td>
+<td>§2.3-2.4 Topics (Figures 3-4)</td>
+<td><a href="../SI/interactive_en.html#si-fig-3">Interactive: Fig. 3</a> · <a href="../SI/interactive_en.html#si-fig-4">Interactive: Fig. 4</a> · <a href="../SI/appendix_en.html#recency-intensity">Appendix: Recency / intensity</a></td>
 </tr>
 <tr class="even">
-<td>§3 Hubs (Figures 5–8)</td>
-<td><a href="../SI/interactive_en.html#si-fig-5">Interactive: Fig. 5</a> · <a href="../SI/interactive_en.html#si-fig-6">Fig. 6</a> · <a href="../SI/interactive_en.html#si-fig-7">Fig. 7</a> · <a href="../SI/interactive_en.html#si-fig-8">Fig. 8</a> · <a href="../SI/appendix_en.html#appendix-a">Appendix: Coverage &amp; tagging</a></td>
+<td>§3 Hubs (Figures 5-8)</td>
+<td><a href="../SI/extended_report_en.html#sec-2">Extended text: Chapter 2</a> · <a href="../SI/interactive_en.html#si-fig-5">Interactive: Fig. 5-8</a></td>
 </tr>
 <tr class="odd">
-<td>§4 Flows &amp; Korea (Figures 9–12)</td>
-<td><a href="../SI/interactive_en.html#si-fig-9">Interactive: Fig. 9</a> · <a href="../SI/interactive_en.html#si-fig-10">Fig. 10</a> · <a href="../SI/interactive_en.html#si-fig-11">Fig. 11</a> · <a href="../SI/interactive_en.html#si-fig-12">Fig. 12</a> · <a href="../SI/appendix_en.html#self-citation-share">Appendix: Self-citation denominator</a></td>
+<td>§4 Flows &amp; Korea (Figures 9-12)</td>
+<td><a href="../SI/extended_report_en.html#sec-3">Extended text: Chapter 3</a> · <a href="../SI/interactive_en.html#si-fig-9">Interactive: Fig. 9-12</a></td>
 </tr>
 </tbody>
 </table>
@@ -310,27 +329,27 @@ Only the four pages above are used as the official reading path on the website.<
 </thead>
 <tbody>
 <tr class="odd">
-<td>I want to check metric definitions and denominators</td>
-<td><a href="../SI/appendix_en.html#appendix-b">Appendix B</a> · <a href="../SI/appendix_en.html#appendix-b-quick">Quick definitions</a></td>
+<td>I want the expanded narrative</td>
+<td><a href="../SI/extended_report_en.html">Extended text</a></td>
 </tr>
 <tr class="even">
-<td>Why does the average look high around 2012?</td>
+<td>I want definitions and denominators</td>
+<td><a href="../SI/methods_en.html">Methods</a> · <a href="../SI/appendix_en.html#appendix-b">Appendix B</a></td>
+</tr>
+<tr class="odd">
+<td>Why does 2012 look high?</td>
 <td><a href="../SI/appendix_en.html#why-2012">Appendix: Why 2012?</a></td>
 </tr>
-<tr class="odd">
-<td>Why do topic/domain shares sometimes exceed 100%?</td>
+<tr class="even">
+<td>Why can topic/domain shares exceed 100%?</td>
 <td><a href="../SI/appendix_en.html#multilabel">Appendix: Multi-label topics</a></td>
 </tr>
-<tr class="even">
-<td>What is the denominator for self-citation share?</td>
-<td><a href="../SI/appendix_en.html#self-citation-share">Appendix: Self-citation share</a></td>
-</tr>
 <tr class="odd">
-<td>I want to explore the network (Figure 12)</td>
+<td>I want to inspect the network (Figure 12)</td>
 <td><a href="../SI/interactive_en.html#si-fig-12">Interactive: Fig. 12</a></td>
 </tr>
 <tr class="even">
-<td>I want a follow-up checklist</td>
+<td>I want the follow-up checklist</td>
 <td><a href="../SI/next_questions_en.html">Next questions</a></td>
 </tr>
 </tbody>
@@ -340,6 +359,8 @@ Only the four pages above are used as the official reading path on the website.<
 <h2 class="anchored" data-anchor-id="links">Links</h2>
 <ul>
 <li><a href="../Report/Report_final.pdf">Report (PDF)</a></li>
+<li><a href="../SI/extended_report_en.html">Extended text</a></li>
+<li><a href="../SI/methods_en.html">Methods &amp; Data Validity</a></li>
 <li><a href="../SI/interactive_en.html">Interactive</a></li>
 <li><a href="../SI/appendix_en.html">Appendix</a></li>
 <li><a href="../SI/next_questions_en.html">Next questions</a></li>
@@ -348,11 +369,8 @@ Only the four pages above are used as the official reading path on the website.<
 <section id="updates" class="level2">
 <h2 class="anchored" data-anchor-id="updates">Updates</h2>
 <ul>
-<li>2026-01-22: Improved the Figure 12 interactive (neighbor focus, curved arrows, hover readability).</li>
-<li>2026-01-22: Added the “Quick find” table and deep links.</li>
-<li>2026-02-05: Removed English captions from the report PDF; English captions are provided in SI Interactive.</li>
-<li>2026-02-05: Added the report↔︎SI map table and cleaned up interactive figure titles.</li>
-<li>2026-02-09: Added a KOR/ENG toggle (stage 1: captions) for SI and interactive plots.</li>
+<li>2026-02-12: Rebranded SI as Extended Report and added extended-text/method pages.</li>
+<li>2026-02-09: Added a KOR/ENG toggle (stage 1: captions) for Extended Report and interactive plots.</li>
 </ul>
 
 

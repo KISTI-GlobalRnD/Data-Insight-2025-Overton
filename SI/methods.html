@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
 
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.4.550">
@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Overton × OpenAlex - Next questions</title>
+<title>Overton × OpenAlex - 방법론·데이터 정합성</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -53,21 +53,19 @@ ul.task-list li input[type="checkbox"] {
   ],
   "show-item-context": false,
   "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
+    "search-no-results-text": "일치 없음",
+    "search-matching-documents-text": "일치된 문서",
+    "search-copy-link-title": "검색 링크 복사",
+    "search-hide-matches-text": "추가 검색 결과 숨기기",
+    "search-more-match-text": "추가 검색결과",
+    "search-more-matches-text": "추가 검색결과",
+    "search-clear-button-title": "제거",
     "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
+    "search-detached-cancel-button-title": "취소",
+    "search-submit-button-title": "검색",
+    "search-label": "검색"
   }
 }</script>
-<meta name="robots" content="noindex, nofollow">
-
 
 
 <link rel="stylesheet" href="../Assets/Site/si.css">
@@ -84,8 +82,8 @@ ul.task-list li input[type="checkbox"] {
     <span class="navbar-title">Overton × OpenAlex</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+            <div id="quarto-search" class="" title="검색"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="탐색 전환" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -142,16 +140,14 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
+    <h2 id="toc-title">목차</h2>
    
   <ul>
-  <li><a href="#prioritized-follow-up-questions-3" id="toc-prioritized-follow-up-questions-3" class="nav-link active" data-scroll-target="#prioritized-follow-up-questions-3">Prioritized follow-up questions (3)</a>
-  <ul class="collapse">
-  <li><a href="#next-q1" id="toc-next-q1" class="nav-link" data-scroll-target="#next-q1">Q1. If we include citations between policy documents, how do evidence routes change?</a></li>
-  <li><a href="#next-q2" id="toc-next-q2" class="nav-link" data-scroll-target="#next-q2">Q2. If we read citation context, can the same citation mean different things?</a></li>
-  <li><a href="#next-q3" id="toc-next-q3" class="nav-link" data-scroll-target="#next-q3">Q3. From a network perspective, what diffusion patterns does evidence follow?</a></li>
-  </ul></li>
-  <li><a href="#additional-extension-ideas-optional" id="toc-additional-extension-ideas-optional" class="nav-link" data-scroll-target="#additional-extension-ideas-optional">Additional extension ideas (optional)</a></li>
+  <li><a href="#method-scope" id="toc-method-scope" class="nav-link active" data-scroll-target="#method-scope">1) 분석 범위</a></li>
+  <li><a href="#method-matching" id="toc-method-matching" class="nav-link" data-scroll-target="#method-matching">2) 매칭·결측 점검</a></li>
+  <li><a href="#method-metrics" id="toc-method-metrics" class="nav-link" data-scroll-target="#method-metrics">3) 핵심 지표 정의(요약)</a></li>
+  <li><a href="#method-guardrails" id="toc-method-guardrails" class="nav-link" data-scroll-target="#method-guardrails">4) 해석 가드레일</a></li>
+  <li><a href="#method-protocol" id="toc-method-protocol" class="nav-link" data-scroll-target="#method-protocol">5) 재현·업데이트 프로토콜</a></li>
   </ul>
 </nav>
     </div>
@@ -160,7 +156,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Next questions</h1>
+<h1 class="title">방법론·데이터 정합성</h1>
 </div>
 
 
@@ -177,80 +173,67 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><a href="../SI/index_en.html"><code>← Extended Report Overview</code></a> · <a href="../Report/Report_final.pdf"><code>Report (PDF)</code></a> · <a href="../SI/next_questions.html"><code>Korean page</code></a></p>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Warning
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p><strong>Internal draft (English)</strong></p>
-<p>This English Extended Report is for internal review and may lag the Korean pages.</p>
-</div>
-</div>
-<p>This page lists three follow-up questions worth checking after reading the report.<br>
-They focus on analyses needed to validate the observed patterns or to explain “why this pattern emerges.”</p>
+<p><a href="../SI/index.html"><code>← Extended Report 개요</code></a> · <a href="../SI/extended_report.html"><code>확장 본문</code></a> · <a href="../SI/appendix.html"><code>부록</code></a> · <a href="../Report/Report_final.pdf"><code>보고서(PDF)</code></a></p>
+<p>이 페이지는 Data Brief 본문에서 압축한 방법론 설명을 <strong>검증 가능한 체크포인트 중심</strong>으로 정리한다.<br>
+상세 표와 추가 진단 그림은 <a href="../SI/appendix.html">부록</a>에서 바로 확인할 수 있다.</p>
+<section id="method-scope" class="level2">
+<h2 class="anchored" data-anchor-id="method-scope">1) 분석 범위</h2>
+<ul>
+<li>데이터 스냅샷: Overton 2025.02, OpenAlex 2025.06</li>
+<li>분석 단위: <code>policy_document_id</code> 기준 고유 정책문헌</li>
+<li>인용 범위: 정책문헌 참고문헌에서 DOI가 확인되는 학술 인용</li>
+</ul>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Note
+노트
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><strong>How this page complements the report</strong></p>
+<p><strong>해석 범위 주의</strong></p>
 <ul>
-<li>It turns the “check questions” left in the main text into a follow-up checklist.</li>
-<li>Each question is framed as a next step for validation, not as a way to lock in a conclusion.</li>
+<li>본 결과는 Overton 전체 정책문헌의 완전한 센서스가 아니라, 이번 스냅샷/매칭 범위에서 관측된 구조다.</li>
+<li>DOI 밖 근거(보고서, 법령, 웹 등)는 본 기본 지표에 포함되지 않는다.</li>
 </ul>
 </div>
 </div>
-<section id="prioritized-follow-up-questions-3" class="level2">
-<h2 class="anchored" data-anchor-id="prioritized-follow-up-questions-3">Prioritized follow-up questions (3)</h2>
-<section id="next-q1" class="level3">
-<h3 class="anchored" data-anchor-id="next-q1">Q1. If we include citations between policy documents, how do evidence routes change?</h3>
-<p>Beyond policy documents directly citing research, adding a layer of policy-to-policy citations can change what “hubs” mean.</p>
+</section>
+<section id="method-matching" class="level2">
+<h2 class="anchored" data-anchor-id="method-matching">2) 매칭·결측 점검</h2>
 <ul>
-<li>In the <strong>policy-to-policy citation network</strong> (not the research citation network), who are the hubs?</li>
-<li>Which documents function as “evidence synthesizers” (collecting and summarizing evidence)?</li>
-<li>During crises, does evidence flow come directly from papers, or does it get amplified through policy-to-policy citations?</li>
+<li>DOI -&gt; OpenAlex 매칭률과 국가코드 결측은 해석의 안전장치다.</li>
+<li>특히 국가 비교는 1저자 국가코드 확인분(known citations) 조건을 먼저 확인해야 한다.</li>
 </ul>
+<p>바로가기: - <a href="../SI/appendix.html#data-fitness">부록 B0-1. 매칭·결측 요약</a> - <a href="../SI/appendix.html#appendix-b-quick">부록 B0. 자주 찾는 정의</a></p>
 </section>
-<section id="next-q2" class="level3">
-<h3 class="anchored" data-anchor-id="next-q2">Q2. If we read citation context, can the same citation mean different things?</h3>
-<p>Even for the same DOI citation, the function differs (evidence, background, criticism). Context lets us read citations as meaning, not just counts.</p>
+<section id="method-metrics" class="level2">
+<h2 class="anchored" data-anchor-id="method-metrics">3) 핵심 지표 정의(요약)</h2>
 <ul>
-<li>Can we represent the meaning of citation sentences/paragraphs as vectors and classify <strong>citation functions</strong>?</li>
-<li>If we separate “citations used as evidence” from “incidental mentions,” do the hubs change?</li>
-<li>Can shifts in context embeddings act as early signals that policy synthesis for a topic has matured?</li>
+<li>인용 건수 vs 고유 논문 수: 빈도와 폭을 분리해서 본다.</li>
+<li>최근성: <code>2022-2024</code> 발행 논문으로 향한 정책 인용 비중</li>
+<li>인용 강도: 집계 단위 내 <code>인용 건수 / 고유 논문 수</code></li>
+<li>자국 인용 비중: 1저자 국가코드 확인분만 분모에 포함</li>
 </ul>
+<p>바로가기: - <a href="../SI/appendix.html#citations-vs-works">인용 건수 vs 고유 논문 수</a> - <a href="../SI/appendix.html#recency-intensity">최근성/인용 강도</a> - <a href="../SI/appendix.html#self-citation-share">자국 인용 비중</a></p>
 </section>
-<section id="next-q3" class="level3">
-<h3 class="anchored" data-anchor-id="next-q3">Q3. From a network perspective, what diffusion patterns does evidence follow?</h3>
-<p>If we treat policy evidence flows as diffusion over a network, we can describe spikes, hub dependence, and vulnerability differently.</p>
+<section id="method-guardrails" class="level2">
+<h2 class="anchored" data-anchor-id="method-guardrails">4) 해석 가드레일</h2>
 <ul>
-<li>Why do some evidence items spread quickly <strong>through a small number of hubs</strong>?</li>
-<li>During crises, does diffusion cross a threshold (tipping-point behavior)?</li>
-<li>If a hub is removed, how fragile is the flow, and how resilient is the network?</li>
+<li>다중라벨 토픽 합은 100%를 넘을 수 있다.</li>
+<li>최근 연도 하락은 관측 지연(인용 누적 시차) 신호일 수 있다.</li>
+<li>2012년 평균 고점은 분포 진단(중앙값/절단평균)과 함께 해석해야 한다.</li>
 </ul>
+<p>바로가기: - <a href="../SI/appendix.html#multilabel">다중라벨 해석</a> - <a href="../SI/appendix.html#recent-years-decline">최근 연도 하락 주의</a> - <a href="../SI/appendix.html#why-2012">2012년 평균 진단</a></p>
 </section>
-</section>
-<section id="additional-extension-ideas-optional" class="level2">
-<h2 class="anchored" data-anchor-id="additional-extension-ideas-optional">Additional extension ideas (optional)</h2>
-<p>The following directions can “update” or “extend” the observations in this report.</p>
+<section id="method-protocol" class="level2">
+<h2 class="anchored" data-anchor-id="method-protocol">5) 재현·업데이트 프로토콜</h2>
 <ul>
-<li><strong>Recompute after NKIS linkage</strong>: Link domestic policy documents (NKIS) and global policy documents (Overton) via identifiers, then recompute Korea-related metrics in the same frame.<br>
-With a larger sample, sensitivity checks become feasible for self-citation share, sourcing lines, and hub structure.</li>
-<li><strong>Break down by SDGs / agendas</strong>: Read policy agenda tags together with OpenAlex topics to compare which agendas repeatedly call upon which evidence.<br>
-Breaking country/source-type differences down by SDGs may sharpen the message.</li>
-<li><strong>Include evidence beyond DOIs</strong>: First quantify where and how much non-DOI evidence appears (reports, legislation, web sources).<br>
-Then combine with DOI citations to expand the map of evidence that policy actually consumes.</li>
+<li>동일 지표를 분기 또는 반기 단위로 재계산해 방향성(상승/유지/완화)을 점검한다.</li>
+<li>메인 브리프는 핵심 메시지 중심으로 유지하고, 계산식·민감도·확장 표는 Extended Report에서 업데이트한다.</li>
+<li>변경 이력은 <code>Data_Insight/Report/Report_Update_Log.md</code>에 기록한다.</li>
 </ul>
 
 
@@ -312,12 +295,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // flash "checked"
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "Copied!");
+    button.setAttribute("title", "복사완료!");
     let tooltip;
     if (window.bootstrap) {
       button.setAttribute("data-bs-toggle", "tooltip");
       button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "Copied!");
+      button.setAttribute("data-bs-title", "복사완료!");
       tooltip = new bootstrap.Tooltip(button, 
         { trigger: "manual", 
           customClass: "code-copy-button-tooltip",
