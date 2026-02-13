@@ -4,7 +4,7 @@
     "href": "SI/next_questions_en.html",
     "title": "Next questions",
     "section": "",
-    "text": "← Extended Report Overview · Report (PDF) · Korean page\nThis page lists three follow-up questions worth checking after reading the report.\nThey focus on analyses needed to validate the observed patterns or to explain “why this pattern emerges.”"
+    "text": "← Extended Report Overview · Report (PDF) · Korean page\nThis page lists three follow-up questions worth checking after reading the Data Brief.\nThey focus on analyses needed to validate the observed patterns or to explain “why this pattern emerges.”"
   },
   {
     "objectID": "SI/next_questions_en.html#prioritized-follow-up-questions-3",
@@ -70,18 +70,123 @@
     "text": "← Extended Report Overview · Methods · Interactive · Appendix · Report (PDF) · Korean page"
   },
   {
-    "objectID": "SI/extended_report_en.html#planned-structure",
-    "href": "SI/extended_report_en.html#planned-structure",
+    "objectID": "SI/extended_report_en.html#reading-guide-10-min",
+    "href": "SI/extended_report_en.html#reading-guide-10-min",
     "title": "Extended Text",
-    "section": "Planned structure",
-    "text": "Planned structure\n\nWhy “evidence linkage structure” matters beyond citing share\nWhere evidence accumulates (hub concentration)\nKorea’s inbound vs procurement asymmetry\nRepeated monitoring questions (quarterly/biannual)\nInterpretation scope and guardrails"
+    "section": "Reading guide (10 min)",
+    "text": "Reading guide (10 min)\n\nChapter 1: Why evidence-linkage structure matters more than citing share alone (Figures 1, 2, 4)\nChapter 2: Where evidence accumulates in practice (hub structure; Figures 5, 7, 8)\nChapter 3: Where Korea’s inbound/procurement asymmetry appears (Figures 6, 9, 10, 11, 12)\nChapters 4-5: Repeated monitoring questions and interpretation scope"
   },
   {
-    "objectID": "SI/extended_report_en.html#current-reading-path",
-    "href": "SI/extended_report_en.html#current-reading-path",
+    "objectID": "SI/extended_report_en.html#key-numbers-at-a-glance",
+    "href": "SI/extended_report_en.html#key-numbers-at-a-glance",
     "title": "Extended Text",
-    "section": "Current reading path",
-    "text": "Current reading path\n\nRead the Korean extended text: Extended text (KOR)\nCheck methods: Methods & Data Validity\nInspect figures interactively: Interactive\nUse full definitions and diagnostics: Appendix"
+    "section": "Key numbers at a glance",
+    "text": "Key numbers at a glance\n\nUnique policy documents (deduplicated): 1,381,084\nDOI-based policy-to-research citation links: 23,370,284\nUnique cited works: 6,532,365\nTop 3 domain share (multi-label domain aggregation): 88.8%"
+  },
+  {
+    "objectID": "SI/extended_report_en.html#why-these-questions-emerged",
+    "href": "SI/extended_report_en.html#why-these-questions-emerged",
+    "title": "Extended Text",
+    "section": "1.1 Why these questions emerged",
+    "text": "1.1 Why these questions emerged\nThese questions were not chosen arbitrarily. They came from three observations.\n\nObservation 1: Prior studies describe “how much is cited” well, but explain “where evidence converges” less.\nObservation 2: In the Overton-OpenAlex linked data, concentration repeatedly appears in top domains and top policy sources.\nObservation 3: For Korea, inbound and procurement routes show different structural signals when separated.\n\nTherefore, the text checks two questions.\n\nQ1: Is policy evidence distributed broadly, or concentrated in hub channels?\nH1 (working assumption): Policy evidence will show relatively concentrated patterns around a small set of hub channels.\nQ2: Are Korea’s inbound and procurement evidence routes symmetric?\nH2 (working assumption): Korea will show asymmetric patterns across domains and countries."
+  },
+  {
+    "objectID": "SI/extended_report_en.html#time-and-concentration-baseline-pattern-of-linkage-structure",
+    "href": "SI/extended_report_en.html#time-and-concentration-baseline-pattern-of-linkage-structure",
+    "title": "Extended Text",
+    "section": "1.2 Time and concentration: baseline pattern of linkage structure",
+    "text": "1.2 Time and concentration: baseline pattern of linkage structure\n\n\n\nFigure 1. Policy documents by publication year: citation volume, document counts, and average citations per document\n\n\nFigure 1 shows rapid growth in DOI citation volume from the mid-2010s and a peak around 2021.\nThe post-2022 decline should not be read as an immediate reversal without first checking lag effects (roughly 4-5 years) between publication and citation accumulation.\n\n\n\nFigure 2. Field composition within policy-cited domains: top 3 fields, other, and field-missing segment in each domain\n\n\nFigure 2 shows strong concentration at domain level. Under multi-label domain aggregation, the top three domains account for 88.8%.\nThis is not a “better/worse” ranking claim; it is a structural observation that policy evidence demand is concentrated in specific agenda/domain channels."
+  },
+  {
+    "objectID": "SI/extended_report_en.html#topics-do-not-move-at-the-same-speed",
+    "href": "SI/extended_report_en.html#topics-do-not-move-at-the-same-speed",
+    "title": "Extended Text",
+    "section": "1.3 Topics do not move at the same speed",
+    "text": "1.3 Topics do not move at the same speed\n\n\n\nFigure 3. Topic-level policy citations vs unique works; labels indicate top policy-cited topics by domain\n\n\nFigure 3 shows that unique work counts and policy citation counts do not always move together.\nHigh research production in a topic does not automatically imply high policy uptake.\n\n\n\nFigure 4. Topic-level citation intensity vs recency; labels indicate top topics by recency and intensity\n\n\nFigure 4 suggests coexistence of “mature topics” and “high-growth topics” in policy evidence use.\nEvidence update cycles and synthesis speed can differ by policy agenda.\nChapter 1 takeaway\nWhat matters more than a single citing-share number is the linkage structure of where evidence accumulates and how it is transmitted."
+  },
+  {
+    "objectID": "SI/extended_report_en.html#total-volume-and-density-send-different-signals",
+    "href": "SI/extended_report_en.html#total-volume-and-density-send-different-signals",
+    "title": "Extended Text",
+    "section": "2.1 Total volume and density send different signals",
+    "text": "2.1 Total volume and density send different signals\n\n\n\nFigure 5. Citation volume and citations-per-document by policy source entities, plus domain composition (top 10 + Korea)\n\n\nIn Figure 5A (total citations), a few sources such as IGOs, the U.S., the U.K., and the EU dominate.\nBut Figure 5B (citations per document) does not follow the same order.\nSo “channels that produce many documents” and “channels that pack dense evidence per document” should be read separately."
+  },
+  {
+    "objectID": "SI/extended_report_en.html#evidence-use-patterns-vary-by-source-type",
+    "href": "SI/extended_report_en.html#evidence-use-patterns-vary-by-source-type",
+    "title": "Extended Text",
+    "section": "2.2 Evidence-use patterns vary by source type",
+    "text": "2.2 Evidence-use patterns vary by source type\n\n\n\nFigure 7. Total citations and citations per policy document by source type\n\n\nFigure 7 repeats the same distinction.\nA type with large total volume does not necessarily have high per-document citation density.\nBecause source-type tags are not mutually exclusive, pattern differences across types are more informative than raw share levels.\n\n\n\nFigure 8. Source type × domain citation-share heatmap (100% normalized within each type)\n\n\nFigure 8 shows domain-composition differences by source type.\nPolicy evidence use reflects not only research-side supply, but also source-role and agenda composition.\nChapter 2 takeaway\nHub concentration can improve transmission efficiency, but higher concentration can also increase sensitivity to shocks in a few channels. That is why repeated monitoring should track whether top-channel concentration is rising, stable, or easing."
+  },
+  {
+    "objectID": "SI/extended_report_en.html#koreas-domain-demand-supply-mix-is-misaligned",
+    "href": "SI/extended_report_en.html#koreas-domain-demand-supply-mix-is-misaligned",
+    "title": "Extended Text",
+    "section": "3.1 Korea’s domain demand-supply mix is misaligned",
+    "text": "3.1 Korea’s domain demand-supply mix is misaligned\n\n\n\nFigure 6. Domain-mix mismatch in selected countries: policy-cited research vs research cited by global policy\n\n\nIn Figure 6, the x-axis is the domain mix of research cited by Korean policy; the y-axis is the domain mix in which Korean research is cited by global policy (first-author basis).\nThe diagonal means the two mixes are the same.\nKorea appears below the diagonal in Social Sciences and above the diagonal in Health/Physical/Life, indicating domain-level mismatch."
+  },
+  {
+    "objectID": "SI/extended_report_en.html#where-korean-policy-procures-evidence",
+    "href": "SI/extended_report_en.html#where-korean-policy-procures-evidence",
+    "title": "Extended Text",
+    "section": "3.2 Where Korean policy procures evidence",
+    "text": "3.2 Where Korean policy procures evidence\n\n\n\nFigure 9. Policy source × research country citations: (A) absolute volume, (B) within-source normalized shares; first-author basis\n\n\nFigure 9 shows procurement lines by policy source (which countries’ research is pulled in).\nSources with stronger multilateral character (e.g., IGOs) tend to show broader procurement portfolios, while some sources show stronger domestic or single-country dependence."
+  },
+  {
+    "objectID": "SI/extended_report_en.html#koreas-self-citation-share-and-two-way-routes",
+    "href": "SI/extended_report_en.html#koreas-self-citation-share-and-two-way-routes",
+    "title": "Extended Text",
+    "section": "3.3 Korea’s self-citation share and two-way routes",
+    "text": "3.3 Korea’s self-citation share and two-way routes\n\n\n\nFigure 10. Self-citation share vs expected baseline, plus domain composition for domestic vs non-domestic citations (top 7 policy-source countries + Korea)\n\n\nFor Korea in Figure 10, self-citation share is about 4.1% on the known-citation denominator (citations with known first-author country code).\nThe Korean sample is small (2,742 policy-source documents) and affected by missingness, so this should be treated as a trend-check indicator rather than a ranking signal.\nThe expected-vs-observed comparison is also relative to a domain-weighted baseline, not an absolute score.\n\n\n\nFigure 11. Two-way Korea policy-research flows and domain composition (top 10)\n\n\nFigure 11 visualizes inbound/procurement asymmetry directly.\nOn the inbound side, the U.K. (32.8%), IGOs (16.3%), and the U.S. (16.2%) are large shares. On the procurement side, U.S. research takes 57.3% (known-citation basis).\nThese numbers are not value judgments; they are route-difference diagnostics.\nAlso, inbound and procurement shares are normalized within each direction, so they should not be used for direct absolute cross-direction magnitude comparison.\n\n\n\nFigure 12. Policy-research evidence-flow network: top 50 nodes, top 3 links per node\n\n\nFigure 12 summarizes the same asymmetry as a network view.\nBecause it is a reduced map with top nodes and top links only, it should be read as a large-route structure tool, not as a full-network representation.\nChapter 3 takeaway\nKorea’s inbound and procurement routes follow different structures. Strategy should therefore be route-specific rather than a single one-score prescription."
+  },
+  {
+    "objectID": "SI/extended_report_en.html#next-quarter-check-questions-core-3",
+    "href": "SI/extended_report_en.html#next-quarter-check-questions-core-3",
+    "title": "Extended Text",
+    "section": "4.1 Next-quarter check questions (core 3)",
+    "text": "4.1 Next-quarter check questions (core 3)\n\nHub dependence check: Is top-source concentration rising, stable, or easing versus the previous period?\nProcurement portfolio check: Is concentration in Korea’s procurement portfolio rising, stable, or easing versus the previous period?\nRepeated-measurement check: If we recompute the same indicators every 6-12 months, does the directional signal hold?"
+  },
+  {
+    "objectID": "SI/extended_report_en.html#follow-up-analysis-roadmap-short",
+    "href": "SI/extended_report_en.html#follow-up-analysis-roadmap-short",
+    "title": "Extended Text",
+    "section": "4.2 Follow-up analysis roadmap (short)",
+    "text": "4.2 Follow-up analysis roadmap (short)\n\nInclude non-DOI evidence (reports, web sources, legal texts)\nAdd policy-to-policy citation layers\nSeparate citation-context functions (evidence use vs background mention vs critique)\nConnect policy agenda classifications (e.g., SDGs) with topic classifications as a dual frame\n\nDetailed follow-up checklists are in Next questions.\nAdditional figures and diagnostic notes are in Appendix.\nChapter 4 takeaway\nThe priority is not stronger assertion; it is a repeatable observation system."
+  },
+  {
+    "objectID": "SI/extended_report_en.html#what-this-brief-does-say",
+    "href": "SI/extended_report_en.html#what-this-brief-does-say",
+    "title": "Extended Text",
+    "section": "5.1 What this brief does say",
+    "text": "5.1 What this brief does say\n\nPolicy evidence shows concentrated structures in a small set of hub channels (Figures 2, 5, 7, 8).\nKorea’s evidence inbound and procurement routes show different structural patterns (Figures 6, 9, 10, 11, 12).\nRoute-specific monitoring is therefore a higher priority than one-score ranking."
+  },
+  {
+    "objectID": "SI/extended_report_en.html#what-this-brief-does-not-say",
+    "href": "SI/extended_report_en.html#what-this-brief-does-not-say",
+    "title": "Extended Text",
+    "section": "5.2 What this brief does not say",
+    "text": "5.2 What this brief does not say\n\nCitation volume is not treated as direct policy impact/performance.\nNon-DOI evidence (web/legal/report citations) is outside default scope.\nKorea-specific numbers can vary with sample size, missingness, and snapshot updates."
+  },
+  {
+    "objectID": "SI/extended_report_en.html#methods-and-validity-checks-in-extended-report",
+    "href": "SI/extended_report_en.html#methods-and-validity-checks-in-extended-report",
+    "title": "Extended Text",
+    "section": "5.3 Methods and validity checks in Extended Report",
+    "text": "5.3 Methods and validity checks in Extended Report\n\nScope/denominators/missingness: Methods, Matching & missingness\nMetric definitions and guardrails: Core metrics, Interpretation guardrails\nDetailed tables and diagnostics: Appendix A. Coverage & tagging, Appendix B. Definitions & interpretation, Appendix C. Additional figures\nFollow-up validation questions: Next questions"
+  },
+  {
+    "objectID": "SI/extended_report_en.html#closing-note",
+    "href": "SI/extended_report_en.html#closing-note",
+    "title": "Extended Text",
+    "section": "5.4 Closing note",
+    "text": "5.4 Closing note\nThis report attempts to read policy evidence as “how it is connected,” not only “how much is cited.”\nTwo headline findings remain: evidence is concentrated in hub channels, and Korea’s inbound/procurement routes are asymmetric.\nTo stabilize Korea-focused comparisons, domestic policy references need to be structured with identifiers (DOI/URL) and recomputed in the same frame.\nKim, Park, & Yoon (2025) provides an NKIS-based starting point for that direction.\nThe next step is not to amplify conclusions but to standardize the observation system.\nOnly then can Korea’s evidence-linkage structure be measured repeatedly under a consistent frame and tied to actual improvement checks."
+  },
+  {
+    "objectID": "SI/extended_report_en.html#footnotes",
+    "href": "SI/extended_report_en.html#footnotes",
+    "title": "Extended Text",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nIn this report, a “hub” means a policy source where DOI-matched scholarly citations are observed in large volume. It is a structural observation unit, not a quality/reputation judgment.↩︎\nThe main brief focuses on concise result communication. Definitions, denominators, matching/missingness notes, and interpretation guardrails are documented in Methods and Appendix: data fitness.↩︎\nPrior figures such as 4-6% (Pinheiro et al., 2021; Fang et al., 2024) refer to “the share of all papers that are mentioned in policy documents.” This report tracks “DOI-based policy-to-paper citations within an Overton policy-document snapshot.” Direct comparison would distort interpretation.↩︎"
   },
   {
     "objectID": "SI/next_questions.html",
@@ -256,7 +361,7 @@
     "href": "SI/extended_report.html#방법론정합성은-extended-report에서-확인",
     "title": "확장 본문 (Extended Report)",
     "section": "5.3 방법론·정합성은 Extended Report에서 확인",
-    "text": "5.3 방법론·정합성은 Extended Report에서 확인\n\n범위·분모·결측 점검: 방법론·데이터 정합성, 매칭·결측\n지표 정의와 해석 가드레일: 핵심 지표 정의, 해석 가드레일\n상세 표·추가 진단: 부록 A. 커버리지·태깅, 부록 B. 정의·해석, 부록 C. 추가 그림\n후속 검증 질문: 다음 질문\n\n\n\n내부 작업 메모(편집용)\n\n재현 입력·출력, 민감도 점검, 확장 참고문헌 관리에는 Data_Insight/Report/SI_v2_draft_outline.md를 사용한다."
+    "text": "5.3 방법론·정합성은 Extended Report에서 확인\n\n범위·분모·결측 점검: 방법론·데이터 정합성, 매칭·결측\n지표 정의와 해석 가드레일: 핵심 지표 정의, 해석 가드레일\n상세 표·추가 진단: 부록 A. 커버리지·태깅, 부록 B. 정의·해석, 부록 C. 추가 그림\n후속 검증 질문: 다음 질문"
   },
   {
     "objectID": "SI/extended_report.html#맺음말",
@@ -329,36 +434,36 @@
     "text": "← Extended Report 개요 · 확장 본문 · 부록 · 보고서(PDF)\n이 페이지는 Data Brief 본문에서 압축한 방법론 설명을 검증 가능한 체크포인트 중심으로 정리한다.\n상세 표와 추가 진단 그림은 부록에서 바로 확인할 수 있다."
   },
   {
-    "objectID": "SI/methods.html#분석-범위",
-    "href": "SI/methods.html#분석-범위",
+    "objectID": "SI/methods.html#method-scope",
+    "href": "SI/methods.html#method-scope",
     "title": "방법론·데이터 정합성",
     "section": "1) 분석 범위",
     "text": "1) 분석 범위\n\n데이터 스냅샷: Overton 2025.02, OpenAlex 2025.06\n분석 단위: policy_document_id 기준 고유 정책문헌\n인용 범위: 정책문헌 참고문헌에서 DOI가 확인되는 학술 인용\n\n\n\n\n\n\n\n노트\n\n\n\n해석 범위 주의\n\n본 결과는 Overton 전체 정책문헌의 완전한 센서스가 아니라, 이번 스냅샷/매칭 범위에서 관측된 구조다.\nDOI 밖 근거(보고서, 법령, 웹 등)는 본 기본 지표에 포함되지 않는다."
   },
   {
-    "objectID": "SI/methods.html#매칭결측-점검",
-    "href": "SI/methods.html#매칭결측-점검",
+    "objectID": "SI/methods.html#method-matching",
+    "href": "SI/methods.html#method-matching",
     "title": "방법론·데이터 정합성",
     "section": "2) 매칭·결측 점검",
     "text": "2) 매칭·결측 점검\n\nDOI -&gt; OpenAlex 매칭률과 국가코드 결측은 해석의 안전장치다.\n특히 국가 비교는 1저자 국가코드 확인분(known citations) 조건을 먼저 확인해야 한다.\n\n바로가기: - 부록 B0-1. 매칭·결측 요약 - 부록 B0. 자주 찾는 정의"
   },
   {
-    "objectID": "SI/methods.html#핵심-지표-정의요약",
-    "href": "SI/methods.html#핵심-지표-정의요약",
+    "objectID": "SI/methods.html#method-metrics",
+    "href": "SI/methods.html#method-metrics",
     "title": "방법론·데이터 정합성",
     "section": "3) 핵심 지표 정의(요약)",
     "text": "3) 핵심 지표 정의(요약)\n\n인용 건수 vs 고유 논문 수: 빈도와 폭을 분리해서 본다.\n최근성: 2022-2024 발행 논문으로 향한 정책 인용 비중\n인용 강도: 집계 단위 내 인용 건수 / 고유 논문 수\n자국 인용 비중: 1저자 국가코드 확인분만 분모에 포함\n\n바로가기: - 인용 건수 vs 고유 논문 수 - 최근성/인용 강도 - 자국 인용 비중"
   },
   {
-    "objectID": "SI/methods.html#해석-가드레일",
-    "href": "SI/methods.html#해석-가드레일",
+    "objectID": "SI/methods.html#method-guardrails",
+    "href": "SI/methods.html#method-guardrails",
     "title": "방법론·데이터 정합성",
     "section": "4) 해석 가드레일",
     "text": "4) 해석 가드레일\n\n다중라벨 토픽 합은 100%를 넘을 수 있다.\n최근 연도 하락은 관측 지연(인용 누적 시차) 신호일 수 있다.\n2012년 평균 고점은 분포 진단(중앙값/절단평균)과 함께 해석해야 한다.\n\n바로가기: - 다중라벨 해석 - 최근 연도 하락 주의 - 2012년 평균 진단"
   },
   {
-    "objectID": "SI/methods.html#재현업데이트-프로토콜",
-    "href": "SI/methods.html#재현업데이트-프로토콜",
+    "objectID": "SI/methods.html#method-protocol",
+    "href": "SI/methods.html#method-protocol",
     "title": "방법론·데이터 정합성",
     "section": "5) 재현·업데이트 프로토콜",
     "text": "5) 재현·업데이트 프로토콜\n\n동일 지표를 분기 또는 반기 단위로 재계산해 방향성(상승/유지/완화)을 점검한다.\n메인 브리프는 핵심 메시지 중심으로 유지하고, 계산식·민감도·확장 표는 Extended Report에서 업데이트한다.\n변경 이력은 Data_Insight/Report/Report_Update_Log.md에 기록한다."
@@ -448,202 +553,6 @@
     "text": "← Extended Report Overview · Extended text · Appendix · Report (PDF) · Korean page\nThis page summarizes method notes from the Data Brief as verifiable checkpoints.\nFor detailed tables and diagnostics, use the linked appendix sections."
   },
   {
-    "objectID": "SI/methods_en.html#core-checkpoints",
-    "href": "SI/methods_en.html#core-checkpoints",
-    "title": "Methods & Data Validity",
-    "section": "Core checkpoints",
-    "text": "Core checkpoints\n\nScope and denominator: DOI-based policy-to-research citation records\nMatching and missingness: DOI matching to OpenAlex, first-author country availability\nMetric definitions: recency, intensity, self-citation denominator\nInterpretation guardrails: multi-label topics, recent-year lag, 2012 mean spike diagnostics"
-  },
-  {
-    "objectID": "SI/methods_en.html#jump-links",
-    "href": "SI/methods_en.html#jump-links",
-    "title": "Methods & Data Validity",
-    "section": "Jump links",
-    "text": "Jump links\n\nAppendix: Matching & missingness\nAppendix: Quick definitions\nAppendix: Citations vs works\nAppendix: Recency / intensity\nAppendix: Self-citation share\nAppendix: Multi-label topics\nAppendix: Recent-year decline\nAppendix: Why 2012?"
-  },
-  {
-    "objectID": "SI/appendix_en.html",
-    "href": "SI/appendix_en.html",
-    "title": "Appendix",
-    "section": "",
-    "text": "← Extended Report Overview · Interactive · Report (PDF) · Korean page\nThis appendix compiles coverage & tagging notes, metric definitions & interpretation cautions, and additional figures.\nThe goal is to support safer interpretation of the numbers and patterns in the Data Brief text.\nJump to: A. Coverage & tagging · B. Definitions & interpretation · C. Additional figures"
-  },
-  {
-    "objectID": "SI/appendix_en.html#appendix-a",
-    "href": "SI/appendix_en.html#appendix-a",
-    "title": "Appendix",
-    "section": "A. Coverage & tagging",
-    "text": "A. Coverage & tagging\nThis section provides the minimum evidence needed before reading “hub structure.”\nIt shows that the observable policy-document universe in Overton may be uneven across countries.\n\nA1. Policy document coverage map (documents by policy source country)\n\n\n\n\n\n\nNote\n\n\n\nDisplay rules (summary)\n\nUse top-level country tags only (exclude sub-tags like USA &gt; California)\nExclude IGO / EU\nUse a log scale for coloring due to large cross-country variance\n\n\n\n\n  \n    Open in new tab\n    May load slowly\n    Load plot\n  \n\n\n\nA2. Why exclude sub-tags (A &gt; B) and keep top-level country tags only\nOverton policy source country tags include country-level tags (e.g., USA, UK) and sub-regional tags (e.g., USA &gt; California).\nTo align meaning with OpenAlex country codes, this report uses top-level country tags only for default aggregations.\nThis simplifies country-level comparisons.\nBut it also leaves room for under/over-interpretation for sources where sub-tags contribute heavily.\nTherefore, when reading country comparisons, it is safer to check coverage itself as well.\n\n\nA3. Why do we need exceptions for Hong Kong / Georgia: symptom -&gt; cause -&gt; action\nPolicy source country tags can appear only as sub-tags such as China &gt; Hong Kong and USA &gt; Georgia.\nIf we keep only top-level tags, these can be filtered out from the policy-source side.\nThat can make them look like “policy sources that do not exist” in the network view.\nTherefore, in network figures, we split China &gt; Hong Kong into Hong Kong and split USA &gt; Georgia into Georgia (USA).\n\n\nMore detail: sub-tag scale, examples, and Hong Kong notation\n\n\nData snapshot: Overton 2025.02\nThe numbers below are summaries computed from the Overton 2025.02 snapshot.\n\nBy policy document counts: sub-tags total 200,381 out of 1,671,835 (12.0%)\nBy DOI citation records: sub-tags total 3,488,024 out of 48,456,680 (7.2%)\n\nHere, “DOI citation records” are raw-record totals, and may differ from analysis-ready deduplicated counts in the Data Brief (e.g., the §6.1 citation count).\nTop-level parents with large sub-tag contributions are typically USA, Spain, Canada, Australia, UK (in that order).\n\n\nTop sub-tag examples (by policy document counts)\n\n\n\nSource country tag\nPolicy docs\n\n\n\n\nUSA &gt; California\n17,599\n\n\nUSA &gt; New York\n14,110\n\n\nUSA &gt; Washington\n13,969\n\n\nUSA &gt; Alaska\n9,421\n\n\nCanada &gt; Québec\n8,453\n\n\nUSA &gt; Texas\n7,648\n\n\nAustralia &gt; Western Australia\n7,169\n\n\nSpain &gt; Catalunya\n6,632\n\n\nUSA &gt; Minnesota\n4,918\n\n\nSpain &gt; Euskadi\n4,725\n\n\n\n\n\nIs Hong Kong “merged into China” here?\nIn the current snapshot, Overton policy sources do not include Hong Kong as a top-level country tag.\nIt is observed only as China &gt; Hong Kong (1,182 policy documents).\nBy contrast, OpenAlex research countries use a separate code HK -&gt; Hong Kong.\nIf we aggregate policy sources using top-level tags only, documents under China &gt; Hong Kong drop from the policy-source side.\nMeanwhile, Hong Kong remains only as a research-country node.\nThis can make it look like a “cited-only node.”\n\n\nPractical caution: naive sub-tag replacement causes collisions\nIf you naively map A &gt; B -&gt; B, then USA &gt; Georgia (the US state) collides with Georgia (the country).\nIf you want to re-attribute sub-tags at country scale, it is safer to separate two steps:\n(1) lifting to parent (A &gt; B -&gt; A) and (2) exception handling (whether to treat Hong Kong as its own unit)."
-  },
-  {
-    "objectID": "SI/appendix_en.html#appendix-b",
-    "href": "SI/appendix_en.html#appendix-b",
-    "title": "Appendix",
-    "section": "B. Definitions & interpretation",
-    "text": "B. Definitions & interpretation\nThis section compiles the aggregation units and metrics used in the Data Brief so readers can look them up when needed.\n\nB0. Quick definitions (summary)\n\nUnit of analysis: Overton policy documents are deduplicated by policy_document_id and treated as “unique policy documents.” See: DOI-citation coverage share\nCitation counts vs unique works: “how often” vs “how widely” are different questions, so we separate them. See: Citations vs works\nRecency / intensity: recency is the share of policy citations to works published in 2022-2024; intensity is average policy citations per unique work. See: Recency / intensity\nMulti-label topics: OpenAlex topics are multi-label; a single work can belong to multiple topics, so shares can exceed 100%. See: Multi-label\nSelf-citation denominator: self-citation share is computed only over citations with known first-author country codes. See: Self-citation share\n\n\n\nB0-1. Matching & missingness summary\nThis report links DOI-based citations in Overton to OpenAlex works to attach topic and country metadata.\nTherefore, the “joinable coverage” is a key safety check for interpretation.\n\n\n\n\n\n\nNote\n\n\n\nKey numbers (based on Overton DOI citation records)\n\nDOI -&gt; OpenAlex works match: ~95%\nFirst-author country code available: ~80%\n\n\n\nThese are summaries at the level of “DOI citation records,” and may differ from analysis-ready, deduplicated counts in the Data Brief.\n\n\nExamples by policy source (share with first-author country codes)\n\n\n\n\nPolicy source (examples)\nShare with first-author country codes\n\n\n\n\nOverall\n80.3%\n\n\nRepublic of Korea\n73.3%\n\n\nUSA\n80.1%\n\n\nUK\n86.0%\n\n\nIGOs\n76.1%\n\n\n\n\n\n\n1) Data units — confirm analysis units and DOI matching coverage\n\n\nWhat does “97.6% cite DOI papers” mean in this analysis snapshot?\nWe deduplicated Overton policy documents by policy_document_id to build 1,381,084 unique policy documents.\nThen we counted whether each document contains at least one DOI-based scholarly citation.\nAs a result, 1,347,563 documents (97.6%) contain at least one DOI citation.\nWithin this analysis snapshot, policy documents frequently cite DOI-identifiable scholarly evidence.\nBut it also has a clear limitation: it does not capture citations without DOIs (narrative citations, reports, legislation, web sources, etc.).\nHow different is the DOI-citation coverage across source types?\nThe table below summarizes, by Overton source-type tag, the share of unique policy documents that contain at least one DOI-based scholarly citation.\nSince source-type tags are multi-label, a single document can carry multiple tags.\nSo the row totals do not need to sum to the site-wide total.\n\n\nTable: DOI-citation coverage by source-type tag\n\n\n\n\n\n\n\n\n\n\nSource type tag\nPolicy docs\nPolicy docs with DOI citations\nShare\n\n\n\n\ngovernment\n783,189\n724,759\n92.5%\n\n\nthink tank\n332,044\n312,113\n94.0%\n\n\nigo\n321,168\n276,468\n86.1%\n\n\ngovernment &gt; agency\n73,347\n67,868\n92.5%\n\n\nigo &gt; development bank\n72,052\n66,076\n91.7%\n\n\ngovernment &gt; healthcare agency\n54,234\n45,961\n84.7%\n\n\nigo &gt; healthcare agency\n36,560\n36,080\n98.7%\n\n\ngovernment &gt; bank\n36,238\n35,051\n96.7%\n\n\nother\n35,053\n34,223\n97.6%\n\n\nthink tank &gt; research center\n33,761\n32,773\n97.1%\n\n\nother &gt; aggregator\n32,845\n32,086\n97.7%\n\n\ngovernment &gt; city\n23,274\n22,873\n98.3%\n\n\nthink tank &gt; university affiliated\n21,687\n20,730\n95.6%\n\n\ngovernment &gt; legislative research\n14,441\n12,886\n89.2%\n\n\ngovernment &gt; legislation\n7,467\n6,474\n86.7%\n\n\ngovernment &gt; research center\n6,722\n6,178\n91.9%\n\n\ngovernment &gt; food and drug safety\n5,539\n5,279\n95.3%\n\n\nthink tank &gt; research centre\n4,406\n4,347\n98.7%\n\n\nigo &gt; research center\n3,342\n3,229\n96.6%\n\n\nthink tank &gt; industry association\n2,967\n1,883\n63.5%\n\n\nigo &gt; bank\n2,297\n2,218\n96.6%\n\n\nthink tank &gt; consultancy\n2,238\n2,205\n98.5%\n\n\nthink tank &gt; agency\n1,652\n1,489\n90.1%\n\n\ngovernment &gt; technology assessment\n1,416\n1,355\n95.7%\n\n\ngovernment &gt; transcripts\n958\n528\n55.1%\n\n\ngovernment &gt; academy\n835\n816\n97.7%\n\n\ngovernment &gt; auditor\n775\n615\n79.4%\n\n\ngovernment &gt; court\n352\n346\n98.3%\n\n\ngovernment &gt; armed forces\n86\n86\n100.0%\n\n\nigo &gt; court\n75\n74\n98.7%\n\n\nthink tank &gt; professional association\n37\n37\n100.0%\n\n\ngovernment &gt; regional assembly\n4\n3\n75.0%\n\n\n\n\nDocument-type breakdown is not available in the current output files and will be added in a future update.\nFor reference, in this analysis we matched about 95% of DOIs extracted from Overton DOI citations (about 6.87M unique DOIs after deduplication) to OpenAlex works (about 6.53M).\nThe remaining ~0.34M DOIs did not match. Formatting errors were rare and most were “DOI-like strings,” suggesting coverage/normalization differences are a more likely cause than syntax errors.\nWhat does “deduplication” mean here?\nRaw Overton policy documents can include duplicates (versions, re-posts, language variants, metadata duplication).\nFor analysis, we unify them at the policy_document_id level to treat them as unique policy documents.\n\n\n\n2) Metric definitions — denominators and formulas for core metrics\n\n\nWhy separate “citation counts” and “unique works”?\n\nCitation counts: total number of DOI citation records (how many times policy documents cite DOI works)\nUnique works: the number of distinct cited works after deduplicating citations by work identity\n\nThe questions “how often does policy cite evidence?” (frequency) and “how wide is the evidence pool?” (diversity) are different, so we interpret them separately.\n\nHow are “recency” and “citation intensity” computed?\n\nRecency: the share of policy citations to works published in 2022-2024\nCitation intensity: average policy citations per unique work in the aggregation unit = citations / unique works\n\n\nHow is self-citation share computed?\nWe map policy source country tags to 2-letter country codes (e.g., USA -&gt; US, UK -&gt; GB), and compute self-citation share using only citations with known first-author country codes as the denominator.\nThat is, self-citation share is not a pattern over “all citations.”\nIt is a pattern over citations where the first-author country code is available.\nHow is expected self-citation share computed?\nFor each policy source country, we first compute its domain mix of cited research.\nFor each domain, we multiply by the country’s global research production share in that domain (OpenAlex), then sum across domains.\nConceptually:\nexpected = sum( policy_citation_domain_share * global_production_share_in_domain )\n\nThe table below summarizes self-citation share for a small comparison set.\nSince self-citation share is computed only over citations with known first-author country codes, it is better treated as a diagnostic metric rather than a ranking.\n\n\n\n\n\n\n\n\n\nPolicy source\nCitations with known first-author country\nShare known\nSelf-citation share\n\n\n\n\nUSA\n8,167,080\n80.1%\n62.9%\n\n\nUK\n7,193,932\n86.0%\n19.6%\n\n\nGermany\n2,335,571\n84.4%\n11.7%\n\n\nNetherlands\n371,817\n83.7%\n11.9%\n\n\nJapan\n162,595\n85.9%\n28.9%\n\n\nRepublic of Korea\n30,648\n73.3%\n4.1%\n\n\n\nHere, “share known” is the fraction of DOI citation records for that policy source where the first-author country code is available.\nFor sources with many sub-regional tags (e.g., USA, UK), we aggregated sub-tags back up to the parent country for this summary.\nWhy define policy-source -&gt; research-country flows by first-author country?\nFirst-author affiliation country is the most consistently extractable country attribute.\nHowever, it does not reflect coauthor distributions, corresponding authors, or multi-affiliation cases, so it must be interpreted as an “approximation with limited representativeness.”\n\n\n\n3) Interpretation cautions — multi-label, missingness, observation/accumulation lags\n\n\nWhy can topic/domain shares exceed 100%?\nOpenAlex topics are multi-label.\nA single work can belong to multiple topics simultaneously, so aggregations by topic/domain/subfield can double-count.\nTopic-based numbers should be read as “topic-instance based.”\nIn the topic data used here, a single policy citation is linked to about 2.8 topics on average.\nTherefore, summing by domain/topic yields totals larger than raw citation counts.\nHowever, if we fractionally allocate each citation across the work’s topic count, the domain ranking is preserved and the top-3 domain share changes only slightly (e.g., 88.8% -&gt; 88.5%).\nCan source-country / source-type totals also grow beyond 100%?\nYes. Overton source country/type labels are tag-based (including parent/child tags), so a single document can be counted in multiple categories.\n\nDoes the post-2022 decline in the time trend mean “policy cites science less”?\nIt is difficult to conclude that directly.\nCoverage delays (collection/processing lags) and the fact that citations accumulate after publication likely act together.\nIt is safer to read recent years as signals mixed with observation lag rather than as real-time decreases.\n\n\n\n4) Focus points — how to read the 2012 average and OA markers\n\n\nWhy does “citations per policy document” look especially high around 2012?\nWhen the distribution has a long tail, averages are strongly affected.\nWhen the average looks high, it is safer to first separate whether it is driven by a few extreme documents or whether the whole distribution shifted rightward.\nTrimmed means exclude extreme values and help diagnose whether the average is being pulled by outliers.\nThe figure below shows, by year, the mean along with the median and trimmed mean. It also reports the share of citations contributed by the top 1% of documents.\n\nKey messages:\n\nThe rise around 2012 appears not only in the mean but also in the median and trimmed mean. This suggests a mixture of distribution-wide change, not only a handful of extreme documents.\nThe top-1% contribution does not spike uniquely in 2012. Therefore, it is hard to attribute the 2012 peak to only a very small number of documents.\n\n\nIs higher OA (open access) share in policy citations causal?\nObservationally, OA share tends to be higher in policy-cited works.\nBut this does not immediately imply causality (“OA causes more policy citation”).\nConfounders include the likelihood that policy-relevant work is published OA, public funding structure, and domain composition.\nHowever, even when we split by domain and publication-year windows among policy-cited works, the pattern that OA works have higher average policy citations per paper largely remains.\nThe table below compares 2000-2009 and 2010-2019.\nRecent years are excluded due to stronger observation-lag effects.\n\n\n\n\n\n\n\n\n\n\nDomain\n2000-2009 OA\n2000-2009 non-OA\n2010-2019 OA\n2010-2019 non-OA\n\n\n\n\nSocial Sciences\n10.51\n5.28\n5.89\n3.92\n\n\nHealth Sciences\n3.73\n2.98\n2.86\n2.30\n\n\nPhysical Sciences\n5.09\n3.98\n3.88\n3.12\n\n\nLife Sciences\n2.73\n2.66\n2.51\n2.36\n\n\n\nHowever, medians are mostly around 1-2 and show small differences.\nThe mean gap may be influenced by the long tail (highly repeatedly cited works).\nTherefore, use this table only as supporting context for “candidate explanatory factors.”\nAdditional OA reference figures are provided in Section C below."
-  },
-  {
-    "objectID": "SI/appendix_en.html#appendix-c",
-    "href": "SI/appendix_en.html#appendix-c",
-    "title": "Appendix",
-    "section": "C. Additional figures",
-    "text": "C. Additional figures\nThis section groups reference figures omitted from the main PDF due to space.\nEach item is folded by default for quick scanning.\nSome figures may differ in presentation from the Data Brief.\n\nC1. Extended for Chapter 2: Top-N topics / subfields\nThis set provides a list view to quickly validate the pattern shown in the topic scatter plots.\n\nComplements: Figures 3-4\nReader question: Which topics and subfields are most cited in policy?\n\n\n\nShow figures\n\n\n\n\n\n\nC2. Extended for Chapter 3: source type x topic (heatmap)\nThis extends Figure 8 to the topic level to check which topics are cited more by each source type.\n\nComplements: Figure 8\nReader question: Does evidence composition differ even within the same source type?\n\n\n\nShow figure\n\n\n\n\n\nC3. OA reference figures (by domain / source type)\nThe OA discussion in §2.3 is kept at the level of “candidate explanatory factors.”\nThe figures below summarize OA shares for reference.\n\nComplements: OA marker in §2.3\nCaution: do not infer OA effects causally from these figures alone\n\n\n\nShow figures\n\n\n\n\n\n\nC4. Self-citation share (Top 10)\nFigure 10 in the Data Brief shows selected countries for comparison.\nThe figure below expands it to the top 10 policy source countries.\nThis metric is computed only over citations with known first-author country codes.\n\nComplements: Figure 10 in §4.2\nReader question: What range does self-citation share take beyond the selected countries?\n\n\n\nShow figure\n\n\n\n\n\nC5. OpenAlex subfield -&gt; Overton domain network (Top 100)\nThis network shows citation flows between OpenAlex subfields and Overton policy classes (2nd_class).\n\nComplements: hub structure in Chapters 3 and 4 at a classification level\nReader question: Which subfields move more frequently into which policy classes?\n\n\n\n\nDisplay rules, interpretation caution, and sensitivity check\n\nDisplay rules\n\nShow top 100 nodes only.\nTo reduce complexity, keep only the top 3 links by volume from each node.\nNode size is defined as total flow within the selected node set. This is separate from link filtering.\n\nInterpretation caution\n\nThese rules are for readability. Links shown are not the full set of links.\n\nQuick sensitivity check\n\nCompared to a smaller version (25 subfields, 25 policy classes), the top 20 subfields and top 20 policy classes by flow volume are all included in the current figure.\nIn the smaller network, the median share captured by top-3 links per subfield was 89.8%.\nTherefore, use this figure to read major flows and hub structure, not to compare minor peripheral links.\n\n\n\n\nShow figure\n\n\n\n\n\nC6. Uneven and repeated-citation distributions (log-log CCDF)\nThis figure checks the distributions directly to see whether citations are spread evenly or concentrated in a small subset of documents/works.\n\nComplements: summary / interpretation caution (unevenness, repeated citations)\nReader question: How heavy are the tails for citations per policy doc and repeated citations per work?\n\n\n\nShow figure\n\n\n\n\n\nC7. Domain demand-supply composition gap (Delta, pp)\nTo reduce the interpretation burden of Figure 6, this version simplifies it as policy demand share minus research supply share (percentage points).\n\nComplements: Figure 6\nReader question: For each country, in which direction do policy demand and research supply differ by domain?\n\n\n\nShow figure"
-  },
-  {
-    "objectID": "SI/methods.html#method-scope",
-    "href": "SI/methods.html#method-scope",
-    "title": "방법론·데이터 정합성",
-    "section": "1) 분석 범위",
-    "text": "1) 분석 범위\n\n데이터 스냅샷: Overton 2025.02, OpenAlex 2025.06\n분석 단위: policy_document_id 기준 고유 정책문헌\n인용 범위: 정책문헌 참고문헌에서 DOI가 확인되는 학술 인용\n\n\n\n\n\n\n\n노트\n\n\n\n해석 범위 주의\n\n본 결과는 Overton 전체 정책문헌의 완전한 센서스가 아니라, 이번 스냅샷/매칭 범위에서 관측된 구조다.\nDOI 밖 근거(보고서, 법령, 웹 등)는 본 기본 지표에 포함되지 않는다."
-  },
-  {
-    "objectID": "SI/methods.html#method-matching",
-    "href": "SI/methods.html#method-matching",
-    "title": "방법론·데이터 정합성",
-    "section": "2) 매칭·결측 점검",
-    "text": "2) 매칭·결측 점검\n\nDOI -&gt; OpenAlex 매칭률과 국가코드 결측은 해석의 안전장치다.\n특히 국가 비교는 1저자 국가코드 확인분(known citations) 조건을 먼저 확인해야 한다.\n\n바로가기: - 부록 B0-1. 매칭·결측 요약 - 부록 B0. 자주 찾는 정의"
-  },
-  {
-    "objectID": "SI/methods.html#method-metrics",
-    "href": "SI/methods.html#method-metrics",
-    "title": "방법론·데이터 정합성",
-    "section": "3) 핵심 지표 정의(요약)",
-    "text": "3) 핵심 지표 정의(요약)\n\n인용 건수 vs 고유 논문 수: 빈도와 폭을 분리해서 본다.\n최근성: 2022-2024 발행 논문으로 향한 정책 인용 비중\n인용 강도: 집계 단위 내 인용 건수 / 고유 논문 수\n자국 인용 비중: 1저자 국가코드 확인분만 분모에 포함\n\n바로가기: - 인용 건수 vs 고유 논문 수 - 최근성/인용 강도 - 자국 인용 비중"
-  },
-  {
-    "objectID": "SI/methods.html#method-guardrails",
-    "href": "SI/methods.html#method-guardrails",
-    "title": "방법론·데이터 정합성",
-    "section": "4) 해석 가드레일",
-    "text": "4) 해석 가드레일\n\n다중라벨 토픽 합은 100%를 넘을 수 있다.\n최근 연도 하락은 관측 지연(인용 누적 시차) 신호일 수 있다.\n2012년 평균 고점은 분포 진단(중앙값/절단평균)과 함께 해석해야 한다.\n\n바로가기: - 다중라벨 해석 - 최근 연도 하락 주의 - 2012년 평균 진단"
-  },
-  {
-    "objectID": "SI/methods.html#method-protocol",
-    "href": "SI/methods.html#method-protocol",
-    "title": "방법론·데이터 정합성",
-    "section": "5) 재현·업데이트 프로토콜",
-    "text": "5) 재현·업데이트 프로토콜\n\n동일 지표를 분기 또는 반기 단위로 재계산해 방향성(상승/유지/완화)을 점검한다.\n메인 브리프는 핵심 메시지 중심으로 유지하고, 계산식·민감도·확장 표는 Extended Report에서 업데이트한다.\n변경 이력은 Data_Insight/Report/Report_Update_Log.md에 기록한다."
-  },
-  {
-    "objectID": "SI/extended_report_en.html#reading-guide-10-min",
-    "href": "SI/extended_report_en.html#reading-guide-10-min",
-    "title": "Extended Text",
-    "section": "Reading guide (10 min)",
-    "text": "Reading guide (10 min)\n\nChapter 1: Why evidence-linkage structure matters more than citing share alone (Figures 1, 2, 4)\nChapter 2: Where evidence accumulates in practice (hub structure; Figures 5, 7, 8)\nChapter 3: Where Korea’s inbound/procurement asymmetry appears (Figures 6, 9, 10, 11, 12)\nChapters 4-5: Repeated monitoring questions and interpretation scope"
-  },
-  {
-    "objectID": "SI/extended_report_en.html#key-numbers-at-a-glance",
-    "href": "SI/extended_report_en.html#key-numbers-at-a-glance",
-    "title": "Extended Text",
-    "section": "Key numbers at a glance",
-    "text": "Key numbers at a glance\n\nUnique policy documents (deduplicated): 1,381,084\nDOI-based policy-to-research citation links: 23,370,284\nUnique cited works: 6,532,365\nTop 3 domain share (multi-label domain aggregation): 88.8%"
-  },
-  {
-    "objectID": "SI/extended_report_en.html#why-these-questions-emerged",
-    "href": "SI/extended_report_en.html#why-these-questions-emerged",
-    "title": "Extended Text",
-    "section": "1.1 Why these questions emerged",
-    "text": "1.1 Why these questions emerged\nThese questions were not chosen arbitrarily. They came from three observations.\n\nObservation 1: Prior studies describe “how much is cited” well, but explain “where evidence converges” less.\nObservation 2: In the Overton-OpenAlex linked data, concentration repeatedly appears in top domains and top policy sources.\nObservation 3: For Korea, inbound and procurement routes show different structural signals when separated.\n\nTherefore, the text checks two questions.\n\nQ1: Is policy evidence distributed broadly, or concentrated in hub channels?\nH1 (working assumption): Policy evidence will show relatively concentrated patterns around a small set of hub channels.\nQ2: Are Korea’s inbound and procurement evidence routes symmetric?\nH2 (working assumption): Korea will show asymmetric patterns across domains and countries."
-  },
-  {
-    "objectID": "SI/extended_report_en.html#time-and-concentration-baseline-pattern-of-linkage-structure",
-    "href": "SI/extended_report_en.html#time-and-concentration-baseline-pattern-of-linkage-structure",
-    "title": "Extended Text",
-    "section": "1.2 Time and concentration: baseline pattern of linkage structure",
-    "text": "1.2 Time and concentration: baseline pattern of linkage structure\n\n\n\nFigure 1. Policy documents by publication year: citation volume, document counts, and average citations per document\n\n\nFigure 1 shows rapid growth in DOI citation volume from the mid-2010s and a peak around 2021.\nThe post-2022 decline should not be read as an immediate reversal without first checking lag effects (roughly 4-5 years) between publication and citation accumulation.\n\n\n\nFigure 2. Field composition within policy-cited domains: top 3 fields, other, and field-missing segment in each domain\n\n\nFigure 2 shows strong concentration at domain level. Under multi-label domain aggregation, the top three domains account for 88.8%.\nThis is not a “better/worse” ranking claim; it is a structural observation that policy evidence demand is concentrated in specific agenda/domain channels."
-  },
-  {
-    "objectID": "SI/extended_report_en.html#topics-do-not-move-at-the-same-speed",
-    "href": "SI/extended_report_en.html#topics-do-not-move-at-the-same-speed",
-    "title": "Extended Text",
-    "section": "1.3 Topics do not move at the same speed",
-    "text": "1.3 Topics do not move at the same speed\n\n\n\nFigure 3. Topic-level policy citations vs unique works; labels indicate top policy-cited topics by domain\n\n\nFigure 3 shows that unique work counts and policy citation counts do not always move together.\nHigh research production in a topic does not automatically imply high policy uptake.\n\n\n\nFigure 4. Topic-level citation intensity vs recency; labels indicate top topics by recency and intensity\n\n\nFigure 4 suggests coexistence of “mature topics” and “high-growth topics” in policy evidence use.\nEvidence update cycles and synthesis speed can differ by policy agenda.\nChapter 1 takeaway\nWhat matters more than a single citing-share number is the linkage structure of where evidence accumulates and how it is transmitted."
-  },
-  {
-    "objectID": "SI/extended_report_en.html#total-volume-and-density-send-different-signals",
-    "href": "SI/extended_report_en.html#total-volume-and-density-send-different-signals",
-    "title": "Extended Text",
-    "section": "2.1 Total volume and density send different signals",
-    "text": "2.1 Total volume and density send different signals\n\n\n\nFigure 5. Citation volume and citations-per-document by policy source entities, plus domain composition (top 10 + Korea)\n\n\nIn Figure 5A (total citations), a few sources such as IGOs, the U.S., the U.K., and the EU dominate.\nBut Figure 5B (citations per document) does not follow the same order.\nSo “channels that produce many documents” and “channels that pack dense evidence per document” should be read separately."
-  },
-  {
-    "objectID": "SI/extended_report_en.html#evidence-use-patterns-vary-by-source-type",
-    "href": "SI/extended_report_en.html#evidence-use-patterns-vary-by-source-type",
-    "title": "Extended Text",
-    "section": "2.2 Evidence-use patterns vary by source type",
-    "text": "2.2 Evidence-use patterns vary by source type\n\n\n\nFigure 7. Total citations and citations per policy document by source type\n\n\nFigure 7 repeats the same distinction.\nA type with large total volume does not necessarily have high per-document citation density.\nBecause source-type tags are not mutually exclusive, pattern differences across types are more informative than raw share levels.\n\n\n\nFigure 8. Source type × domain citation-share heatmap (100% normalized within each type)\n\n\nFigure 8 shows domain-composition differences by source type.\nPolicy evidence use reflects not only research-side supply, but also source-role and agenda composition.\nChapter 2 takeaway\nHub concentration can improve transmission efficiency, but higher concentration can also increase sensitivity to shocks in a few channels. That is why repeated monitoring should track whether top-channel concentration is rising, stable, or easing."
-  },
-  {
-    "objectID": "SI/extended_report_en.html#koreas-domain-demand-supply-mix-is-misaligned",
-    "href": "SI/extended_report_en.html#koreas-domain-demand-supply-mix-is-misaligned",
-    "title": "Extended Text",
-    "section": "3.1 Korea’s domain demand-supply mix is misaligned",
-    "text": "3.1 Korea’s domain demand-supply mix is misaligned\n\n\n\nFigure 6. Domain-mix mismatch in selected countries: policy-cited research vs research cited by global policy\n\n\nIn Figure 6, the x-axis is the domain mix of research cited by Korean policy; the y-axis is the domain mix in which Korean research is cited by global policy (first-author basis).\nThe diagonal means the two mixes are the same.\nKorea appears below the diagonal in Social Sciences and above the diagonal in Health/Physical/Life, indicating domain-level mismatch."
-  },
-  {
-    "objectID": "SI/extended_report_en.html#where-korean-policy-procures-evidence",
-    "href": "SI/extended_report_en.html#where-korean-policy-procures-evidence",
-    "title": "Extended Text",
-    "section": "3.2 Where Korean policy procures evidence",
-    "text": "3.2 Where Korean policy procures evidence\n\n\n\nFigure 9. Policy source × research country citations: (A) absolute volume, (B) within-source normalized shares; first-author basis\n\n\nFigure 9 shows procurement lines by policy source (which countries’ research is pulled in).\nSources with stronger multilateral character (e.g., IGOs) tend to show broader procurement portfolios, while some sources show stronger domestic or single-country dependence."
-  },
-  {
-    "objectID": "SI/extended_report_en.html#koreas-self-citation-share-and-two-way-routes",
-    "href": "SI/extended_report_en.html#koreas-self-citation-share-and-two-way-routes",
-    "title": "Extended Text",
-    "section": "3.3 Korea’s self-citation share and two-way routes",
-    "text": "3.3 Korea’s self-citation share and two-way routes\n\n\n\nFigure 10. Self-citation share vs expected baseline, plus domain composition for domestic vs non-domestic citations (top 7 policy-source countries + Korea)\n\n\nFor Korea in Figure 10, self-citation share is about 4.1% on the known-citation denominator (citations with known first-author country code).\nThe Korean sample is small (2,742 policy-source documents) and affected by missingness, so this should be treated as a trend-check indicator rather than a ranking signal.\nThe expected-vs-observed comparison is also relative to a domain-weighted baseline, not an absolute score.\n\n\n\nFigure 11. Two-way Korea policy-research flows and domain composition (top 10)\n\n\nFigure 11 visualizes inbound/procurement asymmetry directly.\nOn the inbound side, the U.K. (32.8%), IGOs (16.3%), and the U.S. (16.2%) are large shares. On the procurement side, U.S. research takes 57.3% (known-citation basis).\nThese numbers are not value judgments; they are route-difference diagnostics.\nAlso, inbound and procurement shares are normalized within each direction, so they should not be used for direct absolute cross-direction magnitude comparison.\n\n\n\nFigure 12. Policy-research evidence-flow network: top 50 nodes, top 3 links per node\n\n\nFigure 12 summarizes the same asymmetry as a network view.\nBecause it is a reduced map with top nodes and top links only, it should be read as a large-route structure tool, not as a full-network representation.\nChapter 3 takeaway\nKorea’s inbound and procurement routes follow different structures. Strategy should therefore be route-specific rather than a single one-score prescription."
-  },
-  {
-    "objectID": "SI/extended_report_en.html#next-quarter-check-questions-core-3",
-    "href": "SI/extended_report_en.html#next-quarter-check-questions-core-3",
-    "title": "Extended Text",
-    "section": "4.1 Next-quarter check questions (core 3)",
-    "text": "4.1 Next-quarter check questions (core 3)\n\nHub dependence check: Is top-source concentration rising, stable, or easing versus the previous period?\nProcurement portfolio check: Is concentration in Korea’s procurement portfolio rising, stable, or easing versus the previous period?\nRepeated-measurement check: If we recompute the same indicators every 6-12 months, does the directional signal hold?"
-  },
-  {
-    "objectID": "SI/extended_report_en.html#follow-up-analysis-roadmap-short",
-    "href": "SI/extended_report_en.html#follow-up-analysis-roadmap-short",
-    "title": "Extended Text",
-    "section": "4.2 Follow-up analysis roadmap (short)",
-    "text": "4.2 Follow-up analysis roadmap (short)\n\nInclude non-DOI evidence (reports, web sources, legal texts)\nAdd policy-to-policy citation layers\nSeparate citation-context functions (evidence use vs background mention vs critique)\nConnect policy agenda classifications (e.g., SDGs) with topic classifications as a dual frame\n\nDetailed follow-up checklists are in Next questions.\nAdditional figures and diagnostic notes are in Appendix.\nChapter 4 takeaway\nThe priority is not stronger assertion; it is a repeatable observation system."
-  },
-  {
-    "objectID": "SI/extended_report_en.html#what-this-brief-does-say",
-    "href": "SI/extended_report_en.html#what-this-brief-does-say",
-    "title": "Extended Text",
-    "section": "5.1 What this brief does say",
-    "text": "5.1 What this brief does say\n\nPolicy evidence shows concentrated structures in a small set of hub channels (Figures 2, 5, 7, 8).\nKorea’s evidence inbound and procurement routes show different structural patterns (Figures 6, 9, 10, 11, 12).\nRoute-specific monitoring is therefore a higher priority than one-score ranking."
-  },
-  {
-    "objectID": "SI/extended_report_en.html#what-this-brief-does-not-say",
-    "href": "SI/extended_report_en.html#what-this-brief-does-not-say",
-    "title": "Extended Text",
-    "section": "5.2 What this brief does not say",
-    "text": "5.2 What this brief does not say\n\nCitation volume is not treated as direct policy impact/performance.\nNon-DOI evidence (web/legal/report citations) is outside default scope.\nKorea-specific numbers can vary with sample size, missingness, and snapshot updates."
-  },
-  {
-    "objectID": "SI/extended_report_en.html#methods-and-validity-checks-in-extended-report",
-    "href": "SI/extended_report_en.html#methods-and-validity-checks-in-extended-report",
-    "title": "Extended Text",
-    "section": "5.3 Methods and validity checks in Extended Report",
-    "text": "5.3 Methods and validity checks in Extended Report\n\nScope/denominators/missingness: Methods, Matching & missingness\nMetric definitions and guardrails: Core metrics, Interpretation guardrails\nDetailed tables and diagnostics: Appendix A. Coverage & tagging, Appendix B. Definitions & interpretation, Appendix C. Additional figures\nFollow-up validation questions: Next questions"
-  },
-  {
-    "objectID": "SI/extended_report_en.html#closing-note",
-    "href": "SI/extended_report_en.html#closing-note",
-    "title": "Extended Text",
-    "section": "5.4 Closing note",
-    "text": "5.4 Closing note\nThis report attempts to read policy evidence as “how it is connected,” not only “how much is cited.”\nTwo headline findings remain: evidence is concentrated in hub channels, and Korea’s inbound/procurement routes are asymmetric.\nTo stabilize Korea-focused comparisons, domestic policy references need to be structured with identifiers (DOI/URL) and recomputed in the same frame.\nKim, Park, & Yoon (2025) provides an NKIS-based starting point for that direction.\nThe next step is not to amplify conclusions but to standardize the observation system.\nOnly then can Korea’s evidence-linkage structure be measured repeatedly under a consistent frame and tied to actual improvement checks."
-  },
-  {
-    "objectID": "SI/extended_report_en.html#footnotes",
-    "href": "SI/extended_report_en.html#footnotes",
-    "title": "Extended Text",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nIn this report, a “hub” means a policy source where DOI-matched scholarly citations are observed in large volume. It is a structural observation unit, not a quality/reputation judgment.↩︎\nThe main brief focuses on concise result communication. Definitions, denominators, matching/missingness notes, and interpretation guardrails are documented in Methods and Appendix: data fitness.↩︎\nPrior figures such as 4-6% (Pinheiro et al., 2021; Fang et al., 2024) refer to “the share of all papers that are mentioned in policy documents.” This report tracks “DOI-based policy-to-paper citations within an Overton policy-document snapshot.” Direct comparison would distort interpretation.↩︎"
-  },
-  {
     "objectID": "SI/methods_en.html#method-scope",
     "href": "SI/methods_en.html#method-scope",
     "title": "Methods & Data Validity",
@@ -677,5 +586,33 @@
     "title": "Methods & Data Validity",
     "section": "5) Recompute/update protocol",
     "text": "5) Recompute/update protocol\n\nRecompute the same indicators quarterly or biannually and monitor directional state (rising/stable/easing).\nKeep the main brief headline-focused, while updating formulas/sensitivity checks/extended tables in the Extended Report layer.\nRecord all figure/text changes and rebuilt outputs in Data_Insight/Report/Report_Update_Log.md."
+  },
+  {
+    "objectID": "SI/appendix_en.html",
+    "href": "SI/appendix_en.html",
+    "title": "Appendix",
+    "section": "",
+    "text": "← Extended Report Overview · Interactive · Report (PDF) · Korean page\nThis appendix compiles coverage & tagging notes, metric definitions & interpretation cautions, and additional figures.\nThe goal is to support safer interpretation of the numbers and patterns in the Data Brief text.\nJump to: A. Coverage & tagging · B. Definitions & interpretation · C. Additional figures"
+  },
+  {
+    "objectID": "SI/appendix_en.html#appendix-a",
+    "href": "SI/appendix_en.html#appendix-a",
+    "title": "Appendix",
+    "section": "A. Coverage & tagging",
+    "text": "A. Coverage & tagging\nThis section provides the minimum evidence needed before reading “hub structure.”\nIt shows that the observable policy-document universe in Overton may be uneven across countries.\n\nA1. Policy document coverage map (documents by policy source country)\n\n\n\n\n\n\nNote\n\n\n\nDisplay rules (summary)\n\nUse top-level country tags only (exclude sub-tags like USA &gt; California)\nExclude IGO / EU\nUse a log scale for coloring due to large cross-country variance\n\n\n\n\n  \n    Open in new tab\n    May load slowly\n    Load plot\n  \n\n\n\nA2. Why exclude sub-tags (A &gt; B) and keep top-level country tags only\nOverton policy source country tags include country-level tags (e.g., USA, UK) and sub-regional tags (e.g., USA &gt; California).\nTo align meaning with OpenAlex country codes, this report uses top-level country tags only for default aggregations.\nThis simplifies country-level comparisons.\nBut it also leaves room for under/over-interpretation for sources where sub-tags contribute heavily.\nTherefore, when reading country comparisons, it is safer to check coverage itself as well.\n\n\nA3. Why do we need exceptions for Hong Kong / Georgia: symptom -&gt; cause -&gt; action\nPolicy source country tags can appear only as sub-tags such as China &gt; Hong Kong and USA &gt; Georgia.\nIf we keep only top-level tags, these can be filtered out from the policy-source side.\nThat can make them look like “policy sources that do not exist” in the network view.\nTherefore, in network figures, we split China &gt; Hong Kong into Hong Kong and split USA &gt; Georgia into Georgia (USA).\n\n\nMore detail: sub-tag scale, examples, and Hong Kong notation\n\n\nData snapshot: Overton 2025.02\nThe numbers below are summaries computed from the Overton 2025.02 snapshot.\n\nBy policy document counts: sub-tags total 200,381 out of 1,671,835 (12.0%)\nBy DOI citation records: sub-tags total 3,488,024 out of 48,456,680 (7.2%)\n\nHere, “DOI citation records” are raw-record totals, and may differ from analysis-ready deduplicated counts in the Data Brief (e.g., the §6.1 citation count).\nTop-level parents with large sub-tag contributions are typically USA, Spain, Canada, Australia, UK (in that order).\n\n\nTop sub-tag examples (by policy document counts)\n\n\n\nSource country tag\nPolicy docs\n\n\n\n\nUSA &gt; California\n17,599\n\n\nUSA &gt; New York\n14,110\n\n\nUSA &gt; Washington\n13,969\n\n\nUSA &gt; Alaska\n9,421\n\n\nCanada &gt; Québec\n8,453\n\n\nUSA &gt; Texas\n7,648\n\n\nAustralia &gt; Western Australia\n7,169\n\n\nSpain &gt; Catalunya\n6,632\n\n\nUSA &gt; Minnesota\n4,918\n\n\nSpain &gt; Euskadi\n4,725\n\n\n\n\n\nIs Hong Kong “merged into China” here?\nIn the current snapshot, Overton policy sources do not include Hong Kong as a top-level country tag.\nIt is observed only as China &gt; Hong Kong (1,182 policy documents).\nBy contrast, OpenAlex research countries use a separate code HK -&gt; Hong Kong.\nIf we aggregate policy sources using top-level tags only, documents under China &gt; Hong Kong drop from the policy-source side.\nMeanwhile, Hong Kong remains only as a research-country node.\nThis can make it look like a “cited-only node.”\n\n\nPractical caution: naive sub-tag replacement causes collisions\nIf you naively map A &gt; B -&gt; B, then USA &gt; Georgia (the US state) collides with Georgia (the country).\nIf you want to re-attribute sub-tags at country scale, it is safer to separate two steps:\n(1) lifting to parent (A &gt; B -&gt; A) and (2) exception handling (whether to treat Hong Kong as its own unit)."
+  },
+  {
+    "objectID": "SI/appendix_en.html#appendix-b",
+    "href": "SI/appendix_en.html#appendix-b",
+    "title": "Appendix",
+    "section": "B. Definitions & interpretation",
+    "text": "B. Definitions & interpretation\nThis section compiles the aggregation units and metrics used in the Data Brief so readers can look them up when needed.\n\nB0. Quick definitions (summary)\n\nUnit of analysis: Overton policy documents are deduplicated by policy_document_id and treated as “unique policy documents.” See: DOI-citation coverage share\nCitation counts vs unique works: “how often” vs “how widely” are different questions, so we separate them. See: Citations vs works\nRecency / intensity: recency is the share of policy citations to works published in 2022-2024; intensity is average policy citations per unique work. See: Recency / intensity\nMulti-label topics: OpenAlex topics are multi-label; a single work can belong to multiple topics, so shares can exceed 100%. See: Multi-label\nSelf-citation denominator: self-citation share is computed only over citations with known first-author country codes. See: Self-citation share\n\n\n\nB0-1. Matching & missingness summary\nThis report links DOI-based citations in Overton to OpenAlex works to attach topic and country metadata.\nTherefore, the “joinable coverage” is a key safety check for interpretation.\n\n\n\n\n\n\nNote\n\n\n\nKey numbers (based on Overton DOI citation records)\n\nDOI -&gt; OpenAlex works match: ~95%\nFirst-author country code available: ~80%\n\n\n\nThese are summaries at the level of “DOI citation records,” and may differ from analysis-ready, deduplicated counts in the Data Brief.\n\n\nExamples by policy source (share with first-author country codes)\n\n\n\n\nPolicy source (examples)\nShare with first-author country codes\n\n\n\n\nOverall\n80.3%\n\n\nRepublic of Korea\n73.3%\n\n\nUSA\n80.1%\n\n\nUK\n86.0%\n\n\nIGOs\n76.1%\n\n\n\n\n\n\n1) Data units — confirm analysis units and DOI matching coverage\n\n\nWhat does “97.6% cite DOI papers” mean in this analysis snapshot?\nWe deduplicated Overton policy documents by policy_document_id to build 1,381,084 unique policy documents.\nThen we counted whether each document contains at least one DOI-based scholarly citation.\nAs a result, 1,347,563 documents (97.6%) contain at least one DOI citation.\nWithin this analysis snapshot, policy documents frequently cite DOI-identifiable scholarly evidence.\nBut it also has a clear limitation: it does not capture citations without DOIs (narrative citations, reports, legislation, web sources, etc.).\nHow different is the DOI-citation coverage across source types?\nThe table below summarizes, by Overton source-type tag, the share of unique policy documents that contain at least one DOI-based scholarly citation.\nSince source-type tags are multi-label, a single document can carry multiple tags.\nSo the row totals do not need to sum to the site-wide total.\n\n\nTable: DOI-citation coverage by source-type tag\n\n\n\n\n\n\n\n\n\n\nSource type tag\nPolicy docs\nPolicy docs with DOI citations\nShare\n\n\n\n\ngovernment\n783,189\n724,759\n92.5%\n\n\nthink tank\n332,044\n312,113\n94.0%\n\n\nigo\n321,168\n276,468\n86.1%\n\n\ngovernment &gt; agency\n73,347\n67,868\n92.5%\n\n\nigo &gt; development bank\n72,052\n66,076\n91.7%\n\n\ngovernment &gt; healthcare agency\n54,234\n45,961\n84.7%\n\n\nigo &gt; healthcare agency\n36,560\n36,080\n98.7%\n\n\ngovernment &gt; bank\n36,238\n35,051\n96.7%\n\n\nother\n35,053\n34,223\n97.6%\n\n\nthink tank &gt; research center\n33,761\n32,773\n97.1%\n\n\nother &gt; aggregator\n32,845\n32,086\n97.7%\n\n\ngovernment &gt; city\n23,274\n22,873\n98.3%\n\n\nthink tank &gt; university affiliated\n21,687\n20,730\n95.6%\n\n\ngovernment &gt; legislative research\n14,441\n12,886\n89.2%\n\n\ngovernment &gt; legislation\n7,467\n6,474\n86.7%\n\n\ngovernment &gt; research center\n6,722\n6,178\n91.9%\n\n\ngovernment &gt; food and drug safety\n5,539\n5,279\n95.3%\n\n\nthink tank &gt; research centre\n4,406\n4,347\n98.7%\n\n\nigo &gt; research center\n3,342\n3,229\n96.6%\n\n\nthink tank &gt; industry association\n2,967\n1,883\n63.5%\n\n\nigo &gt; bank\n2,297\n2,218\n96.6%\n\n\nthink tank &gt; consultancy\n2,238\n2,205\n98.5%\n\n\nthink tank &gt; agency\n1,652\n1,489\n90.1%\n\n\ngovernment &gt; technology assessment\n1,416\n1,355\n95.7%\n\n\ngovernment &gt; transcripts\n958\n528\n55.1%\n\n\ngovernment &gt; academy\n835\n816\n97.7%\n\n\ngovernment &gt; auditor\n775\n615\n79.4%\n\n\ngovernment &gt; court\n352\n346\n98.3%\n\n\ngovernment &gt; armed forces\n86\n86\n100.0%\n\n\nigo &gt; court\n75\n74\n98.7%\n\n\nthink tank &gt; professional association\n37\n37\n100.0%\n\n\ngovernment &gt; regional assembly\n4\n3\n75.0%\n\n\n\n\nDocument-type breakdown is not available in the current output files and will be added in a future update.\nFor reference, in this analysis we matched about 95% of DOIs extracted from Overton DOI citations (about 6.87M unique DOIs after deduplication) to OpenAlex works (about 6.53M).\nThe remaining ~0.34M DOIs did not match. Formatting errors were rare and most were “DOI-like strings,” suggesting coverage/normalization differences are a more likely cause than syntax errors.\nWhat does “deduplication” mean here?\nRaw Overton policy documents can include duplicates (versions, re-posts, language variants, metadata duplication).\nFor analysis, we unify them at the policy_document_id level to treat them as unique policy documents.\n\n\n\n2) Metric definitions — denominators and formulas for core metrics\n\n\nWhy separate “citation counts” and “unique works”?\n\nCitation counts: total number of DOI citation records (how many times policy documents cite DOI works)\nUnique works: the number of distinct cited works after deduplicating citations by work identity\n\nThe questions “how often does policy cite evidence?” (frequency) and “how wide is the evidence pool?” (diversity) are different, so we interpret them separately.\n\nHow are “recency” and “citation intensity” computed?\n\nRecency: the share of policy citations to works published in 2022-2024\nCitation intensity: average policy citations per unique work in the aggregation unit = citations / unique works\n\n\nHow is self-citation share computed?\nWe map policy source country tags to 2-letter country codes (e.g., USA -&gt; US, UK -&gt; GB), and compute self-citation share using only citations with known first-author country codes as the denominator.\nThat is, self-citation share is not a pattern over “all citations.”\nIt is a pattern over citations where the first-author country code is available.\nHow is expected self-citation share computed?\nFor each policy source country, we first compute its domain mix of cited research.\nFor each domain, we multiply by the country’s global research production share in that domain (OpenAlex), then sum across domains.\nConceptually:\nexpected = sum( policy_citation_domain_share * global_production_share_in_domain )\n\nThe table below summarizes self-citation share for a small comparison set.\nSince self-citation share is computed only over citations with known first-author country codes, it is better treated as a diagnostic metric rather than a ranking.\n\n\n\n\n\n\n\n\n\nPolicy source\nCitations with known first-author country\nShare known\nSelf-citation share\n\n\n\n\nUSA\n8,167,080\n80.1%\n62.9%\n\n\nUK\n7,193,932\n86.0%\n19.6%\n\n\nGermany\n2,335,571\n84.4%\n11.7%\n\n\nNetherlands\n371,817\n83.7%\n11.9%\n\n\nJapan\n162,595\n85.9%\n28.9%\n\n\nRepublic of Korea\n30,648\n73.3%\n4.1%\n\n\n\nHere, “share known” is the fraction of DOI citation records for that policy source where the first-author country code is available.\nFor sources with many sub-regional tags (e.g., USA, UK), we aggregated sub-tags back up to the parent country for this summary.\nWhy define policy-source -&gt; research-country flows by first-author country?\nFirst-author affiliation country is the most consistently extractable country attribute.\nHowever, it does not reflect coauthor distributions, corresponding authors, or multi-affiliation cases, so it must be interpreted as an “approximation with limited representativeness.”\n\n\n\n3) Interpretation cautions — multi-label, missingness, observation/accumulation lags\n\n\nWhy can topic/domain shares exceed 100%?\nOpenAlex topics are multi-label.\nA single work can belong to multiple topics simultaneously, so aggregations by topic/domain/subfield can double-count.\nTopic-based numbers should be read as “topic-instance based.”\nIn the topic data used here, a single policy citation is linked to about 2.8 topics on average.\nTherefore, summing by domain/topic yields totals larger than raw citation counts.\nHowever, if we fractionally allocate each citation across the work’s topic count, the domain ranking is preserved and the top-3 domain share changes only slightly (e.g., 88.8% -&gt; 88.5%).\nCan source-country / source-type totals also grow beyond 100%?\nYes. Overton source country/type labels are tag-based (including parent/child tags), so a single document can be counted in multiple categories.\n\nDoes the post-2022 decline in the time trend mean “policy cites science less”?\nIt is difficult to conclude that directly.\nCoverage delays (collection/processing lags) and the fact that citations accumulate after publication likely act together.\nIt is safer to read recent years as signals mixed with observation lag rather than as real-time decreases.\n\n\n\n4) Focus points — how to read the 2012 average and OA markers\n\n\nWhy does “citations per policy document” look especially high around 2012?\nWhen the distribution has a long tail, averages are strongly affected.\nWhen the average looks high, it is safer to first separate whether it is driven by a few extreme documents or whether the whole distribution shifted rightward.\nTrimmed means exclude extreme values and help diagnose whether the average is being pulled by outliers.\nThe figure below shows, by year, the mean along with the median and trimmed mean. It also reports the share of citations contributed by the top 1% of documents.\n\nKey messages:\n\nThe rise around 2012 appears not only in the mean but also in the median and trimmed mean. This suggests a mixture of distribution-wide change, not only a handful of extreme documents.\nThe top-1% contribution does not spike uniquely in 2012. Therefore, it is hard to attribute the 2012 peak to only a very small number of documents.\n\n\nIs higher OA (open access) share in policy citations causal?\nObservationally, OA share tends to be higher in policy-cited works.\nBut this does not immediately imply causality (“OA causes more policy citation”).\nConfounders include the likelihood that policy-relevant work is published OA, public funding structure, and domain composition.\nHowever, even when we split by domain and publication-year windows among policy-cited works, the pattern that OA works have higher average policy citations per paper largely remains.\nThe table below compares 2000-2009 and 2010-2019.\nRecent years are excluded due to stronger observation-lag effects.\n\n\n\n\n\n\n\n\n\n\nDomain\n2000-2009 OA\n2000-2009 non-OA\n2010-2019 OA\n2010-2019 non-OA\n\n\n\n\nSocial Sciences\n10.51\n5.28\n5.89\n3.92\n\n\nHealth Sciences\n3.73\n2.98\n2.86\n2.30\n\n\nPhysical Sciences\n5.09\n3.98\n3.88\n3.12\n\n\nLife Sciences\n2.73\n2.66\n2.51\n2.36\n\n\n\nHowever, medians are mostly around 1-2 and show small differences.\nThe mean gap may be influenced by the long tail (highly repeatedly cited works).\nTherefore, use this table only as supporting context for “candidate explanatory factors.”\nAdditional OA reference figures are provided in Section C below."
+  },
+  {
+    "objectID": "SI/appendix_en.html#appendix-c",
+    "href": "SI/appendix_en.html#appendix-c",
+    "title": "Appendix",
+    "section": "C. Additional figures",
+    "text": "C. Additional figures\nThis section groups reference figures omitted from the main PDF due to space.\nEach item is folded by default for quick scanning.\nSome figures may differ in presentation from the Data Brief.\n\nC1. Extended for Chapter 2: Top-N topics / subfields\nThis set provides a list view to quickly validate the pattern shown in the topic scatter plots.\n\nComplements: Figures 3-4\nReader question: Which topics and subfields are most cited in policy?\n\n\n\nShow figures\n\n\n\n\n\n\nC2. Extended for Chapter 3: source type x topic (heatmap)\nThis extends Figure 8 to the topic level to check which topics are cited more by each source type.\n\nComplements: Figure 8\nReader question: Does evidence composition differ even within the same source type?\n\n\n\nShow figure\n\n\n\n\n\nC3. OA reference figures (by domain / source type)\nThe OA discussion in §2.3 is kept at the level of “candidate explanatory factors.”\nThe figures below summarize OA shares for reference.\n\nComplements: OA marker in §2.3\nCaution: do not infer OA effects causally from these figures alone\n\n\n\nShow figures\n\n\n\n\n\n\nC4. Self-citation share (Top 10)\nFigure 10 in the Data Brief shows selected countries for comparison.\nThe figure below expands it to the top 10 policy source countries.\nThis metric is computed only over citations with known first-author country codes.\n\nComplements: Figure 10 in §4.2\nReader question: What range does self-citation share take beyond the selected countries?\n\n\n\nShow figure\n\n\n\n\n\nC5. OpenAlex subfield -&gt; Overton domain network (Top 100)\nThis network shows citation flows between OpenAlex subfields and Overton policy classes (2nd_class).\n\nComplements: hub structure in Chapters 3 and 4 at a classification level\nReader question: Which subfields move more frequently into which policy classes?\n\n\n\n\nDisplay rules, interpretation caution, and sensitivity check\n\nDisplay rules\n\nShow top 100 nodes only.\nTo reduce complexity, keep only the top 3 links by volume from each node.\nNode size is defined as total flow within the selected node set. This is separate from link filtering.\n\nInterpretation caution\n\nThese rules are for readability. Links shown are not the full set of links.\n\nQuick sensitivity check\n\nCompared to a smaller version (25 subfields, 25 policy classes), the top 20 subfields and top 20 policy classes by flow volume are all included in the current figure.\nIn the smaller network, the median share captured by top-3 links per subfield was 89.8%.\nTherefore, use this figure to read major flows and hub structure, not to compare minor peripheral links.\n\n\n\n\nShow figure\n\n\n\n\n\nC6. Uneven and repeated-citation distributions (log-log CCDF)\nThis figure checks the distributions directly to see whether citations are spread evenly or concentrated in a small subset of documents/works.\n\nComplements: summary / interpretation caution (unevenness, repeated citations)\nReader question: How heavy are the tails for citations per policy doc and repeated citations per work?\n\n\n\nShow figure\n\n\n\n\n\nC7. Domain demand-supply composition gap (Delta, pp)\nTo reduce the interpretation burden of Figure 6, this version simplifies it as policy demand share minus research supply share (percentage points).\n\nComplements: Figure 6\nReader question: For each country, in which direction do policy demand and research supply differ by domain?\n\n\n\nShow figure"
   }
 ]
