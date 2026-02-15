@@ -145,7 +145,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#appendix-a" id="toc-appendix-a" class="nav-link active" data-scroll-target="#appendix-a">A. Coverage &amp; tagging</a>
+  <li><a href="#reading-order-2-min" id="toc-reading-order-2-min" class="nav-link active" data-scroll-target="#reading-order-2-min">Reading order (2 min)</a></li>
+  <li><a href="#appendix-a" id="toc-appendix-a" class="nav-link" data-scroll-target="#appendix-a">A. Coverage &amp; tagging</a>
   <ul class="collapse">
   <li><a href="#a1.-policy-document-coverage-map-documents-by-policy-source-country" id="toc-a1.-policy-document-coverage-map-documents-by-policy-source-country" class="nav-link" data-scroll-target="#a1.-policy-document-coverage-map-documents-by-policy-source-country">A1. Policy document coverage map (documents by policy source country)</a></li>
   <li><a href="#a2.-why-exclude-sub-tags-a-b-and-keep-top-level-country-tags-only" id="toc-a2.-why-exclude-sub-tags-a-b-and-keep-top-level-country-tags-only" class="nav-link" data-scroll-target="#a2.-why-exclude-sub-tags-a-b-and-keep-top-level-country-tags-only">A2. Why exclude sub-tags (<code>A &gt; B</code>) and keep top-level country tags only</a></li>
@@ -192,22 +193,8 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p><a href="../SI/index_en.html"><code>← Extended Report Overview</code></a> · <a href="../SI/interactive_en.html"><code>Interactive</code></a> · <a href="../Report/Report_final.pdf"><code>Report (PDF)</code></a> · <a href="../SI/appendix.html"><code>Korean page</code></a></p>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Warning
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p><strong>Internal draft (English)</strong></p>
-<p>This English Extended Report is for internal review and may lag the Korean pages.</p>
-</div>
-</div>
-<p>This appendix compiles <strong>coverage &amp; tagging notes</strong>, <strong>metric definitions &amp; interpretation cautions</strong>, and <strong>additional figures</strong>.<br>
-The goal is to support safer interpretation of the numbers and patterns in the Data Brief text.</p>
+<p>This appendix brings together <strong>coverage &amp; tagging notes</strong>, <strong>metric definitions &amp; interpretation cautions</strong>, and <strong>additional figures</strong>.<br>
+Its goal is to support safer interpretation of the numbers and patterns in the Data Brief.</p>
 <p><strong>Jump to</strong>: <a href="#appendix-a">A. Coverage &amp; tagging</a> · <a href="#appendix-b">B. Definitions &amp; interpretation</a> · <a href="#appendix-c">C. Additional figures</a></p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -245,11 +232,23 @@ Tip
 </ul>
 </div>
 </div>
+<section id="reading-order-2-min" class="level2">
+<h2 class="anchored" data-anchor-id="reading-order-2-min">Reading order (2 min)</h2>
+<ul>
+<li>Step 1 (scope check): Start with <a href="#appendix-a">A. Coverage &amp; tagging</a> to confirm observable-coverage unevenness.</li>
+<li>Step 2 (metric check): Use <a href="#appendix-b-quick">B0. Quick definitions</a> and <a href="#data-fitness">B0-1. Matching &amp; missingness</a> to fix denominators/missingness conditions.</li>
+<li>Step 3 (extension check): Open only needed items in <a href="#appendix-c">C. Additional figures</a> to support interpretation.</li>
+</ul>
 <hr>
+</section>
 <section id="appendix-a" class="level2">
 <h2 class="anchored" data-anchor-id="appendix-a">A. Coverage &amp; tagging</h2>
-<p>This section provides the minimum evidence needed before reading “hub structure.”<br>
+<p>This section provides the minimum context needed before reading “hub structure.”<br>
 It shows that the observable policy-document universe in Overton may be uneven across countries.</p>
+<ul>
+<li>Observation baseline: coverage gaps across country/source types can shift hub interpretation.</li>
+<li>Check purpose: fix tagging rules (top-level/sub-tag/exception handling) before reading comparisons.</li>
+</ul>
 <section id="a1.-policy-document-coverage-map-documents-by-policy-source-country" class="level3">
 <h3 class="anchored" data-anchor-id="a1.-policy-document-coverage-map-documents-by-policy-source-country">A1. Policy document coverage map (documents by policy source country)</h3>
 <div class="callout callout-style-default callout-note callout-titled">
@@ -283,15 +282,15 @@ Note
 <p>Overton policy source country tags include <strong>country-level tags (e.g., USA, UK)</strong> and <strong>sub-regional tags (e.g., USA &gt; California)</strong>.<br>
 To align meaning with OpenAlex country codes, this report uses <strong>top-level country tags only</strong> for default aggregations.</p>
 <p>This simplifies country-level comparisons.<br>
-But it also leaves room for <strong>under/over-interpretation</strong> for sources where sub-tags contribute heavily.<br>
-Therefore, when reading country comparisons, it is safer to check coverage itself as well.</p>
+At the same time, it can invite <strong>under/over-interpretation</strong> when sub-tags contribute heavily.<br>
+So, when reading country comparisons, it is safer to check coverage itself as well.</p>
 </section>
 <section id="a3.-why-do-we-need-exceptions-for-hong-kong-georgia-symptom---cause---action" class="level3">
 <h3 class="anchored" data-anchor-id="a3.-why-do-we-need-exceptions-for-hong-kong-georgia-symptom---cause---action">A3. Why do we need exceptions for Hong Kong / Georgia: symptom -&gt; cause -&gt; action</h3>
 <p>Policy source country tags can appear only as sub-tags such as <code>China &gt; Hong Kong</code> and <code>USA &gt; Georgia</code>.<br>
 If we keep only top-level tags, these can be filtered out from the policy-source side.<br>
 That can make them look like “policy sources that do not exist” in the network view.<br>
-Therefore, in network figures, we split <code>China &gt; Hong Kong</code> into <code>Hong Kong</code> and split <code>USA &gt; Georgia</code> into <code>Georgia (USA)</code>.</p>
+For network figures, we therefore split <code>China &gt; Hong Kong</code> into <code>Hong Kong</code> and <code>USA &gt; Georgia</code> into <code>Georgia (USA)</code>.</p>
 <details>
 <summary>
 <strong>More detail: sub-tag scale, examples, and Hong Kong notation</strong>
@@ -303,7 +302,7 @@ Therefore, in network figures, we split <code>China &gt; Hong Kong</code> into <
 <li>By policy document counts: sub-tags total 200,381 out of 1,671,835 (12.0%)</li>
 <li>By DOI citation records: sub-tags total 3,488,024 out of 48,456,680 (7.2%)</li>
 </ul>
-<p>Here, “DOI citation records” are raw-record totals, and may differ from analysis-ready deduplicated counts in the Data Brief (e.g., the §6.1 citation count).</p>
+<p>Here, “DOI citation records” are raw-record totals, and may differ from analysis-ready deduplicated counts shown in the Data Brief key-number block.</p>
 <p>Top-level parents with large sub-tag contributions are typically <code>USA</code>, <code>Spain</code>, <code>Canada</code>, <code>Australia</code>, <code>UK</code> (in that order).</p>
 </section>
 <section id="top-sub-tag-examples-by-policy-document-counts" class="level4">
@@ -380,7 +379,11 @@ If you want to re-attribute sub-tags at country scale, it is safer to separate t
 
 <section id="appendix-b" class="level2">
 <h2 class="anchored" data-anchor-id="appendix-b">B. Definitions &amp; interpretation</h2>
-<p>This section compiles the aggregation units and metrics used in the Data Brief so readers can look them up when needed.</p>
+<p>This section compiles denominator/definition/guardrail items needed to re-read Data Brief metrics safely.</p>
+<ul>
+<li>Observation baseline: the same number can imply different conclusions when denominators differ.</li>
+<li>Check purpose: confirm metric definitions and missingness conditions before interpretation.</li>
+</ul>
 <section id="appendix-b-quick" class="level3">
 <h3 class="anchored" data-anchor-id="appendix-b-quick">B0. Quick definitions (summary)</h3>
 <ul>
@@ -393,8 +396,8 @@ If you want to re-attribute sub-tags at country scale, it is safer to separate t
 </section>
 <section id="data-fitness" class="level3">
 <h3 class="anchored" data-anchor-id="data-fitness">B0-1. Matching &amp; missingness summary</h3>
-<p>This report links DOI-based citations in Overton to OpenAlex works to attach topic and country metadata.<br>
-Therefore, the “joinable coverage” is a key safety check for interpretation.</p>
+<p>This report links DOI-based citations in Overton to OpenAlex works to attach topic and country metadata consistently.<br>
+For that reason, “joinable coverage” is a key safety check for interpretation.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -458,7 +461,7 @@ Note
 Then we counted whether each document contains at least one DOI-based scholarly citation.<br>
 As a result, 1,347,563 documents (97.6%) contain at least one DOI citation.</p>
 <p>Within this analysis snapshot, policy documents frequently cite DOI-identifiable scholarly evidence.<br>
-But it also has a clear limitation: it does <strong>not</strong> capture citations without DOIs (narrative citations, reports, legislation, web sources, etc.).</p>
+At the same time, this setup has a clear limitation: it does <strong>not</strong> capture citations without DOIs (narrative citations, reports, legislation, web sources, etc.).</p>
 <p><strong>How different is the DOI-citation coverage across source types?</strong></p>
 <p>The table below summarizes, by Overton source-type tag, the share of unique policy documents that contain at least one DOI-based scholarly citation.<br>
 Since source-type tags are multi-label, a single document can carry multiple tags.<br>
@@ -791,9 +794,9 @@ Therefore, summing by domain/topic yields totals larger than raw citation counts
 <p>Yes. Overton source country/type labels are tag-based (including parent/child tags), so a single document can be counted in multiple categories.</p>
 <p><span id="recent-years-decline"></span></p>
 <p><strong>Does the post-2022 decline in the time trend mean “policy cites science less”?</strong></p>
-<p>It is difficult to conclude that directly.<br>
+<p>A direct conclusion is difficult here.<br>
 Coverage delays (collection/processing lags) and the fact that citations accumulate after publication likely act together.<br>
-It is safer to read recent years as signals mixed with observation lag rather than as real-time decreases.</p>
+It is safer to read recent years as signals mixed with observation lag, rather than as real-time decreases.</p>
 </details>
 <details>
 <summary>
@@ -877,9 +880,13 @@ Therefore, use this table only as supporting context for “candidate explanator
 </section>
 <section id="appendix-c" class="level2">
 <h2 class="anchored" data-anchor-id="appendix-c">C. Additional figures</h2>
-<p>This section groups reference figures omitted from the main PDF due to space.<br>
+<p>This section groups reference figures omitted from the main PDF for space reasons.<br>
 Each item is folded by default for quick scanning.<br>
-Some figures may differ in presentation from the Data Brief.</p>
+Some figures use presentation formats that differ from the Data Brief.</p>
+<ul>
+<li>Usage: find the blocked figure/topic from the Data Brief, then open only the matching C-item.</li>
+<li>Interpretation boundary: C-items are support material for interpretation, not additional headline conclusions.</li>
+</ul>
 <section id="c1.-extended-for-chapter-2-top-n-topics-subfields" class="level3">
 <h3 class="anchored" data-anchor-id="c1.-extended-for-chapter-2-top-n-topics-subfields">C1. Extended for Chapter 2: Top-N topics / subfields</h3>
 <p>This set provides a list view to quickly validate the pattern shown in the topic scatter plots.</p>
@@ -911,10 +918,10 @@ Some figures may differ in presentation from the Data Brief.</p>
 </section>
 <section id="c3.-oa-reference-figures-by-domain-source-type" class="level3">
 <h3 class="anchored" data-anchor-id="c3.-oa-reference-figures-by-domain-source-type">C3. OA reference figures (by domain / source type)</h3>
-<p>The OA discussion in §2.3 is kept at the level of “candidate explanatory factors.”<br>
+<p>The OA discussion in the main brief is kept at the level of “candidate explanatory factors.”<br>
 The figures below summarize OA shares for reference.</p>
 <ul>
-<li>Complements: OA marker in §2.3</li>
+<li>Complements: OA interpretation context</li>
 <li>Caution: do not infer OA effects causally from these figures alone</li>
 </ul>
 <details>
@@ -931,7 +938,7 @@ The figures below summarize OA shares for reference.</p>
 The figure below expands it to the top 10 policy source countries.</p>
 <p>This metric is computed only over citations with known first-author country codes.</p>
 <ul>
-<li>Complements: Figure 10 in §4.2</li>
+<li>Complements: Figure 10 in §3.3</li>
 <li>Reader question: What range does self-citation share take beyond the selected countries?</li>
 </ul>
 <details>

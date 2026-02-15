@@ -175,20 +175,6 @@ ul.task-list li input[type="checkbox"] {
   </ul>
 </nav>
 <p><a href="../SI/index_en.html"><code>← Extended Report Overview</code></a> · <a href="../Report/Report_final.pdf"><code>Report (PDF)</code></a> · <a href="../SI/interactive.html"><code>Korean page</code></a></p>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Warning
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p><strong>Internal draft (English)</strong></p>
-<p>This English Extended Report is for internal review and may lag the Korean pages.</p>
-</div>
-</div>
 <p>Among the figures in the Data Brief, the ones worth <strong>zooming in, toggling items, and inspecting values</strong> are provided here as interactive versions.<br>
 This page is designed for freer web exploration.<br>
 The plots below are <strong>loaded only after you click the button</strong>, so the page itself opens quickly.</p>
@@ -215,6 +201,11 @@ Note
 <li>Start with time trends, domain distribution, and topic scatter plots.</li>
 <li>Then move to mismatch across countries, Korea flows, and the network.</li>
 </ul>
+<p><strong>Reading pattern (common)</strong></p>
+<ul>
+<li>Read every figure in the same order: <code>observation -&gt; interpretation -&gt; check</code>.</li>
+<li>In the check step, validate definitions/missingness guardrails in the appendix before drawing conclusions.</li>
+</ul>
 <p><strong>Tips</strong></p>
 <ul>
 <li>Click legends: toggle series on/off</li>
@@ -230,15 +221,16 @@ Note
 <section id="time-policy-publication-year" class="level2">
 <h2 class="anchored" data-anchor-id="time-policy-publication-year">Time (policy publication year)</h2>
 <div class="si-section-ref">
-<p>Data Brief: §2.1 · Related: <a href="../SI/appendix_en.html#why-2012">Appendix: Why 2012?</a>, <a href="../SI/appendix_en.html#recent-years-decline">Appendix: Recent-year decline</a></p>
+<p>Data Brief: §1.2 · Related: <a href="../SI/appendix_en.html#why-2012">Appendix: Why 2012?</a>, <a href="../SI/appendix_en.html#recent-years-decline">Appendix: Recent-year decline</a></p>
 </div>
 <section id="si-fig-1" class="level3">
 <h3 class="anchored" data-anchor-id="si-fig-1">Figure 1. Policy documents by publication year: citations, documents, and citations per document</h3>
 <div class="si-guidance">
 <p><strong>What to look for</strong></p>
 <ul>
-<li>Whether the rise in “citations per document” around 2012 also appears in robust summaries (median / trimmed mean)</li>
-<li>Whether the post-2022 decline is a real change or a lag/accumulation artifact</li>
+<li>Observation: Check whether there is an inflection around 2012 in citations per document.</li>
+<li>Interpretation: The post-2022 decline may reflect observation/accumulation lag rather than structural reversal.</li>
+<li>Check: Validate with <a href="../SI/appendix_en.html#why-2012">Why 2012?</a> and <a href="../SI/appendix_en.html#recent-years-decline">Recent-year decline</a>.</li>
 </ul>
 </div>
 <div class="si-plot" data-src="../Assets/Interactive/pubyear_trend.html?lang=en" data-height="650" data-title="Interactive plot: Figure 1 — Policy documents by publication year">
@@ -253,15 +245,16 @@ Note
 <section id="domains-and-topics-what-policy-cites" class="level2">
 <h2 class="anchored" data-anchor-id="domains-and-topics-what-policy-cites">Domains and topics (what policy cites)</h2>
 <div class="si-section-ref">
-<p>Data Brief: §2.2–2.4 · Related: <a href="../SI/appendix_en.html#data-fitness">Appendix: Matching &amp; missingness</a>, <a href="../SI/appendix_en.html#multilabel">Appendix: Multi-label topics</a></p>
+<p>Data Brief: §1.2–1.3 · Related: <a href="../SI/appendix_en.html#data-fitness">Appendix: Matching &amp; missingness</a>, <a href="../SI/appendix_en.html#multilabel">Appendix: Multi-label topics</a></p>
 </div>
 <section id="si-fig-2" class="level3">
 <h3 class="anchored" data-anchor-id="si-fig-2">Figure 2. Field composition within top policy-cited domains</h3>
 <div class="si-guidance">
 <p><strong>What to look for</strong></p>
 <ul>
-<li>How concentrated each domain is in its “top 3 fields” (how simple/peaked the composition is)</li>
-<li>Whether some domains have a large “field missing” segment (interpretation caution)</li>
+<li>Observation: Read top-3 field concentration and <code>field missing</code> segments together.</li>
+<li>Interpretation: Large missing segments make composition comparisons less stable.</li>
+<li>Check: Cross-check with <a href="../SI/appendix_en.html#data-fitness">Matching &amp; missingness</a> and <a href="../SI/appendix_en.html#multilabel">Multi-label topics</a>.</li>
 </ul>
 </div>
 <div class="si-plot" data-src="../Assets/Interactive/domain_top10.html?lang=en" data-height="650" data-title="Interactive plot: Figure 2 — Policy citations by domain (top 4; stacked by field)">
@@ -276,8 +269,9 @@ Note
 <div class="si-guidance">
 <p><strong>What to look for</strong></p>
 <ul>
-<li>Topics that receive disproportionately high policy citations relative to their paper counts (demand–supply mismatch points)</li>
-<li>Whether bubble sizes (OA marker) appear clustered in specific regions (treat as a candidate factor, not causality)</li>
+<li>Observation: Identify topics with disproportionately high policy citations relative to paper counts.</li>
+<li>Interpretation: These points are demand-supply mismatch candidates.</li>
+<li>Check: Treat bubble size (OA) as a candidate factor only, and read with <a href="../SI/appendix_en.html#oa-interpretation">OA interpretation</a>.</li>
 </ul>
 </div>
 <div class="si-plot" data-src="../Assets/Interactive/topic_scatter_citations_vs_papers.html?lang=en" data-height="750" data-title="Interactive plot: Figure 3 — Topic scatter (citations vs papers)">
@@ -293,8 +287,9 @@ Note
 <div class="si-guidance">
 <p><strong>What to look for</strong></p>
 <ul>
-<li>Upper-right (high recency and intensity): candidates for fast-rising agendas</li>
-<li>Upper-left (high intensity, low recency): candidates for accumulated/mature evidence bases</li>
+<li>Observation: Separate upper-right (high recency/high intensity) from upper-left (high intensity/low recency) clusters.</li>
+<li>Interpretation: The former can indicate fast-rising agendas; the latter accumulated/mature evidence pools.</li>
+<li>Check: Recheck whether the same topics keep their positions in the next snapshot.</li>
 </ul>
 </div>
 <div class="si-plot" data-src="../Assets/Interactive/topic_intensity_vs_recency.html?lang=en" data-height="750" data-title="Interactive plot: Figure 4 — Topic intensity vs recency">
@@ -310,15 +305,16 @@ Note
 <section id="hubs-who-accumulates-evidence" class="level2">
 <h2 class="anchored" data-anchor-id="hubs-who-accumulates-evidence">Hubs (who accumulates evidence)</h2>
 <div class="si-section-ref">
-<p>Data Brief: §3 · Related: <a href="../SI/appendix_en.html#appendix-a">Appendix: Coverage &amp; tagging</a></p>
+<p>Data Brief: §2 · Related: <a href="../SI/appendix_en.html#appendix-a">Appendix: Coverage &amp; tagging</a></p>
 </div>
 <section id="si-fig-5" class="level3">
 <h3 class="anchored" data-anchor-id="si-fig-5">Figure 5. Policy sources: total citations vs citations per document, and domain composition (top 10 + Korea)</h3>
 <div class="si-guidance">
 <p><strong>What to look for</strong></p>
 <ul>
-<li>Whether “total volume” and “per-document intensity” move differently for some sources</li>
-<li>How different the domain portfolios are across sources (composition comparison)</li>
+<li>Observation: Compare rank order differences between total volume and per-document intensity.</li>
+<li>Interpretation: Scale hubs and density hubs may diverge.</li>
+<li>Check: Track whether overlap between the two top groups expands or shrinks over time.</li>
 </ul>
 </div>
 <div class="si-plot" data-src="../Assets/Interactive/country_citations_top10.html?lang=en" data-height="650" data-title="Interactive plot: Figure 5 — Country citations (total, per policy doc, and domain composition)">
@@ -333,8 +329,9 @@ Note
 <div class="si-guidance">
 <p><strong>What to look for</strong></p>
 <ul>
-<li>Above/below the diagonal: which domains are cited more on the “global citation of a country’s research” side vs “the country’s own policy sourcing” side</li>
-<li>Whether the direction flips across domains within the same country (hard to reduce to a single story)</li>
+<li>Observation: Use above/below-diagonal positions to read domain-level mismatch direction.</li>
+<li>Interpretation: Direction can flip by domain within the same country.</li>
+<li>Check: Track whether absolute domain gaps (pp) are easing, stable, or widening.</li>
 </ul>
 </div>
 <div class="si-plot" data-src="../Assets/Interactive/country_domain_demand_supply_scatter_top50.html?lang=en" data-height="820" data-title="Interactive plot: Figure 6 — Domain mix mismatch (demand vs supply)">
@@ -350,8 +347,9 @@ Note
 <div class="si-guidance">
 <p><strong>What to look for</strong></p>
 <ul>
-<li>Separate “large because it produces many documents” vs “large because each document is evidence-dense”</li>
-<li>If a type has high per-document citations, connect it to the hypothesis about document types (briefs, guidelines, syntheses) and flag it for follow-up</li>
+<li>Observation: Compare source types by total volume and per-document intensity separately.</li>
+<li>Interpretation: Document-production scale and evidence density are different signals.</li>
+<li>Check: Keep non-exclusive tagging in mind and compare pattern differences first.</li>
 </ul>
 </div>
 <p>Source type labels are tag-based (not mutually exclusive), so a single document can carry multiple type tags.<br>
@@ -368,8 +366,9 @@ Interpret the values below as summaries by source-type tag.</p>
 <div class="si-guidance">
 <p><strong>What to look for</strong></p>
 <ul>
-<li>How much a domain’s share shifts across source types (composition differences)</li>
-<li>If “unspecified” is large for a type, treat it as a signal of missing fine-grained tagging</li>
+<li>Observation: Check how domain shares shift across source types.</li>
+<li>Interpretation: Composition shifts can indicate differences in source role/agenda.</li>
+<li>Check: If <code>unspecified</code> is large for a type, keep interpretation conservative.</li>
 </ul>
 </div>
 <p>Values are normalized within each source type (shares by domain within the type).<br>
@@ -386,15 +385,16 @@ Use it to compare <strong>composition</strong>, not total volume.</p>
 <section id="international-flows-policy-source-research-country" class="level2">
 <h2 class="anchored" data-anchor-id="international-flows-policy-source-research-country">International flows (policy source → research country)</h2>
 <div class="si-section-ref">
-<p>Data Brief: §4.1 · Related: <a href="../SI/appendix_en.html#self-citation-share">Appendix: Self-citation denominator (first author)</a></p>
+<p>Data Brief: §3.2 · Related: <a href="../SI/appendix_en.html#self-citation-share">Appendix: Self-citation denominator (first author)</a></p>
 </div>
 <section id="si-fig-9" class="level3">
 <h3 class="anchored" data-anchor-id="si-fig-9">Figure 9. Policy source → research country matrix: absolute volume and within-source share</h3>
 <div class="si-guidance">
 <p><strong>What to look for</strong></p>
 <ul>
-<li>Read absolute volume (left) vs share (right) separately: “more citing” and “biased sourcing lines” are not the same</li>
-<li>Whether multi-lateral sources (e.g., IGOs) are less concentrated on specific research countries (breadth of sourcing)</li>
+<li>Observation: Compare left-panel absolute volume and right-panel within-source share separately.</li>
+<li>Interpretation: High volume and concentrated sourcing are different conditions.</li>
+<li>Check: Track top-1 country share and top-3 combined share together.</li>
 </ul>
 </div>
 <p>The left panel shows absolute volume on a log scale.<br>
@@ -413,15 +413,16 @@ Research countries not in the policy-source list are grouped into regions.</p>
 <section id="korea-flows-two-directions-in-policyresearch-linkage" class="level2">
 <h2 class="anchored" data-anchor-id="korea-flows-two-directions-in-policyresearch-linkage">Korea flows (two directions in policy–research linkage)</h2>
 <div class="si-section-ref">
-<p>Data Brief: §4.2–4.3 · Related: <a href="../SI/appendix_en.html#self-citation-share">Appendix: Self-citation share</a>, <a href="../SI/appendix_en.html#self-citation-context">Appendix: Self-citation context</a></p>
+<p>Data Brief: §3.3 · Related: <a href="../SI/appendix_en.html#self-citation-share">Appendix: Self-citation share</a>, <a href="../SI/appendix_en.html#self-citation-context">Appendix: Self-citation context</a></p>
 </div>
 <section id="si-fig-10" class="level3">
 <h3 class="anchored" data-anchor-id="si-fig-10">Figure 10. Self-citation share vs expected, and domain mix of self vs non-self citations (top 7 + Korea)</h3>
 <div class="si-guidance">
 <p><strong>What to look for</strong></p>
 <ul>
-<li>Confirm that self-citation share is computed over citations with known first-author country codes (not over all citations)</li>
-<li>Check whether some countries are strongly positive/negative in actual−expected (domain-weighted baseline)</li>
+<li>Observation: Read self-citation shares together with actual-minus-expected values.</li>
+<li>Interpretation: Actual-minus-expected is a relative comparison to a domain-weighted baseline.</li>
+<li>Check: Confirm the denominator is known citations before country comparison.</li>
 </ul>
 </div>
 <div class="si-plot" data-src="../Assets/Interactive/policy_country_self_share_selected.html?lang=en" data-height="650" data-title="Interactive plot: Figure 10 — Self-citation share vs expected and domain portfolio">
@@ -436,8 +437,9 @@ Research countries not in the policy-source list are grouped into regions.</p>
 <div class="si-guidance">
 <p><strong>What to look for</strong></p>
 <ul>
-<li>Read inbound (Korean research → global policy) and sourcing (Korean policy → research) separately</li>
-<li>Check whether deviations from the “expected share” repeat for specific counterpart routes (structural tendency vs noise)</li>
+<li>Observation: Separate inbound (Korean research -&gt; global policy) and sourcing (Korean policy -&gt; research) top routes.</li>
+<li>Interpretation: Different top routes across directions indicate structural asymmetry.</li>
+<li>Check: Track direction-specific concentration metrics separately (inbound top-3 vs sourcing top-1).</li>
 </ul>
 </div>
 <div class="si-plot" data-src="../Assets/Interactive/korea_policy_research_flows_top10.html?lang=en" data-height="820" data-title="Interactive plot: Figure 11 — Republic of Korea evidence flows and domain portfolios (top 10)">
@@ -452,8 +454,9 @@ Research countries not in the policy-source list are grouped into regions.</p>
 <div class="si-guidance">
 <p><strong>What to look for</strong></p>
 <ul>
-<li>Where thick links connected to Korea (highlighted) lead to, as a backbone map (top links only)</li>
-<li>Treat layout as exploratory: read the structure of “who connects to whom,” not metric distances</li>
+<li>Observation: Follow backbone routes (top nodes/top links) connected to Korea.</li>
+<li>Interpretation: This is a structural summary map, not a full network.</li>
+<li>Check: Do not read layout distance as a quantitative metric; read connectivity only.</li>
 </ul>
 </div>
 <p>Layout is an exploratory aid.<br>

@@ -145,7 +145,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#method-scope" id="toc-method-scope" class="nav-link active" data-scroll-target="#method-scope">1) Analysis scope</a></li>
+  <li><a href="#first-checks-1-min" id="toc-first-checks-1-min" class="nav-link active" data-scroll-target="#first-checks-1-min">First checks (1 min)</a></li>
+  <li><a href="#method-scope" id="toc-method-scope" class="nav-link" data-scroll-target="#method-scope">1) Analysis scope</a></li>
   <li><a href="#method-matching" id="toc-method-matching" class="nav-link" data-scroll-target="#method-matching">2) Matching &amp; missingness checks</a></li>
   <li><a href="#method-metrics" id="toc-method-metrics" class="nav-link" data-scroll-target="#method-metrics">3) Core metric definitions (summary)</a></li>
   <li><a href="#method-guardrails" id="toc-method-guardrails" class="nav-link" data-scroll-target="#method-guardrails">4) Interpretation guardrails</a></li>
@@ -175,25 +176,20 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><a href="../SI/index_en.html"><code>← Extended Report Overview</code></a> · <a href="../SI/extended_report_en.html"><code>Extended text</code></a> · <a href="../SI/appendix_en.html"><code>Appendix</code></a> · <a href="../Report/Report_final.pdf"><code>Report (PDF)</code></a> · <a href="../SI/methods.html"><code>Korean page</code></a></p>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Warning
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p><strong>Internal draft (English)</strong></p>
-<p>This English page is for internal review and may lag the Korean page.</p>
-</div>
-</div>
-<p>This page summarizes method notes from the Data Brief as <strong>verifiable checkpoints</strong>.<br>
-For detailed tables and diagnostics, use the linked appendix sections.</p>
+<p><a href="../SI/index_en.html"><code>← Extended Report Overview</code></a> · <a href="../SI/extended_report_en.html"><code>Extended report</code></a> · <a href="../SI/appendix_en.html"><code>Appendix</code></a> · <a href="../Report/Report_final.pdf"><code>Report (PDF)</code></a> · <a href="../SI/methods.html"><code>Korean page</code></a></p>
+<p>This page reorganizes method notes from the Data Brief into <strong>verifiable checkpoints</strong>.<br>
+For detailed tables and diagnostics, refer to the linked appendix sections.</p>
+<section id="first-checks-1-min" class="level2">
+<h2 class="anchored" data-anchor-id="first-checks-1-min">First checks (1 min)</h2>
+<ul>
+<li>Before country comparison, confirm the <code>known citations</code> condition (known first-author country codes).</li>
+<li>Do not compare indicators with different denominators directly.</li>
+<li>If interpretation is unclear, review Sections 1-5 in order.</li>
+</ul>
+</section>
 <section id="method-scope" class="level2">
 <h2 class="anchored" data-anchor-id="method-scope">1) Analysis scope</h2>
+<p>This section fixes what is in scope and what is out of scope.</p>
 <ul>
 <li>Snapshot versions: Overton 2025.02 and OpenAlex 2025.06</li>
 <li>Unit of analysis: unique policy documents deduplicated by <code>policy_document_id</code></li>
@@ -219,36 +215,40 @@ Note
 </section>
 <section id="method-matching" class="level2">
 <h2 class="anchored" data-anchor-id="method-matching">2) Matching &amp; missingness checks</h2>
+<p>This section is the minimum safety check before country/institution comparisons.</p>
 <ul>
-<li>DOI -&gt; OpenAlex matching rate and country-code missingness are key safety checks.</li>
-<li>For country comparisons, always check the known-citation condition first (citations with known first-author country codes).</li>
+<li>The DOI -&gt; OpenAlex matching rate and country-code missingness are primary safety checks.</li>
+<li>For country comparisons, first confirm the known-citation condition (citations with known first-author country codes).</li>
 </ul>
-<p>Jump links: - <a href="../SI/appendix_en.html#data-fitness">Appendix B0-1. Matching &amp; missingness</a> - <a href="../SI/appendix_en.html#appendix-b-quick">Appendix B0. Quick definitions</a></p>
+<p>Details: - <a href="../SI/appendix_en.html#data-fitness">Appendix B0-1. Matching &amp; missingness</a> - <a href="../SI/appendix_en.html#appendix-b-quick">Appendix B0. Quick definitions</a></p>
 </section>
 <section id="method-metrics" class="level2">
 <h2 class="anchored" data-anchor-id="method-metrics">3) Core metric definitions (summary)</h2>
+<p>This section sets a shared definition frame for interpreting headline numbers.</p>
 <ul>
 <li>Citation counts vs unique works: separate frequency from breadth</li>
 <li>Recency: share of policy citations to works published in <code>2022-2024</code></li>
 <li>Citation intensity: <code>citation counts / unique works</code> within an aggregation unit</li>
 <li>Self-citation share: denominator includes only citations with known first-author country codes</li>
 </ul>
-<p>Jump links: - <a href="../SI/appendix_en.html#citations-vs-works">Citations vs works</a> - <a href="../SI/appendix_en.html#recency-intensity">Recency / intensity</a> - <a href="../SI/appendix_en.html#self-citation-share">Self-citation share</a></p>
+<p>Details: - <a href="../SI/appendix_en.html#citations-vs-works">Citations vs works</a> - <a href="../SI/appendix_en.html#recency-intensity">Recency / intensity</a> - <a href="../SI/appendix_en.html#self-citation-share">Self-citation share</a></p>
 </section>
 <section id="method-guardrails" class="level2">
 <h2 class="anchored" data-anchor-id="method-guardrails">4) Interpretation guardrails</h2>
+<p>This section defines minimum rules to avoid over-interpretation.</p>
 <ul>
 <li>Multi-label topics can produce totals above 100%.</li>
-<li>Recent-year decline can reflect observation/accumulation lag rather than structural reversal.</li>
-<li>The 2012 mean spike should be interpreted with distribution diagnostics (median/trimmed mean), not a single average.</li>
+<li>Recent-year declines may reflect observation/accumulation lag rather than a structural reversal.</li>
+<li>The 2012 mean spike should be read with distribution diagnostics (median/trimmed mean), not a single average.</li>
 </ul>
-<p>Jump links: - <a href="../SI/appendix_en.html#multilabel">Multi-label topics</a> - <a href="../SI/appendix_en.html#recent-years-decline">Recent-year decline caution</a> - <a href="../SI/appendix_en.html#why-2012">Why 2012 looks high</a></p>
+<p>Details: - <a href="../SI/appendix_en.html#multilabel">Multi-label topics</a> - <a href="../SI/appendix_en.html#recent-years-decline">Recent-year decline caution</a> - <a href="../SI/appendix_en.html#why-2012">Why 2012 looks high</a></p>
 </section>
 <section id="method-protocol" class="level2">
 <h2 class="anchored" data-anchor-id="method-protocol">5) Recompute/update protocol</h2>
+<p>This section fixes how to repeat the same checks in the next cycle.</p>
 <ul>
-<li>Recompute the same indicators quarterly or biannually and monitor directional state (rising/stable/easing).</li>
-<li>Keep the main brief headline-focused, while updating formulas/sensitivity checks/extended tables in the Extended Report layer.</li>
+<li>Recompute the same indicators quarterly or biannually and track directional state (rising/stable/easing).</li>
+<li>Keep the main brief headline-focused, while updating formulas, sensitivity checks, and extended tables in the Extended Report layer.</li>
 <li>Record all figure/text changes and rebuilt outputs in <code>Data_Insight/Report/Report_Update_Log.md</code>.</li>
 </ul>
 

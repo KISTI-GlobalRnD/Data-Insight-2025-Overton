@@ -145,7 +145,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#prioritized-follow-up-questions-3" id="toc-prioritized-follow-up-questions-3" class="nav-link active" data-scroll-target="#prioritized-follow-up-questions-3">Prioritized follow-up questions (3)</a>
+  <li><a href="#how-to-use-this-page-1-min" id="toc-how-to-use-this-page-1-min" class="nav-link active" data-scroll-target="#how-to-use-this-page-1-min">How to use this page (1 min)</a></li>
+  <li><a href="#prioritized-follow-up-questions-3" id="toc-prioritized-follow-up-questions-3" class="nav-link" data-scroll-target="#prioritized-follow-up-questions-3">Prioritized follow-up questions (3)</a>
   <ul class="collapse">
   <li><a href="#next-q1" id="toc-next-q1" class="nav-link" data-scroll-target="#next-q1">Q1. If we include citations between policy documents, how do evidence routes change?</a></li>
   <li><a href="#next-q2" id="toc-next-q2" class="nav-link" data-scroll-target="#next-q2">Q2. If we read citation context, can the same citation mean different things?</a></li>
@@ -178,20 +179,6 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p><a href="../SI/index_en.html"><code>← Extended Report Overview</code></a> · <a href="../Report/Report_final.pdf"><code>Report (PDF)</code></a> · <a href="../SI/next_questions.html"><code>Korean page</code></a></p>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Warning
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p><strong>Internal draft (English)</strong></p>
-<p>This English Extended Report is for internal review and may lag the Korean pages.</p>
-</div>
-</div>
 <p>This page lists three follow-up questions worth checking after reading the Data Brief.<br>
 They focus on analyses needed to validate the observed patterns or to explain “why this pattern emerges.”</p>
 <div class="callout callout-style-default callout-note callout-titled">
@@ -211,46 +198,50 @@ Note
 </ul>
 </div>
 </div>
+<section id="how-to-use-this-page-1-min" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-use-this-page-1-min">How to use this page (1 min)</h2>
+<ul>
+<li>Read each question in the same order: <code>observation baseline -&gt; interpretation hypothesis -&gt; checks -&gt; completion signal</code>.</li>
+<li>In this cycle, prioritize reaching a completion signal for at least one question rather than starting all three.</li>
+</ul>
+</section>
 <section id="prioritized-follow-up-questions-3" class="level2">
 <h2 class="anchored" data-anchor-id="prioritized-follow-up-questions-3">Prioritized follow-up questions (3)</h2>
 <section id="next-q1" class="level3">
 <h3 class="anchored" data-anchor-id="next-q1">Q1. If we include citations between policy documents, how do evidence routes change?</h3>
-<p>Beyond policy documents directly citing research, adding a layer of policy-to-policy citations can change what “hubs” mean.</p>
 <ul>
-<li>In the <strong>policy-to-policy citation network</strong> (not the research citation network), who are the hubs?</li>
-<li>Which documents function as “evidence synthesizers” (collecting and summarizing evidence)?</li>
-<li>During crises, does evidence flow come directly from papers, or does it get amplified through policy-to-policy citations?</li>
+<li>Observation baseline: The current hub reading is based on direct <code>policy -&gt; research</code> citation links.</li>
+<li>Interpretation hypothesis: Adding a <code>policy -&gt; policy</code> layer may change hub definitions and top-channel ordering.</li>
+<li>Checks: Identify hubs in the policy-to-policy network, identify evidence-synthesizer documents, compare direct vs mediated flow during crisis periods.</li>
+<li>Completion signal: Hub reordering is quantitatively confirmed against the direct-only network, with changes tied to specific periods/source types.</li>
 </ul>
 </section>
 <section id="next-q2" class="level3">
 <h3 class="anchored" data-anchor-id="next-q2">Q2. If we read citation context, can the same citation mean different things?</h3>
-<p>Even for the same DOI citation, the function differs (evidence, background, criticism). Context lets us read citations as meaning, not just counts.</p>
 <ul>
-<li>Can we represent the meaning of citation sentences/paragraphs as vectors and classify <strong>citation functions</strong>?</li>
-<li>If we separate “citations used as evidence” from “incidental mentions,” do the hubs change?</li>
-<li>Can shifts in context embeddings act as early signals that policy synthesis for a topic has matured?</li>
+<li>Observation baseline: The same DOI citation count can still reflect different functions (evidence/background/critique).</li>
+<li>Interpretation hypothesis: Separating citation functions may change hub strength and topic-maturity interpretation.</li>
+<li>Checks: Classify citation functions using sentence/paragraph embeddings, split evidence-use vs mention-only citations, track topic-level context-shift patterns.</li>
+<li>Completion signal: At least two topics show “similar citation counts but different function mix,” with an explicit change in hub interpretation.</li>
 </ul>
 </section>
 <section id="next-q3" class="level3">
 <h3 class="anchored" data-anchor-id="next-q3">Q3. From a network perspective, what diffusion patterns does evidence follow?</h3>
-<p>If we treat policy evidence flows as diffusion over a network, we can describe spikes, hub dependence, and vulnerability differently.</p>
 <ul>
-<li>Why do some evidence items spread quickly <strong>through a small number of hubs</strong>?</li>
-<li>During crises, does diffusion cross a threshold (tipping-point behavior)?</li>
-<li>If a hub is removed, how fragile is the flow, and how resilient is the network?</li>
+<li>Observation baseline: The report shows major routes, but diffusion dynamics (speed/threshold/resilience) need separate testing.</li>
+<li>Interpretation hypothesis: In crisis periods, hub dependence and diffusion speed rise together, increasing fragility to hub disruption.</li>
+<li>Checks: Estimate diffusion-speed indicators, detect threshold-like surge windows, run hub-removal fragility/resilience scenarios.</li>
+<li>Completion signal: Crisis vs non-crisis diffusion parameters diverge, and vulnerable hub candidates are prioritized for monitoring.</li>
 </ul>
 </section>
 </section>
 <section id="additional-extension-ideas-optional" class="level2">
 <h2 class="anchored" data-anchor-id="additional-extension-ideas-optional">Additional extension ideas (optional)</h2>
-<p>The following directions can “update” or “extend” the observations in this report.</p>
+<p>The following tracks can run in parallel as update/extension options.</p>
 <ul>
-<li><strong>Recompute after NKIS linkage</strong>: Link domestic policy documents (NKIS) and global policy documents (Overton) via identifiers, then recompute Korea-related metrics in the same frame.<br>
-With a larger sample, sensitivity checks become feasible for self-citation share, sourcing lines, and hub structure.</li>
-<li><strong>Break down by SDGs / agendas</strong>: Read policy agenda tags together with OpenAlex topics to compare which agendas repeatedly call upon which evidence.<br>
-Breaking country/source-type differences down by SDGs may sharpen the message.</li>
-<li><strong>Include evidence beyond DOIs</strong>: First quantify where and how much non-DOI evidence appears (reports, legislation, web sources).<br>
-Then combine with DOI citations to expand the map of evidence that policy actually consumes.</li>
+<li>Recompute after NKIS linkage: Link domestic policy documents (NKIS) and global policy documents (Overton) via identifiers, then recompute Korea metrics in the same frame.</li>
+<li>Break down by SDGs/agendas: Read policy agenda tags together with OpenAlex topics to compare repeated evidence calls by agenda.</li>
+<li>Include evidence beyond DOIs: Quantify non-DOI evidence (reports, legislation, web) and integrate with DOI-based links.</li>
 </ul>
 
 
