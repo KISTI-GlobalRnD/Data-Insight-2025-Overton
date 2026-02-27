@@ -109,7 +109,7 @@
     "href": "SI/extended_report_en.html#topics-do-not-move-at-the-same-speed",
     "title": "Extended Report",
     "section": "1.3 Topics do not move at the same speed",
-    "text": "1.3 Topics do not move at the same speed\n\n\n\nFigure 3. Topic-level policy citations vs unique works; labels indicate top policy-cited topics by domain\n\n\n\nObservation: Unique work counts and policy citation counts do not always move together.\nInterpretation: High research production in a topic does not automatically imply high policy uptake.\n\n\n\n\nFigure 4. Topic-level citation intensity vs recency; labels indicate top topics by recency and intensity\n\n\n\nInterpretation: “Mature topics” and “high-growth topics” coexist in policy evidence use; update cycles and synthesis speed can differ by agenda.\nMonitoring signal: Check whether high-recency topics keep their position in the next cycle.\n\nChapter 1 takeaway\nWhat matters more than a single citing-share number is the linkage structure of where evidence accumulates and how it is transmitted."
+    "text": "1.3 Topics do not move at the same speed\n\n\n\nFigure 3. Topic-level policy citations vs unique works; labels indicate top policy-cited topics by domain\n\n\n\nObservation: Unique work counts and policy citation counts do not always move together.\nInterpretation: High research production in a topic does not automatically imply high policy uptake.\n\n\n\n\nFigure 4. Topic-level citation intensity vs recency; labels indicate top topics by recency and intensity\n\n\n\nInterpretation: “Mature topics” and “high-growth topics” coexist in policy evidence use; update cycles and synthesis speed can differ by agenda.\nMonitoring signal: Check whether high-recency topics keep their position in the next cycle.\n\nChapter 1 takeaway What matters more than a single citing-share number is the linkage structure of where evidence accumulates and how it is transmitted."
   },
   {
     "objectID": "SI/extended_report_en.html#total-volume-and-density-send-different-signals",
@@ -130,7 +130,7 @@
     "href": "SI/extended_report_en.html#accessibility-oa-as-a-candidate-factor",
     "title": "Extended Report",
     "section": "2.3 Accessibility (OA) as a candidate factor",
-    "text": "2.3 Accessibility (OA) as a candidate factor\nWhen evidence concentrates, one plausible explanation is accessibility.\nIn the Overton-OpenAlex linked data, open-access (OA) shares vary across domains and source types (see OA interpretation and OA reference figures).\nHowever, this observation alone does not justify a causal claim that “OA causes policy citations.”\nIn this report, OA is treated as a candidate factor that can support interpretation, not as a conclusion.\nChapter 2 takeaway\nHub concentration can improve transmission efficiency, but higher concentration can also increase sensitivity to shocks in a few channels. That is why repeated monitoring should track whether top-channel concentration is rising, stable, or easing."
+    "text": "2.3 Accessibility (OA) as a candidate factor\nWhen evidence concentrates, one plausible explanation is accessibility. In the Overton-OpenAlex linked data, open-access (OA) shares vary across domains and source types (see OA interpretation and OA reference figures).\nHowever, this observation alone does not justify a causal claim that “OA causes policy citations.” In this report, OA is treated as a candidate factor that can support interpretation, not as a conclusion.\nChapter 2 takeaway Hub concentration can improve transmission efficiency, but higher concentration can also increase sensitivity to shocks in a few channels. That is why repeated monitoring should track whether top-channel concentration is rising, stable, or easing."
   },
   {
     "objectID": "SI/extended_report_en.html#koreas-domain-demand-supply-mix-is-misaligned",
@@ -151,7 +151,7 @@
     "href": "SI/extended_report_en.html#koreas-self-citation-share-and-two-way-routes",
     "title": "Extended Report",
     "section": "3.3 Korea’s self-citation share and two-way routes",
-    "text": "3.3 Korea’s self-citation share and two-way routes\n\n\n\nFigure 10. Self-citation share vs expected baseline, plus domain composition for domestic vs non-domestic citations (top 7 policy-source countries + Korea)\n\n\n\nObservation: Korea’s self-citation share is about 4.1% on the known-citation denominator.\nInterpretation: The Korean sample (2,742 policy-source documents) is small and affected by missingness, so this is a trend-check indicator rather than a ranking signal.\nInterpretation guardrail: Expected-vs-observed is relative to a domain-weighted baseline, not an absolute score.\n\n\n\n\nFigure 11. Two-way Korea policy-research flows and domain composition (top 10)\n\n\n\nObservation: Inbound is led by the U.K. (32.8%), IGOs (16.3%), and the U.S. (16.2%), while procurement is dominated by U.S. research (57.3%, known-citation basis).\nInterpretation: Different top channels across directions indicate structural asymmetry.\nInterpretation guardrail: Inbound/procurement shares are normalized within each direction and should not be read as absolute cross-direction magnitudes.\nMonitoring signal: Track inbound top-3 concentration and procurement top-1 dependence separately.\n\n\n\n\nFigure 12. Policy-research evidence-flow network: top 50 nodes, top 3 links per node\n\n\nFigure 12 summarizes the same asymmetry as a network view.\nBecause it is a reduced map with top nodes and top links only, it should be read as a large-route structure tool, not as a full-network representation.\nChapter 3 takeaway\nKorea’s inbound and procurement routes follow different structures. Strategy should therefore be route-specific rather than a single one-score prescription."
+    "text": "3.3 Korea’s self-citation share and two-way routes\n\n\n\nFigure 10. Self-citation share vs expected baseline, plus domain composition for domestic vs non-domestic citations (top 7 policy-source countries + Korea)\n\n\n\nObservation: Korea’s self-citation share is about 4.1% on the known-citation denominator.\nInterpretation: The Korean sample (2,742 policy-source documents) is small and affected by missingness, so this is a trend-check indicator rather than a ranking signal.\nInterpretation guardrail: Expected-vs-observed is relative to a domain-weighted baseline, not an absolute score.\n\n\n\n\nFigure 11. Two-way Korea policy-research flows and domain composition (top 10)\n\n\n\nObservation: Inbound is led by the U.K. (32.8%), IGOs (16.3%), and the U.S. (16.2%), while procurement is dominated by U.S. research (57.3%, known-citation basis).\nInterpretation: Different top channels across directions indicate structural asymmetry.\nInterpretation guardrail: Inbound/procurement shares are normalized within each direction and should not be read as absolute cross-direction magnitudes.\nMonitoring signal: Track inbound top-3 concentration and procurement top-1 dependence separately.\n\n\n\n\nFigure 12. Policy-research evidence-flow network: top 50 nodes, top 3 links per node\n\n\nFigure 12 summarizes the same asymmetry as a network view. Because it is a reduced map with top nodes and top links only, it should be read as a large-route structure tool, not as a full-network representation.\nChapter 3 takeaway Korea’s inbound and procurement routes follow different structures. Strategy should therefore be route-specific rather than a single one-score prescription."
   },
   {
     "objectID": "SI/extended_report_en.html#next-quarter-monitoring-frame-same-format",
@@ -165,7 +165,7 @@
     "href": "SI/extended_report_en.html#follow-up-analysis-roadmap-short",
     "title": "Extended Report",
     "section": "4.2 Follow-up analysis roadmap (short)",
-    "text": "4.2 Follow-up analysis roadmap (short)\n\nInclude non-DOI evidence (reports, web sources, legal texts)\nAdd policy-to-policy citation layers\nSeparate citation-context functions (evidence use vs background mention vs critique)\nConnect policy agenda classifications (e.g., SDGs) with topic classifications as a dual frame\n\nDetailed follow-up checklists are in Next questions.\nAdditional figures and diagnostic notes are in Appendix.\nChapter 4 takeaway\nThe priority is not stronger assertion; it is a repeatable observation system."
+    "text": "4.2 Follow-up analysis roadmap (short)\n\nInclude non-DOI evidence (reports, web sources, legal texts)\nAdd policy-to-policy citation layers\nSeparate citation-context functions (evidence use vs background mention vs critique)\nConnect policy agenda classifications (e.g., SDGs) with topic classifications as a dual frame\n\nDetailed follow-up checklists are in Next questions. Additional figures and diagnostic notes are in Appendix.\nChapter 4 takeaway The priority is not stronger assertion; it is a repeatable observation system."
   },
   {
     "objectID": "SI/extended_report_en.html#what-this-brief-does-say",
@@ -193,7 +193,7 @@
     "href": "SI/extended_report_en.html#closing-note",
     "title": "Extended Report",
     "section": "5.4 Closing note",
-    "text": "5.4 Closing note\nTwo headline findings remain: evidence is concentrated in hub channels, and Korea’s inbound/procurement routes are asymmetric.\nTo stabilize Korea-focused comparisons, domestic policy references need to be structured with identifiers (DOI/URL) and recomputed in the same frame.\nKim, Park, & Yoon (2025) provides an NKIS-based starting point for that direction.\nThe next step is to standardize the observation system, not to amplify conclusions."
+    "text": "5.4 Closing note\nTwo headline findings remain: evidence is concentrated in hub channels, and Korea’s inbound/procurement routes are asymmetric.\nTo stabilize Korea-focused comparisons, domestic policy references need to be structured with identifiers (DOI/URL) and recomputed in the same frame. Kim, Park, & Yoon (2025) provides an NKIS-based starting point for that direction.\nThe next step is to standardize the observation system, not to amplify conclusions."
   },
   {
     "objectID": "SI/extended_report_en.html#footnotes",
@@ -312,7 +312,7 @@
     "href": "SI/extended_report.html#토픽은-같은-속도로-움직이지-않는다",
     "title": "확장 본문 (Extended Report)",
     "section": "1.3 토픽은 같은 속도로 움직이지 않는다",
-    "text": "1.3 토픽은 같은 속도로 움직이지 않는다\n\n\n\n그림 3. 토픽별 정책 인용과 고유 논문 수. 라벨은 도메인별 정책 인용 상위 토픽\n\n\n\n관찰: 고유 논문 수와 정책 인용은 항상 같은 방향으로 움직이지 않는다. 연구 생산량이 큰 토픽이 정책에서 반드시 많이 쓰이는 것은 아니다.\n\n\n\n\n그림 4. 토픽별 인용 강도와 최근성. 라벨은 최근성 상위 토픽과 인용 강도 상위 토픽\n\n\n\n해석: 정책근거에는 “성숙 토픽”과 “고성장 토픽”이 공존하며, 의제별 업데이트 주기와 합성 속도가 다를 수 있다.\n점검 신호: 최근성 상위 토픽의 순위와 강도 지표가 다음 분기에도 유지되는지 확인한다.\n\n1장 소결론\n인용률 숫자 하나보다 중요한 것은, 근거가 모이고 전달되는 연결 구조다."
+    "text": "1.3 토픽은 같은 속도로 움직이지 않는다\n\n\n\n그림 3. 토픽별 정책 인용과 고유 논문 수. 라벨은 도메인별 정책 인용 상위 토픽\n\n\n\n관찰: 고유 논문 수와 정책 인용은 항상 같은 방향으로 움직이지 않는다. 연구 생산량이 큰 토픽이 정책에서 반드시 많이 쓰이는 것은 아니다.\n\n\n\n\n그림 4. 토픽별 인용 강도와 최근성. 라벨은 최근성 상위 토픽과 인용 강도 상위 토픽\n\n\n\n해석: 정책근거에는 “성숙 토픽”과 “고성장 토픽”이 공존하며, 의제별 업데이트 주기와 합성 속도가 다를 수 있다.\n점검 신호: 최근성 상위 토픽의 순위와 강도 지표가 다음 분기에도 유지되는지 확인한다.\n\n1장 소결론 인용률 숫자 하나보다 중요한 것은, 근거가 모이고 전달되는 연결 구조다."
   },
   {
     "objectID": "SI/extended_report.html#총량과-밀도는-다른-신호다",
@@ -333,7 +333,7 @@
     "href": "SI/extended_report.html#접근성oa은-후보-요인이다",
     "title": "확장 본문 (Extended Report)",
     "section": "2.3 접근성(OA)은 후보 요인이다",
-    "text": "2.3 접근성(OA)은 후보 요인이다\n정책근거가 한쪽으로 모일 때, 한 가지 가능한 설명은 “접근성”이다.\nOverton-OpenAlex 결합 데이터에서도 도메인/출처 유형에 따라 오픈액세스(OA) 비중이 다르게 나타난다(부록의 OA 해석, OA 참고 그림).\n다만 이 관측만으로 “OA가 정책 인용을 만든다”는 인과를 단정하지 않는다.\n이 보고서에서 OA는 허브 집중과 조달 편중을 해석할 때의 보조 후보 요인으로만 둔다.\n2장 소결론\n허브 집중은 전달 효율을 만들 수 있지만, 집중도가 높아질수록 특정 채널 변동에 민감해질 수 있다. 따라서 다음 점검에서는 상위 채널 집중도의 추세(상승/유지/완화)를 함께 본다."
+    "text": "2.3 접근성(OA)은 후보 요인이다\n정책근거가 한쪽으로 모일 때, 한 가지 가능한 설명은 “접근성”이다. Overton-OpenAlex 결합 데이터에서도 도메인/출처 유형에 따라 오픈액세스(OA) 비중이 다르게 나타난다(부록의 OA 해석, OA 참고 그림).\n다만 이 관측만으로 “OA가 정책 인용을 만든다”는 인과를 단정하지 않는다. 이 보고서에서 OA는 허브 집중과 조달 편중을 해석할 때의 보조 후보 요인으로만 둔다.\n2장 소결론 허브 집중은 전달 효율을 만들 수 있지만, 집중도가 높아질수록 특정 채널 변동에 민감해질 수 있다. 따라서 다음 점검에서는 상위 채널 집중도의 추세(상승/유지/완화)를 함께 본다."
   },
   {
     "objectID": "SI/extended_report.html#한국의-도메인-수요-공급은-어긋난다",
@@ -354,7 +354,7 @@
     "href": "SI/extended_report.html#한국의-자국-인용-비중과-두-방향-경로",
     "title": "확장 본문 (Extended Report)",
     "section": "3.3 한국의 자국 인용 비중과 두 방향 경로",
-    "text": "3.3 한국의 자국 인용 비중과 두 방향 경로\n\n\n\n그림 10. 자국 인용 비중과 기대치 대비, 그리고 자국/비자국 인용의 도메인 구성. 정책 출처 국가 상위 7개국과 한국\n\n\n\n관찰: 한국의 자국 인용 비중은 1저자 국가코드 확인분 기준 약 4.1%다.\n해석: 한국 표본(정책 출처 문헌 2,742편)은 작고 결측 영향이 있어 순위보다 추세 점검 지표로 읽어야 한다.\n해석 보정: 기대치 대비 비교는 도메인 가중 기준선에 대한 상대 비교이며 절대평가가 아니다.\n\n\n\n\n그림 11. 한국 정책문헌-연구의 두 방향 흐름과 인용 도메인 구성. 상위 10개\n\n\n\n관찰: 유입 방향은 영국 32.8%, 국제기구 16.3%, 미국 16.2% 비중이 크고, 조달 방향은 미국 연구 비중 57.3%(1저자 국가코드 확인분)가 높다.\n해석: 유입·조달의 상위 채널이 다르므로, 단일 처방으로는 비대칭을 설명하기 어렵다.\n해석 보정: 유입·조달 비중은 각 방향 내부 정규화 값이므로 방향 간 절대 크기 비교 지표가 아니다.\n점검 신호: 유입 상위 3채널 집중도와 조달 상위 1개국 비중을 분리 추적한다.\n\n\n\n\n그림 12. 정책-연구 근거 흐름 네트워크. 상위 50개 노드, 각 노드 상위 3개 연결\n\n\n그림 12는 이 비대칭을 네트워크 관점에서 요약한다.\n상위 노드와 상위 연결만 남긴 요약 지도이므로, 완전한 전체망이 아니라 큰 경로 구조를 읽는 도구로 해석해야 한다.\n3장 소결론\n한국의 유입과 조달은 다른 경로 구조를 보인다. 따라서 전략도 단일 처방이 아니라 경로별 진단이 필요하다."
+    "text": "3.3 한국의 자국 인용 비중과 두 방향 경로\n\n\n\n그림 10. 자국 인용 비중과 기대치 대비, 그리고 자국/비자국 인용의 도메인 구성. 정책 출처 국가 상위 7개국과 한국\n\n\n\n관찰: 한국의 자국 인용 비중은 1저자 국가코드 확인분 기준 약 4.1%다.\n해석: 한국 표본(정책 출처 문헌 2,742편)은 작고 결측 영향이 있어 순위보다 추세 점검 지표로 읽어야 한다.\n해석 보정: 기대치 대비 비교는 도메인 가중 기준선에 대한 상대 비교이며 절대평가가 아니다.\n\n\n\n\n그림 11. 한국 정책문헌-연구의 두 방향 흐름과 인용 도메인 구성. 상위 10개\n\n\n\n관찰: 유입 방향은 영국 32.8%, 국제기구 16.3%, 미국 16.2% 비중이 크고, 조달 방향은 미국 연구 비중 57.3%(1저자 국가코드 확인분)가 높다.\n해석: 유입·조달의 상위 채널이 다르므로, 단일 처방으로는 비대칭을 설명하기 어렵다.\n해석 보정: 유입·조달 비중은 각 방향 내부 정규화 값이므로 방향 간 절대 크기 비교 지표가 아니다.\n점검 신호: 유입 상위 3채널 집중도와 조달 상위 1개국 비중을 분리 추적한다.\n\n\n\n\n그림 12. 정책-연구 근거 흐름 네트워크. 상위 50개 노드, 각 노드 상위 3개 연결\n\n\n그림 12는 이 비대칭을 네트워크 관점에서 요약한다. 상위 노드와 상위 연결만 남긴 요약 지도이므로, 완전한 전체망이 아니라 큰 경로 구조를 읽는 도구로 해석해야 한다.\n3장 소결론 한국의 유입과 조달은 다른 경로 구조를 보인다. 따라서 전략도 단일 처방이 아니라 경로별 진단이 필요하다."
   },
   {
     "objectID": "SI/extended_report.html#다음-분기-대표-점검동일-포맷",
@@ -368,7 +368,7 @@
     "href": "SI/extended_report.html#후속-분석-로드맵-짧게",
     "title": "확장 본문 (Extended Report)",
     "section": "4.2 후속 분석 로드맵 (짧게)",
-    "text": "4.2 후속 분석 로드맵 (짧게)\n\nDOI 밖 인용(보고서·웹·법령) 포함\n정책문헌 간 인용 결합\n인용 문맥(근거 제시/배경 설명/비판) 분리\n정책 의제 분류(SDG 등)와 토픽 분류를 연결한 이중 프레임 점검\n\n각 절의 상세 점검 목록은 다음 질문에서 확인할 수 있다.\n추가 그림과 진단 노트는 부록에서 확인할 수 있다.\n4장 소결론\n지금 필요한 것은 더 강한 단정이 아니라, 반복 가능한 관측 체계다."
+    "text": "4.2 후속 분석 로드맵 (짧게)\n\nDOI 밖 인용(보고서·웹·법령) 포함\n정책문헌 간 인용 결합\n인용 문맥(근거 제시/배경 설명/비판) 분리\n정책 의제 분류(SDG 등)와 토픽 분류를 연결한 이중 프레임 점검\n\n각 절의 상세 점검 목록은 다음 질문에서 확인할 수 있다. 추가 그림과 진단 노트는 부록에서 확인할 수 있다.\n4장 소결론 지금 필요한 것은 더 강한 단정이 아니라, 반복 가능한 관측 체계다."
   },
   {
     "objectID": "SI/extended_report.html#이-브리프가-말하는-것",
@@ -396,7 +396,7 @@
     "href": "SI/extended_report.html#맺음말",
     "title": "확장 본문 (Extended Report)",
     "section": "5.4 맺음말",
-    "text": "5.4 맺음말\n핵심 결론은 두 가지다. 정책근거는 허브에 집중되고, 한국의 유입과 조달은 비대칭이다.\n한국 비교를 더 안정적으로 읽으려면 국내 정책문헌 참고문헌을 DOI·URL 같은 식별자 기반으로 구조화해 같은 프레임으로 재계산해야 한다.\nKim, Park, & Yoon (2025)의 NKIS 기반 참고문헌 구조화 시도는 그 출발점에 해당한다.\n다음 단계는 결론을 키우는 일이 아니라 관측 체계를 표준화하는 일이다."
+    "text": "5.4 맺음말\n핵심 결론은 두 가지다. 정책근거는 허브에 집중되고, 한국의 유입과 조달은 비대칭이다.\n한국 비교를 더 안정적으로 읽으려면 국내 정책문헌 참고문헌을 DOI·URL 같은 식별자 기반으로 구조화해 같은 프레임으로 재계산해야 한다. Kim, Park, & Yoon (2025)의 NKIS 기반 참고문헌 구조화 시도는 그 출발점에 해당한다.\n다음 단계는 결론을 키우는 일이 아니라 관측 체계를 표준화하는 일이다."
   },
   {
     "objectID": "SI/extended_report.html#footnotes",
