@@ -462,6 +462,16 @@ Then we counted whether each document contains at least one DOI-based scholarly 
 As a result, 1,347,563 documents (97.6%) contain at least one DOI citation.</p>
 <p>Within this analysis snapshot, policy documents frequently cite DOI-identifiable scholarly evidence.<br>
 At the same time, this setup has a clear limitation: it does <strong>not</strong> capture citations without DOIs (narrative citations, reports, legislation, web sources, etc.).</p>
+<p><span id="repeat-share"></span></p>
+<p><strong>What does “48.1% are repeatedly cited (&gt;=2)” mean in this analysis snapshot?</strong></p>
+<p>This metric summarizes, among unique cited works, how many are called repeatedly across different policy documents.</p>
+<ul>
+<li>Unit: unique cited works (OpenAlex works)</li>
+<li>Computation: after cleaning policy→work DOI links, count how many <strong>distinct policy documents (<code>policy_document_id</code>)</strong> cite each work</li>
+<li>Definition: “repeatedly cited (&gt;=2)” means cited by at least two distinct policy documents</li>
+</ul>
+<p>In the Overton 2025.02×OpenAlex 2025.06 linked data, 3,143,234 out of 6,532,365 unique cited works (48.1%) are cited by two or more policy documents.</p>
+<p>As with the 97.6% statistic, this number is limited to the DOI-linked <strong>observed scope</strong> in the snapshot. Citations without DOIs (reports, legislation, web sources, etc.) are not included in this repeated-call calculation.</p>
 <p><strong>How different is the DOI-citation coverage across source types?</strong></p>
 <p>The table below summarizes, by Overton source-type tag, the share of unique policy documents that contain at least one DOI-based scholarly citation.<br>
 Since source-type tags are multi-label, a single document can carry multiple tags.<br>
