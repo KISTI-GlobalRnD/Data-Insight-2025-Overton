@@ -191,8 +191,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p><a href="../SI/index.html"><code>← Extended Report 개요</code></a> · <a href="../SI/interactive.html"><code>인터랙티브</code></a> · <a href="../Report/Report_final.pdf"><code>보고서(PDF)</code></a></p>
-<p>본문에서 언급한 수치와 패턴을 더 안전하게 해석할 수 있도록 자료를 정리했다.<br>
-구성은 <strong>커버리지·태깅</strong>, <strong>지표 정의·해석 주의</strong>, <strong>추가 그림</strong>이다.</p>
+<p>본문에서 언급한 수치와 패턴을 더 안전하게 해석할 수 있도록 자료를 정리했다. 구성은 <strong>커버리지·태깅</strong>, <strong>지표 정의·해석 주의</strong>, <strong>추가 그림</strong>이다.</p>
 <p><strong>바로가기</strong>: <a href="#appendix-a">A. 데이터 커버리지·태깅</a> · <a href="#appendix-b">B. 정의·해석</a> · <a href="#appendix-c">C. 추가 그림</a></p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -276,17 +275,12 @@ Note
 </section>
 <section id="a2.-하위-태그a-b와-최상위-국가만을-쓴-이유" class="level3">
 <h3 class="anchored" data-anchor-id="a2.-하위-태그a-b와-최상위-국가만을-쓴-이유">A2. 하위 태그(<code>A &gt; B</code>)와 “최상위 국가만”을 쓴 이유</h3>
-<p>Overton의 정책 출처 국가 태그는 <strong>국가 단위(예: USA, UK)</strong> 외에 <strong>하위 지역 단위(예: USA &gt; California)</strong>를 함께 포함한다.<br>
-이번 보고서는 OpenAlex의 국가코드와 의미를 맞추기 위해, 기본 집계에서 하위 태그를 제외하고 <strong>최상위 국가만</strong> 사용했다.</p>
-<p>이 선택은 “국가 단위 비교”를 단순화한다.<br>
-다만 하위 태그 기여가 큰 출처에서는 국가별 비교가 <strong>과소/과대 해석될 여지</strong>를 남긴다.<br>
-따라서 본문에서 국가 비교를 읽을 때는 커버리지 자체를 함께 확인하는 편이 안전하다.</p>
+<p>Overton의 정책 출처 국가 태그는 <strong>국가 단위(예: USA, UK)</strong> 외에 <strong>하위 지역 단위(예: USA &gt; California)</strong>를 함께 포함한다. 이번 보고서는 OpenAlex의 국가코드와 의미를 맞추기 위해, 기본 집계에서 하위 태그를 제외하고 <strong>최상위 국가만</strong> 사용했다.</p>
+<p>이 선택은 “국가 단위 비교”를 단순화한다. 다만 하위 태그 기여가 큰 출처에서는 국가별 비교가 <strong>과소/과대 해석될 여지</strong>를 남긴다. 따라서 본문에서 국가 비교를 읽을 때는 커버리지 자체를 함께 확인하는 편이 안전하다.</p>
 </section>
 <section id="a3.-hong-konggeorgia-예외-처리는-왜-필요했나-현상원인조치" class="level3">
 <h3 class="anchored" data-anchor-id="a3.-hong-konggeorgia-예외-처리는-왜-필요했나-현상원인조치">A3. Hong Kong/Georgia 예외 처리는 왜 필요했나: 현상→원인→조치</h3>
-<p>정책 출처 국가 태그는 <code>China &gt; Hong Kong</code>, <code>USA &gt; Georgia</code>처럼 <strong>하위 태그로 관측</strong>될 수 있다.<br>
-최상위 국가만 쓰면 이런 하위 태그는 정책 출처 쪽에서 필터링되어 누락될 수 있어, 네트워크에서 <strong>정책 출처가 없는 것처럼 보이는 효과</strong>가 생길 수 있다.<br>
-그래서 네트워크 그림에서는 <code>China &gt; Hong Kong</code>을 <code>Hong Kong</code>으로 분리했고, <code>USA &gt; Georgia</code>는 <code>Georgia (USA)</code>로 분리했다.</p>
+<p>정책 출처 국가 태그는 <code>China &gt; Hong Kong</code>, <code>USA &gt; Georgia</code>처럼 <strong>하위 태그로 관측</strong>될 수 있다. 최상위 국가만 쓰면 이런 하위 태그는 정책 출처 쪽에서 필터링되어 누락될 수 있어, 네트워크에서 <strong>정책 출처가 없는 것처럼 보이는 효과</strong>가 생길 수 있다. 그래서 네트워크 그림에서는 <code>China &gt; Hong Kong</code>을 <code>Hong Kong</code>으로 분리했고, <code>USA &gt; Georgia</code>는 <code>Georgia (USA)</code>로 분리했다.</p>
 <details>
 <summary>
 <strong>자세히 보기: 하위 태그 규모, 예시, Hong Kong 표기</strong>
@@ -356,18 +350,12 @@ Note
 </section>
 <section id="hong-kong은-중국으로-합쳐진-것인가" class="level4">
 <h4 class="anchored" data-anchor-id="hong-kong은-중국으로-합쳐진-것인가">Hong Kong은 “중국으로 합쳐진” 것인가?</h4>
-<p>현재 스냅샷에서 Overton의 정책 출처에는 <code>Hong Kong</code>이 국가처럼 직접 등장하지 않는다.<br>
-<code>China &gt; Hong Kong</code> 형태로만 관측된다(정책문헌 1,182편).<br>
-반면 OpenAlex의 연구국은 <code>HK → Hong Kong</code>으로 별도 코드를 쓴다.</p>
-<p>따라서 “최상위 국가만” 기준으로 정책 출처를 집계하면, <code>China &gt; Hong Kong</code>에서 발행된 문서는 정책 출처 쪽에서 빠진다.<br>
-이 경우 <code>Hong Kong</code>은 연구국 노드로만 남아 <strong>인용만 되는 노드처럼 보일 수 있다</strong>.</p>
+<p>현재 스냅샷에서 Overton의 정책 출처에는 <code>Hong Kong</code>이 국가처럼 직접 등장하지 않는다. <code>China &gt; Hong Kong</code> 형태로만 관측된다(정책문헌 1,182편). 반면 OpenAlex의 연구국은 <code>HK → Hong Kong</code>으로 별도 코드를 쓴다.</p>
+<p>따라서 “최상위 국가만” 기준으로 정책 출처를 집계하면, <code>China &gt; Hong Kong</code>에서 발행된 문서는 정책 출처 쪽에서 빠진다. 이 경우 <code>Hong Kong</code>은 연구국 노드로만 남아 <strong>인용만 되는 노드처럼 보일 수 있다</strong>.</p>
 </section>
 <section id="실무적-주의-하위-태그의-단순-치환은-충돌을-만든다" class="level4">
 <h4 class="anchored" data-anchor-id="실무적-주의-하위-태그의-단순-치환은-충돌을-만든다">실무적 주의: 하위 태그의 단순 치환은 충돌을 만든다</h4>
-<p>하위 태그를 무조건 <code>A &gt; B → B</code>로 치환하면, 예를 들어 <code>USA &gt; Georgia</code>(미국 조지아주)가 <code>Georgia</code>(국가)와 섞이는 동명이인 충돌이 생길 수 있다.<br>
-따라서 하위 태그를 국가 단위로 재귀속시키려면 두 단계를 분리해 설계하는 편이 안전하다.<br>
-(1) 부모 국가로 올리는 방식(<code>A &gt; B → A</code>)<br>
-(2) 예외 처리(홍콩처럼 별도 단위로 둘지)</p>
+<p>하위 태그를 무조건 <code>A &gt; B → B</code>로 치환하면, 예를 들어 <code>USA &gt; Georgia</code>(미국 조지아주)가 <code>Georgia</code>(국가)와 섞이는 동명이인 충돌이 생길 수 있다. 따라서 하위 태그를 국가 단위로 재귀속시키려면 두 단계를 분리해 설계하는 편이 안전하다. (1) 부모 국가로 올리는 방식(<code>A &gt; B → A</code>) (2) 예외 처리(홍콩처럼 별도 단위로 둘지)</p>
 </section></details>
 <hr>
 </section>
@@ -392,8 +380,7 @@ Note
 </section>
 <section id="data-fitness" class="level3">
 <h3 class="anchored" data-anchor-id="data-fitness">B0-1. 매칭·결측 요약</h3>
-<p>이 보고서는 Overton의 DOI 기반 인용을 OpenAlex works와 연결해 토픽과 국가 정보를 붙인다.<br>
-따라서 “연결되는 범위”가 해석의 안전장치가 된다.</p>
+<p>이 보고서는 Overton의 DOI 기반 인용을 OpenAlex works와 연결해 토픽과 국가 정보를 붙인다. 따라서 “연결되는 범위”가 해석의 안전장치가 된다.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -406,15 +393,12 @@ Note
 <div class="callout-body-container callout-body">
 <p><strong>핵심 숫자(Overton DOI 인용 기록 기준)</strong></p>
 <ul>
-<li><strong>DOI→OpenAlex works 연결</strong>: 약 95%<br>
-</li>
-<li><strong>1저자 국가코드 연결</strong>: 약 80%<br>
-</li>
+<li><strong>DOI→OpenAlex works 연결</strong>: 약 95%</li>
+<li><strong>1저자 국가코드 연결</strong>: 약 80%</li>
 </ul>
 </div>
 </div>
-<p>이 수치는 “DOI 인용 기록” 단위의 요약이다.<br>
-보고서 본문처럼 중복 제거를 거친 분석용 인용 건수와는 집계 기준이 다를 수 있다.</p>
+<p>이 수치는 “DOI 인용 기록” 단위의 요약이다. 보고서 본문처럼 중복 제거를 거친 분석용 인용 건수와는 집계 기준이 다를 수 있다.</p>
 <details>
 <summary>
 <strong>정책 출처별 예시(1저자 국가코드 연결 비중)</strong>
@@ -456,28 +440,20 @@ Note
 </summary>
 <p><span id="doi-share"></span></p>
 <p><strong>“97.6%가 DOI 논문을 인용한다”는 무엇을 뜻하나?</strong></p>
-<p>Overton 정책문헌을 <code>policy_document_id</code> 기준으로 중복 제거해 고유 정책문헌 1,381,084편을 만들었다.<br>
-그 다음 각 문헌이 DOI 기반 학술 인용을 1건 이상 포함하는지 집계했다.<br>
-그 결과 1,347,563편(97.6%)이 DOI 인용을 포함했다.</p>
-<p>주의할 점은 이 수치가 “정책문헌이 학술 근거를 사용한다”는 방향성만 보여준다는 것이다.<br>
-<strong>DOI가 없는 인용(서술 인용/보고서/법령/웹 등)</strong> 은 포함하지 못한다.</p>
+<p>Overton 정책문헌을 <code>policy_document_id</code> 기준으로 중복 제거해 고유 정책문헌 1,381,084편을 만들었다. 그 다음 각 문헌이 DOI 기반 학술 인용을 1건 이상 포함하는지 집계했다. 그 결과 1,347,563편(97.6%)이 DOI 인용을 포함했다.</p>
+<p>주의할 점은 이 수치가 “정책문헌이 학술 근거를 사용한다”는 방향성만 보여준다는 것이다. <strong>DOI가 없는 인용(서술 인용/보고서/법령/웹 등)</strong> 은 포함하지 못한다.</p>
 <p><span id="repeat-share"></span></p>
 <p><strong>“48.1%가 2회 이상 반복 인용된다”는 무엇을 뜻하나?</strong></p>
 <p>이 수치는 “정책이 인용한 고유 논문(works)” 가운데, <strong>서로 다른 정책문헌에서 반복적으로 호출되는 논문이 얼마나 되는지</strong>를 요약한다.</p>
 <ul>
-<li>단위: 인용된 고유 논문(OpenAlex works)<br>
-</li>
-<li>계산: 정책문헌→논문 DOI 링크를 정리한 뒤, 논문 1편이 <strong>서로 다른 정책문헌(<code>policy_document_id</code>)에서 몇 번 인용되었는지</strong>(=정책문헌 수) 계산<br>
-</li>
+<li>단위: 인용된 고유 논문(OpenAlex works)</li>
+<li>계산: 정책문헌→논문 DOI 링크를 정리한 뒤, 논문 1편이 <strong>서로 다른 정책문헌(<code>policy_document_id</code>)에서 몇 번 인용되었는지</strong>(=정책문헌 수) 계산</li>
 <li>기준: 2개 이상의 서로 다른 정책문헌에서 인용된 논문을 “2회 이상 반복 인용”으로 정의</li>
 </ul>
 <p>Overton 2025.02×OpenAlex 2025.06 결합 데이터에서 인용된 고유 논문 6,532,365편 중 3,143,234편(48.1%)이 2회 이상 반복 인용에 해당한다.</p>
 <p>주의할 점은 이 수치도 97.6%와 마찬가지로 Overton 스냅샷의 <strong>DOI-연결 관측 범위</strong>에 한정된다는 것이다. 즉 DOI가 없는 근거(보고서·법령·웹 등)는 반복 호출 계산에 포함되지 않는다.</p>
 <p><strong>출처 유형별로 DOI 인용 포함 비중은 얼마나 다르나?</strong></p>
-<p>아래 표는 Overton 출처 유형 태그별 요약이다.<br>
-해당 태그가 붙은 고유 정책문헌 가운데 DOI 기반 학술 인용을 1건 이상 포함한 문헌의 비중을 제시한다.<br>
-출처 유형 태그는 다중라벨 구조이므로 문헌 1편이 여러 유형에 동시에 잡힐 수 있다.<br>
-따라서 표의 정책문헌 수 합은 전체 문헌 수와 일치하지 않을 수 있다.</p>
+<p>아래 표는 Overton 출처 유형 태그별 요약이다. 해당 태그가 붙은 고유 정책문헌 가운데 DOI 기반 학술 인용을 1건 이상 포함한 문헌의 비중을 제시한다. 출처 유형 태그는 다중라벨 구조이므로 문헌 1편이 여러 유형에 동시에 잡힐 수 있다. 따라서 표의 정책문헌 수 합은 전체 문헌 수와 일치하지 않을 수 있다.</p>
 <details>
 <summary>
 <strong>표: 출처 유형 태그별 DOI 인용 포함 비중</strong>
@@ -688,13 +664,9 @@ Note
 </table>
 </details>
 <p>문서 유형 기준의 분해는 현재 출력 파일에 없어, 향후 업데이트에서 보강한다.</p>
-<p>참고로 이번 분석에서는 Overton DOI 인용에서 추출한 DOI 목록(중복 제거 기준 약 687만 개) 가운데 약 95%를 OpenAlex works로 연결했다(약 653만 개).<br>
-나머지 약 34만 DOI는 OpenAlex에서 일치하는 레코드를 찾지 못했다.<br>
-형식 오류는 소수였고 대부분은 DOI처럼 보이는 문자열이었다.<br>
-따라서 미매칭은 형식 오류보다 커버리지/정규화 차이의 가능성이 크다.</p>
+<p>참고로 이번 분석에서는 Overton DOI 인용에서 추출한 DOI 목록(중복 제거 기준 약 687만 개) 가운데 약 95%를 OpenAlex works로 연결했다(약 653만 개). 나머지 약 34만 DOI는 OpenAlex에서 일치하는 레코드를 찾지 못했다. 형식 오류는 소수였고 대부분은 DOI처럼 보이는 문자열이었다. 따라서 미매칭은 형식 오류보다 커버리지/정규화 차이의 가능성이 크다.</p>
 <p><strong>“중복 제거”는 무엇을 의미하나?</strong></p>
-<p>Overton 원본 정책문헌은 같은 문헌의 버전/재게시, 언어 변형, 메타데이터 중복 등으로 인해 중복이 포함될 수 있다.<br>
-이번 분석에서는 분석 단위를 “고유 정책문헌”으로 맞추기 위해 <code>policy_document_id</code> 기준으로 통합했다.</p>
+<p>Overton 원본 정책문헌은 같은 문헌의 버전/재게시, 언어 변형, 메타데이터 중복 등으로 인해 중복이 포함될 수 있다. 이번 분석에서는 분석 단위를 “고유 정책문헌”으로 맞추기 위해 <code>policy_document_id</code> 기준으로 통합했다.</p>
 </details>
 <details>
 <summary>
@@ -703,31 +675,23 @@ Note
 <p><span id="citations-vs-works"></span></p>
 <p><strong>“인용 건수”와 “고유 논문 수”는 왜 구분하나?</strong></p>
 <ul>
-<li><strong>인용 건수</strong>: 정책문헌이 DOI 논문을 몇 번 인용했는지의 총합. 즉 DOI 인용 기록의 개수<br>
-</li>
+<li><strong>인용 건수</strong>: 정책문헌이 DOI 논문을 몇 번 인용했는지의 총합. 즉 DOI 인용 기록의 개수</li>
 <li><strong>고유 논문 수</strong>: 인용된 논문을 “서로 다른 논문” 기준으로 중복 제거한 개수</li>
 </ul>
 <p>정책이 “몇 번이나 근거를 인용했는가(빈도)”와 “얼마나 넓은 논문 풀을 썼는가(다양성)”는 다른 질문이어서 둘을 분리해 해석한다.</p>
 <p><span id="recency-intensity"></span></p>
 <p><strong>“최근성”과 “인용 강도”는 어떻게 계산했나?</strong></p>
 <ul>
-<li><strong>최근성</strong>: <code>2022–2024</code> 발행 논문이 차지하는 정책 인용 비중<br>
-</li>
+<li><strong>최근성</strong>: <code>2022–2024</code> 발행 논문이 차지하는 정책 인용 비중</li>
 <li><strong>인용 강도</strong>: 집계 단위 내 고유 논문 1편당 평균 정책 인용수 = <code>인용수 / 고유 논문수</code></li>
 </ul>
 <p><span id="self-citation-share"></span></p>
 <p><strong>자국 인용 비중(self-citation share)은 어떻게 계산했나?</strong></p>
-<p>정책 출처 국가 태그를 2자리 국가코드로 매핑한 뒤(예: USA→US, UK→GB), 1저자 소속국 코드가 확인되는 인용만 분모로 삼아 계산했다.<br>
-즉 자국 인용 비중은 “전체 인용”이 아니라 <strong>1저자 국가코드가 확인되는 인용</strong>에서의 패턴이다.</p>
+<p>정책 출처 국가 태그를 2자리 국가코드로 매핑한 뒤(예: USA→US, UK→GB), 1저자 소속국 코드가 확인되는 인용만 분모로 삼아 계산했다. 즉 자국 인용 비중은 “전체 인용”이 아니라 <strong>1저자 국가코드가 확인되는 인용</strong>에서의 패턴이다.</p>
 <p><strong>기대 자국 인용 비중(expected self-citation share)은 어떻게 계산했나?</strong></p>
-<p>정책 출처 국가별로 “어떤 도메인을 얼마나 인용했는지”를 먼저 계산했다.<br>
-그 다음 각 도메인에서 해당 국가의 <strong>세계 연구 생산 비중(OpenAlex 기준)</strong>을 가중치로 곱해 합산했다.<br>
-즉 정책 인용이 도메인별 세계 생산 비중을 그대로 따른다고 가정했을 때의 기대치를 산출한 것이다.<br>
-개념적으로는 <code>기대치 = Σ(정책 인용의 도메인 비중 × 해당 도메인에서 그 국가의 연구 생산 비중)</code>이다.</p>
+<p>정책 출처 국가별로 “어떤 도메인을 얼마나 인용했는지”를 먼저 계산했다. 그 다음 각 도메인에서 해당 국가의 <strong>세계 연구 생산 비중(OpenAlex 기준)</strong>을 가중치로 곱해 합산했다. 즉 정책 인용이 도메인별 세계 생산 비중을 그대로 따른다고 가정했을 때의 기대치를 산출한 것이다. 개념적으로는 <code>기대치 = Σ(정책 인용의 도메인 비중 × 해당 도메인에서 그 국가의 연구 생산 비중)</code>이다.</p>
 <p><span id="self-citation-context"></span></p>
-<p>아래 표는 자국 인용 비중을 일부 비교 집단에서 요약한 것이다.<br>
-자국 인용 비중은 1저자 국가코드가 확인되는 인용만 분모로 쓴다.<br>
-국가 간 비교는 정책문헌의 커버리지와 출처 구성 차이가 섞일 수 있어, “높다”나 “낮다”로 단정하기보다 점검 지표로 두는 것이 좋다.</p>
+<p>아래 표는 자국 인용 비중을 일부 비교 집단에서 요약한 것이다. 자국 인용 비중은 1저자 국가코드가 확인되는 인용만 분모로 쓴다. 국가 간 비교는 정책문헌의 커버리지와 출처 구성 차이가 섞일 수 있어, “높다”나 “낮다”로 단정하기보다 점검 지표로 두는 것이 좋다.</p>
 <table class="table">
 <colgroup>
 <col style="width: 20%">
@@ -782,11 +746,9 @@ Note
 </tr>
 </tbody>
 </table>
-<p>여기서 1저자 국가코드 확인 비중은 해당 정책 출처의 DOI 인용 기록 가운데 1저자 국가코드가 확인되는 비중이다.<br>
-미국과 영국처럼 하위 지역 태그가 많은 경우, 하위 태그를 상위 국가로 합산해 요약했다.</p>
+<p>여기서 1저자 국가코드 확인 비중은 해당 정책 출처의 DOI 인용 기록 가운데 1저자 국가코드가 확인되는 비중이다. 미국과 영국처럼 하위 지역 태그가 많은 경우, 하위 태그를 상위 국가로 합산해 요약했다.</p>
 <p><strong>왜 1저자 소속국으로 정책 출처 국가→연구국 흐름을 정의했나?</strong></p>
-<p>가장 일관되게 추출 가능한 국가 속성이 1저자(First author) 소속국이었기 때문이다.<br>
-다만 공동저자 분포, 교신저자, 다기관 소속 등을 반영하지 못하므로 “대표성 있는 근사”로 해석해야 한다.</p>
+<p>가장 일관되게 추출 가능한 국가 속성이 1저자(First author) 소속국이었기 때문이다. 다만 공동저자 분포, 교신저자, 다기관 소속 등을 반영하지 못하므로 “대표성 있는 근사”로 해석해야 한다.</p>
 </details>
 <details>
 <summary>
@@ -794,20 +756,14 @@ Note
 </summary>
 <p><span id="multilabel"></span></p>
 <p><strong>토픽/도메인 집계에서 합이 100%를 넘는 이유는?</strong></p>
-<p>OpenAlex 토픽은 다중 라벨 구조다.<br>
-논문 1편이 여러 토픽에 동시에 속할 수 있어, 토픽/도메인/세부분야 기준으로 집계하면 중복 합산이 발생한다.<br>
-따라서 토픽 기반 수치는 “토픽 인스턴스 기준”으로 이해해야 한다.</p>
-<p>이번 분석에서 사용한 토픽 데이터에서는 정책 인용 1건이 평균적으로 약 2.8개 토픽에 연결된다.<br>
-그래서 도메인/토픽 기준으로 인용을 합산하면, “인용 건수”보다 큰 합계가 나온다.</p>
-<p>다만 각 인용을 그 논문이 가진 토픽 수로 나눠 분할 집계해도, 도메인 순위는 유지된다.<br>
-상위 3개 도메인 점유율도 큰 폭으로 변하지 않는다(예: 88.8% → 88.5%).</p>
+<p>OpenAlex 토픽은 다중 라벨 구조다. 논문 1편이 여러 토픽에 동시에 속할 수 있어, 토픽/도메인/세부분야 기준으로 집계하면 중복 합산이 발생한다. 따라서 토픽 기반 수치는 “토픽 인스턴스 기준”으로 이해해야 한다.</p>
+<p>이번 분석에서 사용한 토픽 데이터에서는 정책 인용 1건이 평균적으로 약 2.8개 토픽에 연결된다. 그래서 도메인/토픽 기준으로 인용을 합산하면, “인용 건수”보다 큰 합계가 나온다.</p>
+<p>다만 각 인용을 그 논문이 가진 토픽 수로 나눠 분할 집계해도, 도메인 순위는 유지된다. 상위 3개 도메인 점유율도 큰 폭으로 변하지 않는다(예: 88.8% → 88.5%).</p>
 <p><strong>출처 국가/출처 유형 집계도 합이 커질 수 있나?</strong></p>
 <p>그럴 수 있다. Overton의 출처 국가/유형 태그는 상호배타적 분류가 아니라 태그 기반(상위–하위 동시 부여 포함)이라서, 문헌 1편이 여러 범주에 동시에 잡힐 수 있다.</p>
 <p><span id="recent-years-decline"></span></p>
 <p><strong>연도 추세에서 2022년 이후 하락은 “정책이 과학을 덜 쓴다”는 뜻인가?</strong></p>
-<p>그렇게 단정하기 어렵다.<br>
-정책문헌 수집/정리의 시차(커버리지 지연)와 발행 직후 인용 기록이 완전히 누적되지 않는 효과가 함께 작동했을 가능성이 크다.<br>
-따라서 최근 연도 수치는 “실시간 감소”라기보다 관측 시차가 섞인 신호로 해석하는 편이 안전하다.</p>
+<p>그렇게 단정하기 어렵다. 정책문헌 수집/정리의 시차(커버리지 지연)와 발행 직후 인용 기록이 완전히 누적되지 않는 효과가 함께 작동했을 가능성이 크다. 따라서 최근 연도 수치는 “실시간 감소”라기보다 관측 시차가 섞인 신호로 해석하는 편이 안전하다.</p>
 </details>
 <details>
 <summary>
@@ -815,10 +771,7 @@ Note
 </summary>
 <p><span id="why-2012"></span></p>
 <p><strong>2012년 무렵 “문헌당 평균 인용 수”가 특히 높게 보이는 이유는?</strong></p>
-<p>문헌당 평균 인용 수는 분포의 꼬리가 긴 경우 영향을 크게 받는다.<br>
-그래서 “평균”이 높게 보일 때는, 일부 극단값의 영향인지 아니면 분포 전체가 오른쪽으로 이동했는지부터 분리해 확인하는 편이 안전하다.<br>
-절단평균은 상위·하위 일부 극단값을 제외해 계산한 평균이다.<br>
-“평균이 극단값에 끌린 것인지”를 구분하는 데 도움이 된다.</p>
+<p>문헌당 평균 인용 수는 분포의 꼬리가 긴 경우 영향을 크게 받는다. 그래서 “평균”이 높게 보일 때는, 일부 극단값의 영향인지 아니면 분포 전체가 오른쪽으로 이동했는지부터 분리해 확인하는 편이 안전하다. 절단평균은 상위·하위 일부 극단값을 제외해 계산한 평균이다. “평균이 극단값에 끌린 것인지”를 구분하는 데 도움이 된다.</p>
 <p>아래 그림은 연도별로 평균과 함께 중앙값, 절단평균을 같이 보여준다. 또한 상위 1% 문서가 해당 연도 전체 인용에서 차지하는 비중을 함께 표시했다.</p>
 <p><img src="../Assets/Figures/si/pubyear_citations_per_doc_diagnostics.png" class="img-fluid" style="width:92.0%" alt="연도별 문헌당 인용 분포 진단: 평균·중앙값·절단평균과 상위 1% 기여"></p>
 <p>이 그림이 주는 핵심 메시지는 다음과 같다.</p>
@@ -828,12 +781,8 @@ Note
 </ul>
 <p><span id="oa-interpretation"></span></p>
 <p><strong>OA(오픈액세스) 논문이 정책 인용에서 높게 보이는 건 인과인가?</strong></p>
-<p>관측적으로는 정책 인용에서 OA 비중이 높게 나타난다.<br>
-다만 이것이 “OA라서 더 인용된다”는 인과로 바로 이어지지는 않는다.<br>
-정책 관련 연구가 OA로 출판될 가능성, 공공 펀딩 구조, 분야 구성 차이 등 교란 요인이 존재한다.</p>
-<p>다만 “정책에서 인용된 논문”을 기준으로 도메인과 발행연도 구간을 나눠 보아도, OA 논문의 논문 1편당 정책 인용 평균이 더 높게 나타나는 경향은 대체로 유지된다.<br>
-아래 표는 2000–2009, 2010–2019 구간에서의 비교다.<br>
-최근 연도는 관측 시차 영향이 커서 제외했다.</p>
+<p>관측적으로는 정책 인용에서 OA 비중이 높게 나타난다. 다만 이것이 “OA라서 더 인용된다”는 인과로 바로 이어지지는 않는다. 정책 관련 연구가 OA로 출판될 가능성, 공공 펀딩 구조, 분야 구성 차이 등 교란 요인이 존재한다.</p>
+<p>다만 “정책에서 인용된 논문”을 기준으로 도메인과 발행연도 구간을 나눠 보아도, OA 논문의 논문 1편당 정책 인용 평균이 더 높게 나타나는 경향은 대체로 유지된다. 아래 표는 2000–2009, 2010–2019 구간에서의 비교다. 최근 연도는 관측 시차 영향이 커서 제외했다.</p>
 <table class="table">
 <colgroup>
 <col style="width: 15%">
@@ -882,9 +831,7 @@ Note
 </tr>
 </tbody>
 </table>
-<p>다만 중앙값은 대부분 1–2 수준으로 큰 차이가 없다.<br>
-평균 차이는 분포의 꼬리(상위 반복 인용 논문) 영향이 섞여 있을 가능성이 크다.<br>
-따라서 이 표는 “가능한 설명 요인”을 보강하는 참고 근거로만 사용한다.</p>
+<p>다만 중앙값은 대부분 1–2 수준으로 큰 차이가 없다. 평균 차이는 분포의 꼬리(상위 반복 인용 논문) 영향이 섞여 있을 가능성이 크다. 따라서 이 표는 “가능한 설명 요인”을 보강하는 참고 근거로만 사용한다.</p>
 <p>추가 참고 그림은 아래 C 섹션에 묶어서 제공한다.</p>
 </details>
 <hr>
@@ -892,9 +839,7 @@ Note
 </section>
 <section id="appendix-c" class="level2">
 <h2 class="anchored" data-anchor-id="appendix-c">C. 추가 그림</h2>
-<p>이 섹션은 본문에서 지면상 생략된 참고 그림을 묶어서 제공한다.<br>
-필요한 항목만 빠르게 확인할 수 있도록 각 그림은 기본적으로 접어 두었다.<br>
-일부 그림은 본문 그림과 표현 방식이 다를 수 있다.</p>
+<p>이 섹션은 본문에서 지면상 생략된 참고 그림을 묶어서 제공한다. 필요한 항목만 빠르게 확인할 수 있도록 각 그림은 기본적으로 접어 두었다. 일부 그림은 본문 그림과 표현 방식이 다를 수 있다.</p>
 <ul>
 <li>사용 방법: 본문에서 막힌 그림 번호를 찾은 뒤, 해당 C항목만 열어 확인한다.</li>
 <li>해석 경계: C항목은 결론을 추가하는 자료가 아니라, 본문 해석을 보강하는 참고 자료다.</li>
@@ -945,9 +890,7 @@ Note
 </section>
 <section id="c4.-자국-인용-비중top10" class="level3">
 <h3 class="anchored" data-anchor-id="c4.-자국-인용-비중top10">C4. 자국 인용 비중(Top10)</h3>
-<p>본문 그림 10은 비교를 위해 선택 국가만 제시했다.<br>
-아래 그림은 상위 10개 정책 출처 국가를 더 넓게 보여준다.<br>
-이 지표는 1저자 국가코드가 확인되는 인용만 대상으로 계산한다는 점에 유의해야 한다.</p>
+<p>본문 그림 10은 비교를 위해 선택 국가만 제시했다. 아래 그림은 상위 10개 정책 출처 국가를 더 넓게 보여준다. 이 지표는 1저자 국가코드가 확인되는 인용만 대상으로 계산한다는 점에 유의해야 한다.</p>
 <ul>
 <li>본문 보완: 3.3 그림 10</li>
 <li>독자 질문: 선택 국가 밖에서도 자국 인용 비중은 어느 정도 범위에 분포하는가</li>
