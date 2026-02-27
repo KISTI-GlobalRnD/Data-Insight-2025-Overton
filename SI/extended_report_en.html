@@ -221,6 +221,24 @@ Note
 For definitions, denominators, missingness checks, and sensitivity guardrails, see <a href="../SI/methods_en.html">Methods</a> and <a href="../SI/appendix_en.html">Appendix</a>.</p>
 </div>
 </div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Figure numbering</strong></p>
+<ul>
+<li>The main PDF (Data Brief) renumbers figures to 1-8 to match the narrative flow.</li>
+<li>The Extended Report keeps the original Figure 1-12 numbering for interactive/appendix compatibility.</li>
+<li>When moving between the PDF and web pages, the <a href="../SI/index_en.html#brief-extended-map">map table</a> is the quickest reference.</li>
+</ul>
+</div>
+</div>
 <section id="data-insight-v2-extended-report" class="level1">
 <h1>Data Insight (v2): Extended Report</h1>
 <blockquote class="blockquote">
@@ -241,7 +259,10 @@ For definitions, denominators, missingness checks, and sensitivity guardrails, s
 <li>Unique policy documents (deduplicated): 1,381,084</li>
 <li>DOI-based policy-to-research citation links: 23,370,284</li>
 <li>Unique cited works: 6,532,365</li>
+<li>Repeat-citation share (cited by 2+ distinct policy documents): 48.1% (<a href="../SI/appendix_en.html#repeat-share">definition</a>)</li>
 <li>Top 3 domain share (multi-label domain aggregation): 88.8%</li>
+<li>Korea inbound concentration (UK+IGO+USA; inbound direction): 65.3%</li>
+<li>Korea procurement U.S. share: 57.3% (known first-author country codes)</li>
 </ul>
 <hr>
 </section>
@@ -251,17 +272,17 @@ For definitions, denominators, missingness checks, and sensitivity guardrails, s
 <p>The share of policy documents citing science is a useful starting point. But improving policy evidence practice requires one extra step: seeing where evidence accumulates and how it moves across channels.</p>
 <p>Furnas et al.&nbsp;(2025), published in <em>Science</em> in April 2025, shows two signals in U.S. policy documents.<br>
 First, the share of documents citing at least one scientific paper rises from around 20% in 1995 to around 35% in 2023.<br>
-Second, cross-partisan co-citation rates remain low (often single-digit, e.g., 5-6%), although values vary by document type.<br>
+Second, cross-partisan co-citation rates remain low (often single-digit), although values vary by document type.<br>
 In short, “citing more often” and “sharing the same evidence” are different questions.</p>
 <p>This shift in question is possible because of Overton.<br>
-Overton is not a full census of all policy documents; it tracks policy documents where scholarly references can be identified and linked (Szomszor &amp; Adie, 2022).<br>
-This analysis is further limited to the DOI-observable scope.</p>
+Overton collects policy documents and extracts references, linking scholarly citations (e.g., DOI-matched works) as well as policy-to-policy citations (Szomszor &amp; Adie, 2022).<br>
+This analysis is further limited to the DOI-observable policy-to-research scope to diagnose the linkage structure of where evidence accumulates and how it is transmitted.</p>
 <p>There is also a complementary SDG-framed reading of Overton.<br>
 The Springer Nature SDG Impact Report classifies 2015-2025 Overton policy documents into SDG vs non-SDG groups and reports that the “at least one scholarly citation” share is 11.6% for SDG documents and 3.4% for non-SDG documents.<br>
 It also points to asymmetries such as knowledge-brokering roles (IGO/NGO/think tanks), Global North concentration, and low domestic-research citation shares in many countries (Springer Nature, n.d.).</p>
 <p>The SDG report centers on a goal framework, while this report centers on linkage structure.<br>
 They are complementary, not competing frames.<br>
-Also, representative prior indicators (e.g., 4-6%) and this report’s indicators should not be directly compared, because their denominators differ.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></p>
+Also, prior indicators and this report’s indicators should not be directly compared without checking denominators first.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></p>
 <section id="why-these-questions-emerged" class="level2">
 <h2 class="anchored" data-anchor-id="why-these-questions-emerged">1.1 Why these questions emerged</h2>
 <p>These questions were not chosen arbitrarily. They came from three observations.</p>
@@ -477,7 +498,7 @@ Korea’s inbound and procurement routes follow different structures. Strategy s
 </tr>
 <tr class="even">
 <td>Korea procurement concentration</td>
-<td>U.S. share in Korea procurement: 57.3% (known citations)</td>
+<td>U.S. share in Korea procurement: 57.3% (known first-author country codes)</td>
 <td>Is procurement becoming more diversified?</td>
 <td>Rising top-1 share + persistent top concentration</td>
 </tr>
@@ -489,7 +510,7 @@ Korea’s inbound and procurement routes follow different structures. Strategy s
 </tr>
 <tr class="even">
 <td>Korea self-citation position</td>
-<td>Self-citation share: 4.1% (known citations)</td>
+<td>Self-citation share: 4.1% (known first-author country codes)</td>
 <td>Is the level stable as sample coverage expands?</td>
 <td>Sharp swings despite larger sample</td>
 </tr>
@@ -588,7 +609,7 @@ Kim, Park, &amp; Yoon (2025) provides an NKIS-based starting point for that dire
 <ol>
 <li id="fn1"><p>In this report, a “hub” means a policy source where DOI-matched scholarly citations are observed in large volume. It is a structural observation unit, not a quality/reputation judgment.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn2"><p>The main brief focuses on concise result communication. Definitions, denominators, matching/missingness notes, and interpretation guardrails are documented in <a href="../SI/methods_en.html">Methods</a> and <a href="../SI/appendix_en.html#data-fitness">Appendix: data fitness</a>.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn3"><p>Prior figures such as 4-6% (Pinheiro et al., 2021; Fang et al., 2024) refer to “the share of all papers that are mentioned in policy documents.” This report tracks “DOI-based policy-to-paper citations within an Overton policy-document snapshot.” Direct comparison would distort interpretation.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>Studies on policy-science linkage use different denominators. For example, Furnas et al.&nbsp;(2025) and the Springer Nature SDG Impact Report report the share of policy documents that include at least one scholarly citation. Other studies take papers as the denominator and analyze the share of papers mentioned/cited in policy documents (Pinheiro et al., 2021; Fang et al., 2024). This report diagnoses concentration/composition/routes within DOI-linked policy-to-research citations (and the cited-work set). Always check what is used as the denominator before comparing numbers.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section></div></main> <!-- /main -->
 <script defer="" src="../Assets/Site/si.js"></script>

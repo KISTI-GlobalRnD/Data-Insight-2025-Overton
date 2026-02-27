@@ -219,6 +219,24 @@ Note
 지표 정의와 결측·민감도는 <a href="../SI/methods.html">방법론 페이지</a>와 <a href="../SI/appendix.html">부록</a>에서 확인할 수 있다.</p>
 </div>
 </div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>그림 번호 안내</strong></p>
+<ul>
+<li>메인 PDF(Data Brief)는 본문 흐름에 맞춰 그림을 1-8로 재번호했다.</li>
+<li>Extended Report는 인터랙티브/부록 호환을 위해 기존 그림 1-12 번호를 유지한다.</li>
+<li>PDF와 웹을 오가며 볼 때는 <a href="../SI/index.html#report-extended-map">Data Brief ↔︎ Extended Report 연결표</a>가 가장 빠르다.</li>
+</ul>
+</div>
+</div>
 <section id="data-insight-v2" class="level1">
 <h1>Data Insight (v2)</h1>
 <blockquote class="blockquote">
@@ -242,7 +260,10 @@ Note
 <li>분석 대상 정책문헌(중복 제거): 1,381,084편</li>
 <li>DOI 기반 정책문헌-&gt;학술논문 인용: 23,370,284건</li>
 <li>인용된 고유 논문: 6,532,365편</li>
+<li>반복 인용 논문 비중(2회 이상): 48.1%(<a href="../SI/appendix.html#repeat-share">정의</a>)</li>
 <li>상위 3개 도메인 점유: 88.8%</li>
+<li>한국 유입 상위 3채널(영국+국제기구+미국) 집중도: 65.3%</li>
+<li>한국 조달에서 미국 연구 비중: 57.3%(1저자 국가코드 확인분)</li>
 </ul>
 <hr>
 </section>
@@ -252,17 +273,17 @@ Note
 <p>질문은 “얼마나 인용되는가”에서 끝나지 않는다. 정책근거를 개선하려면, 근거가 어디에 축적되고 어떤 경로로 전달되는지를 먼저 확인해야 한다.</p>
 <p>2025년 4월 <em>Science</em>에 실린 Furnas et al.&nbsp;(2025)은 미국 정책문헌에서 두 가지 신호를 보여준다.<br>
 첫째, 과학논문을 1회 이상 인용하는 비중은 1995년 약 20%에서 2023년 약 35%로 상승했다.<br>
-둘째, 서로 다른 진영이 같은 논문을 함께 인용하는 비율은 문서 유형에 따라 달라지지만 대체로 한 자릿수(예: 5-6%)로 낮다.<br>
+둘째, 서로 다른 진영이 같은 논문을 함께 인용하는 비율은 문서 유형에 따라 달라지지만 전반적으로 한 자릿수 수준으로 낮다.<br>
 즉 “더 자주 인용한다”와 “같은 근거를 공유한다”는 다른 질문이다.</p>
 <p>이 전환을 가능하게 하는 기반이 Overton이다.<br>
-Overton은 정책문헌 전체 센서스가 아니라, 참고문헌에서 과학문헌 인용이 포착된 정책문헌을 추적하는 인용 데이터다(Szomszor &amp; Adie, 2022).<br>
-본 분석은 그중 DOI 기반 정책-&gt;학술 인용 관측 범위로 한정된다.</p>
+Overton은 정책문헌을 수집하고, 문헌에 포함된 참고문헌을 추출해 학술 인용(예: DOI 기반)과 정책문헌 인용을 연결하는 인용 데이터 인프라다(Szomszor &amp; Adie, 2022).<br>
+본 분석은 그중 DOI로 연결되는 정책문헌-&gt;학술논문 인용 관측 범위로 한정해, 근거가 모이고 전달되는 “연결 구조”를 본다.</p>
 <p>Overton을 SDG 프레임으로 읽은 비교 사례도 있다.<br>
-Springer Nature SDG Impact Report는 2015-2025년 Overton 정책문헌을 SDG/비-SDG로 분류해, 학술논문 1회 이상 인용 비중이 SDG 문헌 11.6%, 비-SDG 문헌 3.4%라고 보고한다.<br>
+Springer Nature SDG Impact Report는 2015-2025년 Overton 정책문헌을 SDG/비-SDG로 분류해, 정책문헌 중 학술논문을 1회 이상 인용한 비중이 SDG에서 11.6%, 비-SDG에서 3.4%라고 보고한다.<br>
 또한 IGO/NGO/싱크탱크의 지식 중개 역할, 글로벌 북 편중, 다수 국가의 낮은 자국 연구 인용 비중 같은 비대칭도 제시한다(Springer Nature, n.d.).</p>
 <p>요약하면 SDG 보고서는 “목표 체계” 중심이고, 본 보고서는 “근거 연결 구조” 중심이다.<br>
 둘은 경쟁 프레임이 아니라 상호보완 프레임이다.<br>
-또한 선행연구의 대표 지표(예: 4-6%)와 본 보고서 지표는 분모가 다르므로 직접 비교하면 왜곡될 수 있다.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></p>
+또한 선행연구와 본 보고서의 수치는 분모가 다르므로 직접 비교하면 왜곡될 수 있다.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></p>
 <section id="질문이-등장한-배경" class="level2">
 <h2 class="anchored" data-anchor-id="질문이-등장한-배경">1.1 질문이 등장한 배경</h2>
 <p>이 보고서의 질문은 임의로 만든 것이 아니다. 아래 세 가지 관측에서 출발했다.</p>
@@ -419,7 +440,7 @@ Springer Nature SDG Impact Report는 2015-2025년 Overton 정책문헌을 SDG/�
 </figure>
 </div>
 <ul>
-<li>관찰: 한국의 자국 인용 비중은 known citations(1저자 국가코드 확인분) 기준 약 4.1%다.</li>
+<li>관찰: 한국의 자국 인용 비중은 1저자 국가코드 확인분 기준 약 4.1%다.</li>
 <li>해석: 한국 표본(정책 출처 문헌 2,742편)은 작고 결측 영향이 있어 순위보다 추세 점검 지표로 읽어야 한다.</li>
 <li>해석 보정: 기대치 대비 비교는 도메인 가중 기준선에 대한 상대 비교이며 절대평가가 아니다.</li>
 </ul>
@@ -430,7 +451,7 @@ Springer Nature SDG Impact Report는 2015-2025년 Overton 정책문헌을 SDG/�
 </figure>
 </div>
 <ul>
-<li>관찰: 유입 방향은 영국 32.8%, 국제기구 16.3%, 미국 16.2% 비중이 크고, 조달 방향은 미국 연구 비중 57.3%(known citations)가 높다.</li>
+<li>관찰: 유입 방향은 영국 32.8%, 국제기구 16.3%, 미국 16.2% 비중이 크고, 조달 방향은 미국 연구 비중 57.3%(1저자 국가코드 확인분)가 높다.</li>
 <li>해석: 유입·조달의 상위 채널이 다르므로, 단일 처방으로는 비대칭을 설명하기 어렵다.</li>
 <li>해석 보정: 유입·조달 비중은 각 방향 내부 정규화 값이므로 방향 간 절대 크기 비교 지표가 아니다.</li>
 <li>점검 신호: 유입 상위 3채널 집중도와 조달 상위 1개국 비중을 분리 추적한다.</li>
@@ -477,7 +498,7 @@ Springer Nature SDG Impact Report는 2015-2025년 Overton 정책문헌을 SDG/�
 </tr>
 <tr class="even">
 <td>한국 조달 편중</td>
-<td>미국 연구 조달 57.3%(known citations)</td>
+<td>미국 연구 조달 57.3%(1저자 국가코드 확인분)</td>
 <td>조달 포트폴리오가 다변화되는가</td>
 <td>상위 1개국 비중 상승 + 상위권 고착</td>
 </tr>
@@ -489,7 +510,7 @@ Springer Nature SDG Impact Report는 2015-2025년 Overton 정책문헌을 SDG/�
 </tr>
 <tr class="even">
 <td>자국 인용 위치</td>
-<td>자국 인용 4.1%(known citations)</td>
+<td>자국 인용 4.1%(1저자 국가코드 확인분)</td>
 <td>표본 확대 후에도 위치가 안정적인가</td>
 <td>표본 확대에도 지표 급변</td>
 </tr>
@@ -588,7 +609,7 @@ Kim, Park, &amp; Yoon (2025)의 NKIS 기반 참고문헌 구조화 시도는 그
 <ol>
 <li id="fn1"><p>본 보고서에서 “허브”는 정책문헌에서 DOI로 매칭된 학술 인용이 특히 많이 관측되는 정책 출처를 뜻한다. 평판·품질의 평가가 아니라 구조적 관측 단위다.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn2"><p>본문은 데이터 브리프 톤의 결과 요약에 집중한다. 분모·분자 정의, 매칭·결측, 지표 해석 가드레일은 <a href="../SI/methods.html">방법론·데이터 정합성</a>과 <a href="../SI/appendix.html#data-fitness">부록: 데이터 적합도</a>에서 확인할 수 있다.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn3"><p>선행연구의 4-6%(Pinheiro et al., 2021; Fang et al., 2024)는 “전체 논문 중 정책문헌에 언급된 논문 비율”이다. 본 보고서는 “Overton 정책문헌 스냅샷의 DOI 기반 정책-&gt;논문 인용”을 본다. 분모가 달라 직접 비교하면 왜곡된다.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>“정책과 과학의 연결”을 다룬 연구는 분모가 다양하다. 예를 들어 Furnas et al.&nbsp;(2025)과 Springer Nature SDG Impact Report는 정책문헌을 분모로 “학술 인용이 포함된 정책문헌 비중”을 제시한다. 반면 논문을 분모로 “정책문헌에서 언급/인용되는 논문 비중”을 분석하는 연구도 있다(Pinheiro et al., 2021; Fang et al., 2024). 본 보고서는 DOI로 연결되는 정책문헌-&gt;학술논문 인용 로그(및 인용된 논문 집합) 안에서, 집중도/구성/경로를 진단한다. 따라서 숫자를 직접 비교하기보다 “무엇을 분모로 썼는가”를 먼저 확인해야 한다.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section></div></main> <!-- /main -->
 <script defer="" src="../Assets/Site/si.js"></script>

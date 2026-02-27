@@ -88,7 +88,7 @@
     "href": "SI/extended_report_en.html#key-numbers-at-a-glance",
     "title": "Extended Report",
     "section": "Key numbers at a glance",
-    "text": "Key numbers at a glance\n\nUnique policy documents (deduplicated): 1,381,084\nDOI-based policy-to-research citation links: 23,370,284\nUnique cited works: 6,532,365\nTop 3 domain share (multi-label domain aggregation): 88.8%"
+    "text": "Key numbers at a glance\n\nUnique policy documents (deduplicated): 1,381,084\nDOI-based policy-to-research citation links: 23,370,284\nUnique cited works: 6,532,365\nRepeat-citation share (cited by 2+ distinct policy documents): 48.1% (definition)\nTop 3 domain share (multi-label domain aggregation): 88.8%\nKorea inbound concentration (UK+IGO+USA; inbound direction): 65.3%\nKorea procurement U.S. share: 57.3% (known first-author country codes)"
   },
   {
     "objectID": "SI/extended_report_en.html#why-these-questions-emerged",
@@ -151,7 +151,7 @@
     "href": "SI/extended_report_en.html#next-quarter-monitoring-frame-same-format",
     "title": "Extended Report",
     "section": "4.1 Next-quarter monitoring frame (same format)",
-    "text": "4.1 Next-quarter monitoring frame (same format)\n\n\n\n\n\n\n\n\n\nMonitoring axis\nCurrent snapshot (baseline)\nNext-quarter question\nWarning signal (example)\n\n\n\n\nHub concentration (domains)\nTop-3 domains: 88.8%\nIs concentration easing, stable, or intensifying?\nConsecutive rise in top-3 share\n\n\nKorea procurement concentration\nU.S. share in Korea procurement: 57.3% (known citations)\nIs procurement becoming more diversified?\nRising top-1 share + persistent top concentration\n\n\nKorea inbound channel concentration\nUK+IGO+US inbound share: 65.3%\nAre inbound channels broadening?\nRising top-3 combined share\n\n\nKorea self-citation position\nSelf-citation share: 4.1% (known citations)\nIs the level stable as sample coverage expands?\nSharp swings despite larger sample"
+    "text": "4.1 Next-quarter monitoring frame (same format)\n\n\n\n\n\n\n\n\n\nMonitoring axis\nCurrent snapshot (baseline)\nNext-quarter question\nWarning signal (example)\n\n\n\n\nHub concentration (domains)\nTop-3 domains: 88.8%\nIs concentration easing, stable, or intensifying?\nConsecutive rise in top-3 share\n\n\nKorea procurement concentration\nU.S. share in Korea procurement: 57.3% (known first-author country codes)\nIs procurement becoming more diversified?\nRising top-1 share + persistent top concentration\n\n\nKorea inbound channel concentration\nUK+IGO+US inbound share: 65.3%\nAre inbound channels broadening?\nRising top-3 combined share\n\n\nKorea self-citation position\nSelf-citation share: 4.1% (known first-author country codes)\nIs the level stable as sample coverage expands?\nSharp swings despite larger sample"
   },
   {
     "objectID": "SI/extended_report_en.html#follow-up-analysis-roadmap-short",
@@ -193,7 +193,7 @@
     "href": "SI/extended_report_en.html#footnotes",
     "title": "Extended Report",
     "section": "Footnotes",
-    "text": "Footnotes\n\n\nIn this report, a “hub” means a policy source where DOI-matched scholarly citations are observed in large volume. It is a structural observation unit, not a quality/reputation judgment.↩︎\nThe main brief focuses on concise result communication. Definitions, denominators, matching/missingness notes, and interpretation guardrails are documented in Methods and Appendix: data fitness.↩︎\nPrior figures such as 4-6% (Pinheiro et al., 2021; Fang et al., 2024) refer to “the share of all papers that are mentioned in policy documents.” This report tracks “DOI-based policy-to-paper citations within an Overton policy-document snapshot.” Direct comparison would distort interpretation.↩︎"
+    "text": "Footnotes\n\n\nIn this report, a “hub” means a policy source where DOI-matched scholarly citations are observed in large volume. It is a structural observation unit, not a quality/reputation judgment.↩︎\nThe main brief focuses on concise result communication. Definitions, denominators, matching/missingness notes, and interpretation guardrails are documented in Methods and Appendix: data fitness.↩︎\nStudies on policy-science linkage use different denominators. For example, Furnas et al. (2025) and the Springer Nature SDG Impact Report report the share of policy documents that include at least one scholarly citation. Other studies take papers as the denominator and analyze the share of papers mentioned/cited in policy documents (Pinheiro et al., 2021; Fang et al., 2024). This report diagnoses concentration/composition/routes within DOI-linked policy-to-research citations (and the cited-work set). Always check what is used as the denominator before comparing numbers.↩︎"
   },
   {
     "objectID": "SI/next_questions.html",
@@ -263,7 +263,7 @@
     "href": "SI/interactive.html#한국흐름정책연구-연결의-두-방향",
     "title": "인터랙티브",
     "section": "한국·흐름(정책–연구 연결의 두 방향)",
-    "text": "한국·흐름(정책–연구 연결의 두 방향)\n\n메인 보고서(PDF): §3.1(그림 4) · §3.3(그림 6). (자국 인용 지표는 Extended-only) · 관련: 부록: 자국 인용 비중, 부록: 자국 인용 맥락\n\n\n그림 10. 자국 인용 비중과 기대치 대비, 그리고 인용 도메인 구성. 정책 출처 국가 상위 7개국과 한국\n\nSelf-citation share vs expected, and domain mix for self vs non-self citations; top 7 policy countries + Republic of Korea\n\n\n무엇을 보면 좋은가\n\n관찰: 자국 인용 비중과 기대치 대비(actual-expected) 분포를 함께 본다.\n해석: 기대치 대비는 도메인 가중 기준선에 대한 상대 비교다.\n점검: 국가 비교 전에 분모가 known citations인지 먼저 확인한다.\n\n\n\n  \n    새 창으로 열기\n    플롯 로드\n  \n\n\n\n그림 11. 한국 정책–연구의 두 방향 흐름과 인용 도메인 구성. 상위 10개\n\nRepublic of Korea evidence flows: inbound/outbound and domain composition; top 10\n\n\n무엇을 보면 좋은가\n\n관찰: 유입(한국 연구-&gt;글로벌 정책)과 조달(한국 정책-&gt;연구)의 상위 경로를 분리해 본다.\n해석: 두 방향 상위 경로가 다르면 비대칭 구조 신호다.\n점검: 방향별 집중 지표(유입 상위 3합, 조달 상위 1개국 비중)를 분리 추적한다.\n\n\n\n  \n    새 창으로 열기\n    플롯 로드\n  \n\n\n\n그림 12. 정책–연구 근거 흐름 네트워크\n\nPolicy–research evidence flow network: top 50 nodes, top 3 links per node\n\n\n무엇을 보면 좋은가\n\n관찰: 상위 노드·상위 연결만 남긴 백본 경로에서 한국 연결 축이 어디로 이어지는지 본다.\n해석: 이 그림은 전체망이 아니라 구조 요약 지도다.\n점검: 거리/위치를 정량 해석하지 말고, 연결 관계(누가 누구와 연결되는가)만 읽는다.\n\n\n레이아웃은 탐색을 돕기 위한 보조 장치다.\n노드 간 거리는 절대적 지표가 아니므로, “가까움”을 정밀한 값으로 해석하지 않는다.\n표기: EU는 European Union, IGO는 International organizations를 뜻한다.\n\n  \n    새 창으로 열기\n    로딩이 느릴 수 있음\n    플롯 로드"
+    "text": "한국·흐름(정책–연구 연결의 두 방향)\n\n메인 보고서(PDF): §3.1(그림 4) · §3.3(그림 6). (자국 인용 지표는 Extended-only) · 관련: 부록: 자국 인용 비중, 부록: 자국 인용 맥락\n\n\n그림 10. 자국 인용 비중과 기대치 대비, 그리고 인용 도메인 구성. 정책 출처 국가 상위 7개국과 한국\n\nSelf-citation share vs expected, and domain mix for self vs non-self citations; top 7 policy countries + Republic of Korea\n\n\n무엇을 보면 좋은가\n\n관찰: 자국 인용 비중과 기대치 대비(actual-expected) 분포를 함께 본다.\n해석: 기대치 대비는 도메인 가중 기준선에 대한 상대 비교다.\n점검: 국가 비교 전에 분모가 1저자 국가코드 확인분(known citations)인지 먼저 확인한다.\n\n\n\n  \n    새 창으로 열기\n    플롯 로드\n  \n\n\n\n그림 11. 한국 정책–연구의 두 방향 흐름과 인용 도메인 구성. 상위 10개\n\nRepublic of Korea evidence flows: inbound/outbound and domain composition; top 10\n\n\n무엇을 보면 좋은가\n\n관찰: 유입(한국 연구-&gt;글로벌 정책)과 조달(한국 정책-&gt;연구)의 상위 경로를 분리해 본다.\n해석: 두 방향 상위 경로가 다르면 비대칭 구조 신호다.\n점검: 방향별 집중 지표(유입 상위 3합, 조달 상위 1개국 비중)를 분리 추적한다.\n\n\n\n  \n    새 창으로 열기\n    플롯 로드\n  \n\n\n\n그림 12. 정책–연구 근거 흐름 네트워크\n\nPolicy–research evidence flow network: top 50 nodes, top 3 links per node\n\n\n무엇을 보면 좋은가\n\n관찰: 상위 노드·상위 연결만 남긴 백본 경로에서 한국 연결 축이 어디로 이어지는지 본다.\n해석: 이 그림은 전체망이 아니라 구조 요약 지도다.\n점검: 거리/위치를 정량 해석하지 말고, 연결 관계(누가 누구와 연결되는가)만 읽는다.\n\n\n레이아웃은 탐색을 돕기 위한 보조 장치다.\n노드 간 거리는 절대적 지표가 아니므로, “가까움”을 정밀한 값으로 해석하지 않는다.\n표기: EU는 European Union, IGO는 International organizations를 뜻한다.\n\n  \n    새 창으로 열기\n    로딩이 느릴 수 있음\n    플롯 로드"
   },
   {
     "objectID": "SI/extended_report.html",
@@ -284,7 +284,7 @@
     "href": "SI/extended_report.html#한눈에-보는-숫자",
     "title": "확장 본문 (Extended Report)",
     "section": "한눈에 보는 숫자",
-    "text": "한눈에 보는 숫자\n\n분석 대상 정책문헌(중복 제거): 1,381,084편\nDOI 기반 정책문헌-&gt;학술논문 인용: 23,370,284건\n인용된 고유 논문: 6,532,365편\n상위 3개 도메인 점유: 88.8%"
+    "text": "한눈에 보는 숫자\n\n분석 대상 정책문헌(중복 제거): 1,381,084편\nDOI 기반 정책문헌-&gt;학술논문 인용: 23,370,284건\n인용된 고유 논문: 6,532,365편\n반복 인용 논문 비중(2회 이상): 48.1%(정의)\n상위 3개 도메인 점유: 88.8%\n한국 유입 상위 3채널(영국+국제기구+미국) 집중도: 65.3%\n한국 조달에서 미국 연구 비중: 57.3%(1저자 국가코드 확인분)"
   },
   {
     "objectID": "SI/extended_report.html#질문이-등장한-배경",
@@ -340,14 +340,14 @@
     "href": "SI/extended_report.html#한국의-자국-인용-비중과-두-방향-경로",
     "title": "확장 본문 (Extended Report)",
     "section": "3.3 한국의 자국 인용 비중과 두 방향 경로",
-    "text": "3.3 한국의 자국 인용 비중과 두 방향 경로\n\n\n\n그림 10. 자국 인용 비중과 기대치 대비, 그리고 자국/비자국 인용의 도메인 구성. 정책 출처 국가 상위 7개국과 한국\n\n\n\n관찰: 한국의 자국 인용 비중은 known citations(1저자 국가코드 확인분) 기준 약 4.1%다.\n해석: 한국 표본(정책 출처 문헌 2,742편)은 작고 결측 영향이 있어 순위보다 추세 점검 지표로 읽어야 한다.\n해석 보정: 기대치 대비 비교는 도메인 가중 기준선에 대한 상대 비교이며 절대평가가 아니다.\n\n\n\n\n그림 11. 한국 정책문헌-연구의 두 방향 흐름과 인용 도메인 구성. 상위 10개\n\n\n\n관찰: 유입 방향은 영국 32.8%, 국제기구 16.3%, 미국 16.2% 비중이 크고, 조달 방향은 미국 연구 비중 57.3%(known citations)가 높다.\n해석: 유입·조달의 상위 채널이 다르므로, 단일 처방으로는 비대칭을 설명하기 어렵다.\n해석 보정: 유입·조달 비중은 각 방향 내부 정규화 값이므로 방향 간 절대 크기 비교 지표가 아니다.\n점검 신호: 유입 상위 3채널 집중도와 조달 상위 1개국 비중을 분리 추적한다.\n\n\n\n\n그림 12. 정책-연구 근거 흐름 네트워크. 상위 50개 노드, 각 노드 상위 3개 연결\n\n\n그림 12는 이 비대칭을 네트워크 관점에서 요약한다.\n상위 노드와 상위 연결만 남긴 요약 지도이므로, 완전한 전체망이 아니라 큰 경로 구조를 읽는 도구로 해석해야 한다.\n3장 소결론\n한국의 유입과 조달은 다른 경로 구조를 보인다. 따라서 전략도 단일 처방이 아니라 경로별 진단이 필요하다."
+    "text": "3.3 한국의 자국 인용 비중과 두 방향 경로\n\n\n\n그림 10. 자국 인용 비중과 기대치 대비, 그리고 자국/비자국 인용의 도메인 구성. 정책 출처 국가 상위 7개국과 한국\n\n\n\n관찰: 한국의 자국 인용 비중은 1저자 국가코드 확인분 기준 약 4.1%다.\n해석: 한국 표본(정책 출처 문헌 2,742편)은 작고 결측 영향이 있어 순위보다 추세 점검 지표로 읽어야 한다.\n해석 보정: 기대치 대비 비교는 도메인 가중 기준선에 대한 상대 비교이며 절대평가가 아니다.\n\n\n\n\n그림 11. 한국 정책문헌-연구의 두 방향 흐름과 인용 도메인 구성. 상위 10개\n\n\n\n관찰: 유입 방향은 영국 32.8%, 국제기구 16.3%, 미국 16.2% 비중이 크고, 조달 방향은 미국 연구 비중 57.3%(1저자 국가코드 확인분)가 높다.\n해석: 유입·조달의 상위 채널이 다르므로, 단일 처방으로는 비대칭을 설명하기 어렵다.\n해석 보정: 유입·조달 비중은 각 방향 내부 정규화 값이므로 방향 간 절대 크기 비교 지표가 아니다.\n점검 신호: 유입 상위 3채널 집중도와 조달 상위 1개국 비중을 분리 추적한다.\n\n\n\n\n그림 12. 정책-연구 근거 흐름 네트워크. 상위 50개 노드, 각 노드 상위 3개 연결\n\n\n그림 12는 이 비대칭을 네트워크 관점에서 요약한다.\n상위 노드와 상위 연결만 남긴 요약 지도이므로, 완전한 전체망이 아니라 큰 경로 구조를 읽는 도구로 해석해야 한다.\n3장 소결론\n한국의 유입과 조달은 다른 경로 구조를 보인다. 따라서 전략도 단일 처방이 아니라 경로별 진단이 필요하다."
   },
   {
     "objectID": "SI/extended_report.html#다음-분기-대표-점검동일-포맷",
     "href": "SI/extended_report.html#다음-분기-대표-점검동일-포맷",
     "title": "확장 본문 (Extended Report)",
     "section": "4.1 다음 분기 대표 점검(동일 포맷)",
-    "text": "4.1 다음 분기 대표 점검(동일 포맷)\n\n\n\n\n\n\n\n\n\n점검 축\n현재 스냅샷(기준값)\n다음 분기 질문\n경보 신호(예시)\n\n\n\n\n허브 집중(도메인)\n상위 3개 도메인 88.8%\n집중이 완화/유지/심화 중 어디로 가는가\n상위 3개 비중 연속 상승\n\n\n한국 조달 편중\n미국 연구 조달 57.3%(known citations)\n조달 포트폴리오가 다변화되는가\n상위 1개국 비중 상승 + 상위권 고착\n\n\n한국 유입 채널\n영국+국제기구+미국 합계 65.3%\n유입 채널이 넓어지는가\n상위 3채널 합계 상승\n\n\n자국 인용 위치\n자국 인용 4.1%(known citations)\n표본 확대 후에도 위치가 안정적인가\n표본 확대에도 지표 급변"
+    "text": "4.1 다음 분기 대표 점검(동일 포맷)\n\n\n\n\n\n\n\n\n\n점검 축\n현재 스냅샷(기준값)\n다음 분기 질문\n경보 신호(예시)\n\n\n\n\n허브 집중(도메인)\n상위 3개 도메인 88.8%\n집중이 완화/유지/심화 중 어디로 가는가\n상위 3개 비중 연속 상승\n\n\n한국 조달 편중\n미국 연구 조달 57.3%(1저자 국가코드 확인분)\n조달 포트폴리오가 다변화되는가\n상위 1개국 비중 상승 + 상위권 고착\n\n\n한국 유입 채널\n영국+국제기구+미국 합계 65.3%\n유입 채널이 넓어지는가\n상위 3채널 합계 상승\n\n\n자국 인용 위치\n자국 인용 4.1%(1저자 국가코드 확인분)\n표본 확대 후에도 위치가 안정적인가\n표본 확대에도 지표 급변"
   },
   {
     "objectID": "SI/extended_report.html#후속-분석-로드맵-짧게",
@@ -389,7 +389,7 @@
     "href": "SI/extended_report.html#footnotes",
     "title": "확장 본문 (Extended Report)",
     "section": "Footnotes",
-    "text": "Footnotes\n\n\n본 보고서에서 “허브”는 정책문헌에서 DOI로 매칭된 학술 인용이 특히 많이 관측되는 정책 출처를 뜻한다. 평판·품질의 평가가 아니라 구조적 관측 단위다.↩︎\n본문은 데이터 브리프 톤의 결과 요약에 집중한다. 분모·분자 정의, 매칭·결측, 지표 해석 가드레일은 방법론·데이터 정합성과 부록: 데이터 적합도에서 확인할 수 있다.↩︎\n선행연구의 4-6%(Pinheiro et al., 2021; Fang et al., 2024)는 “전체 논문 중 정책문헌에 언급된 논문 비율”이다. 본 보고서는 “Overton 정책문헌 스냅샷의 DOI 기반 정책-&gt;논문 인용”을 본다. 분모가 달라 직접 비교하면 왜곡된다.↩︎"
+    "text": "Footnotes\n\n\n본 보고서에서 “허브”는 정책문헌에서 DOI로 매칭된 학술 인용이 특히 많이 관측되는 정책 출처를 뜻한다. 평판·품질의 평가가 아니라 구조적 관측 단위다.↩︎\n본문은 데이터 브리프 톤의 결과 요약에 집중한다. 분모·분자 정의, 매칭·결측, 지표 해석 가드레일은 방법론·데이터 정합성과 부록: 데이터 적합도에서 확인할 수 있다.↩︎\n“정책과 과학의 연결”을 다룬 연구는 분모가 다양하다. 예를 들어 Furnas et al. (2025)과 Springer Nature SDG Impact Report는 정책문헌을 분모로 “학술 인용이 포함된 정책문헌 비중”을 제시한다. 반면 논문을 분모로 “정책문헌에서 언급/인용되는 논문 비중”을 분석하는 연구도 있다(Pinheiro et al., 2021; Fang et al., 2024). 본 보고서는 DOI로 연결되는 정책문헌-&gt;학술논문 인용 로그(및 인용된 논문 집합) 안에서, 집중도/구성/경로를 진단한다. 따라서 숫자를 직접 비교하기보다 “무엇을 분모로 썼는가”를 먼저 확인해야 한다.↩︎"
   },
   {
     "objectID": "SI/index.html",
@@ -459,7 +459,7 @@
     "href": "SI/methods.html#먼저-확인할-것-1분",
     "title": "방법론·데이터 정합성",
     "section": "먼저 확인할 것 (1분)",
-    "text": "먼저 확인할 것 (1분)\n\n국가 비교를 보기 전에는 known citations 조건(1저자 국가코드 확인분)을 먼저 확인한다.\n분모가 다른 지표끼리는 직접 비교하지 않는다.\n본문 해석이 애매하면 아래 5개 섹션을 위에서 아래 순서로 점검한다."
+    "text": "먼저 확인할 것 (1분)\n\n국가 비교를 보기 전에는 1저자 국가코드 확인분(known citations) 조건을 먼저 확인한다.\n분모가 다른 지표끼리는 직접 비교하지 않는다.\n본문 해석이 애매하면 아래 5개 섹션을 위에서 아래 순서로 점검한다."
   },
   {
     "objectID": "SI/methods.html#method-scope",
