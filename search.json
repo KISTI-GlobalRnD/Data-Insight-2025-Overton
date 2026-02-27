@@ -123,7 +123,14 @@
     "href": "SI/extended_report_en.html#evidence-use-patterns-vary-by-source-type",
     "title": "Extended Report",
     "section": "2.2 Evidence-use patterns vary by source type",
-    "text": "2.2 Evidence-use patterns vary by source type\n\n\n\nFigure 7. Total citations and citations per policy document by source type\n\n\n\nObservation: The same volume-vs-density split appears by source type.\nInterpretation: A type with large total volume does not necessarily have high per-document citation density.\nInterpretation guardrail: Source-type tags are not mutually exclusive; cross-type pattern differences matter more than raw shares.\n\n\n\n\nFigure 8. Source type × domain citation-share heatmap (100% normalized within each type)\n\n\n\nObservation: Domain composition differs clearly by source type.\nInterpretation: Policy evidence use reflects not only research-side supply, but also source-role and agenda composition.\nMonitoring signal: Check whether domain skew strengthens within specific source types.\n\nChapter 2 takeaway\nHub concentration can improve transmission efficiency, but higher concentration can also increase sensitivity to shocks in a few channels. That is why repeated monitoring should track whether top-channel concentration is rising, stable, or easing."
+    "text": "2.2 Evidence-use patterns vary by source type\n\n\n\nFigure 7. Total citations and citations per policy document by source type\n\n\n\nObservation: The same volume-vs-density split appears by source type.\nInterpretation: A type with large total volume does not necessarily have high per-document citation density.\nInterpretation guardrail: Source-type tags are not mutually exclusive; cross-type pattern differences matter more than raw shares.\n\n\n\n\nFigure 8. Source type × domain citation-share heatmap (100% normalized within each type)\n\n\n\nObservation: Domain composition differs clearly by source type.\nInterpretation: Policy evidence use reflects not only research-side supply, but also source-role and agenda composition.\nMonitoring signal: Check whether domain skew strengthens within specific source types."
+  },
+  {
+    "objectID": "SI/extended_report_en.html#accessibility-oa-as-a-candidate-factor",
+    "href": "SI/extended_report_en.html#accessibility-oa-as-a-candidate-factor",
+    "title": "Extended Report",
+    "section": "2.3 Accessibility (OA) as a candidate factor",
+    "text": "2.3 Accessibility (OA) as a candidate factor\nWhen evidence concentrates, one plausible explanation is accessibility.\nIn the Overton-OpenAlex linked data, open-access (OA) shares vary across domains and source types (see OA interpretation and OA reference figures).\nHowever, this observation alone does not justify a causal claim that “OA causes policy citations.”\nIn this report, OA is treated as a candidate factor that can support interpretation, not as a conclusion.\nChapter 2 takeaway\nHub concentration can improve transmission efficiency, but higher concentration can also increase sensitivity to shocks in a few channels. That is why repeated monitoring should track whether top-channel concentration is rising, stable, or easing."
   },
   {
     "objectID": "SI/extended_report_en.html#koreas-domain-demand-supply-mix-is-misaligned",
@@ -319,7 +326,14 @@
     "href": "SI/extended_report.html#출처-유형이-바뀌면-근거-사용-방식도-바뀐다",
     "title": "확장 본문 (Extended Report)",
     "section": "2.2 출처 유형이 바뀌면 근거 사용 방식도 바뀐다",
-    "text": "2.2 출처 유형이 바뀌면 근거 사용 방식도 바뀐다\n\n\n\n그림 7. 출처 유형별 총 인용과 문헌당 평균 인용 수\n\n\n\n관찰: 출처 유형별로도 총량과 밀도 순위가 다르게 나타난다.\n해석: 총량이 큰 유형이 문헌당 평균 인용까지 높다고 단정할 수 없다.\n해석 보정: 출처 유형 태그는 상호배타적이지 않아(중복 가능), 점유율 자체보다 유형 간 패턴 차이를 읽는 것이 중요하다.\n\n\n\n\n그림 8. 출처 유형×도메인 인용 비중 열지도(유형별 100% 정규화)\n\n\n\n관찰: 출처 유형별 도메인 구성은 뚜렷이 다르다.\n해석: 정책근거 인용은 연구 공급 요인뿐 아니라 출처의 역할·의제 구성과 함께 나타난다.\n점검 신호: 특정 유형에서 도메인 편중이 강화되는지 확인한다.\n\n2장 소결론\n허브 집중은 전달 효율을 만들 수 있지만, 집중도가 높아질수록 특정 채널 변동에 민감해질 수 있다. 따라서 다음 점검에서는 상위 채널 집중도의 추세(상승/유지/완화)를 함께 본다."
+    "text": "2.2 출처 유형이 바뀌면 근거 사용 방식도 바뀐다\n\n\n\n그림 7. 출처 유형별 총 인용과 문헌당 평균 인용 수\n\n\n\n관찰: 출처 유형별로도 총량과 밀도 순위가 다르게 나타난다.\n해석: 총량이 큰 유형이 문헌당 평균 인용까지 높다고 단정할 수 없다.\n해석 보정: 출처 유형 태그는 상호배타적이지 않아(중복 가능), 점유율 자체보다 유형 간 패턴 차이를 읽는 것이 중요하다.\n\n\n\n\n그림 8. 출처 유형×도메인 인용 비중 열지도(유형별 100% 정규화)\n\n\n\n관찰: 출처 유형별 도메인 구성은 뚜렷이 다르다.\n해석: 정책근거 인용은 연구 공급 요인뿐 아니라 출처의 역할·의제 구성과 함께 나타난다.\n점검 신호: 특정 유형에서 도메인 편중이 강화되는지 확인한다."
+  },
+  {
+    "objectID": "SI/extended_report.html#접근성oa은-후보-요인이다",
+    "href": "SI/extended_report.html#접근성oa은-후보-요인이다",
+    "title": "확장 본문 (Extended Report)",
+    "section": "2.3 접근성(OA)은 후보 요인이다",
+    "text": "2.3 접근성(OA)은 후보 요인이다\n정책근거가 한쪽으로 모일 때, 한 가지 가능한 설명은 “접근성”이다.\nOverton-OpenAlex 결합 데이터에서도 도메인/출처 유형에 따라 오픈액세스(OA) 비중이 다르게 나타난다(부록의 OA 해석, OA 참고 그림).\n다만 이 관측만으로 “OA가 정책 인용을 만든다”는 인과를 단정하지 않는다.\n이 보고서에서 OA는 허브 집중과 조달 편중을 해석할 때의 보조 후보 요인으로만 둔다.\n2장 소결론\n허브 집중은 전달 효율을 만들 수 있지만, 집중도가 높아질수록 특정 채널 변동에 민감해질 수 있다. 따라서 다음 점검에서는 상위 채널 집중도의 추세(상승/유지/완화)를 함께 본다."
   },
   {
     "objectID": "SI/extended_report.html#한국의-도메인-수요-공급은-어긋난다",
