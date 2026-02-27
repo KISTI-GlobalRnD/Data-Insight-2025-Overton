@@ -441,9 +441,9 @@ Note
 <strong>1) Data units</strong> — confirm analysis units and DOI matching coverage
 </summary>
 <p><span id="doi-share"></span></p>
-<p><strong>What does “97.6% cite DOI papers” mean in this analysis snapshot?</strong></p>
+<p><strong>What denominator does “97.6%” use in this snapshot?</strong></p>
 <p>We deduplicated Overton policy documents by <code>policy_document_id</code> to build 1,381,084 unique policy documents. Then we counted whether each document contains at least one DOI-based scholarly citation. As a result, 1,347,563 documents (97.6%) contain at least one DOI citation.</p>
-<p>Within this analysis snapshot, policy documents frequently cite DOI-identifiable scholarly evidence. At the same time, this setup has a clear limitation: it does <strong>not</strong> capture citations without DOIs (narrative citations, reports, legislation, web sources, etc.).</p>
+<p>Important: this is <strong>not</strong> the share of “all policy documents” that cite science. It is the share within the set of policy documents collected in the Overton snapshot. Because Overton is built to extract references and track scholarly citations in policy, its coverage is not guaranteed to represent the full universe of policy documents. Also, this setup does <strong>not</strong> capture citations without DOIs (narrative citations, reports, legislation, web sources, etc.).</p>
 <p><span id="repeat-share"></span></p>
 <p><strong>What does “48.1% are repeatedly cited (&gt;=2)” mean in this analysis snapshot?</strong></p>
 <p>This metric summarizes, among unique cited works, how many are called repeatedly across different policy documents.</p>
