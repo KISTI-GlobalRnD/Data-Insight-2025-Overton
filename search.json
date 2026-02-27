@@ -88,7 +88,7 @@
     "href": "SI/extended_report_en.html#key-numbers-at-a-glance",
     "title": "Extended Report",
     "section": "Key numbers at a glance",
-    "text": "Key numbers at a glance\n\nUnique policy documents (deduplicated): 1,381,084\nDOI-based policy-to-research citation links: 23,370,284\nUnique cited works: 6,532,365\nRepeat-citation share (cited by 2+ distinct policy documents): 48.1% (definition)\nTop 3 domain share (multi-label domain aggregation): 88.8%\nKorea inbound concentration (UK+IGO+USA; inbound direction): 65.3%\nKorea procurement U.S. share: 57.3% (known first-author country codes)"
+    "text": "Key numbers at a glance\n\nUnique policy documents (deduplicated; DOI-observable scope): 1,381,084\nDOI-based policy-to-research citation links: 23,370,284\nUnique cited works: 6,532,365\nRepeat-citation share (cited by 2+ distinct policy documents): 48.1% (definition)\nTop 3 domain share (multi-label domain aggregation): 88.8%\nKorea inbound concentration (UK+IGO+USA; inbound direction): 65.3%\nKorea procurement U.S. share: 57.3% (known first-author country codes)"
   },
   {
     "objectID": "SI/extended_report_en.html#why-these-questions-emerged",
@@ -284,7 +284,7 @@
     "href": "SI/extended_report.html#한눈에-보는-숫자",
     "title": "확장 본문 (Extended Report)",
     "section": "한눈에 보는 숫자",
-    "text": "한눈에 보는 숫자\n\n분석 대상 정책문헌(중복 제거): 1,381,084편\nDOI 기반 정책문헌-&gt;학술논문 인용: 23,370,284건\n인용된 고유 논문: 6,532,365편\n반복 인용 논문 비중(2회 이상): 48.1%(정의)\n상위 3개 도메인 점유: 88.8%\n한국 유입 상위 3채널(영국+국제기구+미국) 집중도: 65.3%\n한국 조달에서 미국 연구 비중: 57.3%(1저자 국가코드 확인분)"
+    "text": "한눈에 보는 숫자\n\nDOI 기반 인용이 관측된 정책문헌(중복 제거): 1,381,084편\nDOI 기반 정책문헌-&gt;학술논문 인용: 23,370,284건\n인용된 고유 논문: 6,532,365편\n반복 인용 논문 비중(2회 이상): 48.1%(정의)\n상위 3개 도메인 점유: 88.8%\n한국 유입 상위 3채널(영국+국제기구+미국) 집중도: 65.3%\n한국 조달에서 미국 연구 비중: 57.3%(1저자 국가코드 확인분)"
   },
   {
     "objectID": "SI/extended_report.html#질문이-등장한-배경",
