@@ -171,7 +171,7 @@ ul.task-list li input[type="checkbox"] {
   </ul>
 </nav>
 <p><a href="../SI/index.html"><code>← Extended Report 개요</code></a> · <a href="../Report/Report_final.pdf"><code>보고서(PDF)</code></a></p>
-<p>보고서 본문 그림 가운데 확대해서 보고, 항목을 켜고 끄고, 값도 바로 확인하면 좋은 그림은 인터랙티브로 제공한다. 즉 <strong>웹에서 더 자유도 높게 탐색</strong>할 수 있도록 구성했다. 아래 플롯은 <strong>버튼을 눌러야 로드</strong>되므로, 페이지 자체는 가볍게 열린다.</p>
+<p>보고서 본문 그림 가운데 확대해서 보고, 항목을 켜고 끄고, 값도 바로 확인하면 좋은 그림은 인터랙티브로 제공한다. 즉 <strong>웹에서 더 자유도 높게 탐색</strong>할 수 있도록 구성했다. 아래 플롯은 <strong>버튼을 눌러야 불러와지므로</strong>, 페이지 자체는 가볍게 열린다.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -184,7 +184,7 @@ Note
 <div class="callout-body-container callout-body">
 <p><strong>이 페이지는 본문 어디를 보완하나</strong></p>
 <ul>
-<li>Extended Report에서 사용하는 그림 1–12를 웹에서 탐색할 수 있게 확장했다(확대·축소, 범례 토글, 값 확인).</li>
+<li>Extended Report에서 사용하는 그림 1–12를 웹에서 탐색할 수 있게 확장했다(확대·축소, 범례 켜기·끄기, 값 확인).</li>
 <li>메인 보고서(PDF)는 지면 흐름에 맞춰 그림을 1–8로 재번호했다. 혼동되면 <a href="../SI/index.html#report-extended-map">연결표</a>를 참고한다.</li>
 <li>지면 제약으로 생략된 세부 값을 마우스로 바로 확인할 수 있다.</li>
 <li>네트워크 레이아웃은 구조를 보기 위한 보조 장치다. 거리와 위치를 정밀한 값으로 해석하지 않는다.</li>
@@ -235,7 +235,7 @@ Note
 <div class="si-plot" data-src="../Assets/Interactive/pubyear_trend.html" data-height="650" data-title="Interactive plot: Figure 1 — Policy documents by publication year">
   <div class="si-plot__actions">
     <a class="si-plot__link" href="../Assets/Interactive/pubyear_trend.html" target="_blank" rel="noopener">새 창으로 열기</a>
-    <button type="button" class="si-plot__btn">플롯 로드</button>
+    <button type="button" class="si-plot__btn">플롯 불러오기</button>
   </div>
 </div>
 </section>
@@ -255,7 +255,7 @@ Note
 <div class="si-plot" data-src="../Assets/Interactive/domain_top10.html" data-height="650" data-title="Interactive plot: Figure 2 — Policy citations by domain (top 4; stacked by field)">
   <div class="si-plot__actions">
     <a class="si-plot__link" href="../Assets/Interactive/domain_top10.html" target="_blank" rel="noopener">새 창으로 열기</a>
-    <button type="button" class="si-plot__btn">플롯 로드</button>
+    <button type="button" class="si-plot__btn">플롯 불러오기</button>
   </div>
 </div>
 </section>
@@ -276,7 +276,7 @@ Note
   <div class="si-plot__actions">
     <a class="si-plot__link" href="../Assets/Interactive/topic_scatter_citations_vs_papers.html" target="_blank" rel="noopener">새 창으로 열기</a>
     <span class="si-plot__badge">로딩이 느릴 수 있음</span>
-    <button type="button" class="si-plot__btn">플롯 로드</button>
+    <button type="button" class="si-plot__btn">플롯 불러오기</button>
   </div>
 </div>
 </section>
@@ -297,7 +297,7 @@ Note
   <div class="si-plot__actions">
     <a class="si-plot__link" href="../Assets/Interactive/topic_intensity_vs_recency.html" target="_blank" rel="noopener">새 창으로 열기</a>
     <span class="si-plot__badge">로딩이 느릴 수 있음</span>
-    <button type="button" class="si-plot__btn">플롯 로드</button>
+    <button type="button" class="si-plot__btn">플롯 불러오기</button>
   </div>
 </div>
 <hr>
@@ -311,20 +311,20 @@ Note
 <section id="si-fig-5" class="level3">
 <h3 class="anchored" data-anchor-id="si-fig-5">그림 5. 정책 출처 국가별 인용 규모와 문헌당 평균 인용, 그리고 인용 도메인 구성비. 상위 10개와 한국</h3>
 <div class="si-caption-en">
-<p>Policy source entities: total citations, citations per policy document, and domain composition; top 10 + Republic of Korea</p>
+<p>Policy source entities: total citations, citations per policy document, and domain composition; top 10 and Republic of Korea</p>
 </div>
 <div class="si-guidance">
 <p><strong>무엇을 보면 좋은가</strong></p>
 <ul>
 <li>관찰: 총량(규모)과 문헌당 평균(밀도)의 상위 순서가 같은지 본다.</li>
 <li>해석: 규모 허브와 밀도 허브는 분리될 수 있다.</li>
-<li>점검: 두 상위군의 교집합이 분기별로 확대/축소되는지 확인한다.</li>
+<li>점검: 두 상위군의 교집합이 분기별로 확대·축소되는지 확인한다.</li>
 </ul>
 </div>
 <div class="si-plot" data-src="../Assets/Interactive/country_citations_top10.html" data-height="650" data-title="Interactive plot: Figure 5 — Country citations (total, per policy doc, and domain composition)">
   <div class="si-plot__actions">
     <a class="si-plot__link" href="../Assets/Interactive/country_citations_top10.html" target="_blank" rel="noopener">새 창으로 열기</a>
-    <button type="button" class="si-plot__btn">플롯 로드</button>
+    <button type="button" class="si-plot__btn">플롯 불러오기</button>
   </div>
 </div>
 </section>
@@ -345,7 +345,7 @@ Note
 <div class="si-plot" data-src="../Assets/Interactive/source_type_citations_per_policy_doc.html" data-height="650" data-title="Interactive plot: Figure 6 — Citations per policy document by source type">
   <div class="si-plot__actions">
     <a class="si-plot__link" href="../Assets/Interactive/source_type_citations_per_policy_doc.html" target="_blank" rel="noopener">새 창으로 열기</a>
-    <button type="button" class="si-plot__btn">플롯 로드</button>
+    <button type="button" class="si-plot__btn">플롯 불러오기</button>
   </div>
 </div>
 </section>
@@ -358,7 +358,7 @@ Note
 <p><strong>무엇을 보면 좋은가</strong></p>
 <ul>
 <li>관찰: 같은 도메인의 비중이 출처 유형별로 얼마나 달라지는지 본다.</li>
-<li>해석: 구성 차이는 출처 역할/의제 차이 신호일 수 있다.</li>
+<li>해석: 구성 차이는 출처 역할·의제 차이 신호일 수 있다.</li>
 <li>점검: 미분류(unspecified) 비중이 큰 열은 세부 태깅 부족 신호로 보고 해석을 보수적으로 둔다.</li>
 </ul>
 </div>
@@ -366,7 +366,7 @@ Note
 <div class="si-plot" data-src="../Assets/Interactive/source_type_domain_heatmap.html" data-height="760" data-title="Interactive plot: Figure 7 — Source type × domain share heatmap">
   <div class="si-plot__actions">
     <a class="si-plot__link" href="../Assets/Interactive/source_type_domain_heatmap.html" target="_blank" rel="noopener">새 창으로 열기</a>
-    <button type="button" class="si-plot__btn">플롯 로드</button>
+    <button type="button" class="si-plot__btn">플롯 불러오기</button>
   </div>
 </div>
 <hr>
@@ -378,14 +378,14 @@ Note
 <p>Extended Report: 3장(그림 8–12) · 메인 보고서(PDF): 3장 한국(그림 4–6). (확장: 그림 9–10은 PDF 미포함) · 관련: <a href="../SI/appendix.html#self-citation-share">부록: 자국 인용 비중</a></p>
 </div>
 <section id="si-fig-8" class="level3">
-<h3 class="anchored" data-anchor-id="si-fig-8">그림 8. 선택 국가별 분야 구성의 불일치(상위 50개국; 초기에는 상위 10개+한국만 표시)</h3>
+<h3 class="anchored" data-anchor-id="si-fig-8">그림 8. 선택 국가별 분야 구성의 불일치(상위 50개국; 초기에는 상위 10개와 한국만 표시)</h3>
 <div class="si-caption-en">
 <p>Selected countries: mismatch between policy citation domain mix vs cited research domain mix</p>
 </div>
 <div class="si-guidance">
 <p><strong>무엇을 보면 좋은가</strong></p>
 <ul>
-<li>관찰: 점선 위/아래 위치로 도메인별 불일치 방향을 본다.</li>
+<li>관찰: 점선 위·아래 위치로 도메인별 불일치 방향을 본다.</li>
 <li>해석: 같은 국가에서도 도메인마다 수요-공급 미스매치 방향이 달라질 수 있다.</li>
 <li>점검: 도메인별 절대 격차(pp) 변화가 완화·유지·심화 중 어디인지 추적한다.</li>
 </ul>
@@ -394,7 +394,7 @@ Note
   <div class="si-plot__actions">
     <a class="si-plot__link" href="../Assets/Interactive/country_domain_demand_supply_scatter_top50.html" target="_blank" rel="noopener">새 창으로 열기</a>
     <span class="si-plot__badge">로딩이 느릴 수 있음</span>
-    <button type="button" class="si-plot__btn">플롯 로드</button>
+    <button type="button" class="si-plot__btn">플롯 불러오기</button>
   </div>
 </div>
 </section>
@@ -416,7 +416,7 @@ Note
   <div class="si-plot__actions">
     <a class="si-plot__link" href="../Assets/Interactive/policy_to_research_country_heatmap.html" target="_blank" rel="noopener">새 창으로 열기</a>
     <span class="si-plot__badge">로딩이 느릴 수 있음</span>
-    <button type="button" class="si-plot__btn">플롯 로드</button>
+    <button type="button" class="si-plot__btn">플롯 불러오기</button>
   </div>
 </div>
 <hr>
@@ -424,7 +424,7 @@ Note
 <section id="si-fig-10" class="level3">
 <h3 class="anchored" data-anchor-id="si-fig-10">그림 10. 자국 인용 비중과 기대치 대비, 그리고 인용 도메인 구성. 정책 출처 국가 상위 7개국과 한국</h3>
 <div class="si-caption-en">
-<p>Self-citation share vs expected, and domain mix for self vs non-self citations; top 7 policy countries + Republic of Korea</p>
+<p>Self-citation share vs expected, and domain mix for self vs non-self citations; top 7 policy countries and Republic of Korea</p>
 </div>
 <div class="si-guidance">
 <p><strong>무엇을 보면 좋은가</strong></p>
@@ -437,7 +437,7 @@ Note
 <div class="si-plot" data-src="../Assets/Interactive/policy_country_self_share_selected.html" data-height="650" data-title="Interactive plot: Figure 10 — Self-citation share vs expected and domain portfolio">
   <div class="si-plot__actions">
     <a class="si-plot__link" href="../Assets/Interactive/policy_country_self_share_selected.html" target="_blank" rel="noopener">새 창으로 열기</a>
-    <button type="button" class="si-plot__btn">플롯 로드</button>
+    <button type="button" class="si-plot__btn">플롯 불러오기</button>
   </div>
 </div>
 </section>
@@ -457,7 +457,7 @@ Note
 <div class="si-plot" data-src="../Assets/Interactive/korea_policy_research_flows_top10.html" data-height="820" data-title="Interactive plot: Figure 11 — Republic of Korea evidence flows and domain portfolios (top 10)">
   <div class="si-plot__actions">
     <a class="si-plot__link" href="../Assets/Interactive/korea_policy_research_flows_top10.html" target="_blank" rel="noopener">새 창으로 열기</a>
-    <button type="button" class="si-plot__btn">플롯 로드</button>
+    <button type="button" class="si-plot__btn">플롯 불러오기</button>
   </div>
 </div>
 </section>
@@ -471,7 +471,7 @@ Note
 <ul>
 <li>관찰: 상위 노드·상위 연결만 남긴 백본 경로에서 한국 연결 축이 어디로 이어지는지 본다.</li>
 <li>해석: 이 그림은 전체망이 아니라 구조 요약 지도다.</li>
-<li>점검: 거리/위치를 정량 해석하지 말고, 연결 관계(누가 누구와 연결되는가)만 읽는다.</li>
+<li>점검: 거리와 위치를 정량 해석하지 말고, 연결 관계(누가 누구와 연결되는가)만 읽는다.</li>
 </ul>
 </div>
 <p>레이아웃은 탐색을 돕기 위한 보조 장치다. 노드 간 거리는 절대적 지표가 아니므로, “가까움”을 정밀한 값으로 해석하지 않는다.</p>
@@ -480,7 +480,7 @@ Note
   <div class="si-plot__actions">
     <a class="si-plot__link" href="../Assets/Interactive/policy_research_flow_network_drl.html" target="_blank" rel="noopener">새 창으로 열기</a>
     <span class="si-plot__badge">로딩이 느릴 수 있음</span>
-    <button type="button" class="si-plot__btn">플롯 로드</button>
+    <button type="button" class="si-plot__btn">플롯 불러오기</button>
   </div>
 </div>
 <hr>
