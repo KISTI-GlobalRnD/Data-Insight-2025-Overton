@@ -156,6 +156,15 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#appendix-b-quick" id="toc-appendix-b-quick" class="nav-link" data-scroll-target="#appendix-b-quick">B0. Quick definitions (summary)</a></li>
   <li><a href="#data-fitness" id="toc-data-fitness" class="nav-link" data-scroll-target="#data-fitness">B0-1. Matching &amp; missingness summary</a></li>
+  <li><a href="#doi-share" id="toc-doi-share" class="nav-link" data-scroll-target="#doi-share">B1. DOI-citation coverage share (97.6%): denominator</a></li>
+  <li><a href="#repeat-share" id="toc-repeat-share" class="nav-link" data-scroll-target="#repeat-share">B2. Repeat-citation share (48.1%): definition</a></li>
+  <li><a href="#citations-vs-works" id="toc-citations-vs-works" class="nav-link" data-scroll-target="#citations-vs-works">B3. Citations vs works</a></li>
+  <li><a href="#recency-intensity" id="toc-recency-intensity" class="nav-link" data-scroll-target="#recency-intensity">B4. Recency / intensity</a></li>
+  <li><a href="#self-citation-share" id="toc-self-citation-share" class="nav-link" data-scroll-target="#self-citation-share">B5. Self-citation share</a></li>
+  <li><a href="#multilabel" id="toc-multilabel" class="nav-link" data-scroll-target="#multilabel">B6. Multi-label topics</a></li>
+  <li><a href="#recent-years-decline" id="toc-recent-years-decline" class="nav-link" data-scroll-target="#recent-years-decline">B7. Recent-year decline caution</a></li>
+  <li><a href="#why-2012" id="toc-why-2012" class="nav-link" data-scroll-target="#why-2012">B8. Why 2012 looks high</a></li>
+  <li><a href="#oa-interpretation" id="toc-oa-interpretation" class="nav-link" data-scroll-target="#oa-interpretation">B9. OA interpretation</a></li>
   </ul></li>
   <li><a href="#appendix-c" id="toc-appendix-c" class="nav-link" data-scroll-target="#appendix-c">C. Additional figures</a>
   <ul class="collapse">
@@ -436,25 +445,33 @@ Note
 </tbody>
 </table>
 </details>
-<details>
-<summary>
-<strong>1) Data units</strong> — confirm analysis units and DOI matching coverage
-</summary>
-<p><span id="doi-share"></span></p>
+<p>For reference, in this analysis we matched about 95% of DOIs extracted from Overton DOI citations (about 6.87M unique DOIs after deduplication) to OpenAlex works (about 6.53M). The remaining ~0.34M DOIs did not match. Formatting errors were rare and most were “DOI-like strings,” suggesting coverage/normalization differences are a more likely cause than syntax errors.</p>
+</section>
+<section id="doi-share" class="level3">
+<h3 class="anchored" data-anchor-id="doi-share">B1. DOI-citation coverage share (97.6%): denominator</h3>
 <p><strong>What denominator does “97.6%” use in this snapshot?</strong></p>
 <p>We deduplicated Overton policy documents at the policy-document level to build 1,381,084 unique policy documents. Then we counted whether each document contains at least one DOI-based scholarly citation. As a result, 1,347,563 documents (97.6%) contain at least one DOI citation.</p>
-<p>Important: this is <strong>not</strong> the share of “all policy documents” that cite science. It is the share within the set of policy documents collected in the Overton snapshot. Because Overton is built to extract references and track scholarly citations in policy, its coverage is not guaranteed to represent the full universe of policy documents. Also, this setup does <strong>not</strong> capture citations without DOIs (narrative citations, reports, legislation, web sources, etc.).</p>
-<p><span id="repeat-share"></span></p>
-<p><strong>What does “48.1% are repeatedly cited (&gt;=2)” mean in this analysis snapshot?</strong></p>
-<p>This metric summarizes, among unique cited works, how many are called repeatedly across different policy documents.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Interpretation boundary</strong></p>
 <ul>
-<li>Unit: unique cited works (OpenAlex works)</li>
-<li>Computation: after cleaning policy→work DOI links, count how many <strong>distinct policy documents (unique documents)</strong> cite each work</li>
-<li>Definition: “repeatedly cited (&gt;=2)” means cited by at least two distinct policy documents</li>
+<li>This is <strong>not</strong> the share of “all policy documents” that cite science. It is the share within the set of policy documents collected in the Overton snapshot.</li>
+<li>This setup does <strong>not</strong> capture citations without DOIs (narrative citations, reports, legislation, web sources, etc.).</li>
 </ul>
-<p>In the Overton 2025.02×OpenAlex 2025.06 linked data, 3,143,234 out of 6,532,365 unique cited works (48.1%) are cited by two or more policy documents.</p>
-<p>As with the 97.6% statistic, this number is limited to the DOI-linked <strong>observed scope</strong> in the snapshot. Citations without DOIs (reports, legislation, web sources, etc.) are not included in this repeated-call calculation.</p>
-<p><strong>How different is the DOI-citation coverage across source types?</strong></p>
+</div>
+</div>
+<p><strong>What does “deduplication” mean here?</strong></p>
+<p>Raw Overton policy documents can include duplicates (versions, re-posts, language variants, metadata duplication). For analysis, we unify them at the policy-document level to treat them as unique policy documents.</p>
+<section id="reference-doi-citation-coverage-by-source-type-tag" class="level4">
+<h4 class="anchored" data-anchor-id="reference-doi-citation-coverage-by-source-type-tag">Reference: DOI-citation coverage by source-type tag</h4>
 <p>The table below summarizes, by Overton source-type tag, the share of unique policy documents that contain at least one DOI-based scholarly citation. Since source-type tags are multi-label, a single document can carry multiple tags. So the row totals do not need to sum to the site-wide total.</p>
 <details>
 <summary>
@@ -671,31 +688,61 @@ Note
 </tbody>
 </table>
 </details>
-<p>Document-type breakdown is not available in the current output files and will be added in a future update.</p>
-<p>For reference, in this analysis we matched about 95% of DOIs extracted from Overton DOI citations (about 6.87M unique DOIs after deduplication) to OpenAlex works (about 6.53M). The remaining ~0.34M DOIs did not match. Formatting errors were rare and most were “DOI-like strings,” suggesting coverage/normalization differences are a more likely cause than syntax errors.</p>
-<p><strong>What does “deduplication” mean here?</strong></p>
-<p>Raw Overton policy documents can include duplicates (versions, re-posts, language variants, metadata duplication). For analysis, we unify them at the policy-document level to treat them as unique policy documents.</p>
-</details>
-<details>
-<summary>
-<strong>2) Metric definitions</strong> — denominators and formulas for core metrics
-</summary>
-<p><span id="citations-vs-works"></span></p>
+</section>
+</section>
+<section id="repeat-share" class="level3">
+<h3 class="anchored" data-anchor-id="repeat-share">B2. Repeat-citation share (48.1%): definition</h3>
+<p><strong>What does “48.1% are repeatedly cited (&gt;=2)” mean in this analysis snapshot?</strong></p>
+<p>This metric summarizes, among unique cited works, how many are called repeatedly across different policy documents.</p>
+<ul>
+<li>Unit: unique cited works (OpenAlex works)</li>
+<li>Computation: after cleaning policy→work DOI links, count how many <strong>distinct policy documents (unique documents)</strong> cite each work</li>
+<li>Definition: “repeatedly cited (&gt;=2)” means cited by at least two distinct policy documents</li>
+</ul>
+<p>In the Overton 2025.02×OpenAlex 2025.06 linked data, 3,143,234 out of 6,532,365 unique cited works (48.1%) are cited by two or more policy documents.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Interpretation boundary</strong></p>
+<ul>
+<li>As with the 97.6% statistic, this number is limited to the DOI-linked <strong>observed scope</strong> in the snapshot.</li>
+<li>Citations without DOIs (reports, legislation, web sources, etc.) are not included in this repeated-call calculation.</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="citations-vs-works" class="level3">
+<h3 class="anchored" data-anchor-id="citations-vs-works">B3. Citations vs works</h3>
 <p><strong>Why separate “citation counts” and “unique works”?</strong></p>
 <ul>
 <li><strong>Citation counts</strong>: total number of DOI citation records (how many times policy documents cite DOI works)</li>
 <li><strong>Unique works</strong>: the number of distinct cited works after deduplicating citations by work identity</li>
 </ul>
 <p>The questions “how often does policy cite evidence?” (frequency) and “how wide is the evidence pool?” (diversity) are different, so we interpret them separately.</p>
-<p><span id="recency-intensity"></span></p>
+</section>
+<section id="recency-intensity" class="level3">
+<h3 class="anchored" data-anchor-id="recency-intensity">B4. Recency / intensity</h3>
 <p><strong>How are “recency” and “citation intensity” computed?</strong></p>
 <ul>
 <li><strong>Recency</strong>: the share of policy citations to works published in <code>2022-2024</code></li>
 <li><strong>Citation intensity</strong>: average policy citations per unique work in the aggregation unit = <code>citations / unique works</code></li>
 </ul>
-<p><span id="self-citation-share"></span></p>
+</section>
+<section id="self-citation-share" class="level3">
+<h3 class="anchored" data-anchor-id="self-citation-share">B5. Self-citation share</h3>
 <p><strong>How is self-citation share computed?</strong></p>
 <p>We map policy source country tags to 2-letter country codes (e.g., USA → US, UK → GB), and compute self-citation share using only citations with known first-author country codes as the denominator. That is, self-citation share is not a pattern over “all citations.” It is a pattern over citations where the first-author country code is available.</p>
+<details>
+<summary>
+<strong>More: expected-share definition and a comparison table</strong>
+</summary>
 <p><strong>How is expected self-citation share computed?</strong></p>
 <p>For each policy source country, we first compute its domain mix of cited research. For each domain, we multiply by the country’s <strong>global research production share</strong> in that domain (OpenAlex), then sum across domains. Conceptually:</p>
 <p><code>expected = sum( policy_citation_domain_share * global_production_share_in_domain )</code></p>
@@ -759,26 +806,23 @@ Note
 <p><strong>Why define policy-source → research-country flows by first-author country?</strong></p>
 <p>First-author affiliation country is the most consistently extractable country attribute. However, it does not reflect coauthor distributions, corresponding authors, or multi-affiliation cases, so it must be interpreted as an “approximation with limited representativeness.”</p>
 </details>
-<details>
-<summary>
-<strong>3) Interpretation cautions</strong> — multi-label, missingness, observation/accumulation lags
-</summary>
-<p><span id="multilabel"></span></p>
+</section>
+<section id="multilabel" class="level3">
+<h3 class="anchored" data-anchor-id="multilabel">B6. Multi-label topics</h3>
 <p><strong>Why can topic/domain shares exceed 100%?</strong></p>
 <p>OpenAlex topics are multi-label. A single work can belong to multiple topics simultaneously, so aggregations by topic/domain/subfield can double-count. Topic-based numbers should be read as “topic-instance based.”</p>
 <p>In the topic data used here, a single policy citation is linked to about 2.8 topics on average. Therefore, summing by domain/topic yields totals larger than raw citation counts.</p>
 <p>However, if we fractionally allocate each citation across the work’s topic count, the domain ranking is preserved and the top-3 domain share changes only slightly (e.g., 88.8% → 88.5%).</p>
 <p><strong>Can source-country / source-type totals also grow beyond 100%?</strong></p>
 <p>Yes. Overton source country/type labels are tag-based (including parent/child tags), so a single document can be counted in multiple categories.</p>
-<p><span id="recent-years-decline"></span></p>
+</section>
+<section id="recent-years-decline" class="level3">
+<h3 class="anchored" data-anchor-id="recent-years-decline">B7. Recent-year decline caution</h3>
 <p><strong>Does the post-2022 decline in the time trend mean “policy cites science less”?</strong></p>
 <p>A direct conclusion is difficult here. Coverage delays (collection/processing lags) and the fact that citations accumulate after publication likely act together. It is safer to read recent years as signals mixed with observation lag, rather than as real-time decreases.</p>
-</details>
-<details>
-<summary>
-<strong>4) Focus points</strong> — how to read the 2012 average and OA markers
-</summary>
-<p><span id="why-2012"></span></p>
+</section>
+<section id="why-2012" class="level3">
+<h3 class="anchored" data-anchor-id="why-2012">B8. Why 2012 looks high</h3>
 <p><strong>Why does “citations per policy document” look especially high around 2012?</strong></p>
 <p>When the distribution has a long tail, averages are strongly affected. When the average looks high, it is safer to first separate whether it is driven by a few extreme documents or whether the whole distribution shifted rightward.</p>
 <p>Trimmed means exclude extreme values and help diagnose whether the average is being pulled by outliers.</p>
@@ -789,7 +833,9 @@ Note
 <li>The rise around 2012 appears not only in the mean but also in the median and trimmed mean. This suggests a mixture of distribution-wide change, not only a handful of extreme documents.</li>
 <li>The top-1% contribution does not spike uniquely in 2012. Therefore, it is hard to attribute the 2012 peak to only a very small number of documents.</li>
 </ul>
-<p><span id="oa-interpretation"></span></p>
+</section>
+<section id="oa-interpretation" class="level3">
+<h3 class="anchored" data-anchor-id="oa-interpretation">B9. OA interpretation</h3>
 <p><strong>Is higher OA (open access) share in policy citations causal?</strong></p>
 <p>Observationally, OA share tends to be higher in policy-cited works. But this does not immediately imply causality (“OA causes more policy citation”). Confounders include the likelihood that policy-relevant work is published OA, public funding structure, and domain composition.</p>
 <p>However, even when we split by domain and publication-year windows among policy-cited works, the pattern that OA works have higher average policy citations per paper largely remains. The table below compares 2000-2009 and 2010-2019. Recent years are excluded due to stronger observation-lag effects.</p>
@@ -841,9 +887,8 @@ Note
 </tr>
 </tbody>
 </table>
-<p>However, medians are mostly around 1-2 and show small differences. The mean gap may be influenced by the long tail (highly repeatedly cited works). Therefore, use this table only as supporting context for “candidate explanatory factors.”</p>
+<p>However, medians are mostly around 1-2 and show small differences. The mean gap may be influenced by the long tail (highly repeatedly cited works). Therefore, use this table only as supporting context for candidate explanatory factors.</p>
 <p>Additional OA reference figures are provided in Section C below.</p>
-</details>
 <hr>
 </section>
 </section>

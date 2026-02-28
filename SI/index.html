@@ -145,6 +145,7 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#구성" id="toc-구성" class="nav-link active" data-scroll-target="#구성">구성</a></li>
   <li><a href="#이-페이지에서-먼저-할-일-2분" id="toc-이-페이지에서-먼저-할-일-2분" class="nav-link" data-scroll-target="#이-페이지에서-먼저-할-일-2분">이 페이지에서 먼저 할 일 (2분)</a></li>
+  <li><a href="#mini-glossary" id="toc-mini-glossary" class="nav-link" data-scroll-target="#mini-glossary">용어·지표 요약 (30초)</a></li>
   <li><a href="#extended-report-구조고정" id="toc-extended-report-구조고정" class="nav-link" data-scroll-target="#extended-report-구조고정">Extended Report 구조(고정)</a></li>
   <li><a href="#report-extended-map" id="toc-report-extended-map" class="nav-link" data-scroll-target="#report-extended-map">보고서(PDF) ↔︎ Extended Report 연결</a></li>
   <li><a href="#figure-index" id="toc-figure-index" class="nav-link" data-scroll-target="#figure-index">그림 바로가기(Extended Report 1–12)</a></li>
@@ -211,6 +212,80 @@ Note
 <li>분모·결측·해석 경계가 궁금하면 <a href="../SI/methods.html">방법론·데이터 정합성</a>으로 이동한다.</li>
 <li>추가 그림·정의·후속 체크리스트가 필요하면 <a href="../SI/appendix.html">부록</a>과 <a href="../SI/next_questions.html">다음 질문</a>으로 이동한다.</li>
 </ul>
+</section>
+<section id="mini-glossary" class="level2">
+<h2 class="anchored" data-anchor-id="mini-glossary">용어·지표 요약 (30초)</h2>
+<p>이 보고서에서 자주 쓰는 용어를 “이 보고서 기준”으로만 짧게 정리했다.</p>
+<table class="table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>용어</th>
+<th>이 보고서에서의 의미</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Overton</td>
+<td>정책문헌의 참고문헌을 추출해 DOI 등 학술 인용과 연결한 정책문헌 인용 데이터베이스</td>
+</tr>
+<tr class="even">
+<td>OpenAlex</td>
+<td>논문 메타데이터(도메인·토픽·국가·OA 등)를 제공하는 학술 데이터베이스</td>
+</tr>
+<tr class="odd">
+<td>DOI-연결 관측 범위</td>
+<td>Overton 정책문헌의 참고문헌 가운데 DOI가 확인되어 OpenAlex works로 연결되는 인용 범위(보고서·법령·웹 등 DOI 밖 근거는 기본 지표에 포함되지 않음)</td>
+</tr>
+<tr class="even">
+<td>고유 정책문헌</td>
+<td>Overton 정책문헌을 중복 제거해 만든 “문헌 1편 단위” 분석 기준</td>
+</tr>
+<tr class="odd">
+<td>인용 건수(citations)</td>
+<td>정책문헌이 DOI 논문을 인용한 횟수(인용 기록 수)</td>
+</tr>
+<tr class="even">
+<td>고유 논문 수(works)</td>
+<td>인용된 논문을 “서로 다른 논문” 기준으로 중복 제거한 개수</td>
+</tr>
+<tr class="odd">
+<td>반복 인용 48.1%</td>
+<td>인용된 고유 논문 가운데 2개 이상 서로 다른 정책문헌에서 반복 호출된 논문의 비중</td>
+</tr>
+<tr class="even">
+<td>최근성(recency)</td>
+<td><code>2022–2024</code> 발행 논문으로 향한 정책 인용 비중</td>
+</tr>
+<tr class="odd">
+<td>인용 강도(intensity)</td>
+<td>집계 단위 내 <code>인용 건수 / 고유 논문 수</code>(논문 1편당 평균 정책 인용수)</td>
+</tr>
+<tr class="even">
+<td>1저자 국가코드</td>
+<td>연구국을 정의할 때 쓰는 기준(논문의 1저자 소속국 코드; 결측이 있어 “확인분 기준”으로 해석)</td>
+</tr>
+<tr class="odd">
+<td>자국 인용 비중</td>
+<td>정책 출처 국가 = 1저자 연구국인 인용의 비중(1저자 국가코드 확인분만 분모에 포함)</td>
+</tr>
+<tr class="even">
+<td>Field missing</td>
+<td>OpenAlex 하위 분야(field) 태깅이 비어 있는 구간(도메인 내부 구성 해석을 불안정하게 만들 수 있음)</td>
+</tr>
+<tr class="odd">
+<td>다중라벨</td>
+<td>논문 1편이 여러 토픽/태그에 동시에 속하는 구조(합이 100%를 넘을 수 있음)</td>
+</tr>
+<tr class="even">
+<td>OA(오픈액세스)</td>
+<td>접근성의 가능한 요인으로 참고하지만, 인과로 단정하지 않음</td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="extended-report-구조고정" class="level2">
 <h2 class="anchored" data-anchor-id="extended-report-구조고정">Extended Report 구조(고정)</h2>
