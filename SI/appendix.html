@@ -285,9 +285,9 @@ Note
 <summary>
 <strong>자세히 보기: 하위 태그 규모, 예시, Hong Kong 표기</strong>
 </summary>
-<section id="데이터-스냅샷-overton-2025.02" class="level4">
-<h4 class="anchored" data-anchor-id="데이터-스냅샷-overton-2025.02">데이터 스냅샷: Overton 2025.02</h4>
-<p>아래 수치는 Overton 2025.02 스냅샷에서 계산한 요약이다.</p>
+<section id="데이터-기준-시점-overton-2025.02" class="level4">
+<h4 class="anchored" data-anchor-id="데이터-기준-시점-overton-2025.02">데이터 기준 시점: Overton 2025.02</h4>
+<p>아래 수치는 Overton 2025.02 기준 시점 데이터에서 계산한 요약이다.</p>
 <ul>
 <li>정책문헌 수 기준: 하위 태그 합계 200,381건, 전체 1,671,835건의 12.0%</li>
 <li>DOI 인용 기록 수 기준: 하위 태그 합계 3,488,024건, 전체 48,456,680건의 7.2%</li>
@@ -350,7 +350,7 @@ Note
 </section>
 <section id="hong-kong은-중국으로-합쳐진-것인가" class="level4">
 <h4 class="anchored" data-anchor-id="hong-kong은-중국으로-합쳐진-것인가">Hong Kong은 “중국으로 합쳐진” 것인가?</h4>
-<p>현재 스냅샷에서 Overton의 정책 출처에는 <code>Hong Kong</code>이 국가처럼 직접 등장하지 않는다. <code>China &gt; Hong Kong</code> 형태로만 관측된다(정책문헌 1,182편). 반면 OpenAlex의 연구국은 <code>HK → Hong Kong</code>으로 별도 코드를 쓴다.</p>
+<p>이번 기준 시점에서 Overton의 정책 출처에는 <code>Hong Kong</code>이 국가처럼 직접 등장하지 않는다. <code>China &gt; Hong Kong</code> 형태로만 관측된다(정책문헌 1,182편). 반면 OpenAlex의 연구국은 <code>HK → Hong Kong</code>으로 별도 코드를 쓴다.</p>
 <p>따라서 “최상위 국가만” 기준으로 정책 출처를 집계하면, <code>China &gt; Hong Kong</code>에서 발행된 문서는 정책 출처 쪽에서 빠진다. 이 경우 <code>Hong Kong</code>은 연구국 노드로만 남아 <strong>인용만 되는 노드처럼 보일 수 있다</strong>.</p>
 </section>
 <section id="실무적-주의-하위-태그의-단순-치환은-충돌을-만든다" class="level4">
@@ -441,7 +441,7 @@ Note
 <p><span id="doi-share"></span></p>
 <p><strong>“97.6%”는 어떤 분모에서 계산된 값인가?</strong></p>
 <p>Overton 정책문헌을 고유 문헌 기준으로 중복 제거해 고유 정책문헌 1,381,084편을 만들었다. 그 다음 각 문헌이 DOI 기반 학술 인용을 1건 이상 포함하는지 집계했다. 그 결과 1,347,563편(97.6%)이 DOI 인용을 포함했다.</p>
-<p>주의할 점은 이 수치가 “정책문헌 전체에서 과학논문을 인용하는 비중”이 아니라, <strong>이번 스냅샷에서 Overton에 수집된 정책문헌</strong>을 분모로 한 관측치라는 점이다. Overton은 참고문헌을 추출해 학술 인용을 연결·추적하기 위한 데이터 인프라라서, 문헌 구성 자체가 “모든 정책문헌” 분포를 대표하지 않을 수 있다. 따라서 이 수치는 “관측된 범위에서 DOI 인용이 얼마나 흔한가”라는 방향성만 보여준다. <strong>DOI가 없는 인용(서술 인용·보고서·법령·웹 등)</strong>은 포함하지 못한다.</p>
+<p>주의할 점은 이 수치가 “정책문헌 전체에서 과학논문을 인용하는 비중”이 아니라, <strong>이번 기준 시점에서 Overton에 수집된 정책문헌</strong>을 분모로 한 관측치라는 점이다. Overton은 참고문헌을 추출해 학술 인용을 연결·추적하기 위한 데이터베이스라서, 문헌 구성 자체가 “모든 정책문헌” 분포를 대표하지 않을 수 있다. 따라서 이 수치는 “관측된 범위에서 DOI 인용이 얼마나 흔한가”라는 방향성만 보여준다. <strong>DOI가 없는 인용(서술 인용·보고서·법령·웹 등)</strong>은 포함하지 못한다.</p>
 <p><span id="repeat-share"></span></p>
 <p><strong>“48.1%가 2회 이상 반복 인용된다”는 무엇을 뜻하나?</strong></p>
 <p>이 수치는 “정책이 인용한 고유 논문(works)” 가운데, <strong>서로 다른 정책문헌에서 반복적으로 호출되는 논문이 얼마나 되는지</strong>를 요약한다.</p>
@@ -451,7 +451,7 @@ Note
 <li>기준: 2개 이상의 서로 다른 정책문헌에서 인용된 논문을 “2회 이상 반복 인용”으로 정의</li>
 </ul>
 <p>Overton 2025.02×OpenAlex 2025.06 결합 데이터에서 인용된 고유 논문 6,532,365편 중 3,143,234편(48.1%)이 2회 이상 반복 인용에 해당한다.</p>
-<p>주의할 점은 이 수치도 97.6%와 마찬가지로 Overton 스냅샷의 <strong>DOI-연결 관측 범위</strong>에 한정된다는 것이다. 즉 DOI가 없는 근거(보고서·법령·웹 등)는 반복 호출 계산에 포함되지 않는다.</p>
+<p>주의할 점은 이 수치도 97.6%와 마찬가지로 Overton 기준 시점 데이터의 <strong>DOI-연결 관측 범위</strong>에 한정된다는 것이다. 즉 DOI가 없는 근거(보고서·법령·웹 등)는 반복 호출 계산에 포함되지 않는다.</p>
 <p><strong>출처 유형별로 DOI 인용 포함 비중은 얼마나 다르나?</strong></p>
 <p>아래 표는 Overton 출처 유형 태그별 요약이다. 해당 태그가 붙은 고유 정책문헌 가운데 DOI 기반 학술 인용을 1건 이상 포함한 문헌의 비중을 제시한다. 출처 유형 태그는 다중라벨 구조이므로 문헌 1편이 여러 유형에 동시에 잡힐 수 있다. 따라서 표의 정책문헌 수 합은 전체 문헌 수와 일치하지 않을 수 있다.</p>
 <details>
