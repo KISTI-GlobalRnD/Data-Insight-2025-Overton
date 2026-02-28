@@ -146,7 +146,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#구성" id="toc-구성" class="nav-link active" data-scroll-target="#구성">구성</a></li>
   <li><a href="#이-페이지에서-먼저-할-일-2분" id="toc-이-페이지에서-먼저-할-일-2분" class="nav-link" data-scroll-target="#이-페이지에서-먼저-할-일-2분">이 페이지에서 먼저 할 일 (2분)</a></li>
   <li><a href="#extended-report-구조고정" id="toc-extended-report-구조고정" class="nav-link" data-scroll-target="#extended-report-구조고정">Extended Report 구조(고정)</a></li>
-  <li><a href="#report-extended-map" id="toc-report-extended-map" class="nav-link" data-scroll-target="#report-extended-map">Data Brief ↔︎ Extended Report 연결</a></li>
+  <li><a href="#report-extended-map" id="toc-report-extended-map" class="nav-link" data-scroll-target="#report-extended-map">보고서(PDF) ↔︎ Extended Report 연결</a></li>
   <li><a href="#quick-find" id="toc-quick-find" class="nav-link" data-scroll-target="#quick-find">빠른 찾기</a></li>
   <li><a href="#바로가기" id="toc-바로가기" class="nav-link" data-scroll-target="#바로가기">바로가기</a></li>
   <li><a href="#업데이트" id="toc-업데이트" class="nav-link" data-scroll-target="#업데이트">업데이트</a></li>
@@ -175,7 +175,7 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Extended Report는 메인 보고서(Data Brief)의 핵심 메시지를 뒷받침하는 <strong>확장 본문·방법론·인터랙티브·부록</strong> 묶음이다. 메인 보고서가 “결론 중심 요약”이라면, Extended Report는 “근거 확인과 반복 점검을 위한 작업 공간”이다.</p>
+<p>Extended Report는 메인 보고서(PDF)의 핵심 메시지를 뒷받침하는 <strong>확장 본문·방법론·인터랙티브·부록</strong> 묶음이다. 메인 보고서가 “결론 중심 요약”이라면, Extended Report는 “근거 확인과 반복 점검을 위한 작업 공간”이다.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -188,7 +188,7 @@ Note
 <div class="callout-body-container callout-body">
 <p><strong>역할 분리</strong></p>
 <ul>
-<li><strong>Data Brief (메인 PDF)</strong>: 핵심 메시지 1~2개를 빠르게 전달</li>
+<li><strong>메인 보고서(PDF)</strong>: 핵심 메시지 1~2개를 빠르게 전달</li>
 <li><strong>Extended Report (웹)</strong>: 확장 서술, 지표 정의, 해석 가드레일, 추가 점검</li>
 </ul>
 </div>
@@ -196,7 +196,7 @@ Note
 <section id="구성" class="level2">
 <h2 class="anchored" data-anchor-id="구성">구성</h2>
 <ol type="1">
-<li><strong>확장 본문</strong>: Data Brief의 배경·맥락·해석을 확장한다.</li>
+<li><strong>확장 본문</strong>: 메인 보고서의 배경·맥락·해석을 확장한다.</li>
 <li><strong>방법론·데이터 정합성</strong>: 분모/분자, 매칭·결측, 해석 가드레일을 점검한다.</li>
 <li><strong>인터랙티브</strong>: 주요 그림을 확대/토글/hover로 탐색한다.</li>
 <li><strong>부록</strong>: 커버리지·태깅, 추가 표·그림, 상세 진단을 확인한다.</li>
@@ -206,7 +206,7 @@ Note
 <section id="이-페이지에서-먼저-할-일-2분" class="level2">
 <h2 class="anchored" data-anchor-id="이-페이지에서-먼저-할-일-2분">이 페이지에서 먼저 할 일 (2분)</h2>
 <ul>
-<li>본문에서 막힌 지점이 있으면 먼저 <a href="#report-extended-map">Data Brief ↔︎ Extended Report 연결표</a>를 본다.</li>
+<li>본문에서 막힌 지점이 있으면 먼저 <a href="#report-extended-map">보고서(PDF) ↔︎ Extended Report 연결표</a>를 본다.</li>
 <li>분모·결측·해석 경계가 궁금하면 <a href="../SI/methods.html">방법론·데이터 정합성</a>으로 이동한다.</li>
 <li>추가 그림·정의·후속 체크리스트가 필요하면 <a href="../SI/appendix.html">부록</a>과 <a href="../SI/next_questions.html">다음 질문</a>으로 이동한다.</li>
 </ul>
@@ -230,7 +230,7 @@ Note
 <tr class="odd">
 <td><code>index.qmd</code></td>
 <td>입구/내비게이션</td>
-<td>Data Brief↔︎Extended 연결표, 빠른 찾기, 업데이트</td>
+<td>보고서(PDF)↔︎Extended 연결표, 빠른 찾기, 업데이트</td>
 </tr>
 <tr class="even">
 <td><code>extended_report.qmd</code></td>
@@ -274,12 +274,12 @@ Note
 </div>
 </section>
 <section id="report-extended-map" class="level2">
-<h2 class="anchored" data-anchor-id="report-extended-map">Data Brief ↔︎ Extended Report 연결</h2>
+<h2 class="anchored" data-anchor-id="report-extended-map">보고서(PDF) ↔︎ Extended Report 연결</h2>
 <p>아래 표에서 <code>인터랙티브: 그림 n</code>은 Extended Report(웹) 번호(1-12) 기준이다. 메인 PDF의 그림 번호(1-8)와 다르므로, 혼동되면 표의 링크를 기준으로 따라가면 된다.</p>
 <table class="table">
 <thead>
 <tr class="header">
-<th>Data Brief(메인 PDF)</th>
+<th>메인 보고서(PDF)</th>
 <th>Extended Report에서 더 볼 것</th>
 </tr>
 </thead>
@@ -358,7 +358,7 @@ Note
 <section id="업데이트" class="level2">
 <h2 class="anchored" data-anchor-id="업데이트">업데이트</h2>
 <ul>
-<li>2026-02-27: 메인 보고서(Data Brief)를 “1장 Data Insight(1페이지 훅) + 핵심 장면 중심 전개”로 재구성했다. 메인 PDF의 그림 번호를 1-8로 다시 매기고, 부록에 48.1%(반복 인용) 정의를 추가했다.</li>
+<li>2026-02-27: 메인 보고서(PDF)를 “1장 Data Insight(1페이지 훅) + 핵심 장면 중심 전개”로 재구성했다. 메인 PDF의 그림 번호를 1-8로 다시 매기고, 부록에 48.1%(반복 인용) 정의를 추가했다.</li>
 <li>2026-02-14: SI 전 페이지(index/extended/methods/interactive/appendix/next questions)의 안내 문장을 <code>관찰-해석-점검</code> 중심으로 통일했다.</li>
 <li>2026-02-12: 명칭을 SI에서 Extended Report로 전환하고, 확장 본문·방법론 페이지를 추가했다.</li>
 <li>2026-02-09: Extended Report 페이지에 한/영 언어 토글(1단계: 캡션)을 추가했다.</li>
