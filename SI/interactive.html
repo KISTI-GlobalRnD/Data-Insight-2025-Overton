@@ -195,12 +195,12 @@ Note
 <ul>
 <li>1장(그림 1–4): 시간·분야·토픽 신호로 전체 지형을 잡는다.</li>
 <li>2장(그림 5–7): 허브 채널(국가·유형)에서 근거가 어디에 쌓이는지 본다.</li>
-<li>3장(그림 8–12): 한국의 유입/조달 비대칭과 조달 기준선을 확인한다.</li>
+<li>3장(그림 8–12): 한국의 유입·조달 비대칭과 조달 기준선을 확인한다.</li>
 </ul>
 <p><strong>읽는 패턴(공통)</strong></p>
 <ul>
-<li>각 그림은 <code>관찰 -&gt; 해석 -&gt; 점검</code> 순서로 읽는다.</li>
-<li>점검 단계에서는 본문 결론을 단정하지 말고, 부록 정의/결측 조건을 함께 확인한다.</li>
+<li>각 그림은 <code>관찰 → 해석 → 점검</code> 순서로 읽는다.</li>
+<li>점검 단계에서는 본문 결론을 단정하지 말고, 부록의 정의·결측 조건을 함께 확인한다.</li>
 </ul>
 <p><strong>사용 팁</strong></p>
 <ul>
@@ -247,7 +247,7 @@ Note
 <div class="si-guidance">
 <p><strong>무엇을 보면 좋은가</strong></p>
 <ul>
-<li>관찰: 도메인 내부에서 상위 3개 필드 집중도와 <code>field missing</code> 구간을 함께 본다.</li>
+<li>관찰: 도메인 내부에서 상위 3개 필드 집중도와 필드 정보 누락(field missing) 구간을 함께 본다.</li>
 <li>해석: 누락 구간이 큰 도메인은 구성 비교 해석이 불안정할 수 있다.</li>
 <li>점검: <a href="../SI/appendix.html#data-fitness">부록: 매칭·결측</a>, <a href="../SI/appendix.html#multilabel">부록: 다중라벨</a>을 함께 확인한다.</li>
 </ul>
@@ -359,7 +359,7 @@ Note
 <ul>
 <li>관찰: 같은 도메인의 비중이 출처 유형별로 얼마나 달라지는지 본다.</li>
 <li>해석: 구성 차이는 출처 역할/의제 차이 신호일 수 있다.</li>
-<li>점검: <code>unspecified</code> 비중이 큰 열은 세부 태깅 부족 신호로 보고 해석을 보수적으로 둔다.</li>
+<li>점검: 미분류(unspecified) 비중이 큰 열은 세부 태깅 부족 신호로 보고 해석을 보수적으로 둔다.</li>
 </ul>
 </div>
 <p>값은 출처 유형 내부에서 도메인별 비중으로 정규화한 값이다. 따라서 “총량” 비교가 아니라 “구성 차이” 비교에 사용한다.</p>
@@ -387,7 +387,7 @@ Note
 <ul>
 <li>관찰: 점선 위/아래 위치로 도메인별 불일치 방향을 본다.</li>
 <li>해석: 같은 국가에서도 도메인마다 수요-공급 미스매치 방향이 달라질 수 있다.</li>
-<li>점검: 도메인별 절대 격차(pp) 변화가 완화/유지/심화 중 어디인지 추적한다.</li>
+<li>점검: 도메인별 절대 격차(pp) 변화가 완화·유지·심화 중 어디인지 추적한다.</li>
 </ul>
 </div>
 <div class="si-plot" data-src="../Assets/Interactive/country_domain_demand_supply_scatter_top50.html" data-height="820" data-title="Interactive plot: Figure 8 — Domain mix mismatch (demand vs supply)">
@@ -431,7 +431,7 @@ Note
 <ul>
 <li>관찰: 자국 인용 비중과 기대치 대비(actual-expected) 분포를 함께 본다.</li>
 <li>해석: 기대치 대비는 도메인 가중 기준선에 대한 상대 비교다.</li>
-<li>점검: 국가 비교 전에 분모가 1저자 국가코드 확인분(known citations)인지 먼저 확인한다.</li>
+<li>점검: 국가 비교 전에 1저자 국가코드가 확인되는 인용만을 대상으로 한 결과인지 먼저 확인한다.</li>
 </ul>
 </div>
 <div class="si-plot" data-src="../Assets/Interactive/policy_country_self_share_selected.html" data-height="650" data-title="Interactive plot: Figure 10 — Self-citation share vs expected and domain portfolio">
@@ -449,7 +449,7 @@ Note
 <div class="si-guidance">
 <p><strong>무엇을 보면 좋은가</strong></p>
 <ul>
-<li>관찰: 유입(한국 연구-&gt;글로벌 정책)과 조달(한국 정책-&gt;연구)의 상위 경로를 분리해 본다.</li>
+<li>관찰: 유입(한국 연구→글로벌 정책)과 조달(한국 정책→연구)의 상위 경로를 분리해 본다.</li>
 <li>해석: 두 방향 상위 경로가 다르면 비대칭 구조 신호다.</li>
 <li>점검: 방향별 집중 지표(유입 상위 3합, 조달 상위 1개국 비중)를 분리 추적한다.</li>
 </ul>

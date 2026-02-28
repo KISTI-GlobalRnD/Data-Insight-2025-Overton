@@ -150,7 +150,7 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#a1.-policy-document-coverage-map-documents-by-policy-source-country" id="toc-a1.-policy-document-coverage-map-documents-by-policy-source-country" class="nav-link" data-scroll-target="#a1.-policy-document-coverage-map-documents-by-policy-source-country">A1. Policy document coverage map (documents by policy source country)</a></li>
   <li><a href="#a2.-why-exclude-sub-tags-a-b-and-keep-top-level-country-tags-only" id="toc-a2.-why-exclude-sub-tags-a-b-and-keep-top-level-country-tags-only" class="nav-link" data-scroll-target="#a2.-why-exclude-sub-tags-a-b-and-keep-top-level-country-tags-only">A2. Why exclude sub-tags (<code>A &gt; B</code>) and keep top-level country tags only</a></li>
-  <li><a href="#a3.-why-do-we-need-exceptions-for-hong-kong-georgia-symptom---cause---action" id="toc-a3.-why-do-we-need-exceptions-for-hong-kong-georgia-symptom---cause---action" class="nav-link" data-scroll-target="#a3.-why-do-we-need-exceptions-for-hong-kong-georgia-symptom---cause---action">A3. Why do we need exceptions for Hong Kong / Georgia: symptom -&gt; cause -&gt; action</a></li>
+  <li><a href="#a3.-why-do-we-need-exceptions-for-hong-kong-georgia-symptom-cause-action" id="toc-a3.-why-do-we-need-exceptions-for-hong-kong-georgia-symptom-cause-action" class="nav-link" data-scroll-target="#a3.-why-do-we-need-exceptions-for-hong-kong-georgia-symptom-cause-action">A3. Why do we need exceptions for Hong Kong / Georgia: symptom → cause → action</a></li>
   </ul></li>
   <li><a href="#appendix-b" id="toc-appendix-b" class="nav-link" data-scroll-target="#appendix-b">B. Definitions &amp; interpretation</a>
   <ul class="collapse">
@@ -163,7 +163,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#c2.-extended-for-chapter-3-source-type-x-topic-heatmap" id="toc-c2.-extended-for-chapter-3-source-type-x-topic-heatmap" class="nav-link" data-scroll-target="#c2.-extended-for-chapter-3-source-type-x-topic-heatmap">C2. Extended for Chapter 3: source type x topic (heatmap)</a></li>
   <li><a href="#c3.-oa-reference-figures-by-domain-source-type" id="toc-c3.-oa-reference-figures-by-domain-source-type" class="nav-link" data-scroll-target="#c3.-oa-reference-figures-by-domain-source-type">C3. OA reference figures (by domain / source type)</a></li>
   <li><a href="#c4.-self-citation-share-top-10" id="toc-c4.-self-citation-share-top-10" class="nav-link" data-scroll-target="#c4.-self-citation-share-top-10">C4. Self-citation share (Top 10)</a></li>
-  <li><a href="#c5.-openalex-subfield---overton-domain-network-top-100" id="toc-c5.-openalex-subfield---overton-domain-network-top-100" class="nav-link" data-scroll-target="#c5.-openalex-subfield---overton-domain-network-top-100">C5. OpenAlex subfield -&gt; Overton domain network (Top 100)</a></li>
+  <li><a href="#c5.-openalex-subfield-overton-domain-network-top-100" id="toc-c5.-openalex-subfield-overton-domain-network-top-100" class="nav-link" data-scroll-target="#c5.-openalex-subfield-overton-domain-network-top-100">C5. OpenAlex subfield → Overton domain network (Top 100)</a></li>
   <li><a href="#c6.-uneven-and-repeated-citation-distributions-log-log-ccdf" id="toc-c6.-uneven-and-repeated-citation-distributions-log-log-ccdf" class="nav-link" data-scroll-target="#c6.-uneven-and-repeated-citation-distributions-log-log-ccdf">C6. Uneven and repeated-citation distributions (log-log CCDF)</a></li>
   <li><a href="#c7.-domain-demand-supply-composition-gap-delta-pp" id="toc-c7.-domain-demand-supply-composition-gap-delta-pp" class="nav-link" data-scroll-target="#c7.-domain-demand-supply-composition-gap-delta-pp">C7. Domain demand-supply composition gap (Delta, pp)</a></li>
   </ul></li>
@@ -280,8 +280,8 @@ Note
 <p>Overton policy source country tags include <strong>country-level tags (e.g., USA, UK)</strong> and <strong>sub-regional tags (e.g., USA &gt; California)</strong>. To align meaning with OpenAlex country codes, this report uses <strong>top-level country tags only</strong> for default aggregations.</p>
 <p>This simplifies country-level comparisons. At the same time, it can invite <strong>under/over-interpretation</strong> when sub-tags contribute heavily. So, when reading country comparisons, it is safer to check coverage itself as well.</p>
 </section>
-<section id="a3.-why-do-we-need-exceptions-for-hong-kong-georgia-symptom---cause---action" class="level3">
-<h3 class="anchored" data-anchor-id="a3.-why-do-we-need-exceptions-for-hong-kong-georgia-symptom---cause---action">A3. Why do we need exceptions for Hong Kong / Georgia: symptom -&gt; cause -&gt; action</h3>
+<section id="a3.-why-do-we-need-exceptions-for-hong-kong-georgia-symptom-cause-action" class="level3">
+<h3 class="anchored" data-anchor-id="a3.-why-do-we-need-exceptions-for-hong-kong-georgia-symptom-cause-action">A3. Why do we need exceptions for Hong Kong / Georgia: symptom → cause → action</h3>
 <p>Policy source country tags can appear only as sub-tags such as <code>China &gt; Hong Kong</code> and <code>USA &gt; Georgia</code>. If we keep only top-level tags, these can be filtered out from the policy-source side. That can make them look like “policy sources that do not exist” in the network view. For network figures, we therefore split <code>China &gt; Hong Kong</code> into <code>Hong Kong</code> and <code>USA &gt; Georgia</code> into <code>Georgia (USA)</code>.</p>
 <details>
 <summary>
@@ -352,12 +352,12 @@ Note
 </section>
 <section id="is-hong-kong-merged-into-china-here" class="level4">
 <h4 class="anchored" data-anchor-id="is-hong-kong-merged-into-china-here">Is Hong Kong “merged into China” here?</h4>
-<p>In the current snapshot, Overton policy sources do not include <code>Hong Kong</code> as a top-level country tag. It is observed only as <code>China &gt; Hong Kong</code> (1,182 policy documents). By contrast, OpenAlex research countries use a separate code <code>HK -&gt; Hong Kong</code>.</p>
+<p>In the current snapshot, Overton policy sources do not include <code>Hong Kong</code> as a top-level country tag. It is observed only as <code>China &gt; Hong Kong</code> (1,182 policy documents). By contrast, OpenAlex research countries use a separate code <code>HK → Hong Kong</code>.</p>
 <p>If we aggregate policy sources using top-level tags only, documents under <code>China &gt; Hong Kong</code> drop from the policy-source side. Meanwhile, <code>Hong Kong</code> remains only as a research-country node. This can make it look like a “cited-only node.”</p>
 </section>
 <section id="practical-caution-naive-sub-tag-replacement-causes-collisions" class="level4">
 <h4 class="anchored" data-anchor-id="practical-caution-naive-sub-tag-replacement-causes-collisions">Practical caution: naive sub-tag replacement causes collisions</h4>
-<p>If you naively map <code>A &gt; B -&gt; B</code>, then <code>USA &gt; Georgia</code> (the US state) collides with <code>Georgia</code> (the country). If you want to re-attribute sub-tags at country scale, it is safer to separate two steps: (1) lifting to parent (<code>A &gt; B -&gt; A</code>) and (2) exception handling (whether to treat Hong Kong as its own unit).</p>
+<p>If you naively map <code>A &gt; B → B</code>, then <code>USA &gt; Georgia</code> (the US state) collides with <code>Georgia</code> (the country). If you want to re-attribute sub-tags at country scale, it is safer to separate two steps: (1) lifting to parent (<code>A &gt; B → A</code>) and (2) exception handling (whether to treat Hong Kong as its own unit).</p>
 </section></details>
 <hr>
 </section>
@@ -373,7 +373,7 @@ Note
 <section id="appendix-b-quick" class="level3">
 <h3 class="anchored" data-anchor-id="appendix-b-quick">B0. Quick definitions (summary)</h3>
 <ul>
-<li><strong>Unit of analysis</strong>: Overton policy documents are deduplicated by <code>policy_document_id</code> and treated as “unique policy documents.” See: <a href="#doi-share">DOI-citation coverage share</a></li>
+<li><strong>Unit of analysis</strong>: Overton policy documents are deduplicated at the policy-document level and treated as “unique policy documents.” See: <a href="#doi-share">DOI-citation coverage share</a></li>
 <li><strong>Citation counts vs unique works</strong>: “how often” vs “how widely” are different questions, so we separate them. See: <a href="#citations-vs-works">Citations vs works</a></li>
 <li><strong>Recency / intensity</strong>: recency is the share of policy citations to works published in <code>2022-2024</code>; intensity is average policy citations per unique work. See: <a href="#recency-intensity">Recency / intensity</a></li>
 <li><strong>Multi-label topics</strong>: OpenAlex topics are multi-label; a single work can belong to multiple topics, so shares can exceed 100%. See: <a href="#multilabel">Multi-label</a></li>
@@ -395,7 +395,7 @@ Note
 <div class="callout-body-container callout-body">
 <p><strong>Key numbers (based on Overton DOI citation records)</strong></p>
 <ul>
-<li><strong>DOI -&gt; OpenAlex works match</strong>: ~95%</li>
+<li><strong>DOI → OpenAlex works match</strong>: ~95%</li>
 <li><strong>First-author country code available</strong>: ~80%</li>
 </ul>
 </div>
@@ -442,14 +442,14 @@ Note
 </summary>
 <p><span id="doi-share"></span></p>
 <p><strong>What denominator does “97.6%” use in this snapshot?</strong></p>
-<p>We deduplicated Overton policy documents by <code>policy_document_id</code> to build 1,381,084 unique policy documents. Then we counted whether each document contains at least one DOI-based scholarly citation. As a result, 1,347,563 documents (97.6%) contain at least one DOI citation.</p>
+<p>We deduplicated Overton policy documents at the policy-document level to build 1,381,084 unique policy documents. Then we counted whether each document contains at least one DOI-based scholarly citation. As a result, 1,347,563 documents (97.6%) contain at least one DOI citation.</p>
 <p>Important: this is <strong>not</strong> the share of “all policy documents” that cite science. It is the share within the set of policy documents collected in the Overton snapshot. Because Overton is built to extract references and track scholarly citations in policy, its coverage is not guaranteed to represent the full universe of policy documents. Also, this setup does <strong>not</strong> capture citations without DOIs (narrative citations, reports, legislation, web sources, etc.).</p>
 <p><span id="repeat-share"></span></p>
 <p><strong>What does “48.1% are repeatedly cited (&gt;=2)” mean in this analysis snapshot?</strong></p>
 <p>This metric summarizes, among unique cited works, how many are called repeatedly across different policy documents.</p>
 <ul>
 <li>Unit: unique cited works (OpenAlex works)</li>
-<li>Computation: after cleaning policy→work DOI links, count how many <strong>distinct policy documents (<code>policy_document_id</code>)</strong> cite each work</li>
+<li>Computation: after cleaning policy→work DOI links, count how many <strong>distinct policy documents (unique documents)</strong> cite each work</li>
 <li>Definition: “repeatedly cited (&gt;=2)” means cited by at least two distinct policy documents</li>
 </ul>
 <p>In the Overton 2025.02×OpenAlex 2025.06 linked data, 3,143,234 out of 6,532,365 unique cited works (48.1%) are cited by two or more policy documents.</p>
@@ -674,7 +674,7 @@ Note
 <p>Document-type breakdown is not available in the current output files and will be added in a future update.</p>
 <p>For reference, in this analysis we matched about 95% of DOIs extracted from Overton DOI citations (about 6.87M unique DOIs after deduplication) to OpenAlex works (about 6.53M). The remaining ~0.34M DOIs did not match. Formatting errors were rare and most were “DOI-like strings,” suggesting coverage/normalization differences are a more likely cause than syntax errors.</p>
 <p><strong>What does “deduplication” mean here?</strong></p>
-<p>Raw Overton policy documents can include duplicates (versions, re-posts, language variants, metadata duplication). For analysis, we unify them at the <code>policy_document_id</code> level to treat them as unique policy documents.</p>
+<p>Raw Overton policy documents can include duplicates (versions, re-posts, language variants, metadata duplication). For analysis, we unify them at the policy-document level to treat them as unique policy documents.</p>
 </details>
 <details>
 <summary>
@@ -695,7 +695,7 @@ Note
 </ul>
 <p><span id="self-citation-share"></span></p>
 <p><strong>How is self-citation share computed?</strong></p>
-<p>We map policy source country tags to 2-letter country codes (e.g., USA -&gt; US, UK -&gt; GB), and compute self-citation share using only citations with known first-author country codes as the denominator. That is, self-citation share is not a pattern over “all citations.” It is a pattern over citations where the first-author country code is available.</p>
+<p>We map policy source country tags to 2-letter country codes (e.g., USA → US, UK → GB), and compute self-citation share using only citations with known first-author country codes as the denominator. That is, self-citation share is not a pattern over “all citations.” It is a pattern over citations where the first-author country code is available.</p>
 <p><strong>How is expected self-citation share computed?</strong></p>
 <p>For each policy source country, we first compute its domain mix of cited research. For each domain, we multiply by the country’s <strong>global research production share</strong> in that domain (OpenAlex), then sum across domains. Conceptually:</p>
 <p><code>expected = sum( policy_citation_domain_share * global_production_share_in_domain )</code></p>
@@ -756,7 +756,7 @@ Note
 </tbody>
 </table>
 <p>Here, “share known” is the fraction of DOI citation records for that policy source where the first-author country code is available. For sources with many sub-regional tags (e.g., USA, UK), we aggregated sub-tags back up to the parent country for this summary.</p>
-<p><strong>Why define policy-source -&gt; research-country flows by first-author country?</strong></p>
+<p><strong>Why define policy-source → research-country flows by first-author country?</strong></p>
 <p>First-author affiliation country is the most consistently extractable country attribute. However, it does not reflect coauthor distributions, corresponding authors, or multi-affiliation cases, so it must be interpreted as an “approximation with limited representativeness.”</p>
 </details>
 <details>
@@ -767,7 +767,7 @@ Note
 <p><strong>Why can topic/domain shares exceed 100%?</strong></p>
 <p>OpenAlex topics are multi-label. A single work can belong to multiple topics simultaneously, so aggregations by topic/domain/subfield can double-count. Topic-based numbers should be read as “topic-instance based.”</p>
 <p>In the topic data used here, a single policy citation is linked to about 2.8 topics on average. Therefore, summing by domain/topic yields totals larger than raw citation counts.</p>
-<p>However, if we fractionally allocate each citation across the work’s topic count, the domain ranking is preserved and the top-3 domain share changes only slightly (e.g., 88.8% -&gt; 88.5%).</p>
+<p>However, if we fractionally allocate each citation across the work’s topic count, the domain ranking is preserved and the top-3 domain share changes only slightly (e.g., 88.8% → 88.5%).</p>
 <p><strong>Can source-country / source-type totals also grow beyond 100%?</strong></p>
 <p>Yes. Overton source country/type labels are tag-based (including parent/child tags), so a single document can be counted in multiple categories.</p>
 <p><span id="recent-years-decline"></span></p>
@@ -913,8 +913,8 @@ Note
 <p><img src="../Assets/Figures/si/policy_country_self_share_top10.png" class="img-fluid" style="width:92.0%" alt="Self-citation share for top 10 policy source countries"></p>
 </details>
 </section>
-<section id="c5.-openalex-subfield---overton-domain-network-top-100" class="level3">
-<h3 class="anchored" data-anchor-id="c5.-openalex-subfield---overton-domain-network-top-100">C5. OpenAlex subfield -&gt; Overton domain network (Top 100)</h3>
+<section id="c5.-openalex-subfield-overton-domain-network-top-100" class="level3">
+<h3 class="anchored" data-anchor-id="c5.-openalex-subfield-overton-domain-network-top-100">C5. OpenAlex subfield → Overton domain network (Top 100)</h3>
 <p>This network shows citation flows between OpenAlex subfields and Overton policy classes (2nd_class).</p>
 <ul>
 <li>Complements: hub structure in Chapters 3 and 4 at a classification level</li>
@@ -946,7 +946,7 @@ Note
 <summary>
 <strong>Show figure</strong>
 </summary>
-<p><img src="../Assets/Figures/si/overton_domain_subfield_network_n100.png" class="img-fluid" style="width:100.0%" alt="OpenAlex subfield -> Overton domain network"></p>
+<p><img src="../Assets/Figures/si/overton_domain_subfield_network_n100.png" class="img-fluid" style="width:100.0%" alt="OpenAlex subfield → Overton domain network"></p>
 </details>
 </section>
 <section id="c6.-uneven-and-repeated-citation-distributions-log-log-ccdf" class="level3">

@@ -181,7 +181,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="first-checks-1-min" class="level2">
 <h2 class="anchored" data-anchor-id="first-checks-1-min">First checks (1 min)</h2>
 <ul>
-<li>Before country comparison, confirm the <code>known citations</code> condition (known first-author country codes).</li>
+<li>Before country comparison, confirm results use only citations with known first-author country codes.</li>
 <li>Do not compare indicators with different denominators directly.</li>
 <li>If interpretation is unclear, review Sections 1-5 in order.</li>
 </ul>
@@ -191,7 +191,7 @@ ul.task-list li input[type="checkbox"] {
 <p>This section fixes what is in scope and what is out of scope.</p>
 <ul>
 <li>Snapshot versions: Overton 2025.02 and OpenAlex 2025.06</li>
-<li>Unit of analysis: unique policy documents deduplicated by <code>policy_document_id</code></li>
+<li>Unit of analysis: unique policy documents (deduplicated at the policy-document level)</li>
 <li>Citation scope: DOI-identified scholarly citations extracted from policy references</li>
 </ul>
 <div class="callout callout-style-default callout-note callout-titled">
@@ -216,8 +216,8 @@ Note
 <h2 class="anchored" data-anchor-id="method-matching">2) Matching &amp; missingness checks</h2>
 <p>This section is the minimum safety check before country/institution comparisons.</p>
 <ul>
-<li>The DOI -&gt; OpenAlex matching rate and country-code missingness are primary safety checks.</li>
-<li>For country comparisons, first confirm the known-citation condition (citations with known first-author country codes).</li>
+<li>The DOI → OpenAlex matching rate and country-code missingness are primary safety checks.</li>
+<li>For country comparisons, first confirm the denominator uses citations with known first-author country codes.</li>
 </ul>
 <p>Details: - <a href="../SI/appendix_en.html#data-fitness">Appendix B0-1. Matching &amp; missingness</a> - <a href="../SI/appendix_en.html#appendix-b-quick">Appendix B0. Quick definitions</a></p>
 </section>
@@ -248,7 +248,7 @@ Note
 <ul>
 <li>Recompute the same indicators quarterly or biannually and track directional state (rising/stable/easing).</li>
 <li>Keep the main report headline-focused, while updating formulas, sensitivity checks, and extended tables in the Extended Report layer.</li>
-<li>Record all figure/text changes and rebuilt outputs in <code>Data_Insight/Report/Report_Update_Log.md</code>.</li>
+<li>Record all figure/text changes and rebuilt outputs in the update log.</li>
 </ul>
 
 

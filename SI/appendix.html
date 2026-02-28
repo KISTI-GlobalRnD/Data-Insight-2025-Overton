@@ -371,8 +371,8 @@ Note
 <section id="appendix-b-quick" class="level3">
 <h3 class="anchored" data-anchor-id="appendix-b-quick">B0. 자주 찾는 정의(요약)</h3>
 <ul>
-<li><strong>분석 단위</strong>: Overton 정책문헌은 <code>policy_document_id</code> 기준으로 통합해 “고유 정책문헌” 단위로 본다. 자세히 보기: <a href="#doi-share">DOI 인용 포함 비중</a></li>
-<li><strong>인용 건수 vs 고유 논문 수</strong>: “얼마나 자주 인용했나”와 “얼마나 넓게 썼나”는 다른 질문이라 분리한다. 자세히 보기: <a href="#citations-vs-works">인용 건수 vs 고유 논문 수</a></li>
+<li><strong>분석 단위</strong>: Overton 정책문헌은 고유 문헌 기준으로 중복을 제거해 “고유 정책문헌” 단위로 본다. 자세히 보기: <a href="#doi-share">DOI 인용 포함 비중</a></li>
+<li><strong>인용 건수와 고유 논문 수</strong>: “얼마나 자주 인용했나”와 “얼마나 넓게 썼나”는 다른 질문이라 분리한다. 자세히 보기: <a href="#citations-vs-works">인용 건수와 고유 논문 수</a></li>
 <li><strong>최근성/인용 강도</strong>: 최근성은 <code>2022–2024</code> 발행 논문의 정책 인용 비중이고, 인용 강도는 고유 논문 1편당 평균 정책 인용수다. 자세히 보기: <a href="#recency-intensity">최근성/인용 강도</a></li>
 <li><strong>다중라벨</strong>: OpenAlex 토픽은 논문 1편이 여러 토픽에 동시에 속할 수 있어 합이 100%를 넘을 수 있다. 자세히 보기: <a href="#multilabel">다중라벨</a></li>
 <li><strong>자국 인용 비중 분모</strong>: 자국 인용 비중은 1저자 국가코드가 확인되는 인용만 분모로 쓴다. 자세히 보기: <a href="#self-citation-share">자국 인용 비중</a></li>
@@ -380,7 +380,7 @@ Note
 </section>
 <section id="data-fitness" class="level3">
 <h3 class="anchored" data-anchor-id="data-fitness">B0-1. 매칭·결측 요약</h3>
-<p>이 보고서는 Overton의 DOI 기반 인용을 OpenAlex works와 연결해 토픽과 국가 정보를 붙인다. 따라서 “연결되는 범위”가 해석의 안전장치가 된다.</p>
+<p>이 보고서는 Overton의 DOI 기반 인용을 OpenAlex의 논문 레코드(works)와 연결해 토픽과 국가 정보를 붙인다. 따라서 “연결되는 범위”가 해석의 안전장치가 된다.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -393,7 +393,7 @@ Note
 <div class="callout-body-container callout-body">
 <p><strong>핵심 숫자(Overton DOI 인용 기록 기준)</strong></p>
 <ul>
-<li><strong>DOI→OpenAlex works 연결</strong>: 약 95%</li>
+<li><strong>DOI → OpenAlex 논문(works) 연결</strong>: 약 95%</li>
 <li><strong>1저자 국가코드 연결</strong>: 약 80%</li>
 </ul>
 </div>
@@ -440,14 +440,14 @@ Note
 </summary>
 <p><span id="doi-share"></span></p>
 <p><strong>“97.6%”는 어떤 분모에서 계산된 값인가?</strong></p>
-<p>Overton 정책문헌을 <code>policy_document_id</code> 기준으로 중복 제거해 고유 정책문헌 1,381,084편을 만들었다. 그 다음 각 문헌이 DOI 기반 학술 인용을 1건 이상 포함하는지 집계했다. 그 결과 1,347,563편(97.6%)이 DOI 인용을 포함했다.</p>
+<p>Overton 정책문헌을 고유 문헌 기준으로 중복 제거해 고유 정책문헌 1,381,084편을 만들었다. 그 다음 각 문헌이 DOI 기반 학술 인용을 1건 이상 포함하는지 집계했다. 그 결과 1,347,563편(97.6%)이 DOI 인용을 포함했다.</p>
 <p>주의할 점은 이 수치가 “정책문헌 전체에서 과학논문을 인용하는 비중”이 아니라, <strong>이번 스냅샷에서 Overton에 수집된 정책문헌</strong>을 분모로 한 관측치라는 점이다. Overton은 참고문헌을 추출해 학술 인용을 연결·추적하기 위한 데이터 인프라라서, 문헌 구성 자체가 “모든 정책문헌” 분포를 대표하지 않을 수 있다. 따라서 이 수치는 “관측된 범위에서 DOI 인용이 얼마나 흔한가”라는 방향성만 보여준다. <strong>DOI가 없는 인용(서술 인용/보고서/법령/웹 등)</strong> 은 포함하지 못한다.</p>
 <p><span id="repeat-share"></span></p>
 <p><strong>“48.1%가 2회 이상 반복 인용된다”는 무엇을 뜻하나?</strong></p>
 <p>이 수치는 “정책이 인용한 고유 논문(works)” 가운데, <strong>서로 다른 정책문헌에서 반복적으로 호출되는 논문이 얼마나 되는지</strong>를 요약한다.</p>
 <ul>
 <li>단위: 인용된 고유 논문(OpenAlex works)</li>
-<li>계산: 정책문헌→논문 DOI 링크를 정리한 뒤, 논문 1편이 <strong>서로 다른 정책문헌(<code>policy_document_id</code>)에서 몇 번 인용되었는지</strong>(=정책문헌 수) 계산</li>
+<li>계산: 정책문헌→논문 DOI 링크를 정리한 뒤, 논문 1편이 <strong>서로 다른 고유 정책문헌에서 몇 번 인용되었는지</strong>(=인용한 정책문헌 수) 계산</li>
 <li>기준: 2개 이상의 서로 다른 정책문헌에서 인용된 논문을 “2회 이상 반복 인용”으로 정의</li>
 </ul>
 <p>Overton 2025.02×OpenAlex 2025.06 결합 데이터에서 인용된 고유 논문 6,532,365편 중 3,143,234편(48.1%)이 2회 이상 반복 인용에 해당한다.</p>
@@ -664,9 +664,9 @@ Note
 </table>
 </details>
 <p>문서 유형 기준의 분해는 현재 출력 파일에 없어, 향후 업데이트에서 보강한다.</p>
-<p>참고로 이번 분석에서는 Overton DOI 인용에서 추출한 DOI 목록(중복 제거 기준 약 687만 개) 가운데 약 95%를 OpenAlex works로 연결했다(약 653만 개). 나머지 약 34만 DOI는 OpenAlex에서 일치하는 레코드를 찾지 못했다. 형식 오류는 소수였고 대부분은 DOI처럼 보이는 문자열이었다. 따라서 미매칭은 형식 오류보다 커버리지/정규화 차이의 가능성이 크다.</p>
+<p>참고로 이번 분석에서는 Overton DOI 인용에서 추출한 DOI 목록(중복 제거 기준 약 687만 개) 가운데 약 95%를 OpenAlex 논문 레코드(works)로 연결했다(약 653만 개). 나머지 약 34만 DOI는 OpenAlex에서 일치하는 레코드를 찾지 못했다. 형식 오류는 소수였고 대부분은 DOI처럼 보이는 문자열이었다. 따라서 미매칭은 형식 오류보다 커버리지/정규화 차이의 가능성이 크다.</p>
 <p><strong>“중복 제거”는 무엇을 의미하나?</strong></p>
-<p>Overton 원본 정책문헌은 같은 문헌의 버전/재게시, 언어 변형, 메타데이터 중복 등으로 인해 중복이 포함될 수 있다. 이번 분석에서는 분석 단위를 “고유 정책문헌”으로 맞추기 위해 <code>policy_document_id</code> 기준으로 통합했다.</p>
+<p>Overton 원본 정책문헌은 같은 문헌의 버전/재게시, 언어 변형, 메타데이터 중복 등으로 인해 중복이 포함될 수 있다. 이번 분석에서는 분석 단위를 “고유 정책문헌”으로 맞추기 위해 고유 문헌 기준으로 통합했다.</p>
 </details>
 <details>
 <summary>
