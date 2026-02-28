@@ -126,41 +126,6 @@
     "text": "3.3 Korea’s self-citation share and two-way routes\n\n\n\nFigure 10. Self-citation share vs expected baseline, plus domain composition for domestic vs non-domestic citations (top 7 policy-source countries + Korea)\n\n\n\nObservation: Korea’s self-citation share is about 4.1% (expected 0.6%; 7.4x) on the known-citation denominator.\nInterpretation: The Korean sample (2,742 policy-source documents) is small and affected by missingness, so this is a trend-check indicator rather than a ranking signal.\nInterpretation guardrail: Expected-vs-observed is relative to a domain-weighted baseline, not an absolute score.\nExtra read: The domain mix differs between self-cited vs non-self-cited research; for Korea, self-cited evidence is more social-science heavy (~77%).\n\n\n\n\nFigure 11. Two-way Korea policy-research flows and domain composition (top 10)\n\n\n\nObservation: Inbound is led by the U.K. (32.8%), IGOs (16.3%), and the U.S. (16.2%), while procurement is dominated by U.S. research (57.3%, known-citation basis).\nInterpretation: Different top channels across directions indicate structural asymmetry.\nInterpretation guardrail: Inbound/procurement shares are normalized within each direction and should not be read as absolute cross-direction magnitudes.\nMonitoring signal: Track inbound top-3 concentration and procurement top-1 dependence separately. Additional insight: the concentration shape differs across directions (inbound is top-3 spread, procurement is top-1 dominated). Against expected baselines, the U.K. over-indexes in inbound (32.8% vs 21.8%), while Korea over-indexes in U.S. procurement (57.3% vs 38.0%).\n\n\n\n\nFigure 12. Policy-research evidence-flow network: top 50 nodes, top 3 links per node\n\n\nFigure 12 summarizes the same asymmetry as a network view. Because it is a reduced map with top nodes and top links only, it should be read as a large-route structure tool, not as a full-network representation.\nChapter 3 takeaway Korea’s inbound and procurement routes follow different structures. Strategy should therefore be route-specific rather than a single one-score prescription."
   },
   {
-    "objectID": "SI/extended_report_en.html#next-quarter-monitoring-frame-same-format",
-    "href": "SI/extended_report_en.html#next-quarter-monitoring-frame-same-format",
-    "title": "Extended Report",
-    "section": "4.1 Next-quarter monitoring frame (same format)",
-    "text": "4.1 Next-quarter monitoring frame (same format)\n\n\n\n\n\n\n\n\n\nMonitoring axis\nCurrent snapshot (baseline)\nNext-quarter question\nWarning signal (example)\n\n\n\n\nEvidence standardization (repeat citation)\nRepeat-citation share (2+ policy docs): 48.1%\nIs the “standard evidence pool” thickening over time?\nConsecutive rise in repeat-citation share\n\n\nKorea procurement concentration\nU.S. share in Korea procurement: 57.3% (known first-author country codes)\nIs procurement becoming more diversified?\nRising top-1 share + persistent top concentration\n\n\nKorea inbound channel concentration\nUK+IGO+US inbound share: 65.3%\nAre inbound channels broadening?\nRising top-3 combined share\n\n\nKorea self-citation position\nSelf-citation share: 4.1% (known first-author country codes)\nIs the level stable as sample coverage expands?\nSharp swings despite larger sample"
-  },
-  {
-    "objectID": "SI/extended_report_en.html#follow-up-analysis-roadmap-short",
-    "href": "SI/extended_report_en.html#follow-up-analysis-roadmap-short",
-    "title": "Extended Report",
-    "section": "4.2 Follow-up analysis roadmap (short)",
-    "text": "4.2 Follow-up analysis roadmap (short)\n\nInclude non-DOI evidence (reports, web sources, legal texts)\nAdd policy-to-policy citation layers\nSeparate citation-context functions (evidence use vs background mention vs critique)\nConnect policy agenda classifications (e.g., SDGs) with topic classifications as a dual frame\n\nDetailed follow-up checklists are in Next questions. Additional figures and diagnostic notes are in Appendix.\nChapter 4 takeaway The priority is not stronger assertion; it is a repeatable observation system."
-  },
-  {
-    "objectID": "SI/extended_report_en.html#what-this-brief-does-say",
-    "href": "SI/extended_report_en.html#what-this-brief-does-say",
-    "title": "Extended Report",
-    "section": "5.1 What this brief does say",
-    "text": "5.1 What this brief does say\n\nObservation: Policy evidence is repeatedly concentrated in a small set of hub channels (Figures 2, 5, 7, 8).\nObservation: Korea’s inbound and procurement routes follow different structural patterns (Figures 6, 9, 10, 11, 12).\nInterpretation: Route-specific repeated monitoring is a higher priority than one-score ranking."
-  },
-  {
-    "objectID": "SI/extended_report_en.html#what-this-brief-does-not-say",
-    "href": "SI/extended_report_en.html#what-this-brief-does-not-say",
-    "title": "Extended Report",
-    "section": "5.2 What this brief does not say",
-    "text": "5.2 What this brief does not say\n\nInterpretation boundary: Citation volume is not treated as direct policy impact/performance.\nScope boundary: Non-DOI evidence (web/legal/report citations) is outside default scope.\nTime boundary: Korea-specific numbers can vary with sample size, missingness, and snapshot updates."
-  },
-  {
-    "objectID": "SI/extended_report_en.html#methods-and-validity-checks-in-extended-report",
-    "href": "SI/extended_report_en.html#methods-and-validity-checks-in-extended-report",
-    "title": "Extended Report",
-    "section": "5.3 Methods and validity checks in Extended Report",
-    "text": "5.3 Methods and validity checks in Extended Report\n\n\n\nQuestion to confirm\nGo to\n\n\n\n\nWhat are the exact scope/denominator/missingness conditions?\nMethods, Matching & missingness\n\n\nHow are core metrics and interpretation guardrails defined?\nCore metrics, Interpretation guardrails\n\n\nWhere are detailed tables and diagnostics?\nAppendix A. Coverage & tagging, Appendix B. Definitions & interpretation, Appendix C. Additional figures\n\n\nWhat should be checked next quarter?\nNext questions"
-  },
-  {
     "objectID": "SI/extended_report_en.html#closing-note",
     "href": "SI/extended_report_en.html#closing-note",
     "title": "Extended Report",
@@ -299,41 +264,6 @@
     "title": "확장 본문 (Extended Report)",
     "section": "3.3 한국의 자국 인용 비중과 두 방향 경로",
     "text": "3.3 한국의 자국 인용 비중과 두 방향 경로\n\n\n\n그림 10. 자국 인용 비중과 기대치 대비, 그리고 자국/비자국 인용의 도메인 구성. 정책 출처 국가 상위 7개국과 한국\n\n\n그림 10은 자국 인용 비중을 1저자 국가코드 확인분 기준으로 비교한다. 한국의 자국 인용 비중은 약 4.1%다(기대치 0.6% 대비 7.4배).\n이 값은 “자국 인용이 높다”는 평가가 아니라, 관측 범위에서 한국 조달 근거의 절대 자국 비중은 낮지만(4.1%), 기준선 대비 상대값은 크게 나타날 수 있음을 보여주는 신호다. 또한 오른쪽 패널은 자국 인용(upper)과 비자국 인용(lower)에서 도메인 믹스가 달라질 수 있음을 보여주며, 한국은 자국 인용에서 사회과학 쏠림이 더 크다(약 77%).\n\n주의: 한국 표본(정책 출처 문헌 2,742편)은 작고 결측 영향이 있어 “순위”보다 “추세 점검” 지표로 읽어야 한다. 기대치 대비 비교는 도메인 가중 기준선에 대한 상대 비교이며 절대평가가 아니다.\n\n\n\n\n그림 11. 한국 정책문헌-연구의 두 방향 흐름과 인용 도메인 구성. 상위 10개\n\n\n그림 11은 유입과 조달의 “상위 경로”가 다름을 한 화면에 놓는다.\n\n유입(한국 연구 -&gt; 글로벌 정책): 영국 32.8% + 국제기구 16.3% + 미국 16.2%로 상위 3채널이 65.3%를 차지한다.\n조달(한국 정책 -&gt; 연구): 미국 연구 비중이 57.3%(1저자 국가코드 확인분)로 크게 나타난다.\n\n한 줄 요지: 유입·조달의 상위 채널이 다르므로, 단일 처방으로는 비대칭을 설명하기 어렵다.\n여기서 중요한 건 “채널이 다르다”뿐 아니라 “집중의 형태가 다르다”는 점이다. 유입은 상위 3채널로 분산된 집중(Top3)이고, 조달은 1개국 쏠림(Top1)이다. 또한 기대치 대비를 함께 보면, 영국은 한국 연구를 기대치보다 더 많이 인용하는 반면(32.8% vs 21.8%), 한국 정책은 미국 연구를 기대치보다 더 많이 조달한다(57.3% vs 38.0%).\n\n주의: 유입·조달 비중은 각 방향 내부 정규화 값이므로, 방향 간 절대 크기 비교 지표가 아니다.\n다음 점검: 유입 상위 3채널 집중도와 조달 상위 1개국 비중을 분리 추적한다.\n\n\n\n\n그림 12. 정책-연구 근거 흐름 네트워크. 상위 50개 노드, 각 노드 상위 3개 연결\n\n\n그림 12는 이 비대칭을 네트워크 관점에서 요약한다. 상위 노드와 상위 연결만 남겨도 몇 개의 굵은 경로 축이 반복적으로 나타난다.\n\n주의: 노드의 거리/위치는 시각화 보조 장치이며, 상위 3개 연결만 남긴 축약본이므로 세부 비율을 읽는 용도가 아니다.\n\n3장 소결론 한국의 유입과 조달은 다른 경로 구조를 보인다. 따라서 전략도 단일 처방이 아니라 경로별 진단이 필요하다."
-  },
-  {
-    "objectID": "SI/extended_report.html#다음-분기-대표-점검동일-포맷",
-    "href": "SI/extended_report.html#다음-분기-대표-점검동일-포맷",
-    "title": "확장 본문 (Extended Report)",
-    "section": "4.1 다음 분기 대표 점검(동일 포맷)",
-    "text": "4.1 다음 분기 대표 점검(동일 포맷)\n\n\n\n\n\n\n\n\n\n점검 축\n현재 스냅샷(기준값)\n다음 분기 질문\n경보 신호(예시)\n\n\n\n\n근거 표준화(반복 인용)\n2회 이상 반복 인용 논문 48.1%\n반복 호출되는 “표준 근거 풀”은 두꺼워지는가\n반복 인용 비중 연속 상승\n\n\n한국 조달 편중\n미국 연구 조달 57.3%(1저자 국가코드 확인분)\n조달 포트폴리오가 다변화되는가\n상위 1개국 비중 상승 + 상위권 고착\n\n\n한국 유입 채널\n영국+국제기구+미국 합계 65.3%\n유입 채널이 넓어지는가\n상위 3채널 합계 상승\n\n\n자국 인용 위치\n자국 인용 4.1%(1저자 국가코드 확인분)\n표본 확대 후에도 위치가 안정적인가\n표본 확대에도 지표 급변"
-  },
-  {
-    "objectID": "SI/extended_report.html#후속-분석-로드맵-짧게",
-    "href": "SI/extended_report.html#후속-분석-로드맵-짧게",
-    "title": "확장 본문 (Extended Report)",
-    "section": "4.2 후속 분석 로드맵 (짧게)",
-    "text": "4.2 후속 분석 로드맵 (짧게)\n\nDOI 밖 인용(보고서·웹·법령) 포함\n정책문헌 간 인용 결합\n인용 문맥(근거 제시/배경 설명/비판) 분리\n정책 의제 분류(SDG 등)와 토픽 분류를 연결한 이중 프레임 점검\n\n각 절의 상세 점검 목록은 다음 질문에서 확인할 수 있다. 추가 그림과 진단 노트는 부록에서 확인할 수 있다.\n4장 소결론 지금 필요한 것은 더 강한 단정이 아니라, 반복 가능한 관측 체계다."
-  },
-  {
-    "objectID": "SI/extended_report.html#이-보고서가-말하는-것",
-    "href": "SI/extended_report.html#이-보고서가-말하는-것",
-    "title": "확장 본문 (Extended Report)",
-    "section": "5.1 이 보고서가 말하는 것",
-    "text": "5.1 이 보고서가 말하는 것\n\n관찰: 정책근거는 소수 허브 채널에 집중되는 구조가 반복 관측된다(그림 5, 6, 7).\n관찰: 한국의 근거 유입과 조달은 서로 다른 경로 구조를 보인다(그림 8, 9, 10, 11, 12).\n해석: 단일 순위 비교보다 경로별 반복 점검 체계를 먼저 세워야 한다."
-  },
-  {
-    "objectID": "SI/extended_report.html#이-보고서가-말하지-않는-것",
-    "href": "SI/extended_report.html#이-보고서가-말하지-않는-것",
-    "title": "확장 본문 (Extended Report)",
-    "section": "5.2 이 보고서가 말하지 않는 것",
-    "text": "5.2 이 보고서가 말하지 않는 것\n\n해석 경계: 인용량 자체를 정책 영향·성과로 직접 해석하지 않는다.\n범위 경계: DOI 밖 근거(웹·법령·보고서 등)는 본문 범위 밖이다.\n시간 경계: 한국 수치는 표본 규모와 결측·스냅샷 업데이트에 따라 변동될 수 있다."
-  },
-  {
-    "objectID": "SI/extended_report.html#방법론정합성은-extended-report에서-확인",
-    "href": "SI/extended_report.html#방법론정합성은-extended-report에서-확인",
-    "title": "확장 본문 (Extended Report)",
-    "section": "5.3 방법론·정합성은 Extended Report에서 확인",
-    "text": "5.3 방법론·정합성은 Extended Report에서 확인\n\n\n\n확인하려는 질문\n이동\n\n\n\n\n분모·범위·결측 조건이 무엇인가\n방법론·데이터 정합성, 매칭·결측\n\n\n지표 정의·해석 가드레일을 확인하고 싶다\n핵심 지표 정의, 해석 가드레일\n\n\n상세 표·추가 진단이 필요하다\n부록 A. 커버리지·태깅, 부록 B. 정의·해석, 부록 C. 추가 그림\n\n\n다음 분기 점검 체크리스트를 보고 싶다\n다음 질문"
   },
   {
     "objectID": "SI/extended_report.html#맺음말-참고문헌이-연결될-때-비교가-열린다",
