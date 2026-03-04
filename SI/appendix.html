@@ -173,6 +173,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#c5.-openalex-subfield-overton-domain-네트워크top-100" id="toc-c5.-openalex-subfield-overton-domain-네트워크top-100" class="nav-link" data-scroll-target="#c5.-openalex-subfield-overton-domain-네트워크top-100">C5. OpenAlex subfield → Overton domain 네트워크(Top 100)</a></li>
   <li><a href="#c6.-불균등반복-인용-분포로그-로그-ccdf" id="toc-c6.-불균등반복-인용-분포로그-로그-ccdf" class="nav-link" data-scroll-target="#c6.-불균등반복-인용-분포로그-로그-ccdf">C6. 불균등·반복 인용 분포(로그-로그 CCDF)</a></li>
   <li><a href="#c7.-수요공급-도메인-구성-차이δ-pp" id="toc-c7.-수요공급-도메인-구성-차이δ-pp" class="nav-link" data-scroll-target="#c7.-수요공급-도메인-구성-차이δ-pp">C7. 수요–공급 도메인 구성 차이(Δ, pp)</a></li>
+  <li><a href="#appendix-c8-policy-research-backbone" id="toc-appendix-c8-policy-research-backbone" class="nav-link" data-scroll-target="#appendix-c8-policy-research-backbone">C8. 정책–연구 근거 흐름 네트워크(그림 12) 백본 민감도</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -1016,6 +1017,23 @@ ul.task-list li input[type="checkbox"] {
 <strong>그림 보기</strong>
 </summary>
 <p><img src="../Assets/Figures/si/country_domain_demand_supply_delta_heatmap.png" class="img-fluid" style="width:96.0%" alt="Domain demand minus supply delta heatmap"></p>
+</details>
+</section>
+<section id="appendix-c8-policy-research-backbone" class="level3">
+<h3 class="anchored" data-anchor-id="appendix-c8-policy-research-backbone">C8. 정책–연구 근거 흐름 네트워크(그림 12) 백본 민감도</h3>
+<p>본문 그림 12는 가독성을 위해 “상위 노드 + 각 노드 상위 연결”만 남긴 축약 지도다. 표시 규칙이 바뀌면 보이는 연결선의 수는 달라지지만, 큰 축(반복적으로 나타나는 굵은 경로)이 얼마나 유지되는지는 별도로 점검할 필요가 있다.</p>
+<ul>
+<li><strong>한 줄 요지:</strong> 백본 규칙(top-3/top-5/all links)을 바꿔도 큰 경로 축이 유지되는지 확인한다.</li>
+<li><strong>왜 넣었나:</strong> 그림 12가 “시각적으로 강하지만 검증이 약하다”는 지적에 답하기 위해, 동일 노드 집합·고정 레이아웃에서 연결선만 바꿔 비교한다.</li>
+<li><strong>해석 경계:</strong> 레이아웃은 비교를 돕기 위한 고정 좌표다. 아래 그림은 “세부 비율”이 아니라 “연결 구조가 유지되는가”를 확인하는 용도다.</li>
+</ul>
+<details>
+<summary>
+<strong>그림 보기</strong>
+</summary>
+<p><img src="../Assets/Figures/si/policy_research_flow_network_backbone_k3_drl.png" class="img-fluid" style="width:100.0%" alt="Backbone sensitivity (k=3): top-3 imports/exports per node"></p>
+<p><img src="../Assets/Figures/si/policy_research_flow_network_backbone_k5_drl.png" class="img-fluid" style="width:100.0%" alt="Backbone sensitivity (k=5): top-5 imports/exports per node"></p>
+<p><img src="../Assets/Figures/si/policy_research_flow_network_backbone_all_drl.png" class="img-fluid" style="width:100.0%" alt="Backbone sensitivity (all links): all links within selected nodes"></p>
 </details>
 
 
