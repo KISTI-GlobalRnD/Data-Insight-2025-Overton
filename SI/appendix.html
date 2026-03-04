@@ -174,6 +174,8 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#c6.-불균등반복-인용-분포로그-로그-ccdf" id="toc-c6.-불균등반복-인용-분포로그-로그-ccdf" class="nav-link" data-scroll-target="#c6.-불균등반복-인용-분포로그-로그-ccdf">C6. 불균등·반복 인용 분포(로그-로그 CCDF)</a></li>
   <li><a href="#c7.-수요공급-도메인-구성-차이δ-pp" id="toc-c7.-수요공급-도메인-구성-차이δ-pp" class="nav-link" data-scroll-target="#c7.-수요공급-도메인-구성-차이δ-pp">C7. 수요–공급 도메인 구성 차이(Δ, pp)</a></li>
   <li><a href="#appendix-c8-policy-research-backbone" id="toc-appendix-c8-policy-research-backbone" class="nav-link" data-scroll-target="#appendix-c8-policy-research-backbone">C8. 정책–연구 근거 흐름 네트워크(그림 12) 백본 민감도</a></li>
+  <li><a href="#appendix-c9-density-robustness" id="toc-appendix-c9-density-robustness" class="nav-link" data-scroll-target="#appendix-c9-density-robustness">C9. 밀도 지표 강건성(평균 vs 중앙값 vs 절단평균)</a></li>
+  <li><a href="#appendix-c10-repeat-citation-sensitivity" id="toc-appendix-c10-repeat-citation-sensitivity" class="nav-link" data-scroll-target="#appendix-c10-repeat-citation-sensitivity">C10. 반복 인용(근거 표준화) 민감도: 임계값·코호트</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -1034,6 +1036,39 @@ ul.task-list li input[type="checkbox"] {
 <p><img src="../Assets/Figures/si/policy_research_flow_network_backbone_k3_drl.png" class="img-fluid" style="width:100.0%" alt="Backbone sensitivity (k=3): top-3 imports/exports per node"></p>
 <p><img src="../Assets/Figures/si/policy_research_flow_network_backbone_k5_drl.png" class="img-fluid" style="width:100.0%" alt="Backbone sensitivity (k=5): top-5 imports/exports per node"></p>
 <p><img src="../Assets/Figures/si/policy_research_flow_network_backbone_all_drl.png" class="img-fluid" style="width:100.0%" alt="Backbone sensitivity (all links): all links within selected nodes"></p>
+</details>
+</section>
+<section id="appendix-c9-density-robustness" class="level3">
+<h3 class="anchored" data-anchor-id="appendix-c9-density-robustness">C9. 밀도 지표 강건성(평균 vs 중앙값 vs 절단평균)</h3>
+<p>본문의 “문헌당 평균 인용(밀도)” 비교는 해석에 유용하지만, <strong>문서 길이·장르·참고문헌 관행의 영향</strong>을 함께 받는 지표다. 평균만 보면 긴 꼬리(outlier)에 민감하므로, <strong>중앙값/절단평균</strong>을 함께 확인해 “총량 허브 vs 밀도 허브” 해석이 얼마나 안정적인지 점검한다.</p>
+<ul>
+<li><strong>한 줄 요지:</strong> 평균이 아닌 통계(중앙값/절단평균)로 봐도 “밀도 패턴”이 유지되는지 확인한다.</li>
+<li><strong>왜 넣었나:</strong> 국가/유형 간 밀도 비교가 “평균 1개”에 과도하게 의존하지 않도록, 분포 강건성 지표를 병기한다.</li>
+<li><strong>해석 경계:</strong> 아래 통계는 <strong>DOI 인용이 1건 이상 관측되는 정책문헌(citing docs)</strong> 기준이다(관측 가능한 범위). 또한 “citing share(전체 문헌 중 citing docs 비중)”이 낮은 집단은 분포 해석이 더 조건부가 된다.</li>
+</ul>
+<p>CSV: - <code>policy_source_country_density_robust.csv</code>(국가/IGO): <a href="../Assets/Figures/si/policy_source_country_density_robust.csv">다운로드</a> - <code>policy_source_type_density_robust.csv</code>(유형): <a href="../Assets/Figures/si/policy_source_type_density_robust.csv">다운로드</a></p>
+<details>
+<summary>
+<strong>그림 보기</strong>
+</summary>
+<p><img src="../Assets/Figures/si/policy_source_country_density_robust.png" class="img-fluid" style="width:100.0%" alt="Density robustness (policy source country): mean vs median vs trimmed mean"></p>
+<p><img src="../Assets/Figures/si/policy_source_type_density_robust.png" class="img-fluid" style="width:100.0%" alt="Density robustness (policy source type): mean vs median vs trimmed mean"></p>
+</details>
+</section>
+<section id="appendix-c10-repeat-citation-sensitivity" class="level3">
+<h3 class="anchored" data-anchor-id="appendix-c10-repeat-citation-sensitivity">C10. 반복 인용(근거 표준화) 민감도: 임계값·코호트</h3>
+<p>본문의 “2회 이상 반복 인용(48.1%)”은 표준 근거의 폭을 읽는 출발점이지만, <strong>임계값 선택(≥2/≥5/≥10)</strong>과 <strong>시간 지연(최근 논문 불리)</strong>의 영향을 받는다. 그래서 같은 정의를 임계값과 발행연도 코호트로 확장해, 해석이 어디까지 안정적인지 함께 보여준다.</p>
+<ul>
+<li><strong>한 줄 요지:</strong> “반복 인용” 지표는 임계값과 발행연도(지연효과)에 민감하므로, 최소한 3개 임계값과 코호트로 함께 읽는다.</li>
+<li><strong>왜 넣었나:</strong> 48.1% 단일 수치의 임의성을 줄이고, “표준 근거의 폭”을 반복 점검 가능한 지표로 만든다.</li>
+<li><strong>해석 경계:</strong> 여기서 반복 인용은 <strong>서로 다른 정책문헌이 같은 논문을 인용한 횟수(정책문헌 기준 반복)</strong>이며, “정책문헌 간 인용”이나 “DOI 밖 근거”는 포함하지 않는다.</li>
+</ul>
+<p>CSV: - <code>repeat_citation_thresholds.csv</code>(전체): <a href="../Assets/Figures/si/repeat_citation_thresholds.csv">다운로드</a> - <code>repeat_citation_by_cohort.csv</code>(코호트): <a href="../Assets/Figures/si/repeat_citation_by_cohort.csv">다운로드</a></p>
+<details>
+<summary>
+<strong>그림 보기</strong>
+</summary>
+<p><img src="../Assets/Figures/si/repeat_citation_sensitivity.png" class="img-fluid" style="width:100.0%" alt="Repeat citation sensitivity (threshold + cohort)"></p>
 </details>
 
 
