@@ -176,6 +176,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#appendix-c8-policy-research-backbone" id="toc-appendix-c8-policy-research-backbone" class="nav-link" data-scroll-target="#appendix-c8-policy-research-backbone">C8. 정책–연구 근거 흐름 네트워크(그림 12) 백본 민감도</a></li>
   <li><a href="#appendix-c9-density-robustness" id="toc-appendix-c9-density-robustness" class="nav-link" data-scroll-target="#appendix-c9-density-robustness">C9. 밀도 지표 강건성(평균 vs 중앙값 vs 절단평균)</a></li>
   <li><a href="#appendix-c10-repeat-citation-sensitivity" id="toc-appendix-c10-repeat-citation-sensitivity" class="nav-link" data-scroll-target="#appendix-c10-repeat-citation-sensitivity">C10. 반복 인용(근거 표준화) 민감도: 임계값·코호트</a></li>
+  <li><a href="#appendix-c11-korea-peers" id="toc-appendix-c11-korea-peers" class="nav-link" data-scroll-target="#appendix-c11-korea-peers">C11. 한국 비교는 “순위”가 아니라 “관측 규모가 비슷한 비교군”으로 읽기</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -1070,6 +1071,94 @@ ul.task-list li input[type="checkbox"] {
 </summary>
 <p><img src="../Assets/Figures/si/repeat_citation_sensitivity.png" class="img-fluid" style="width:100.0%" alt="Repeat citation sensitivity (threshold + cohort)"></p>
 </details>
+</section>
+<section id="appendix-c11-korea-peers" class="level3">
+<h3 class="anchored" data-anchor-id="appendix-c11-korea-peers">C11. 한국 비교는 “순위”가 아니라 “관측 규모가 비슷한 비교군”으로 읽기</h3>
+<p>국가별 순위를 그대로 비교하면, 실제 차이(정책 근거 구조)와 관측 차이(커버리지·표본 규모)가 섞여 오독이 생기기 쉽다. 그래서 한국은 절대 순위로 “판정”하기보다, <strong>관측된 정책 출처 문헌 수(Overton 태깅 기준)</strong>가 비슷한 국가 묶음 안에서 패턴을 먼저 점검하는 편이 안전하다.</p>
+<ul>
+<li><strong>한 줄 요지:</strong> 한국 비교는 “상위권 순위”보다 “관측 규모가 비슷한 비교군”에서 구조 신호를 먼저 읽는다.</li>
+<li><strong>왜 넣었나:</strong> “한국 수치가 조건부”라는 지적에 답하기 위해, 비교의 분모(표본 크기)를 먼저 맞춰 오독을 줄인다.</li>
+<li><strong>해석 경계:</strong> 아래 비교군은 <strong>정책의 실제 규모</strong>가 아니라, Overton에서 관측되는 <strong>정책 출처 문헌(국가 태깅) 표본 규모</strong>가 비슷한 국가들이다.</li>
+</ul>
+<p>CSV: - <code>korea_peer_group_by_policy_docs.csv</code>: <a href="../Assets/Figures/si/korea_peer_group_by_policy_docs.csv">다운로드</a></p>
+<table class="table">
+<colgroup>
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>국가(출처)</th>
+<th>정책문헌 수(출처)</th>
+<th>DOI 인용 포함 문헌</th>
+<th>citing share</th>
+<th>DOI 인용 건수</th>
+<th>문헌당 평균(DOI)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Republic of Korea</td>
+<td>2,742</td>
+<td>2,726</td>
+<td>99%</td>
+<td>32,935</td>
+<td>12.1</td>
+</tr>
+<tr class="even">
+<td>Kenya</td>
+<td>2,614</td>
+<td>2,566</td>
+<td>98%</td>
+<td>43,626</td>
+<td>17.0</td>
+</tr>
+<tr class="odd">
+<td>Uruguay</td>
+<td>2,444</td>
+<td>2,383</td>
+<td>98%</td>
+<td>30,391</td>
+<td>12.8</td>
+</tr>
+<tr class="even">
+<td>Estonia</td>
+<td>2,049</td>
+<td>1,849</td>
+<td>90%</td>
+<td>29,228</td>
+<td>15.8</td>
+</tr>
+<tr class="odd">
+<td>Argentina</td>
+<td>3,601</td>
+<td>3,566</td>
+<td>99%</td>
+<td>37,843</td>
+<td>10.6</td>
+</tr>
+<tr class="even">
+<td>Latvia</td>
+<td>1,835</td>
+<td>1,739</td>
+<td>95%</td>
+<td>21,119</td>
+<td>12.1</td>
+</tr>
+<tr class="odd">
+<td>Chile</td>
+<td>3,656</td>
+<td>3,579</td>
+<td>98%</td>
+<td>44,416</td>
+<td>12.4</td>
+</tr>
+</tbody>
+</table>
 
 
 </section>
