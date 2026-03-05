@@ -177,6 +177,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#appendix-c9-density-robustness" id="toc-appendix-c9-density-robustness" class="nav-link" data-scroll-target="#appendix-c9-density-robustness">C9. 밀도 지표 강건성(평균 vs 중앙값 vs 절단평균)</a></li>
   <li><a href="#appendix-c10-repeat-citation-sensitivity" id="toc-appendix-c10-repeat-citation-sensitivity" class="nav-link" data-scroll-target="#appendix-c10-repeat-citation-sensitivity">C10. 반복 인용(근거 표준화) 민감도: 임계값·코호트</a></li>
   <li><a href="#appendix-c11-korea-peers" id="toc-appendix-c11-korea-peers" class="nav-link" data-scroll-target="#appendix-c11-korea-peers">C11. 한국 비교는 “순위”가 아니라 “관측 규모가 비슷한 비교군”으로 읽기</a></li>
+  <li><a href="#appendix-c12-korea-author-country-sensitivity" id="toc-appendix-c12-korea-author-country-sensitivity" class="nav-link" data-scroll-target="#appendix-c12-korea-author-country-sensitivity">C12. 한국 저자국가 규칙 민감도: 1저자 vs any-author 분수계수 vs corresponding</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -1159,8 +1160,99 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 </tbody>
 </table>
+</section>
+<section id="appendix-c12-korea-author-country-sensitivity" class="level3">
+<h3 class="anchored" data-anchor-id="appendix-c12-korea-author-country-sensitivity">C12. 한국 저자국가 규칙 민감도: 1저자 vs any-author 분수계수 vs corresponding</h3>
+<p>한국의 유입·조달 수치들은 기본적으로 “연구국=1저자 국가코드” 규칙으로 계산했다. 다만 국제공저가 많은 분야에서는 1저자 규칙이 분포를 더 한쪽으로 기울일 수 있다. 그래서 2025.06 OpenAlex 스냅샷 DB에서 저자국가 규칙을 바꿔도 한국 관련 결론이 얼마나 흔들리는지 최소 민감도 점검을 수행했다.</p>
+<ul>
+<li><strong>한 줄 요지:</strong> 규칙을 바꿔도 “조달의 미국 집중”과 “유입의 허브 채널 집중” 구조는 크게 유지되지만, 유입의 “규모”는 any-author 기준에서 약 0.84배로 보정된다.</li>
+<li><strong>왜 넣었나:</strong> “한국 수치가 조건부”라는 지적 중, <em>저자국가 규칙</em>에 따른 변동 폭을 최소 표로 제시하기 위해서다.</li>
+<li><strong>해석 경계:</strong> corresponding 정보는 결측이 커서(works 기준 60%+ 결측) <strong>부분집합 참고용</strong>으로만 쓴다.</li>
+</ul>
+<section id="한국-조달outbound-한국-정책문헌이-어떤-연구를-조달하는가" class="level4">
+<h4 class="anchored" data-anchor-id="한국-조달outbound-한국-정책문헌이-어떤-연구를-조달하는가">(1) 한국 조달(outbound): 한국 정책문헌이 어떤 연구를 조달하는가</h4>
+<table class="table">
+<colgroup>
+<col style="width: 15%">
+<col style="width: 21%">
+<col style="width: 21%">
+<col style="width: 21%">
+<col style="width: 21%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>규칙</th>
+<th style="text-align: right;">커버리지(인용 기준)</th>
+<th style="text-align: right;">US</th>
+<th style="text-align: right;">GB</th>
+<th style="text-align: right;">KR</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1저자(분수계수)</td>
+<td style="text-align: right;">23,947 / 32,935 (72.7%)</td>
+<td style="text-align: right;">55.95%</td>
+<td style="text-align: right;">8.50%</td>
+<td style="text-align: right;">4.65%</td>
+</tr>
+<tr class="even">
+<td>any-author(분수계수)</td>
+<td style="text-align: right;">24,592 / 32,935 (74.7%)</td>
+<td style="text-align: right;">55.66%</td>
+<td style="text-align: right;">8.74%</td>
+<td style="text-align: right;">4.57%</td>
+</tr>
+<tr class="odd">
+<td>corresponding(분수계수)</td>
+<td style="text-align: right;">10,654 / 32,935 (32.4%)</td>
+<td style="text-align: right;">54.81%</td>
+<td style="text-align: right;">9.59%</td>
+<td style="text-align: right;">5.06%</td>
+</tr>
+</tbody>
+</table>
+<p>CSV: - <code>korea_author_country_outbound_first_author.csv</code>: <a href="../Assets/Figures/si/korea_author_country_outbound_first_author.csv">다운로드</a> - <code>korea_author_country_outbound_any_author_fractional.csv</code>: <a href="../Assets/Figures/si/korea_author_country_outbound_any_author_fractional.csv">다운로드</a> - <code>korea_author_country_outbound_corresponding_fractional.csv</code>: <a href="../Assets/Figures/si/korea_author_country_outbound_corresponding_fractional.csv">다운로드</a></p>
+</section>
+<section id="한국-유입inbound-한국-1저자-연구를-글로벌-정책문헌이-어떻게-호출하는가" class="level4">
+<h4 class="anchored" data-anchor-id="한국-유입inbound-한국-1저자-연구를-글로벌-정책문헌이-어떻게-호출하는가">(2) 한국 유입(inbound): “한국 1저자” 연구를 글로벌 정책문헌이 어떻게 호출하는가</h4>
+<p>유입은 기본 정의가 “한국 1저자 논문을 인용한 정책문헌”이므로, any-author 분수계수는 <strong>유입의 규모(한국 기여)</strong>를 보정하는 역할을 한다. 2025.06 DB 기준, 한국 1저자 works에 대한 정책 인용 97,502건은 any-author 분수계수로 환산하면 유효 KR 인용 합이 82,308(0.844배)로 줄어든다.</p>
+<p>정책 출처 채널 구조(국가)는 크게 유지된다(상위 3채널 합계 64.6% → 65.1%).</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>채널(국가)</th>
+<th style="text-align: right;">unweighted</th>
+<th style="text-align: right;">KR-weighted(any-author)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>UK</td>
+<td style="text-align: right;">30.8%</td>
+<td style="text-align: right;">33.1%</td>
+</tr>
+<tr class="even">
+<td>IGO</td>
+<td style="text-align: right;">18.2%</td>
+<td style="text-align: right;">16.5%</td>
+</tr>
+<tr class="odd">
+<td>USA</td>
+<td style="text-align: right;">15.6%</td>
+<td style="text-align: right;">15.5%</td>
+</tr>
+<tr class="even">
+<td>Top3 합</td>
+<td style="text-align: right;">64.6%</td>
+<td style="text-align: right;">65.1%</td>
+</tr>
+</tbody>
+</table>
+<p>CSV: - <code>korea_author_country_inbound_policy_source_country.csv</code>: <a href="../Assets/Figures/si/korea_author_country_inbound_policy_source_country.csv">다운로드</a> - <code>korea_author_country_inbound_policy_source_type.csv</code>: <a href="../Assets/Figures/si/korea_author_country_inbound_policy_source_type.csv">다운로드</a></p>
 
 
+</section>
 </section>
 </section>
 
