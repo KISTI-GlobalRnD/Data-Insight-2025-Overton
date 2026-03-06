@@ -404,8 +404,8 @@ Note
 <div class="callout-body-container callout-body">
 <p><strong>Key numbers (based on Overton DOI citation records)</strong></p>
 <ul>
-<li><strong>DOI → OpenAlex works match</strong>: ~95%</li>
-<li><strong>First-author country code available</strong>: ~80%</li>
+<li><strong>Policy → research DOI citation rows</strong>: 23,370,284</li>
+<li><strong>First-author country code available</strong>: 76.6% (citation-row basis)</li>
 </ul>
 </div>
 </div>
@@ -424,28 +424,29 @@ Note
 <tbody>
 <tr class="odd">
 <td>Overall</td>
-<td style="text-align: right;">80.3%</td>
+<td style="text-align: right;">76.6%</td>
 </tr>
 <tr class="even">
 <td>Republic of Korea</td>
-<td style="text-align: right;">73.3%</td>
+<td style="text-align: right;">70.4%</td>
 </tr>
 <tr class="odd">
 <td>USA</td>
-<td style="text-align: right;">80.1%</td>
+<td style="text-align: right;">78.4%</td>
 </tr>
 <tr class="even">
 <td>UK</td>
-<td style="text-align: right;">86.0%</td>
+<td style="text-align: right;">80.7%</td>
 </tr>
 <tr class="odd">
 <td>IGOs</td>
-<td style="text-align: right;">76.1%</td>
+<td style="text-align: right;">70.0%</td>
 </tr>
 </tbody>
 </table>
 </details>
-<p>For reference, in this analysis we matched about 95% of DOIs extracted from Overton DOI citations (about 6.87M unique DOIs after deduplication) to OpenAlex works (about 6.53M). The remaining ~0.34M DOIs did not match. Formatting errors were rare and most were “DOI-like strings,” suggesting coverage/normalization differences are a more likely cause than syntax errors.</p>
+<p>For reference, the DOI-based citation log used in this report includes only citations where an OpenAlex works id (<code>oaid_w</code>) is available (observed scope).<br>
+Within this scope, we observe 6,530,609 unique DOIs linked to 6,532,365 unique works.</p>
 </section>
 <section id="doi-share" class="level3">
 <h3 class="anchored" data-anchor-id="doi-share">B1. DOI-citation coverage share (97.6%): denominator</h3>
@@ -766,39 +767,39 @@ Note
 <tbody>
 <tr class="odd">
 <td>USA</td>
-<td style="text-align: right;">8,167,080</td>
-<td style="text-align: right;">80.1%</td>
-<td style="text-align: right;">62.9%</td>
+<td style="text-align: right;">4,480,233</td>
+<td style="text-align: right;">78.4%</td>
+<td style="text-align: right;">60.9%</td>
 </tr>
 <tr class="even">
 <td>UK</td>
-<td style="text-align: right;">7,193,932</td>
-<td style="text-align: right;">86.0%</td>
-<td style="text-align: right;">19.6%</td>
+<td style="text-align: right;">1,197,057</td>
+<td style="text-align: right;">80.7%</td>
+<td style="text-align: right;">27.7%</td>
 </tr>
 <tr class="odd">
 <td>Germany</td>
-<td style="text-align: right;">2,335,571</td>
-<td style="text-align: right;">84.4%</td>
-<td style="text-align: right;">11.7%</td>
+<td style="text-align: right;">1,143,950</td>
+<td style="text-align: right;">81.8%</td>
+<td style="text-align: right;">12.6%</td>
 </tr>
 <tr class="even">
 <td>Netherlands</td>
-<td style="text-align: right;">371,817</td>
-<td style="text-align: right;">83.7%</td>
-<td style="text-align: right;">11.9%</td>
+<td style="text-align: right;">191,031</td>
+<td style="text-align: right;">80.7%</td>
+<td style="text-align: right;">14.3%</td>
 </tr>
 <tr class="odd">
 <td>Japan</td>
-<td style="text-align: right;">162,595</td>
-<td style="text-align: right;">85.9%</td>
-<td style="text-align: right;">28.9%</td>
+<td style="text-align: right;">114,180</td>
+<td style="text-align: right;">85.6%</td>
+<td style="text-align: right;">32.3%</td>
 </tr>
 <tr class="even">
 <td>Republic of Korea</td>
-<td style="text-align: right;">30,648</td>
-<td style="text-align: right;">73.3%</td>
-<td style="text-align: right;">4.1%</td>
+<td style="text-align: right;">23,170</td>
+<td style="text-align: right;">70.4%</td>
+<td style="text-align: right;">4.5%</td>
 </tr>
 </tbody>
 </table>

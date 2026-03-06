@@ -325,7 +325,7 @@ Note
 <li>Interpretation: “Channels that produce many documents” and “channels that pack dense evidence per document” should be read separately.</li>
 <li>Monitoring signal: Track whether overlap between top-volume and top-density groups expands or shrinks.</li>
 </ul>
-<p>Korea is useful here precisely because it does not behave like a top hub. Its DOI-observable volume (~33K) and per-document density (~12) are far from hub channels, and its domain mix is unusually social-science heavy (~86%). Treat this as a coverage-sensitive structural signal and verify it again by separating inbound vs procurement (Figure 11).</p>
+<p>Korea is useful here precisely because it does not behave like a top hub. Its DOI-observable volume (~33K) and per-document density (~12) are far from hub channels, and its domain mix is unusually social-science heavy (~78%). Treat this as a coverage-sensitive structural signal and verify it again by separating inbound vs procurement (Figure 11).</p>
 <p>Note: Figure 8 (country-level domain mismatch) is discussed in Chapter 3 because it directly supports the inbound/procurement split.</p>
 </section>
 <section id="evidence-use-patterns-vary-by-source-type" class="level2">
@@ -388,7 +388,7 @@ Note
 </figure>
 </div>
 <p>Figure 9 summarizes procurement portfolios in top policy sources, showing both absolute volume and within-source shares. (Korea is not included in the “top sources” list due to small policy-source volume in this snapshot; Korea-specific procurement is shown in Figure 11B.)</p>
-<p>In Figure 9B, U.S. research is the largest share in many sources (e.g., EU 29%, UK 35%, Germany 39%, Canada 41%, IGO 40%, and the U.S. itself 62%). So U.S.-heavy procurement is a global baseline rather than a Korea-only feature. Korea’s U.S. share (57.3%, Figure 11B) sits on the high end of this distribution.</p>
+<p>In Figure 9B, U.S. research is the largest share in many sources (e.g., EU 29%, UK 35%, Germany 39%, Canada 41%, IGO 40%, and the U.S. itself 62%). So U.S.-heavy procurement is a global baseline rather than a Korea-only feature. Korea’s U.S. share (55.7%, Figure 11B) sits on the high end of this distribution.</p>
 <ul>
 <li>Guardrail: Research country is based on first-author country codes; citations with missing codes are excluded.</li>
 <li>Monitoring signal: Track Korea’s top-1 country share and top-3 combined share, and compare against the top-source baseline (Figure 9B).</li>
@@ -403,7 +403,7 @@ Note
 </figure>
 </div>
 <ul>
-<li>Observation: Korea’s self-citation share is about 4.1% (expected 0.6%; 7.4x) on the known-citation denominator.</li>
+<li>Observation: Korea’s self-citation share is about 4.5% (expected 0.6%; 7.7x) on the known-citation denominator.</li>
 <li>Interpretation: The Korean sample (2,742 policy-source documents) is small and affected by missingness, so this is a trend-check indicator rather than a ranking signal.</li>
 <li>Interpretation guardrail: Expected-vs-observed is relative to a domain-weighted baseline, not an absolute score.</li>
 <li>Extra read: The domain mix differs between self-cited vs non-self-cited research; for Korea, self-cited evidence is more social-science heavy (~77%).</li>
@@ -415,10 +415,10 @@ Note
 </figure>
 </div>
 <ul>
-<li>Observation: Inbound is led by the U.K. (32.8%), IGOs (16.3%), and the U.S. (16.2%), while procurement is dominated by U.S. research (57.3%, known-citation basis).</li>
+<li>Observation: Inbound is led by the U.S. (27.8%), IGOs (19.4%), and the U.K. (7.7%), while procurement is dominated by U.S. research (55.7%, known-citation basis).</li>
 <li>Interpretation: Different top channels across directions indicate structural asymmetry.</li>
 <li>Interpretation guardrail: Inbound/procurement shares are normalized within each direction and should not be read as absolute cross-direction magnitudes.</li>
-<li>Monitoring signal: Track inbound top-3 concentration and procurement top-1 dependence separately. Additional insight: the concentration shape differs across directions (inbound is top-3 spread, procurement is top-1 dominated). Against expected baselines, the U.K. over-indexes in inbound (32.8% vs 21.8%), while Korea over-indexes in U.S. procurement (57.3% vs 38.0%).</li>
+<li>Monitoring signal: Track inbound top-3 concentration and procurement top-1 dependence separately. Additional insight: the concentration shape differs across directions (inbound is top-3 spread, procurement is top-1 dominated). Against expected baselines, inbound is close to baseline for major channels (e.g., U.S. 27.8% vs 26.7%), while Korea over-indexes in U.S. procurement (55.7% vs 37.7%).</li>
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -459,19 +459,19 @@ Note
 </tr>
 <tr class="even">
 <td>Korea procurement concentration</td>
-<td>U.S. share in Korea procurement: 57.3% (known first-author country codes)</td>
+<td>U.S. share in Korea procurement: 55.7% (known first-author country codes)</td>
 <td>Is procurement becoming more diversified?</td>
 <td>Rising top-1 share and persistent top concentration</td>
 </tr>
 <tr class="odd">
 <td>Korea inbound channel concentration</td>
-<td>Combined UK, IGO, and U.S. inbound share: 65.3%</td>
+<td>Combined U.S., IGO, and U.K. inbound share: 54.8%</td>
 <td>Are inbound channels broadening?</td>
 <td>Rising top-3 combined share</td>
 </tr>
 <tr class="even">
 <td>Korea self-citation position</td>
-<td>Self-citation share: 4.1% (known first-author country codes)</td>
+<td>Self-citation share: 4.5% (known first-author country codes)</td>
 <td>Is the level stable as sample coverage expands?</td>
 <td>Sharp swings despite larger sample</td>
 </tr>

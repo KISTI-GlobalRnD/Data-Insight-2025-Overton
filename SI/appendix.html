@@ -408,8 +408,8 @@ ul.task-list li input[type="checkbox"] {
 <div class="callout-body-container callout-body">
 <p><strong>핵심 숫자(Overton DOI 인용 기록 기준)</strong></p>
 <ul>
-<li><strong>DOI → OpenAlex 논문(works) 연결</strong>: 약 95%</li>
-<li><strong>1저자 국가코드 연결</strong>: 약 80%</li>
+<li><strong>정책문헌→학술논문 DOI 인용 기록(citation rows)</strong>: 23,370,284건</li>
+<li><strong>1저자 국가코드가 확인되는 인용 비중</strong>: 76.6%(citation rows 기준)</li>
 </ul>
 </div>
 </div>
@@ -428,28 +428,29 @@ ul.task-list li input[type="checkbox"] {
 <tbody>
 <tr class="odd">
 <td>전체</td>
-<td style="text-align: right;">80.3%</td>
+<td style="text-align: right;">76.6%</td>
 </tr>
 <tr class="even">
 <td>한국</td>
-<td style="text-align: right;">73.3%</td>
+<td style="text-align: right;">70.4%</td>
 </tr>
 <tr class="odd">
 <td>미국</td>
-<td style="text-align: right;">80.1%</td>
+<td style="text-align: right;">78.4%</td>
 </tr>
 <tr class="even">
 <td>영국</td>
-<td style="text-align: right;">86.0%</td>
+<td style="text-align: right;">80.7%</td>
 </tr>
 <tr class="odd">
 <td>국제기구</td>
-<td style="text-align: right;">76.1%</td>
+<td style="text-align: right;">70.0%</td>
 </tr>
 </tbody>
 </table>
 </details>
-<p>참고로 이번 분석에서는 Overton DOI 인용에서 추출한 DOI 목록(중복 제거 기준 약 687만 개) 가운데 약 95%를 OpenAlex 논문 레코드(works)로 연결했다(약 653만 개). 나머지 약 34만 DOI는 OpenAlex에서 일치하는 레코드를 찾지 못했으며, 형식 오류보다 커버리지와 정규화 차이의 가능성이 크다.</p>
+<p>참고로, 본 보고서에서 사용하는 DOI 기반 인용 로그는 OpenAlex works id(<code>oaid_w</code>)가 확인되는 인용만 포함한다(= 관측 범위).<br>
+이 범위에서 고유 DOI는 6,530,609개이고, 고유 works는 6,532,365편이다.</p>
 </section>
 <section id="doi-share" class="level3">
 <h3 class="anchored" data-anchor-id="doi-share">B1. DOI 인용 포함 비중(97.6%): 분모 정의</h3>
@@ -763,39 +764,39 @@ ul.task-list li input[type="checkbox"] {
 <tbody>
 <tr class="odd">
 <td>미국</td>
-<td style="text-align: right;">8,167,080</td>
-<td style="text-align: right;">80.1%</td>
-<td style="text-align: right;">62.9%</td>
+<td style="text-align: right;">4,480,233</td>
+<td style="text-align: right;">78.4%</td>
+<td style="text-align: right;">60.9%</td>
 </tr>
 <tr class="even">
 <td>영국</td>
-<td style="text-align: right;">7,193,932</td>
-<td style="text-align: right;">86.0%</td>
-<td style="text-align: right;">19.6%</td>
+<td style="text-align: right;">1,197,057</td>
+<td style="text-align: right;">80.7%</td>
+<td style="text-align: right;">27.7%</td>
 </tr>
 <tr class="odd">
 <td>독일</td>
-<td style="text-align: right;">2,335,571</td>
-<td style="text-align: right;">84.4%</td>
-<td style="text-align: right;">11.7%</td>
+<td style="text-align: right;">1,143,950</td>
+<td style="text-align: right;">81.8%</td>
+<td style="text-align: right;">12.6%</td>
 </tr>
 <tr class="even">
 <td>네덜란드</td>
-<td style="text-align: right;">371,817</td>
-<td style="text-align: right;">83.7%</td>
-<td style="text-align: right;">11.9%</td>
+<td style="text-align: right;">191,031</td>
+<td style="text-align: right;">80.7%</td>
+<td style="text-align: right;">14.3%</td>
 </tr>
 <tr class="odd">
 <td>일본</td>
-<td style="text-align: right;">162,595</td>
-<td style="text-align: right;">85.9%</td>
-<td style="text-align: right;">28.9%</td>
+<td style="text-align: right;">114,180</td>
+<td style="text-align: right;">85.6%</td>
+<td style="text-align: right;">32.3%</td>
 </tr>
 <tr class="even">
 <td>한국</td>
-<td style="text-align: right;">30,648</td>
-<td style="text-align: right;">73.3%</td>
-<td style="text-align: right;">4.1%</td>
+<td style="text-align: right;">23,170</td>
+<td style="text-align: right;">70.4%</td>
+<td style="text-align: right;">4.5%</td>
 </tr>
 </tbody>
 </table>
@@ -1255,11 +1256,13 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="appendix-c13-join-multiplicity" class="level3">
 <h3 class="anchored" data-anchor-id="appendix-c13-join-multiplicity">C13. 한국 유입 비중이 흔들리는 이유: 조인(row multiplicity) 점검</h3>
-<p>보고서의 “정책 출처 × 연구국” 계열 지표(예: 그림 11)는 인용 로그를 여러 테이블과 조인해 만든 중간 매트릭스를 기반으로 한다. 이 과정에서는 <strong>같은 인용이 여러 번 세어질 수 있는 구조</strong>가 생기며, 집계 순서에 따라 특정 채널의 비중이 과대(또는 과소)될 수 있다.</p>
+<p>보고서의 “정책 출처 × 연구국” 계열 지표(예: 그림 11)는 인용 로그를 여러 테이블과 조인해 만든 매트릭스를 기반으로 한다. 이때 조인 대상 테이블이 <strong>1:1이 아니라 1:N(= row multiplicity)</strong> 구조를 가지면, 같은 인용이 여러 번 세어져 특정 채널의 비중이 과대(또는 과소)될 수 있다.</p>
+<p>이번 버전에서는 아래 두 원인을 확인한 뒤, <strong>보고서 파이프라인에서 중복을 제거(dedup)</strong>하도록 수정했다(중간 매트릭스도 dedup 입력을 사용). 아래는 “왜 이 점검이 필요했는가”를 남겨 두기 위한 기술 메모다.</p>
 <p>대표적인 원인은 두 가지다.</p>
 <ol type="1">
 <li><p><strong>OpenAlex 매칭 테이블의 row multiplicity(1 work → 여러 row)</strong><br>
-<code>Data/matched_openalex_with_oa_country.parquet</code>는 1편의 논문이 다중 소속(국가)으로 펼쳐지면서 work 단위로 1:1 매핑이 깨질 수 있다.</p>
+(원본) <code>Data/matched_openalex_with_oa_country.parquet</code>는 1편의 논문이 다중 소속(국가)으로 펼쳐지면서 work 단위로 1:1 매핑이 깨질 수 있다.<br>
+(조치) 보고서 파이프라인에서는 work당 1행만 남긴 <code>Data/matched_openalex_with_oa_country_unique.parquet</code>를 사용한다.</p>
 <ul>
 <li>rows: 8,670,128</li>
 <li>unique works: 6,532,365</li>
@@ -1268,9 +1271,9 @@ ul.task-list li input[type="checkbox"] {
 </ul></li>
 <li><p><strong>정책 출처 태그 테이블의 중복 태그(1 doc → 동일 태그 반복)</strong><br>
 <code>Data/overton_policy_meta/policy_source_country.parquet</code>에는 동일한 <code>(policy_document_id, policy_source_country)</code>가 반복 저장된 사례가 있다(예: <code>UK</code> 태그가 한 문헌에서 최대 86회 반복).<br>
-따라서 태그 테이블은 조인 전에 <code>SELECT DISTINCT</code>로 정리하는 편이 안전하다.</p></li>
+(조치) 보고서 파이프라인에서는 조인 전에 doc-tag를 <code>SELECT DISTINCT</code>로 정리한 <code>..._clean.parquet</code>를 사용한다.</p></li>
 </ol>
-<p>이 영향은 “한국 유입(연구국=KR)”에서 특히 크게 나타난다. 중간 매트릭스(<code>policy_country × research_country</code>)에서 <code>research_country=KR</code>만 모으면 총 224,657건으로 집계되지만, 인용 로그에서 중복 없이 다시 세면 97,502건으로 약 <strong>2.30배</strong> 차이가 난다.</p>
+<p>참고로, 위 중복을 제거하기 전(legacy 파이프라인)에는 “한국 유입(연구국=KR)”에서 영향이 특히 크게 나타났다. 중간 매트릭스(<code>policy_country × research_country</code>)에서 <code>research_country=KR</code>만 모으면 총 224,657건으로 집계되지만, 인용 로그에서 dedup으로 다시 세면 97,502건으로 약 <strong>2.30배</strong> 차이가 났다.</p>
 <p>아래 표는 주요 채널에서의 차이를 보여준다(예: UK는 약 10배 과대 계수).</p>
 <p>CSV: - <code>korea_inbound_flow_vs_dedup.csv</code>: <a href="../Assets/Figures/si/korea_inbound_flow_vs_dedup.csv">다운로드</a></p>
 <table class="table">
@@ -1321,7 +1324,7 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 </tbody>
 </table>
-<p><strong>해석 팁:</strong> 이런 경우 “중간 매트릭스”는 구조(허브/경로)를 빠르게 보는 데는 유용하지만, <strong>정확한 분모와 비중은 dedup 재계산(예: C12 표)</strong>을 기준으로 읽는 편이 안전하다.</p>
+<p><strong>해석 팁:</strong> “중간 매트릭스”는 구조(허브/경로)를 빠르게 보는 데 유용하지만, 비중이 민감한 결론은 <strong>dedup된 기준표(예: C12)</strong>를 우선 기준으로 읽는 편이 안전하다.</p>
 
 
 </section>
