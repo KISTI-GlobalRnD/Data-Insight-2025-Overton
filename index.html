@@ -79,16 +79,27 @@ ul.task-list li input[type="checkbox"] {
       <img src="Assets/Landing/hero_network.png" alt="" loading="lazy">
     </div>
     <div class="promo-hero__inner">
-      <p class="promo-kicker" data-reveal="" data-reveal-delay="0">Overton × OpenAlex Data Insight</p>
-      <h1 class="promo-title" data-reveal="" data-reveal-delay="50">과학은 정책으로 이동한다. 하지만 경로는 균등하지 않다.</h1>
+      <p class="promo-kicker" data-reveal="" data-reveal-delay="0">메인 보고서 1장 · Data Insight</p>
+      <h1 class="promo-title" data-reveal="" data-reveal-delay="50">정책근거는 허브에 쌓이고, 한국의 경로는 비대칭이다.</h1>
       <p class="promo-lede" data-reveal="" data-reveal-delay="110">
-        정책문헌-학술논문 인용 연결은 크게 늘었지만, 근거 사용 경로는 균등하지 않다.
-        어떤 분야·토픽, 어떤 국가·기관 채널로 근거가 집중되는지 점검한다.
+        이 보고서는 “얼마나 인용하는가”보다, 정책근거가 어디에 쌓이고 어떤 경로를 따라 반복 호출되는지를 본다.
+        메인 보고서의 흐름을 그대로 따라가며 허브, 한국, 두 속도, 반복 측정 축을 차례로 보여준다.
       </p>
       <p class="promo-lede promo-lede--secondary" data-reveal="" data-reveal-delay="160">
-        Overton 인용 로그와 OpenAlex 메타데이터를 결합해 정책이 과학을
-        <strong>언제·무엇을·어디서</strong> 가져오는지 한 페이지로 정리했다.
+        관측 범위는 Overton에서 DOI로 연결되는 정책문헌→학술논문 인용이다.
+        즉 정책 전체가 아니라, <strong>DOI로 관측 가능한 근거 연결 구조</strong>를 진단한다.
       </p>
+
+      <div class="promo-flow" aria-label="메인 보고서 구성" data-reveal="" data-reveal-delay="190">
+        <div class="promo-flow__label">메인 보고서 흐름</div>
+        <div class="promo-flow__items">
+          <span class="promo-flow__item">1 · Data Insight</span>
+          <span class="promo-flow__item">2 · 허브</span>
+          <span class="promo-flow__item">3 · 한국</span>
+          <span class="promo-flow__item">4 · 두 속도</span>
+          <span class="promo-flow__item">5 · 반복 측정</span>
+        </div>
+      </div>
 
       <div class="promo-actions" role="group" aria-label="빠른 이동" data-reveal="" data-reveal-delay="220">
         <a class="promo-btn promo-btn--primary" href="./Report/Report_final.pdf">메인 보고서(PDF) 보기</a>
@@ -97,16 +108,16 @@ ul.task-list li input[type="checkbox"] {
 
       <div class="promo-stats" aria-label="요약 지표" data-reveal="" data-reveal-delay="260">
         <div class="promo-stat">
-          <div class="promo-stat__value">2,337만</div>
-          <div class="promo-stat__label">정책→연구 인용 연결</div>
+          <div class="promo-stat__value">54.8%</div>
+          <div class="promo-stat__label">한국 유입 상위 3채널 합계</div>
         </div>
         <div class="promo-stat">
-          <div class="promo-stat__value">138만</div>
-          <div class="promo-stat__label">정책문헌(중복 제거)</div>
+          <div class="promo-stat__value">55.7%</div>
+          <div class="promo-stat__label">한국 조달 상위 1개국 비중</div>
         </div>
         <div class="promo-stat">
-          <div class="promo-stat__value">653만</div>
-          <div class="promo-stat__label">인용된 DOI(고유)</div>
+          <div class="promo-stat__value">48.1%</div>
+          <div class="promo-stat__label">2회 이상 반복 인용된 논문</div>
         </div>
         <div class="promo-stat">
           <div class="promo-stat__value">97.6%</div>
@@ -114,7 +125,7 @@ ul.task-list li input[type="checkbox"] {
         </div>
       </div>
 
-      <p class="promo-meta" data-reveal="" data-reveal-delay="300">데이터 스냅샷: Overton 2025.02 · OpenAlex 2025.06 · DOI 기반 매칭</p>
+      <p class="promo-meta" data-reveal="" data-reveal-delay="300">데이터 스냅샷: Overton 2025.02 · OpenAlex 2025.06 · DOI 기반 매칭 · 메인 보고서와 동일한 순서로 구성</p>
       <div class="promo-scroll" aria-hidden="true" data-reveal="" data-reveal-delay="340">
         <span class="promo-scroll__label">Scroll</span>
         <span class="promo-scroll__bar"></span>
@@ -123,116 +134,149 @@ ul.task-list li input[type="checkbox"] {
   </section>
 
   <section class="promo-scrolly" id="story" data-scrolly="">
+    <div class="promo-scrolly__intro" data-reveal="">
+      <p class="promo-section-kicker">메인 보고서 2-4장</p>
+      <h2 class="promo-section-title anchored">보고서 순서대로 핵심 장면만 따라 읽기</h2>
+      <p class="promo-section-lede">
+        2장은 허브 구조, 3장은 한국의 비대칭, 4장은 정책근거의 두 속도를 다룬다.
+        랜딩에서도 같은 순서로 배치해 보고서와 읽는 흐름이 어긋나지 않게 했다.
+      </p>
+    </div>
+
     <div class="promo-scrolly__sticky">
       <div class="promo-scrolly__stage">
-        <figure class="promo-figure is-active figure" data-figure-id="pubyear" aria-hidden="false">
-          <img src="Assets/Landing/pubyear_trend.png" alt="정책문헌 발행연도별 인용수·문헌수·문헌당 인용수" loading="lazy" class="figure-img">
-          <figcaption>정책문헌 발행연도별 인용 규모와 문헌당 인용수.</figcaption>
+        <figure class="promo-figure is-active figure" data-figure-id="hub-country" aria-hidden="false">
+          <img src="Assets/Landing/country_citations_top10.png" alt="정책 출처별 총 인용과 문헌당 평균 인용, 도메인 구성" loading="lazy" class="figure-img">
+          <figcaption>총량 허브와 밀도 허브는 같은 집합이 아니다.</figcaption>
         </figure>
 
-        <figure class="promo-figure figure" data-figure-id="network" aria-hidden="true">
-          <img src="Assets/Landing/flow_network.png" alt="정책–연구 흐름 네트워크" loading="lazy" class="figure-img">
-          <figcaption>정책–연구 흐름을 네트워크로 요약(예시).</figcaption>
-        </figure>
-
-        <figure class="promo-figure figure" data-figure-id="country-flow" aria-hidden="true">
-          <img src="Assets/Landing/country_flow.png" alt="정책국→연구국 흐름(히트맵)" loading="lazy" class="figure-img">
-          <figcaption>정책문헌의 국가와 인용된 연구의 국가 간 연결 구조.</figcaption>
-        </figure>
-
-        <figure class="promo-figure figure" data-figure-id="source-type" aria-hidden="true">
-          <img src="Assets/Landing/source_type_scatter.png" alt="출처 유형별 총 인용과 문헌당 인용의 관계(산점도)" loading="lazy" class="figure-img">
-          <figcaption>출처 유형별 총량과 문헌당 인용의 관계(더 많이 vs 더 촘촘히).</figcaption>
+        <figure class="promo-figure figure" data-figure-id="hub-type" aria-hidden="true">
+          <img src="Assets/Landing/source_type_domain.png" alt="출처 유형과 도메인 구성의 관계" loading="lazy" class="figure-img">
+          <figcaption>출처 유형이 바뀌면 근거의 분야 구성도 달라진다.</figcaption>
         </figure>
 
         <figure class="promo-figure figure" data-figure-id="korea" aria-hidden="true">
           <img src="Assets/Landing/korea_flows.png" alt="한국 정책-연구 유입·조달 흐름(상위 10개)" loading="lazy" class="figure-img">
           <figcaption>한국의 유입(한국 연구→글로벌 정책)과 조달(한국 정책→인용 연구국)을 분리해 비교.</figcaption>
         </figure>
+
+        <figure class="promo-figure figure" data-figure-id="two-speed" aria-hidden="true">
+          <img src="Assets/Landing/topic_intensity_vs_recency.png" alt="토픽별 인용 강도와 최근성" loading="lazy" class="figure-img">
+          <figcaption>정책근거는 성숙한 축과 급등하는 축이 함께 움직인다.</figcaption>
+        </figure>
       </div>
     </div>
 
     <div class="promo-scrolly__steps" aria-label="스토리 단계">
-      <div class="promo-step is-active" data-figure="pubyear" aria-current="step">
-        <p class="promo-step__kicker">1 · 규모</p>
-        <h2 class="promo-step__title anchored">정책 인용은 늘고, 분포는 달라진다</h2>
+      <div class="promo-step is-active" data-figure="hub-country" aria-current="step">
+        <p class="promo-step__kicker">2장 · 허브</p>
+        <h2 class="promo-step__title anchored">총량 허브와 밀도 허브는 다르게 나타난다</h2>
         <p class="promo-step__body">
-          발행연도 기준으로 정책문헌의 DOI 인용은 2010년대 이후 빠르게 증가한다.
-          총량과 문서당 밀도를 함께 보면, “언제” 그리고 “어디에” 근거가 집중되는지 읽을 수 있다.
+          메인 보고서 2장의 첫 질문은 “근거가 어디에 쌓이는가”다.
+          어떤 출처는 인용 총량이 크고, 어떤 출처는 문헌 한 편당 근거 밀도가 높다.
+          허브는 한 종류가 아니라 역할이 다른 채널들의 집합으로 읽어야 한다.
         </p>
       </div>
 
-      <div class="promo-step" data-figure="network">
-        <p class="promo-step__kicker">2 · 구조</p>
-        <h2 class="promo-step__title anchored">허브 집중이 연결 구조를 만든다</h2>
+      <div class="promo-step" data-figure="hub-type">
+        <p class="promo-step__kicker">2장 · 허브(유형)</p>
+        <h2 class="promo-step__title anchored">출처 유형이 바뀌면 인용 방식과 분야 구성이 바뀐다</h2>
         <p class="promo-step__body">
-          인용은 합계가 아니라 연결이다. 일부 노드와 경로가 더 두껍게 나타난다면,
-          정책 근거가 소수 허브 채널을 통해 반복적으로 유통되고 있음을 뜻한다.
-        </p>
-      </div>
-
-      <div class="promo-step" data-figure="country-flow">
-        <p class="promo-step__kicker">3 · 흐름</p>
-        <h2 class="promo-step__title anchored">정책국과 연구국은 대칭이 아니다</h2>
-        <p class="promo-step__body">
-          정책문헌이 생산된 국가와 인용된 연구의 1저자 국가를 연결해 국제 지식 흐름을 본다.
-          어떤 정책국은 자국 연구를 더 많이 끌어쓰고, 어떤 정책국은 다국적 연구를 폭넓게 섞는다.
-        </p>
-      </div>
-
-      <div class="promo-step" data-figure="source-type">
-        <p class="promo-step__kicker">4 · 맥락</p>
-        <h2 class="promo-step__title anchored">기관 유형마다 ‘인용 방식’이 다르다</h2>
-        <p class="promo-step__body">
-          정책문헌 출처 유형에 따라 총 인용(규모)과 문서당 인용(밀도)이 달라질 수 있다.
-          같은 정책이라도 어떤 유형은 넓게 인용하고, 어떤 유형은 한 문서에 근거를 더 촘촘히 담는다.
+          정부, 국제기구, 전문기관, 싱크탱크는 같은 방식으로 근거를 쓰지 않는다.
+          그래서 허브 집중은 “어디에 많이 모이나”뿐 아니라 “누가 무엇을 가져오나”까지 함께 봐야 한다.
         </p>
       </div>
 
       <div class="promo-step" data-figure="korea">
-        <p class="promo-step__kicker">5 · 한국</p>
-        <h2 class="promo-step__title anchored">한국은 유입·조달이 비대칭이다</h2>
+        <p class="promo-step__kicker">3장 · 한국</p>
+        <h2 class="promo-step__title anchored">한국은 유입과 조달의 집중 축이 다르다</h2>
         <p class="promo-step__body">
-          한국 연구가 글로벌 정책문헌에서 어떻게 호출되는지(유입)와, 한국 정책문헌이 어떤 연구를 조달하는지(조달)를 분리해 비교한다.
-          해석과 한계(표본/태깅)는 확장 자료에서 함께 정리한다.
+          메인 보고서 3장은 한국을 한 점수가 아니라 두 방향으로 읽는다.
+          한국 연구가 글로벌 정책에서 들어가는 경로와, 한국 정책문헌이 연구를 조달하는 경로는 같은 모양이 아니다.
+          그래서 진단도 유입과 조달을 분리해 봐야 한다.
         </p>
+      </div>
+
+      <div class="promo-step" data-figure="two-speed">
+        <p class="promo-step__kicker">4장 · 두 속도</p>
+        <h2 class="promo-step__title anchored">정책근거는 같은 속도로 움직이지 않는다</h2>
+        <p class="promo-step__body">
+          어떤 토픽은 오랫동안 누적된 표준 근거로 작동하고, 어떤 토픽은 최근 연구를 빠르게 끌어오며 급등한다.
+          메인 보고서 4장은 이 차이를 “업데이트 전략의 차이”로 읽는다.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="promo-monitor" id="monitor">
+    <div class="promo-monitor__inner">
+      <p class="promo-section-kicker">메인 보고서 5장</p>
+      <h2 class="promo-section-title anchored">다음은 반복 측정이다</h2>
+      <p class="promo-section-lede">
+        이 보고서의 마지막 장은 결론을 더 크게 만드는 것이 아니라, 같은 정의로 다시 계산할 점검 축을 고정하는 데 있다.
+        아래 네 질문만 계속 추적해도 허브 구조와 한국의 변화 방향을 읽을 수 있다.
+      </p>
+
+      <div class="promo-monitor__grid">
+        <article class="promo-monitor-card">
+          <div class="promo-monitor-card__value">48.1%</div>
+          <div class="promo-monitor-card__title">표준 근거의 폭</div>
+          <p class="promo-monitor-card__body">2회 이상 반복 인용된 논문 비중. 다음 업데이트에서 더 넓어지는지, 아니면 더 좁아지는지를 본다.</p>
+        </article>
+        <article class="promo-monitor-card">
+          <div class="promo-monitor-card__value">허브 추세</div>
+          <div class="promo-monitor-card__title">총량 허브 vs 밀도 허브</div>
+          <p class="promo-monitor-card__body">상위 채널 집중도가 완화·유지·심화 중 어디로 가는지, 총량과 밀도를 분리해 추적한다.</p>
+        </article>
+        <article class="promo-monitor-card">
+          <div class="promo-monitor-card__value">55.7%</div>
+          <div class="promo-monitor-card__title">한국 조달 상위 1개국</div>
+          <p class="promo-monitor-card__body">한국 정책문헌의 미국 연구 조달 비중. 조달선이 다변화되는지부터 점검한다.</p>
+        </article>
+        <article class="promo-monitor-card">
+          <div class="promo-monitor-card__value">54.8%</div>
+          <div class="promo-monitor-card__title">한국 유입 상위 3채널</div>
+          <p class="promo-monitor-card__body">미국·국제기구·영국 합계. 한국 연구가 글로벌 정책에서 어느 채널을 통해 들어가는지 폭이 넓어지는지를 본다.</p>
+        </article>
+      </div>
+
+      <div class="promo-monitor__actions">
+        <a class="promo-btn promo-btn--primary" href="./SI/next_questions.html">다음 질문 보기</a>
+        <a class="promo-btn promo-btn--ghost" href="./Report/Report_final.pdf">메인 보고서(PDF) 다시 보기</a>
       </div>
     </div>
   </section>
 
   <section class="promo-explore" id="explore">
     <div class="promo-explore__inner">
-      <h2 class="promo-section-title anchored">더 깊게 보기</h2>
-      <p class="promo-section-lede">핵심 서술은 메인 보고서(PDF)에서, 정의·방법·추가 그림은 확장 자료에서 확인한다.</p>
+      <h2 class="promo-section-title anchored">필요한 층으로 바로 들어가기</h2>
+      <p class="promo-section-lede">메인 보고서와 확장 자료를 같은 흐름으로 읽되, 목적에 맞는 층으로 바로 이동할 수 있게 정리했다.</p>
 
       <div class="promo-cards" role="list">
         <a class="promo-card" role="listitem" href="./Report/Report_final.pdf">
+          <div class="promo-card__meta">핵심 메시지 · 5분</div>
           <div class="promo-card__title">메인 보고서(PDF)</div>
-          <div class="promo-card__desc">1페이지 요약 · 핵심 5장</div>
-        </a>
-        <a class="promo-card" role="listitem" href="./SI/index.html">
-          <div class="promo-card__title">확장 자료 안내</div>
-          <div class="promo-card__desc">읽는 순서 · 연결표</div>
+          <div class="promo-card__desc">Data Insight부터 반복 측정까지, 전체 주장 구조를 가장 짧게 읽는 경로</div>
         </a>
         <a class="promo-card" role="listitem" href="./SI/extended_report.html">
+          <div class="promo-card__meta">맥락 · 12분</div>
           <div class="promo-card__title">확장 본문</div>
-          <div class="promo-card__desc">핵심 메시지의 맥락 · 해석</div>
+          <div class="promo-card__desc">메인 보고서의 각 장이 어떤 관측과 해석 경계 위에서 나온 것인지 이어서 읽기</div>
         </a>
         <a class="promo-card" role="listitem" href="./SI/methods.html">
+          <div class="promo-card__meta">분모 · 결측 · 8분</div>
           <div class="promo-card__title">방법론·데이터 정합성</div>
-          <div class="promo-card__desc">분모 · 결측 · 해석 가드레일</div>
+          <div class="promo-card__desc">DOI 관측 범위, 1저자 국가코드, 결측과 해석 가드레일을 먼저 확인할 때</div>
         </a>
         <a class="promo-card" role="listitem" href="./SI/interactive.html">
+          <div class="promo-card__meta">그림 탐색</div>
           <div class="promo-card__title">인터랙티브</div>
-          <div class="promo-card__desc">그림 1–12 탐색</div>
+          <div class="promo-card__desc">그림 1–12를 확대·축소하며 세부 값을 직접 확인하는 경로</div>
         </a>
         <a class="promo-card" role="listitem" href="./SI/appendix.html">
+          <div class="promo-card__meta">정의 · 부가 진단</div>
           <div class="promo-card__title">부록</div>
-          <div class="promo-card__desc">정의 · 한계 · 추가 그림</div>
-        </a>
-        <a class="promo-card" role="listitem" href="./SI/next_questions.html">
-          <div class="promo-card__title">다음 질문</div>
-          <div class="promo-card__desc">다음 분기 반복 점검</div>
+          <div class="promo-card__desc">정의, 민감도, 추가 그림과 표를 한 번에 모아 보는 참고 레이어</div>
         </a>
       </div>
     </div>
