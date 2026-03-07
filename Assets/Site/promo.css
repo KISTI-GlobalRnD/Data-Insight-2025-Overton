@@ -272,14 +272,14 @@ html.has-js [data-reveal].is-inview {
 .promo-flow__item {
   display: inline-flex;
   align-items: center;
-  padding: 0.48rem 0.78rem;
+  padding: 0.42rem 0.72rem;
   border-radius: 999px;
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  background: rgba(255, 255, 255, 0.05);
-  color: rgba(234, 240, 255, 0.82);
-  font-size: 0.95rem;
-  font-weight: 650;
-  letter-spacing: -0.01em;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.02);
+  color: rgba(234, 240, 255, 0.7);
+  font-size: 0.9rem;
+  font-weight: 620;
+  letter-spacing: 0;
 }
 
 .promo-scroll {
@@ -307,21 +307,42 @@ html.has-js [data-reveal].is-inview {
 }
 
 .promo-btn {
+  position: relative;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  padding: 0.8rem 1.15rem;
-  border-radius: 999px;
-  border: 1px solid var(--promo-border);
-  background: rgba(255, 255, 255, 0.06);
+  min-height: 48px;
+  padding: 0.85rem 1.2rem;
+  border-radius: 14px;
+  border: 1px solid rgba(127, 191, 159, 0.22);
+  background: rgba(10, 17, 24, 0.88);
   color: var(--promo-text);
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 760;
+  letter-spacing: -0.01em;
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.28);
+  transition:
+    transform 180ms ease,
+    background-color 180ms ease,
+    border-color 180ms ease,
+    box-shadow 180ms ease,
+    filter 180ms ease;
+}
+
+.promo-btn::after {
+  content: "↗";
+  font-size: 0.92rem;
+  line-height: 1;
+  color: currentColor;
+  opacity: 0.88;
 }
 
 .promo-btn:hover {
-  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-1px);
+  background: rgba(13, 21, 30, 0.96);
+  border-color: rgba(127, 191, 159, 0.34);
+  box-shadow: 0 18px 38px rgba(0, 0, 0, 0.34);
   color: var(--promo-text);
 }
 
@@ -329,15 +350,23 @@ html.has-js [data-reveal].is-inview {
   border: none;
   background: linear-gradient(90deg, var(--promo-accent) 0%, var(--promo-accent-2) 100%);
   color: #041017;
+  box-shadow: 0 16px 34px rgba(71, 215, 172, 0.22);
 }
 
 .promo-btn--primary:hover {
-  filter: brightness(1.03);
+  filter: brightness(1.04);
+  box-shadow: 0 20px 42px rgba(71, 215, 172, 0.28);
   color: #041017;
 }
 
 .promo-btn--ghost {
-  background: rgba(255, 255, 255, 0.02);
+  background: rgba(8, 14, 20, 0.78);
+  border-color: rgba(127, 191, 159, 0.18);
+}
+
+.promo-btn:focus-visible {
+  outline: 2px solid rgba(71, 215, 172, 0.72);
+  outline-offset: 3px;
 }
 
 .promo-stats {
@@ -348,11 +377,24 @@ html.has-js [data-reveal].is-inview {
 }
 
 .promo-stat {
+  position: relative;
+  overflow: hidden;
   border-radius: var(--promo-radius);
   border: 1px solid var(--promo-border);
-  background: rgba(255, 255, 255, 0.06);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.025) 100%);
   backdrop-filter: blur(10px);
   padding: 1.1rem 1.15rem;
+}
+
+.promo-stat::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto auto 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, rgba(127, 191, 159, 0.6) 0%, rgba(127, 191, 159, 0) 72%);
+  opacity: 0.85;
 }
 
 .promo-stat__value {
@@ -669,12 +711,23 @@ html.has-js [data-reveal].is-inview {
 }
 
 .promo-monitor-card {
+  position: relative;
+  overflow: hidden;
   border-radius: var(--promo-radius);
   border: 1px solid rgba(255, 255, 255, 0.12);
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0.03) 100%);
   padding: 1.3rem 1.25rem 1.2rem;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.18);
+}
+
+.promo-monitor-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto auto 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, rgba(71, 215, 172, 0.62) 0%, rgba(71, 215, 172, 0) 72%);
 }
 
 .promo-monitor-card__value {
