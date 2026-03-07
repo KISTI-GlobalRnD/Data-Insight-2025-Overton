@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
 
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.4.550">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="Overton 정책문헌 인용 데이터와 OpenAlex 메타데이터를 결합해 정책이 과학을 언제·무엇을·어디서 가져오는지 한 페이지로 정리한다.">
 
 <title>Overton × OpenAlex Data Insight</title>
 <style>
@@ -47,9 +48,14 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Overton × OpenAlex Data Insight</h1>
-<p class="subtitle lead">정책문헌 인용 분석 — Highlights</p>
+<p class="subtitle lead">정책문헌 인용 분석</p>
 </div>
 
+<div>
+  <div class="description">
+    Overton 정책문헌 인용 데이터와 OpenAlex 메타데이터를 결합해 정책이 과학을 언제·무엇을·어디서 가져오는지 한 페이지로 정리한다.
+  </div>
+</div>
 
 
 <div class="quarto-title-meta column-page">
@@ -64,38 +70,39 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<div class="promo-bg" aria-hidden="true"></div>
 <div class="promo-wrap">
   <a class="promo-skip" href="#story">본문으로 건너뛰기</a>
 
   <section class="promo-hero" id="top">
     <div class="promo-hero__visual" aria-hidden="true">
-      <img src="Assets/Figures/policy_research_flow_network_drl.png" alt="" loading="lazy">
+      <img src="Assets/Landing/hero_network.png" alt="" loading="lazy">
     </div>
     <div class="promo-hero__inner">
-      <p class="promo-kicker">Overton × OpenAlex Data Insight</p>
-      <h1 class="promo-title">과학은 정책으로 이동한다. 하지만 경로는 균등하지 않다.</h1>
-      <p class="promo-lede">
+      <p class="promo-kicker" data-reveal="" data-reveal-delay="0">Overton × OpenAlex Data Insight</p>
+      <h1 class="promo-title" data-reveal="" data-reveal-delay="50">과학은 정책으로 이동한다. 하지만 경로는 균등하지 않다.</h1>
+      <p class="promo-lede" data-reveal="" data-reveal-delay="110">
         정책문헌-학술논문 인용 연결은 크게 늘었지만, 근거 사용 경로는 균등하지 않다.
         어떤 분야·토픽, 어떤 국가·기관 채널로 근거가 집중되는지 점검한다.
       </p>
-      <p class="promo-lede promo-lede--secondary">
+      <p class="promo-lede promo-lede--secondary" data-reveal="" data-reveal-delay="160">
         Overton 인용 로그와 OpenAlex 메타데이터를 결합해 정책이 과학을
         <strong>언제·무엇을·어디서</strong> 가져오는지 한 페이지로 정리했다.
       </p>
 
-      <div class="promo-actions" role="group" aria-label="빠른 이동">
-        <a class="promo-btn promo-btn--primary" href="#story">스크롤로 보기</a>
-        <a class="promo-btn promo-btn--ghost" href="./SI/index.html">Extended Report</a>
+      <div class="promo-actions" role="group" aria-label="빠른 이동" data-reveal="" data-reveal-delay="220">
+        <a class="promo-btn promo-btn--primary" href="./Report/Report_final.pdf">메인 보고서(PDF) 보기</a>
+        <a class="promo-btn promo-btn--ghost" href="./SI/index.html">확장 자료(Extended Report)</a>
       </div>
 
-      <div class="promo-stats" aria-label="요약 지표">
+      <div class="promo-stats" aria-label="요약 지표" data-reveal="" data-reveal-delay="260">
         <div class="promo-stat">
           <div class="promo-stat__value">2,337만</div>
           <div class="promo-stat__label">정책→연구 인용 연결</div>
         </div>
         <div class="promo-stat">
           <div class="promo-stat__value">138만</div>
-          <div class="promo-stat__label">정책문서(중복 제거)</div>
+          <div class="promo-stat__label">정책문헌(중복 제거)</div>
         </div>
         <div class="promo-stat">
           <div class="promo-stat__value">653만</div>
@@ -103,12 +110,12 @@ ul.task-list li input[type="checkbox"] {
         </div>
         <div class="promo-stat">
           <div class="promo-stat__value">97.6%</div>
-          <div class="promo-stat__label">분석 스냅샷 내 DOI 인용 포함</div>
+          <div class="promo-stat__label">고유 정책문헌 중 DOI 인용 포함</div>
         </div>
       </div>
 
-      <p class="promo-meta">데이터 스냅샷: Overton 2025.02 · OpenAlex 2025.06 · DOI 기반 매칭</p>
-      <div class="promo-scroll" aria-hidden="true">
+      <p class="promo-meta" data-reveal="" data-reveal-delay="300">데이터 스냅샷: Overton 2025.02 · OpenAlex 2025.06 · DOI 기반 매칭</p>
+      <div class="promo-scroll" aria-hidden="true" data-reveal="" data-reveal-delay="340">
         <span class="promo-scroll__label">Scroll</span>
         <span class="promo-scroll__bar"></span>
       </div>
@@ -119,28 +126,28 @@ ul.task-list li input[type="checkbox"] {
     <div class="promo-scrolly__sticky">
       <div class="promo-scrolly__stage">
         <figure class="promo-figure is-active figure" data-figure-id="pubyear" aria-hidden="false">
-          <img src="Assets/Figures/pubyear_trend.png" alt="정책 문헌 발행연도별 인용수·문헌수·문헌당 인용수" loading="lazy" class="figure-img">
+          <img src="Assets/Landing/pubyear_trend.png" alt="정책문헌 발행연도별 인용수·문헌수·문헌당 인용수" loading="lazy" class="figure-img">
           <figcaption>정책문헌 발행연도별 인용 규모와 문헌당 인용수.</figcaption>
         </figure>
 
         <figure class="promo-figure figure" data-figure-id="network" aria-hidden="true">
-          <img src="Assets/Figures/policy_research_flow_network_drl.png" alt="정책–연구 흐름 네트워크" loading="lazy" class="figure-img">
+          <img src="Assets/Landing/flow_network.png" alt="정책–연구 흐름 네트워크" loading="lazy" class="figure-img">
           <figcaption>정책–연구 흐름을 네트워크로 요약(예시).</figcaption>
         </figure>
 
         <figure class="promo-figure figure" data-figure-id="country-flow" aria-hidden="true">
-          <img src="Assets/Figures/policy_to_research_country_heatmap.png" alt="정책국→연구국 흐름(히트맵)" loading="lazy" class="figure-img">
-          <figcaption>정책문서의 국가와 인용된 연구의 국가 간 연결 구조.</figcaption>
+          <img src="Assets/Landing/country_flow.png" alt="정책국→연구국 흐름(히트맵)" loading="lazy" class="figure-img">
+          <figcaption>정책문헌의 국가와 인용된 연구의 국가 간 연결 구조.</figcaption>
         </figure>
 
         <figure class="promo-figure figure" data-figure-id="source-type" aria-hidden="true">
-          <img src="Assets/Figures/source_type_domain_heatmap.png" alt="정책문서 유형×도메인 분포(히트맵)" loading="lazy" class="figure-img">
-          <figcaption>정책문서 유형별로 어떤 분야를 더 많이 인용하는지.</figcaption>
+          <img src="Assets/Landing/source_type_scatter.png" alt="출처 유형별 총 인용과 문헌당 인용의 관계(산점도)" loading="lazy" class="figure-img">
+          <figcaption>출처 유형별 총량과 문헌당 인용의 관계(더 많이 vs 더 촘촘히).</figcaption>
         </figure>
 
         <figure class="promo-figure figure" data-figure-id="korea" aria-hidden="true">
-          <img src="Assets/Figures/korea_policy_research_flows_top10.png" alt="한국 정책-연구 양방향 흐름(상위 10개)" loading="lazy" class="figure-img">
-          <figcaption>한국 중심의 정책↔연구 연결(상위 10개 흐름).</figcaption>
+          <img src="Assets/Landing/korea_flows.png" alt="한국 정책-연구 유입·조달 흐름(상위 10개)" loading="lazy" class="figure-img">
+          <figcaption>한국의 유입(한국 연구→글로벌 정책)과 조달(한국 정책→인용 연구국)을 분리해 비교.</figcaption>
         </figure>
       </div>
     </div>
@@ -168,7 +175,7 @@ ul.task-list li input[type="checkbox"] {
         <p class="promo-step__kicker">3 · 흐름</p>
         <h2 class="promo-step__title anchored">정책국과 연구국은 대칭이 아니다</h2>
         <p class="promo-step__body">
-          정책문서가 생산된 국가와 인용된 연구의 1저자 국가를 연결해 국제 지식 흐름을 본다.
+          정책문헌이 생산된 국가와 인용된 연구의 1저자 국가를 연결해 국제 지식 흐름을 본다.
           어떤 정책국은 자국 연구를 더 많이 끌어쓰고, 어떤 정책국은 다국적 연구를 폭넓게 섞는다.
         </p>
       </div>
@@ -177,7 +184,7 @@ ul.task-list li input[type="checkbox"] {
         <p class="promo-step__kicker">4 · 맥락</p>
         <h2 class="promo-step__title anchored">기관 유형마다 ‘인용 방식’이 다르다</h2>
         <p class="promo-step__body">
-          정책문서 출처 유형에 따라 총 인용(규모)과 문서당 인용(밀도)이 달라질 수 있다.
+          정책문헌 출처 유형에 따라 총 인용(규모)과 문서당 인용(밀도)이 달라질 수 있다.
           같은 정책이라도 어떤 유형은 넓게 인용하고, 어떤 유형은 한 문서에 근거를 더 촘촘히 담는다.
         </p>
       </div>
@@ -186,8 +193,8 @@ ul.task-list li input[type="checkbox"] {
         <p class="promo-step__kicker">5 · 한국</p>
         <h2 class="promo-step__title anchored">한국은 유입·조달이 비대칭이다</h2>
         <p class="promo-step__body">
-          한국 관련 정책–연구 연결을 별도로 분해해, 양방향 흐름(한국 연구→글로벌 정책 / 한국 정책→인용 연구국)을 비교한다.
-          해석과 한계(표본/태깅)는 Extended Report에 함께 정리한다.
+          한국 연구가 글로벌 정책문헌에서 어떻게 호출되는지(유입)와, 한국 정책문헌이 어떤 연구를 조달하는지(조달)를 분리해 비교한다.
+          해석과 한계(표본/태깅)는 확장 자료에서 함께 정리한다.
         </p>
       </div>
     </div>
@@ -196,32 +203,36 @@ ul.task-list li input[type="checkbox"] {
   <section class="promo-explore" id="explore">
     <div class="promo-explore__inner">
       <h2 class="promo-section-title anchored">더 깊게 보기</h2>
-      <p class="promo-section-lede">확장 본문, 방법론, 인터랙티브, 부록은 Extended Report에서 확인한다.</p>
+      <p class="promo-section-lede">핵심 서술은 메인 보고서(PDF)에서, 정의·방법·추가 그림은 확장 자료(Extended Report)에서 확인한다.</p>
 
       <div class="promo-cards" role="list">
+        <a class="promo-card" role="listitem" href="./Report/Report_final.pdf">
+          <div class="promo-card__title">메인 보고서(PDF)</div>
+          <div class="promo-card__desc">1페이지 요약 · 핵심 5장</div>
+        </a>
         <a class="promo-card" role="listitem" href="./SI/index.html">
-          <div class="promo-card__title">Extended Overview</div>
-          <div class="promo-card__desc">전체 구성 · 읽는 순서</div>
+          <div class="promo-card__title">Extended Report 개요</div>
+          <div class="promo-card__desc">읽는 순서 · 연결표</div>
         </a>
         <a class="promo-card" role="listitem" href="./SI/extended_report.html">
-          <div class="promo-card__title">Extended Text</div>
-          <div class="promo-card__desc">핵심 메시지의 확장 서술</div>
+          <div class="promo-card__title">확장 본문</div>
+          <div class="promo-card__desc">핵심 메시지의 맥락 · 해석</div>
         </a>
         <a class="promo-card" role="listitem" href="./SI/methods.html">
-          <div class="promo-card__title">Methods</div>
+          <div class="promo-card__title">방법론·데이터 정합성</div>
           <div class="promo-card__desc">분모 · 결측 · 해석 가드레일</div>
         </a>
         <a class="promo-card" role="listitem" href="./SI/interactive.html">
-          <div class="promo-card__title">Interactive</div>
+          <div class="promo-card__title">인터랙티브</div>
           <div class="promo-card__desc">그림 1–12 탐색</div>
         </a>
         <a class="promo-card" role="listitem" href="./SI/appendix.html">
-          <div class="promo-card__title">Appendix</div>
+          <div class="promo-card__title">부록</div>
           <div class="promo-card__desc">정의 · 한계 · 추가 그림</div>
         </a>
         <a class="promo-card" role="listitem" href="./SI/next_questions.html">
-          <div class="promo-card__title">Next Questions</div>
-          <div class="promo-card__desc">후속 분석 체크리스트</div>
+          <div class="promo-card__title">다음 질문</div>
+          <div class="promo-card__desc">다음 분기 반복 점검</div>
         </a>
       </div>
     </div>
@@ -231,11 +242,12 @@ ul.task-list li input[type="checkbox"] {
     <div class="promo-footer__inner">
       <div class="promo-footer__col">
         <div class="promo-footer__title">Overton × OpenAlex Data Insight</div>
-        <div class="promo-footer__meta">Static site for GitHub Pages · Quarto website output</div>
+        <div class="promo-footer__meta">GitHub Pages용 정적 사이트 · Quarto 렌더링 출력</div>
       </div>
       <div class="promo-footer__col">
         <a class="promo-footer__link" href="#top">맨 위로</a>
-        <a class="promo-footer__link" href="./SI/index.html">Extended Report</a>
+        <a class="promo-footer__link" href="./Report/Report_final.pdf">메인 보고서(PDF)</a>
+        <a class="promo-footer__link" href="./SI/index.html">Extended Report 개요</a>
       </div>
     </div>
   </footer>
@@ -299,12 +311,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // flash "checked"
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "Copied!");
+    button.setAttribute("title", "복사완료!");
     let tooltip;
     if (window.bootstrap) {
       button.setAttribute("data-bs-toggle", "tooltip");
       button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "Copied!");
+      button.setAttribute("data-bs-title", "복사완료!");
       tooltip = new bootstrap.Tooltip(button, 
         { trigger: "manual", 
           customClass: "code-copy-button-tooltip",
