@@ -802,19 +802,33 @@ html.has-js [data-reveal].is-inview {
 }
 
 .promo-card {
+  position: relative;
+  overflow: hidden;
   display: block;
   text-decoration: none;
   color: rgba(234, 240, 255, 0.9);
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: var(--promo-radius);
   background: rgba(255, 255, 255, 0.04);
-  padding: 1.25rem 1.2rem;
+  padding: 1.25rem 1.2rem 2.9rem;
   transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+
+.promo-card::after {
+  content: "열기 ↗";
+  position: absolute;
+  left: 1.2rem;
+  bottom: 1.05rem;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(71, 215, 172, 0.92);
 }
 
 .promo-card:hover {
   transform: translateY(-2px);
-  border-color: rgba(255, 255, 255, 0.2);
+  border-color: rgba(127, 191, 159, 0.28);
   box-shadow: 0 18px 45px rgba(0, 0, 0, 0.25);
 }
 
@@ -1005,12 +1019,47 @@ html.has-js [data-reveal].is-inview {
     font-size: 0.74rem;
   }
 
+  .promo-hero {
+    padding-top: 5.25rem;
+    padding-bottom: 4rem;
+  }
+
+  .promo-title {
+    margin-bottom: 1rem;
+    font-size: 2.08rem;
+    line-height: 1.04;
+    max-width: 11.5ch;
+  }
+
+  .promo-lede {
+    font-size: 1rem;
+    line-height: 1.56;
+  }
+
+  .promo-lede--secondary {
+    font-size: 0.96rem;
+  }
+
   .promo-stats {
     grid-template-columns: 1fr;
   }
 
   .promo-flow__items {
     gap: 0.5rem;
+  }
+
+  .promo-flow__item {
+    font-size: 0.84rem;
+  }
+
+  .promo-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .promo-btn {
+    width: 100%;
+    justify-content: space-between;
   }
 
   .promo-scrolly__stage {
@@ -1027,7 +1076,7 @@ html.has-js [data-reveal].is-inview {
   }
 
   .promo-card {
-    padding: 1.15rem 1.1rem;
+    padding: 1.1rem 1.05rem 2.8rem;
   }
 
   .promo-cards {
