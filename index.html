@@ -145,6 +145,7 @@ ul.task-list li input[type="checkbox"] {
 
     <div class="promo-scrolly__sticky">
       <div class="promo-scrolly__stage" data-scene="hub-country">
+        <div class="promo-stage-focus" aria-hidden="true"></div>
         <div class="promo-stage-hud" aria-hidden="true">
           <div class="promo-stage-progress">
             <div class="promo-stage-progress__meta">
@@ -155,9 +156,16 @@ ul.task-list li input[type="checkbox"] {
               <span class="promo-stage-progress__fill" data-progress-fill=""></span>
             </div>
           </div>
-          <div class="promo-stage-next">
-            <div class="promo-stage-next__label">다음 장면</div>
-            <div class="promo-stage-next__title" data-next-title="">출처가 달라지면 가져오는 근거도 달라진다</div>
+          <div class="promo-stage-side">
+            <div class="promo-stage-now">
+              <div class="promo-stage-now__label">지금 보는 수치</div>
+              <div class="promo-stage-now__value" data-scene-metric-value="">총량 ≠ 밀도</div>
+              <div class="promo-stage-now__caption" data-scene-metric-caption="">같은 허브라도 총량과 밀도의 순서는 다를 수 있다</div>
+            </div>
+            <div class="promo-stage-next">
+              <div class="promo-stage-next__label">다음 장면</div>
+              <div class="promo-stage-next__title" data-next-title="">출처가 달라지면 가져오는 근거도 달라진다</div>
+            </div>
           </div>
         </div>
         <figure class="promo-figure is-active figure" data-figure-id="hub-country" aria-hidden="false">
@@ -199,7 +207,7 @@ ul.task-list li input[type="checkbox"] {
     </div>
 
     <div class="promo-scrolly__steps" aria-label="스토리 단계">
-      <div class="promo-step is-active" data-figure="hub-country" aria-current="step">
+      <div class="promo-step is-active" data-figure="hub-country" data-metric-value="총량 ≠ 밀도" data-metric-caption="같은 허브라도 총량과 밀도의 순서는 다를 수 있다" aria-current="step">
         <p class="promo-step__kicker">허브 · 총량과 밀도</p>
         <h2 class="promo-step__title anchored">많이 인용되는 곳과 촘촘히 인용되는 곳은 다르다</h2>
         <p class="promo-step__body">
@@ -209,7 +217,7 @@ ul.task-list li input[type="checkbox"] {
         </p>
       </div>
 
-      <div class="promo-step" data-figure="hub-type">
+      <div class="promo-step" data-figure="hub-type" data-metric-value="출처가 바뀌면" data-metric-caption="가져오는 근거의 구성과 인용 방식도 달라진다">
         <p class="promo-step__kicker">허브 · 출처 유형</p>
         <h2 class="promo-step__title anchored">출처가 달라지면 가져오는 근거도 달라진다</h2>
         <p class="promo-step__body">
@@ -219,7 +227,7 @@ ul.task-list li input[type="checkbox"] {
         </p>
       </div>
 
-      <div class="promo-step" data-figure="korea">
+      <div class="promo-step" data-figure="korea" data-metric-value="54.8% ↔ 55.7%" data-metric-caption="한국은 들어가는 길과 가져오는 길이 다르다">
         <p class="promo-step__kicker">한국</p>
         <h2 class="promo-step__title anchored">한국은 들어가는 길과 가져오는 길이 다르다</h2>
         <p class="promo-step__body">
@@ -229,7 +237,7 @@ ul.task-list li input[type="checkbox"] {
         </p>
       </div>
 
-      <div class="promo-step" data-figure="two-speed">
+      <div class="promo-step" data-figure="two-speed" data-metric-value="성숙 ↔ 급등" data-metric-caption="모든 토픽이 같은 속도로 움직이지는 않는다">
         <p class="promo-step__kicker">두 속도</p>
         <h2 class="promo-step__title anchored">모든 토픽이 같은 속도로 움직이지는 않는다</h2>
         <p class="promo-step__body">

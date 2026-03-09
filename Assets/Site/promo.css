@@ -648,6 +648,13 @@ html.has-js [data-reveal].is-inview {
   pointer-events: none;
 }
 
+.promo-stage-side {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  max-width: 320px;
+}
+
 .promo-stage-progress {
   min-width: min(360px, 46vw);
   padding: 0.85rem 1rem 0.9rem;
@@ -698,13 +705,38 @@ html.has-js [data-reveal].is-inview {
   transition: width 360ms cubic-bezier(0.22, 1, 0.36, 1);
 }
 
+.promo-stage-now,
 .promo-stage-next {
-  max-width: 320px;
   padding: 0.85rem 1rem 0.9rem;
   border-radius: 16px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   background: rgba(6, 10, 18, 0.6);
   backdrop-filter: blur(14px);
+}
+
+.promo-stage-now__label,
+.promo-stage-next__label {
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(127, 191, 159, 0.84);
+}
+
+.promo-stage-now__value {
+  margin-top: 0.42rem;
+  font-size: 1.32rem;
+  line-height: 1.1;
+  font-weight: 820;
+  letter-spacing: -0.03em;
+  color: rgba(234, 240, 255, 0.96);
+}
+
+.promo-stage-now__caption {
+  margin-top: 0.38rem;
+  font-size: 0.9rem;
+  line-height: 1.45;
+  color: rgba(234, 240, 255, 0.74);
 }
 
 .promo-stage-next__title {
@@ -713,6 +745,47 @@ html.has-js [data-reveal].is-inview {
   line-height: 1.35;
   font-weight: 760;
   color: rgba(234, 240, 255, 0.9);
+}
+
+.promo-stage-focus {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  opacity: 0.9;
+  transition: opacity 360ms ease, background 420ms ease;
+  background:
+    radial-gradient(
+      circle at var(--focus-x, 50%) var(--focus-y, 50%),
+      rgba(255, 255, 255, 0) 0,
+      rgba(255, 255, 255, 0) 12%,
+      var(--focus-color, rgba(71, 215, 172, 0.18)) 18%,
+      rgba(7, 10, 18, 0) 46%
+    );
+}
+
+.promo-scrolly__stage[data-scene="hub-country"] .promo-stage-focus {
+  --focus-x: 23%;
+  --focus-y: 35%;
+  --focus-color: rgba(71, 215, 172, 0.18);
+}
+
+.promo-scrolly__stage[data-scene="hub-type"] .promo-stage-focus {
+  --focus-x: 25%;
+  --focus-y: 30%;
+  --focus-color: rgba(127, 191, 159, 0.18);
+}
+
+.promo-scrolly__stage[data-scene="korea"] .promo-stage-focus {
+  --focus-x: 50%;
+  --focus-y: 32%;
+  --focus-color: rgba(201, 108, 80, 0.18);
+}
+
+.promo-scrolly__stage[data-scene="two-speed"] .promo-stage-focus {
+  --focus-x: 75%;
+  --focus-y: 22%;
+  --focus-color: rgba(201, 108, 80, 0.2);
 }
 
 .promo-figure {
@@ -780,6 +853,8 @@ html.has-js [data-reveal].is-inview {
   font-weight: 760;
   letter-spacing: -0.01em;
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.28);
+  opacity: 0;
+  transition: opacity 260ms ease, transform 380ms cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .promo-callout::before {
@@ -789,6 +864,27 @@ html.has-js [data-reveal].is-inview {
   border-radius: 999px;
   background: linear-gradient(180deg, var(--promo-accent) 0%, var(--promo-accent-2) 100%);
   box-shadow: 0 0 14px rgba(71, 215, 172, 0.45);
+}
+
+.promo-figure.is-active .promo-callout {
+  opacity: 1;
+  transform: translate(-50%, -50%) translateY(-2px);
+  animation: promo-calloutPulse 3.2s ease-in-out infinite;
+}
+
+.promo-figure.is-active .promo-callout:nth-child(2) {
+  animation-delay: 0.35s;
+}
+
+@keyframes promo-calloutPulse {
+  0%,
+  100% {
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.28);
+  }
+
+  50% {
+    box-shadow: 0 14px 34px rgba(0, 0, 0, 0.32), 0 0 0 1px rgba(71, 215, 172, 0.14);
+  }
 }
 
 .promo-scrolly__steps {
@@ -1142,6 +1238,8 @@ html.has-js [data-reveal].is-inview {
   }
 
   .promo-stage-progress,
+  .promo-stage-side,
+  .promo-stage-now,
   .promo-stage-next {
     max-width: none;
     min-width: 0;
@@ -1247,11 +1345,13 @@ html.has-js [data-reveal].is-inview {
   }
 
   .promo-stage-progress,
+  .promo-stage-now,
   .promo-stage-next {
     padding: 0.65rem 0.78rem 0.72rem;
     border-radius: 14px;
   }
 
+  .promo-stage-now__value,
   .promo-stage-next__title {
     font-size: 0.9rem;
   }
@@ -1259,6 +1359,10 @@ html.has-js [data-reveal].is-inview {
   .promo-callout {
     padding: 0.38rem 0.58rem;
     font-size: 0.74rem;
+  }
+
+  .promo-stage-side {
+    gap: 0.65rem;
   }
 
   .promo-scrolly__steps {

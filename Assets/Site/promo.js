@@ -352,6 +352,8 @@
     const stage = sectionEl.querySelector(".promo-scrolly__stage");
     const progressCount = sectionEl.querySelector("[data-progress-count]");
     const progressFill = sectionEl.querySelector("[data-progress-fill]");
+    const metricValue = sectionEl.querySelector("[data-scene-metric-value]");
+    const metricCaption = sectionEl.querySelector("[data-scene-metric-caption]");
     const nextTitle = sectionEl.querySelector("[data-next-title]");
 
     if (steps.length === 0 || figures.length === 0) return;
@@ -395,6 +397,8 @@
         const ratio = steps.length > 0 ? (nextIndex + 1) / steps.length : 1;
         progressFill.style.width = `${Math.max(0, Math.min(1, ratio)) * 100}%`;
       }
+      if (metricValue && nextStep?.dataset.metricValue) metricValue.textContent = nextStep.dataset.metricValue;
+      if (metricCaption && nextStep?.dataset.metricCaption) metricCaption.textContent = nextStep.dataset.metricCaption;
       if (nextTitle) {
         const upcoming = steps[nextIndex + 1];
         const upcomingTitle = upcoming ? upcoming.querySelector(".promo-step__title") : null;
