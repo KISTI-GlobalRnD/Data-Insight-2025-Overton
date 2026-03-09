@@ -11,6 +11,19 @@
   --promo-radius: 18px;
   --promo-shadow: 0 25px 55px rgba(0, 0, 0, 0.45);
   --promo-nav-offset: 1rem;
+  --promo-font-sans:
+    "SUIT Variable",
+    "Pretendard Variable",
+    "Noto Sans KR",
+    "Apple SD Gothic Neo",
+    "Segoe UI",
+    sans-serif;
+  --promo-font-display:
+    "MaruBuri",
+    "Noto Serif KR",
+    "Iowan Old Style",
+    "Times New Roman",
+    serif;
 }
 
 *,
@@ -30,18 +43,15 @@ html {
 
 body {
   margin: 0;
-  font-family:
-    ui-sans-serif,
-    system-ui,
-    -apple-system,
-    Segoe UI,
-    Roboto,
-    Helvetica,
-    Arial,
-    "Apple Color Emoji",
-    "Segoe UI Emoji";
+  font-family: var(--promo-font-sans);
   background: var(--promo-bg);
   color: var(--promo-text);
+}
+
+header#title-block-header,
+.quarto-title-block,
+.quarto-title-banner {
+  display: none !important;
 }
 
 /* Skip link */
@@ -232,9 +242,11 @@ html.has-js [data-reveal].is-inview {
 
 .promo-title {
   margin: 0.5rem 0 1.25rem;
+  font-family: var(--promo-font-display);
   font-size: clamp(2.4rem, 4.8vw, 4rem);
-  line-height: 1.05;
-  letter-spacing: -0.03em;
+  line-height: 1.03;
+  letter-spacing: -0.035em;
+  text-wrap: balance;
 }
 
 .promo-lede {
@@ -399,6 +411,7 @@ html.has-js [data-reveal].is-inview {
 }
 
 .promo-stat__value {
+  font-family: var(--promo-font-display);
   font-size: 1.85rem;
   font-weight: 800;
   letter-spacing: -0.03em;
@@ -974,6 +987,17 @@ html.has-js [data-reveal].is-inview {
   color: var(--promo-text);
 }
 
+.promo-monitor::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(860px circle at 18% 24%, rgba(127, 191, 159, 0.1) 0%, rgba(9, 16, 24, 0) 62%),
+    radial-gradient(820px circle at 82% 18%, rgba(201, 108, 80, 0.1) 0%, rgba(9, 16, 24, 0) 58%);
+  opacity: 0.9;
+}
+
 .promo-monitor__inner {
   max-width: 1120px;
   margin: 0 auto;
@@ -1001,9 +1025,10 @@ html.has-js [data-reveal].is-inview {
   border-radius: var(--promo-radius);
   border: 1px solid rgba(255, 255, 255, 0.12);
   background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0.03) 100%);
+    linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.025) 100%);
   padding: 1.3rem 1.25rem 1.2rem;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.18);
+  backdrop-filter: blur(10px);
 }
 
 .promo-monitor-card::before {
@@ -1016,6 +1041,7 @@ html.has-js [data-reveal].is-inview {
 }
 
 .promo-monitor-card__value {
+  font-family: var(--promo-font-display);
   font-size: 2rem;
   font-weight: 850;
   letter-spacing: -0.04em;
@@ -1051,8 +1077,20 @@ html.has-js [data-reveal].is-inview {
   min-height: 78svh;
   display: grid;
   align-content: center;
-  background: linear-gradient(180deg, #091018 0%, #071018 42%, #05060a 100%);
+  background:
+    linear-gradient(180deg, #091018 0%, #0c1520 36%, #0a121b 64%, #05060a 100%);
   color: var(--promo-text);
+}
+
+.promo-explore::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(820px circle at 18% 20%, rgba(71, 215, 172, 0.08) 0%, rgba(10, 18, 27, 0) 58%),
+    radial-gradient(820px circle at 86% 76%, rgba(201, 108, 80, 0.1) 0%, rgba(10, 18, 27, 0) 54%);
+  opacity: 0.95;
 }
 
 .promo-explore__inner {
@@ -1062,8 +1100,11 @@ html.has-js [data-reveal].is-inview {
 
 .promo-section-title {
   margin: 0;
-  font-size: 2rem;
-  letter-spacing: -0.02em;
+  font-family: var(--promo-font-display);
+  font-size: clamp(2rem, 3.2vw, 2.5rem);
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+  text-wrap: balance;
 }
 
 .promo-section-lede {
@@ -1094,9 +1135,11 @@ html.has-js [data-reveal].is-inview {
   color: rgba(234, 240, 255, 0.9);
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: var(--promo-radius);
-  background: rgba(255, 255, 255, 0.04);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.07) 0%, rgba(255, 255, 255, 0.03) 100%);
   padding: 1.25rem 1.2rem 2.9rem;
   transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+  backdrop-filter: blur(10px);
 }
 
 .promo-card::after {
@@ -1118,8 +1161,11 @@ html.has-js [data-reveal].is-inview {
 }
 
 .promo-card__title {
+  font-family: var(--promo-font-display);
   font-weight: 800;
-  letter-spacing: -0.02em;
+  font-size: 1.18rem;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
 }
 
 .promo-card__meta {
