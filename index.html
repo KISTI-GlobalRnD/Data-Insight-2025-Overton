@@ -144,24 +144,55 @@ ul.task-list li input[type="checkbox"] {
     </div>
 
     <div class="promo-scrolly__sticky">
-      <div class="promo-scrolly__stage">
+      <div class="promo-scrolly__stage" data-scene="hub-country">
+        <div class="promo-stage-hud" aria-hidden="true">
+          <div class="promo-stage-progress">
+            <div class="promo-stage-progress__meta">
+              <span class="promo-stage-progress__label">장면</span>
+              <span class="promo-stage-progress__count" data-progress-count="">1 / 4</span>
+            </div>
+            <div class="promo-stage-progress__track">
+              <span class="promo-stage-progress__fill" data-progress-fill=""></span>
+            </div>
+          </div>
+          <div class="promo-stage-next">
+            <div class="promo-stage-next__label">다음 장면</div>
+            <div class="promo-stage-next__title" data-next-title="">출처가 달라지면 가져오는 근거도 달라진다</div>
+          </div>
+        </div>
         <figure class="promo-figure is-active figure" data-figure-id="hub-country" aria-hidden="false">
           <img src="Assets/Landing/country_citations_top10.png" alt="정책 출처별 총 인용과 문헌당 평균 인용, 도메인 구성" loading="lazy" class="figure-img">
+          <div class="promo-figure__callouts" aria-hidden="true">
+            <span class="promo-callout" style="--x: 21%; --y: 34%;">총량 허브</span>
+            <span class="promo-callout" style="--x: 76%; --y: 22%;">밀도 허브</span>
+          </div>
           <figcaption>같은 허브라도 총량과 밀도의 순서는 다를 수 있다.</figcaption>
         </figure>
 
         <figure class="promo-figure figure" data-figure-id="hub-type" aria-hidden="true">
           <img src="Assets/Landing/source_type_domain.png" alt="출처 유형과 도메인 구성의 관계" loading="lazy" class="figure-img">
+          <div class="promo-figure__callouts" aria-hidden="true">
+            <span class="promo-callout" style="--x: 24%; --y: 30%;">정부·국제기구</span>
+            <span class="promo-callout" style="--x: 71%; --y: 64%;">전문기관·싱크탱크</span>
+          </div>
           <figcaption>출처의 성격이 바뀌면 가져오는 근거의 구성도 달라진다.</figcaption>
         </figure>
 
         <figure class="promo-figure figure" data-figure-id="korea" aria-hidden="true">
           <img src="Assets/Landing/korea_flows.png" alt="한국 정책-연구 유입·조달 흐름(상위 10개)" loading="lazy" class="figure-img">
+          <div class="promo-figure__callouts" aria-hidden="true">
+            <span class="promo-callout" style="--x: 26%; --y: 32%;">유입 경로</span>
+            <span class="promo-callout" style="--x: 74%; --y: 32%;">조달 경로</span>
+          </div>
           <figcaption>한국은 유입과 조달을 나눠 볼 때 더 또렷하게 보인다.</figcaption>
         </figure>
 
         <figure class="promo-figure figure" data-figure-id="two-speed" aria-hidden="true">
           <img src="Assets/Landing/topic_intensity_vs_recency.png" alt="토픽별 인용 강도와 최근성" loading="lazy" class="figure-img">
+          <div class="promo-figure__callouts" aria-hidden="true">
+            <span class="promo-callout" style="--x: 28%; --y: 61%;">성숙한 의제</span>
+            <span class="promo-callout" style="--x: 75%; --y: 22%;">급등하는 의제</span>
+          </div>
           <figcaption>정책근거의 시간은 하나가 아니다.</figcaption>
         </figure>
       </div>

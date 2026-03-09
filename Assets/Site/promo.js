@@ -349,6 +349,10 @@
     const steps = Array.from(sectionEl.querySelectorAll(".promo-step[data-figure]"));
     const figures = Array.from(sectionEl.querySelectorAll(".promo-figure[data-figure-id]"));
     const sticky = sectionEl.querySelector(".promo-scrolly__sticky");
+    const stage = sectionEl.querySelector(".promo-scrolly__stage");
+    const progressCount = sectionEl.querySelector("[data-progress-count]");
+    const progressFill = sectionEl.querySelector("[data-progress-fill]");
+    const nextTitle = sectionEl.querySelector("[data-next-title]");
 
     if (steps.length === 0 || figures.length === 0) return;
 
@@ -381,6 +385,20 @@
       if (nextFigure) {
         nextFigure.classList.add("is-active");
         nextFigure.setAttribute("aria-hidden", "false");
+      }
+
+      const nextIndex = steps.findIndex((step) => step.dataset.figure === nextId);
+      if (stage) stage.dataset.scene = nextId;
+      if (sticky) sticky.dataset.scene = nextId;
+      if (progressCount && nextIndex >= 0) progressCount.textContent = `${nextIndex + 1} / ${steps.length}`;
+      if (progressFill && nextIndex >= 0) {
+        const ratio = steps.length > 0 ? (nextIndex + 1) / steps.length : 1;
+        progressFill.style.width = `${Math.max(0, Math.min(1, ratio)) * 100}%`;
+      }
+      if (nextTitle) {
+        const upcoming = steps[nextIndex + 1];
+        const upcomingTitle = upcoming ? upcoming.querySelector(".promo-step__title") : null;
+        nextTitle.textContent = upcomingTitle ? upcomingTitle.textContent : "마지막 장면까지 도착했다";
       }
 
       activeId = nextId;
