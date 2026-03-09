@@ -354,6 +354,7 @@
     const progressFill = sectionEl.querySelector("[data-progress-fill]");
     const metricValue = sectionEl.querySelector("[data-scene-metric-value]");
     const metricCaption = sectionEl.querySelector("[data-scene-metric-caption]");
+    const metricDetail = sectionEl.querySelector("[data-scene-metric-detail]");
     const nextTitle = sectionEl.querySelector("[data-next-title]");
 
     if (steps.length === 0 || figures.length === 0) return;
@@ -399,6 +400,7 @@
       }
       if (metricValue && nextStep?.dataset.metricValue) metricValue.textContent = nextStep.dataset.metricValue;
       if (metricCaption && nextStep?.dataset.metricCaption) metricCaption.textContent = nextStep.dataset.metricCaption;
+      if (metricDetail && nextStep?.dataset.metricDetail) metricDetail.textContent = nextStep.dataset.metricDetail;
       if (nextTitle) {
         const upcoming = steps[nextIndex + 1];
         const upcomingTitle = upcoming ? upcoming.querySelector(".promo-step__title") : null;

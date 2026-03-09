@@ -739,6 +739,15 @@ html.has-js [data-reveal].is-inview {
   color: rgba(234, 240, 255, 0.74);
 }
 
+.promo-stage-now__detail {
+  margin-top: 0.55rem;
+  padding-top: 0.55rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  font-size: 0.82rem;
+  line-height: 1.45;
+  color: rgba(234, 240, 255, 0.62);
+}
+
 .promo-stage-next__title {
   margin-top: 0.45rem;
   font-size: 1rem;
@@ -800,10 +809,27 @@ html.has-js [data-reveal].is-inview {
   will-change: opacity, transform, filter;
 }
 
+.promo-figure::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  background:
+    linear-gradient(90deg, rgba(6, 10, 18, 0.96) 0%, rgba(6, 10, 18, 0.78) 48%, rgba(6, 10, 18, 0) 100%);
+  transform: translateX(0%);
+  transition: transform 620ms cubic-bezier(0.22, 1, 0.36, 1), opacity 320ms ease;
+  pointer-events: none;
+}
+
 .promo-figure.is-active {
   opacity: 1;
   transform: translateY(0) scale(1);
   filter: blur(0);
+}
+
+.promo-figure.is-active::after {
+  transform: translateX(110%);
+  opacity: 0.22;
 }
 
 .promo-scrolly__stage[data-scene="hub-country"] .promo-figure.is-active {
@@ -832,6 +858,7 @@ html.has-js [data-reveal].is-inview {
 .promo-figure__callouts {
   position: absolute;
   inset: 0;
+  z-index: 3;
   pointer-events: none;
 }
 
@@ -1354,6 +1381,10 @@ html.has-js [data-reveal].is-inview {
   .promo-stage-now__value,
   .promo-stage-next__title {
     font-size: 0.9rem;
+  }
+
+  .promo-stage-now__detail {
+    font-size: 0.78rem;
   }
 
   .promo-callout {
