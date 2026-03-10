@@ -173,7 +173,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p><a href="../SI/index_en.html"><code>← SI Overview</code></a> · <a href="../SI/appendix_en.html"><code>Appendix</code></a> · <a href="../Report/Report_final.pdf"><code>Report (PDF)</code></a> · <a href="../SI/methods.html"><code>Korean page</code></a></p>
-<p>This page reorganizes method notes from the main report into <strong>verifiable checkpoints</strong>. For detailed tables and diagnostics, refer to the linked appendix sections.</p>
+<p>This page restates the method notes from the main report around the checks needed for interpretation. For detailed tables and diagnostics, refer to the linked appendix sections.</p>
 <section id="first-checks-1-min" class="level2">
 <h2 class="anchored" data-anchor-id="first-checks-1-min">First checks (1 min)</h2>
 <ul>
@@ -184,7 +184,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="method-scope" class="level2">
 <h2 class="anchored" data-anchor-id="method-scope">1) Analysis scope</h2>
-<p>This section fixes what is in scope and what is out of scope.</p>
+<p>Start by making the scope of the analysis explicit.</p>
 <ul>
 <li>Snapshot versions: Overton 2025.02 and OpenAlex 2025.06</li>
 <li>Unit of analysis: unique policy documents (deduplicated at the policy-document level)</li>
@@ -210,7 +210,6 @@ Note
 </section>
 <section id="method-matching" class="level2">
 <h2 class="anchored" data-anchor-id="method-matching">2) Matching &amp; missingness checks</h2>
-<p>This section is the minimum safety check before country/institution comparisons.</p>
 <ul>
 <li>The DOI → OpenAlex matching rate and country-code missingness are primary safety checks.</li>
 <li>For country comparisons, first confirm the denominator uses citations with known first-author country codes.</li>
@@ -219,7 +218,7 @@ Note
 </section>
 <section id="method-metrics" class="level2">
 <h2 class="anchored" data-anchor-id="method-metrics">3) Core metric definitions (summary)</h2>
-<p>This section sets a shared definition frame for interpreting headline numbers.</p>
+<p>The definitions below provide a minimum baseline for re-reading the headline numbers.</p>
 <ul>
 <li>Citation counts vs unique works: separate frequency from breadth</li>
 <li>Recency: share of policy citations to works published in <code>2022-2024</code></li>
@@ -230,7 +229,7 @@ Note
 </section>
 <section id="method-guardrails" class="level2">
 <h2 class="anchored" data-anchor-id="method-guardrails">4) Interpretation guardrails</h2>
-<p>This section defines minimum rules to avoid over-interpretation.</p>
+<p>The items below are the minimum checks needed before reading the results too strongly.</p>
 <ul>
 <li>Multi-label topics can produce totals above 100%.</li>
 <li>Recent-year declines may reflect observation/accumulation lag rather than a structural reversal.</li>
@@ -240,10 +239,10 @@ Note
 </section>
 <section id="method-protocol" class="level2">
 <h2 class="anchored" data-anchor-id="method-protocol">5) Recompute/update protocol</h2>
-<p>This section fixes how to repeat the same checks in the next cycle.</p>
+<p>Finally, the same checks should be repeatable in the next update cycle.</p>
 <ul>
 <li>Recompute the same indicators quarterly or biannually and track directional state (rising/stable/easing).</li>
-<li>Keep the main report headline-focused, while updating formulas, sensitivity checks, and extended tables in the SI layer.</li>
+<li>Keep the main report headline-focused, while updating formulas, sensitivity checks, and supporting tables in the SI layer.</li>
 <li>Record all figure/text changes and rebuilt outputs in the update log.</li>
 </ul>
 

@@ -146,7 +146,7 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#a1.-policy-document-coverage-map-documents-by-policy-source-country" id="toc-a1.-policy-document-coverage-map-documents-by-policy-source-country" class="nav-link" data-scroll-target="#a1.-policy-document-coverage-map-documents-by-policy-source-country">A1. Policy document coverage map (documents by policy source country)</a></li>
   <li><a href="#a2.-why-exclude-sub-tags-a-b-and-keep-top-level-country-tags-only" id="toc-a2.-why-exclude-sub-tags-a-b-and-keep-top-level-country-tags-only" class="nav-link" data-scroll-target="#a2.-why-exclude-sub-tags-a-b-and-keep-top-level-country-tags-only">A2. Why exclude sub-tags (<code>A &gt; B</code>) and keep top-level country tags only</a></li>
-  <li><a href="#a3.-why-do-we-need-exceptions-for-hong-kong-georgia-symptom-cause-action" id="toc-a3.-why-do-we-need-exceptions-for-hong-kong-georgia-symptom-cause-action" class="nav-link" data-scroll-target="#a3.-why-do-we-need-exceptions-for-hong-kong-georgia-symptom-cause-action">A3. Why do we need exceptions for Hong Kong / Georgia: symptom → cause → action</a></li>
+  <li><a href="#a3.-why-do-we-need-exceptions-for-hong-kong-georgia" id="toc-a3.-why-do-we-need-exceptions-for-hong-kong-georgia" class="nav-link" data-scroll-target="#a3.-why-do-we-need-exceptions-for-hong-kong-georgia">A3. Why do we need exceptions for Hong Kong / Georgia</a></li>
   </ul></li>
   <li><a href="#appendix-b" id="toc-appendix-b" class="nav-link" data-scroll-target="#appendix-b">B. Definitions &amp; interpretation</a>
   <ul class="collapse">
@@ -198,7 +198,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p><a href="../SI/index_en.html"><code>← SI Overview</code></a> · <a href="../SI/interactive_en.html"><code>Interactive</code></a> · <a href="../Report/Report_final.pdf"><code>Report (PDF)</code></a> · <a href="../SI/appendix.html"><code>Korean page</code></a></p>
-<p>This appendix brings together <strong>coverage &amp; tagging notes</strong>, <strong>metric definitions &amp; interpretation cautions</strong>, and <strong>additional figures</strong>. Its goal is to support safer interpretation of the numbers and patterns in the main report.</p>
+<p>This appendix brings together <strong>coverage &amp; tagging notes</strong>, <strong>metric definitions &amp; interpretation cautions</strong>, and <strong>additional figures</strong>. Its purpose is to help readers check the numbers and patterns in the main report more carefully.</p>
 <p><strong>Jump to</strong>: <a href="#appendix-a">A. Coverage &amp; tagging</a> · <a href="#appendix-b">B. Definitions &amp; interpretation</a> · <a href="#appendix-c">C. Additional figures</a></p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -240,18 +240,14 @@ Tip
 <h2 class="anchored" data-anchor-id="reading-order-2-min">Reading order (2 min)</h2>
 <ul>
 <li>Step 1 (scope check): Start with <a href="#appendix-a">A. Coverage &amp; tagging</a> to confirm observable-coverage unevenness.</li>
-<li>Step 2 (metric check): Use <a href="#appendix-b-quick">B0. Quick definitions</a> and <a href="#data-fitness">B0-1. Matching &amp; missingness</a> to fix denominators/missingness conditions.</li>
+<li>Step 2 (metric check): Use <a href="#appendix-b-quick">B0. Quick definitions</a> and <a href="#data-fitness">B0-1. Matching &amp; missingness</a> to confirm denominators and missingness conditions.</li>
 <li>Step 3 (extension check): Open only needed items in <a href="#appendix-c">C. Additional figures</a> to support interpretation.</li>
 </ul>
 <hr>
 </section>
 <section id="appendix-a" class="level2">
 <h2 class="anchored" data-anchor-id="appendix-a">A. Coverage &amp; tagging</h2>
-<p>This section provides the minimum context needed before reading “hub structure.” It shows that the observable policy-document universe in Overton may be uneven across countries.</p>
-<ul>
-<li>Observation baseline: coverage gaps across country/source types can shift hub interpretation.</li>
-<li>Check purpose: fix tagging rules (top-level/sub-tag/exception handling) before reading comparisons.</li>
-</ul>
+<p>This section provides the minimum context needed before reading the hub results. The observable policy-document universe in Overton may be uneven across countries and source types, so tagging rules and coverage gaps should be checked first.</p>
 <section id="a1.-policy-document-coverage-map-documents-by-policy-source-country" class="level3">
 <h3 class="anchored" data-anchor-id="a1.-policy-document-coverage-map-documents-by-policy-source-country">A1. Policy document coverage map (documents by policy source country)</h3>
 <div class="callout callout-style-default callout-note callout-titled">
@@ -285,8 +281,8 @@ Note
 <p>Overton policy source country tags include <strong>country-level tags (e.g., USA, UK)</strong> and <strong>sub-regional tags (e.g., USA &gt; California)</strong>. To align meaning with OpenAlex country codes, this report uses <strong>top-level country tags only</strong> for default aggregations.</p>
 <p>This simplifies country-level comparisons. At the same time, it can invite <strong>under/over-interpretation</strong> when sub-tags contribute heavily. So, when reading country comparisons, it is safer to check coverage itself as well.</p>
 </section>
-<section id="a3.-why-do-we-need-exceptions-for-hong-kong-georgia-symptom-cause-action" class="level3">
-<h3 class="anchored" data-anchor-id="a3.-why-do-we-need-exceptions-for-hong-kong-georgia-symptom-cause-action">A3. Why do we need exceptions for Hong Kong / Georgia: symptom → cause → action</h3>
+<section id="a3.-why-do-we-need-exceptions-for-hong-kong-georgia" class="level3">
+<h3 class="anchored" data-anchor-id="a3.-why-do-we-need-exceptions-for-hong-kong-georgia">A3. Why do we need exceptions for Hong Kong / Georgia</h3>
 <p>Policy source country tags can appear only as sub-tags such as <code>China &gt; Hong Kong</code> and <code>USA &gt; Georgia</code>. If we keep only top-level tags, these can be filtered out from the policy-source side. That can make them look like “policy sources that do not exist” in the network view. For network figures, we therefore split <code>China &gt; Hong Kong</code> into <code>Hong Kong</code> and <code>USA &gt; Georgia</code> into <code>Georgia (USA)</code>.</p>
 <details>
 <summary>
@@ -360,8 +356,8 @@ Note
 <p>In the current snapshot, Overton policy sources do not include <code>Hong Kong</code> as a top-level country tag. It is observed only as <code>China &gt; Hong Kong</code> (1,182 policy documents). By contrast, OpenAlex research countries use a separate code <code>HK → Hong Kong</code>.</p>
 <p>If we aggregate policy sources using top-level tags only, documents under <code>China &gt; Hong Kong</code> drop from the policy-source side. Meanwhile, <code>Hong Kong</code> remains only as a research-country node. This can make it look like a “cited-only node.”</p>
 </section>
-<section id="practical-caution-naive-sub-tag-replacement-causes-collisions" class="level4">
-<h4 class="anchored" data-anchor-id="practical-caution-naive-sub-tag-replacement-causes-collisions">Practical caution: naive sub-tag replacement causes collisions</h4>
+<section id="caution-naive-sub-tag-replacement-causes-collisions" class="level4">
+<h4 class="anchored" data-anchor-id="caution-naive-sub-tag-replacement-causes-collisions">Caution: naive sub-tag replacement causes collisions</h4>
 <p>If you naively map <code>A &gt; B → B</code>, then <code>USA &gt; Georgia</code> (the US state) collides with <code>Georgia</code> (the country). If you want to re-attribute sub-tags at country scale, it is safer to separate two steps: (1) lifting to parent (<code>A &gt; B → A</code>) and (2) exception handling (whether to treat Hong Kong as its own unit).</p>
 </section></details>
 <hr>
@@ -370,11 +366,7 @@ Note
 
 <section id="appendix-b" class="level2">
 <h2 class="anchored" data-anchor-id="appendix-b">B. Definitions &amp; interpretation</h2>
-<p>This section compiles denominator/definition/guardrail items needed to re-read main-report metrics safely.</p>
-<ul>
-<li>Observation baseline: the same number can imply different conclusions when denominators differ.</li>
-<li>Check purpose: confirm metric definitions and missingness conditions before interpretation.</li>
-</ul>
+<p>This section brings together the denominator, definition, and interpretation notes needed to re-read the main-report metrics safely. The same number can imply different conclusions when denominators differ, so these conditions should be checked first.</p>
 <section id="appendix-b-quick" class="level3">
 <h3 class="anchored" data-anchor-id="appendix-b-quick">B0. Quick definitions (summary)</h3>
 <ul>
