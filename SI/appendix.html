@@ -376,7 +376,7 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li><strong>분석 단위</strong>: Overton 정책문헌은 고유 문헌 기준으로 중복을 제거해 “고유 정책문헌” 단위로 본다. 자세히 보기: <a href="#doi-share">DOI 인용 포함 비중</a></li>
 <li><strong>인용 건수와 고유 논문 수</strong>: “얼마나 자주 인용했나”와 “얼마나 넓게 썼나”는 다른 질문이라 분리한다. 자세히 보기: <a href="#citations-vs-works">인용 건수와 고유 논문 수</a></li>
-<li><strong>최근성과 인용 강도</strong>: 최근성은 <code>2022–2024</code> 발행 논문의 정책 인용 비중이고, 인용 강도는 고유 논문 1편당 평균 정책 인용수다. 자세히 보기: <a href="#recency-intensity">최근성과 인용 강도</a></li>
+<li><strong>최근성과 인용 강도</strong>: 최근성은 <code>2022–2024</code> 발행 논문의 정책문헌 인용 비중이고, 인용 강도는 고유 논문 1편당 평균 정책문헌 인용수다. 자세히 보기: <a href="#recency-intensity">최근성과 인용 강도</a></li>
 <li><strong>다중라벨</strong>: OpenAlex 토픽은 논문 1편이 여러 토픽에 동시에 속할 수 있어 합이 100%를 넘을 수 있다. 자세히 보기: <a href="#multilabel">다중라벨</a></li>
 <li><strong>자국 인용 비중 분모</strong>: 자국 인용 비중은 1저자 국가코드가 확인되는 인용만 분모로 쓴다. 자세히 보기: <a href="#self-citation-share">자국 인용 비중</a></li>
 </ul>
@@ -718,8 +718,8 @@ ul.task-list li input[type="checkbox"] {
 <h3 class="anchored" data-anchor-id="recency-intensity">B4. 최근성과 인용 강도</h3>
 <p><strong>“최근성”과 “인용 강도”는 어떻게 계산했나?</strong></p>
 <ul>
-<li><strong>최근성</strong>: <code>2022–2024</code> 발행 논문이 차지하는 정책 인용 비중</li>
-<li><strong>인용 강도</strong>: 집계 단위 내 고유 논문 1편당 평균 정책 인용수 = <code>인용수 / 고유 논문수</code></li>
+<li><strong>최근성</strong>: <code>2022–2024</code> 발행 논문이 차지하는 정책문헌 인용 비중</li>
+<li><strong>인용 강도</strong>: 집계 단위 내 고유 논문 1편당 평균 정책문헌 인용수 = <code>인용수 / 고유 논문수</code></li>
 </ul>
 </section>
 <section id="self-citation-share" class="level3">
@@ -731,7 +731,7 @@ ul.task-list li input[type="checkbox"] {
 <strong>자세히 보기: 기대비중 계산과 비교 표</strong>
 </summary>
 <p><strong>기대 자국 인용 비중(expected self-citation share)은 어떻게 계산했나?</strong></p>
-<p>정책 출처 국가별로 “어떤 도메인을 얼마나 인용했는지”를 먼저 계산했다. 그 다음 각 도메인에서 해당 국가의 <strong>세계 연구 생산 비중(OpenAlex 기준)</strong>을 가중치로 곱해 합산했다. 즉 정책 인용이 도메인별 세계 생산 비중을 그대로 따른다고 가정했을 때의 기대비중을 산출한 것이다. 개념적으로는 <code>기대비중 = Σ(정책 인용의 도메인 비중 × 해당 도메인에서 그 국가의 연구 생산 비중)</code>이다.</p>
+<p>정책 출처 국가별로 “어떤 도메인을 얼마나 인용했는지”를 먼저 계산했다. 그 다음 각 도메인에서 해당 국가의 <strong>세계 연구 생산 비중(OpenAlex 기준)</strong>을 가중치로 곱해 합산했다. 즉 정책문헌 인용이 도메인별 세계 생산 비중을 그대로 따른다고 가정했을 때의 기대비중을 산출한 것이다. 개념적으로는 <code>기대비중 = Σ(정책문헌 인용의 도메인 비중 × 해당 도메인에서 그 국가의 연구 생산 비중)</code>이다.</p>
 <p><span id="self-citation-context"></span></p>
 <p>아래 표는 자국 인용 비중을 일부 비교 집단에서 요약한 것이다. 자국 인용 비중은 1저자 국가코드가 확인되는 인용만 분모로 쓴다. 국가 간 비교는 정책문헌의 수집 범위와 출처 구성 차이가 섞일 수 있어, “높다”나 “낮다”로 단정하기보다 점검 지표로 두는 것이 좋다.</p>
 <table class="table">
@@ -797,14 +797,14 @@ ul.task-list li input[type="checkbox"] {
 <h3 class="anchored" data-anchor-id="multilabel">B6. 다중라벨 해석</h3>
 <p><strong>토픽과 도메인 집계에서 합이 100%를 넘는 이유는?</strong></p>
 <p>OpenAlex 토픽은 다중 라벨 구조다. 논문 1편이 여러 토픽에 동시에 속할 수 있어, 토픽·도메인·세부분야 기준으로 집계하면 중복 합산이 발생한다. 따라서 토픽 기반 수치는 “토픽 인스턴스 기준”으로 이해해야 한다.</p>
-<p>이번 분석에서 사용한 토픽 데이터에서는 정책 인용 1건이 평균적으로 약 2.8개 토픽에 연결된다. 그래서 도메인·토픽 기준으로 인용을 합산하면, “인용 건수”보다 큰 합계가 나온다.</p>
+<p>이번 분석에서 사용한 토픽 데이터에서는 정책문헌 인용 1건이 평균적으로 약 2.8개 토픽에 연결된다. 그래서 도메인·토픽 기준으로 인용을 합산하면, “인용 건수”보다 큰 합계가 나온다.</p>
 <p>다만 각 인용을 그 논문이 가진 토픽 수로 나눠 분할 집계해도, 도메인 순위는 유지된다. 상위 3개 도메인 점유율도 큰 폭으로 변하지 않는다(예: 88.8% → 88.5%).</p>
 <p><strong>출처 국가·출처 유형 집계도 합이 커질 수 있나?</strong></p>
 <p>그럴 수 있다. Overton의 출처 국가·유형 태그는 상호배타적 분류가 아니라 태그 기반(상위–하위 동시 부여 포함)이라서, 문헌 1편이 여러 범주에 동시에 잡힐 수 있다.</p>
 </section>
 <section id="recent-years-decline" class="level3">
 <h3 class="anchored" data-anchor-id="recent-years-decline">B7. 최근 연도 하락 해석 주의</h3>
-<p><strong>연도 추세에서 2022년 이후 하락은 “정책이 과학을 덜 쓴다”는 뜻인가?</strong></p>
+<p><strong>연도 추세에서 2022년 이후 하락은 “정책문헌의 학술 DOI 인용이 줄어든다”는 뜻인가?</strong></p>
 <p>그렇게 단정하기 어렵다. 정책문헌 수집·정리의 시차(수집 지연)와 발행 직후 인용 기록이 완전히 누적되지 않는 효과가 함께 작동했을 가능성이 크다. 따라서 최근 연도 수치는 “실시간 감소”라기보다 관측 시차가 섞인 신호로 해석해야 한다.</p>
 </section>
 <section id="why-2012" class="level3">
@@ -821,9 +821,9 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="oa-interpretation" class="level3">
 <h3 class="anchored" data-anchor-id="oa-interpretation">B9. OA(오픈액세스) 해석</h3>
-<p><strong>OA 논문이 정책 인용에서 높게 보이는 건 인과인가?</strong></p>
-<p>정책 인용에서는 OA 비중이 상대적으로 높게 나타난다. 다만 이것이 “OA라서 더 인용된다”는 인과로 바로 이어지지는 않는다. 정책 관련 연구가 OA로 출판될 가능성, 공공 펀딩 구조, 분야 구성 차이 등 교란 요인이 존재한다.</p>
-<p>다만 “정책에서 인용된 논문”을 기준으로 도메인과 발행연도 구간을 나눠 보아도, OA 논문의 논문 1편당 정책 인용 평균이 더 높게 나타나는 경향은 대체로 유지된다. 아래 표는 2000–2009, 2010–2019 구간에서의 비교다. 최근 연도는 관측 시차 영향이 커서 제외했다.</p>
+<p><strong>OA 논문이 정책문헌 인용에서 높게 보이는 건 인과인가?</strong></p>
+<p>정책문헌 인용에서는 OA 비중이 상대적으로 높게 나타난다. 다만 이것이 “OA라서 더 인용된다”는 인과로 바로 이어지지는 않는다. 정책 관련 연구가 OA로 출판될 가능성, 공공 펀딩 구조, 분야 구성 차이 등 교란 요인이 존재한다.</p>
+<p>다만 “정책문헌에서 인용된 논문”을 기준으로 도메인과 발행연도 구간을 나눠 보아도, OA 논문의 논문 1편당 정책문헌 인용 평균이 더 높게 나타나는 경향은 대체로 유지된다. 아래 표는 2000–2009, 2010–2019 구간에서의 비교다. 최근 연도는 관측 시차 영향이 커서 제외했다.</p>
 <table class="table">
 <colgroup>
 <col style="width: 15%">
@@ -919,7 +919,7 @@ ul.task-list li input[type="checkbox"] {
 <h3 class="anchored" data-anchor-id="appendix-c3-oa-reference">C3. 2장 OA 해석 보조: 도메인·출처 유형</h3>
 <p>메인 보고서 3.2의 OA 논의는 “가능한 설명 요인”을 남겨두는 수준으로만 다뤘다. 아래는 OA 비중을 요약한 참고 그림이다.</p>
 <ul>
-<li><strong>한 줄 요지:</strong> 정책 인용에서 나타나는 OA 비중을 도메인·출처 유형 기준으로 요약한다.</li>
+<li><strong>한 줄 요지:</strong> 정책문헌 인용에서 나타나는 OA 비중을 도메인·출처 유형 기준으로 요약한다.</li>
 <li><strong>왜 넣었나:</strong> 본문에서 OA를 “가능한 설명 요인”으로만 다룰 때, 독자가 실제 분포를 한 번 더 확인할 수 있도록 했다.</li>
 <li><strong>해석 경계:</strong> 이 그림만으로 OA 효과를 인과로 단정하지 않는다(구성·선택·출판 관행 등 교란 가능).</li>
 </ul>
@@ -1206,7 +1206,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="한국-유입inbound-한국-1저자-연구를-글로벌-정책문헌이-어떻게-인용하는가" class="level4">
 <h4 class="anchored" data-anchor-id="한국-유입inbound-한국-1저자-연구를-글로벌-정책문헌이-어떻게-인용하는가">(2) 한국 유입(inbound): “한국 1저자” 연구를 글로벌 정책문헌이 어떻게 인용하는가</h4>
-<p>유입은 기본 정의가 “한국 1저자 논문을 인용한 정책문헌”이므로, any-author 분수계수는 <strong>유입의 규모(한국 기여)</strong>를 보정하는 역할을 한다. 2025.06 DB 기준, 한국 1저자 works에 대한 정책 인용 97,502건은 any-author 분수계수로 환산하면 유효 KR 인용 합이 82,308(0.844배)로 줄어든다.</p>
+<p>유입은 기본 정의가 “한국 1저자 논문을 인용한 정책문헌”이므로, any-author 분수계수는 <strong>유입의 규모(한국 기여)</strong>를 보정하는 역할을 한다. 2025.06 DB 기준, 한국 1저자 works에 대한 정책문헌 인용 97,502건은 any-author 분수계수로 환산하면 유효 KR 인용 합이 82,308(0.844배)로 줄어든다.</p>
 <p>정책 출처 구조(국가)는 크게 유지된다(상위 3개 정책 출처 합계 약 55.0% → 55.0%).</p>
 <table class="table">
 <thead>
