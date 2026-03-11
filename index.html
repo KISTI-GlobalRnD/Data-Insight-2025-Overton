@@ -143,71 +143,60 @@ ul.task-list li input[type="checkbox"] {
     </div>
 
     <div class="promo-scrolly__sticky">
-      <div class="promo-scrolly__stage" data-scene="hub-country">
-        <div class="promo-stage-focus" aria-hidden="true"></div>
-        <div class="promo-stage-hud" aria-hidden="true">
-          <div class="promo-stage-progress">
-            <div class="promo-stage-progress__meta">
-              <span class="promo-stage-progress__label">장면</span>
-              <span class="promo-stage-progress__count" data-progress-count="">1 / 4</span>
-            </div>
-            <div class="promo-stage-progress__track">
-              <span class="promo-stage-progress__fill" data-progress-fill=""></span>
-            </div>
+      <div class="promo-stage-hud" aria-hidden="true">
+        <div class="promo-stage-progress">
+          <div class="promo-stage-progress__meta">
+            <span class="promo-stage-progress__label">장면</span>
+            <span class="promo-stage-progress__count" data-progress-count="">1 / 4</span>
           </div>
-          <div class="promo-stage-side">
-            <div class="promo-stage-now">
-              <div class="promo-stage-now__label">지금 보는 수치</div>
-              <div class="promo-stage-now__value" data-scene-metric-value="">총량 ≠ 밀도</div>
-              <div class="promo-stage-now__caption" data-scene-metric-caption="">같은 허브라도 총량과 밀도의 순서는 다를 수 있다</div>
-              <div class="promo-stage-now__detail" data-scene-metric-detail="">UK·USA·IGO와 벨기에·캐나다·호주는 같은 허브가 아니다</div>
-            </div>
-            <div class="promo-stage-next">
-              <div class="promo-stage-next__label">다음 장면</div>
-              <div class="promo-stage-next__title" data-next-title="">출처가 달라지면 인용하는 연구도 달라진다</div>
-            </div>
+          <div class="promo-stage-progress__track">
+            <span class="promo-stage-progress__fill" data-progress-fill=""></span>
           </div>
         </div>
+        <div class="promo-stage-side">
+          <div class="promo-stage-now">
+            <div class="promo-stage-now__label">지금 보는 수치</div>
+            <div class="promo-stage-now__value" data-scene-metric-value="">총량 ≠ 밀도</div>
+            <div class="promo-stage-now__caption" data-scene-metric-caption="">같은 허브라도 총량과 밀도의 순서는 다를 수 있다</div>
+            <div class="promo-stage-now__detail" data-scene-metric-detail="">UK·USA·IGO와 벨기에·캐나다·호주는 같은 허브가 아니다</div>
+          </div>
+          <div class="promo-stage-next">
+            <div class="promo-stage-next__label">다음 장면</div>
+            <div class="promo-stage-next__title" data-next-title="">출처가 달라지면 인용하는 연구도 달라진다</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="promo-scrolly__stage" data-scene="hub-country">
+        <div class="promo-stage-focus" aria-hidden="true"></div>
         <figure class="promo-figure is-active figure" data-figure-id="hub-country" aria-hidden="false">
           <img src="Assets/Landing/country_citations_top10.png" alt="정책 출처별 총 인용과 문헌당 평균 인용, 도메인 구성" loading="lazy" class="figure-img">
-          <div class="promo-figure__callouts" aria-hidden="true">
-            <span class="promo-callout" style="--x: 21%; --y: 34%;">총량 허브</span>
-            <span class="promo-callout" style="--x: 76%; --y: 22%;">밀도 허브</span>
-          </div>
           <figcaption>같은 허브라도 총량과 밀도의 순서는 다를 수 있다.</figcaption>
         </figure>
 
         <figure class="promo-figure figure" data-figure-id="hub-type" aria-hidden="true">
           <img src="Assets/Landing/source_type_domain.png" alt="출처 유형과 도메인 구성의 관계" loading="lazy" class="figure-img">
-          <div class="promo-figure__callouts" aria-hidden="true">
-            <span class="promo-callout" style="--x: 24%; --y: 30%;">정부·국제기구</span>
-            <span class="promo-callout" style="--x: 71%; --y: 64%;">전문기관·싱크탱크</span>
-          </div>
           <figcaption>출처의 성격이 바뀌면 인용하는 연구의 구성도 달라진다.</figcaption>
         </figure>
 
         <figure class="promo-figure figure" data-figure-id="korea" aria-hidden="true">
           <img src="Assets/Landing/korea_flows.png" alt="한국 연구의 정책문헌 유입과 한국 정책문헌의 연구 인용 흐름(상위 10개)" loading="lazy" class="figure-img">
-          <div class="promo-figure__callouts" aria-hidden="true">
-            <span class="promo-callout" style="--x: 26%; --y: 32%;">정책문헌 유입</span>
-            <span class="promo-callout" style="--x: 74%; --y: 32%;">연구 인용</span>
-          </div>
           <figcaption>한국은 정책문헌 유입과 연구 인용을 나눠 볼 때 더 또렷하게 보인다.</figcaption>
         </figure>
 
         <figure class="promo-figure figure" data-figure-id="two-speed" aria-hidden="true">
           <img src="Assets/Landing/topic_intensity_vs_recency.png" alt="토픽별 인용 강도와 최근성" loading="lazy" class="figure-img">
-          <div class="promo-figure__callouts" aria-hidden="true">
-            <span class="promo-callout" style="--x: 28%; --y: 61%;">성숙한 의제</span>
-            <span class="promo-callout" style="--x: 75%; --y: 22%;">급등하는 의제</span>
-          </div>
           <figcaption>정책근거의 시간은 하나가 아니다.</figcaption>
         </figure>
+      </div>
+      <div class="promo-stage-tags" aria-hidden="true">
+        <span class="promo-stage-tag" data-scene-tag-a="">총량 허브</span>
+        <span class="promo-stage-tag" data-scene-tag-b="">밀도 허브</span>
       </div>
     </div>
 
     <div class="promo-scrolly__steps" aria-label="스토리 단계">
-      <div class="promo-step is-active" data-figure="hub-country" data-metric-value="총량 ≠ 밀도" data-metric-caption="같은 허브라도 총량과 밀도의 순서는 다를 수 있다" data-metric-detail="UK·USA·IGO와 벨기에·캐나다·호주는 같은 허브가 아니다" aria-current="step">
+      <div class="promo-step is-active" data-figure="hub-country" data-metric-value="총량 ≠ 밀도" data-metric-caption="같은 허브라도 총량과 밀도의 순서는 다를 수 있다" data-metric-detail="UK·USA·IGO와 벨기에·캐나다·호주는 같은 허브가 아니다" data-tag-a="총량 허브" data-tag-b="밀도 허브" aria-current="step">
         <p class="promo-step__kicker">허브 · 총량과 밀도</p>
         <h2 class="promo-step__title anchored">많이 인용되는 곳과 촘촘히 인용되는 곳은 다르다</h2>
         <p class="promo-step__body">
@@ -217,7 +206,7 @@ ul.task-list li input[type="checkbox"] {
         </p>
       </div>
 
-      <div class="promo-step" data-figure="hub-type" data-metric-value="출처가 바뀌면" data-metric-caption="인용하는 연구의 구성과 인용 방식도 달라진다" data-metric-detail="정부·국제기구와 전문기관·싱크탱크는 서로 다른 근거 구성을 만든다">
+      <div class="promo-step" data-figure="hub-type" data-metric-value="출처가 바뀌면" data-metric-caption="인용하는 연구의 구성과 인용 방식도 달라진다" data-metric-detail="정부·국제기구와 전문기관·싱크탱크는 서로 다른 근거 구성을 만든다" data-tag-a="정부·국제기구" data-tag-b="전문기관·싱크탱크">
         <p class="promo-step__kicker">허브 · 출처 유형</p>
         <h2 class="promo-step__title anchored">출처가 달라지면 인용하는 연구도 달라진다</h2>
         <p class="promo-step__body">
@@ -227,7 +216,7 @@ ul.task-list li input[type="checkbox"] {
         </p>
       </div>
 
-      <div class="promo-step" data-figure="korea" data-metric-value="상위 3개 정책 출처 ↔ 상위 1개국" data-metric-caption="54.8%와 55.7%보다 먼저 봐야 할 것은 정책 출처 태그 기준 상위 3개 집중과 상위 1개국 집중의 차이다" data-metric-detail="정책문헌 유입은 정책 출처 태그 기준 상위 3개 집중이고, 연구 인용은 상위 1개국 집중이다">
+      <div class="promo-step" data-figure="korea" data-metric-value="상위 3개 정책 출처 ↔ 상위 1개국" data-metric-caption="54.8%와 55.7%보다 먼저 봐야 할 것은 정책 출처 태그 기준 상위 3개 집중과 상위 1개국 집중의 차이다" data-metric-detail="정책문헌 유입은 정책 출처 태그 기준 상위 3개 집중이고, 연구 인용은 상위 1개국 집중이다" data-tag-a="정책문헌 유입" data-tag-b="연구 인용">
         <p class="promo-step__kicker">한국</p>
         <h2 class="promo-step__title anchored">한국은 유입 경로와 인용하는 연구의 구조가 다르다</h2>
         <p class="promo-step__body">
@@ -237,7 +226,7 @@ ul.task-list li input[type="checkbox"] {
         </p>
       </div>
 
-      <div class="promo-step" data-figure="two-speed" data-metric-value="성숙 ↔ 급등" data-metric-caption="모든 토픽이 같은 주기로 움직이지는 않는다" data-metric-detail="정책·경제 토픽과 팬데믹·환경 토픽은 업데이트 주기가 다르다">
+      <div class="promo-step" data-figure="two-speed" data-metric-value="성숙 ↔ 급등" data-metric-caption="모든 토픽이 같은 주기로 움직이지는 않는다" data-metric-detail="정책·경제 토픽과 팬데믹·환경 토픽은 업데이트 주기가 다르다" data-tag-a="성숙한 의제" data-tag-b="급등하는 의제">
         <p class="promo-step__kicker">두 속도</p>
         <h2 class="promo-step__title anchored">모든 토픽이 같은 속도로 움직이지는 않는다</h2>
         <p class="promo-step__body">

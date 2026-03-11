@@ -356,6 +356,8 @@
     const metricCaption = sectionEl.querySelector("[data-scene-metric-caption]");
     const metricDetail = sectionEl.querySelector("[data-scene-metric-detail]");
     const nextTitle = sectionEl.querySelector("[data-next-title]");
+    const sceneTagA = sectionEl.querySelector("[data-scene-tag-a]");
+    const sceneTagB = sectionEl.querySelector("[data-scene-tag-b]");
 
     if (steps.length === 0 || figures.length === 0) return;
 
@@ -401,6 +403,14 @@
       if (metricValue && nextStep?.dataset.metricValue) metricValue.textContent = nextStep.dataset.metricValue;
       if (metricCaption && nextStep?.dataset.metricCaption) metricCaption.textContent = nextStep.dataset.metricCaption;
       if (metricDetail && nextStep?.dataset.metricDetail) metricDetail.textContent = nextStep.dataset.metricDetail;
+      if (sceneTagA) {
+        sceneTagA.textContent = nextStep?.dataset.tagA || "";
+        sceneTagA.hidden = !nextStep?.dataset.tagA;
+      }
+      if (sceneTagB) {
+        sceneTagB.textContent = nextStep?.dataset.tagB || "";
+        sceneTagB.hidden = !nextStep?.dataset.tagB;
+      }
       if (nextTitle) {
         const upcoming = steps[nextIndex + 1];
         const upcomingTitle = upcoming ? upcoming.querySelector(".promo-step__title") : null;
