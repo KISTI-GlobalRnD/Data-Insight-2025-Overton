@@ -1408,9 +1408,9 @@ html.has-js [data-reveal].is-inview {
 
   .promo-title {
     margin-bottom: 1rem;
-    font-size: 2.08rem;
+    font-size: 1.92rem;
     line-height: 1.04;
-    max-width: 11.5ch;
+    max-width: none;
   }
 
   .promo-lede {
@@ -1424,6 +1424,20 @@ html.has-js [data-reveal].is-inview {
 
   .promo-stats {
     grid-template-columns: 1fr;
+    gap: 0.65rem;
+  }
+
+  .promo-stat {
+    min-height: 0;
+    padding: 0.85rem 0.9rem 0.8rem;
+  }
+
+  .promo-stat__value {
+    font-size: 1.32rem;
+  }
+
+  .promo-stat__label {
+    font-size: 0.78rem;
   }
 
   .promo-flow__items {
