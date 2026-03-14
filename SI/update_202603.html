@@ -145,6 +145,7 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#데이터-업데이트-핵심-요약" id="toc-데이터-업데이트-핵심-요약" class="nav-link active" data-scroll-target="#데이터-업데이트-핵심-요약">2026 데이터 업데이트 핵심 요약</a></li>
   <li><a href="#업데이트-범위" id="toc-업데이트-범위" class="nav-link" data-scroll-target="#업데이트-범위">업데이트 범위</a></li>
+  <li><a href="#데이터-프로파일링" id="toc-데이터-프로파일링" class="nav-link" data-scroll-target="#데이터-프로파일링">데이터 프로파일링</a></li>
   <li><a href="#핵심-변화" id="toc-핵심-변화" class="nav-link" data-scroll-target="#핵심-변화">핵심 변화</a></li>
   <li><a href="#크게-바뀌는-파트" id="toc-크게-바뀌는-파트" class="nav-link" data-scroll-target="#크게-바뀌는-파트">크게 바뀌는 파트</a>
   <ul class="collapse">
@@ -251,6 +252,73 @@ ul.task-list li input[type="checkbox"] {
 <li><strong>fallback:</strong> <code>first_author_country</code>, <code>is_oa</code>는 remote <code>202506</code> 보완값 사용</li>
 <li><strong>비교 기준:</strong> 공식 보고서가 사용한 <code>Overton 2025.02 + OpenAlex 2025.06</code></li>
 </ul>
+</section>
+<section id="데이터-프로파일링" class="level2">
+<h2 class="anchored" data-anchor-id="데이터-프로파일링">데이터 프로파일링</h2>
+<p>이번 업데이트에서는 모수 자체가 함께 커졌다.</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>항목</th>
+<th style="text-align: right;">v1 공식본 기준</th>
+<th style="text-align: right;">v2 웹 업데이트 기준</th>
+<th style="text-align: right;">변화</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>정책문헌-논문 인용 행 수</td>
+<td style="text-align: right;">2,337만</td>
+<td style="text-align: right;">2,896만</td>
+<td style="text-align: right;">+23.9%</td>
+</tr>
+<tr class="even">
+<td>정책문헌 수</td>
+<td style="text-align: right;">134.8만</td>
+<td style="text-align: right;">165.0만</td>
+<td style="text-align: right;">+22.4%</td>
+</tr>
+<tr class="odd">
+<td>고유 논문 수</td>
+<td style="text-align: right;">653.2만</td>
+<td style="text-align: right;">742.5만</td>
+<td style="text-align: right;">+13.7%</td>
+</tr>
+</tbody>
+</table>
+<p>따라서 이 페이지의 수치 변화는 구조 변화만으로 읽으면 안 된다. 최신 데이터에서 coverage가 넓어지면서 분모와 표본이 함께 커진 결과가 같이 반영돼 있다. 이 점을 전제로 보면, 허브 집중과 한국의 비대칭은 유지되지만 집중 강도와 도메인 구성은 일부 조정된 것으로 해석하는 편이 적절하다.</p>
+<p>특히 한국 관련 표본도 함께 커졌다.</p>
+<table class="table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 26%">
+<col style="width: 26%">
+<col style="width: 26%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>한국 관련 표본</th>
+<th style="text-align: right;">v1 공식본 기준</th>
+<th style="text-align: right;">v2 웹 업데이트 기준</th>
+<th style="text-align: right;">변화</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>한국 연구가 인용된 행 수</td>
+<td style="text-align: right;">8.9만</td>
+<td style="text-align: right;">11.5만</td>
+<td style="text-align: right;">+29.0%</td>
+</tr>
+<tr class="even">
+<td><code>South Korea</code> 정책 출처 태그가 붙은 인용 행 수</td>
+<td style="text-align: right;">3.3만</td>
+<td style="text-align: right;">28.7만</td>
+<td style="text-align: right;">+770.4%</td>
+</tr>
+</tbody>
+</table>
+<p>따라서 한국 파트의 수치 이동은 구조 변화만이 아니라, 한국에 직접 연결된 관측 표본이 크게 늘어난 결과도 함께 반영한 것으로 해석해야 한다. 특히 정책 출처 태그는 상호배타적이지 않을 수 있으므로, <code>South Korea</code> 태그가 붙은 행 수 증가는 한국 관련 비교의 분모와 범위를 함께 넓힌다.</p>
 </section>
 <section id="핵심-변화" class="level2">
 <h2 class="anchored" data-anchor-id="핵심-변화">핵심 변화</h2>
