@@ -3,6 +3,46 @@
 
   const LANG_KEYS = ["promo_lang", "si_lang"];
   const SUPPORTED_LANGS = ["ko", "en"];
+  const SI_PAGE_PAIRS = {
+    "index.html": { ko: "index.html", en: "index_en.html" },
+    "index_en.html": { ko: "index.html", en: "index_en.html" },
+    "methods.html": { ko: "methods.html", en: "methods_en.html" },
+    "methods_en.html": { ko: "methods.html", en: "methods_en.html" },
+    "interactive.html": { ko: "interactive.html", en: "interactive_en.html" },
+    "interactive_en.html": { ko: "interactive.html", en: "interactive_en.html" },
+    "appendix.html": { ko: "appendix.html", en: "appendix_en.html" },
+    "appendix_en.html": { ko: "appendix.html", en: "appendix_en.html" },
+    "next_questions.html": { ko: "next_questions.html", en: "next_questions_en.html" },
+    "next_questions_en.html": { ko: "next_questions.html", en: "next_questions_en.html" },
+  };
+  const NAV_ITEMS = {
+    ko: {
+      main: { text: "메인", href: "../index.html" },
+      report: { text: "보고서(PDF)", href: "../Report/Report_final.pdf" },
+      menu: "확장 자료",
+      items: [
+        { text: "확장 자료", href: "../SI/index.html" },
+        { text: "2026 데이터 업데이트", href: "../SI/update_202603.html" },
+        { text: "방법론·데이터 정합성", href: "../SI/methods.html" },
+        { text: "인터랙티브", href: "../SI/interactive.html" },
+        { text: "부록", href: "../SI/appendix.html" },
+        { text: "다음 질문", href: "../SI/next_questions.html" },
+      ],
+    },
+    en: {
+      main: { text: "Main", href: "../index.html?lang=en" },
+      report: { text: "Report (PDF)", href: "../Report/Report_final.pdf" },
+      menu: "Supplementary Information",
+      items: [
+        { text: "Overview", href: "../SI/index_en.html" },
+        { text: "2026 Data Update (Korean)", href: "../SI/update_202603.html" },
+        { text: "Methods & Data Validity", href: "../SI/methods_en.html" },
+        { text: "Interactive", href: "../SI/interactive_en.html" },
+        { text: "Appendix", href: "../SI/appendix_en.html" },
+        { text: "Next Questions", href: "../SI/next_questions_en.html" },
+      ],
+    },
+  };
 
   function getFileName() {
     try {
@@ -16,16 +56,7 @@
 
   function isSIPage(fileName) {
     if (!isInSIDir()) return false;
-    return (
-      fileName === "index.html" ||
-      fileName === "interactive.html" ||
-      fileName === "appendix.html" ||
-      fileName === "next_questions.html" ||
-      fileName === "index_en.html" ||
-      fileName === "interactive_en.html" ||
-      fileName === "appendix_en.html" ||
-      fileName === "next_questions_en.html"
-    );
+    return Boolean(SI_PAGE_PAIRS[fileName]);
   }
 
   function isInSIDir() {
@@ -96,6 +127,31 @@
     } catch (_err) {
       // ignore
     }
+  }
+
+  function getLanguagePageUrl(fileName, lang) {
+    const pair = SI_PAGE_PAIRS[fileName];
+    const targetFileName = pair ? pair[lang] : null;
+    if (!targetFileName || targetFileName === fileName) return null;
+
+    try {
+      const url = new URL(window.location.href);
+      const parts = url.pathname.split("/");
+      parts[parts.length - 1] = targetFileName;
+      url.pathname = parts.join("/");
+      url.searchParams.delete("lang");
+      return url.toString();
+    } catch (_err) {
+      return targetFileName;
+    }
+  }
+
+  function navigateToLanguagePage(fileName, lang, mode) {
+    const targetUrl = getLanguagePageUrl(fileName, lang);
+    if (!targetUrl) return false;
+    if (mode === "replace") window.location.replace(targetUrl);
+    else window.location.href = targetUrl;
+    return true;
   }
 
   function mountIframe(container) {
@@ -185,9 +241,33 @@
     });
   }
 
+  function updateNavbar(lang) {
+    const nav = NAV_ITEMS[SUPPORTED_LANGS.includes(lang) ? lang : "ko"];
+    const topLinks = Array.from(document.querySelectorAll(".navbar-nav > .nav-item > .nav-link"));
+
+    function setLink(link, item, textSelector) {
+      if (!link || !item) return;
+      link.setAttribute("href", item.href);
+      const textEl = link.querySelector(textSelector || ".menu-text");
+      if (textEl) textEl.textContent = item.text;
+    }
+
+    setLink(topLinks[0], nav.main);
+    setLink(topLinks[1], nav.report);
+
+    const dropdownToggle = document.querySelector(".navbar-nav .dropdown-toggle .menu-text");
+    if (dropdownToggle) dropdownToggle.textContent = nav.menu;
+
+    const dropdownItems = Array.from(document.querySelectorAll(".navbar-nav .dropdown-menu .dropdown-item"));
+    nav.items.forEach((item, index) => {
+      setLink(dropdownItems[index], item, ".dropdown-text");
+    });
+  }
+
   function applyLanguage(lang) {
     const safe = SUPPORTED_LANGS.includes(lang) ? lang : "ko";
     document.documentElement.dataset.siLang = safe;
+    updateNavbar(safe);
     updatePlotLinksAndFrames(safe);
   }
 
@@ -222,6 +302,7 @@
     function go(next) {
       const safe = SUPPORTED_LANGS.includes(next) ? next : "ko";
       setPreferredLang(safe);
+      if (navigateToLanguagePage(fileName, safe, "assign")) return;
       setUrlLangParam(safe);
       setButtons(safe);
       applyLanguage(safe);
@@ -246,7 +327,7 @@
     }
 
     // initial state
-    const initial = getPreferredLang();
+    const initial = getPreferredLang(fileName);
     setButtons(initial);
   }
 
@@ -256,6 +337,7 @@
 
     const initialLang = getPreferredLang(fileName);
     setPreferredLang(initialLang);
+    if (navigateToLanguagePage(fileName, initialLang, "replace")) return;
     applyLanguage(initialLang);
 
     initPlotLoaders();

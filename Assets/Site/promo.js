@@ -14,98 +14,102 @@
   const baseline = new WeakMap();
 
   const en = {
-    "meta.title": "Overton × OpenAlex — Data Insight",
+    "meta.title": "From Science to Policy | Overton × OpenAlex",
     "meta.description":
-      "A one-page view of when, what, and where policy draws scientific evidence by combining Overton policy citations with OpenAlex metadata.",
+      "A one-page summary of how DOI-linked policy documents cite scholarly research through the Overton × OpenAlex evidence map.",
     "skip.link": "Skip to content",
     "lang.aria": "Language",
-    "hero.kicker": "2025 DATA INSIGHT",
-    "hero.brand": "KISTI Center for Global R&D Analysis",
-    "hero.title": "Science flows into policy — but the paths are not even.",
+    "hero.kicker": "Key Findings",
+    "hero.title": "Policy evidence is concentrated in a small set of hub channels.",
     "hero.lede":
-      "Most policy documents cite scholarly research. Which domains and topics are repeatedly called upon, and which countries and institutions sit at the center of the flow?",
+      "Korea is no exception. Inbound policy citations to Korean research concentrate in a few policy-source channels such as the United States, international organizations, and the United Kingdom. Conversely, Korean policy documents lean more heavily toward U.S. research. This page follows that contrast through hubs, source types, Korea, and two evidence speeds.",
     "hero.lede2":
-      "By combining Overton citation logs with OpenAlex metadata, we summarize in one page <strong>when, what, and where</strong> policy pulls evidence from science.",
+      "This page is based on DOI-linked policy-document → scholarly-article citations observed in Overton. It does not cover the full policy universe; it shows only the <strong>currently observable evidence-linkage structure</strong>.",
     "hero.actions.aria": "Quick links",
-    "hero.cta.summary": "View key summary",
-    "hero.cta.report": "Report PDF",
-    "hero.cta.si": "Go to Supplementary Information",
-    "bridge.aria": "Key message",
-    "bridge.eyebrow": "Why this map matters",
-    "bridge.title": "How evidence flows can matter more than how much.",
-    "bridge.body":
-      "Policy citations are not just totals—they are connections (routes). Seeing which studies are repeatedly called through which channels, and which countries, institutions, and topics become hubs, reveals the structure of the policy–science linkage.",
-    "bridge.body2":
-      "This page walks through <strong>when, what, and where</strong> policy draws evidence, based on DOI-linked citations.",
-    "bridge.chips.aria": "Reading order",
-    "bridge.chip.when": "When: growth and citation density",
-    "bridge.chip.what": "What: skew across domains and topics",
-    "bridge.chip.where": "Where: hubs across countries and institutions",
-    "bridge.actions.aria": "Next",
-    "bridge.cta.summary": "See overview metrics",
-    "bridge.cta.story": "Jump to scrolly story",
-    "intro.title": "At a glance",
-    "intro.lede":
-      "Start with overall scale and coverage, based on DOI-linked policy→research citations. Definitions, constraints, and metric notes are in the Supplementary Information.",
-    "intro.stats.aria": "Summary metrics",
-    "intro.stat.links": "Policy → research citation links",
-    "intro.stat.links.value": "23.37M",
-    "intro.stat.docs": "Policy documents (deduplicated)",
-    "intro.stat.docs.value": "1.38M",
-    "intro.stat.dois": "Distinct cited DOIs",
-    "intro.stat.dois.value": "6.53M",
-    "intro.stat.coverage": "Policy docs with citations",
-    "intro.stat.coverage.value": "97.6%",
-    "intro.meta.snapshot": "Data snapshot: Overton 2025.02 · OpenAlex 2025.06 · DOI-based matching",
-    "intro.meta.link": "Scroll the story",
-    "fig.korea.alt": "Korea policy–research flows (inbound/sourcing) with expected-baseline comparison (top 10)",
-    "fig.network.alt":
-      "Policy–research evidence flow network (top 50 nodes; top-3 inbound/outbound links per node)",
-    "fig.hub.alt": "Policy citations by policy source entity (total vs per-document; top 10 + Korea)",
-    "fig.domain.alt": "Policy citations by domain (top 10)",
-    "fig.topics.alt": "Topics: citation intensity vs recency",
-    "fig.pubyear.alt": "Policy citations, document counts, and average citations per document by publication year",
+    "hero.cta.report": "View Report (PDF)",
+    "hero.cta.si": "View Supplementary Information",
+    "hero.cta.si.href": "./SI/index_en.html",
+    "hero.stats.aria": "Key numbers",
+    "hero.stat.inbound": "Inbound policy citations to Korean research concentrated in the top 3 policy sources",
+    "hero.stat.sourcing": "Share of U.S. research in citations from Korean policy documents",
+    "hero.stat.repeat": "Share of unique cited works cited at least twice",
+    "hero.meta.snapshot": "Data snapshot: Overton 2025.02 · OpenAlex 2025.06 · DOI-linked citations",
+    "hero.scroll": "Scroll",
+    "story.kicker": "Key Scenes",
+    "story.title": "Policy evidence in four scenes",
+    "story.progress.label": "Scene",
     "story.steps.aria": "Story steps",
-    "story.korea.kicker": "1 · Mirror",
-    "story.korea.title": "Korea: inbound and sourcing take different routes",
+    "fig.hub_country.alt": "Policy-source citation totals, average citations per document, and domain composition",
+    "fig.hub_type.alt": "Relationship between policy source type and research-domain composition",
+    "fig.korea.alt": "Inbound policy citations to Korean research and research citations from Korean policy documents (top 10)",
+    "fig.two_speed.alt": "Topic-level citation intensity and recency",
+    "story.hub_country.kicker": "Hubs · Volume and Density",
+    "story.hub_country.title": "The most-cited sources are not always the densest sources.",
+    "story.hub_country.body":
+      "International organizations, the United States, and the United Kingdom lead by total volume, while Germany, France, and Canada stand out by citations per document.",
+    "story.hub_type.kicker": "Hubs · Source Types",
+    "story.hub_type.title": "Different policy sources cite different research.",
+    "story.hub_type.body":
+      "Development banks and think tanks cite more social-science research, while health agencies and aggregator-type services show larger health-science shares.",
+    "story.korea.kicker": "Korea",
+    "story.korea.title": "Korea's inbound path and evidence-sourcing structure differ.",
     "story.korea.body":
-      "Inbound citations of Korean research spread across multiple hubs, while Korea’s sourcing is far more concentrated—more so than an expected baseline would suggest. The map for “what comes in” is not the same as the map for “what gets pulled in.”",
-    "story.network.kicker": "2 · Map",
-    "story.network.title": "Evidence spreads via transfers, not direct flights",
-    "story.network.body":
-      "Keeping only the top-3 inbound and outbound links per node still reveals the backbone of the network. Evidence flows cluster around a few transfer hubs rather than moving via direct one-to-one routes.",
-    "story.hub.kicker": "3 · Hubs",
-    "story.hub.title": "Policy evidence accumulates in a few sources",
-    "story.hub.body":
-      "By total volume, citations concentrate in a small set of sources (IGOs, the US, the UK, the EU). But per-document intensity reshuffles the ranking slightly—“more” and “denser” are not always the same.",
-    "story.domain.kicker": "4 · Skew",
-    "story.domain.title": "High volume doesn’t mean citing all science",
-    "story.domain.body":
-      "Social Sciences dominate policy citations, followed by Health and Physical Sciences. A non-trivial slice also stays in “other / unclassified” because field-level tags are missing.",
-    "story.topics.kicker": "5 · Pace",
-    "story.topics.title": "Mature and fast-rising agendas move differently",
-    "story.topics.body":
-      "Plotting topics by citation intensity and recency separates high-intensity policy/economics topics from shock-driven agendas (e.g., pandemics, environment) that spike in recent years.",
-    "story.pubyear.kicker": "6 · Scale",
-    "story.pubyear.title": "Policy citations keep rising",
-    "story.pubyear.body":
-      "DOI-linked citations and policy documents rise rapidly after the 2010s, peaking around 2021. The most recent years appear lower because citations accumulate with lag; citations per document hover in the mid-teens to ~20.",
-    "explore.title": "Explore further",
-    "explore.lede":
-      "Continue with the full report (PDF), interactive versions of the figures, and the Supplementary Information.",
-    "explore.actions.aria": "More",
-    "explore.cta.report": "Open report PDF",
-    "explore.cta.interactive": "Interactive figures",
-    "explore.cta.si": "Open Supplementary Information",
-    "footer.org": "<div class=\"promo-footer__org-primary\">KISTI Center for Global R&amp;D Analysis</div><div class=\"promo-footer__org-secondary\">KISTI 글로벌R&amp;D분석센터</div>",
-    "footer.report.title": "From Science to Policy: Mapping Knowledge Diffusion through the OpenAlex–Overton Network",
-    "footer.report.author":
-      "Youngjin Kim · KISTI Center for Global R&amp;D Analysis · <a class=\"promo-footer__mailto\" href=\"mailto:kimyoungjin06@kisti.re.kr\">kimyoungjin06@kisti.re.kr</a>",
-    "footer.character.alt": "KISTI Center for Global R&D Analysis character",
-    "footer.nav.aria": "Footer links",
+      "Inbound policy citations to Korean research concentrate 54.8% in the top 3 policy sources, while Korean policy documents concentrate 55.7% of their research citations in U.S. research.",
+    "story.two_speed.kicker": "Two Speeds",
+    "story.two_speed.title": "Not all topics move at the same speed.",
+    "story.two_speed.body":
+      "COVID-19-related topics sit in high-recency areas, while economics and labor topics sit in high-citation-intensity areas.",
+    "monitor.kicker": "Repeat Check",
+    "monitor.title": "Four benchmarks to revisit",
+    "monitor.lede": "These benchmarks help track hub structure and the direction of change for Korea.",
+    "monitor.card1.value": "Hub trend",
+    "monitor.card1.title": "Volume hubs vs. density hubs",
+    "monitor.card1.body": "Check whether total citation volume and citations per document move together.",
+    "monitor.card2.value": "Top 3 policy-source tags: 54.8%",
+    "monitor.card2.title": "Inbound policy citations to Korean research",
+    "monitor.card2.body": "Track whether the combined U.S., IGO, and U.K. share widens or narrows.",
+    "monitor.card3.value": "Top research country: 55.7%",
+    "monitor.card3.title": "Research cited by Korean policy documents",
+    "monitor.card3.body": "Track whether the U.S. research share persists or weakens.",
+    "monitor.card4.value": "Repeat-citation baseline: 48.1%",
+    "monitor.card4.title": "Range of repeatedly cited works",
+    "monitor.card4.body": "Check whether the repeat-cited pool broadens or becomes more concentrated in a few works.",
+    "monitor.cta.next": "View Next-Check List",
+    "monitor.cta.next.href": "./SI/next_questions_en.html",
+    "monitor.cta.report": "View Report (PDF)",
+    "explore.title": "Explore",
+    "explore.lede": "Open the main report and web supplementary materials according to what you need.",
+    "explore.card.report.meta": "Main report · 15 min+",
+    "explore.card.report.title": "Report PDF",
+    "explore.card.report.desc": "Main findings, interpretation, and extension tasks",
+    "explore.card.si.meta": "Supplementary information · 5 min",
+    "explore.card.si.title": "Start with SI",
+    "explore.card.si.desc": "Entry point for methods, interactive figures, appendix, and next questions",
+    "explore.card.si.href": "./SI/index_en.html",
+    "explore.card.update.meta": "Web update",
+    "explore.card.update.title": "2026 Data Update",
+    "explore.card.update.desc": "Korean-only update on changed metrics after the official report",
+    "explore.card.methods.meta": "Interpretation boundary · 8 min",
+    "explore.card.methods.title": "Methods and Scope",
+    "explore.card.methods.desc": "Definitions, denominators, and interpretation boundaries",
+    "explore.card.methods.href": "./SI/methods_en.html",
+    "explore.card.interactive.meta": "Figure exploration",
+    "explore.card.interactive.title": "Interactive Figures",
+    "explore.card.interactive.desc": "Inspect country, source-type, and topic patterns directly",
+    "explore.card.interactive.href": "./SI/interactive_en.html",
+    "explore.card.appendix.meta": "Definitions · Additional diagnostics",
+    "explore.card.appendix.title": "Appendix",
+    "explore.card.appendix.desc": "Definitions, additional figures and tables, and robustness checks",
+    "explore.card.appendix.href": "./SI/appendix_en.html",
+    "footer.title": "From Science to Policy",
     "footer.link.top": "Back to top",
-    "footer.link.report": "Report PDF",
+    "footer.link.report": "Report (PDF)",
     "footer.link.si": "Supplementary Information",
+    "footer.link.si.href": "./SI/index_en.html",
+  };
+  const koMeta = {
+    title: document.title,
+    description: document.querySelector('meta[name="description"]')?.getAttribute("content") || "",
   };
 
   function captureBaseline() {
@@ -142,7 +146,17 @@
     const dict = safeLang === "en" ? en : null;
 
     document.documentElement.lang = safeLang;
+    document.documentElement.setAttribute("xml:lang", safeLang);
     document.documentElement.dataset.lang = safeLang;
+    document.title = safeLang === "en" ? en["meta.title"] : koMeta.title;
+
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute(
+        "content",
+        safeLang === "en" ? en["meta.description"] : koMeta.description
+      );
+    }
 
     document.querySelectorAll("[data-i18n]").forEach((el) => {
       const record = baseline.get(el);
@@ -198,7 +212,7 @@
     captureBaseline();
 
     const params = new URLSearchParams(window.location.search);
-    const paramLang = params.get("lang");
+    const paramLang = (params.get("lang") || "").toLowerCase();
     const saved = (() => {
       try {
         return window.localStorage.getItem(LANG_STORAGE_KEY);
