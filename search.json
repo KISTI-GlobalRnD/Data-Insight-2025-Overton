@@ -4,7 +4,7 @@
     "href": "SI/next_questions_en.html",
     "title": "Next questions",
     "section": "",
-    "text": "← SI Overview · Report (PDF) · Korean page\nThis page lists three follow-up questions worth checking after reading the main report. They focus on analyses needed to validate the observed patterns or to explain “why this pattern emerges.”"
+    "text": "← SI Overview · Korean Report (PDF) · Korean page\nThis page lists three follow-up questions worth checking after reading the main report. They focus on analyses needed to validate the observed patterns or to explain “why this pattern emerges.”"
   },
   {
     "objectID": "SI/next_questions_en.html#how-to-use-this-page-1-min",
@@ -32,7 +32,7 @@
     "href": "SI/interactive_en.html",
     "title": "Interactive",
     "section": "",
-    "text": "← SI Overview · Report (PDF) · Korean page\nAmong the figures in the main report (PDF), the ones worth zooming in, toggling items, and inspecting values are provided here as interactive versions. This page is designed for freer web exploration. The plots below are loaded only after you click the button, so the page itself opens quickly.\nRecommended order (SI flow)\nReading pattern (common)\nTips\nCaptions"
+    "text": "← SI Overview · Korean Report (PDF) · Korean page\nAmong the figures in the Korean main report (PDF), the ones worth zooming in, toggling items, and inspecting values are provided here as interactive versions. This page is designed for freer web exploration. The plots below are loaded only after you click the button, so the page itself opens quickly.\nRecommended order (SI flow)\nReading pattern (common)\nTips\nCaptions"
   },
   {
     "objectID": "SI/interactive_en.html#chapter-1.-linkage-signals-time-domains-topics",
@@ -56,193 +56,116 @@
     "text": "Chapter 3. Korea (asymmetry: inbound vs procurement)\n\nSI: Figures 8–12 · Main report (PDF): Chapter 3 Korea (Figures 4–6). (SI-only: Figures 9–10) · Related: Appendix: Self-citation share\n\n\nFigure 8. Domain mix mismatch (top 50): policy-cited research vs cited research supply\n\nWhat to look for\n\nObservation: Use above/below-diagonal positions to read domain-level mismatch direction.\nInterpretation: Direction can flip by domain within the same country.\nCheck: Track whether absolute domain gaps (pp) are easing, stable, or widening.\n\n\n\n  \n    Open in new tab\n    May load slowly\n    Load plot\n  \n\n\n\nFigure 9. Policy source → research country matrix: absolute volume and within-source share\n\nWhat to look for\n\nObservation: Compare left-panel absolute volume and right-panel within-source share separately.\nInterpretation: High volume and concentrated sourcing are different conditions.\nCheck: Track top-1 country share and top-3 combined share together.\n\n\nThe left panel shows absolute volume on a log scale. The right panel shows within-policy-source shares. Research countries not in the policy-source list are grouped into regions.\n\n  \n    Open in new tab\n    May load slowly\n    Load plot\n  \n\n\n\n\nFigure 10. Self-citation share vs expected, and domain mix of self vs non-self citations (top 7 and Korea)\n\nWhat to look for\n\nObservation: Read self-citation shares together with actual-minus-expected values.\nInterpretation: Actual-minus-expected is a relative comparison to a domain-weighted baseline.\nCheck: Before country comparison, confirm the denominator uses only citations with known first-author country codes.\n\n\n\n  \n    Open in new tab\n    Load plot\n  \n\n\n\nFigure 11. Korea evidence flows (inbound vs sourcing) and domain composition (top 10)\n\nWhat to look for\n\nObservation: Separate inbound (Korean research → global policy) and sourcing (Korean policy → research) top routes.\nInterpretation: Different top routes across directions indicate structural asymmetry.\nCheck: Track direction-specific concentration metrics separately (inbound top-3 vs sourcing top-1).\n\n\n\n  \n    Open in new tab\n    Load plot\n  \n\n\n\nFigure 12. Policy–research evidence flow network\n\nWhat to look for\n\nObservation: Follow backbone routes (top nodes/top links) connected to Korea.\nInterpretation: This is a structural summary map, not a full network.\nCheck: Do not read layout distance as a quantitative metric; read connectivity only.\n\n\nLayout is an exploratory aid. Distances between nodes are not absolute measurements; do not interpret “closeness” quantitatively.\nNotation: EU = European Union, IGO = International organizations.\n\n  \n    Open in new tab\n    May load slowly\n    Load plot"
   },
   {
-    "objectID": "SI/index_en.html",
-    "href": "SI/index_en.html",
-    "title": "Supplementary Information — Overview",
+    "objectID": "SI/update_202603_en.html",
+    "href": "SI/update_202603_en.html",
+    "title": "2026 Data Update",
     "section": "",
-    "text": "Korean page\nThis Supplementary Information (SI) page is the companion layer to the main report (PDF). While the PDF keeps the public-facing narrative short, this web layer keeps background notes, method checks, diagnostics, and interactive exploration in one place."
+    "text": "Quick links: Korean Report (PDF) · SI Overview · Methods & Data Validity · Interactive · Appendix · Next Questions · Korean page"
   },
   {
-    "objectID": "SI/index_en.html#background-notes",
-    "href": "SI/index_en.html#background-notes",
-    "title": "Supplementary Information — Overview",
-    "section": "Background notes",
-    "text": "Background notes\n\nWhy read hubs as routes, not as rankings?\nThe hub section is not meant to rank “top” policy channels. Even among leading sources, the channels with the largest total citation volume can differ from the channels that pack the most references into one document, and domain portfolios also change by source type.\nSo the more useful question is not “who is first?” but “through which channels does policy repeatedly call evidence?”\n\n\nWhy separate Korea’s inbound and procurement routes?\nThe key Korean message is not that 54.8% and 55.7% look similar. It is that one is a top-3 channel concentration and the other is a top-1 country concentration.\nIf inbound and procurement are collapsed into a single score, that structural difference disappears.\n\n\nWhy are “two speeds” a practical question?\nPolicy evidence does not move at one speed. Mature agendas and high-growth agendas need different update rhythms.\nThis is why the report separates the two-speed pattern: not to create another topic ranking, but to show that evidence management cadence should differ by agenda type.\n\n\nWhat changes once domestic references are linked?\nTo broaden the Korean reading, the international-hub view needs to be complemented with domestic policy references. Kim et al. (2025) gives an exploratory example with NKIS policy research reports, suggesting that domestic and international procurement lines may differ by field.\nThis extension changes the question from “How does Korea look globally?” to “Who in Korea procures what kind of evidence, and how?”"
+    "objectID": "SI/update_202603_en.html#key-summary-of-the-2026-data-update",
+    "href": "SI/update_202603_en.html#key-summary-of-the-2026-data-update",
+    "title": "2026 Data Update",
+    "section": "Key summary of the 2026 data update",
+    "text": "Key summary of the 2026 data update\nThe newer data still shows hub concentration and Korea’s asymmetry. However, the strength of concentration and the domain composition soften or shift relative to the official report.\n\n\n\n\n\n\n\n\n\nKey item\nOfficial v1 baseline\nv2 web update\nInterpretation\n\n\n\n\nInbound policy citations to Korean research\nTop 3 policy sources: 54.8%\nTop 3 policy sources: 51.1%\nConcentration in a small set of policy sources remains, but the intensity is slightly lower.\n\n\nResearch cited by Korean policy documents\nU.S. research 55.7% / Korean research 4.5%\nU.S. research 48.6% / Korean research 3.8%\nThe U.S. skew remains, but the concentration is weaker.\n\n\nDomain composition\nSocial Sciences 77.9% / Physical Sciences 9.2%\nSocial Sciences 66.2% / Physical Sciences 18.0%\nDomain asymmetry remains, but the composition moves toward a more distributed profile.\n\n\n\n\nPolicy-document citations are still concentrated around a small set of policy sources.\nKorea still needs to be read through two separate directions: inbound policy citations to Korean research and research cited by Korean policy documents.\nThe operational frame of tracking repeated citation structure remains valid."
   },
   {
-    "objectID": "SI/index_en.html#structure",
-    "href": "SI/index_en.html#structure",
-    "title": "Supplementary Information — Overview",
-    "section": "Structure",
-    "text": "Structure\n\nOverview: background notes, report↔︎SI map, quick find\nMethods & data validity: scope, denominators, matching/missingness, guardrails\nInteractive: zoom/toggle/inspect key figures\nAppendix: coverage/tagging notes and extra figures\nNext questions: next-cycle follow-up checklist"
+    "objectID": "SI/update_202603_en.html#update-scope",
+    "href": "SI/update_202603_en.html#update-scope",
+    "title": "2026 Data Update",
+    "section": "Update scope",
+    "text": "Update scope\n\nOverton: 2026-01-30 raw\nOpenAlex: local 202602 meta/text/topics\nFallback: first_author_country and is_oa use remote 202506 supplement values where local OpenAlex 202602 did not contain those fields.\nComparison baseline: Overton 2025.02 + OpenAlex 2025.06, the data combination used in the official report."
   },
   {
-    "objectID": "SI/index_en.html#start-here-2-min",
-    "href": "SI/index_en.html#start-here-2-min",
-    "title": "Supplementary Information — Overview",
-    "section": "Start here (2 min)",
-    "text": "Start here (2 min)\n\nIf you are blocked in the main report, check the Main report ↔︎ SI map first.\nIf denominator/missingness interpretation is unclear, move to Methods.\nIf you need extra figures/definitions/checklists, move to Appendix and Next questions."
+    "objectID": "SI/update_202603_en.html#data-profiling",
+    "href": "SI/update_202603_en.html#data-profiling",
+    "title": "2026 Data Update",
+    "section": "Data profiling",
+    "text": "Data profiling\nThe update expands the denominator itself.\n\n\n\nItem\nv1 official baseline\nv2 web update\nChange\n\n\n\n\nPolicy-document-to-paper citation rows\n23.37M\n28.96M\n+23.9%\n\n\nPolicy documents citing scholarly papers\n1.348M\n1.650M\n+22.4%\n\n\nUnique cited papers\n6.532M\n7.425M\n+13.7%\n\n\n\nTherefore, the movement in these values should not be read as structural change alone. The newer data reflects both a wider coverage base and changes in the observed sample. With that caveat, the appropriate reading is that hub concentration and Korea’s asymmetry remain, while the concentration strength and domain composition are partly adjusted.\nThe Korea-related sample also grows.\n\n\n\n\n\n\n\n\n\nKorea-related sample\nv1 official baseline\nv2 web update\nChange\n\n\n\n\nRows citing Korean research\n89K\n115K\n+29.0%\n\n\nPolicy documents tagged with South Korea and citing scholarly papers\n2,726\n25,387\n+831.3%\n\n\nCitation rows tagged with South Korea as a policy source\n33K\n287K\n+770.4%\n\n\n\nThis means the movement in Korea-related measures reflects both structural change and the much larger observed sample directly connected to Korea. Policy-source tags may not be mutually exclusive, so the increase in rows tagged South Korea widens both the denominator and the scope of Korea-related comparison."
   },
   {
-    "objectID": "SI/index_en.html#si-pages-fixed",
-    "href": "SI/index_en.html#si-pages-fixed",
-    "title": "Supplementary Information — Overview",
-    "section": "SI Pages (Fixed)",
-    "text": "SI Pages (Fixed)\n\n\n\nPage\nRole\nCoverage\n\n\n\n\nOverview\nEntry / navigation\nbackground notes, report↔︎SI map, quick find, updates\n\n\nMethods\nMethod checks\nscope/denominators/missingness/guardrails\n\n\nInteractive\nExploration\ninteractive versions of Figures 1-12\n\n\nAppendix\nEvidence / definitions / extras\ncoverage & tagging, detailed definitions, extra figures\n\n\nNext questions\nFollow-up\nnext-step questions and analysis priorities"
+    "objectID": "SI/update_202603_en.html#core-changes",
+    "href": "SI/update_202603_en.html#core-changes",
+    "title": "2026 Data Update",
+    "section": "Core changes",
+    "text": "Core changes\n\n\n\n\n\n\n\n\n\nIndicator\nOfficial v1 baseline\nv2 web update\nChange\n\n\n\n\nInbound policy citations to Korean research: top 3 policy-source tags\n54.8%\n51.1%\n-3.7 pp\n\n\nShare of U.S. research in citations from Korean policy documents\n55.7%\n48.6%\n-7.1 pp\n\n\nShare of Korean research in citations from Korean policy documents\n4.5%\n3.8%\n-0.8 pp\n\n\nShare of unique papers cited at least twice\n48.1%\n51.3%\n+3.2 pp\n\n\n\nThe update changes several Korea-related headline values, but it does not overturn the two main messages in the report. Hub concentration remains, and Korea’s asymmetry remains. The updated data mainly softens or shifts the strength of concentration and the domain mix."
   },
   {
-    "objectID": "SI/index_en.html#report-extended-map",
-    "href": "SI/index_en.html#report-extended-map",
-    "title": "Supplementary Information — Overview",
-    "section": "Main report (PDF) ↔︎ SI map",
-    "text": "Main report (PDF) ↔︎ SI map\nIn the table below, links like Interactive: Fig. n use the SI web numbering (Figures 1-12). This differs from the main PDF (Figures 1-8); when in doubt, follow the links rather than the numbers.\n\n\n\nMain report (PDF)\nSee more in SI\n\n\n\n\nChapter 1 Data Insight (summary metrics)\nAppendix: Observed DOI scope · Appendix: Repeat-citation share (48.1%) · Methods: scope/denominator\n\n\nChapter 2 Hubs (Figures 1-3)\nBackground: hubs · Interactive: Fig. 5 · Interactive: Fig. 6 · Interactive: Fig. 7 · Appendix: Coverage & tagging\n\n\nChapter 3 Korea (Figures 4-6)\nBackground: Korea · Interactive: Fig. 11 · Interactive: Fig. 8 · Interactive: Fig. 12 · Interactive: Fig. 9 · Interactive: Fig. 10\n\n\nChapter 4 Two-speed evidence (Figures 7-8)\nBackground: two speeds · Interactive: Fig. 2 · Interactive: Fig. 4 · Appendix: Recency / intensity · (SI-only: Fig. 1, Fig. 3)\n\n\nChapter 5 Monitoring & extension\nNext questions · Methods: update protocol"
+    "objectID": "SI/update_202603_en.html#where-the-larger-movements-occur",
+    "href": "SI/update_202603_en.html#where-the-larger-movements-occur",
+    "title": "2026 Data Update",
+    "section": "Where the larger movements occur",
+    "text": "Where the larger movements occur\n\n1. Korea’s two directional routes\n\nThe top-3 share for inbound policy citations to Korean research falls from 54.8% -&gt; 51.1%.\nThe U.S. research share in citations from Korean policy documents falls from 55.7% -&gt; 48.6%.\nThe Korean research share in citations from Korean policy documents falls from 4.5% -&gt; 3.8%.\n\nThis does not require rewriting the report’s core sentence, but the Korea section should be read as showing somewhat weaker concentration in the updated data. See the Appendix and Interactive pages for the surrounding diagnostics.\n\n\n2. Self-citation\n\nKorea’s self-share falls from 4.5% -&gt; 3.8%.\nThe expected self-share rises from 0.59% -&gt; 0.72%.\n\nIn other words, the domestic research share declines while the expected share rises slightly. The gap relative to the expected share is therefore smaller than in the official report. See the Appendix and Interactive pages for the related interpretation checks.\n\n\n3. Domain demand and supply\n\n\n\n\n\n\n\n\n\n\nDomain\nv1 policy-citation share\nv2 policy-citation share\nv1 inbound share for Korean research\nv2 inbound share for Korean research\n\n\n\n\nSocial Sciences\n77.9%\n66.2%\n23.7%\n29.5%\n\n\nHealth Sciences\n9.4%\n11.2%\n40.9%\n34.3%\n\n\nPhysical Sciences\n9.2%\n18.0%\n22.7%\n24.1%\n\n\nLife Sciences\n3.5%\n4.6%\n12.6%\n12.1%\n\n\n\nThe largest movement is the lower Social Sciences share and the higher Physical Sciences share. Korea’s domain-level asymmetry remains, but the composition moves in a more distributed direction than in the official report. See the Appendix and Interactive pages for related checks."
   },
   {
-    "objectID": "SI/index_en.html#figure-index",
-    "href": "SI/index_en.html#figure-index",
-    "title": "Supplementary Information — Overview",
-    "section": "Figure index (SI 1–12)",
-    "text": "Figure index (SI 1–12)\nSI figures are numbered 1–12 on the web. Use this table to jump directly to the interactive version.\n\n\n\nFig.\nOne-line takeaway\nJump\n\n\n\n\nFig. 1\nTime trend (with observation lag)\nInteractive: Fig. 1\n\n\nFig. 2\nDomain → field composition and field-missing segment\nInteractive: Fig. 2\n\n\nFig. 3\nTopics: citations vs works (OA bubble)\nInteractive: Fig. 3\n\n\nFig. 4\nTopics: intensity vs recency (two-speed evidence)\nInteractive: Fig. 4\n\n\nFig. 5\nPolicy sources (country/IGO): total vs density vs domain mix\nInteractive: Fig. 5\n\n\nFig. 6\nSource types: total citations vs citations per document\nInteractive: Fig. 6\n\n\nFig. 7\nSource type × domain composition (heatmap)\nInteractive: Fig. 7\n\n\nFig. 8\nDomain demand vs supply mismatch (by country)\nInteractive: Fig. 8\n\n\nFig. 9\nPolicy source → research country matrix (absolute/share)\nInteractive: Fig. 9\n\n\nFig. 10\nSelf-citation share and domain mix (self vs non-self)\nInteractive: Fig. 10\n\n\nFig. 11\nKorea inflow vs procurement flows (top 10)\nInteractive: Fig. 11\n\n\nFig. 12\nPolicy–research flow network (summary view)\nInteractive: Fig. 12"
+    "objectID": "SI/update_202603_en.html#what-remains-stable",
+    "href": "SI/update_202603_en.html#what-remains-stable",
+    "title": "2026 Data Update",
+    "section": "What remains stable",
+    "text": "What remains stable\n\nPolicy-document citations are still concentrated around a small set of policy sources.\nKorea still needs to be read through separate inbound and procurement routes.\nThe repeated-citation monitoring frame remains useful.\n\nThe direction of the official report therefore remains intact, but the exact values and domain composition should be rechecked whenever the data are updated."
   },
   {
-    "objectID": "SI/index_en.html#quick-find",
-    "href": "SI/index_en.html#quick-find",
-    "title": "Supplementary Information — Overview",
-    "section": "Quick Find",
-    "text": "Quick Find\n\n\n\nQuestion\nJump to\n\n\n\n\nI want a quick background refresher\nBackground notes\n\n\nI want definitions and denominators\nMethods · Appendix B\n\n\nWhy does 2012 look high?\nAppendix: Why 2012?\n\n\nWhy can topic/domain shares exceed 100%?\nAppendix: Multi-label topics\n\n\nI want to inspect the network (Figure 12)\nInteractive: Fig. 12\n\n\nI want the follow-up checklist\nNext questions"
+    "objectID": "SI/update_202603_en.html#interpretation-cautions",
+    "href": "SI/update_202603_en.html#interpretation-cautions",
+    "title": "2026 Data Update",
+    "section": "Interpretation cautions",
+    "text": "Interpretation cautions\n\nThis page applies the same analytic frame as the official report to newer data.\nThe update values are for web comparison and do not automatically replace the official report text.\nBecause local OpenAlex 202602 lacked some first_author_country and is_oa fields, remote 202506 supplement values were used for those fields."
   },
   {
-    "objectID": "SI/index_en.html#links",
-    "href": "SI/index_en.html#links",
-    "title": "Supplementary Information — Overview",
-    "section": "Links",
-    "text": "Links\n\nReport (PDF)\nSI Overview\nMethods & Data Validity\nInteractive\nAppendix\nNext questions"
+    "objectID": "SI/update_202603_en.html#next-steps",
+    "href": "SI/update_202603_en.html#next-steps",
+    "title": "2026 Data Update",
+    "section": "Next steps",
+    "text": "Next steps\n\nKeep the official report (v1) unchanged.\nUse v2 as a web update layer for Korea-related headline changes and comparison results.\nIf needed, extend the largest movements into explicit v1 / v2 comparison visualizations."
   },
   {
-    "objectID": "SI/index_en.html#updates",
-    "href": "SI/index_en.html#updates",
-    "title": "Supplementary Information — Overview",
-    "section": "Updates",
-    "text": "Updates\n\n2026-03-10: Consolidated the public structure into two layers only: the main report (PDF) and the SI web bundle. Background notes were folded into this overview page, and the former English/Korean Extended report pages were retired from the public render path.\n2026-02-27: Restructured the main report to start with a one-page Chapter 1 Data Insight summary, followed by story-driven highlights; renumbered the main PDF figures to 1-8; added an explicit Appendix definition for the repeated-citation share (48.1%).\n2026-02-14: Unified guidance tone across the web supplement pages using an observation-interpretation-check reading frame.\n2026-02-12: Added extended-text and method pages to the web supplement layer.\n2026-02-09: Added a KOR/ENG toggle (stage 1: captions) for the web supplement and interactive plots."
-  },
-  {
-    "objectID": "SI/appendix.html",
-    "href": "SI/appendix.html",
-    "title": "부록",
+    "objectID": "SI/next_questions.html",
+    "href": "SI/next_questions.html",
+    "title": "다음 질문",
     "section": "",
-    "text": "바로가기: 보고서(PDF) · 확장 자료 · 방법론·데이터 정합성 · 인터랙티브 · 부록 · 다음 질문\n본문에서 언급한 수치와 패턴을 조금 더 차분하게 확인할 수 있도록 자료를 정리했다. 구성은 수집 범위·태깅, 지표 정의·해석 주의, 추가 그림의 세 부분이다.\n바로가기: A. 데이터 수집 범위·태깅 · B. 정의·해석 · C. 추가 그림"
+    "text": "바로가기: 보고서(PDF) · 확장 자료 · 방법론·데이터 정합성 · 인터랙티브 · 부록 · 다음 질문\n이 페이지는 보고서의 반복 점검 절에서 고정한 반복 점검 질문만 모아 둔다. 새로운 연구 의제를 늘리기보다, 같은 정의로 다음 점검 때도 다시 확인할 질문을 정리한다.\n이 페이지에서 말하는 그림 번호는 웹 인터랙티브 번호(1–12) 기준이다."
   },
   {
-    "objectID": "SI/appendix.html#읽는-순서-2분",
-    "href": "SI/appendix.html#읽는-순서-2분",
-    "title": "부록",
-    "section": "읽는 순서 (2분)",
-    "text": "읽는 순서 (2분)\n\n1단계(범위 확인): A. 데이터 수집 범위·태깅에서 관측 범위의 편차를 먼저 확인한다.\n2단계(지표 확인): B0. 자주 찾는 정의, B0-1. 매칭·결측에서 분모와 결측 조건을 고정한다.\n3단계(확장 확인): C. 추가 그림에서 필요한 그림만 선택해 본문 해석을 보강한다."
+    "objectID": "SI/next_questions.html#읽는-방법-1분",
+    "href": "SI/next_questions.html#읽는-방법-1분",
+    "title": "다음 질문",
+    "section": "읽는 방법 (1분)",
+    "text": "읽는 방법 (1분)\n\n이번 점검에서는 질문을 늘리기보다 아래 4개 축을 같은 정의로 다시 계산하는 것이 우선이다.\n방향 판정은 단일 수치 1회 관측보다, 같은 지표가 2회 이상 같은 방향으로 재현되는지에 둔다."
   },
   {
-    "objectID": "SI/appendix.html#appendix-a",
-    "href": "SI/appendix.html#appendix-a",
-    "title": "부록",
-    "section": "A. 데이터 수집 범위·태깅",
-    "text": "A. 데이터 수집 범위·태깅\n허브 구조를 해석하기 전에, Overton 정책문헌의 관측 범위가 균등하지 않을 수 있음을 먼저 확인할 필요가 있다. 국가·유형별 수집 범위 편차가 있으면 허브 순위 해석도 달라질 수 있기 때문이다. 이 절에서는 본문 비교에 앞서 태그 규칙(최상위·하위, 예외 처리)과 관측 편차를 먼저 정리한다.\n\nA1. 정책문헌 수집 범위 개요(정책 출처 국가별 문헌 수)\n\n\n\n\n\n\n노트\n\n\n\n표시 기준(요약)\n\n국가 태그 중 최상위 국가만 사용(예: USA &gt; California 같은 하위 태그 제외)\nIGO·EU 제외\n국가 간 편차가 커서 로그 스케일로 색상 표시\n\n\n\n\n  \n    새 창으로 열기\n    로딩이 느릴 수 있음\n    플롯 불러오기\n  \n\n\n\nA2. 하위 태그(A &gt; B)와 “최상위 국가만”을 쓴 이유\nOverton의 정책 출처 국가 태그는 국가 단위(예: USA, UK) 외에 하위 지역 단위(예: USA &gt; California)를 함께 포함한다. 이번 보고서는 OpenAlex의 국가코드와 의미를 맞추기 위해, 기본 집계에서 하위 태그를 제외하고 최상위 국가만 사용했다.\n이 선택은 “국가 단위 비교”를 단순화한다. 다만 하위 태그 기여가 큰 출처에서는 국가별 비교가 과소·과대 해석될 여지를 남긴다. 따라서 본문에서 국가 비교를 해석할 때는 수집 범위 자체를 함께 확인해야 한다.\n\n\nA3. Hong Kong/Georgia 예외 처리는 왜 필요했나\n정책 출처 국가 태그는 China &gt; Hong Kong, USA &gt; Georgia처럼 하위 태그로 관측될 수 있다. 최상위 국가만 쓰면 이런 하위 태그는 정책 출처 쪽에서 필터링되어 누락될 수 있어, 네트워크에서 정책 출처가 없는 것처럼 보이는 효과가 생길 수 있다. 그래서 네트워크 그림에서는 China &gt; Hong Kong을 Hong Kong으로 분리했고, USA &gt; Georgia는 Georgia (USA)로 분리했다.\n\n\n자세히 보기: 하위 태그 규모, 예시, Hong Kong 표기\n\n\n데이터 기준 시점: Overton 2025.02\n아래 수치는 Overton 2025.02 기준 시점 데이터에서 계산한 요약이다.\n\n정책문헌 수 기준: 하위 태그 합계 200,381건, 전체 1,671,835건의 12.0%\nDOI 인용 기록 수 기준: 하위 태그 합계 3,488,024건, 전체 48,456,680건의 7.2%\n\n여기서 “DOI 인용 기록 수”는 원본 기록 기준의 합계이며, 메인 보고서의 “한눈에 보는 숫자” 블록처럼 분석용으로 정리한 수치와 집계 기준이 다를 수 있다.\n하위 태그 기여가 큰 상위 부모(국가)는 대체로 USA, Spain, Canada, Australia, UK 순으로 나타난다.\n\n\n하위 태그 상위 예시(정책문헌 수 기준)\n\n\n\n출처 국가 태그\n정책문헌 수\n\n\n\n\nUSA &gt; California\n17,599\n\n\nUSA &gt; New York\n14,110\n\n\nUSA &gt; Washington\n13,969\n\n\nUSA &gt; Alaska\n9,421\n\n\nCanada &gt; Québec\n8,453\n\n\nUSA &gt; Texas\n7,648\n\n\nAustralia &gt; Western Australia\n7,169\n\n\nSpain &gt; Catalunya\n6,632\n\n\nUSA &gt; Minnesota\n4,918\n\n\nSpain &gt; Euskadi\n4,725\n\n\n\n\n\nHong Kong은 “중국으로 합쳐진” 것인가?\n이번 기준 시점에서 Overton의 정책 출처에는 Hong Kong이 국가처럼 직접 등장하지 않는다. China &gt; Hong Kong 형태로만 관측된다(정책문헌 1,182편). 반면 OpenAlex의 연구국은 HK → Hong Kong으로 별도 코드를 쓴다.\n따라서 “최상위 국가만” 기준으로 정책 출처를 집계하면, China &gt; Hong Kong에서 발행된 문서는 정책 출처 쪽에서 빠진다. 이 경우 Hong Kong은 연구국 노드로만 남아 인용만 되는 노드처럼 보일 수 있다.\n\n\n주의: 하위 태그를 단순 치환하면 충돌이 생길 수 있다\n하위 태그를 무조건 A &gt; B → B로 치환하면, 예를 들어 USA &gt; Georgia(미국 조지아주)가 Georgia(국가)와 섞이는 동명이인 충돌이 생길 수 있다. 따라서 하위 태그를 국가 단위로 재귀속시키려면 두 단계를 분리해 설계해야 한다. (1) 부모 국가로 올리는 방식(A &gt; B → A) (2) 예외 처리(홍콩처럼 별도 단위로 둘지)"
+    "objectID": "SI/next_questions.html#이번-분기-반복-점검-질문4개",
+    "href": "SI/next_questions.html#이번-분기-반복-점검-질문4개",
+    "title": "다음 질문",
+    "section": "이번 분기 반복 점검 질문(4개)",
+    "text": "이번 분기 반복 점검 질문(4개)\n\n질문 1. 정책 출처국 집중은 완화·유지·심화 중 어디로 가는가\n\n관찰 출발점: 보고서는 허브 채널 집중을 핵심 메시지로 제시하지만, 반복 점검에서는 이를 정책 출처국 집중이라는 실용적 기준선으로 추적한다.\n이번 기준값: 정책 출처국 상위 3개 합은 50.6%다. 동시에 총량 허브와 밀도 허브가 분리되고, 출처 유형이 바뀌면 도메인 구성도 달라진다(인터랙티브 그림 5–7).\n점검 항목: 정책 출처국 상위 3개 합, 상위 출처국 순서 변화, 총량 상위군과 밀도 상위군의 겹침 정도, 출처 유형×도메인 구성의 방향성 변화.\n완료 신호: 같은 정의로 2회 이상 재계산했을 때 집중 완화·유지·심화 중 하나로 방향 판정이 가능해진다.\n같이 볼 곳: 인터랙티브 그림 5 · 인터랙티브 그림 6 · 인터랙티브 그림 7 · 부록 C9\n\n\n\n질문 2. 반복 인용 논문 비중은 확대되거나 축소되는가\n\n관찰 출발점: 보고서는 반복 인용(2회 이상) 48.1%를 반복 인용 논문 비중의 출발 기준선으로 제시한다.\n이번 기준값: 인용된 고유 논문 6,532,365편 중 48.1%가 2개 이상 서로 다른 정책문헌에서 반복 인용된다.\n점검 항목: &gt;=2 / &gt;=5 / &gt;=10 임계값 민감도, 발행연도 코호트별 반복 인용, 긴 꼬리 분포(CCDF) 변화.\n완료 신호: 임계값과 코호트를 바꿔도 같은 방향의 변화가 재현되고, 최근 논문 불리 효과와 구조 변화가 분리된다.\n같이 볼 곳: 부록: 반복 인용 48.1% 정의 · 부록 C6 · 부록 C10\n\n\n\n질문 3. 한국 정책문헌이 인용하는 연구는 다변화되는가\n\n관찰 출발점: 보고서는 한국 정책문헌이 인용하는 연구가 미국 55.7%에 집중된다고 요약한다(1저자 국가코드 확인분).\n이번 기준값: 미국 연구 인용 55.7%, 자국 인용 4.5%(기대비중 0.6% 대비 7.7배)다.\n점검 항목: 상위 1개국 비중, 상위 3개국 합, 도메인별 연구 인용 구성, 자국 인용 비중 안정성, 저자국가 규칙 민감도.\n완료 신호: 상위 1개국 쏠림과 자국/비자국 구성 변화가 같은 방향으로 설명되고, 저자국가 규칙을 바꿔도 해석이 크게 흔들리지 않는다.\n같이 볼 곳: 인터랙티브 그림 9 · 인터랙티브 그림 10 · 인터랙티브 그림 11 · 부록 C12\n\n\n\n질문 4. 한국 연구의 정책문헌 유입 경로는 넓어지는가\n\n관찰 출발점: 보고서는 한국 연구의 정책문헌 유입이 정책 출처 태그 기준 상위 3개인 미국·국제기구·영국에 54.8% 집중된다고 정리한다.\n이번 기준값: 미국 27.8%, 국제기구 19.4%, 영국 7.7%로 정책 출처 태그 기준 상위 3개 합이 54.8%다.\n점검 항목: 상위 3개 정책 출처 합, 상위 출처 순서 변화, 도메인별 정책문헌 유입 구성, 중복 보정 이후 수치 안정성.\n완료 신호: 같은 중복 보정 기준에서 상위 정책 출처 집중도 추세가 안정적으로 재계산되고, 출처 확대 여부를 단일 순위가 아니라 경로 구조 변화로 설명할 수 있다.\n같이 볼 곳: 인터랙티브 그림 11 · 인터랙티브 그림 12 · 부록 C8 · 부록 C13"
   },
   {
-    "objectID": "SI/appendix.html#appendix-b",
-    "href": "SI/appendix.html#appendix-b",
-    "title": "부록",
-    "section": "B. 정의·해석",
-    "text": "B. 정의·해석\n이 섹션은 본문 지표를 다시 확인할 때 필요한 분모·정의·해석 경계를 모아 둔 곳이다. 같은 수치라도 분모가 다르면 결론이 달라질 수 있으므로, 지표 정의와 결측 조건을 먼저 확인해야 한다.\n\nB0. 자주 찾는 정의(요약)\n\n분석 단위: Overton 정책문헌은 고유 문헌 기준으로 중복을 제거해 “고유 정책문헌” 단위로 본다. 자세히 보기: DOI 인용 포함 비중\n인용 건수와 고유 논문 수: “얼마나 자주 인용했나”와 “얼마나 넓게 썼나”는 다른 질문이라 분리한다. 자세히 보기: 인용 건수와 고유 논문 수\n최근성과 인용 강도: 최근성은 2022–2024 발행 논문의 정책문헌 인용 비중이고, 인용 강도는 고유 논문 1편당 평균 정책문헌 인용수다. 자세히 보기: 최근성과 인용 강도\n다중라벨: OpenAlex 토픽은 논문 1편이 여러 토픽에 동시에 속할 수 있어 합이 100%를 넘을 수 있다. 자세히 보기: 다중라벨\n자국 인용 비중 분모: 자국 인용 비중은 1저자 국가코드가 확인되는 인용만 분모로 쓴다. 자세히 보기: 자국 인용 비중\n\n\n\nB0-1. 매칭·결측 요약\n이 보고서는 Overton의 DOI 기반 인용을 OpenAlex의 논문 레코드(works)와 연결해 토픽과 국가 정보를 붙인다. 따라서 “연결되는 범위”가 해석의 안전장치가 된다.\n\n\n\n\n\n\n노트\n\n\n\n핵심 숫자(Overton DOI 인용 기록 기준)\n\n정책문헌→학술논문 DOI 인용 기록(citation rows): 23,370,284건\n1저자 국가코드가 확인되는 인용 비중: 76.6%(citation rows 기준)\n\n\n\n이 수치는 “DOI 인용 기록” 단위의 요약이다. 보고서 본문처럼 중복 제거를 거친 분석용 인용 건수와는 집계 기준이 다를 수 있다.\n\n\n정책 출처별 예시(1저자 국가코드 연결 비중)\n\n\n\n\n정책 출처(예시)\n1저자 국가코드 연결 비중\n\n\n\n\n전체\n76.6%\n\n\n한국\n70.4%\n\n\n미국\n78.4%\n\n\n영국\n80.7%\n\n\n국제기구\n70.0%\n\n\n\n\n참고로, 본 보고서에서 사용하는 DOI 기반 인용 로그는 OpenAlex works id(oaid_w)가 확인되는 인용만 포함한다.\n이 범위에서 고유 DOI는 6,530,609개이고, 고유 works는 6,532,365편이다.\n\n\nB1. DOI 인용 포함 비중(97.6%): 분모 정의\n“97.6%”는 어떤 분모에서 계산된 값인가?\nOverton 정책문헌을 고유 문헌 기준으로 중복 제거해 고유 정책문헌 1,381,084편을 만들었다. 그 다음 각 문헌이 DOI 기반 학술 인용을 1건 이상 포함하는지 집계했고, 1,347,563편(97.6%)이 DOI 인용을 포함했다.\n\n\n\n\n\n\n노트\n\n\n\n해석 범위 주의\n\n이 값은 “정책문헌 전체”가 아니라, 이번 기준 시점의 Overton 수집 범위를 분모로 한 관측치다.\nDOI가 없는 인용(서술 인용·보고서·법령·웹 등)은 기본 지표에 포함되지 않는다.\n\n\n\n“중복 제거”는 무엇을 의미하나?\nOverton 원본 정책문헌은 같은 문헌의 버전·재게시, 언어 변형, 메타데이터 중복 등으로 인해 중복이 포함될 수 있다. 이번 분석에서는 분석 단위를 “고유 정책문헌”으로 맞추기 위해 고유 문헌 기준으로 통합했다.\n\n참고: 출처 유형 태그별 DOI 인용 포함 비중\n아래 표는 출처 유형 태그별로 DOI 기반 학술 인용을 1건 이상 포함한 문헌 비중을 요약한다. 출처 유형 태그는 다중라벨 구조이므로 문헌 1편이 여러 유형에 동시에 잡힐 수 있다. 따라서 표의 정책문헌 수 합은 전체 문헌 수와 일치하지 않을 수 있다.\n\n\n표 보기\n\n\n\n\n출처 유형 태그\n정책문헌 수\nDOI 인용 포함 문헌 수\n포함 비중\n\n\n\n\ngovernment\n783,189\n724,759\n92.5%\n\n\nthink tank\n332,044\n312,113\n94.0%\n\n\nigo\n321,168\n276,468\n86.1%\n\n\ngovernment &gt; agency\n73,347\n67,868\n92.5%\n\n\nigo &gt; development bank\n72,052\n66,076\n91.7%\n\n\ngovernment &gt; healthcare agency\n54,234\n45,961\n84.7%\n\n\nigo &gt; healthcare agency\n36,560\n36,080\n98.7%\n\n\ngovernment &gt; bank\n36,238\n35,051\n96.7%\n\n\nother\n35,053\n34,223\n97.6%\n\n\nthink tank &gt; research center\n33,761\n32,773\n97.1%\n\n\n자료 종합형 서비스(other &gt; aggregator)\n32,845\n32,086\n97.7%\n\n\ngovernment &gt; city\n23,274\n22,873\n98.3%\n\n\nthink tank &gt; university affiliated\n21,687\n20,730\n95.6%\n\n\ngovernment &gt; legislative research\n14,441\n12,886\n89.2%\n\n\ngovernment &gt; legislation\n7,467\n6,474\n86.7%\n\n\ngovernment &gt; research center\n6,722\n6,178\n91.9%\n\n\ngovernment &gt; food and drug safety\n5,539\n5,279\n95.3%\n\n\nthink tank &gt; research centre\n4,406\n4,347\n98.7%\n\n\nigo &gt; research center\n3,342\n3,229\n96.6%\n\n\nthink tank &gt; industry association\n2,967\n1,883\n63.5%\n\n\nigo &gt; bank\n2,297\n2,218\n96.6%\n\n\nthink tank &gt; consultancy\n2,238\n2,205\n98.5%\n\n\nthink tank &gt; agency\n1,652\n1,489\n90.1%\n\n\ngovernment &gt; technology assessment\n1,416\n1,355\n95.7%\n\n\ngovernment &gt; transcripts\n958\n528\n55.1%\n\n\ngovernment &gt; academy\n835\n816\n97.7%\n\n\ngovernment &gt; auditor\n775\n615\n79.4%\n\n\ngovernment &gt; court\n352\n346\n98.3%\n\n\ngovernment &gt; armed forces\n86\n86\n100.0%\n\n\nigo &gt; court\n75\n74\n98.7%\n\n\nthink tank &gt; professional association\n37\n37\n100.0%\n\n\ngovernment &gt; regional assembly\n4\n3\n75.0%\n\n\n\n\n\n\n\nB2. 반복 인용 48.1%: 정의\n“48.1%가 2회 이상 반복 인용된다”는 무엇을 뜻하나?\n이 수치는 “정책이 인용한 고유 논문(works)” 가운데, 서로 다른 정책문헌에서 반복적으로 인용되는 논문이 얼마나 되는지를 요약한다.\n\n단위: 인용된 고유 논문(OpenAlex works)\n계산: 정책문헌→논문 DOI 링크를 정리한 뒤, 논문 1편이 서로 다른 고유 정책문헌에서 몇 번 인용되었는지(=인용한 정책문헌 수) 계산\n기준: 2개 이상의 서로 다른 정책문헌에서 인용된 논문을 “2회 이상 반복 인용”으로 정의\n\nOverton 2025.02×OpenAlex 2025.06 결합 데이터에서 인용된 고유 논문 6,532,365편 중 3,143,234편(48.1%)이 2회 이상 반복 인용에 해당한다.\n\n\n\n\n\n\n노트\n\n\n\n해석 범위 주의\n\n97.6%와 마찬가지로, 이 값도 Overton 기준 시점 데이터의 DOI-연결 관측 범위에 한정된다.\n따라서 DOI 밖 근거(보고서·법령·웹 등)는 반복 인용 계산에 포함되지 않는다.\n\n\n\n\n\nB3. 인용 건수와 고유 논문 수\n“인용 건수”와 “고유 논문 수”는 왜 구분하나?\n\n인용 건수: 정책문헌이 DOI 논문을 몇 번 인용했는지의 총합. 즉 DOI 인용 기록의 개수\n고유 논문 수: 인용된 논문을 “서로 다른 논문” 기준으로 중복 제거한 개수\n\n정책이 “몇 번이나 근거를 인용했나(빈도)”와 “얼마나 넓은 논문 풀을 썼나(폭)”는 다른 질문이다. 그래서 두 값을 분리해 해석한다.\n\n\nB4. 최근성과 인용 강도\n“최근성”과 “인용 강도”는 어떻게 계산했나?\n\n최근성: 2022–2024 발행 논문이 차지하는 정책문헌 인용 비중\n인용 강도: 집계 단위 내 고유 논문 1편당 평균 정책문헌 인용수 = 인용수 / 고유 논문수\n\n\n\nB5. 자국 인용 비중\n자국 인용 비중(self-citation share)은 어떻게 계산했나?\n정책 출처 국가 태그를 2자리 국가코드로 매핑한 뒤(예: USA→US, UK→GB), 1저자 소속국 코드가 확인되는 인용만 분모로 삼아 계산했다. 즉 자국 인용 비중은 “전체 인용”이 아니라 1저자 국가코드가 확인되는 인용에서의 패턴이다.\n\n\n자세히 보기: 기대비중 계산과 비교 표\n\n기대 자국 인용 비중(expected self-citation share)은 어떻게 계산했나?\n정책 출처 국가별로 “어떤 도메인을 얼마나 인용했는지”를 먼저 계산했다. 그 다음 각 도메인에서 해당 국가의 세계 연구 생산 비중(OpenAlex 기준)을 가중치로 곱해 합산했다. 즉 정책문헌 인용이 도메인별 세계 생산 비중을 그대로 따른다고 가정했을 때의 기대비중을 산출한 것이다. 개념적으로는 기대비중 = Σ(정책문헌 인용의 도메인 비중 × 해당 도메인에서 그 국가의 연구 생산 비중)이다.\n\n아래 표는 자국 인용 비중을 일부 비교 집단에서 요약한 것이다. 자국 인용 비중은 1저자 국가코드가 확인되는 인용만 분모로 쓴다. 국가 간 비교는 정책문헌의 수집 범위와 출처 구성 차이가 섞일 수 있어, “높다”나 “낮다”로 단정하기보다 점검 지표로 두는 것이 좋다.\n\n\n\n\n\n\n\n\n\n정책 출처\n1저자 국가코드 확인 인용 수\n1저자 국가코드 확인 비중\n자국 인용 비중\n\n\n\n\n미국\n4,480,233\n78.4%\n60.9%\n\n\n영국\n1,197,057\n80.7%\n27.7%\n\n\n독일\n1,143,950\n81.8%\n12.6%\n\n\n네덜란드\n191,031\n80.7%\n14.3%\n\n\n일본\n114,180\n85.6%\n32.3%\n\n\n한국\n23,170\n70.4%\n4.5%\n\n\n\n여기서 1저자 국가코드 확인 비중은 해당 정책 출처의 DOI 인용 기록 가운데 1저자 국가코드가 확인되는 비중이다. 미국과 영국처럼 하위 지역 태그가 많은 경우, 하위 태그를 상위 국가로 합산해 요약했다.\n왜 1저자 소속국으로 정책 출처 국가→연구국 흐름을 정의했나?\n가장 일관되게 추출 가능한 국가 속성이 1저자(First author) 소속국이었기 때문이다. 다만 공동저자 분포, 교신저자, 다기관 소속 등을 반영하지 못하므로 “대표성 있는 근사”로 해석해야 한다.\n\n\n\nB6. 다중라벨 해석\n토픽과 도메인 집계에서 합이 100%를 넘는 이유는?\nOpenAlex 토픽은 다중 라벨 구조다. 논문 1편이 여러 토픽에 동시에 속할 수 있어, 토픽·도메인·세부분야 기준으로 집계하면 중복 합산이 발생한다. 따라서 토픽 기반 수치는 “토픽 인스턴스 기준”으로 이해해야 한다.\n이번 분석에서 사용한 토픽 데이터에서는 정책문헌 인용 1건이 평균적으로 약 2.8개 토픽에 연결된다. 그래서 도메인·토픽 기준으로 인용을 합산하면, “인용 건수”보다 큰 합계가 나온다.\n다만 각 인용을 그 논문이 가진 토픽 수로 나눠 분할 집계해도, 도메인 순위는 유지된다. 상위 3개 도메인 점유율도 큰 폭으로 변하지 않는다(예: 88.8% → 88.5%).\n출처 국가·출처 유형 집계도 합이 커질 수 있나?\n그럴 수 있다. Overton의 출처 국가·유형 태그는 상호배타적 분류가 아니라 태그 기반(상위–하위 동시 부여 포함)이라서, 문헌 1편이 여러 범주에 동시에 잡힐 수 있다.\n\n\nB7. 최근 연도 하락 해석 주의\n연도 추세에서 2022년 이후 하락은 “정책문헌의 학술 DOI 인용이 줄어든다”는 뜻인가?\n그렇게 단정하기 어렵다. 정책문헌 수집·정리의 시차(수집 지연)와 발행 직후 인용 기록이 완전히 누적되지 않는 효과가 함께 작동했을 가능성이 크다. 따라서 최근 연도 수치는 “실시간 감소”라기보다 관측 시차가 섞인 신호로 해석해야 한다.\n\n\nB8. 2012년 평균 진단\n2012년 무렵 “문헌당 평균 인용 수”가 특히 높게 보이는 이유는?\n문헌당 평균 인용 수는 분포의 꼬리가 긴 경우 영향을 크게 받는다. 그래서 “평균”이 높게 보일 때는, 일부 극단값의 영향인지 아니면 분포 전체가 오른쪽으로 이동했는지부터 분리해 확인해야 한다. 절단평균은 상위·하위 일부 극단값을 제외해 계산한 평균이다. “평균이 극단값에 끌린 것인지”를 구분하는 데 도움이 된다.\n아래 그림은 연도별로 평균과 함께 중앙값, 절단평균을 같이 보여준다. 또한 상위 1% 문서가 해당 연도 전체 인용에서 차지하는 비중을 함께 표시했다.\n\n이 그림이 주는 핵심 메시지는 다음과 같다.\n\n2012년의 상승은 평균만의 현상이라기보다 중앙값과 절단평균에서도 함께 나타난다. 즉 일부 극단값만으로 설명되기보다 분포 전반의 변화가 섞였을 가능성이 있다.\n상위 1% 문서의 인용 기여는 2012년이 단독으로 튀지 않는다. 따라서 “2012년 피크”를 단일한 소수 문서의 효과로만 해석하기는 어렵다.\n\n\n\nB9. OA(오픈액세스) 해석\nOA 논문이 정책문헌 인용에서 높게 보이는 건 인과인가?\n정책문헌 인용에서는 OA 비중이 상대적으로 높게 나타난다. 다만 이것이 “OA라서 더 인용된다”는 인과로 바로 이어지지는 않는다. 정책 관련 연구가 OA로 출판될 가능성, 공공 펀딩 구조, 분야 구성 차이 등 교란 요인이 존재한다.\n다만 “정책문헌에서 인용된 논문”을 기준으로 도메인과 발행연도 구간을 나눠 보아도, OA 논문의 논문 1편당 정책문헌 인용 평균이 더 높게 나타나는 경향은 대체로 유지된다. 아래 표는 2000–2009, 2010–2019 구간에서의 비교다. 최근 연도는 관측 시차 영향이 커서 제외했다.\n\n\n\n\n\n\n\n\n\n\n도메인\n2000–2009 OA\n2000–2009 비OA\n2010–2019 OA\n2010–2019 비OA\n\n\n\n\nSocial Sciences\n10.51\n5.28\n5.89\n3.92\n\n\nHealth Sciences\n3.73\n2.98\n2.86\n2.30\n\n\nPhysical Sciences\n5.09\n3.98\n3.88\n3.12\n\n\nLife Sciences\n2.73\n2.66\n2.51\n2.36\n\n\n\n다만 중앙값은 대부분 1–2 수준으로 큰 차이가 없다. 평균 차이는 분포의 꼬리(상위 반복 인용 논문) 영향이 섞여 있을 가능성이 크다. 따라서 이 표는 인과 결론이 아니라 “가능한 설명 요인”을 점검하는 참고 근거로만 사용한다.\n추가 참고 그림은 아래 C 섹션에 묶어서 제공한다."
-  },
-  {
-    "objectID": "SI/appendix.html#appendix-c",
-    "href": "SI/appendix.html#appendix-c",
-    "title": "부록",
-    "section": "C. 추가 그림",
-    "text": "C. 추가 그림\n이 섹션은 본문에서 지면상 생략된 참고 그림을 묶어서 제공한다. 필요한 항목만 빠르게 확인할 수 있도록 각 그림은 기본적으로 접어 두었다. 일부 그림은 본문 그림과 표현 방식이 다를 수 있다.\n\n사용 방법: 본문에서 막힌 그림 번호를 찾은 뒤, 해당 C항목만 열어 확인한다.\n해석 경계: C항목은 결론을 추가하는 자료가 아니라, 본문 해석을 보강하는 참고 자료다.\n\n\nC1. 그림 3-4 보조: Top-N 토픽·세부분야\n이 그림은 메인 보고서의 두 속도 파트와 결과 해석 파트에서 다룬 토픽 패턴을 상위 목록으로 빠르게 확인하기 위한 참고 자료다.\n\n한 줄 요지: “상위에 실제로 무엇이 있나”를 목록으로 빠르게 확인한다.\n왜 넣었나: 그림 3–4(토픽 산점도·두 속도)에서 상위 토픽·세부분야 예시가 궁금할 때 바로 참고할 수 있도록 했다.\n해석 경계: 상위 목록은 “총 인용 기준”의 단면이며, 결론을 추가하기보다 본문 해석을 보강하는 참고 자료로만 활용한다.\n\n\n\n그림 보기\n\n\n\n\n\n\nC2. 그림 7 확장: 출처 유형 × 토픽(열지도)\n그림 7(출처 유형×도메인 구성)을 토픽 수준으로 확장해, 유형별로 어떤 토픽을 더 자주 인용하는지의 결을 확인하기 위한 참고 그림이다.\n\n한 줄 요지: 출처 유형별로 어떤 토픽이 더 자주 인용되는지를 토픽 단위로 확장해 본다.\n왜 넣었나: 메인 보고서의 허브 해석에서 본 구성 차이가 토픽 수준에서도 재현되는지 확인하기 위해서다.\n해석 경계: 열지도는 구성의 “결”을 보는 용도다. 값의 크기만으로 인과나 품질을 단정하지 않는다.\n\n\n\n그림 보기\n\n\n\n\n\nC3. 2장 OA 해석 보조: 도메인·출처 유형\n메인 보고서 3.2의 OA 논의는 “가능한 설명 요인”을 남겨두는 수준으로만 다뤘다. 아래는 OA 비중을 요약한 참고 그림이다.\n\n한 줄 요지: 정책문헌 인용에서 나타나는 OA 비중을 도메인·출처 유형 기준으로 요약한다.\n왜 넣었나: 본문에서 OA를 “가능한 설명 요인”으로만 다룰 때, 독자가 실제 분포를 한 번 더 확인할 수 있도록 했다.\n해석 경계: 이 그림만으로 OA 효과를 인과로 단정하지 않는다(구성·선택·출판 관행 등 교란 가능).\n\n\n\n그림 보기\n\n\n\n\n\n\nC4. 그림 10 확장: 자국 인용 비중(Top10)\n그림 10은 비교를 위해 선택 국가만 제시했다. 아래 그림은 상위 10개 정책 출처 국가를 더 넓게 보여준다. 이 지표는 1저자 국가코드가 확인되는 인용만 대상으로 계산한다는 점에 유의해야 한다.\n\n한 줄 요지: 선택 국가 바깥에서 자국 인용 비중이 어느 범위에 분포하는지(상위 10개 출처)로 확장해 확인한다.\n왜 넣었나: 본문 3.3(그림 10)의 “선택 국가 비교”가 전부가 아니라는 점을 보완하기 위해서다.\n해석 경계: 1저자 국가코드가 확인되는 인용만 분모에 포함된다. 따라서 “순위”보다 “범위와 스케일”을 읽는 용도다.\n\n\n\n그림 보기\n\n\n\n\n\nC5. 허브 구조 보조: OpenAlex subfield → Overton domain 네트워크(Top 100)\nOpenAlex 세부분야(subfield)와 Overton 정책 분류(2nd_class) 사이의 인용 흐름을 네트워크로 나타냈다.\n\n한 줄 요지: “세부분야 → 정책 분류” 흐름을 네트워크로 요약해, 허브 구조의 큰 줄기를 본다.\n왜 넣었나: 메인 보고서의 허브 파트와 한국 경로 파트를 분류 수준에서 한 번 더 확인할 수 있는 참고 그림이 필요했다.\n해석 경계: 표시 규칙(상위 노드/상위 연결) 때문에 주변부 연결은 생략된다. 아래 접힘 박스의 ’표시 규칙·민감도 점검’을 함께 본다.\n\n\n\n\n표시 규칙과 해석 주의, 민감도 점검\n\n표시 규칙\n\n노드는 상위 100개만 표시했다.\n연결선은 복잡도를 줄이기 위해, 각 노드에서 규모가 큰 상위 3개 연결만 남겼다.\n노드 크기는 선택된 노드 집합 안에서의 총 흐름으로 정의했다. 이는 연결선을 일부만 남기는 과정과는 별개다.\n\n해석 주의\n\n표시 규칙은 가독성을 위한 제한이다. 그림에 보이는 연결이 전체 연결을 의미하지 않는다.\n\n간단 점검: 표시 규칙 민감도\n\n세부분야 25개, 정책 분류 25개로 노드를 더 줄인 축약 버전과 비교해도, 흐름 규모 기준 상위 20개 세부분야와 상위 20개 정책 분류는 현재 그림에 모두 포함됐다.\n축약 버전 네트워크에서 세부분야 기준 상위 3개 연결이 차지하는 비중의 중앙값은 89.8%였다.\n따라서 이 그림은 주변부의 미세한 연결을 비교하기보다, 큰 흐름과 허브 구조를 빠르게 읽는 용도로 써야 한다.\n\n\n\n\n그림 보기\n\n\n\n\n\nC6. 반복 인용 분포 보조: 로그-로그 CCDF\n정책문헌이 “고르게” 논문을 인용하는지, 또는 일부 문헌·논문에 반복 인용이 집중되는지를 분포 자체로 확인하는 보조 그림이다.\n\n한 줄 요지: “소수에 집중”을 요약 통계가 아니라 분포(꼬리)로 직접 확인한다.\n왜 넣었나: 본문에서 불균등·반복 인용을 말할 때, 독자가 “얼마나 긴 꼬리인지”를 한 장에서 확인할 수 있도록 했다.\n해석 경계: 로그-로그 CCDF는 비교에 유용하지만 직관적이지 않을 수 있다. 이 그림은 결론 추가가 아니라 “분포 형태 점검” 용도다.\n\n\n\n그림 보기\n\n\n\n\n\nC7. 그림 8 보조: 수요–공급 도메인 구성 차이(Δ, pp)\n그림 8의 해석 부담을 줄이기 위해, 정책 수요 비중 − 연구 공급 비중(percentage points)으로 단순화한 버전이다.\n\n한 줄 요지: 국가별 불일치를 “차이(Δ, pp)”로 바꿔 방향과 크기를 빠르게 확인한다.\n왜 넣었나: 본문 그림 8(산점도)은 해석에 단계가 필요하므로, 동일 내용을 더 단순한 표기로 한 번 더 확인할 수 있게 했다.\n해석 경계: Δ는 방향을 보여주는 요약이다. 원래 구성(정책 수요/연구 공급)의 절대 비중은 본문 그림 8과 함께 확인한다.\n\n\n\n그림 보기\n\n\n\n\n\nC8. 그림 12 보조: 정책–연구 근거 흐름 네트워크 백본 민감도\n본문 그림 12는 가독성을 위해 “상위 노드 + 각 노드의 유입 상위 3개와 유출 상위 3개 연결”만 남긴 축약 네트워크다. 연결선은 backbone 규칙을 따른다. 노드 구분은 선택된 50개 노드 안에서 정책 출처 쪽과 연구 쪽에 실제로 나타나는 역할을 기준으로 해석한다. 표시 규칙이 바뀌면 보이는 연결선의 수는 달라지지만, 큰 축(반복적으로 나타나는 굵은 경로)이 얼마나 유지되는지는 별도로 점검할 필요가 있다.\n\n한 줄 요지: 백본 규칙(top-3/top-5/all links)을 바꿔도 큰 경로 축이 유지되는지 확인한다.\n왜 넣었나: 그림 12가 “시각적으로 강하지만 검증이 약하다”는 지적에 답하기 위해, 동일 노드 집합·고정 레이아웃에서 연결선만 바꿔 비교한다.\n해석 경계: 레이아웃은 비교를 돕기 위한 고정 좌표다. 아래 그림은 “세부 비율”이 아니라 “연결 구조가 유지되는가”를 확인하는 용도다.\n\n\n\n그림 보기\n\n\n\n\n\n\n\nC9. 그림 5-6 보조: 밀도 지표 강건성(평균 vs 중앙값 vs 절단평균)\n본문의 “문헌당 평균 인용(밀도)” 비교는 해석에 유용하지만, 문서 길이·장르·참고문헌 관행의 영향을 함께 받는 지표다. 평균만 보면 긴 꼬리(outlier)에 민감하므로, 중앙값/절단평균을 함께 확인해 “총량 허브 vs 밀도 허브” 해석이 얼마나 안정적인지 점검한다.\n\n한 줄 요지: 평균이 아닌 통계(중앙값/절단평균)로 봐도 “밀도 패턴”이 유지되는지 확인한다.\n왜 넣었나: 국가/유형 간 밀도 비교가 “평균 1개”에 과도하게 의존하지 않도록, 분포 강건성 지표를 병기한다.\n해석 경계: 아래 통계는 DOI 인용이 1건 이상 관측되는 정책문헌(citing docs) 기준이다(관측 가능한 범위). 또한 “citing share(전체 문헌 중 citing docs 비중)”이 낮은 집단은 분포 해석이 더 조건부가 된다.\n\nCSV: - policy_source_country_density_robust.csv(국가/IGO): 다운로드 - policy_source_type_density_robust.csv(유형): 다운로드\n\n\n그림 보기\n\n\n\n\n\n\nC10. 4장 반복 점검 보조: 반복 인용(근거 표준화) 민감도\n본문의 “2회 이상 반복 인용(48.1%)”은 반복 인용 논문 비중을 읽는 출발점이지만, 임계값 선택(≥2/≥5/≥10)과 시간 지연(최근 논문 불리)의 영향을 받는다. 그래서 같은 정의를 임계값과 발행연도 코호트로 확장해, 해석이 어디까지 안정적인지 함께 보여준다.\n\n한 줄 요지: “반복 인용” 지표는 임계값과 발행연도(지연효과)에 민감하므로, 최소한 3개 임계값과 코호트로 함께 확인한다.\n왜 넣었나: 48.1% 단일 수치의 임의성을 줄이고, “반복 인용 논문 비중”을 반복 점검 가능한 지표로 만든다.\n해석 경계: 여기서 반복 인용은 서로 다른 정책문헌이 같은 논문을 인용한 횟수(정책문헌 기준 반복)이며, “정책문헌 간 인용”이나 “DOI 밖 근거”는 포함하지 않는다.\n\nCSV: - repeat_citation_thresholds.csv(전체): 다운로드 - repeat_citation_by_cohort.csv(코호트): 다운로드\n\n\n그림 보기\n\n\n\n\n\nC11. 3장 한국 비교 보조: 절대 순위보다 비슷한 관측 규모의 비교군으로 해석하기\n국가별 순위를 그대로 비교하면, 실제 차이(정책 근거 구조)와 관측 차이(수집 범위·표본 규모)가 섞여 오독이 생기기 쉽다. 그래서 한국은 절대 순위로 “판정”하기보다, 관측된 정책 출처 문헌 수(Overton 태깅 기준)가 비슷한 국가 묶음 안에서 패턴을 먼저 점검해야 한다.\n\n한 줄 요지: 한국 비교는 “상위권 순위”보다 “관측 규모가 비슷한 비교군”에서 구조 신호를 먼저 확인한다.\n왜 넣었나: “한국 수치가 조건부”라는 지적에 답하기 위해, 비교의 분모(표본 크기)를 먼저 맞춰 오독을 줄인다.\n해석 경계: 아래 비교군은 정책의 실제 규모가 아니라, Overton에서 관측되는 정책 출처 문헌(국가 태깅) 표본 규모가 비슷한 국가들이다.\n\nCSV: - korea_peer_group_by_policy_docs.csv: 다운로드\n\n\n\n\n\n\n\n\n\n\n\n국가(출처)\n정책문헌 수(출처)\nDOI 인용 포함 문헌\nciting share\nDOI 인용 건수\n문헌당 평균(DOI)\n\n\n\n\nRepublic of Korea\n2,742\n2,726\n99%\n32,935\n12.1\n\n\nKenya\n2,614\n2,566\n98%\n43,626\n17.0\n\n\nUruguay\n2,444\n2,383\n98%\n30,391\n12.8\n\n\nEstonia\n2,049\n1,849\n90%\n29,228\n15.8\n\n\nArgentina\n3,601\n3,566\n99%\n37,843\n10.6\n\n\nLatvia\n1,835\n1,739\n95%\n21,119\n12.1\n\n\nChile\n3,656\n3,579\n98%\n44,416\n12.4\n\n\n\n\n\nC12. 그림 9-11 보조: 한국 저자국가 규칙 민감도\n한국의 유입·조달 수치들은 기본적으로 “연구국=1저자 국가코드” 규칙으로 계산했다. 다만 국제공저가 많은 분야에서는 1저자 규칙이 분포를 더 한쪽으로 기울일 수 있다. 그래서 2025.06 OpenAlex 스냅샷 DB에서 저자국가 규칙을 바꿔도 한국 관련 결론이 얼마나 흔들리는지 최소 민감도 점검을 수행했다.\n\n한 줄 요지: 규칙을 바꿔도 “조달의 미국 집중”과 “유입의 허브 채널 집중” 구조는 크게 유지되지만, 유입의 “규모”는 any-author 기준에서 약 0.84배로 보정된다.\n왜 넣었나: “한국 수치가 조건부”라는 지적 중, 저자국가 규칙에 따른 변동 폭을 최소 표로 제시하기 위해서다.\n해석 경계: corresponding 정보는 결측이 커서(works 기준 60%+ 결측) 부분집합 참고용으로만 쓴다.\n\n\n(1) 한국 조달(outbound): 한국 정책문헌이 어떤 연구를 조달하는가\n\n\n\n\n\n\n\n\n\n\n규칙\n수집 범위(인용 기준)\nUS\nGB\nKR\n\n\n\n\n1저자(분수계수)\n23,947 / 32,935 (72.7%)\n55.95%\n8.50%\n4.65%\n\n\nany-author(분수계수)\n24,592 / 32,935 (74.7%)\n55.66%\n8.74%\n4.57%\n\n\ncorresponding(분수계수)\n10,654 / 32,935 (32.4%)\n54.81%\n9.59%\n5.06%\n\n\n\nCSV: - korea_author_country_outbound_first_author.csv: 다운로드 - korea_author_country_outbound_any_author_fractional.csv: 다운로드 - korea_author_country_outbound_corresponding_fractional.csv: 다운로드\n\n\n(2) 한국 유입(inbound): “한국 1저자” 연구를 글로벌 정책문헌이 어떻게 인용하는가\n유입은 기본 정의가 “한국 1저자 논문을 인용한 정책문헌”이므로, any-author 분수계수는 유입의 규모(한국 기여)를 보정하는 역할을 한다. 2025.06 DB 기준, 한국 1저자 works에 대한 정책문헌 인용 97,502건은 any-author 분수계수로 환산하면 유효 KR 인용 합이 82,308(0.844배)로 줄어든다.\n정책 출처 구조(국가)는 크게 유지된다(상위 3개 정책 출처 합계 약 55.0% → 55.0%).\n\n\n\n채널(국가)\n1저자 기준\n한국 참여 저자 가중(any-author)\n\n\n\n\nUSA\n27.6%\n28.0%\n\n\nIGO\n19.8%\n19.1%\n\n\nUK\n7.6%\n7.9%\n\n\nTop3 합\n55.0%\n55.0%\n\n\n\nCSV: - korea_author_country_inbound_policy_source_country.csv: 다운로드 - korea_author_country_inbound_policy_source_type.csv: 다운로드\n\n\n\nC13. 그림 11 보조: 한국 유입 비중의 보정 전후 차이\n그림 11처럼 “정책 출처 × 연구국” 계열 지표는 조인 중복에 민감하다. 같은 인용이 여러 행으로 펼쳐지면 특정 채널의 비중이 과대 계수될 수 있으므로, 이번 버전은 논문별 1행 매핑과 정책 출처 태그 중복 제거를 적용한 기준표를 사용한다.\n보정 전후를 비교하면 한국 유입에서는 특히 일부 채널 비중이 크게 흔들렸다. 따라서 아래 표는 “예전 값이 왜 달랐는가”를 설명하는 참고 자료이며, 공개 해석은 중복 보정 이후 값(C12 및 본문 그림 11)을 우선 기준으로 해석해야 한다.\n아래 표는 주요 채널의 보정 전후 차이를 요약한다.\nCSV: - korea_inbound_flow_vs_dedup.csv: 다운로드\n\n\n\n채널(정책 출처)\n보정 전 비중\n보정 후 비중\n과대계수 배율\n\n\n\n\nUK\n32.8%\n7.6%\n10.0×\n\n\nIGO\n16.3%\n19.8%\n1.90×\n\n\nUSA\n16.2%\n27.6%\n1.35×\n\n\nGermany\n6.9%\n5.8%\n2.74×\n\n\nEU\n3.3%\n6.7%\n1.15×\n\n\n\n해석 팁: 보정 전 값은 구조 점검용 참고치로만 보고, 채널 비중 해석은 중복 보정 기준표(예: C12)를 우선 기준으로 해석해야 한다."
-  },
-  {
-    "objectID": "SI/methods.html",
-    "href": "SI/methods.html",
-    "title": "방법론·데이터 정합성",
+    "objectID": "SI/interactive.html",
+    "href": "SI/interactive.html",
+    "title": "인터랙티브",
     "section": "",
-    "text": "바로가기: 보고서(PDF) · 확장 자료 · 방법론·데이터 정합성 · 인터랙티브 · 부록 · 다음 질문\n이 페이지는 보고서 본문에서 짧게 다룬 방법론 설명을 해석에 필요한 기준 중심으로 다시 정리한 것이다. 상세 표와 추가 진단 그림은 부록에서 이어서 확인할 수 있다."
+    "text": "바로가기: 보고서(PDF) · 확장 자료 · 방법론·데이터 정합성 · 인터랙티브 · 부록 · 다음 질문\n보고서 본문 그림 가운데 확대해서 확인하고, 항목을 켜고 끄고, 값도 바로 점검할 필요가 있는 그림은 인터랙티브로 제공한다. 즉 웹에서 더 세밀하게 확인할 수 있도록 구성했다. 아래 플롯은 버튼을 눌러야 불러와지므로, 페이지 자체는 가볍게 열린다.\n추천 확인 순서(메인 보고서 흐름)\n확인 순서(공통)\n사용 팁"
   },
   {
-    "objectID": "SI/methods.html#먼저-확인할-것-1분",
-    "href": "SI/methods.html#먼저-확인할-것-1분",
-    "title": "방법론·데이터 정합성",
-    "section": "먼저 확인할 것 (1분)",
-    "text": "먼저 확인할 것 (1분)\n\n국가 비교를 보기 전에는 1저자 국가코드가 확인되는 인용만을 대상으로 한 결과인지 먼저 확인한다.\n분모가 다른 지표끼리는 직접 비교하지 않는다.\n본문 해석이 애매하면 아래 5개 섹션을 위에서 아래 순서로 점검한다."
+    "objectID": "SI/interactive.html#두-속도시간분야토픽",
+    "href": "SI/interactive.html#두-속도시간분야토픽",
+    "title": "인터랙티브",
+    "section": "두 속도(시간·분야·토픽)",
+    "text": "두 속도(시간·분야·토픽)\n\n메인 보고서(PDF): 2장 주요 결과 · 두 속도, 3장 결과 해석과 한계 · 관련: 부록: 2012 진단, 부록: 최근 연도 하락, 부록: 매칭·결측 요약\n\n\n그림 1. 정책문헌 발행연도별 인용수·문헌수·문헌당 평균 인용\n\n확인할 것\n\n관찰: 2012 전후 “문헌당 평균 인용” 변곡이 보이는지 확인한다.\n해석: 최근 연도 하락은 구조 변화보다 관측 시차 신호일 수 있다.\n점검: 부록: 2012 진단, 부록: 최근 연도 하락과 교차 확인한다.\n\n\n\n  \n    새 창으로 열기\n    플롯 불러오기\n  \n\n\n\n그림 2. 정책문헌 인용 상위 4개 도메인의 하위 분야 구성\n\n확인할 것\n\n관찰: 도메인 내부에서 상위 3개 필드 집중도와 필드 정보 누락(field missing) 구간을 함께 확인한다.\n해석: 누락 구간이 큰 도메인은 구성 비교 해석이 불안정할 수 있다.\n점검: 부록: 매칭·결측, 부록: 다중라벨을 함께 확인한다.\n\n\n\n  \n    새 창으로 열기\n    플롯 불러오기\n  \n\n\n\n그림 3. 토픽별 인용수와 고유 논문수. 점 크기는 오픈액세스 비중\n\n확인할 것\n\n관찰: 같은 논문 수 대비 정책문헌 인용이 특히 큰 토픽이 있는지 확인한다.\n해석: 이런 점들은 논문 수 대비 정책문헌 인용이 큰 토픽으로 해석한다.\n점검: 버블 크기(OA)는 인과가 아니라 보조 요인으로만 두고, 부록 OA 해석과 함께 확인한다.\n\n\n\n  \n    새 창으로 열기\n    로딩이 느릴 수 있음\n    플롯 불러오기\n  \n\n\n\n그림 4. 토픽별 인용 강도와 최근성\n\n확인할 것\n\n관찰: 오른쪽 위(최근성·강도 모두 높음)와 왼쪽 위(강도 높고 최근성 낮음) 군집을 구분해 확인한다.\n해석: 전자는 최근 논문 비중과 인용 강도가 모두 높은 토픽이고, 후자는 인용 강도는 높지만 최근성은 낮은 토픽이다.\n점검: 다음 업데이트에서 해당 토픽의 위치 유지 여부를 반복 확인한다.\n\n\n\n  \n    새 창으로 열기\n    로딩이 느릴 수 있음\n    플롯 불러오기"
   },
   {
-    "objectID": "SI/methods.html#method-scope",
-    "href": "SI/methods.html#method-scope",
-    "title": "방법론·데이터 정합성",
-    "section": "1) 분석 범위",
-    "text": "1) 분석 범위\n먼저 이번 분석이 어디까지를 포함하는지 분명히 해 둘 필요가 있다.\n\n데이터 기준 시점: Overton(2025.02), OpenAlex(2025.06)\n분석 단위: Overton 정책문헌을 중복 제거한 고유 정책문헌\n인용 범위: 정책문헌 참고문헌에서 DOI가 확인되는 학술 인용\n\n\n\n\n\n\n\n노트\n\n\n\n해석 범위 주의\n\n본 결과는 Overton 전체 정책문헌의 완전한 센서스가 아니라, 이번 기준 시점과 매칭 범위에서 관측된 구조다.\nDOI 밖 근거(보고서, 법령, 웹 등)는 본 기본 지표에 포함되지 않는다.\n“DOI 인용 포함 비중(예: 97.6%)”은 “정책문헌이 DOI를 1건이라도 포함하는지”의 비율이며, 정책근거 전체에서 DOI가 차지하는 비율이 아니다."
+    "objectID": "SI/interactive.html#허브누가-근거를-축적하는가",
+    "href": "SI/interactive.html#허브누가-근거를-축적하는가",
+    "title": "인터랙티브",
+    "section": "허브(누가 근거를 축적하는가)",
+    "text": "허브(누가 근거를 축적하는가)\n\n메인 보고서(PDF): 2장 주요 결과 · 허브 · 관련: 부록: 수집 범위·태깅\n\n\n그림 5. 정책 출처 국가별 인용 규모와 문헌당 평균 인용, 그리고 인용 도메인 구성비. 상위 10개와 한국\n\n확인할 것\n\n관찰: 총량(규모)과 문헌당 평균(밀도)의 상위 순서가 같은지 확인한다.\n해석: 규모 허브와 밀도 허브는 분리될 수 있다.\n점검: 두 상위군이 얼마나 겹치는지 확인한다.\n\n\n\n  \n    새 창으로 열기\n    플롯 불러오기\n  \n\n\n\n그림 6. 출처 유형별 총 인용과 문헌당 평균 인용\n\n확인할 것\n\n관찰: 출처 유형별로 총량과 문헌당 평균의 순서 차이를 확인한다.\n해석: 인용이 많이 모이는 유형과 근거 밀도가 높은 유형은 분리해서 해석해야 한다.\n점검: 태그 비배타성(중복 가능)을 전제로 유형별 패턴 차이만 비교한다.\n\n\n출처 유형 태그는 상호배타적 분류가 아니라 태그 기반이라, 문헌 1편이 여러 유형에 동시에 잡힐 수 있다. 따라서 아래 값은 “출처 유형 태그 단위”의 요약으로 해석한다.\n\n  \n    새 창으로 열기\n    플롯 불러오기\n  \n\n\n\n그림 7. 출처 유형×도메인 구성 비중(heatmap). 주요 출처 유형과 상위 도메인\n\n확인할 것\n\n관찰: 같은 도메인의 비중이 출처 유형별로 얼마나 달라지는지 확인한다.\n해석: 구성 차이는 출처 역할·의제 차이 신호일 수 있다.\n점검: 미분류(unspecified) 비중이 큰 열은 세부 태깅 부족 신호로 보고 해석을 보수적으로 둔다.\n\n\n값은 출처 유형 내부에서 도메인별 비중으로 정규화한 값이다. 따라서 “총량” 비교가 아니라 “구성 차이” 비교에 사용한다.\n\n  \n    새 창으로 열기\n    플롯 불러오기"
   },
   {
-    "objectID": "SI/methods.html#method-matching",
-    "href": "SI/methods.html#method-matching",
-    "title": "방법론·데이터 정합성",
-    "section": "2) 매칭·결측 점검",
-    "text": "2) 매칭·결측 점검\n\nDOI → OpenAlex 매칭률과 국가코드 결측은 해석의 안전장치다.\n특히 국가 비교는 1저자 국가코드가 확인되는 인용만을 대상으로 한 결과인지 먼저 확인해야 한다.\n\n관련 상세: - 부록 B0-1. 매칭·결측 요약 - 부록 B0. 자주 찾는 정의"
-  },
-  {
-    "objectID": "SI/methods.html#method-metrics",
-    "href": "SI/methods.html#method-metrics",
-    "title": "방법론·데이터 정합성",
-    "section": "3) 핵심 지표 정의(요약)",
-    "text": "3) 핵심 지표 정의(요약)\n아래 정의는 본문 핵심 수치를 같은 기준으로 다시 점검하기 위한 최소 기준이다.\n\n인용 건수와 고유 논문 수: 빈도와 폭을 분리해서 본다.\n최근성: 2022-2024 발행 논문으로 향한 정책문헌 인용 비중\n인용 강도: 집계 단위 내 인용 건수 / 고유 논문 수\n자국 인용 비중: 1저자 국가코드 확인분만 분모에 포함\n\n관련 상세: - 인용 건수와 고유 논문 수 - 최근성과 인용 강도 - 자국 인용 비중"
-  },
-  {
-    "objectID": "SI/methods.html#method-guardrails",
-    "href": "SI/methods.html#method-guardrails",
-    "title": "방법론·데이터 정합성",
-    "section": "4) 해석 가드레일",
-    "text": "4) 해석 가드레일\n아래 항목은 본문 결론을 과하게 읽지 않기 위해 먼저 확인할 사항이다.\n\n다중라벨 토픽 합은 100%를 넘을 수 있다.\n최근 연도 하락은 관측 지연(수집·색인 시차) 신호일 수 있다.\n2012년 평균 고점은 분포 진단(중앙값·절단평균)과 함께 해석해야 한다.\n국가·유형 비교에서 “문헌당 평균 인용”은 문서 길이·장르·참고문헌 관행을 함께 반영하므로, 평균만으로 우열을 판단하지 않는다(중앙값·절단평균 병기: 부록 C9).\n“반복 인용(≥2)” 비중은 임계값 선택과 시간 지연(최근 논문 불리)에 민감하므로, 코호트/임계값 민감도와 함께 확인한다(부록 C10).\n네트워크(그림 12)는 가독성을 위해 연결을 축약한 “구조 요약 지도”다. 표시 규칙(top-3/top-5/all) 민감도는 부록 C8에서 확인한다.\n\n관련 상세: - 다중라벨 해석 - 최근 연도 하락 주의 - 2012년 평균 진단"
-  },
-  {
-    "objectID": "SI/methods.html#method-protocol",
-    "href": "SI/methods.html#method-protocol",
-    "title": "방법론·데이터 정합성",
-    "section": "5) 재현·반복 점검 프로토콜",
-    "text": "5) 재현·반복 점검 프로토콜\n마지막으로, 같은 질문을 다음 점검 때도 같은 기준으로 다시 계산할 수 있어야 한다.\n\n동일 지표를 분기 또는 반기 단위로 재계산해 방향성(상승·유지·완화)을 점검한다.\n보고서(PDF)는 본문으로 유지하고, 계산식·민감도·보조 표는 확장 자료에서 업데이트한다.\n기준값·분모·저자국가 규칙이 바뀌면 PDF와 확장 자료의 연결표를 함께 점검한다."
-  },
-  {
-    "objectID": "SI/index.html",
-    "href": "SI/index.html",
-    "title": "확장 자료",
-    "section": "",
-    "text": "바로가기: 보고서(PDF) · 확장 자료 · 2026 데이터 업데이트 · 방법론·데이터 정합성 · 인터랙티브 · 부록 · 다음 질문\n핵심 메시지와 본문 해석은 보고서(PDF)에서 먼저 확인한다. 이 페이지는 수치 정의와 추가 그림이 필요할 때 활용한다.\n확장 자료는 보고서(PDF)의 배경 요약·방법론·인터랙티브·부록을 묶은 웹 보조자료다."
-  },
-  {
-    "objectID": "SI/index.html#버전-안내",
-    "href": "SI/index.html#버전-안내",
-    "title": "확장 자료",
-    "section": "버전 안내",
-    "text": "버전 안내\n\n\n\n버전\n역할\n\n\n\n\nv1 공식 기준본\n2025년 12월 출간 기준으로 정리한 공식 보고서\n\n\nv2 웹 업데이트\n2026 데이터로 다시 계산한 핵심 변화와 비교 결과"
-  },
-  {
-    "objectID": "SI/index.html#배경-요약",
-    "href": "SI/index.html#배경-요약",
-    "title": "확장 자료",
-    "section": "배경 요약",
-    "text": "배경 요약\n\n허브는 왜 순위보다 경로로 해석해야 하나\n보고서의 허브 파트는 상위권을 나열하는 데 목적이 있지 않다. 같은 상위 출처라도 총 인용이 큰 정책 출처와 문헌당 인용이 높은 정책 출처가 다를 수 있고, 출처 유형이 바뀌면 인용하는 연구 도메인도 달라진다.\n허브는 “어느 출처가 상위를 차지하는가”보다 “정책문헌 인용이 어떤 출처를 통해 반복되는가”라는 질문으로 해석해야 한다.\n\n\n한국은 왜 두 방향으로 나눠 봐야 하나\n보고서에서 중요한 한국 메시지는 54.8%와 55.7%가 비슷하다는 사실이 아니라, 하나는 정책 출처 태그 기준 상위 3개 정책 출처 집중이고 다른 하나는 상위 1개국 집중이라는 구조 차이다.\n정책문헌 유입과 연구 인용을 하나의 지표로 묶으면 이 차이가 사라진다. 그래서 한국 파트는 값의 크기보다 경로의 형태를 먼저 확인해야 한다.\n\n\n두 속도는 왜 점검 질문이 되나\n정책근거는 하나의 속도로 움직이지 않는다. 오래 축적된 성숙 의제와 최근 논문 비중이 높은 의제를 같은 주기로 관리하면, 한쪽은 과도하게 자주 뒤집히고 다른 한쪽은 너무 느리게 갱신된다.\n두 속도는 토픽 순위를 새로 만드는 틀이 아니라, 어떤 의제를 어떤 주기로 다시 점검해야 하는지를 가르는 기준이다.\n\n\n국내 참고문헌이 붙으면 무엇이 달라지나\n한국 해석을 더 넓히려면 국제 허브를 통해 보이는 경로만이 아니라, 국내 정책문헌 안에서 어떤 근거를 인용하는지도 같은 기준으로 연계해야 한다. Kim et al. (2025)의 예비 분석은 NKIS 정책연구 보고서 참고문헌을 구조화했을 때, 분야에 따라 국내·국제 근거를 인용하는 경로가 다르게 나타날 수 있음을 시사한다.\n국내 참고문헌 연결은 결론을 하나 더 덧붙이는 작업이 아니라, “한국은 어떤가”라는 질문을 “한국 안에서 누가 어떤 근거를 어떻게 인용하는가”라는 질문으로 넓히는 확장이다."
-  },
-  {
-    "objectID": "SI/index.html#어디를-확인할-것인가",
-    "href": "SI/index.html#어디를-확인할-것인가",
-    "title": "확장 자료",
-    "section": "어디를 확인할 것인가",
-    "text": "어디를 확인할 것인가\n\n\n\n페이지\n언제 확인하면 좋은가\n\n\n\n\n2026 데이터 업데이트\n공식 보고서 이후 최신 데이터에서 무엇이 달라졌는지 먼저 확인하고 싶을 때\n\n\n방법론·데이터 정합성\n분모, 범위, 결측, 해석 경계를 먼저 확인하고 싶을 때\n\n\n인터랙티브\n그림 값을 직접 확대해서 보고 싶을 때\n\n\n부록\n정의, 추가 그림, 민감도 점검을 한 번에 보고 싶을 때\n\n\n다음 질문\n다음 점검 때도 같은 구조를 어떻게 다시 볼지 정리하고 싶을 때\n\n\n\n짧은 용어 설명과 지표 정의는 부록에서 확인할 수 있다."
-  },
-  {
-    "objectID": "SI/index.html#report-extended-map",
-    "href": "SI/index.html#report-extended-map",
-    "title": "확장 자료",
-    "section": "보고서(PDF) ↔︎ 확장 자료 연결",
-    "text": "보고서(PDF) ↔︎ 확장 자료 연결\n아래 표에서 인터랙티브: 그림 n은 확장 자료(웹) 번호(1–12) 기준이다. 메인 PDF의 그림 번호(1–12)와 일부 맞닿지만, 표와 그림의 배치가 다를 수 있으므로 혼동되면 표의 링크를 기준으로 따라가면 된다.\n\n\n\n보고서(PDF)\n확장 자료에서 더 볼 것\n\n\n\n\n1장 Data Insight\n부록: 관측 범위 정의 · 부록: 반복 인용 48.1% 정의 · 방법론: 범위·분모\n\n\n2장 연결 구조의 질문\n방법론: 범위·분모 · 부록: 수집 범위·태깅\n\n\n3장 허브 집중(그림 1)\n배경 요약: 허브 · 인터랙티브: 그림 5 · 인터랙티브: 그림 6 · 인터랙티브: 그림 7\n\n\n4장 한국의 두 방향 경로(그림 2)\n배경 요약: 한국 · 인터랙티브: 그림 8 · 인터랙티브: 그림 11 · 인터랙티브: 그림 12\n\n\n5장 분야별 수요·공급(그림 3)\n배경 요약: 한국 · 인터랙티브: 그림 9 · 인터랙티브: 그림 10\n\n\n6장 두 속도(그림 4, 표 1)\n배경 요약: 두 속도 · 인터랙티브: 그림 1 · 인터랙티브: 그림 2 · 인터랙티브: 그림 3 · 인터랙티브: 그림 4\n\n\n7장 반복 점검 기준선(표 2)\n다음 질문 · 방법론: 반복 점검 프로토콜 · 부록 C10\n\n\n8장 해석 가능한 범위와 추가 확인 과제\n배경 요약: 국내 참고문헌 확장 · 방법론 · 부록\n\n\n9장 한국 질문의 확장\n배경 요약: 국내 참고문헌 확장 · 다음 질문\n\n\n부록 A. 시간 지연·분야 편중(그림 5–7)\n부록: 최근 연도 하락 · 부록: 2012 진단 · 부록: 다중라벨 · 인터랙티브: 그림 1 · 인터랙티브: 그림 2 · 인터랙티브: 그림 3\n\n\n부록 B. 허브 심화 해설(그림 8–9)\n배경 요약: 허브 · 인터랙티브: 그림 5 · 인터랙티브: 그림 6 · 인터랙티브: 그림 7\n\n\n부록 C. 한국 심화 해설(그림 10–12)\n배경 요약: 한국 · 인터랙티브: 그림 8 · 인터랙티브: 그림 9 · 인터랙티브: 그림 10 · 인터랙티브: 그림 11 · 인터랙티브: 그림 12\n\n\n부록 D. 반복 점검 운영 질문\n다음 질문 · 부록 C10\n\n\n부록 E. 방법과 해석의 경계\n방법론·데이터 정합성 · 부록\n\n\n\n필요한 항목만 바로 찾고 싶다면 부록: 2012 진단, 부록: 다중라벨, 인터랙티브: 그림 12, 부록: 반복 인용 48.1% 정의로 이동하면 된다."
+    "objectID": "SI/interactive.html#한국의-위치정책문헌-유입과-연구-인용-비대칭",
+    "href": "SI/interactive.html#한국의-위치정책문헌-유입과-연구-인용-비대칭",
+    "title": "인터랙티브",
+    "section": "한국의 위치(정책문헌 유입과 연구 인용 비대칭)",
+    "text": "한국의 위치(정책문헌 유입과 연구 인용 비대칭)\n\n메인 보고서(PDF): 2장 주요 결과 · 한국, 3장 결과 해석과 한계 · 관련: 부록: 자국 인용 비중\n\n\n그림 8. 선택 국가별 분야 구성의 불일치(상위 50개국; 초기에는 상위 10개와 한국만 표시)\n\n확인할 것\n\n관찰: 점선 위·아래 위치로 도메인별 불일치 방향을 확인한다.\n해석: 같은 국가에서도 도메인마다 수요-공급 불일치 방향이 달라질 수 있다.\n점검: 도메인별 절대 격차(pp) 변화가 완화·유지·심화 중 어디인지 추적한다.\n\n\n\n  \n    새 창으로 열기\n    로딩이 느릴 수 있음\n    플롯 불러오기\n  \n\n\n\n그림 9. 정책 출처 → 연구국 인용 행렬. 절대 규모와 출처 내부 비중\n\n확인할 것\n\n관찰: 왼쪽(절대 규모)과 오른쪽(출처 내부 비중)의 패턴 차이를 확인한다.\n해석: 많이 인용하는 출처와 특정 연구국 인용 비중이 높은 출처는 다를 수 있다.\n점검: 상위 1개국 비중과 상위 3개국 합계를 함께 보며 편중 변화를 추적한다.\n\n\n왼쪽은 절대 인용 규모를 로그 스케일로 표시한다. 오른쪽은 정책 출처 내부에서의 비중을 보여준다. 정책 출처 목록에 없는 연구국은 지역 단위로 묶어 표시했다.\n\n  \n    새 창으로 열기\n    로딩이 느릴 수 있음\n    플롯 불러오기\n  \n\n\n\n\n그림 10. 자국 인용 비중과 기대비중 대비, 그리고 인용 도메인 구성. 정책 출처 국가 상위 7개국과 한국\n\n확인할 것\n\n관찰: 자국 인용 비중과 기대비중 대비(actual-expected) 분포를 함께 확인한다.\n해석: 기대비중 대비는 도메인 가중 기준선에 대한 상대 비교다.\n점검: 국가 비교 전에 1저자 국가코드가 확인되는 인용만을 대상으로 한 결과인지 먼저 확인한다.\n\n\n\n  \n    새 창으로 열기\n    플롯 불러오기\n  \n\n\n\n그림 11. 한국 정책–연구의 두 방향 흐름과 인용 도메인 구성. 상위 10개\n\n확인할 것\n\n관찰: 한국 연구가 글로벌 정책문헌에 인용되는 경로와 한국 정책문헌이 인용하는 연구의 출처를 분리해 확인한다.\n해석: 두 방향 상위 경로가 다르면 비대칭 구조 신호다.\n점검: 방향별 집중 지표(정책문헌 유입 상위 3합, 연구 인용 상위 1개국 비중)를 분리 추적한다.\n\n\n\n  \n    새 창으로 열기\n    플롯 불러오기\n  \n\n\n\n그림 12. 정책–연구 근거 흐름 네트워크\n\n확인할 것\n\n관찰: 상위 노드·상위 연결만 남긴 백본 경로에서 한국 연결 축이 어디로 이어지는지 확인한다.\n해석: 이 그림은 전체망이 아니라 구조 요약 지도다.\n점검: 거리와 위치를 정량 해석하지 말고, 연결 관계(누가 누구와 연결되는가)만 확인한다. 본문 그림은 각 노드의 유입 상위 3개와 유출 상위 3개 연결만 남긴 backbone이며, 노드 구분은 선택된 50개 노드 안에서 정책 출처 쪽과 연구 쪽에 실제로 나타나는 역할을 기준으로 해석한다. 표시 규칙(top-3/top-5/all) 민감도는 부록 C8에서 확인한다.\n\n\n레이아웃은 탐색을 돕기 위한 보조 장치다. 노드 간 거리는 절대적 지표가 아니므로, “가까움”을 정밀한 값으로 해석하지 않는다.\n표기: EU는 European Union, IGO는 International organizations를 뜻한다.\n\n  \n    새 창으로 열기\n    로딩이 느릴 수 있음\n    플롯 불러오기"
   },
   {
     "objectID": "SI/update_202603.html",
@@ -308,60 +231,200 @@
     "text": "다음 단계\n\n공식 보고서(v1)는 그대로 유지한다.\nv2는 웹에서 한국 관련 핵심 지표 변화와 비교 결과를 확인하는 업데이트 레이어로 운영한다.\n변화가 큰 그림은 이후 필요할 때 v1 / v2 비교 시각화로 확장할 수 있다."
   },
   {
-    "objectID": "SI/interactive.html",
-    "href": "SI/interactive.html",
-    "title": "인터랙티브",
+    "objectID": "SI/index.html",
+    "href": "SI/index.html",
+    "title": "확장 자료",
     "section": "",
-    "text": "바로가기: 보고서(PDF) · 확장 자료 · 방법론·데이터 정합성 · 인터랙티브 · 부록 · 다음 질문\n보고서 본문 그림 가운데 확대해서 확인하고, 항목을 켜고 끄고, 값도 바로 점검할 필요가 있는 그림은 인터랙티브로 제공한다. 즉 웹에서 더 세밀하게 확인할 수 있도록 구성했다. 아래 플롯은 버튼을 눌러야 불러와지므로, 페이지 자체는 가볍게 열린다.\n추천 확인 순서(메인 보고서 흐름)\n확인 순서(공통)\n사용 팁"
+    "text": "바로가기: 보고서(PDF) · 확장 자료 · 2026 데이터 업데이트 · 방법론·데이터 정합성 · 인터랙티브 · 부록 · 다음 질문\n핵심 메시지와 본문 해석은 보고서(PDF)에서 먼저 확인한다. 이 페이지는 수치 정의와 추가 그림이 필요할 때 활용한다.\n확장 자료는 보고서(PDF)의 배경 요약·방법론·인터랙티브·부록을 묶은 웹 보조자료다."
   },
   {
-    "objectID": "SI/interactive.html#두-속도시간분야토픽",
-    "href": "SI/interactive.html#두-속도시간분야토픽",
-    "title": "인터랙티브",
-    "section": "두 속도(시간·분야·토픽)",
-    "text": "두 속도(시간·분야·토픽)\n\n메인 보고서(PDF): 2장 주요 결과 · 두 속도, 3장 결과 해석과 한계 · 관련: 부록: 2012 진단, 부록: 최근 연도 하락, 부록: 매칭·결측 요약\n\n\n그림 1. 정책문헌 발행연도별 인용수·문헌수·문헌당 평균 인용\n\n확인할 것\n\n관찰: 2012 전후 “문헌당 평균 인용” 변곡이 보이는지 확인한다.\n해석: 최근 연도 하락은 구조 변화보다 관측 시차 신호일 수 있다.\n점검: 부록: 2012 진단, 부록: 최근 연도 하락과 교차 확인한다.\n\n\n\n  \n    새 창으로 열기\n    플롯 불러오기\n  \n\n\n\n그림 2. 정책문헌 인용 상위 4개 도메인의 하위 분야 구성\n\n확인할 것\n\n관찰: 도메인 내부에서 상위 3개 필드 집중도와 필드 정보 누락(field missing) 구간을 함께 확인한다.\n해석: 누락 구간이 큰 도메인은 구성 비교 해석이 불안정할 수 있다.\n점검: 부록: 매칭·결측, 부록: 다중라벨을 함께 확인한다.\n\n\n\n  \n    새 창으로 열기\n    플롯 불러오기\n  \n\n\n\n그림 3. 토픽별 인용수와 고유 논문수. 점 크기는 오픈액세스 비중\n\n확인할 것\n\n관찰: 같은 논문 수 대비 정책문헌 인용이 특히 큰 토픽이 있는지 확인한다.\n해석: 이런 점들은 논문 수 대비 정책문헌 인용이 큰 토픽으로 해석한다.\n점검: 버블 크기(OA)는 인과가 아니라 보조 요인으로만 두고, 부록 OA 해석과 함께 확인한다.\n\n\n\n  \n    새 창으로 열기\n    로딩이 느릴 수 있음\n    플롯 불러오기\n  \n\n\n\n그림 4. 토픽별 인용 강도와 최근성\n\n확인할 것\n\n관찰: 오른쪽 위(최근성·강도 모두 높음)와 왼쪽 위(강도 높고 최근성 낮음) 군집을 구분해 확인한다.\n해석: 전자는 최근 논문 비중과 인용 강도가 모두 높은 토픽이고, 후자는 인용 강도는 높지만 최근성은 낮은 토픽이다.\n점검: 다음 업데이트에서 해당 토픽의 위치 유지 여부를 반복 확인한다.\n\n\n\n  \n    새 창으로 열기\n    로딩이 느릴 수 있음\n    플롯 불러오기"
+    "objectID": "SI/index.html#버전-안내",
+    "href": "SI/index.html#버전-안내",
+    "title": "확장 자료",
+    "section": "버전 안내",
+    "text": "버전 안내\n\n\n\n버전\n역할\n\n\n\n\nv1 공식 기준본\n2025년 12월 출간 기준으로 정리한 공식 보고서\n\n\nv2 웹 업데이트\n2026 데이터로 다시 계산한 핵심 변화와 비교 결과"
   },
   {
-    "objectID": "SI/interactive.html#허브누가-근거를-축적하는가",
-    "href": "SI/interactive.html#허브누가-근거를-축적하는가",
-    "title": "인터랙티브",
-    "section": "허브(누가 근거를 축적하는가)",
-    "text": "허브(누가 근거를 축적하는가)\n\n메인 보고서(PDF): 2장 주요 결과 · 허브 · 관련: 부록: 수집 범위·태깅\n\n\n그림 5. 정책 출처 국가별 인용 규모와 문헌당 평균 인용, 그리고 인용 도메인 구성비. 상위 10개와 한국\n\n확인할 것\n\n관찰: 총량(규모)과 문헌당 평균(밀도)의 상위 순서가 같은지 확인한다.\n해석: 규모 허브와 밀도 허브는 분리될 수 있다.\n점검: 두 상위군이 얼마나 겹치는지 확인한다.\n\n\n\n  \n    새 창으로 열기\n    플롯 불러오기\n  \n\n\n\n그림 6. 출처 유형별 총 인용과 문헌당 평균 인용\n\n확인할 것\n\n관찰: 출처 유형별로 총량과 문헌당 평균의 순서 차이를 확인한다.\n해석: 인용이 많이 모이는 유형과 근거 밀도가 높은 유형은 분리해서 해석해야 한다.\n점검: 태그 비배타성(중복 가능)을 전제로 유형별 패턴 차이만 비교한다.\n\n\n출처 유형 태그는 상호배타적 분류가 아니라 태그 기반이라, 문헌 1편이 여러 유형에 동시에 잡힐 수 있다. 따라서 아래 값은 “출처 유형 태그 단위”의 요약으로 해석한다.\n\n  \n    새 창으로 열기\n    플롯 불러오기\n  \n\n\n\n그림 7. 출처 유형×도메인 구성 비중(heatmap). 주요 출처 유형과 상위 도메인\n\n확인할 것\n\n관찰: 같은 도메인의 비중이 출처 유형별로 얼마나 달라지는지 확인한다.\n해석: 구성 차이는 출처 역할·의제 차이 신호일 수 있다.\n점검: 미분류(unspecified) 비중이 큰 열은 세부 태깅 부족 신호로 보고 해석을 보수적으로 둔다.\n\n\n값은 출처 유형 내부에서 도메인별 비중으로 정규화한 값이다. 따라서 “총량” 비교가 아니라 “구성 차이” 비교에 사용한다.\n\n  \n    새 창으로 열기\n    플롯 불러오기"
+    "objectID": "SI/index.html#배경-요약",
+    "href": "SI/index.html#배경-요약",
+    "title": "확장 자료",
+    "section": "배경 요약",
+    "text": "배경 요약\n\n허브는 왜 순위보다 경로로 해석해야 하나\n보고서의 허브 파트는 상위권을 나열하는 데 목적이 있지 않다. 같은 상위 출처라도 총 인용이 큰 정책 출처와 문헌당 인용이 높은 정책 출처가 다를 수 있고, 출처 유형이 바뀌면 인용하는 연구 도메인도 달라진다.\n허브는 “어느 출처가 상위를 차지하는가”보다 “정책문헌 인용이 어떤 출처를 통해 반복되는가”라는 질문으로 해석해야 한다.\n\n\n한국은 왜 두 방향으로 나눠 봐야 하나\n보고서에서 중요한 한국 메시지는 54.8%와 55.7%가 비슷하다는 사실이 아니라, 하나는 정책 출처 태그 기준 상위 3개 정책 출처 집중이고 다른 하나는 상위 1개국 집중이라는 구조 차이다.\n정책문헌 유입과 연구 인용을 하나의 지표로 묶으면 이 차이가 사라진다. 그래서 한국 파트는 값의 크기보다 경로의 형태를 먼저 확인해야 한다.\n\n\n두 속도는 왜 점검 질문이 되나\n정책근거는 하나의 속도로 움직이지 않는다. 오래 축적된 성숙 의제와 최근 논문 비중이 높은 의제를 같은 주기로 관리하면, 한쪽은 과도하게 자주 뒤집히고 다른 한쪽은 너무 느리게 갱신된다.\n두 속도는 토픽 순위를 새로 만드는 틀이 아니라, 어떤 의제를 어떤 주기로 다시 점검해야 하는지를 가르는 기준이다.\n\n\n국내 참고문헌이 붙으면 무엇이 달라지나\n한국 해석을 더 넓히려면 국제 허브를 통해 보이는 경로만이 아니라, 국내 정책문헌 안에서 어떤 근거를 인용하는지도 같은 기준으로 연계해야 한다. Kim et al. (2025)의 예비 분석은 NKIS 정책연구 보고서 참고문헌을 구조화했을 때, 분야에 따라 국내·국제 근거를 인용하는 경로가 다르게 나타날 수 있음을 시사한다.\n국내 참고문헌 연결은 결론을 하나 더 덧붙이는 작업이 아니라, “한국은 어떤가”라는 질문을 “한국 안에서 누가 어떤 근거를 어떻게 인용하는가”라는 질문으로 넓히는 확장이다."
   },
   {
-    "objectID": "SI/interactive.html#한국의-위치정책문헌-유입과-연구-인용-비대칭",
-    "href": "SI/interactive.html#한국의-위치정책문헌-유입과-연구-인용-비대칭",
-    "title": "인터랙티브",
-    "section": "한국의 위치(정책문헌 유입과 연구 인용 비대칭)",
-    "text": "한국의 위치(정책문헌 유입과 연구 인용 비대칭)\n\n메인 보고서(PDF): 2장 주요 결과 · 한국, 3장 결과 해석과 한계 · 관련: 부록: 자국 인용 비중\n\n\n그림 8. 선택 국가별 분야 구성의 불일치(상위 50개국; 초기에는 상위 10개와 한국만 표시)\n\n확인할 것\n\n관찰: 점선 위·아래 위치로 도메인별 불일치 방향을 확인한다.\n해석: 같은 국가에서도 도메인마다 수요-공급 불일치 방향이 달라질 수 있다.\n점검: 도메인별 절대 격차(pp) 변화가 완화·유지·심화 중 어디인지 추적한다.\n\n\n\n  \n    새 창으로 열기\n    로딩이 느릴 수 있음\n    플롯 불러오기\n  \n\n\n\n그림 9. 정책 출처 → 연구국 인용 행렬. 절대 규모와 출처 내부 비중\n\n확인할 것\n\n관찰: 왼쪽(절대 규모)과 오른쪽(출처 내부 비중)의 패턴 차이를 확인한다.\n해석: 많이 인용하는 출처와 특정 연구국 인용 비중이 높은 출처는 다를 수 있다.\n점검: 상위 1개국 비중과 상위 3개국 합계를 함께 보며 편중 변화를 추적한다.\n\n\n왼쪽은 절대 인용 규모를 로그 스케일로 표시한다. 오른쪽은 정책 출처 내부에서의 비중을 보여준다. 정책 출처 목록에 없는 연구국은 지역 단위로 묶어 표시했다.\n\n  \n    새 창으로 열기\n    로딩이 느릴 수 있음\n    플롯 불러오기\n  \n\n\n\n\n그림 10. 자국 인용 비중과 기대비중 대비, 그리고 인용 도메인 구성. 정책 출처 국가 상위 7개국과 한국\n\n확인할 것\n\n관찰: 자국 인용 비중과 기대비중 대비(actual-expected) 분포를 함께 확인한다.\n해석: 기대비중 대비는 도메인 가중 기준선에 대한 상대 비교다.\n점검: 국가 비교 전에 1저자 국가코드가 확인되는 인용만을 대상으로 한 결과인지 먼저 확인한다.\n\n\n\n  \n    새 창으로 열기\n    플롯 불러오기\n  \n\n\n\n그림 11. 한국 정책–연구의 두 방향 흐름과 인용 도메인 구성. 상위 10개\n\n확인할 것\n\n관찰: 한국 연구가 글로벌 정책문헌에 인용되는 경로와 한국 정책문헌이 인용하는 연구의 출처를 분리해 확인한다.\n해석: 두 방향 상위 경로가 다르면 비대칭 구조 신호다.\n점검: 방향별 집중 지표(정책문헌 유입 상위 3합, 연구 인용 상위 1개국 비중)를 분리 추적한다.\n\n\n\n  \n    새 창으로 열기\n    플롯 불러오기\n  \n\n\n\n그림 12. 정책–연구 근거 흐름 네트워크\n\n확인할 것\n\n관찰: 상위 노드·상위 연결만 남긴 백본 경로에서 한국 연결 축이 어디로 이어지는지 확인한다.\n해석: 이 그림은 전체망이 아니라 구조 요약 지도다.\n점검: 거리와 위치를 정량 해석하지 말고, 연결 관계(누가 누구와 연결되는가)만 확인한다. 본문 그림은 각 노드의 유입 상위 3개와 유출 상위 3개 연결만 남긴 backbone이며, 노드 구분은 선택된 50개 노드 안에서 정책 출처 쪽과 연구 쪽에 실제로 나타나는 역할을 기준으로 해석한다. 표시 규칙(top-3/top-5/all) 민감도는 부록 C8에서 확인한다.\n\n\n레이아웃은 탐색을 돕기 위한 보조 장치다. 노드 간 거리는 절대적 지표가 아니므로, “가까움”을 정밀한 값으로 해석하지 않는다.\n표기: EU는 European Union, IGO는 International organizations를 뜻한다.\n\n  \n    새 창으로 열기\n    로딩이 느릴 수 있음\n    플롯 불러오기"
+    "objectID": "SI/index.html#어디를-확인할-것인가",
+    "href": "SI/index.html#어디를-확인할-것인가",
+    "title": "확장 자료",
+    "section": "어디를 확인할 것인가",
+    "text": "어디를 확인할 것인가\n\n\n\n페이지\n언제 확인하면 좋은가\n\n\n\n\n2026 데이터 업데이트\n공식 보고서 이후 최신 데이터에서 무엇이 달라졌는지 먼저 확인하고 싶을 때\n\n\n방법론·데이터 정합성\n분모, 범위, 결측, 해석 경계를 먼저 확인하고 싶을 때\n\n\n인터랙티브\n그림 값을 직접 확대해서 보고 싶을 때\n\n\n부록\n정의, 추가 그림, 민감도 점검을 한 번에 보고 싶을 때\n\n\n다음 질문\n다음 점검 때도 같은 구조를 어떻게 다시 볼지 정리하고 싶을 때\n\n\n\n짧은 용어 설명과 지표 정의는 부록에서 확인할 수 있다."
   },
   {
-    "objectID": "SI/next_questions.html",
-    "href": "SI/next_questions.html",
-    "title": "다음 질문",
+    "objectID": "SI/index.html#report-extended-map",
+    "href": "SI/index.html#report-extended-map",
+    "title": "확장 자료",
+    "section": "보고서(PDF) ↔︎ 확장 자료 연결",
+    "text": "보고서(PDF) ↔︎ 확장 자료 연결\n아래 표에서 인터랙티브: 그림 n은 확장 자료(웹) 번호(1–12) 기준이다. 메인 PDF의 그림 번호(1–12)와 일부 맞닿지만, 표와 그림의 배치가 다를 수 있으므로 혼동되면 표의 링크를 기준으로 따라가면 된다.\n\n\n\n보고서(PDF)\n확장 자료에서 더 볼 것\n\n\n\n\n1장 Data Insight\n부록: 관측 범위 정의 · 부록: 반복 인용 48.1% 정의 · 방법론: 범위·분모\n\n\n2장 연결 구조의 질문\n방법론: 범위·분모 · 부록: 수집 범위·태깅\n\n\n3장 허브 집중(그림 1)\n배경 요약: 허브 · 인터랙티브: 그림 5 · 인터랙티브: 그림 6 · 인터랙티브: 그림 7\n\n\n4장 한국의 두 방향 경로(그림 2)\n배경 요약: 한국 · 인터랙티브: 그림 8 · 인터랙티브: 그림 11 · 인터랙티브: 그림 12\n\n\n5장 분야별 수요·공급(그림 3)\n배경 요약: 한국 · 인터랙티브: 그림 9 · 인터랙티브: 그림 10\n\n\n6장 두 속도(그림 4, 표 1)\n배경 요약: 두 속도 · 인터랙티브: 그림 1 · 인터랙티브: 그림 2 · 인터랙티브: 그림 3 · 인터랙티브: 그림 4\n\n\n7장 반복 점검 기준선(표 2)\n다음 질문 · 방법론: 반복 점검 프로토콜 · 부록 C10\n\n\n8장 해석 가능한 범위와 추가 확인 과제\n배경 요약: 국내 참고문헌 확장 · 방법론 · 부록\n\n\n9장 한국 질문의 확장\n배경 요약: 국내 참고문헌 확장 · 다음 질문\n\n\n부록 A. 시간 지연·분야 편중(그림 5–7)\n부록: 최근 연도 하락 · 부록: 2012 진단 · 부록: 다중라벨 · 인터랙티브: 그림 1 · 인터랙티브: 그림 2 · 인터랙티브: 그림 3\n\n\n부록 B. 허브 심화 해설(그림 8–9)\n배경 요약: 허브 · 인터랙티브: 그림 5 · 인터랙티브: 그림 6 · 인터랙티브: 그림 7\n\n\n부록 C. 한국 심화 해설(그림 10–12)\n배경 요약: 한국 · 인터랙티브: 그림 8 · 인터랙티브: 그림 9 · 인터랙티브: 그림 10 · 인터랙티브: 그림 11 · 인터랙티브: 그림 12\n\n\n부록 D. 반복 점검 운영 질문\n다음 질문 · 부록 C10\n\n\n부록 E. 방법과 해석의 경계\n방법론·데이터 정합성 · 부록\n\n\n\n필요한 항목만 바로 찾고 싶다면 부록: 2012 진단, 부록: 다중라벨, 인터랙티브: 그림 12, 부록: 반복 인용 48.1% 정의로 이동하면 된다."
+  },
+  {
+    "objectID": "SI/methods.html",
+    "href": "SI/methods.html",
+    "title": "방법론·데이터 정합성",
     "section": "",
-    "text": "바로가기: 보고서(PDF) · 확장 자료 · 방법론·데이터 정합성 · 인터랙티브 · 부록 · 다음 질문\n이 페이지는 보고서의 반복 점검 절에서 고정한 반복 점검 질문만 모아 둔다. 새로운 연구 의제를 늘리기보다, 같은 정의로 다음 점검 때도 다시 확인할 질문을 정리한다.\n이 페이지에서 말하는 그림 번호는 웹 인터랙티브 번호(1–12) 기준이다."
+    "text": "바로가기: 보고서(PDF) · 확장 자료 · 방법론·데이터 정합성 · 인터랙티브 · 부록 · 다음 질문\n이 페이지는 보고서 본문에서 짧게 다룬 방법론 설명을 해석에 필요한 기준 중심으로 다시 정리한 것이다. 상세 표와 추가 진단 그림은 부록에서 이어서 확인할 수 있다."
   },
   {
-    "objectID": "SI/next_questions.html#읽는-방법-1분",
-    "href": "SI/next_questions.html#읽는-방법-1분",
-    "title": "다음 질문",
-    "section": "읽는 방법 (1분)",
-    "text": "읽는 방법 (1분)\n\n이번 점검에서는 질문을 늘리기보다 아래 4개 축을 같은 정의로 다시 계산하는 것이 우선이다.\n방향 판정은 단일 수치 1회 관측보다, 같은 지표가 2회 이상 같은 방향으로 재현되는지에 둔다."
+    "objectID": "SI/methods.html#먼저-확인할-것-1분",
+    "href": "SI/methods.html#먼저-확인할-것-1분",
+    "title": "방법론·데이터 정합성",
+    "section": "먼저 확인할 것 (1분)",
+    "text": "먼저 확인할 것 (1분)\n\n국가 비교를 보기 전에는 1저자 국가코드가 확인되는 인용만을 대상으로 한 결과인지 먼저 확인한다.\n분모가 다른 지표끼리는 직접 비교하지 않는다.\n본문 해석이 애매하면 아래 5개 섹션을 위에서 아래 순서로 점검한다."
   },
   {
-    "objectID": "SI/next_questions.html#이번-분기-반복-점검-질문4개",
-    "href": "SI/next_questions.html#이번-분기-반복-점검-질문4개",
-    "title": "다음 질문",
-    "section": "이번 분기 반복 점검 질문(4개)",
-    "text": "이번 분기 반복 점검 질문(4개)\n\n질문 1. 정책 출처국 집중은 완화·유지·심화 중 어디로 가는가\n\n관찰 출발점: 보고서는 허브 채널 집중을 핵심 메시지로 제시하지만, 반복 점검에서는 이를 정책 출처국 집중이라는 실용적 기준선으로 추적한다.\n이번 기준값: 정책 출처국 상위 3개 합은 50.6%다. 동시에 총량 허브와 밀도 허브가 분리되고, 출처 유형이 바뀌면 도메인 구성도 달라진다(인터랙티브 그림 5–7).\n점검 항목: 정책 출처국 상위 3개 합, 상위 출처국 순서 변화, 총량 상위군과 밀도 상위군의 겹침 정도, 출처 유형×도메인 구성의 방향성 변화.\n완료 신호: 같은 정의로 2회 이상 재계산했을 때 집중 완화·유지·심화 중 하나로 방향 판정이 가능해진다.\n같이 볼 곳: 인터랙티브 그림 5 · 인터랙티브 그림 6 · 인터랙티브 그림 7 · 부록 C9\n\n\n\n질문 2. 반복 인용 논문 비중은 확대되거나 축소되는가\n\n관찰 출발점: 보고서는 반복 인용(2회 이상) 48.1%를 반복 인용 논문 비중의 출발 기준선으로 제시한다.\n이번 기준값: 인용된 고유 논문 6,532,365편 중 48.1%가 2개 이상 서로 다른 정책문헌에서 반복 인용된다.\n점검 항목: &gt;=2 / &gt;=5 / &gt;=10 임계값 민감도, 발행연도 코호트별 반복 인용, 긴 꼬리 분포(CCDF) 변화.\n완료 신호: 임계값과 코호트를 바꿔도 같은 방향의 변화가 재현되고, 최근 논문 불리 효과와 구조 변화가 분리된다.\n같이 볼 곳: 부록: 반복 인용 48.1% 정의 · 부록 C6 · 부록 C10\n\n\n\n질문 3. 한국 정책문헌이 인용하는 연구는 다변화되는가\n\n관찰 출발점: 보고서는 한국 정책문헌이 인용하는 연구가 미국 55.7%에 집중된다고 요약한다(1저자 국가코드 확인분).\n이번 기준값: 미국 연구 인용 55.7%, 자국 인용 4.5%(기대비중 0.6% 대비 7.7배)다.\n점검 항목: 상위 1개국 비중, 상위 3개국 합, 도메인별 연구 인용 구성, 자국 인용 비중 안정성, 저자국가 규칙 민감도.\n완료 신호: 상위 1개국 쏠림과 자국/비자국 구성 변화가 같은 방향으로 설명되고, 저자국가 규칙을 바꿔도 해석이 크게 흔들리지 않는다.\n같이 볼 곳: 인터랙티브 그림 9 · 인터랙티브 그림 10 · 인터랙티브 그림 11 · 부록 C12\n\n\n\n질문 4. 한국 연구의 정책문헌 유입 경로는 넓어지는가\n\n관찰 출발점: 보고서는 한국 연구의 정책문헌 유입이 정책 출처 태그 기준 상위 3개인 미국·국제기구·영국에 54.8% 집중된다고 정리한다.\n이번 기준값: 미국 27.8%, 국제기구 19.4%, 영국 7.7%로 정책 출처 태그 기준 상위 3개 합이 54.8%다.\n점검 항목: 상위 3개 정책 출처 합, 상위 출처 순서 변화, 도메인별 정책문헌 유입 구성, 중복 보정 이후 수치 안정성.\n완료 신호: 같은 중복 보정 기준에서 상위 정책 출처 집중도 추세가 안정적으로 재계산되고, 출처 확대 여부를 단일 순위가 아니라 경로 구조 변화로 설명할 수 있다.\n같이 볼 곳: 인터랙티브 그림 11 · 인터랙티브 그림 12 · 부록 C8 · 부록 C13"
+    "objectID": "SI/methods.html#method-scope",
+    "href": "SI/methods.html#method-scope",
+    "title": "방법론·데이터 정합성",
+    "section": "1) 분석 범위",
+    "text": "1) 분석 범위\n먼저 이번 분석이 어디까지를 포함하는지 분명히 해 둘 필요가 있다.\n\n데이터 기준 시점: Overton(2025.02), OpenAlex(2025.06)\n분석 단위: Overton 정책문헌을 중복 제거한 고유 정책문헌\n인용 범위: 정책문헌 참고문헌에서 DOI가 확인되는 학술 인용\n\n\n\n\n\n\n\n노트\n\n\n\n해석 범위 주의\n\n본 결과는 Overton 전체 정책문헌의 완전한 센서스가 아니라, 이번 기준 시점과 매칭 범위에서 관측된 구조다.\nDOI 밖 근거(보고서, 법령, 웹 등)는 본 기본 지표에 포함되지 않는다.\n“DOI 인용 포함 비중(예: 97.6%)”은 “정책문헌이 DOI를 1건이라도 포함하는지”의 비율이며, 정책근거 전체에서 DOI가 차지하는 비율이 아니다."
+  },
+  {
+    "objectID": "SI/methods.html#method-matching",
+    "href": "SI/methods.html#method-matching",
+    "title": "방법론·데이터 정합성",
+    "section": "2) 매칭·결측 점검",
+    "text": "2) 매칭·결측 점검\n\nDOI → OpenAlex 매칭률과 국가코드 결측은 해석의 안전장치다.\n특히 국가 비교는 1저자 국가코드가 확인되는 인용만을 대상으로 한 결과인지 먼저 확인해야 한다.\n\n관련 상세: - 부록 B0-1. 매칭·결측 요약 - 부록 B0. 자주 찾는 정의"
+  },
+  {
+    "objectID": "SI/methods.html#method-metrics",
+    "href": "SI/methods.html#method-metrics",
+    "title": "방법론·데이터 정합성",
+    "section": "3) 핵심 지표 정의(요약)",
+    "text": "3) 핵심 지표 정의(요약)\n아래 정의는 본문 핵심 수치를 같은 기준으로 다시 점검하기 위한 최소 기준이다.\n\n인용 건수와 고유 논문 수: 빈도와 폭을 분리해서 본다.\n최근성: 2022-2024 발행 논문으로 향한 정책문헌 인용 비중\n인용 강도: 집계 단위 내 인용 건수 / 고유 논문 수\n자국 인용 비중: 1저자 국가코드 확인분만 분모에 포함\n\n관련 상세: - 인용 건수와 고유 논문 수 - 최근성과 인용 강도 - 자국 인용 비중"
+  },
+  {
+    "objectID": "SI/methods.html#method-guardrails",
+    "href": "SI/methods.html#method-guardrails",
+    "title": "방법론·데이터 정합성",
+    "section": "4) 해석 가드레일",
+    "text": "4) 해석 가드레일\n아래 항목은 본문 결론을 과하게 읽지 않기 위해 먼저 확인할 사항이다.\n\n다중라벨 토픽 합은 100%를 넘을 수 있다.\n최근 연도 하락은 관측 지연(수집·색인 시차) 신호일 수 있다.\n2012년 평균 고점은 분포 진단(중앙값·절단평균)과 함께 해석해야 한다.\n국가·유형 비교에서 “문헌당 평균 인용”은 문서 길이·장르·참고문헌 관행을 함께 반영하므로, 평균만으로 우열을 판단하지 않는다(중앙값·절단평균 병기: 부록 C9).\n“반복 인용(≥2)” 비중은 임계값 선택과 시간 지연(최근 논문 불리)에 민감하므로, 코호트/임계값 민감도와 함께 확인한다(부록 C10).\n네트워크(그림 12)는 가독성을 위해 연결을 축약한 “구조 요약 지도”다. 표시 규칙(top-3/top-5/all) 민감도는 부록 C8에서 확인한다.\n\n관련 상세: - 다중라벨 해석 - 최근 연도 하락 주의 - 2012년 평균 진단"
+  },
+  {
+    "objectID": "SI/methods.html#method-protocol",
+    "href": "SI/methods.html#method-protocol",
+    "title": "방법론·데이터 정합성",
+    "section": "5) 재현·반복 점검 프로토콜",
+    "text": "5) 재현·반복 점검 프로토콜\n마지막으로, 같은 질문을 다음 점검 때도 같은 기준으로 다시 계산할 수 있어야 한다.\n\n동일 지표를 분기 또는 반기 단위로 재계산해 방향성(상승·유지·완화)을 점검한다.\n보고서(PDF)는 본문으로 유지하고, 계산식·민감도·보조 표는 확장 자료에서 업데이트한다.\n기준값·분모·저자국가 규칙이 바뀌면 PDF와 확장 자료의 연결표를 함께 점검한다."
+  },
+  {
+    "objectID": "SI/appendix.html",
+    "href": "SI/appendix.html",
+    "title": "부록",
+    "section": "",
+    "text": "바로가기: 보고서(PDF) · 확장 자료 · 방법론·데이터 정합성 · 인터랙티브 · 부록 · 다음 질문\n본문에서 언급한 수치와 패턴을 조금 더 차분하게 확인할 수 있도록 자료를 정리했다. 구성은 수집 범위·태깅, 지표 정의·해석 주의, 추가 그림의 세 부분이다.\n바로가기: A. 데이터 수집 범위·태깅 · B. 정의·해석 · C. 추가 그림"
+  },
+  {
+    "objectID": "SI/appendix.html#읽는-순서-2분",
+    "href": "SI/appendix.html#읽는-순서-2분",
+    "title": "부록",
+    "section": "읽는 순서 (2분)",
+    "text": "읽는 순서 (2분)\n\n1단계(범위 확인): A. 데이터 수집 범위·태깅에서 관측 범위의 편차를 먼저 확인한다.\n2단계(지표 확인): B0. 자주 찾는 정의, B0-1. 매칭·결측에서 분모와 결측 조건을 고정한다.\n3단계(확장 확인): C. 추가 그림에서 필요한 그림만 선택해 본문 해석을 보강한다."
+  },
+  {
+    "objectID": "SI/appendix.html#appendix-a",
+    "href": "SI/appendix.html#appendix-a",
+    "title": "부록",
+    "section": "A. 데이터 수집 범위·태깅",
+    "text": "A. 데이터 수집 범위·태깅\n허브 구조를 해석하기 전에, Overton 정책문헌의 관측 범위가 균등하지 않을 수 있음을 먼저 확인할 필요가 있다. 국가·유형별 수집 범위 편차가 있으면 허브 순위 해석도 달라질 수 있기 때문이다. 이 절에서는 본문 비교에 앞서 태그 규칙(최상위·하위, 예외 처리)과 관측 편차를 먼저 정리한다.\n\nA1. 정책문헌 수집 범위 개요(정책 출처 국가별 문헌 수)\n\n\n\n\n\n\n노트\n\n\n\n표시 기준(요약)\n\n국가 태그 중 최상위 국가만 사용(예: USA &gt; California 같은 하위 태그 제외)\nIGO·EU 제외\n국가 간 편차가 커서 로그 스케일로 색상 표시\n\n\n\n\n  \n    새 창으로 열기\n    로딩이 느릴 수 있음\n    플롯 불러오기\n  \n\n\n\nA2. 하위 태그(A &gt; B)와 “최상위 국가만”을 쓴 이유\nOverton의 정책 출처 국가 태그는 국가 단위(예: USA, UK) 외에 하위 지역 단위(예: USA &gt; California)를 함께 포함한다. 이번 보고서는 OpenAlex의 국가코드와 의미를 맞추기 위해, 기본 집계에서 하위 태그를 제외하고 최상위 국가만 사용했다.\n이 선택은 “국가 단위 비교”를 단순화한다. 다만 하위 태그 기여가 큰 출처에서는 국가별 비교가 과소·과대 해석될 여지를 남긴다. 따라서 본문에서 국가 비교를 해석할 때는 수집 범위 자체를 함께 확인해야 한다.\n\n\nA3. Hong Kong/Georgia 예외 처리는 왜 필요했나\n정책 출처 국가 태그는 China &gt; Hong Kong, USA &gt; Georgia처럼 하위 태그로 관측될 수 있다. 최상위 국가만 쓰면 이런 하위 태그는 정책 출처 쪽에서 필터링되어 누락될 수 있어, 네트워크에서 정책 출처가 없는 것처럼 보이는 효과가 생길 수 있다. 그래서 네트워크 그림에서는 China &gt; Hong Kong을 Hong Kong으로 분리했고, USA &gt; Georgia는 Georgia (USA)로 분리했다.\n\n\n자세히 보기: 하위 태그 규모, 예시, Hong Kong 표기\n\n\n데이터 기준 시점: Overton 2025.02\n아래 수치는 Overton 2025.02 기준 시점 데이터에서 계산한 요약이다.\n\n정책문헌 수 기준: 하위 태그 합계 200,381건, 전체 1,671,835건의 12.0%\nDOI 인용 기록 수 기준: 하위 태그 합계 3,488,024건, 전체 48,456,680건의 7.2%\n\n여기서 “DOI 인용 기록 수”는 원본 기록 기준의 합계이며, 메인 보고서의 “한눈에 보는 숫자” 블록처럼 분석용으로 정리한 수치와 집계 기준이 다를 수 있다.\n하위 태그 기여가 큰 상위 부모(국가)는 대체로 USA, Spain, Canada, Australia, UK 순으로 나타난다.\n\n\n하위 태그 상위 예시(정책문헌 수 기준)\n\n\n\n출처 국가 태그\n정책문헌 수\n\n\n\n\nUSA &gt; California\n17,599\n\n\nUSA &gt; New York\n14,110\n\n\nUSA &gt; Washington\n13,969\n\n\nUSA &gt; Alaska\n9,421\n\n\nCanada &gt; Québec\n8,453\n\n\nUSA &gt; Texas\n7,648\n\n\nAustralia &gt; Western Australia\n7,169\n\n\nSpain &gt; Catalunya\n6,632\n\n\nUSA &gt; Minnesota\n4,918\n\n\nSpain &gt; Euskadi\n4,725\n\n\n\n\n\nHong Kong은 “중국으로 합쳐진” 것인가?\n이번 기준 시점에서 Overton의 정책 출처에는 Hong Kong이 국가처럼 직접 등장하지 않는다. China &gt; Hong Kong 형태로만 관측된다(정책문헌 1,182편). 반면 OpenAlex의 연구국은 HK → Hong Kong으로 별도 코드를 쓴다.\n따라서 “최상위 국가만” 기준으로 정책 출처를 집계하면, China &gt; Hong Kong에서 발행된 문서는 정책 출처 쪽에서 빠진다. 이 경우 Hong Kong은 연구국 노드로만 남아 인용만 되는 노드처럼 보일 수 있다.\n\n\n주의: 하위 태그를 단순 치환하면 충돌이 생길 수 있다\n하위 태그를 무조건 A &gt; B → B로 치환하면, 예를 들어 USA &gt; Georgia(미국 조지아주)가 Georgia(국가)와 섞이는 동명이인 충돌이 생길 수 있다. 따라서 하위 태그를 국가 단위로 재귀속시키려면 두 단계를 분리해 설계해야 한다. (1) 부모 국가로 올리는 방식(A &gt; B → A) (2) 예외 처리(홍콩처럼 별도 단위로 둘지)"
+  },
+  {
+    "objectID": "SI/appendix.html#appendix-b",
+    "href": "SI/appendix.html#appendix-b",
+    "title": "부록",
+    "section": "B. 정의·해석",
+    "text": "B. 정의·해석\n이 섹션은 본문 지표를 다시 확인할 때 필요한 분모·정의·해석 경계를 모아 둔 곳이다. 같은 수치라도 분모가 다르면 결론이 달라질 수 있으므로, 지표 정의와 결측 조건을 먼저 확인해야 한다.\n\nB0. 자주 찾는 정의(요약)\n\n분석 단위: Overton 정책문헌은 고유 문헌 기준으로 중복을 제거해 “고유 정책문헌” 단위로 본다. 자세히 보기: DOI 인용 포함 비중\n인용 건수와 고유 논문 수: “얼마나 자주 인용했나”와 “얼마나 넓게 썼나”는 다른 질문이라 분리한다. 자세히 보기: 인용 건수와 고유 논문 수\n최근성과 인용 강도: 최근성은 2022–2024 발행 논문의 정책문헌 인용 비중이고, 인용 강도는 고유 논문 1편당 평균 정책문헌 인용수다. 자세히 보기: 최근성과 인용 강도\n다중라벨: OpenAlex 토픽은 논문 1편이 여러 토픽에 동시에 속할 수 있어 합이 100%를 넘을 수 있다. 자세히 보기: 다중라벨\n자국 인용 비중 분모: 자국 인용 비중은 1저자 국가코드가 확인되는 인용만 분모로 쓴다. 자세히 보기: 자국 인용 비중\n\n\n\nB0-1. 매칭·결측 요약\n이 보고서는 Overton의 DOI 기반 인용을 OpenAlex의 논문 레코드(works)와 연결해 토픽과 국가 정보를 붙인다. 따라서 “연결되는 범위”가 해석의 안전장치가 된다.\n\n\n\n\n\n\n노트\n\n\n\n핵심 숫자(Overton DOI 인용 기록 기준)\n\n정책문헌→학술논문 DOI 인용 기록(citation rows): 23,370,284건\n1저자 국가코드가 확인되는 인용 비중: 76.6%(citation rows 기준)\n\n\n\n이 수치는 “DOI 인용 기록” 단위의 요약이다. 보고서 본문처럼 중복 제거를 거친 분석용 인용 건수와는 집계 기준이 다를 수 있다.\n\n\n정책 출처별 예시(1저자 국가코드 연결 비중)\n\n\n\n\n정책 출처(예시)\n1저자 국가코드 연결 비중\n\n\n\n\n전체\n76.6%\n\n\n한국\n70.4%\n\n\n미국\n78.4%\n\n\n영국\n80.7%\n\n\n국제기구\n70.0%\n\n\n\n\n참고로, 본 보고서에서 사용하는 DOI 기반 인용 로그는 OpenAlex works id(oaid_w)가 확인되는 인용만 포함한다.\n이 범위에서 고유 DOI는 6,530,609개이고, 고유 works는 6,532,365편이다.\n\n\nB1. DOI 인용 포함 비중(97.6%): 분모 정의\n“97.6%”는 어떤 분모에서 계산된 값인가?\nOverton 정책문헌을 고유 문헌 기준으로 중복 제거해 고유 정책문헌 1,381,084편을 만들었다. 그 다음 각 문헌이 DOI 기반 학술 인용을 1건 이상 포함하는지 집계했고, 1,347,563편(97.6%)이 DOI 인용을 포함했다.\n\n\n\n\n\n\n노트\n\n\n\n해석 범위 주의\n\n이 값은 “정책문헌 전체”가 아니라, 이번 기준 시점의 Overton 수집 범위를 분모로 한 관측치다.\nDOI가 없는 인용(서술 인용·보고서·법령·웹 등)은 기본 지표에 포함되지 않는다.\n\n\n\n“중복 제거”는 무엇을 의미하나?\nOverton 원본 정책문헌은 같은 문헌의 버전·재게시, 언어 변형, 메타데이터 중복 등으로 인해 중복이 포함될 수 있다. 이번 분석에서는 분석 단위를 “고유 정책문헌”으로 맞추기 위해 고유 문헌 기준으로 통합했다.\n\n참고: 출처 유형 태그별 DOI 인용 포함 비중\n아래 표는 출처 유형 태그별로 DOI 기반 학술 인용을 1건 이상 포함한 문헌 비중을 요약한다. 출처 유형 태그는 다중라벨 구조이므로 문헌 1편이 여러 유형에 동시에 잡힐 수 있다. 따라서 표의 정책문헌 수 합은 전체 문헌 수와 일치하지 않을 수 있다.\n\n\n표 보기\n\n\n\n\n출처 유형 태그\n정책문헌 수\nDOI 인용 포함 문헌 수\n포함 비중\n\n\n\n\ngovernment\n783,189\n724,759\n92.5%\n\n\nthink tank\n332,044\n312,113\n94.0%\n\n\nigo\n321,168\n276,468\n86.1%\n\n\ngovernment &gt; agency\n73,347\n67,868\n92.5%\n\n\nigo &gt; development bank\n72,052\n66,076\n91.7%\n\n\ngovernment &gt; healthcare agency\n54,234\n45,961\n84.7%\n\n\nigo &gt; healthcare agency\n36,560\n36,080\n98.7%\n\n\ngovernment &gt; bank\n36,238\n35,051\n96.7%\n\n\nother\n35,053\n34,223\n97.6%\n\n\nthink tank &gt; research center\n33,761\n32,773\n97.1%\n\n\n자료 종합형 서비스(other &gt; aggregator)\n32,845\n32,086\n97.7%\n\n\ngovernment &gt; city\n23,274\n22,873\n98.3%\n\n\nthink tank &gt; university affiliated\n21,687\n20,730\n95.6%\n\n\ngovernment &gt; legislative research\n14,441\n12,886\n89.2%\n\n\ngovernment &gt; legislation\n7,467\n6,474\n86.7%\n\n\ngovernment &gt; research center\n6,722\n6,178\n91.9%\n\n\ngovernment &gt; food and drug safety\n5,539\n5,279\n95.3%\n\n\nthink tank &gt; research centre\n4,406\n4,347\n98.7%\n\n\nigo &gt; research center\n3,342\n3,229\n96.6%\n\n\nthink tank &gt; industry association\n2,967\n1,883\n63.5%\n\n\nigo &gt; bank\n2,297\n2,218\n96.6%\n\n\nthink tank &gt; consultancy\n2,238\n2,205\n98.5%\n\n\nthink tank &gt; agency\n1,652\n1,489\n90.1%\n\n\ngovernment &gt; technology assessment\n1,416\n1,355\n95.7%\n\n\ngovernment &gt; transcripts\n958\n528\n55.1%\n\n\ngovernment &gt; academy\n835\n816\n97.7%\n\n\ngovernment &gt; auditor\n775\n615\n79.4%\n\n\ngovernment &gt; court\n352\n346\n98.3%\n\n\ngovernment &gt; armed forces\n86\n86\n100.0%\n\n\nigo &gt; court\n75\n74\n98.7%\n\n\nthink tank &gt; professional association\n37\n37\n100.0%\n\n\ngovernment &gt; regional assembly\n4\n3\n75.0%\n\n\n\n\n\n\n\nB2. 반복 인용 48.1%: 정의\n“48.1%가 2회 이상 반복 인용된다”는 무엇을 뜻하나?\n이 수치는 “정책이 인용한 고유 논문(works)” 가운데, 서로 다른 정책문헌에서 반복적으로 인용되는 논문이 얼마나 되는지를 요약한다.\n\n단위: 인용된 고유 논문(OpenAlex works)\n계산: 정책문헌→논문 DOI 링크를 정리한 뒤, 논문 1편이 서로 다른 고유 정책문헌에서 몇 번 인용되었는지(=인용한 정책문헌 수) 계산\n기준: 2개 이상의 서로 다른 정책문헌에서 인용된 논문을 “2회 이상 반복 인용”으로 정의\n\nOverton 2025.02×OpenAlex 2025.06 결합 데이터에서 인용된 고유 논문 6,532,365편 중 3,143,234편(48.1%)이 2회 이상 반복 인용에 해당한다.\n\n\n\n\n\n\n노트\n\n\n\n해석 범위 주의\n\n97.6%와 마찬가지로, 이 값도 Overton 기준 시점 데이터의 DOI-연결 관측 범위에 한정된다.\n따라서 DOI 밖 근거(보고서·법령·웹 등)는 반복 인용 계산에 포함되지 않는다.\n\n\n\n\n\nB3. 인용 건수와 고유 논문 수\n“인용 건수”와 “고유 논문 수”는 왜 구분하나?\n\n인용 건수: 정책문헌이 DOI 논문을 몇 번 인용했는지의 총합. 즉 DOI 인용 기록의 개수\n고유 논문 수: 인용된 논문을 “서로 다른 논문” 기준으로 중복 제거한 개수\n\n정책이 “몇 번이나 근거를 인용했나(빈도)”와 “얼마나 넓은 논문 풀을 썼나(폭)”는 다른 질문이다. 그래서 두 값을 분리해 해석한다.\n\n\nB4. 최근성과 인용 강도\n“최근성”과 “인용 강도”는 어떻게 계산했나?\n\n최근성: 2022–2024 발행 논문이 차지하는 정책문헌 인용 비중\n인용 강도: 집계 단위 내 고유 논문 1편당 평균 정책문헌 인용수 = 인용수 / 고유 논문수\n\n\n\nB5. 자국 인용 비중\n자국 인용 비중(self-citation share)은 어떻게 계산했나?\n정책 출처 국가 태그를 2자리 국가코드로 매핑한 뒤(예: USA→US, UK→GB), 1저자 소속국 코드가 확인되는 인용만 분모로 삼아 계산했다. 즉 자국 인용 비중은 “전체 인용”이 아니라 1저자 국가코드가 확인되는 인용에서의 패턴이다.\n\n\n자세히 보기: 기대비중 계산과 비교 표\n\n기대 자국 인용 비중(expected self-citation share)은 어떻게 계산했나?\n정책 출처 국가별로 “어떤 도메인을 얼마나 인용했는지”를 먼저 계산했다. 그 다음 각 도메인에서 해당 국가의 세계 연구 생산 비중(OpenAlex 기준)을 가중치로 곱해 합산했다. 즉 정책문헌 인용이 도메인별 세계 생산 비중을 그대로 따른다고 가정했을 때의 기대비중을 산출한 것이다. 개념적으로는 기대비중 = Σ(정책문헌 인용의 도메인 비중 × 해당 도메인에서 그 국가의 연구 생산 비중)이다.\n\n아래 표는 자국 인용 비중을 일부 비교 집단에서 요약한 것이다. 자국 인용 비중은 1저자 국가코드가 확인되는 인용만 분모로 쓴다. 국가 간 비교는 정책문헌의 수집 범위와 출처 구성 차이가 섞일 수 있어, “높다”나 “낮다”로 단정하기보다 점검 지표로 두는 것이 좋다.\n\n\n\n\n\n\n\n\n\n정책 출처\n1저자 국가코드 확인 인용 수\n1저자 국가코드 확인 비중\n자국 인용 비중\n\n\n\n\n미국\n4,480,233\n78.4%\n60.9%\n\n\n영국\n1,197,057\n80.7%\n27.7%\n\n\n독일\n1,143,950\n81.8%\n12.6%\n\n\n네덜란드\n191,031\n80.7%\n14.3%\n\n\n일본\n114,180\n85.6%\n32.3%\n\n\n한국\n23,170\n70.4%\n4.5%\n\n\n\n여기서 1저자 국가코드 확인 비중은 해당 정책 출처의 DOI 인용 기록 가운데 1저자 국가코드가 확인되는 비중이다. 미국과 영국처럼 하위 지역 태그가 많은 경우, 하위 태그를 상위 국가로 합산해 요약했다.\n왜 1저자 소속국으로 정책 출처 국가→연구국 흐름을 정의했나?\n가장 일관되게 추출 가능한 국가 속성이 1저자(First author) 소속국이었기 때문이다. 다만 공동저자 분포, 교신저자, 다기관 소속 등을 반영하지 못하므로 “대표성 있는 근사”로 해석해야 한다.\n\n\n\nB6. 다중라벨 해석\n토픽과 도메인 집계에서 합이 100%를 넘는 이유는?\nOpenAlex 토픽은 다중 라벨 구조다. 논문 1편이 여러 토픽에 동시에 속할 수 있어, 토픽·도메인·세부분야 기준으로 집계하면 중복 합산이 발생한다. 따라서 토픽 기반 수치는 “토픽 인스턴스 기준”으로 이해해야 한다.\n이번 분석에서 사용한 토픽 데이터에서는 정책문헌 인용 1건이 평균적으로 약 2.8개 토픽에 연결된다. 그래서 도메인·토픽 기준으로 인용을 합산하면, “인용 건수”보다 큰 합계가 나온다.\n다만 각 인용을 그 논문이 가진 토픽 수로 나눠 분할 집계해도, 도메인 순위는 유지된다. 상위 3개 도메인 점유율도 큰 폭으로 변하지 않는다(예: 88.8% → 88.5%).\n출처 국가·출처 유형 집계도 합이 커질 수 있나?\n그럴 수 있다. Overton의 출처 국가·유형 태그는 상호배타적 분류가 아니라 태그 기반(상위–하위 동시 부여 포함)이라서, 문헌 1편이 여러 범주에 동시에 잡힐 수 있다.\n\n\nB7. 최근 연도 하락 해석 주의\n연도 추세에서 2022년 이후 하락은 “정책문헌의 학술 DOI 인용이 줄어든다”는 뜻인가?\n그렇게 단정하기 어렵다. 정책문헌 수집·정리의 시차(수집 지연)와 발행 직후 인용 기록이 완전히 누적되지 않는 효과가 함께 작동했을 가능성이 크다. 따라서 최근 연도 수치는 “실시간 감소”라기보다 관측 시차가 섞인 신호로 해석해야 한다.\n\n\nB8. 2012년 평균 진단\n2012년 무렵 “문헌당 평균 인용 수”가 특히 높게 보이는 이유는?\n문헌당 평균 인용 수는 분포의 꼬리가 긴 경우 영향을 크게 받는다. 그래서 “평균”이 높게 보일 때는, 일부 극단값의 영향인지 아니면 분포 전체가 오른쪽으로 이동했는지부터 분리해 확인해야 한다. 절단평균은 상위·하위 일부 극단값을 제외해 계산한 평균이다. “평균이 극단값에 끌린 것인지”를 구분하는 데 도움이 된다.\n아래 그림은 연도별로 평균과 함께 중앙값, 절단평균을 같이 보여준다. 또한 상위 1% 문서가 해당 연도 전체 인용에서 차지하는 비중을 함께 표시했다.\n\n이 그림이 주는 핵심 메시지는 다음과 같다.\n\n2012년의 상승은 평균만의 현상이라기보다 중앙값과 절단평균에서도 함께 나타난다. 즉 일부 극단값만으로 설명되기보다 분포 전반의 변화가 섞였을 가능성이 있다.\n상위 1% 문서의 인용 기여는 2012년이 단독으로 튀지 않는다. 따라서 “2012년 피크”를 단일한 소수 문서의 효과로만 해석하기는 어렵다.\n\n\n\nB9. OA(오픈액세스) 해석\nOA 논문이 정책문헌 인용에서 높게 보이는 건 인과인가?\n정책문헌 인용에서는 OA 비중이 상대적으로 높게 나타난다. 다만 이것이 “OA라서 더 인용된다”는 인과로 바로 이어지지는 않는다. 정책 관련 연구가 OA로 출판될 가능성, 공공 펀딩 구조, 분야 구성 차이 등 교란 요인이 존재한다.\n다만 “정책문헌에서 인용된 논문”을 기준으로 도메인과 발행연도 구간을 나눠 보아도, OA 논문의 논문 1편당 정책문헌 인용 평균이 더 높게 나타나는 경향은 대체로 유지된다. 아래 표는 2000–2009, 2010–2019 구간에서의 비교다. 최근 연도는 관측 시차 영향이 커서 제외했다.\n\n\n\n\n\n\n\n\n\n\n도메인\n2000–2009 OA\n2000–2009 비OA\n2010–2019 OA\n2010–2019 비OA\n\n\n\n\nSocial Sciences\n10.51\n5.28\n5.89\n3.92\n\n\nHealth Sciences\n3.73\n2.98\n2.86\n2.30\n\n\nPhysical Sciences\n5.09\n3.98\n3.88\n3.12\n\n\nLife Sciences\n2.73\n2.66\n2.51\n2.36\n\n\n\n다만 중앙값은 대부분 1–2 수준으로 큰 차이가 없다. 평균 차이는 분포의 꼬리(상위 반복 인용 논문) 영향이 섞여 있을 가능성이 크다. 따라서 이 표는 인과 결론이 아니라 “가능한 설명 요인”을 점검하는 참고 근거로만 사용한다.\n추가 참고 그림은 아래 C 섹션에 묶어서 제공한다."
+  },
+  {
+    "objectID": "SI/appendix.html#appendix-c",
+    "href": "SI/appendix.html#appendix-c",
+    "title": "부록",
+    "section": "C. 추가 그림",
+    "text": "C. 추가 그림\n이 섹션은 본문에서 지면상 생략된 참고 그림을 묶어서 제공한다. 필요한 항목만 빠르게 확인할 수 있도록 각 그림은 기본적으로 접어 두었다. 일부 그림은 본문 그림과 표현 방식이 다를 수 있다.\n\n사용 방법: 본문에서 막힌 그림 번호를 찾은 뒤, 해당 C항목만 열어 확인한다.\n해석 경계: C항목은 결론을 추가하는 자료가 아니라, 본문 해석을 보강하는 참고 자료다.\n\n\nC1. 그림 3-4 보조: Top-N 토픽·세부분야\n이 그림은 메인 보고서의 두 속도 파트와 결과 해석 파트에서 다룬 토픽 패턴을 상위 목록으로 빠르게 확인하기 위한 참고 자료다.\n\n한 줄 요지: “상위에 실제로 무엇이 있나”를 목록으로 빠르게 확인한다.\n왜 넣었나: 그림 3–4(토픽 산점도·두 속도)에서 상위 토픽·세부분야 예시가 궁금할 때 바로 참고할 수 있도록 했다.\n해석 경계: 상위 목록은 “총 인용 기준”의 단면이며, 결론을 추가하기보다 본문 해석을 보강하는 참고 자료로만 활용한다.\n\n\n\n그림 보기\n\n\n\n\n\n\nC2. 그림 7 확장: 출처 유형 × 토픽(열지도)\n그림 7(출처 유형×도메인 구성)을 토픽 수준으로 확장해, 유형별로 어떤 토픽을 더 자주 인용하는지의 결을 확인하기 위한 참고 그림이다.\n\n한 줄 요지: 출처 유형별로 어떤 토픽이 더 자주 인용되는지를 토픽 단위로 확장해 본다.\n왜 넣었나: 메인 보고서의 허브 해석에서 본 구성 차이가 토픽 수준에서도 재현되는지 확인하기 위해서다.\n해석 경계: 열지도는 구성의 “결”을 보는 용도다. 값의 크기만으로 인과나 품질을 단정하지 않는다.\n\n\n\n그림 보기\n\n\n\n\n\nC3. 2장 OA 해석 보조: 도메인·출처 유형\n메인 보고서 3.2의 OA 논의는 “가능한 설명 요인”을 남겨두는 수준으로만 다뤘다. 아래는 OA 비중을 요약한 참고 그림이다.\n\n한 줄 요지: 정책문헌 인용에서 나타나는 OA 비중을 도메인·출처 유형 기준으로 요약한다.\n왜 넣었나: 본문에서 OA를 “가능한 설명 요인”으로만 다룰 때, 독자가 실제 분포를 한 번 더 확인할 수 있도록 했다.\n해석 경계: 이 그림만으로 OA 효과를 인과로 단정하지 않는다(구성·선택·출판 관행 등 교란 가능).\n\n\n\n그림 보기\n\n\n\n\n\n\nC4. 그림 10 확장: 자국 인용 비중(Top10)\n그림 10은 비교를 위해 선택 국가만 제시했다. 아래 그림은 상위 10개 정책 출처 국가를 더 넓게 보여준다. 이 지표는 1저자 국가코드가 확인되는 인용만 대상으로 계산한다는 점에 유의해야 한다.\n\n한 줄 요지: 선택 국가 바깥에서 자국 인용 비중이 어느 범위에 분포하는지(상위 10개 출처)로 확장해 확인한다.\n왜 넣었나: 본문 3.3(그림 10)의 “선택 국가 비교”가 전부가 아니라는 점을 보완하기 위해서다.\n해석 경계: 1저자 국가코드가 확인되는 인용만 분모에 포함된다. 따라서 “순위”보다 “범위와 스케일”을 읽는 용도다.\n\n\n\n그림 보기\n\n\n\n\n\nC5. 허브 구조 보조: OpenAlex subfield → Overton domain 네트워크(Top 100)\nOpenAlex 세부분야(subfield)와 Overton 정책 분류(2nd_class) 사이의 인용 흐름을 네트워크로 나타냈다.\n\n한 줄 요지: “세부분야 → 정책 분류” 흐름을 네트워크로 요약해, 허브 구조의 큰 줄기를 본다.\n왜 넣었나: 메인 보고서의 허브 파트와 한국 경로 파트를 분류 수준에서 한 번 더 확인할 수 있는 참고 그림이 필요했다.\n해석 경계: 표시 규칙(상위 노드/상위 연결) 때문에 주변부 연결은 생략된다. 아래 접힘 박스의 ’표시 규칙·민감도 점검’을 함께 본다.\n\n\n\n\n표시 규칙과 해석 주의, 민감도 점검\n\n표시 규칙\n\n노드는 상위 100개만 표시했다.\n연결선은 복잡도를 줄이기 위해, 각 노드에서 규모가 큰 상위 3개 연결만 남겼다.\n노드 크기는 선택된 노드 집합 안에서의 총 흐름으로 정의했다. 이는 연결선을 일부만 남기는 과정과는 별개다.\n\n해석 주의\n\n표시 규칙은 가독성을 위한 제한이다. 그림에 보이는 연결이 전체 연결을 의미하지 않는다.\n\n간단 점검: 표시 규칙 민감도\n\n세부분야 25개, 정책 분류 25개로 노드를 더 줄인 축약 버전과 비교해도, 흐름 규모 기준 상위 20개 세부분야와 상위 20개 정책 분류는 현재 그림에 모두 포함됐다.\n축약 버전 네트워크에서 세부분야 기준 상위 3개 연결이 차지하는 비중의 중앙값은 89.8%였다.\n따라서 이 그림은 주변부의 미세한 연결을 비교하기보다, 큰 흐름과 허브 구조를 빠르게 읽는 용도로 써야 한다.\n\n\n\n\n그림 보기\n\n\n\n\n\nC6. 반복 인용 분포 보조: 로그-로그 CCDF\n정책문헌이 “고르게” 논문을 인용하는지, 또는 일부 문헌·논문에 반복 인용이 집중되는지를 분포 자체로 확인하는 보조 그림이다.\n\n한 줄 요지: “소수에 집중”을 요약 통계가 아니라 분포(꼬리)로 직접 확인한다.\n왜 넣었나: 본문에서 불균등·반복 인용을 말할 때, 독자가 “얼마나 긴 꼬리인지”를 한 장에서 확인할 수 있도록 했다.\n해석 경계: 로그-로그 CCDF는 비교에 유용하지만 직관적이지 않을 수 있다. 이 그림은 결론 추가가 아니라 “분포 형태 점검” 용도다.\n\n\n\n그림 보기\n\n\n\n\n\nC7. 그림 8 보조: 수요–공급 도메인 구성 차이(Δ, pp)\n그림 8의 해석 부담을 줄이기 위해, 정책 수요 비중 − 연구 공급 비중(percentage points)으로 단순화한 버전이다.\n\n한 줄 요지: 국가별 불일치를 “차이(Δ, pp)”로 바꿔 방향과 크기를 빠르게 확인한다.\n왜 넣었나: 본문 그림 8(산점도)은 해석에 단계가 필요하므로, 동일 내용을 더 단순한 표기로 한 번 더 확인할 수 있게 했다.\n해석 경계: Δ는 방향을 보여주는 요약이다. 원래 구성(정책 수요/연구 공급)의 절대 비중은 본문 그림 8과 함께 확인한다.\n\n\n\n그림 보기\n\n\n\n\n\nC8. 그림 12 보조: 정책–연구 근거 흐름 네트워크 백본 민감도\n본문 그림 12는 가독성을 위해 “상위 노드 + 각 노드의 유입 상위 3개와 유출 상위 3개 연결”만 남긴 축약 네트워크다. 연결선은 backbone 규칙을 따른다. 노드 구분은 선택된 50개 노드 안에서 정책 출처 쪽과 연구 쪽에 실제로 나타나는 역할을 기준으로 해석한다. 표시 규칙이 바뀌면 보이는 연결선의 수는 달라지지만, 큰 축(반복적으로 나타나는 굵은 경로)이 얼마나 유지되는지는 별도로 점검할 필요가 있다.\n\n한 줄 요지: 백본 규칙(top-3/top-5/all links)을 바꿔도 큰 경로 축이 유지되는지 확인한다.\n왜 넣었나: 그림 12가 “시각적으로 강하지만 검증이 약하다”는 지적에 답하기 위해, 동일 노드 집합·고정 레이아웃에서 연결선만 바꿔 비교한다.\n해석 경계: 레이아웃은 비교를 돕기 위한 고정 좌표다. 아래 그림은 “세부 비율”이 아니라 “연결 구조가 유지되는가”를 확인하는 용도다.\n\n\n\n그림 보기\n\n\n\n\n\n\n\nC9. 그림 5-6 보조: 밀도 지표 강건성(평균 vs 중앙값 vs 절단평균)\n본문의 “문헌당 평균 인용(밀도)” 비교는 해석에 유용하지만, 문서 길이·장르·참고문헌 관행의 영향을 함께 받는 지표다. 평균만 보면 긴 꼬리(outlier)에 민감하므로, 중앙값/절단평균을 함께 확인해 “총량 허브 vs 밀도 허브” 해석이 얼마나 안정적인지 점검한다.\n\n한 줄 요지: 평균이 아닌 통계(중앙값/절단평균)로 봐도 “밀도 패턴”이 유지되는지 확인한다.\n왜 넣었나: 국가/유형 간 밀도 비교가 “평균 1개”에 과도하게 의존하지 않도록, 분포 강건성 지표를 병기한다.\n해석 경계: 아래 통계는 DOI 인용이 1건 이상 관측되는 정책문헌(citing docs) 기준이다(관측 가능한 범위). 또한 “citing share(전체 문헌 중 citing docs 비중)”이 낮은 집단은 분포 해석이 더 조건부가 된다.\n\nCSV: - policy_source_country_density_robust.csv(국가/IGO): 다운로드 - policy_source_type_density_robust.csv(유형): 다운로드\n\n\n그림 보기\n\n\n\n\n\n\nC10. 4장 반복 점검 보조: 반복 인용(근거 표준화) 민감도\n본문의 “2회 이상 반복 인용(48.1%)”은 반복 인용 논문 비중을 읽는 출발점이지만, 임계값 선택(≥2/≥5/≥10)과 시간 지연(최근 논문 불리)의 영향을 받는다. 그래서 같은 정의를 임계값과 발행연도 코호트로 확장해, 해석이 어디까지 안정적인지 함께 보여준다.\n\n한 줄 요지: “반복 인용” 지표는 임계값과 발행연도(지연효과)에 민감하므로, 최소한 3개 임계값과 코호트로 함께 확인한다.\n왜 넣었나: 48.1% 단일 수치의 임의성을 줄이고, “반복 인용 논문 비중”을 반복 점검 가능한 지표로 만든다.\n해석 경계: 여기서 반복 인용은 서로 다른 정책문헌이 같은 논문을 인용한 횟수(정책문헌 기준 반복)이며, “정책문헌 간 인용”이나 “DOI 밖 근거”는 포함하지 않는다.\n\nCSV: - repeat_citation_thresholds.csv(전체): 다운로드 - repeat_citation_by_cohort.csv(코호트): 다운로드\n\n\n그림 보기\n\n\n\n\n\nC11. 3장 한국 비교 보조: 절대 순위보다 비슷한 관측 규모의 비교군으로 해석하기\n국가별 순위를 그대로 비교하면, 실제 차이(정책 근거 구조)와 관측 차이(수집 범위·표본 규모)가 섞여 오독이 생기기 쉽다. 그래서 한국은 절대 순위로 “판정”하기보다, 관측된 정책 출처 문헌 수(Overton 태깅 기준)가 비슷한 국가 묶음 안에서 패턴을 먼저 점검해야 한다.\n\n한 줄 요지: 한국 비교는 “상위권 순위”보다 “관측 규모가 비슷한 비교군”에서 구조 신호를 먼저 확인한다.\n왜 넣었나: “한국 수치가 조건부”라는 지적에 답하기 위해, 비교의 분모(표본 크기)를 먼저 맞춰 오독을 줄인다.\n해석 경계: 아래 비교군은 정책의 실제 규모가 아니라, Overton에서 관측되는 정책 출처 문헌(국가 태깅) 표본 규모가 비슷한 국가들이다.\n\nCSV: - korea_peer_group_by_policy_docs.csv: 다운로드\n\n\n\n\n\n\n\n\n\n\n\n국가(출처)\n정책문헌 수(출처)\nDOI 인용 포함 문헌\nciting share\nDOI 인용 건수\n문헌당 평균(DOI)\n\n\n\n\nRepublic of Korea\n2,742\n2,726\n99%\n32,935\n12.1\n\n\nKenya\n2,614\n2,566\n98%\n43,626\n17.0\n\n\nUruguay\n2,444\n2,383\n98%\n30,391\n12.8\n\n\nEstonia\n2,049\n1,849\n90%\n29,228\n15.8\n\n\nArgentina\n3,601\n3,566\n99%\n37,843\n10.6\n\n\nLatvia\n1,835\n1,739\n95%\n21,119\n12.1\n\n\nChile\n3,656\n3,579\n98%\n44,416\n12.4\n\n\n\n\n\nC12. 그림 9-11 보조: 한국 저자국가 규칙 민감도\n한국의 유입·조달 수치들은 기본적으로 “연구국=1저자 국가코드” 규칙으로 계산했다. 다만 국제공저가 많은 분야에서는 1저자 규칙이 분포를 더 한쪽으로 기울일 수 있다. 그래서 2025.06 OpenAlex 스냅샷 DB에서 저자국가 규칙을 바꿔도 한국 관련 결론이 얼마나 흔들리는지 최소 민감도 점검을 수행했다.\n\n한 줄 요지: 규칙을 바꿔도 “조달의 미국 집중”과 “유입의 허브 채널 집중” 구조는 크게 유지되지만, 유입의 “규모”는 any-author 기준에서 약 0.84배로 보정된다.\n왜 넣었나: “한국 수치가 조건부”라는 지적 중, 저자국가 규칙에 따른 변동 폭을 최소 표로 제시하기 위해서다.\n해석 경계: corresponding 정보는 결측이 커서(works 기준 60%+ 결측) 부분집합 참고용으로만 쓴다.\n\n\n(1) 한국 조달(outbound): 한국 정책문헌이 어떤 연구를 조달하는가\n\n\n\n\n\n\n\n\n\n\n규칙\n수집 범위(인용 기준)\nUS\nGB\nKR\n\n\n\n\n1저자(분수계수)\n23,947 / 32,935 (72.7%)\n55.95%\n8.50%\n4.65%\n\n\nany-author(분수계수)\n24,592 / 32,935 (74.7%)\n55.66%\n8.74%\n4.57%\n\n\ncorresponding(분수계수)\n10,654 / 32,935 (32.4%)\n54.81%\n9.59%\n5.06%\n\n\n\nCSV: - korea_author_country_outbound_first_author.csv: 다운로드 - korea_author_country_outbound_any_author_fractional.csv: 다운로드 - korea_author_country_outbound_corresponding_fractional.csv: 다운로드\n\n\n(2) 한국 유입(inbound): “한국 1저자” 연구를 글로벌 정책문헌이 어떻게 인용하는가\n유입은 기본 정의가 “한국 1저자 논문을 인용한 정책문헌”이므로, any-author 분수계수는 유입의 규모(한국 기여)를 보정하는 역할을 한다. 2025.06 DB 기준, 한국 1저자 works에 대한 정책문헌 인용 97,502건은 any-author 분수계수로 환산하면 유효 KR 인용 합이 82,308(0.844배)로 줄어든다.\n정책 출처 구조(국가)는 크게 유지된다(상위 3개 정책 출처 합계 약 55.0% → 55.0%).\n\n\n\n채널(국가)\n1저자 기준\n한국 참여 저자 가중(any-author)\n\n\n\n\nUSA\n27.6%\n28.0%\n\n\nIGO\n19.8%\n19.1%\n\n\nUK\n7.6%\n7.9%\n\n\nTop3 합\n55.0%\n55.0%\n\n\n\nCSV: - korea_author_country_inbound_policy_source_country.csv: 다운로드 - korea_author_country_inbound_policy_source_type.csv: 다운로드\n\n\n\nC13. 그림 11 보조: 한국 유입 비중의 보정 전후 차이\n그림 11처럼 “정책 출처 × 연구국” 계열 지표는 조인 중복에 민감하다. 같은 인용이 여러 행으로 펼쳐지면 특정 채널의 비중이 과대 계수될 수 있으므로, 이번 버전은 논문별 1행 매핑과 정책 출처 태그 중복 제거를 적용한 기준표를 사용한다.\n보정 전후를 비교하면 한국 유입에서는 특히 일부 채널 비중이 크게 흔들렸다. 따라서 아래 표는 “예전 값이 왜 달랐는가”를 설명하는 참고 자료이며, 공개 해석은 중복 보정 이후 값(C12 및 본문 그림 11)을 우선 기준으로 해석해야 한다.\n아래 표는 주요 채널의 보정 전후 차이를 요약한다.\nCSV: - korea_inbound_flow_vs_dedup.csv: 다운로드\n\n\n\n채널(정책 출처)\n보정 전 비중\n보정 후 비중\n과대계수 배율\n\n\n\n\nUK\n32.8%\n7.6%\n10.0×\n\n\nIGO\n16.3%\n19.8%\n1.90×\n\n\nUSA\n16.2%\n27.6%\n1.35×\n\n\nGermany\n6.9%\n5.8%\n2.74×\n\n\nEU\n3.3%\n6.7%\n1.15×\n\n\n\n해석 팁: 보정 전 값은 구조 점검용 참고치로만 보고, 채널 비중 해석은 중복 보정 기준표(예: C12)를 우선 기준으로 해석해야 한다."
+  },
+  {
+    "objectID": "SI/index_en.html",
+    "href": "SI/index_en.html",
+    "title": "Supplementary Information — Overview",
+    "section": "",
+    "text": "Korean page\nThis Supplementary Information (SI) page is the companion layer to the Korean main report (PDF). While the PDF keeps the public-facing narrative short, this web layer keeps background notes, method checks, diagnostics, and interactive exploration in one place."
+  },
+  {
+    "objectID": "SI/index_en.html#background-notes",
+    "href": "SI/index_en.html#background-notes",
+    "title": "Supplementary Information — Overview",
+    "section": "Background notes",
+    "text": "Background notes\n\nWhy read hubs as routes, not as rankings?\nThe hub section is not meant to rank “top” policy channels. Even among leading sources, the channels with the largest total citation volume can differ from the channels that pack the most references into one document, and domain portfolios also change by source type.\nSo the more useful question is not “who is first?” but “through which channels does policy repeatedly call evidence?”\n\n\nWhy separate Korea’s inbound and procurement routes?\nThe key Korean message is not that 54.8% and 55.7% look similar. It is that one is a top-3 channel concentration and the other is a top-1 country concentration.\nIf inbound and procurement are collapsed into a single score, that structural difference disappears.\n\n\nWhy are “two speeds” a practical question?\nPolicy evidence does not move at one speed. Mature agendas and high-growth agendas need different update rhythms.\nThis is why the report separates the two-speed pattern: not to create another topic ranking, but to show that evidence management cadence should differ by agenda type.\n\n\nWhat changes once domestic references are linked?\nTo broaden the Korean reading, the international-hub view needs to be complemented with domestic policy references. Kim et al. (2025) gives an exploratory example with NKIS policy research reports, suggesting that domestic and international procurement lines may differ by field.\nThis extension changes the question from “How does Korea look globally?” to “Who in Korea procures what kind of evidence, and how?”"
+  },
+  {
+    "objectID": "SI/index_en.html#structure",
+    "href": "SI/index_en.html#structure",
+    "title": "Supplementary Information — Overview",
+    "section": "Structure",
+    "text": "Structure\n\nOverview: background notes, report↔︎SI map, quick find\nMethods & data validity: scope, denominators, matching/missingness, guardrails\nInteractive: zoom/toggle/inspect key figures\nAppendix: coverage/tagging notes and extra figures\nNext questions: next-cycle follow-up checklist"
+  },
+  {
+    "objectID": "SI/index_en.html#start-here-2-min",
+    "href": "SI/index_en.html#start-here-2-min",
+    "title": "Supplementary Information — Overview",
+    "section": "Start here (2 min)",
+    "text": "Start here (2 min)\n\nIf you are blocked in the main report, check the Main report ↔︎ SI map first.\nIf denominator/missingness interpretation is unclear, move to Methods.\nIf you need extra figures/definitions/checklists, move to Appendix and Next questions."
+  },
+  {
+    "objectID": "SI/index_en.html#si-pages-fixed",
+    "href": "SI/index_en.html#si-pages-fixed",
+    "title": "Supplementary Information — Overview",
+    "section": "SI Pages (Fixed)",
+    "text": "SI Pages (Fixed)\n\n\n\nPage\nRole\nCoverage\n\n\n\n\nOverview\nEntry / navigation\nbackground notes, report↔︎SI map, quick find, updates\n\n\nMethods\nMethod checks\nscope/denominators/missingness/guardrails\n\n\nInteractive\nExploration\ninteractive versions of Figures 1-12\n\n\nAppendix\nEvidence / definitions / extras\ncoverage & tagging, detailed definitions, extra figures\n\n\nNext questions\nFollow-up\nnext-step questions and analysis priorities"
+  },
+  {
+    "objectID": "SI/index_en.html#report-extended-map",
+    "href": "SI/index_en.html#report-extended-map",
+    "title": "Supplementary Information — Overview",
+    "section": "Main report (PDF) ↔︎ SI map",
+    "text": "Main report (PDF) ↔︎ SI map\nIn the table below, links like Interactive: Fig. n use the SI web numbering (Figures 1-12). This differs from the main PDF (Figures 1-8); when in doubt, follow the links rather than the numbers.\n\n\n\nMain report (PDF)\nSee more in SI\n\n\n\n\nChapter 1 Data Insight (summary metrics)\nAppendix: Observed DOI scope · Appendix: Repeat-citation share (48.1%) · Methods: scope/denominator\n\n\nChapter 2 Hubs (Figures 1-3)\nBackground: hubs · Interactive: Fig. 5 · Interactive: Fig. 6 · Interactive: Fig. 7 · Appendix: Coverage & tagging\n\n\nChapter 3 Korea (Figures 4-6)\nBackground: Korea · Interactive: Fig. 11 · Interactive: Fig. 8 · Interactive: Fig. 12 · Interactive: Fig. 9 · Interactive: Fig. 10\n\n\nChapter 4 Two-speed evidence (Figures 7-8)\nBackground: two speeds · Interactive: Fig. 2 · Interactive: Fig. 4 · Appendix: Recency / intensity · (SI-only: Fig. 1, Fig. 3)\n\n\nChapter 5 Monitoring & extension\nNext questions · Methods: update protocol"
+  },
+  {
+    "objectID": "SI/index_en.html#figure-index",
+    "href": "SI/index_en.html#figure-index",
+    "title": "Supplementary Information — Overview",
+    "section": "Figure index (SI 1–12)",
+    "text": "Figure index (SI 1–12)\nSI figures are numbered 1–12 on the web. Use this table to jump directly to the interactive version.\n\n\n\nFig.\nOne-line takeaway\nJump\n\n\n\n\nFig. 1\nTime trend (with observation lag)\nInteractive: Fig. 1\n\n\nFig. 2\nDomain → field composition and field-missing segment\nInteractive: Fig. 2\n\n\nFig. 3\nTopics: citations vs works (OA bubble)\nInteractive: Fig. 3\n\n\nFig. 4\nTopics: intensity vs recency (two-speed evidence)\nInteractive: Fig. 4\n\n\nFig. 5\nPolicy sources (country/IGO): total vs density vs domain mix\nInteractive: Fig. 5\n\n\nFig. 6\nSource types: total citations vs citations per document\nInteractive: Fig. 6\n\n\nFig. 7\nSource type × domain composition (heatmap)\nInteractive: Fig. 7\n\n\nFig. 8\nDomain demand vs supply mismatch (by country)\nInteractive: Fig. 8\n\n\nFig. 9\nPolicy source → research country matrix (absolute/share)\nInteractive: Fig. 9\n\n\nFig. 10\nSelf-citation share and domain mix (self vs non-self)\nInteractive: Fig. 10\n\n\nFig. 11\nKorea inflow vs procurement flows (top 10)\nInteractive: Fig. 11\n\n\nFig. 12\nPolicy–research flow network (summary view)\nInteractive: Fig. 12"
+  },
+  {
+    "objectID": "SI/index_en.html#quick-find",
+    "href": "SI/index_en.html#quick-find",
+    "title": "Supplementary Information — Overview",
+    "section": "Quick Find",
+    "text": "Quick Find\n\n\n\nQuestion\nJump to\n\n\n\n\nI want a quick background refresher\nBackground notes\n\n\nI want definitions and denominators\nMethods · Appendix B\n\n\nWhy does 2012 look high?\nAppendix: Why 2012?\n\n\nWhy can topic/domain shares exceed 100%?\nAppendix: Multi-label topics\n\n\nI want to inspect the network (Figure 12)\nInteractive: Fig. 12\n\n\nI want the follow-up checklist\nNext questions"
+  },
+  {
+    "objectID": "SI/index_en.html#links",
+    "href": "SI/index_en.html#links",
+    "title": "Supplementary Information — Overview",
+    "section": "Links",
+    "text": "Links\n\nKorean Report (PDF)\nSI Overview\nMethods & Data Validity\nInteractive\nAppendix\nNext questions"
+  },
+  {
+    "objectID": "SI/index_en.html#updates",
+    "href": "SI/index_en.html#updates",
+    "title": "Supplementary Information — Overview",
+    "section": "Updates",
+    "text": "Updates\n\n2026-03-10: Consolidated the public structure into two layers only: the main report (PDF) and the SI web bundle. Background notes were folded into this overview page, and the former English/Korean Extended report pages were retired from the public render path.\n2026-02-27: Restructured the main report to start with a one-page Chapter 1 Data Insight summary, followed by story-driven highlights; renumbered the main PDF figures to 1-8; added an explicit Appendix definition for the repeated-citation share (48.1%).\n2026-02-14: Unified guidance tone across the web supplement pages using an observation-interpretation-check reading frame.\n2026-02-12: Added extended-text and method pages to the web supplement layer.\n2026-02-09: Added a KOR/ENG toggle (stage 1: captions) for the web supplement and interactive plots."
   },
   {
     "objectID": "SI/methods_en.html",
     "href": "SI/methods_en.html",
     "title": "Methods & Data Validity",
     "section": "",
-    "text": "← SI Overview · Appendix · Report (PDF) · Korean page\nThis page restates the method notes from the main report around the checks needed for interpretation. For detailed tables and diagnostics, refer to the linked appendix sections."
+    "text": "← SI Overview · Appendix · Korean Report (PDF) · Korean page\nThis page restates the method notes from the main report around the checks needed for interpretation. For detailed tables and diagnostics, refer to the linked appendix sections."
   },
   {
     "objectID": "SI/methods_en.html#first-checks-1-min",
@@ -410,7 +473,7 @@
     "href": "SI/appendix_en.html",
     "title": "Appendix",
     "section": "",
-    "text": "← SI Overview · Interactive · Report (PDF) · Korean page\nThis appendix brings together coverage & tagging notes, metric definitions & interpretation cautions, and additional figures. Its purpose is to help readers check the numbers and patterns in the main report more carefully.\nJump to: A. Coverage & tagging · B. Definitions & interpretation · C. Additional figures"
+    "text": "← SI Overview · Interactive · Korean Report (PDF) · Korean page\nThis appendix brings together coverage & tagging notes, metric definitions & interpretation cautions, and additional figures. Its purpose is to help readers check the numbers and patterns in the Korean main report more carefully.\nJump to: A. Coverage & tagging · B. Definitions & interpretation · C. Additional figures"
   },
   {
     "objectID": "SI/appendix_en.html#reading-order-2-min",

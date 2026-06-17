@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.4.550">
@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Overton × OpenAlex - 다음 질문</title>
+<title>Overton × OpenAlex - 2026 Data Update</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -54,17 +54,17 @@ ul.task-list li input[type="checkbox"] {
   ],
   "show-item-context": false,
   "language": {
-    "search-no-results-text": "일치 없음",
-    "search-matching-documents-text": "일치된 문서",
-    "search-copy-link-title": "검색 링크 복사",
-    "search-hide-matches-text": "추가 검색 결과 숨기기",
-    "search-more-match-text": "추가 검색결과",
-    "search-more-matches-text": "추가 검색결과",
-    "search-clear-button-title": "제거",
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
     "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "취소",
-    "search-submit-button-title": "검색",
-    "search-label": "검색"
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
 
@@ -83,8 +83,8 @@ ul.task-list li input[type="checkbox"] {
     <span class="navbar-title">Overton × OpenAlex</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="검색"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="탐색 전환" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -141,17 +141,22 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">목차</h2>
+    <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#읽는-방법-1분" id="toc-읽는-방법-1분" class="nav-link active" data-scroll-target="#읽는-방법-1분">읽는 방법 (1분)</a></li>
-  <li><a href="#이번-분기-반복-점검-질문4개" id="toc-이번-분기-반복-점검-질문4개" class="nav-link" data-scroll-target="#이번-분기-반복-점검-질문4개">이번 분기 반복 점검 질문(4개)</a>
+  <li><a href="#key-summary-of-the-2026-data-update" id="toc-key-summary-of-the-2026-data-update" class="nav-link active" data-scroll-target="#key-summary-of-the-2026-data-update">Key summary of the 2026 data update</a></li>
+  <li><a href="#update-scope" id="toc-update-scope" class="nav-link" data-scroll-target="#update-scope">Update scope</a></li>
+  <li><a href="#data-profiling" id="toc-data-profiling" class="nav-link" data-scroll-target="#data-profiling">Data profiling</a></li>
+  <li><a href="#core-changes" id="toc-core-changes" class="nav-link" data-scroll-target="#core-changes">Core changes</a></li>
+  <li><a href="#where-the-larger-movements-occur" id="toc-where-the-larger-movements-occur" class="nav-link" data-scroll-target="#where-the-larger-movements-occur">Where the larger movements occur</a>
   <ul class="collapse">
-  <li><a href="#next-q1" id="toc-next-q1" class="nav-link" data-scroll-target="#next-q1">질문 1. 정책 출처국 집중은 완화·유지·심화 중 어디로 가는가</a></li>
-  <li><a href="#next-q2" id="toc-next-q2" class="nav-link" data-scroll-target="#next-q2">질문 2. 반복 인용 논문 비중은 확대되거나 축소되는가</a></li>
-  <li><a href="#next-q3" id="toc-next-q3" class="nav-link" data-scroll-target="#next-q3">질문 3. 한국 정책문헌이 인용하는 연구는 다변화되는가</a></li>
-  <li><a href="#next-q4" id="toc-next-q4" class="nav-link" data-scroll-target="#next-q4">질문 4. 한국 연구의 정책문헌 유입 경로는 넓어지는가</a></li>
+  <li><a href="#koreas-two-directional-routes" id="toc-koreas-two-directional-routes" class="nav-link" data-scroll-target="#koreas-two-directional-routes">1. Korea’s two directional routes</a></li>
+  <li><a href="#self-citation" id="toc-self-citation" class="nav-link" data-scroll-target="#self-citation">2. Self-citation</a></li>
+  <li><a href="#domain-demand-and-supply" id="toc-domain-demand-and-supply" class="nav-link" data-scroll-target="#domain-demand-and-supply">3. Domain demand and supply</a></li>
   </ul></li>
+  <li><a href="#what-remains-stable" id="toc-what-remains-stable" class="nav-link" data-scroll-target="#what-remains-stable">What remains stable</a></li>
+  <li><a href="#interpretation-cautions" id="toc-interpretation-cautions" class="nav-link" data-scroll-target="#interpretation-cautions">Interpretation cautions</a></li>
+  <li><a href="#next-steps" id="toc-next-steps" class="nav-link" data-scroll-target="#next-steps">Next steps</a></li>
   </ul>
 </nav>
     </div>
@@ -160,7 +165,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">다음 질문</h1>
+<h1 class="title">2026 Data Update</h1>
 </div>
 
 
@@ -177,78 +182,295 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><strong>바로가기:</strong> <a href="../Report/Report_final.pdf"><code>보고서(PDF)</code></a> · <a href="../SI/index.html"><code>확장 자료</code></a> · <a href="../SI/methods.html"><code>방법론·데이터 정합성</code></a> · <a href="../SI/interactive.html"><code>인터랙티브</code></a> · <a href="../SI/appendix.html"><code>부록</code></a> · <strong>다음 질문</strong></p>
-<p>이 페이지는 보고서의 반복 점검 절에서 고정한 <strong>반복 점검 질문</strong>만 모아 둔다. 새로운 연구 의제를 늘리기보다, 같은 정의로 다음 점검 때도 다시 확인할 질문을 정리한다.</p>
-<p>이 페이지에서 말하는 그림 번호는 <strong>웹 인터랙티브 번호(1–12)</strong> 기준이다.</p>
+<p><strong>Quick links:</strong> <a href="../Report/Report_final.pdf"><code>Korean Report (PDF)</code></a> · <a href="../SI/index_en.html"><code>SI Overview</code></a> · <a href="../SI/methods_en.html"><code>Methods &amp; Data Validity</code></a> · <a href="../SI/interactive_en.html"><code>Interactive</code></a> · <a href="../SI/appendix_en.html"><code>Appendix</code></a> · <a href="../SI/next_questions_en.html"><code>Next Questions</code></a> · <a href="../SI/update_202603.html"><code>Korean page</code></a></p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-노트
+Official baseline and web update
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><strong>이 페이지를 어떻게 보면 좋은가</strong></p>
 <ul>
-<li>보고서의 반복 점검 기준선과 확장 경로를 다음 점검표로 정리한다.</li>
-<li>각 질문은 <code>관찰 출발점 → 이번 기준값 → 점검 항목 → 완료 신호</code> 순서로 확인한다.</li>
-<li>분모·결측·저자국가 규칙은 <a href="../SI/methods.html">방법론</a>과 <a href="../SI/appendix.html">부록</a>을 먼저 확인한 뒤 비교한다.</li>
+<li>The <a href="../Report/Report_final.pdf"><code>Korean Report (PDF)</code></a> is the official v1 baseline organized around the December 2025 publication version.</li>
+<li>This page reapplies the same analytic frame to <code>Overton 2026-01-30</code> and <code>OpenAlex 202602</code> data.</li>
+<li>It does not replace the official report. Use it only as a web update for checking what changes under newer data.</li>
 </ul>
 </div>
 </div>
-<section id="읽는-방법-1분" class="level2">
-<h2 class="anchored" data-anchor-id="읽는-방법-1분">읽는 방법 (1분)</h2>
+<section id="key-summary-of-the-2026-data-update" class="level2">
+<h2 class="anchored" data-anchor-id="key-summary-of-the-2026-data-update">Key summary of the 2026 data update</h2>
+<p>The newer data still shows hub concentration and Korea’s asymmetry. However, the strength of concentration and the domain composition soften or shift relative to the official report.</p>
+<table class="table">
+<colgroup>
+<col style="width: 21%">
+<col style="width: 28%">
+<col style="width: 28%">
+<col style="width: 21%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Key item</th>
+<th style="text-align: right;">Official v1 baseline</th>
+<th style="text-align: right;">v2 web update</th>
+<th>Interpretation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Inbound policy citations to Korean research</td>
+<td style="text-align: right;">Top 3 policy sources: 54.8%</td>
+<td style="text-align: right;">Top 3 policy sources: 51.1%</td>
+<td>Concentration in a small set of policy sources remains, but the intensity is slightly lower.</td>
+</tr>
+<tr class="even">
+<td>Research cited by Korean policy documents</td>
+<td style="text-align: right;">U.S. research 55.7% / Korean research 4.5%</td>
+<td style="text-align: right;">U.S. research 48.6% / Korean research 3.8%</td>
+<td>The U.S. skew remains, but the concentration is weaker.</td>
+</tr>
+<tr class="odd">
+<td>Domain composition</td>
+<td style="text-align: right;">Social Sciences 77.9% / Physical Sciences 9.2%</td>
+<td style="text-align: right;">Social Sciences 66.2% / Physical Sciences 18.0%</td>
+<td>Domain asymmetry remains, but the composition moves toward a more distributed profile.</td>
+</tr>
+</tbody>
+</table>
 <ul>
-<li>이번 점검에서는 질문을 늘리기보다 아래 4개 축을 같은 정의로 다시 계산하는 것이 우선이다.</li>
-<li>방향 판정은 단일 수치 1회 관측보다, 같은 지표가 2회 이상 같은 방향으로 재현되는지에 둔다.</li>
+<li>Policy-document citations are still concentrated around a small set of policy sources.</li>
+<li>Korea still needs to be read through two separate directions: <code>inbound policy citations to Korean research</code> and <code>research cited by Korean policy documents</code>.</li>
+<li>The operational frame of tracking repeated citation structure remains valid.</li>
 </ul>
 </section>
-<section id="이번-분기-반복-점검-질문4개" class="level2">
-<h2 class="anchored" data-anchor-id="이번-분기-반복-점검-질문4개">이번 분기 반복 점검 질문(4개)</h2>
-<section id="next-q1" class="level3">
-<h3 class="anchored" data-anchor-id="next-q1">질문 1. 정책 출처국 집중은 완화·유지·심화 중 어디로 가는가</h3>
+<section id="update-scope" class="level2">
+<h2 class="anchored" data-anchor-id="update-scope">Update scope</h2>
 <ul>
-<li>관찰 출발점: 보고서는 허브 채널 집중을 핵심 메시지로 제시하지만, 반복 점검에서는 이를 정책 출처국 집중이라는 실용적 기준선으로 추적한다.</li>
-<li>이번 기준값: 정책 출처국 상위 3개 합은 50.6%다. 동시에 총량 허브와 밀도 허브가 분리되고, 출처 유형이 바뀌면 도메인 구성도 달라진다(인터랙티브 그림 5–7).</li>
-<li>점검 항목: 정책 출처국 상위 3개 합, 상위 출처국 순서 변화, 총량 상위군과 밀도 상위군의 겹침 정도, 출처 유형×도메인 구성의 방향성 변화.</li>
-<li>완료 신호: 같은 정의로 2회 이상 재계산했을 때 집중 완화·유지·심화 중 하나로 방향 판정이 가능해진다.</li>
-<li>같이 볼 곳: <a href="../SI/interactive.html#si-fig-5">인터랙티브 그림 5</a> · <a href="../SI/interactive.html#si-fig-6">인터랙티브 그림 6</a> · <a href="../SI/interactive.html#si-fig-7">인터랙티브 그림 7</a> · <a href="../SI/appendix.html#appendix-c9-density-robustness">부록 C9</a></li>
+<li><strong>Overton:</strong> <code>2026-01-30 raw</code></li>
+<li><strong>OpenAlex:</strong> local <code>202602</code> meta/text/topics</li>
+<li><strong>Fallback:</strong> <code>first_author_country</code> and <code>is_oa</code> use remote <code>202506</code> supplement values where local OpenAlex 202602 did not contain those fields.</li>
+<li><strong>Comparison baseline:</strong> <code>Overton 2025.02 + OpenAlex 2025.06</code>, the data combination used in the official report.</li>
 </ul>
 </section>
-<section id="next-q2" class="level3">
-<h3 class="anchored" data-anchor-id="next-q2">질문 2. 반복 인용 논문 비중은 확대되거나 축소되는가</h3>
+<section id="data-profiling" class="level2">
+<h2 class="anchored" data-anchor-id="data-profiling">Data profiling</h2>
+<p>The update expands the denominator itself.</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Item</th>
+<th style="text-align: right;">v1 official baseline</th>
+<th style="text-align: right;">v2 web update</th>
+<th style="text-align: right;">Change</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Policy-document-to-paper citation rows</td>
+<td style="text-align: right;">23.37M</td>
+<td style="text-align: right;">28.96M</td>
+<td style="text-align: right;">+23.9%</td>
+</tr>
+<tr class="even">
+<td>Policy documents citing scholarly papers</td>
+<td style="text-align: right;">1.348M</td>
+<td style="text-align: right;">1.650M</td>
+<td style="text-align: right;">+22.4%</td>
+</tr>
+<tr class="odd">
+<td>Unique cited papers</td>
+<td style="text-align: right;">6.532M</td>
+<td style="text-align: right;">7.425M</td>
+<td style="text-align: right;">+13.7%</td>
+</tr>
+</tbody>
+</table>
+<p>Therefore, the movement in these values should not be read as structural change alone. The newer data reflects both a wider coverage base and changes in the observed sample. With that caveat, the appropriate reading is that hub concentration and Korea’s asymmetry remain, while the concentration strength and domain composition are partly adjusted.</p>
+<p>The Korea-related sample also grows.</p>
+<table class="table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 26%">
+<col style="width: 26%">
+<col style="width: 26%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Korea-related sample</th>
+<th style="text-align: right;">v1 official baseline</th>
+<th style="text-align: right;">v2 web update</th>
+<th style="text-align: right;">Change</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Rows citing Korean research</td>
+<td style="text-align: right;">89K</td>
+<td style="text-align: right;">115K</td>
+<td style="text-align: right;">+29.0%</td>
+</tr>
+<tr class="even">
+<td>Policy documents tagged with <code>South Korea</code> and citing scholarly papers</td>
+<td style="text-align: right;">2,726</td>
+<td style="text-align: right;">25,387</td>
+<td style="text-align: right;">+831.3%</td>
+</tr>
+<tr class="odd">
+<td>Citation rows tagged with <code>South Korea</code> as a policy source</td>
+<td style="text-align: right;">33K</td>
+<td style="text-align: right;">287K</td>
+<td style="text-align: right;">+770.4%</td>
+</tr>
+</tbody>
+</table>
+<p>This means the movement in Korea-related measures reflects both structural change and the much larger observed sample directly connected to Korea. Policy-source tags may not be mutually exclusive, so the increase in rows tagged <code>South Korea</code> widens both the denominator and the scope of Korea-related comparison.</p>
+</section>
+<section id="core-changes" class="level2">
+<h2 class="anchored" data-anchor-id="core-changes">Core changes</h2>
+<table class="table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 26%">
+<col style="width: 26%">
+<col style="width: 26%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Indicator</th>
+<th style="text-align: right;">Official v1 baseline</th>
+<th style="text-align: right;">v2 web update</th>
+<th style="text-align: right;">Change</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Inbound policy citations to Korean research: top 3 policy-source tags</td>
+<td style="text-align: right;">54.8%</td>
+<td style="text-align: right;">51.1%</td>
+<td style="text-align: right;">-3.7 pp</td>
+</tr>
+<tr class="even">
+<td>Share of U.S. research in citations from Korean policy documents</td>
+<td style="text-align: right;">55.7%</td>
+<td style="text-align: right;">48.6%</td>
+<td style="text-align: right;">-7.1 pp</td>
+</tr>
+<tr class="odd">
+<td>Share of Korean research in citations from Korean policy documents</td>
+<td style="text-align: right;">4.5%</td>
+<td style="text-align: right;">3.8%</td>
+<td style="text-align: right;">-0.8 pp</td>
+</tr>
+<tr class="even">
+<td>Share of unique papers cited at least twice</td>
+<td style="text-align: right;">48.1%</td>
+<td style="text-align: right;">51.3%</td>
+<td style="text-align: right;">+3.2 pp</td>
+</tr>
+</tbody>
+</table>
+<p>The update changes several Korea-related headline values, but it does not overturn the two main messages in the report. Hub concentration remains, and Korea’s asymmetry remains. The updated data mainly softens or shifts the strength of concentration and the domain mix.</p>
+</section>
+<section id="where-the-larger-movements-occur" class="level2">
+<h2 class="anchored" data-anchor-id="where-the-larger-movements-occur">Where the larger movements occur</h2>
+<section id="koreas-two-directional-routes" class="level3">
+<h3 class="anchored" data-anchor-id="koreas-two-directional-routes">1. Korea’s two directional routes</h3>
 <ul>
-<li>관찰 출발점: 보고서는 반복 인용(2회 이상) 48.1%를 반복 인용 논문 비중의 출발 기준선으로 제시한다.</li>
-<li>이번 기준값: 인용된 고유 논문 6,532,365편 중 48.1%가 2개 이상 서로 다른 정책문헌에서 반복 인용된다.</li>
-<li>점검 항목: <code>&gt;=2 / &gt;=5 / &gt;=10</code> 임계값 민감도, 발행연도 코호트별 반복 인용, 긴 꼬리 분포(CCDF) 변화.</li>
-<li>완료 신호: 임계값과 코호트를 바꿔도 같은 방향의 변화가 재현되고, 최근 논문 불리 효과와 구조 변화가 분리된다.</li>
-<li>같이 볼 곳: <a href="../SI/appendix.html#repeat-share">부록: 반복 인용 48.1% 정의</a> · <a href="../SI/appendix.html#appendix-c6-ccdf">부록 C6</a> · <a href="../SI/appendix.html#appendix-c10-repeat-citation-sensitivity">부록 C10</a></li>
+<li>The top-3 share for inbound policy citations to Korean research falls from <code>54.8% -&gt; 51.1%</code>.</li>
+<li>The U.S. research share in citations from Korean policy documents falls from <code>55.7% -&gt; 48.6%</code>.</li>
+<li>The Korean research share in citations from Korean policy documents falls from <code>4.5% -&gt; 3.8%</code>.</li>
+</ul>
+<p>This does not require rewriting the report’s core sentence, but the Korea section should be read as showing somewhat weaker concentration in the updated data. See the <a href="../SI/appendix_en.html#appendix-c"><code>Appendix</code></a> and <a href="../SI/interactive_en.html#si-fig-8"><code>Interactive</code></a> pages for the surrounding diagnostics.</p>
+</section>
+<section id="self-citation" class="level3">
+<h3 class="anchored" data-anchor-id="self-citation">2. Self-citation</h3>
+<ul>
+<li>Korea’s self-share falls from <code>4.5% -&gt; 3.8%</code>.</li>
+<li>The expected self-share rises from <code>0.59% -&gt; 0.72%</code>.</li>
+</ul>
+<p>In other words, the domestic research share declines while the expected share rises slightly. The gap relative to the expected share is therefore smaller than in the official report. See the <a href="../SI/appendix_en.html#appendix-c2"><code>Appendix</code></a> and <a href="../SI/interactive_en.html#si-fig-11"><code>Interactive</code></a> pages for the related interpretation checks.</p>
+</section>
+<section id="domain-demand-and-supply" class="level3">
+<h3 class="anchored" data-anchor-id="domain-demand-and-supply">3. Domain demand and supply</h3>
+<table class="table">
+<colgroup>
+<col style="width: 15%">
+<col style="width: 21%">
+<col style="width: 21%">
+<col style="width: 21%">
+<col style="width: 21%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Domain</th>
+<th style="text-align: right;">v1 policy-citation share</th>
+<th style="text-align: right;">v2 policy-citation share</th>
+<th style="text-align: right;">v1 inbound share for Korean research</th>
+<th style="text-align: right;">v2 inbound share for Korean research</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Social Sciences</td>
+<td style="text-align: right;">77.9%</td>
+<td style="text-align: right;">66.2%</td>
+<td style="text-align: right;">23.7%</td>
+<td style="text-align: right;">29.5%</td>
+</tr>
+<tr class="even">
+<td>Health Sciences</td>
+<td style="text-align: right;">9.4%</td>
+<td style="text-align: right;">11.2%</td>
+<td style="text-align: right;">40.9%</td>
+<td style="text-align: right;">34.3%</td>
+</tr>
+<tr class="odd">
+<td>Physical Sciences</td>
+<td style="text-align: right;">9.2%</td>
+<td style="text-align: right;">18.0%</td>
+<td style="text-align: right;">22.7%</td>
+<td style="text-align: right;">24.1%</td>
+</tr>
+<tr class="even">
+<td>Life Sciences</td>
+<td style="text-align: right;">3.5%</td>
+<td style="text-align: right;">4.6%</td>
+<td style="text-align: right;">12.6%</td>
+<td style="text-align: right;">12.1%</td>
+</tr>
+</tbody>
+</table>
+<p>The largest movement is the lower Social Sciences share and the higher Physical Sciences share. Korea’s domain-level asymmetry remains, but the composition moves in a more distributed direction than in the official report. See the <a href="../SI/appendix_en.html#appendix-c3"><code>Appendix</code></a> and <a href="../SI/interactive_en.html#si-fig-10"><code>Interactive</code></a> pages for related checks.</p>
+</section>
+</section>
+<section id="what-remains-stable" class="level2">
+<h2 class="anchored" data-anchor-id="what-remains-stable">What remains stable</h2>
+<ul>
+<li>Policy-document citations are still concentrated around a small set of policy sources.</li>
+<li>Korea still needs to be read through separate inbound and procurement routes.</li>
+<li>The repeated-citation monitoring frame remains useful.</li>
+</ul>
+<p>The direction of the official report therefore remains intact, but the exact values and domain composition should be rechecked whenever the data are updated.</p>
+</section>
+<section id="interpretation-cautions" class="level2">
+<h2 class="anchored" data-anchor-id="interpretation-cautions">Interpretation cautions</h2>
+<ul>
+<li>This page applies the same analytic frame as the official report to newer data.</li>
+<li>The update values are for web comparison and do not automatically replace the official report text.</li>
+<li>Because local OpenAlex 202602 lacked some <code>first_author_country</code> and <code>is_oa</code> fields, remote <code>202506</code> supplement values were used for those fields.</li>
 </ul>
 </section>
-<section id="next-q3" class="level3">
-<h3 class="anchored" data-anchor-id="next-q3">질문 3. 한국 정책문헌이 인용하는 연구는 다변화되는가</h3>
+<section id="next-steps" class="level2">
+<h2 class="anchored" data-anchor-id="next-steps">Next steps</h2>
 <ul>
-<li>관찰 출발점: 보고서는 한국 정책문헌이 인용하는 연구가 미국 55.7%에 집중된다고 요약한다(1저자 국가코드 확인분).</li>
-<li>이번 기준값: 미국 연구 인용 55.7%, 자국 인용 4.5%(기대비중 0.6% 대비 7.7배)다.</li>
-<li>점검 항목: 상위 1개국 비중, 상위 3개국 합, 도메인별 연구 인용 구성, 자국 인용 비중 안정성, 저자국가 규칙 민감도.</li>
-<li>완료 신호: 상위 1개국 쏠림과 자국/비자국 구성 변화가 같은 방향으로 설명되고, 저자국가 규칙을 바꿔도 해석이 크게 흔들리지 않는다.</li>
-<li>같이 볼 곳: <a href="../SI/interactive.html#si-fig-9">인터랙티브 그림 9</a> · <a href="../SI/interactive.html#si-fig-10">인터랙티브 그림 10</a> · <a href="../SI/interactive.html#si-fig-11">인터랙티브 그림 11</a> · <a href="../SI/appendix.html#appendix-c12-korea-author-country-sensitivity">부록 C12</a></li>
-</ul>
-</section>
-<section id="next-q4" class="level3">
-<h3 class="anchored" data-anchor-id="next-q4">질문 4. 한국 연구의 정책문헌 유입 경로는 넓어지는가</h3>
-<ul>
-<li>관찰 출발점: 보고서는 한국 연구의 정책문헌 유입이 정책 출처 태그 기준 상위 3개인 미국·국제기구·영국에 54.8% 집중된다고 정리한다.</li>
-<li>이번 기준값: 미국 27.8%, 국제기구 19.4%, 영국 7.7%로 정책 출처 태그 기준 상위 3개 합이 54.8%다.</li>
-<li>점검 항목: 상위 3개 정책 출처 합, 상위 출처 순서 변화, 도메인별 정책문헌 유입 구성, 중복 보정 이후 수치 안정성.</li>
-<li>완료 신호: 같은 중복 보정 기준에서 상위 정책 출처 집중도 추세가 안정적으로 재계산되고, 출처 확대 여부를 단일 순위가 아니라 경로 구조 변화로 설명할 수 있다.</li>
-<li>같이 볼 곳: <a href="../SI/interactive.html#si-fig-11">인터랙티브 그림 11</a> · <a href="../SI/interactive.html#si-fig-12">인터랙티브 그림 12</a> · <a href="../SI/appendix.html#appendix-c8-policy-research-backbone">부록 C8</a> · <a href="../SI/appendix.html#appendix-c13-join-multiplicity">부록 C13</a></li>
+<li>Keep the official report (v1) unchanged.</li>
+<li>Use v2 as a web update layer for Korea-related headline changes and comparison results.</li>
+<li>If needed, extend the largest movements into explicit <code>v1 / v2</code> comparison visualizations.</li>
 </ul>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -307,12 +529,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // flash "checked"
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "복사완료!");
+    button.setAttribute("title", "Copied!");
     let tooltip;
     if (window.bootstrap) {
       button.setAttribute("data-bs-toggle", "tooltip");
       button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "복사완료!");
+      button.setAttribute("data-bs-title", "Copied!");
       tooltip = new bootstrap.Tooltip(button, 
         { trigger: "manual", 
           customClass: "code-copy-button-tooltip",

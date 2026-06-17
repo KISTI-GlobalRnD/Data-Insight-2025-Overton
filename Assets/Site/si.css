@@ -102,6 +102,12 @@ html[data-si-lang="en"] .si-caption-en {
   text-decoration: none;
 }
 
+#quarto-document-content table {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
 .si-plot {
   border: 1px solid rgba(0, 0, 0, 0.08);
   border-radius: 12px;

@@ -6,6 +6,8 @@
   const SI_PAGE_PAIRS = {
     "index.html": { ko: "index.html", en: "index_en.html" },
     "index_en.html": { ko: "index.html", en: "index_en.html" },
+    "update_202603.html": { ko: "update_202603.html", en: "update_202603_en.html" },
+    "update_202603_en.html": { ko: "update_202603.html", en: "update_202603_en.html" },
     "methods.html": { ko: "methods.html", en: "methods_en.html" },
     "methods_en.html": { ko: "methods.html", en: "methods_en.html" },
     "interactive.html": { ko: "interactive.html", en: "interactive_en.html" },
@@ -31,11 +33,11 @@
     },
     en: {
       main: { text: "Main", href: "../index.html?lang=en" },
-      report: { text: "Report (PDF)", href: "../Report/Report_final.pdf" },
+      report: { text: "Korean Report (PDF)", href: "../Report/Report_final.pdf" },
       menu: "Supplementary Information",
       items: [
         { text: "Overview", href: "../SI/index_en.html" },
-        { text: "2026 Data Update (Korean)", href: "../SI/update_202603.html" },
+        { text: "2026 Data Update", href: "../SI/update_202603_en.html" },
         { text: "Methods & Data Validity", href: "../SI/methods_en.html" },
         { text: "Interactive", href: "../SI/interactive_en.html" },
         { text: "Appendix", href: "../SI/appendix_en.html" },
@@ -264,10 +266,19 @@
     });
   }
 
+  function updateSearchVisibility(lang) {
+    const search = document.getElementById("quarto-search");
+    if (!search) return;
+    const hide = lang === "en";
+    search.hidden = hide;
+    search.setAttribute("aria-hidden", hide ? "true" : "false");
+  }
+
   function applyLanguage(lang) {
     const safe = SUPPORTED_LANGS.includes(lang) ? lang : "ko";
     document.documentElement.dataset.siLang = safe;
     updateNavbar(safe);
+    updateSearchVisibility(safe);
     updatePlotLinksAndFrames(safe);
   }
 
