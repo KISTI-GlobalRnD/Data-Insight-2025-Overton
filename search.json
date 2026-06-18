@@ -4,7 +4,7 @@
     "href": "SI/next_questions_en.html",
     "title": "Next Questions Summary",
     "section": "",
-    "text": "English Summary · Full Korean next-questions page · Korean PDF"
+    "text": "English Summary · Korean next-questions page · Korean Report (PDF)"
   },
   {
     "objectID": "SI/next_questions_en.html#four-recurring-questions",
@@ -25,7 +25,7 @@
     "href": "SI/interactive_en.html",
     "title": "Selected Figures",
     "section": "",
-    "text": "English Summary · Full Korean interactive page · Korean PDF"
+    "text": "English Summary · Korean interactive page · Korean Report (PDF)"
   },
   {
     "objectID": "SI/interactive_en.html#what-to-inspect",
@@ -46,7 +46,7 @@
     "href": "SI/update_202603_en.html",
     "title": "2026 Data Update Summary",
     "section": "",
-    "text": "English Summary · Full Korean update · Korean PDF"
+    "text": "English Summary · Korean update page · Korean Report (PDF)"
   },
   {
     "objectID": "SI/update_202603_en.html#what-changed",
@@ -67,7 +67,7 @@
     "href": "SI/update_202603_en.html#reading-boundary",
     "title": "2026 Data Update Summary",
     "section": "Reading boundary",
-    "text": "Reading boundary\nThe update uses newer observed data and should be treated as a comparison layer. It is useful for monitoring direction, not for silently replacing the Korean report text."
+    "text": "Reading boundary\nThe update uses newer observed data and should be treated as a comparison layer. Use it for monitoring direction; it does not update the Korean report text by itself."
   },
   {
     "objectID": "SI/next_questions.html",
@@ -305,7 +305,7 @@
     "href": "SI/index_en.html",
     "title": "English Web Summary",
     "section": "",
-    "text": "Full Korean SI · Korean PDF"
+    "text": "Korean SI (full) · Korean Report (PDF)"
   },
   {
     "objectID": "SI/index_en.html#core-message",
@@ -333,14 +333,14 @@
     "href": "SI/index_en.html#how-to-cite-this-layer",
     "title": "English Web Summary",
     "section": "How to cite this layer",
-    "text": "How to cite this layer\nThis English web summary is provided for orientation; the citable report text is the Korean PDF. For exact wording, full figure captions, detailed tables, and the complete argument, use the Korean PDF and Korean SI."
+    "text": "How to cite this layer\nFor citation, use the Korean Report (PDF) as the report text of record. For exact wording, full figure captions, detailed tables, and the complete argument, use the Korean Report (PDF) and Korean SI."
   },
   {
     "objectID": "SI/methods_en.html",
     "href": "SI/methods_en.html",
     "title": "Methods Summary",
     "section": "",
-    "text": "English Summary · Full Korean methods · Korean PDF"
+    "text": "English Summary · Korean methods page · Korean Report (PDF)"
   },
   {
     "objectID": "SI/methods_en.html#analysis-scope",
@@ -375,7 +375,7 @@
     "href": "SI/appendix_en.html",
     "title": "Definitions Summary",
     "section": "",
-    "text": "English Summary · Full Korean appendix · Korean PDF"
+    "text": "English Summary · Korean appendix · Korean Report (PDF)"
   },
   {
     "objectID": "SI/appendix_en.html#observed-doi-linked-scope",
