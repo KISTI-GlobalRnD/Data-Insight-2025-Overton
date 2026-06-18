@@ -4,14 +4,14 @@
     "href": "SI/next_questions_en.html",
     "title": "Next Questions Summary",
     "section": "",
-    "text": "English Summary · Korean next-questions page · Korean Report (PDF)"
+    "text": "English Summary · Full Korean next-questions page · Korean Report (PDF)"
   },
   {
     "objectID": "SI/next_questions_en.html#four-recurring-questions",
     "href": "SI/next_questions_en.html#four-recurring-questions",
     "title": "Next Questions Summary",
     "section": "Four recurring questions",
-    "text": "Four recurring questions\n\n\n\n\n\n\n\nQuestion\nWhat to monitor\n\n\n\n\nIs policy-source channel concentration easing, stable, or intensifying?\nTop-3 channel share, rank changes, overlap between volume hubs and density hubs.\n\n\nIs the repeat-cited evidence pool broadening or narrowing?\nRepeat-citation thresholds such as &gt;=2, &gt;=5, and &gt;=10 policy documents.\n\n\nIs research cited by Korean policy documents becoming more diversified?\nTop country share, domestic-citation share, and domain composition.\n\n\nAre routes into policy documents for Korean research becoming broader?\nTop inbound policy-source channels and route concentration for Korean research."
+    "text": "Four recurring questions\n\n\n\n\n\n\n\nQuestion\nWhat to monitor\n\n\n\n\nIs policy-source channel concentration easing, stable, or intensifying?\nTop-3 channel share, rank changes, overlap between volume hubs and density hubs.\n\n\nIs the repeat-cited evidence pool broadening or narrowing?\nRepeat-citation thresholds such as &gt;=2, &gt;=5, and &gt;=10 policy documents.\n\n\nIs research cited by Korean policy documents becoming more diversified?\nTop country share, domestic-citation share, and domain composition.\n\n\nIs the policy route for Korean research becoming broader?\nTop inbound policy-source channels and route concentration for Korean research."
   },
   {
     "objectID": "SI/next_questions_en.html#completion-signal",
@@ -25,35 +25,35 @@
     "href": "SI/interactive_en.html",
     "title": "Selected Figures",
     "section": "",
-    "text": "English Summary · Korean interactive page · Korean Report (PDF)"
+    "text": "English Summary · Full Korean interactive page · Korean Report (PDF)"
   },
   {
     "objectID": "SI/interactive_en.html#what-to-inspect",
     "href": "SI/interactive_en.html#what-to-inspect",
     "title": "Selected Figures",
     "section": "What to inspect",
-    "text": "What to inspect\n\n\n\nQuestion\nSuggested figure\nReading point\n\n\n\n\nWhere does policy evidence concentrate?\nPolicy-source hubs\nCompare total citation volume with citations per policy document.\n\n\nDo source types cite different research domains?\nSource type x domain heatmap\nRead source roles by domain composition, not by total volume alone.\n\n\nHow asymmetric is Korea’s evidence route?\nKorea evidence flows\nSeparate inbound citations to Korean research from research cited by Korean policy documents.\n\n\nWhich research countries do policy sources cite?\nPolicy source -&gt; research country matrix\nCompare absolute volume and within-source share separately.\n\n\nHow should domestic-citation share be read?\nDomestic-citation share\nUse it as a diagnostic among citations with known first-author country.\n\n\nWhich topics move at different speeds?\nTopic intensity vs recency\nSeparate high-recency topics from accumulated high-intensity topics."
+    "text": "What to inspect\n\n\n\nQuestion\nSuggested figure\nReading point\n\n\n\n\nWhere does policy evidence concentrate?\nPolicy-source hubs\nCompare total citation volume with citations per policy document.\n\n\nDo source types cite different research domains?\nSource type x domain heatmap\nRead source roles by domain composition, not by total volume alone.\n\n\nHow do Korea’s two evidence routes differ?\nKorea evidence flows\nSeparate citations to Korean research from citations made by Korean policy documents.\n\n\nWhich research countries do policy sources cite?\nPolicy source -&gt; research country matrix\nCompare absolute volume and within-source share separately.\n\n\nHow should domestic-citation share be read?\nDomestic-citation share\nUse it as a diagnostic among citations with known first-author country.\n\n\nWhich topics move at different speeds?\nTopic intensity vs recency\nSeparate high-recency topics from accumulated high-intensity topics."
   },
   {
     "objectID": "SI/interactive_en.html#short-interpretation",
     "href": "SI/interactive_en.html#short-interpretation",
     "title": "Selected Figures",
     "section": "Short interpretation",
-    "text": "Short interpretation\nThe interactive figures are intended for checking the structure behind the headline claims. They are a compact orientation layer, not a substitute for the Korean report.\nMost comparisons require three safeguards:\n\nseparate volume from density;\nseparate inbound evidence routes from policy-sourcing routes;\ncheck whether the denominator changes before comparing percentages."
+    "text": "Short interpretation\nThe interactive figures help readers check the structure behind the headline claims. They orient readers to the evidence but do not replace the Korean report.\nMost comparisons require three safeguards:\n\nseparate volume from density;\nseparate citations to Korean research from citations made by Korean policy documents;\ncheck whether the denominator changes before comparing percentages."
   },
   {
     "objectID": "SI/update_202603_en.html",
     "href": "SI/update_202603_en.html",
     "title": "2026 Data Update Summary",
     "section": "",
-    "text": "English Summary · Korean update page · Korean Report (PDF)"
+    "text": "English Summary · Full Korean update page · Korean Report (PDF)"
   },
   {
     "objectID": "SI/update_202603_en.html#what-changed",
     "href": "SI/update_202603_en.html#what-changed",
     "title": "2026 Data Update Summary",
     "section": "What changed",
-    "text": "What changed\nThe newer data still supports the two headline patterns:\n\npolicy-document citations remain concentrated around a small set of policy-source channels;\nKorea should still be read through separate inbound and policy-sourcing routes.\n\nThe updated values mainly soften the strength of concentration and shift parts of the domain mix."
+    "text": "What changed\nThe newer data keeps the two headline patterns intact:\n\nPolicy-document citations remain concentrated around a small set of source hubs;\nCitations to Korean research and citations made by Korean policy documents should be read as separate routes.\n\nThe updated values mostly soften the strength of concentration and shift parts of the domain mix."
   },
   {
     "objectID": "SI/update_202603_en.html#headline-comparison",
@@ -67,7 +67,7 @@
     "href": "SI/update_202603_en.html#reading-boundary",
     "title": "2026 Data Update Summary",
     "section": "Reading boundary",
-    "text": "Reading boundary\nThe update uses newer observed data and should be treated as a comparison layer. Use it for monitoring direction; it does not update the Korean report text by itself."
+    "text": "Reading boundary\nThe update uses newer observed data and should be treated as a comparison layer. Use it to monitor direction; it is not a replacement for the report text of record."
   },
   {
     "objectID": "SI/next_questions.html",
@@ -303,44 +303,44 @@
   {
     "objectID": "SI/index_en.html",
     "href": "SI/index_en.html",
-    "title": "English Web Summary",
+    "title": "English Summary",
     "section": "",
-    "text": "Korean SI (full) · Korean Report (PDF)"
+    "text": "Full Korean SI · Korean Report (PDF)"
   },
   {
     "objectID": "SI/index_en.html#core-message",
     "href": "SI/index_en.html#core-message",
-    "title": "English Web Summary",
+    "title": "English Summary",
     "section": "Core message",
-    "text": "Core message\nThe report examines DOI-linked citations from policy documents in Overton to scholarly works in OpenAlex. It does not measure every policy document or every form of evidence. It summarizes the observable policy-to-research citation structure in the current linked data.\nTwo findings organize the report:\n\nPolicy evidence is concentrated in a small set of hub channels.\nThe route by which Korean research enters policy documents differs from the route by which Korean policy documents source research."
+    "text": "Core message\nThe report examines DOI-linked citations from policy documents in Overton to scholarly works in OpenAlex. It does not measure every policy document or every form of evidence. It summarizes the observable policy-to-research citation structure in the current linked data.\nTwo findings organize the report:\n\nPolicy evidence concentrates in a small set of source hubs.\nCitations to Korean research and citations made by Korean policy documents follow different routes."
   },
   {
     "objectID": "SI/index_en.html#key-numbers",
     "href": "SI/index_en.html#key-numbers",
-    "title": "English Web Summary",
+    "title": "English Summary",
     "section": "Key numbers",
     "text": "Key numbers\n\n\n\n\n\n\n\nSignal\nBaseline reading\n\n\n\n\nInbound policy citations to Korean research\nTop 3 policy-source channels account for 54.8%.\n\n\nResearch cited by Korean policy documents\nU.S.-authored research accounts for 55.7% among citations with known first-author country.\n\n\nKorean-authored research cited by Korean policy documents\n4.5% among citations with known first-author country.\n\n\nRepeatedly cited works\n48.1% of unique cited works are cited by at least two policy documents."
   },
   {
     "objectID": "SI/index_en.html#summary-pages",
     "href": "SI/index_en.html#summary-pages",
-    "title": "English Web Summary",
+    "title": "English Summary",
     "section": "Summary pages",
-    "text": "Summary pages\n\n\n\nPage\nWhat it provides\n\n\n\n\nMethods summary\nScope, denominator, and interpretation boundaries.\n\n\nSelected figures\nShort guide to the main interactive evidence checks.\n\n\nDefinitions summary\nCompact definitions for repeated citation and domestic-citation share.\n\n\n2026 data update\nHigh-level comparison with the newer data update.\n\n\nNext questions\nThe four recurring monitoring questions."
+    "text": "Summary pages\n\n\n\nPage\nWhat it provides\n\n\n\n\nMethods summary\nScope, denominator, and interpretation boundaries.\n\n\nSelected figures\nShort guide to the main interactive evidence checks.\n\n\nDefinitions summary\nCompact definitions for repeated citation and domestic-citation share.\n\n\n2026 data update\nHigh-level comparison with the newer data update.\n\n\nNext questions\nFour recurring monitoring questions."
   },
   {
     "objectID": "SI/index_en.html#how-to-cite-this-layer",
     "href": "SI/index_en.html#how-to-cite-this-layer",
-    "title": "English Web Summary",
+    "title": "English Summary",
     "section": "How to cite this layer",
-    "text": "How to cite this layer\nFor citation, use the Korean Report (PDF) as the report text of record. For exact wording, full figure captions, detailed tables, and the complete argument, use the Korean Report (PDF) and Korean SI."
+    "text": "How to cite this layer\nFor citation, use the Korean Report (PDF) as the text of record. For exact wording, figure captions, detailed tables, and the complete argument, use the Korean Report (PDF) and the full Korean SI."
   },
   {
     "objectID": "SI/methods_en.html",
     "href": "SI/methods_en.html",
     "title": "Methods Summary",
     "section": "",
-    "text": "English Summary · Korean methods page · Korean Report (PDF)"
+    "text": "English Summary · Full Korean methods page · Korean Report (PDF)"
   },
   {
     "objectID": "SI/methods_en.html#analysis-scope",
@@ -354,7 +354,7 @@
     "href": "SI/methods_en.html#interpretation-boundaries",
     "title": "Methods Summary",
     "section": "Interpretation boundaries",
-    "text": "Interpretation boundaries\n\nThe analysis covers observed DOI-linked policy-to-research citations, not the full policy universe.\nNon-DOI evidence such as reports, legislation, web pages, and narrative references is outside the default indicators.\nPolicy source country and type tags can be non-exclusive, so totals should be read as tag-based summaries.\nCountry-level indicators should be read with missing first-author country codes in mind."
+    "text": "Interpretation boundaries\n\nThe analysis covers observed DOI-linked policy-to-research citations, not the full policy universe.\nNon-DOI evidence such as reports, legislation, web pages, and narrative references is outside the default indicators.\nPolicy-source country and type labels can overlap, so totals should be read as tag-based summaries rather than mutually exclusive counts.\nCountry-level indicators should be read with missing first-author country codes in mind."
   },
   {
     "objectID": "SI/methods_en.html#core-metric-definitions",
@@ -375,21 +375,21 @@
     "href": "SI/appendix_en.html",
     "title": "Definitions Summary",
     "section": "",
-    "text": "English Summary · Korean appendix · Korean Report (PDF)"
+    "text": "English Summary · Full Korean appendix · Korean Report (PDF)"
   },
   {
     "objectID": "SI/appendix_en.html#observed-doi-linked-scope",
     "href": "SI/appendix_en.html#observed-doi-linked-scope",
     "title": "Definitions Summary",
     "section": "Observed DOI-linked scope",
-    "text": "Observed DOI-linked scope\nThe report analyzes policy-document references that can be linked to scholarly works through DOIs. This is a strong observed evidence-linkage layer, but it does not include every kind of policy evidence."
+    "text": "Observed DOI-linked scope\nThe report analyzes policy-document references that can be linked to scholarly works through DOIs. This is a useful observed linkage layer, but it omits policy evidence that is not DOI-linked."
   },
   {
     "objectID": "SI/appendix_en.html#repeated-citation-share",
     "href": "SI/appendix_en.html#repeated-citation-share",
     "title": "Definitions Summary",
     "section": "Repeated-citation share",
-    "text": "Repeated-citation share\nRepeated-citation share asks how many distinct scholarly works are cited by more than one policy document. In the baseline data, 48.1% of unique cited works are cited by at least two policy documents.\nThis should be read as a breadth-and-reuse signal within the observed DOI-linked scope."
+    "text": "Repeated-citation share\nRepeated-citation share measures the share of distinct scholarly works cited by more than one policy document. In the baseline data, 48.1% of unique cited works are cited by at least two policy documents.\nThis should be read as a breadth-and-reuse signal within the observed DOI-linked citation scope."
   },
   {
     "objectID": "SI/appendix_en.html#domestic-citation-share",
