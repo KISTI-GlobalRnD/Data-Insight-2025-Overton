@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Method and data-validity notes for the Overton × OpenAlex evidence map, including scope, denominators, matching, missingness, and interpretation guardrails.">
+<meta name="description" content="A short English web-only methods summary for the Overton x OpenAlex report, focused on scope, denominators, and interpretation boundaries.">
 
-<title>Overton × OpenAlex - Methods &amp; Data Validity</title>
+<title>Overton × OpenAlex - Methods Summary</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -96,36 +96,36 @@ ul.task-list li input[type="checkbox"] {
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../Report/Report_final.pdf"> 
-<span class="menu-text">Main Report (Korean PDF)</span></a>
+<span class="menu-text">Korean PDF</span></a>
   </li>  
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-" role="button" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Supplementary Information</span>
+ <span class="menu-text">English Summary</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-">    
         <li>
     <a class="dropdown-item" href="../SI/index_en.html">
- <span class="dropdown-text">Overview</span></a>
+ <span class="dropdown-text">English Summary</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../SI/update_202603_en.html">
- <span class="dropdown-text">2026 Data Update</span></a>
+ <span class="dropdown-text">2026 Update Summary</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../SI/methods_en.html">
- <span class="dropdown-text">Methods & Data Validity</span></a>
+ <span class="dropdown-text">Methods Summary</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../SI/interactive_en.html">
- <span class="dropdown-text">Interactive</span></a>
+ <span class="dropdown-text">Selected Figures</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../SI/appendix_en.html">
- <span class="dropdown-text">Appendix</span></a>
+ <span class="dropdown-text">Definitions Summary</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../SI/next_questions_en.html">
- <span class="dropdown-text">Next Questions</span></a>
+ <span class="dropdown-text">Next Questions Summary</span></a>
   </li>  
     </ul>
   </li>
@@ -145,12 +145,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#first-checks-1-min" id="toc-first-checks-1-min" class="nav-link active" data-scroll-target="#first-checks-1-min">First checks (1 min)</a></li>
-  <li><a href="#method-scope" id="toc-method-scope" class="nav-link" data-scroll-target="#method-scope">1) Analysis scope</a></li>
-  <li><a href="#method-matching" id="toc-method-matching" class="nav-link" data-scroll-target="#method-matching">2) Matching &amp; missingness checks</a></li>
-  <li><a href="#method-metrics" id="toc-method-metrics" class="nav-link" data-scroll-target="#method-metrics">3) Core metric definitions (summary)</a></li>
-  <li><a href="#method-guardrails" id="toc-method-guardrails" class="nav-link" data-scroll-target="#method-guardrails">4) Interpretation guardrails</a></li>
-  <li><a href="#method-protocol" id="toc-method-protocol" class="nav-link" data-scroll-target="#method-protocol">5) Recompute/update protocol</a></li>
+  <li><a href="#analysis-scope" id="toc-analysis-scope" class="nav-link active" data-scroll-target="#analysis-scope">Analysis scope</a></li>
+  <li><a href="#interpretation-boundaries" id="toc-interpretation-boundaries" class="nav-link" data-scroll-target="#interpretation-boundaries">Interpretation boundaries</a></li>
+  <li><a href="#core-metric-definitions" id="toc-core-metric-definitions" class="nav-link" data-scroll-target="#core-metric-definitions">Core metric definitions</a></li>
+  <li><a href="#practical-reading-rule" id="toc-practical-reading-rule" class="nav-link" data-scroll-target="#practical-reading-rule">Practical reading rule</a></li>
   </ul>
 </nav>
     </div>
@@ -159,12 +157,12 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Methods &amp; Data Validity</h1>
+<h1 class="title">Methods Summary</h1>
 </div>
 
 <div>
   <div class="description">
-    Method and data-validity notes for the Overton × OpenAlex evidence map, including scope, denominators, matching, missingness, and interpretation guardrails.
+    A short English web-only methods summary for the Overton x OpenAlex report, focused on scope, denominators, and interpretation boundaries.
   </div>
 </div>
 
@@ -181,24 +179,7 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><a href="../SI/index_en.html"><code>← SI Overview</code></a> · <a href="../SI/appendix_en.html"><code>Appendix</code></a> · <a href="../Report/Report_final.pdf"><code>Main Report (Korean PDF)</code></a> · <a href="../SI/methods.html"><code>Korean version</code></a></p>
-<p>This page summarizes the methodological checks needed to interpret the main report. For detailed tables and diagnostics, refer to the linked appendix sections.</p>
-<section id="first-checks-1-min" class="level2">
-<h2 class="anchored" data-anchor-id="first-checks-1-min">First checks (1 min)</h2>
-<ul>
-<li>Before country comparison, confirm results use only citations with known first-author country codes.</li>
-<li>Do not compare indicators with different denominators directly.</li>
-<li>If interpretation is unclear, review Sections 1-5 in order.</li>
-</ul>
-</section>
-<section id="method-scope" class="level2">
-<h2 class="anchored" data-anchor-id="method-scope">1) Analysis scope</h2>
-<p>Start by making the scope of the analysis explicit.</p>
-<ul>
-<li>Snapshot versions: Overton 2025.02 and OpenAlex 2025.06</li>
-<li>Unit of analysis: unique policy documents (deduplicated at the policy-document level)</li>
-<li>Citation scope: DOI-identified scholarly citations extracted from policy references</li>
-</ul>
+<p><a href="../SI/index_en.html"><code>English Summary</code></a> · <a href="../SI/methods.html"><code>Full Korean methods</code></a> · <a href="../Report/Report_final.pdf"><code>Korean PDF</code></a></p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -209,51 +190,71 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><strong>Interpretation boundary</strong></p>
-<ul>
-<li>Results are not a full census of all policy documents. They are observations within the current snapshot and matching scope.</li>
-<li>Non-DOI evidence (reports, legal texts, web sources) is outside the default indicator set.</li>
-</ul>
+<p>This is a summary page. The detailed methodology remains in the Korean SI.</p>
 </div>
 </div>
-</section>
-<section id="method-matching" class="level2">
-<h2 class="anchored" data-anchor-id="method-matching">2) Matching &amp; missingness checks</h2>
+<section id="analysis-scope" class="level2">
+<h2 class="anchored" data-anchor-id="analysis-scope">Analysis scope</h2>
 <ul>
-<li>The DOI → OpenAlex matching rate and country-code missingness are primary safety checks.</li>
-<li>For country comparisons, first confirm the denominator uses citations with known first-author country codes.</li>
+<li>Data sources: Overton policy-document references and OpenAlex scholarly-work metadata.</li>
+<li>Main citation unit: DOI-linked policy-document -&gt; scholarly-work citation records.</li>
+<li>Document unit: Overton policy documents deduplicated at the policy-document level.</li>
+<li>Country comparisons use first-author country metadata where available.</li>
 </ul>
-<p>Details: - <a href="../SI/appendix_en.html#data-fitness">Appendix B0-1. Matching &amp; missingness</a> - <a href="../SI/appendix_en.html#appendix-b-quick">Appendix B0. Quick definitions</a></p>
 </section>
-<section id="method-metrics" class="level2">
-<h2 class="anchored" data-anchor-id="method-metrics">3) Core metric definitions (summary)</h2>
-<p>The definitions below provide a minimum baseline for re-reading the headline numbers.</p>
+<section id="interpretation-boundaries" class="level2">
+<h2 class="anchored" data-anchor-id="interpretation-boundaries">Interpretation boundaries</h2>
 <ul>
-<li>Citation counts vs unique works: separate frequency from breadth</li>
-<li>Recency: share of policy citations to works published in <code>2022-2024</code></li>
-<li>Citation intensity: <code>citation counts / unique works</code> within an aggregation unit</li>
-<li>Domestic-citation share: country-level same-country citation share, computed only over citations with known first-author country codes</li>
+<li>The analysis covers <strong>observed DOI-linked policy-to-research citations</strong>, not the full policy universe.</li>
+<li>Non-DOI evidence such as reports, legislation, web pages, and narrative references is outside the default indicators.</li>
+<li>Policy source country and type tags can be non-exclusive, so totals should be read as tag-based summaries.</li>
+<li>Country-level indicators should be read with missing first-author country codes in mind.</li>
 </ul>
-<p>Details: - <a href="../SI/appendix_en.html#citations-vs-works">Citations vs works</a> - <a href="../SI/appendix_en.html#recency-intensity">Recency / intensity</a> - <a href="../SI/appendix_en.html#self-citation-share">Domestic-citation share</a></p>
 </section>
-<section id="method-guardrails" class="level2">
-<h2 class="anchored" data-anchor-id="method-guardrails">4) Interpretation guardrails</h2>
-<p>The items below are the minimum checks needed before reading the results too strongly.</p>
-<ul>
-<li>Multi-label topics can produce totals above 100%.</li>
-<li>Recent-year declines may reflect observation/accumulation lag rather than a structural reversal.</li>
-<li>The 2012 mean spike should be read with distribution diagnostics (median/trimmed mean), not a single average.</li>
-</ul>
-<p>Details: - <a href="../SI/appendix_en.html#multilabel">Multi-label topics</a> - <a href="../SI/appendix_en.html#recent-years-decline">Recent-year decline caution</a> - <a href="../SI/appendix_en.html#why-2012">Why 2012 looks high</a></p>
+<section id="core-metric-definitions" class="level2">
+<h2 class="anchored" data-anchor-id="core-metric-definitions">Core metric definitions</h2>
+<table class="table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Metric</th>
+<th>Summary definition</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Citation count</td>
+<td>Number of DOI-linked policy-to-research citation records.</td>
+</tr>
+<tr class="even">
+<td>Unique works</td>
+<td>Distinct OpenAlex works cited by policy documents.</td>
+</tr>
+<tr class="odd">
+<td>Repeat-citation share</td>
+<td>Share of unique cited works cited by at least two policy documents.</td>
+</tr>
+<tr class="even">
+<td>Citation intensity</td>
+<td>Policy citations divided by unique cited works within a unit.</td>
+</tr>
+<tr class="odd">
+<td>Recency</td>
+<td>Share of policy citations to works published in 2022-2024.</td>
+</tr>
+<tr class="even">
+<td>Domestic-citation share</td>
+<td>Country-level same-country citation share, among citations with known first-author country.</td>
+</tr>
+</tbody>
+</table>
 </section>
-<section id="method-protocol" class="level2">
-<h2 class="anchored" data-anchor-id="method-protocol">5) Recompute/update protocol</h2>
-<p>Finally, the same checks should be repeatable in the next update cycle.</p>
-<ul>
-<li>Recompute the same indicators quarterly or biannually and track directional state (rising/stable/easing).</li>
-<li>Keep the main report headline-focused, while updating formulas, sensitivity checks, and supporting tables in the SI layer.</li>
-<li>Record all figure/text changes and rebuilt outputs in the update log.</li>
-</ul>
+<section id="practical-reading-rule" class="level2">
+<h2 class="anchored" data-anchor-id="practical-reading-rule">Practical reading rule</h2>
+<p>Do not compare headline numbers until the denominator is clear. The most important denominator check is whether a metric uses all DOI-linked citation rows, unique works, policy documents, or only citations with known first-author country.</p>
 
 
 </section>

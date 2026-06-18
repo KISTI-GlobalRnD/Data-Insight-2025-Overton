@@ -33,15 +33,15 @@
     },
     en: {
       main: { text: "Main", href: "../index_en.html" },
-      report: { text: "Main Report (Korean PDF)", href: "../Report/Report_final.pdf" },
-      menu: "Supplementary Information",
+      report: { text: "Korean PDF", href: "../Report/Report_final.pdf" },
+      menu: "English Summary",
       items: [
-        { text: "Overview", href: "../SI/index_en.html" },
-        { text: "2026 Data Update", href: "../SI/update_202603_en.html" },
-        { text: "Methods & Data Validity", href: "../SI/methods_en.html" },
-        { text: "Interactive", href: "../SI/interactive_en.html" },
-        { text: "Appendix", href: "../SI/appendix_en.html" },
-        { text: "Next Questions", href: "../SI/next_questions_en.html" },
+        { text: "English Summary", href: "../SI/index_en.html" },
+        { text: "2026 Update Summary", href: "../SI/update_202603_en.html" },
+        { text: "Methods Summary", href: "../SI/methods_en.html" },
+        { text: "Selected Figures", href: "../SI/interactive_en.html" },
+        { text: "Definitions Summary", href: "../SI/appendix_en.html" },
+        { text: "Next Questions Summary", href: "../SI/next_questions_en.html" },
       ],
     },
   };

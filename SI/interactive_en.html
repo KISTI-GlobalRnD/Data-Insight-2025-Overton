@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="English interactive figure page for the Overton × OpenAlex evidence map, with zoomable country, source-type, topic, and Korea evidence-flow diagnostics.">
+<meta name="description" content="A concise English web-only guide to selected interactive figures from the Overton x OpenAlex report.">
 
-<title>Overton × OpenAlex - Interactive</title>
+<title>Overton × OpenAlex - Selected Figures</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -96,36 +96,36 @@ ul.task-list li input[type="checkbox"] {
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../Report/Report_final.pdf"> 
-<span class="menu-text">Main Report (Korean PDF)</span></a>
+<span class="menu-text">Korean PDF</span></a>
   </li>  
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-" role="button" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Supplementary Information</span>
+ <span class="menu-text">English Summary</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-">    
         <li>
     <a class="dropdown-item" href="../SI/index_en.html">
- <span class="dropdown-text">Overview</span></a>
+ <span class="dropdown-text">English Summary</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../SI/update_202603_en.html">
- <span class="dropdown-text">2026 Data Update</span></a>
+ <span class="dropdown-text">2026 Update Summary</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../SI/methods_en.html">
- <span class="dropdown-text">Methods & Data Validity</span></a>
+ <span class="dropdown-text">Methods Summary</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../SI/interactive_en.html">
- <span class="dropdown-text">Interactive</span></a>
+ <span class="dropdown-text">Selected Figures</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../SI/appendix_en.html">
- <span class="dropdown-text">Appendix</span></a>
+ <span class="dropdown-text">Definitions Summary</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../SI/next_questions_en.html">
- <span class="dropdown-text">Next Questions</span></a>
+ <span class="dropdown-text">Next Questions Summary</span></a>
   </li>  
     </ul>
   </li>
@@ -147,12 +147,12 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Interactive</h1>
+<h1 class="title">Selected Figures</h1>
 </div>
 
 <div>
   <div class="description">
-    English interactive figure page for the Overton × OpenAlex evidence map, with zoomable country, source-type, topic, and Korea evidence-flow diagnostics.
+    A concise English web-only guide to selected interactive figures from the Overton x OpenAlex report.
   </div>
 </div>
 
@@ -172,13 +172,11 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#chapter-1.-linkage-signals-time-domains-topics" id="toc-chapter-1.-linkage-signals-time-domains-topics">Chapter 1. Linkage signals (time, domains, topics)</a></li>
-  <li><a href="#chapter-2.-hubs-who-accumulates-evidence" id="toc-chapter-2.-hubs-who-accumulates-evidence">Chapter 2. Hubs (who accumulates evidence)</a></li>
-  <li><a href="#chapter-3.-korea-asymmetry-inbound-vs-policy-sourcing" id="toc-chapter-3.-korea-asymmetry-inbound-vs-policy-sourcing">Chapter 3. Korea (asymmetry: inbound vs policy-sourcing)</a></li>
+  <li><a href="#what-to-inspect" id="toc-what-to-inspect">What to inspect</a></li>
+  <li><a href="#short-interpretation" id="toc-short-interpretation">Short interpretation</a></li>
   </ul>
 </nav>
-<p><a href="../SI/index_en.html"><code>← SI Overview</code></a> · <a href="../Report/Report_final.pdf"><code>Main Report (Korean PDF)</code></a> · <a href="../SI/interactive.html"><code>Korean version</code></a></p>
-<p>Among the figures in the Main Report (Korean PDF), the ones worth <strong>zooming in, toggling items, and inspecting values</strong> are provided here as interactive versions. This page is designed for freer web exploration. The plots below are <strong>loaded only after you click the button</strong>, so the page itself opens quickly.</p>
+<p><a href="../SI/index_en.html"><code>English Summary</code></a> · <a href="../SI/interactive.html"><code>Full Korean interactive page</code></a> · <a href="../Report/Report_final.pdf"><code>Korean PDF</code></a></p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -189,275 +187,64 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><strong>How this page complements the main report</strong></p>
-<ul>
-<li>It extends the SI figures 1–12 into interactive web versions (zoom, legend toggle, value inspection).</li>
-<li>The Main Report (Korean PDF) renumbers figures to 1–8. If you get lost, use the <a href="../SI/index_en.html#report-extended-map">map table</a>.</li>
-<li>It lets you check detailed values that are hard to include on paper.</li>
-<li>For network layouts, treat positions and distances as a visual aid, not as precise measurements.</li>
-</ul>
+<p>This page gives only a short English guide to selected web figures. The full figure set and detailed captions remain in the Korean SI.</p>
 </div>
 </div>
-<p><strong>Recommended order (SI flow)</strong></p>
-<ul>
-<li>Chapter 1 (Figures 1–4): Use time/domain/topic signals to get the overall landscape.</li>
-<li>Chapter 2 (Figures 5–7): Check where evidence accumulates across hub channels.</li>
-<li>Chapter 3 (Figures 8–12): Inspect Korea’s inbound/policy-sourcing asymmetry and sourcing baselines.</li>
-</ul>
-<p><strong>Reading pattern (common)</strong></p>
-<ul>
-<li>Read every figure in the same order: <code>observation → interpretation → check</code>.</li>
-<li>In the check step, validate definitions/missingness guardrails in the appendix before drawing conclusions.</li>
-</ul>
-<p><strong>Tips</strong></p>
-<ul>
-<li>Click legends: toggle series on/off</li>
-<li>Hover: inspect metric values</li>
-<li>Open in new tab: use full browser viewport</li>
-</ul>
-<p><strong>Captions</strong></p>
-<ul>
-<li>Main Report (Korean PDF): Korean captions only</li>
-<li>SI Interactive: English captions are provided under each figure title</li>
-</ul>
-<hr>
-<section id="chapter-1.-linkage-signals-time-domains-topics" class="level2">
-<h2 class="anchored" data-anchor-id="chapter-1.-linkage-signals-time-domains-topics">Chapter 1. Linkage signals (time, domains, topics)</h2>
-<div class="si-section-ref">
-<p>SI: Figures 1–4 · Main Report (Korean PDF): Chapter 4 (Figures 7–8). (SI-only: Figures 1 and 3) · Related: <a href="../SI/appendix_en.html#why-2012">Why 2012?</a>, <a href="../SI/appendix_en.html#recent-years-decline">Recent-year decline</a>, <a href="../SI/appendix_en.html#data-fitness">Matching &amp; missingness</a></p>
-</div>
-<section id="si-fig-1" class="level3">
-<h3 class="anchored" data-anchor-id="si-fig-1">Figure 1. Policy documents by publication year: citations, documents, and citations per document</h3>
-<div class="si-guidance">
-<p><strong>What to look for</strong></p>
-<ul>
-<li>Observation: Check whether there is an inflection around 2012 in citations per document.</li>
-<li>Interpretation: The post-2022 decline may reflect observation/accumulation lag rather than structural reversal.</li>
-<li>Check: Validate with <a href="../SI/appendix_en.html#why-2012">Why 2012?</a> and <a href="../SI/appendix_en.html#recent-years-decline">Recent-year decline</a>.</li>
-</ul>
-</div>
-<div class="si-plot" data-src="../Assets/Interactive/pubyear_trend.html?lang=en" data-height="650" data-title="Interactive plot: Figure 1 — Policy documents by publication year">
-  <div class="si-plot__actions">
-    <a class="si-plot__link" href="../Assets/Interactive/pubyear_trend.html?lang=en" target="_blank" rel="noopener">Open in new tab</a>
-    <button type="button" class="si-plot__btn">Load plot</button>
-  </div>
-</div>
+<section id="what-to-inspect" class="level2">
+<h2 class="anchored" data-anchor-id="what-to-inspect">What to inspect</h2>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Question</th>
+<th>Suggested figure</th>
+<th>Reading point</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Where does policy evidence concentrate?</td>
+<td><a href="../Assets/Interactive/country_citations_top10.html?lang=en" target="_blank">Policy-source hubs</a></td>
+<td>Compare total citation volume with citations per policy document.</td>
+</tr>
+<tr class="even">
+<td>Do source types cite different research domains?</td>
+<td><a href="../Assets/Interactive/source_type_domain_heatmap.html?lang=en" target="_blank">Source type x domain heatmap</a></td>
+<td>Read source roles by domain composition, not by total volume alone.</td>
+</tr>
+<tr class="odd">
+<td>How asymmetric is Korea’s evidence route?</td>
+<td><a href="../Assets/Interactive/korea_policy_research_flows_top10.html?lang=en" target="_blank">Korea evidence flows</a></td>
+<td>Separate inbound citations to Korean research from research cited by Korean policy documents.</td>
+</tr>
+<tr class="even">
+<td>Which research countries do policy sources cite?</td>
+<td><a href="../Assets/Interactive/policy_to_research_country_heatmap.html?lang=en" target="_blank">Policy source -&gt; research country matrix</a></td>
+<td>Compare absolute volume and within-source share separately.</td>
+</tr>
+<tr class="odd">
+<td>How should domestic-citation share be read?</td>
+<td><a href="../Assets/Interactive/policy_country_self_share_selected.html?lang=en" target="_blank">Domestic-citation share</a></td>
+<td>Use it as a diagnostic among citations with known first-author country.</td>
+</tr>
+<tr class="even">
+<td>Which topics move at different speeds?</td>
+<td><a href="../Assets/Interactive/topic_intensity_vs_recency.html?lang=en" target="_blank">Topic intensity vs recency</a></td>
+<td>Separate high-recency topics from accumulated high-intensity topics.</td>
+</tr>
+</tbody>
+</table>
 </section>
-<section id="si-fig-2" class="level3">
-<h3 class="anchored" data-anchor-id="si-fig-2">Figure 2. Field composition within top policy-cited domains</h3>
-<div class="si-guidance">
-<p><strong>What to look for</strong></p>
+<section id="short-interpretation" class="level2">
+<h2 class="anchored" data-anchor-id="short-interpretation">Short interpretation</h2>
+<p>The interactive figures are intended for checking the structure behind the headline claims. They should not be read as a complete English replacement for the Korean report.</p>
+<p>Most comparisons require three safeguards:</p>
 <ul>
-<li>Observation: Read top-3 field concentration and <code>field missing</code> segments together.</li>
-<li>Interpretation: Large missing segments make composition comparisons less stable.</li>
-<li>Check: Cross-check with <a href="../SI/appendix_en.html#data-fitness">Matching &amp; missingness</a> and <a href="../SI/appendix_en.html#multilabel">Multi-label topics</a>.</li>
+<li>separate volume from density;</li>
+<li>separate inbound evidence routes from policy-sourcing routes;</li>
+<li>check whether the denominator changes before comparing percentages.</li>
 </ul>
-</div>
-<div class="si-plot" data-src="../Assets/Interactive/domain_top10.html?lang=en" data-height="650" data-title="Interactive plot: Figure 2 — Policy citations by domain (top 4; stacked by field)">
-  <div class="si-plot__actions">
-    <a class="si-plot__link" href="../Assets/Interactive/domain_top10.html?lang=en" target="_blank" rel="noopener">Open in new tab</a>
-    <button type="button" class="si-plot__btn">Load plot</button>
-  </div>
-</div>
-</section>
-<section id="si-fig-3" class="level3">
-<h3 class="anchored" data-anchor-id="si-fig-3">Figure 3. Topics: policy citations vs unique papers (bubble size: OA share)</h3>
-<div class="si-guidance">
-<p><strong>What to look for</strong></p>
-<ul>
-<li>Observation: Identify topics with disproportionately high policy citations relative to paper counts.</li>
-<li>Interpretation: These points are demand-supply mismatch candidates.</li>
-<li>Check: Treat bubble size (OA) as a candidate factor only, and read with <a href="../SI/appendix_en.html#oa-interpretation">OA interpretation</a>.</li>
-</ul>
-</div>
-<div class="si-plot" data-src="../Assets/Interactive/topic_scatter_citations_vs_papers.html?lang=en" data-height="750" data-title="Interactive plot: Figure 3 — Topic scatter (citations vs papers)">
-  <div class="si-plot__actions">
-    <a class="si-plot__link" href="../Assets/Interactive/topic_scatter_citations_vs_papers.html?lang=en" target="_blank" rel="noopener">Open in new tab</a>
-    <span class="si-plot__badge">May load slowly</span>
-    <button type="button" class="si-plot__btn">Load plot</button>
-  </div>
-</div>
-</section>
-<section id="si-fig-4" class="level3">
-<h3 class="anchored" data-anchor-id="si-fig-4">Figure 4. Topics: citation intensity vs recency</h3>
-<div class="si-guidance">
-<p><strong>What to look for</strong></p>
-<ul>
-<li>Observation: Separate upper-right (high recency/high intensity) from upper-left (high intensity/low recency) clusters.</li>
-<li>Interpretation: The former can indicate fast-rising agendas; the latter accumulated/mature evidence pools.</li>
-<li>Check: Recheck whether the same topics keep their positions in the next snapshot.</li>
-</ul>
-</div>
-<div class="si-plot" data-src="../Assets/Interactive/topic_intensity_vs_recency.html?lang=en" data-height="750" data-title="Interactive plot: Figure 4 — Topic intensity vs recency">
-  <div class="si-plot__actions">
-    <a class="si-plot__link" href="../Assets/Interactive/topic_intensity_vs_recency.html?lang=en" target="_blank" rel="noopener">Open in new tab</a>
-    <span class="si-plot__badge">May load slowly</span>
-    <button type="button" class="si-plot__btn">Load plot</button>
-  </div>
-</div>
-<hr>
-</section>
-</section>
-<section id="chapter-2.-hubs-who-accumulates-evidence" class="level2">
-<h2 class="anchored" data-anchor-id="chapter-2.-hubs-who-accumulates-evidence">Chapter 2. Hubs (who accumulates evidence)</h2>
-<div class="si-section-ref">
-<p>SI: Figures 5–7 · Main Report (Korean PDF): Chapter 2 hubs (Figures 1–3) · Related: <a href="../SI/appendix_en.html#appendix-a">Appendix: Coverage &amp; tagging</a></p>
-</div>
-<section id="si-fig-5" class="level3">
-<h3 class="anchored" data-anchor-id="si-fig-5">Figure 5. Policy sources: total citations vs citations per document, and domain composition (top 10 and Korea)</h3>
-<div class="si-guidance">
-<p><strong>What to look for</strong></p>
-<ul>
-<li>Observation: Compare rank order differences between total volume and per-document intensity.</li>
-<li>Interpretation: Scale hubs and density hubs may diverge.</li>
-<li>Check: Track whether overlap between the two top groups expands or shrinks over time.</li>
-</ul>
-</div>
-<div class="si-plot" data-src="../Assets/Interactive/country_citations_top10.html?lang=en" data-height="650" data-title="Interactive plot: Figure 5 — Country citations (total, per policy doc, and domain composition)">
-  <div class="si-plot__actions">
-    <a class="si-plot__link" href="../Assets/Interactive/country_citations_top10.html?lang=en" target="_blank" rel="noopener">Open in new tab</a>
-    <button type="button" class="si-plot__btn">Load plot</button>
-  </div>
-</div>
-</section>
-<section id="si-fig-6" class="level3">
-<h3 class="anchored" data-anchor-id="si-fig-6">Figure 6. Source types: total citations vs citations per policy document</h3>
-<div class="si-guidance">
-<p><strong>What to look for</strong></p>
-<ul>
-<li>Observation: Compare source types by total volume and per-document intensity separately.</li>
-<li>Interpretation: Document-production scale and evidence density are different signals.</li>
-<li>Check: Keep non-exclusive tagging in mind and compare pattern differences first.</li>
-</ul>
-</div>
-<p>Source type labels are tag-based (not mutually exclusive), so a single document can carry multiple type tags. Interpret the values below as summaries by source-type tag.</p>
-<div class="si-plot" data-src="../Assets/Interactive/source_type_citations_per_policy_doc.html?lang=en" data-height="650" data-title="Interactive plot: Figure 6 — Citations per policy document by source type">
-  <div class="si-plot__actions">
-    <a class="si-plot__link" href="../Assets/Interactive/source_type_citations_per_policy_doc.html?lang=en" target="_blank" rel="noopener">Open in new tab</a>
-    <button type="button" class="si-plot__btn">Load plot</button>
-  </div>
-</div>
-</section>
-<section id="si-fig-7" class="level3">
-<h3 class="anchored" data-anchor-id="si-fig-7">Figure 7. Share heatmap: source type × domain (major types and top domains)</h3>
-<div class="si-guidance">
-<p><strong>What to look for</strong></p>
-<ul>
-<li>Observation: Check how domain shares shift across source types.</li>
-<li>Interpretation: Composition shifts can indicate differences in source role/agenda.</li>
-<li>Check: If <code>unspecified</code> is large for a type, keep interpretation conservative.</li>
-</ul>
-</div>
-<p>Values are normalized within each source type (shares by domain within the type). Use it to compare <strong>composition</strong>, not total volume.</p>
-<div class="si-plot" data-src="../Assets/Interactive/source_type_domain_heatmap.html?lang=en" data-height="760" data-title="Interactive plot: Figure 7 — Source type × domain share heatmap">
-  <div class="si-plot__actions">
-    <a class="si-plot__link" href="../Assets/Interactive/source_type_domain_heatmap.html?lang=en" target="_blank" rel="noopener">Open in new tab</a>
-    <button type="button" class="si-plot__btn">Load plot</button>
-  </div>
-</div>
-<hr>
-</section>
-</section>
-<section id="chapter-3.-korea-asymmetry-inbound-vs-policy-sourcing" class="level2">
-<h2 class="anchored" data-anchor-id="chapter-3.-korea-asymmetry-inbound-vs-policy-sourcing">Chapter 3. Korea (asymmetry: inbound vs policy-sourcing)</h2>
-<div class="si-section-ref">
-<p>SI: Figures 8–12 · Main Report (Korean PDF): Chapter 3 Korea (Figures 4–6). (SI-only: Figures 9–10) · Related: <a href="../SI/appendix_en.html#self-citation-share">Appendix: domestic-citation share</a></p>
-</div>
-<section id="si-fig-8" class="level3">
-<h3 class="anchored" data-anchor-id="si-fig-8">Figure 8. Domain mix mismatch (top 50): policy-cited research vs cited research supply</h3>
-<div class="si-guidance">
-<p><strong>What to look for</strong></p>
-<ul>
-<li>Observation: Use above/below-diagonal positions to read domain-level mismatch direction.</li>
-<li>Interpretation: Direction can flip by domain within the same country.</li>
-<li>Check: Track whether absolute domain gaps (pp) are easing, stable, or widening.</li>
-</ul>
-</div>
-<div class="si-plot" data-src="../Assets/Interactive/country_domain_demand_supply_scatter_top50.html?lang=en" data-height="820" data-title="Interactive plot: Figure 8 — Domain mix mismatch (demand vs supply)">
-  <div class="si-plot__actions">
-    <a class="si-plot__link" href="../Assets/Interactive/country_domain_demand_supply_scatter_top50.html?lang=en" target="_blank" rel="noopener">Open in new tab</a>
-    <span class="si-plot__badge">May load slowly</span>
-    <button type="button" class="si-plot__btn">Load plot</button>
-  </div>
-</div>
-</section>
-<section id="si-fig-9" class="level3">
-<h3 class="anchored" data-anchor-id="si-fig-9">Figure 9. Policy source → research country matrix: absolute volume and within-source share</h3>
-<div class="si-guidance">
-<p><strong>What to look for</strong></p>
-<ul>
-<li>Observation: Compare left-panel absolute volume and right-panel within-source share separately.</li>
-<li>Interpretation: High volume and concentrated sourcing are different conditions.</li>
-<li>Check: Track top-1 country share and top-3 combined share together.</li>
-</ul>
-</div>
-<p>The left panel shows absolute volume on a log scale. The right panel shows within-policy-source shares. Research countries not in the policy-source list are grouped into regions.</p>
-<div class="si-plot" data-src="../Assets/Interactive/policy_to_research_country_heatmap.html?lang=en" data-height="820" data-title="Interactive plot: Figure 9 — Policy source → research country citations">
-  <div class="si-plot__actions">
-    <a class="si-plot__link" href="../Assets/Interactive/policy_to_research_country_heatmap.html?lang=en" target="_blank" rel="noopener">Open in new tab</a>
-    <span class="si-plot__badge">May load slowly</span>
-    <button type="button" class="si-plot__btn">Load plot</button>
-  </div>
-</div>
-<hr>
-</section>
-<section id="si-fig-10" class="level3">
-<h3 class="anchored" data-anchor-id="si-fig-10">Figure 10. Domestic-citation share vs expected, and domain mix of domestic vs non-domestic citations (top 7 and Korea)</h3>
-<div class="si-guidance">
-<p><strong>What to look for</strong></p>
-<ul>
-<li>Observation: Read domestic-citation shares together with actual-minus-expected values.</li>
-<li>Interpretation: Actual-minus-expected is a relative comparison to a domain-weighted baseline.</li>
-<li>Check: Before country comparison, confirm the denominator uses only citations with known first-author country codes.</li>
-</ul>
-</div>
-<div class="si-plot" data-src="../Assets/Interactive/policy_country_self_share_selected.html?lang=en" data-height="650" data-title="Interactive plot: Figure 10 — Domestic-citation share vs expected and domain portfolio">
-  <div class="si-plot__actions">
-    <a class="si-plot__link" href="../Assets/Interactive/policy_country_self_share_selected.html?lang=en" target="_blank" rel="noopener">Open in new tab</a>
-    <button type="button" class="si-plot__btn">Load plot</button>
-  </div>
-</div>
-</section>
-<section id="si-fig-11" class="level3">
-<h3 class="anchored" data-anchor-id="si-fig-11">Figure 11. Korea evidence flows (inbound vs sourcing) and domain composition (top 10)</h3>
-<div class="si-guidance">
-<p><strong>What to look for</strong></p>
-<ul>
-<li>Observation: Separate inbound (Korean research → global policy) and sourcing (Korean policy → research) top routes.</li>
-<li>Interpretation: Different top routes across directions indicate structural asymmetry.</li>
-<li>Check: Track direction-specific concentration metrics separately (inbound top-3 vs sourcing top-1).</li>
-</ul>
-</div>
-<div class="si-plot" data-src="../Assets/Interactive/korea_policy_research_flows_top10.html?lang=en" data-height="820" data-title="Interactive plot: Figure 11 — Republic of Korea evidence flows and domain portfolios (top 10)">
-  <div class="si-plot__actions">
-    <a class="si-plot__link" href="../Assets/Interactive/korea_policy_research_flows_top10.html?lang=en" target="_blank" rel="noopener">Open in new tab</a>
-    <button type="button" class="si-plot__btn">Load plot</button>
-  </div>
-</div>
-</section>
-<section id="si-fig-12" class="level3">
-<h3 class="anchored" data-anchor-id="si-fig-12">Figure 12. Policy–research evidence flow network</h3>
-<div class="si-guidance">
-<p><strong>What to look for</strong></p>
-<ul>
-<li>Observation: Follow backbone routes (top nodes/top links) connected to Korea.</li>
-<li>Interpretation: This is a structural summary map, not a full network.</li>
-<li>Check: Do not read layout distance as a quantitative metric; read connectivity only.</li>
-</ul>
-</div>
-<p>Layout is an exploratory aid. Distances between nodes are not absolute measurements; do not interpret “closeness” quantitatively.</p>
-<p>Notation: <code>EU</code> = European Union, <code>IGO</code> = International organizations.</p>
-<div class="si-plot" data-src="../Assets/Interactive/policy_research_flow_network_drl.html?lang=en" data-height="820" data-title="Interactive plot: Figure 12 — Policy–research evidence flows">
-  <div class="si-plot__actions">
-    <a class="si-plot__link" href="../Assets/Interactive/policy_research_flow_network_drl.html?lang=en" target="_blank" rel="noopener">Open in new tab</a>
-    <span class="si-plot__badge">May load slowly</span>
-    <button type="button" class="si-plot__btn">Load plot</button>
-  </div>
-</div>
-<hr>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->

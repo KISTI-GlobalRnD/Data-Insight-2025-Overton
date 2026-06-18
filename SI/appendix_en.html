@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="English appendix for the Overton × OpenAlex evidence map, covering coverage notes, metric definitions, interpretation cautions, and additional diagnostic figures.">
+<meta name="description" content="A compact English web-only definitions summary for the Overton x OpenAlex report.">
 
-<title>Overton × OpenAlex - Appendix</title>
+<title>Overton × OpenAlex - Definitions Summary</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -96,36 +96,36 @@ ul.task-list li input[type="checkbox"] {
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../Report/Report_final.pdf"> 
-<span class="menu-text">Main Report (Korean PDF)</span></a>
+<span class="menu-text">Korean PDF</span></a>
   </li>  
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-" role="button" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Supplementary Information</span>
+ <span class="menu-text">English Summary</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-">    
         <li>
     <a class="dropdown-item" href="../SI/index_en.html">
- <span class="dropdown-text">Overview</span></a>
+ <span class="dropdown-text">English Summary</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../SI/update_202603_en.html">
- <span class="dropdown-text">2026 Data Update</span></a>
+ <span class="dropdown-text">2026 Update Summary</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../SI/methods_en.html">
- <span class="dropdown-text">Methods & Data Validity</span></a>
+ <span class="dropdown-text">Methods Summary</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../SI/interactive_en.html">
- <span class="dropdown-text">Interactive</span></a>
+ <span class="dropdown-text">Selected Figures</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../SI/appendix_en.html">
- <span class="dropdown-text">Appendix</span></a>
+ <span class="dropdown-text">Definitions Summary</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../SI/next_questions_en.html">
- <span class="dropdown-text">Next Questions</span></a>
+ <span class="dropdown-text">Next Questions Summary</span></a>
   </li>  
     </ul>
   </li>
@@ -145,37 +145,11 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#reading-order-2-min" id="toc-reading-order-2-min" class="nav-link active" data-scroll-target="#reading-order-2-min">Reading order (2 min)</a></li>
-  <li><a href="#appendix-a" id="toc-appendix-a" class="nav-link" data-scroll-target="#appendix-a">A. Coverage &amp; tagging</a>
-  <ul class="collapse">
-  <li><a href="#a1.-policy-document-coverage-map-documents-by-policy-source-country" id="toc-a1.-policy-document-coverage-map-documents-by-policy-source-country" class="nav-link" data-scroll-target="#a1.-policy-document-coverage-map-documents-by-policy-source-country">A1. Policy document coverage map (documents by policy source country)</a></li>
-  <li><a href="#a2.-why-exclude-sub-tags-a-b-and-keep-top-level-country-tags-only" id="toc-a2.-why-exclude-sub-tags-a-b-and-keep-top-level-country-tags-only" class="nav-link" data-scroll-target="#a2.-why-exclude-sub-tags-a-b-and-keep-top-level-country-tags-only">A2. Why exclude sub-tags (<code>A &gt; B</code>) and keep top-level country tags only</a></li>
-  <li><a href="#a3.-why-do-we-need-exceptions-for-hong-kong-georgia" id="toc-a3.-why-do-we-need-exceptions-for-hong-kong-georgia" class="nav-link" data-scroll-target="#a3.-why-do-we-need-exceptions-for-hong-kong-georgia">A3. Why do we need exceptions for Hong Kong / Georgia</a></li>
-  </ul></li>
-  <li><a href="#appendix-b" id="toc-appendix-b" class="nav-link" data-scroll-target="#appendix-b">B. Definitions &amp; interpretation</a>
-  <ul class="collapse">
-  <li><a href="#appendix-b-quick" id="toc-appendix-b-quick" class="nav-link" data-scroll-target="#appendix-b-quick">B0. Quick definitions (summary)</a></li>
-  <li><a href="#data-fitness" id="toc-data-fitness" class="nav-link" data-scroll-target="#data-fitness">B0-1. Matching &amp; missingness summary</a></li>
-  <li><a href="#doi-share" id="toc-doi-share" class="nav-link" data-scroll-target="#doi-share">B1. DOI-citation coverage share (97.6%): denominator</a></li>
-  <li><a href="#repeat-share" id="toc-repeat-share" class="nav-link" data-scroll-target="#repeat-share">B2. Repeat-citation share (48.1%): definition</a></li>
-  <li><a href="#citations-vs-works" id="toc-citations-vs-works" class="nav-link" data-scroll-target="#citations-vs-works">B3. Citations vs works</a></li>
-  <li><a href="#recency-intensity" id="toc-recency-intensity" class="nav-link" data-scroll-target="#recency-intensity">B4. Recency / intensity</a></li>
-  <li><a href="#self-citation-share" id="toc-self-citation-share" class="nav-link" data-scroll-target="#self-citation-share">B5. Domestic-citation share</a></li>
-  <li><a href="#multilabel" id="toc-multilabel" class="nav-link" data-scroll-target="#multilabel">B6. Multi-label topics</a></li>
-  <li><a href="#recent-years-decline" id="toc-recent-years-decline" class="nav-link" data-scroll-target="#recent-years-decline">B7. Recent-year decline caution</a></li>
-  <li><a href="#why-2012" id="toc-why-2012" class="nav-link" data-scroll-target="#why-2012">B8. Why 2012 looks high</a></li>
-  <li><a href="#oa-interpretation" id="toc-oa-interpretation" class="nav-link" data-scroll-target="#oa-interpretation">B9. OA interpretation</a></li>
-  </ul></li>
-  <li><a href="#appendix-c" id="toc-appendix-c" class="nav-link" data-scroll-target="#appendix-c">C. Additional figures</a>
-  <ul class="collapse">
-  <li><a href="#c1.-extended-for-chapter-2-top-n-topics-subfields" id="toc-c1.-extended-for-chapter-2-top-n-topics-subfields" class="nav-link" data-scroll-target="#c1.-extended-for-chapter-2-top-n-topics-subfields">C1. Extended for Chapter 2: Top-N topics / subfields</a></li>
-  <li><a href="#c2.-extended-for-chapter-3-source-type-x-topic-heatmap" id="toc-c2.-extended-for-chapter-3-source-type-x-topic-heatmap" class="nav-link" data-scroll-target="#c2.-extended-for-chapter-3-source-type-x-topic-heatmap">C2. Extended for Chapter 3: source type x topic (heatmap)</a></li>
-  <li><a href="#c3.-oa-reference-figures-by-domain-source-type" id="toc-c3.-oa-reference-figures-by-domain-source-type" class="nav-link" data-scroll-target="#c3.-oa-reference-figures-by-domain-source-type">C3. OA reference figures (by domain / source type)</a></li>
-  <li><a href="#c4.-domestic-citation-share-top-10" id="toc-c4.-domestic-citation-share-top-10" class="nav-link" data-scroll-target="#c4.-domestic-citation-share-top-10">C4. Domestic-citation share (Top 10)</a></li>
-  <li><a href="#c5.-openalex-subfield-overton-domain-network-top-100" id="toc-c5.-openalex-subfield-overton-domain-network-top-100" class="nav-link" data-scroll-target="#c5.-openalex-subfield-overton-domain-network-top-100">C5. OpenAlex subfield → Overton domain network (Top 100)</a></li>
-  <li><a href="#c6.-uneven-and-repeated-citation-distributions-log-log-ccdf" id="toc-c6.-uneven-and-repeated-citation-distributions-log-log-ccdf" class="nav-link" data-scroll-target="#c6.-uneven-and-repeated-citation-distributions-log-log-ccdf">C6. Uneven and repeated-citation distributions (log-log CCDF)</a></li>
-  <li><a href="#c7.-domain-demand-supply-composition-gap-delta-pp" id="toc-c7.-domain-demand-supply-composition-gap-delta-pp" class="nav-link" data-scroll-target="#c7.-domain-demand-supply-composition-gap-delta-pp">C7. Domain demand-supply composition gap (Delta, pp)</a></li>
-  </ul></li>
+  <li><a href="#observed-doi-linked-scope" id="toc-observed-doi-linked-scope" class="nav-link active" data-scroll-target="#observed-doi-linked-scope">Observed DOI-linked scope</a></li>
+  <li><a href="#repeated-citation-share" id="toc-repeated-citation-share" class="nav-link" data-scroll-target="#repeated-citation-share">Repeated-citation share</a></li>
+  <li><a href="#self-citation-share" id="toc-self-citation-share" class="nav-link" data-scroll-target="#self-citation-share">Domestic-citation share</a></li>
+  <li><a href="#expected-domestic-citation-share" id="toc-expected-domestic-citation-share" class="nav-link" data-scroll-target="#expected-domestic-citation-share">Expected domestic-citation share</a></li>
+  <li><a href="#missingness-caution" id="toc-missingness-caution" class="nav-link" data-scroll-target="#missingness-caution">Missingness caution</a></li>
   </ul>
 </nav>
     </div>
@@ -184,12 +158,12 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Appendix</h1>
+<h1 class="title">Definitions Summary</h1>
 </div>
 
 <div>
   <div class="description">
-    English appendix for the Overton × OpenAlex evidence map, covering coverage notes, metric definitions, interpretation cautions, and additional diagnostic figures.
+    A compact English web-only definitions summary for the Overton x OpenAlex report.
   </div>
 </div>
 
@@ -206,9 +180,7 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><a href="../SI/index_en.html"><code>← SI Overview</code></a> · <a href="../SI/interactive_en.html"><code>Interactive</code></a> · <a href="../Report/Report_final.pdf"><code>Main Report (Korean PDF)</code></a> · <a href="../SI/appendix.html"><code>Korean version</code></a></p>
-<p>This appendix brings together <strong>coverage &amp; tagging notes</strong>, <strong>metric definitions &amp; interpretation cautions</strong>, and <strong>additional figures</strong>. Its purpose is to help readers check the numbers and patterns in the Main Report (Korean PDF) more carefully.</p>
-<p><strong>Jump to</strong>: <a href="#appendix-a">A. Coverage &amp; tagging</a> · <a href="#appendix-b">B. Definitions &amp; interpretation</a> · <a href="#appendix-c">C. Additional figures</a></p>
+<p><a href="../SI/index_en.html"><code>English Summary</code></a> · <a href="../SI/appendix.html"><code>Full Korean appendix</code></a> · <a href="../Report/Report_final.pdf"><code>Korean PDF</code></a></p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -219,816 +191,32 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><strong>How this page complements the main report</strong></p>
-<ul>
-<li>Before reading cross-country comparisons and hub structure, confirm Overton coverage and tagging characteristics.</li>
-<li>Summarize interpretation cautions: denominators, multi-label topics, missing country codes, observation/accumulation lags.</li>
-<li>Provide reference figures that were not included in the main PDF.</li>
-</ul>
+<p>This page keeps only the minimum definitions needed for English readers. The detailed appendix, extra tables, and full diagnostic notes remain in Korean.</p>
 </div>
 </div>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Tip
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p><strong>Minimum sections to read</strong></p>
-<ul>
-<li>For country/hub comparisons: <a href="#appendix-a">A. Coverage &amp; tagging</a></li>
-<li>For denominators/definitions: <a href="#appendix-b-quick">B0. Quick definitions</a> · <a href="#data-fitness">B0-1. Matching &amp; missingness</a></li>
-<li>For recent-year decline interpretation: <a href="#recent-years-decline">Caution: recent-year decline</a> · <a href="#why-2012">Focus: why 2012 looks high</a></li>
-</ul>
-</div>
-</div>
-<section id="reading-order-2-min" class="level2">
-<h2 class="anchored" data-anchor-id="reading-order-2-min">Reading order (2 min)</h2>
-<ul>
-<li>Step 1 (scope check): Start with <a href="#appendix-a">A. Coverage &amp; tagging</a> to confirm observable-coverage unevenness.</li>
-<li>Step 2 (metric check): Use <a href="#appendix-b-quick">B0. Quick definitions</a> and <a href="#data-fitness">B0-1. Matching &amp; missingness</a> to confirm denominators and missingness conditions.</li>
-<li>Step 3 (extension check): Open only needed items in <a href="#appendix-c">C. Additional figures</a> to support interpretation.</li>
-</ul>
-<hr>
+<section id="observed-doi-linked-scope" class="level2">
+<h2 class="anchored" data-anchor-id="observed-doi-linked-scope">Observed DOI-linked scope</h2>
+<p>The report analyzes policy-document references that can be linked to scholarly works through DOIs. This is a strong observed evidence-linkage layer, but it does not include every kind of policy evidence.</p>
 </section>
-<section id="appendix-a" class="level2">
-<h2 class="anchored" data-anchor-id="appendix-a">A. Coverage &amp; tagging</h2>
-<p>This section provides the minimum context needed before reading the hub results. The observable policy-document universe in Overton may be uneven across countries and source types, so tagging rules and coverage gaps should be checked first.</p>
-<section id="a1.-policy-document-coverage-map-documents-by-policy-source-country" class="level3">
-<h3 class="anchored" data-anchor-id="a1.-policy-document-coverage-map-documents-by-policy-source-country">A1. Policy document coverage map (documents by policy source country)</h3>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p><strong>Display rules (summary)</strong></p>
-<ul>
-<li>Use <strong>top-level country tags only</strong> (exclude sub-tags like <code>USA &gt; California</code>)</li>
-<li>Exclude <code>IGO</code> / <code>EU</code></li>
-<li>Use a <strong>log scale</strong> for coloring due to large cross-country variance</li>
-</ul>
-</div>
-</div>
-<div class="si-plot" data-src="../Assets/Interactive/coverage_policy_docs_map.html?lang=en" data-height="650" data-title="Interactive plot: Coverage map — policy documents by source country">
-  <div class="si-plot__actions">
-    <a class="si-plot__link" href="../Assets/Interactive/coverage_policy_docs_map.html?lang=en" target="_blank" rel="noopener">Open in new tab</a>
-    <span class="si-plot__badge">May load slowly</span>
-    <button type="button" class="si-plot__btn">Load plot</button>
-  </div>
-</div>
+<section id="repeated-citation-share" class="level2">
+<h2 class="anchored" data-anchor-id="repeated-citation-share">Repeated-citation share</h2>
+<p>Repeated-citation share asks how many distinct scholarly works are cited by more than one policy document. In the baseline data, 48.1% of unique cited works are cited by at least two policy documents.</p>
+<p>This should be read as a breadth-and-reuse signal within the observed DOI-linked scope.</p>
 </section>
-<section id="a2.-why-exclude-sub-tags-a-b-and-keep-top-level-country-tags-only" class="level3">
-<h3 class="anchored" data-anchor-id="a2.-why-exclude-sub-tags-a-b-and-keep-top-level-country-tags-only">A2. Why exclude sub-tags (<code>A &gt; B</code>) and keep top-level country tags only</h3>
-<p>Overton policy source country tags include <strong>country-level tags (e.g., USA, UK)</strong> and <strong>sub-regional tags (e.g., USA &gt; California)</strong>. To align meaning with OpenAlex country codes, this report uses <strong>top-level country tags only</strong> for default aggregations.</p>
-<p>This simplifies country-level comparisons. At the same time, it can invite <strong>under/over-interpretation</strong> when sub-tags contribute heavily. So, when reading country comparisons, it is safer to check coverage itself as well.</p>
+<section id="self-citation-share" class="level2">
+<h2 class="anchored" data-anchor-id="self-citation-share">Domestic-citation share</h2>
+<p>Domestic-citation share is a country-level same-country citation measure. For a policy source country, it asks what share of citations point to research whose first-author country is the same country.</p>
+<p>This metric uses only citations with known first-author country codes. It is therefore better used as a diagnostic than as a simple country ranking.</p>
 </section>
-<section id="a3.-why-do-we-need-exceptions-for-hong-kong-georgia" class="level3">
-<h3 class="anchored" data-anchor-id="a3.-why-do-we-need-exceptions-for-hong-kong-georgia">A3. Why do we need exceptions for Hong Kong / Georgia</h3>
-<p>Policy source country tags can appear only as sub-tags such as <code>China &gt; Hong Kong</code> and <code>USA &gt; Georgia</code>. If we keep only top-level tags, these can be filtered out from the policy-source side. That can make them look like “policy sources that do not exist” in the network view. For network figures, we therefore split <code>China &gt; Hong Kong</code> into <code>Hong Kong</code> and <code>USA &gt; Georgia</code> into <code>Georgia (USA)</code>.</p>
-<details>
-<summary>
-<strong>More detail: sub-tag scale, examples, and Hong Kong notation</strong>
-</summary>
-<section id="data-snapshot-overton-2025.02" class="level4">
-<h4 class="anchored" data-anchor-id="data-snapshot-overton-2025.02">Data snapshot: Overton 2025.02</h4>
-<p>The numbers below are summaries computed from the Overton 2025.02 snapshot.</p>
-<ul>
-<li>By policy document counts: sub-tags total 200,381 out of 1,671,835 (12.0%)</li>
-<li>By DOI citation records: sub-tags total 3,488,024 out of 48,456,680 (7.2%)</li>
-</ul>
-<p>Here, “DOI citation records” are raw-record totals, and may differ from analysis-ready deduplicated counts shown in the main report key-number block.</p>
-<p>Top-level parents with large sub-tag contributions are typically <code>USA</code>, <code>Spain</code>, <code>Canada</code>, <code>Australia</code>, <code>UK</code> (in that order).</p>
+<section id="expected-domestic-citation-share" class="level2">
+<h2 class="anchored" data-anchor-id="expected-domestic-citation-share">Expected domestic-citation share</h2>
+<p>Expected domestic-citation share adjusts for the domain mix of cited research. Conceptually, it asks whether a country’s observed domestic-citation share is higher or lower than what would be expected from its cited-domain composition and global research production share.</p>
 </section>
-<section id="top-sub-tag-examples-by-policy-document-counts" class="level4">
-<h4 class="anchored" data-anchor-id="top-sub-tag-examples-by-policy-document-counts">Top sub-tag examples (by policy document counts)</h4>
-<table class="table">
-<thead>
-<tr class="header">
-<th>Source country tag</th>
-<th style="text-align: right;">Policy docs</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>USA &gt; California</td>
-<td style="text-align: right;">17,599</td>
-</tr>
-<tr class="even">
-<td>USA &gt; New York</td>
-<td style="text-align: right;">14,110</td>
-</tr>
-<tr class="odd">
-<td>USA &gt; Washington</td>
-<td style="text-align: right;">13,969</td>
-</tr>
-<tr class="even">
-<td>USA &gt; Alaska</td>
-<td style="text-align: right;">9,421</td>
-</tr>
-<tr class="odd">
-<td>Canada &gt; Québec</td>
-<td style="text-align: right;">8,453</td>
-</tr>
-<tr class="even">
-<td>USA &gt; Texas</td>
-<td style="text-align: right;">7,648</td>
-</tr>
-<tr class="odd">
-<td>Australia &gt; Western Australia</td>
-<td style="text-align: right;">7,169</td>
-</tr>
-<tr class="even">
-<td>Spain &gt; Catalunya</td>
-<td style="text-align: right;">6,632</td>
-</tr>
-<tr class="odd">
-<td>USA &gt; Minnesota</td>
-<td style="text-align: right;">4,918</td>
-</tr>
-<tr class="even">
-<td>Spain &gt; Euskadi</td>
-<td style="text-align: right;">4,725</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="is-hong-kong-merged-into-china-here" class="level4">
-<h4 class="anchored" data-anchor-id="is-hong-kong-merged-into-china-here">Is Hong Kong “merged into China” here?</h4>
-<p>In the current snapshot, Overton policy sources do not include <code>Hong Kong</code> as a top-level country tag. It is observed only as <code>China &gt; Hong Kong</code> (1,182 policy documents). By contrast, OpenAlex research countries use a separate code <code>HK → Hong Kong</code>.</p>
-<p>If we aggregate policy sources using top-level tags only, documents under <code>China &gt; Hong Kong</code> drop from the policy-source side. Meanwhile, <code>Hong Kong</code> remains only as a research-country node. This can make it look like a “cited-only node.”</p>
-</section>
-<section id="caution-naive-sub-tag-replacement-causes-collisions" class="level4">
-<h4 class="anchored" data-anchor-id="caution-naive-sub-tag-replacement-causes-collisions">Caution: naive sub-tag replacement causes collisions</h4>
-<p>If you naively map <code>A &gt; B → B</code>, then <code>USA &gt; Georgia</code> (the US state) collides with <code>Georgia</code> (the country). If you want to re-attribute sub-tags at country scale, it is safer to separate two steps: (1) lifting to parent (<code>A &gt; B → A</code>) and (2) exception handling (whether to treat Hong Kong as its own unit).</p>
-</section></details>
-<hr>
-</section>
-</section>
-
-<section id="appendix-b" class="level2">
-<h2 class="anchored" data-anchor-id="appendix-b">B. Definitions &amp; interpretation</h2>
-<p>This section brings together the denominator, definition, and interpretation notes needed to re-read the main-report metrics safely. The same number can imply different conclusions when denominators differ, so these conditions should be checked first.</p>
-<section id="appendix-b-quick" class="level3">
-<h3 class="anchored" data-anchor-id="appendix-b-quick">B0. Quick definitions (summary)</h3>
-<ul>
-<li><strong>Unit of analysis</strong>: Overton policy documents are deduplicated at the policy-document level and treated as “unique policy documents.” See: <a href="#doi-share">DOI-citation coverage share</a></li>
-<li><strong>Citation counts vs unique works</strong>: “how often” vs “how widely” are different questions, so we separate them. See: <a href="#citations-vs-works">Citations vs works</a></li>
-<li><strong>Recency / intensity</strong>: recency is the share of policy citations to works published in <code>2022-2024</code>; intensity is average policy citations per unique work. See: <a href="#recency-intensity">Recency / intensity</a></li>
-<li><strong>Multi-label topics</strong>: OpenAlex topics are multi-label; a single work can belong to multiple topics, so shares can exceed 100%. See: <a href="#multilabel">Multi-label</a></li>
-<li><strong>Domestic-citation denominator</strong>: domestic-citation share is a country-level same-country citation share, computed only over citations with known first-author country codes. See: <a href="#self-citation-share">Domestic-citation share</a></li>
-</ul>
-</section>
-<section id="data-fitness" class="level3">
-<h3 class="anchored" data-anchor-id="data-fitness">B0-1. Matching &amp; missingness summary</h3>
-<p>This report links DOI-based citations in Overton to OpenAlex works to attach topic and country metadata consistently. For that reason, “joinable coverage” is a key safety check for interpretation.</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p><strong>Key numbers (based on Overton DOI citation records)</strong></p>
-<ul>
-<li><strong>Policy → research DOI citation rows</strong>: 23,370,284</li>
-<li><strong>First-author country code available</strong>: 76.6% (citation-row basis)</li>
-</ul>
-</div>
-</div>
-<p>These are summaries at the level of “DOI citation records,” and may differ from analysis-ready, deduplicated counts in the main report.</p>
-<details>
-<summary>
-<strong>Examples by policy source (share with first-author country codes)</strong>
-</summary>
-<table class="table">
-<thead>
-<tr class="header">
-<th>Policy source (examples)</th>
-<th style="text-align: right;">Share with first-author country codes</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Overall</td>
-<td style="text-align: right;">76.6%</td>
-</tr>
-<tr class="even">
-<td>Republic of Korea</td>
-<td style="text-align: right;">70.4%</td>
-</tr>
-<tr class="odd">
-<td>USA</td>
-<td style="text-align: right;">78.4%</td>
-</tr>
-<tr class="even">
-<td>UK</td>
-<td style="text-align: right;">80.7%</td>
-</tr>
-<tr class="odd">
-<td>IGOs</td>
-<td style="text-align: right;">70.0%</td>
-</tr>
-</tbody>
-</table>
-</details>
-<p>For reference, the DOI-based citation log used in this report includes only citations where an OpenAlex works id (<code>oaid_w</code>) is available (observed scope).<br>
-Within this scope, we observe 6,530,609 unique DOIs linked to 6,532,365 unique works.</p>
-</section>
-<section id="doi-share" class="level3">
-<h3 class="anchored" data-anchor-id="doi-share">B1. DOI-citation coverage share (97.6%): denominator</h3>
-<p><strong>What denominator does “97.6%” use in this snapshot?</strong></p>
-<p>We deduplicated Overton policy documents at the policy-document level to build 1,381,084 unique policy documents. Then we counted whether each document contains at least one DOI-based scholarly citation. As a result, 1,347,563 documents (97.6%) contain at least one DOI citation.</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p><strong>Interpretation boundary</strong></p>
-<ul>
-<li>This is <strong>not</strong> the share of “all policy documents” that cite science. It is the share within the set of policy documents collected in the Overton snapshot.</li>
-<li>This setup does <strong>not</strong> capture citations without DOIs (narrative citations, reports, legislation, web sources, etc.).</li>
-</ul>
-</div>
-</div>
-<p><strong>What does “deduplication” mean here?</strong></p>
-<p>Raw Overton policy documents can include duplicates (versions, re-posts, language variants, metadata duplication). For analysis, we unify them at the policy-document level to treat them as unique policy documents.</p>
-<section id="reference-doi-citation-coverage-by-source-type-tag" class="level4">
-<h4 class="anchored" data-anchor-id="reference-doi-citation-coverage-by-source-type-tag">Reference: DOI-citation coverage by source-type tag</h4>
-<p>The table below summarizes, by Overton source-type tag, the share of unique policy documents that contain at least one DOI-based scholarly citation. Since source-type tags are multi-label, a single document can carry multiple tags. So the row totals do not need to sum to the site-wide total.</p>
-<details>
-<summary>
-<strong>Table: DOI-citation coverage by source-type tag</strong>
-</summary>
-<table class="table">
-<colgroup>
-<col style="width: 20%">
-<col style="width: 26%">
-<col style="width: 26%">
-<col style="width: 26%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Source type tag</th>
-<th style="text-align: right;">Policy docs</th>
-<th style="text-align: right;">Policy docs with DOI citations</th>
-<th style="text-align: right;">Share</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>government</td>
-<td style="text-align: right;">783,189</td>
-<td style="text-align: right;">724,759</td>
-<td style="text-align: right;">92.5%</td>
-</tr>
-<tr class="even">
-<td>think tank</td>
-<td style="text-align: right;">332,044</td>
-<td style="text-align: right;">312,113</td>
-<td style="text-align: right;">94.0%</td>
-</tr>
-<tr class="odd">
-<td>igo</td>
-<td style="text-align: right;">321,168</td>
-<td style="text-align: right;">276,468</td>
-<td style="text-align: right;">86.1%</td>
-</tr>
-<tr class="even">
-<td>government &gt; agency</td>
-<td style="text-align: right;">73,347</td>
-<td style="text-align: right;">67,868</td>
-<td style="text-align: right;">92.5%</td>
-</tr>
-<tr class="odd">
-<td>igo &gt; development bank</td>
-<td style="text-align: right;">72,052</td>
-<td style="text-align: right;">66,076</td>
-<td style="text-align: right;">91.7%</td>
-</tr>
-<tr class="even">
-<td>government &gt; healthcare agency</td>
-<td style="text-align: right;">54,234</td>
-<td style="text-align: right;">45,961</td>
-<td style="text-align: right;">84.7%</td>
-</tr>
-<tr class="odd">
-<td>igo &gt; healthcare agency</td>
-<td style="text-align: right;">36,560</td>
-<td style="text-align: right;">36,080</td>
-<td style="text-align: right;">98.7%</td>
-</tr>
-<tr class="even">
-<td>government &gt; bank</td>
-<td style="text-align: right;">36,238</td>
-<td style="text-align: right;">35,051</td>
-<td style="text-align: right;">96.7%</td>
-</tr>
-<tr class="odd">
-<td>other</td>
-<td style="text-align: right;">35,053</td>
-<td style="text-align: right;">34,223</td>
-<td style="text-align: right;">97.6%</td>
-</tr>
-<tr class="even">
-<td>think tank &gt; research center</td>
-<td style="text-align: right;">33,761</td>
-<td style="text-align: right;">32,773</td>
-<td style="text-align: right;">97.1%</td>
-</tr>
-<tr class="odd">
-<td>other &gt; aggregator</td>
-<td style="text-align: right;">32,845</td>
-<td style="text-align: right;">32,086</td>
-<td style="text-align: right;">97.7%</td>
-</tr>
-<tr class="even">
-<td>government &gt; city</td>
-<td style="text-align: right;">23,274</td>
-<td style="text-align: right;">22,873</td>
-<td style="text-align: right;">98.3%</td>
-</tr>
-<tr class="odd">
-<td>think tank &gt; university affiliated</td>
-<td style="text-align: right;">21,687</td>
-<td style="text-align: right;">20,730</td>
-<td style="text-align: right;">95.6%</td>
-</tr>
-<tr class="even">
-<td>government &gt; legislative research</td>
-<td style="text-align: right;">14,441</td>
-<td style="text-align: right;">12,886</td>
-<td style="text-align: right;">89.2%</td>
-</tr>
-<tr class="odd">
-<td>government &gt; legislation</td>
-<td style="text-align: right;">7,467</td>
-<td style="text-align: right;">6,474</td>
-<td style="text-align: right;">86.7%</td>
-</tr>
-<tr class="even">
-<td>government &gt; research center</td>
-<td style="text-align: right;">6,722</td>
-<td style="text-align: right;">6,178</td>
-<td style="text-align: right;">91.9%</td>
-</tr>
-<tr class="odd">
-<td>government &gt; food and drug safety</td>
-<td style="text-align: right;">5,539</td>
-<td style="text-align: right;">5,279</td>
-<td style="text-align: right;">95.3%</td>
-</tr>
-<tr class="even">
-<td>think tank &gt; research centre</td>
-<td style="text-align: right;">4,406</td>
-<td style="text-align: right;">4,347</td>
-<td style="text-align: right;">98.7%</td>
-</tr>
-<tr class="odd">
-<td>igo &gt; research center</td>
-<td style="text-align: right;">3,342</td>
-<td style="text-align: right;">3,229</td>
-<td style="text-align: right;">96.6%</td>
-</tr>
-<tr class="even">
-<td>think tank &gt; industry association</td>
-<td style="text-align: right;">2,967</td>
-<td style="text-align: right;">1,883</td>
-<td style="text-align: right;">63.5%</td>
-</tr>
-<tr class="odd">
-<td>igo &gt; bank</td>
-<td style="text-align: right;">2,297</td>
-<td style="text-align: right;">2,218</td>
-<td style="text-align: right;">96.6%</td>
-</tr>
-<tr class="even">
-<td>think tank &gt; consultancy</td>
-<td style="text-align: right;">2,238</td>
-<td style="text-align: right;">2,205</td>
-<td style="text-align: right;">98.5%</td>
-</tr>
-<tr class="odd">
-<td>think tank &gt; agency</td>
-<td style="text-align: right;">1,652</td>
-<td style="text-align: right;">1,489</td>
-<td style="text-align: right;">90.1%</td>
-</tr>
-<tr class="even">
-<td>government &gt; technology assessment</td>
-<td style="text-align: right;">1,416</td>
-<td style="text-align: right;">1,355</td>
-<td style="text-align: right;">95.7%</td>
-</tr>
-<tr class="odd">
-<td>government &gt; transcripts</td>
-<td style="text-align: right;">958</td>
-<td style="text-align: right;">528</td>
-<td style="text-align: right;">55.1%</td>
-</tr>
-<tr class="even">
-<td>government &gt; academy</td>
-<td style="text-align: right;">835</td>
-<td style="text-align: right;">816</td>
-<td style="text-align: right;">97.7%</td>
-</tr>
-<tr class="odd">
-<td>government &gt; auditor</td>
-<td style="text-align: right;">775</td>
-<td style="text-align: right;">615</td>
-<td style="text-align: right;">79.4%</td>
-</tr>
-<tr class="even">
-<td>government &gt; court</td>
-<td style="text-align: right;">352</td>
-<td style="text-align: right;">346</td>
-<td style="text-align: right;">98.3%</td>
-</tr>
-<tr class="odd">
-<td>government &gt; armed forces</td>
-<td style="text-align: right;">86</td>
-<td style="text-align: right;">86</td>
-<td style="text-align: right;">100.0%</td>
-</tr>
-<tr class="even">
-<td>igo &gt; court</td>
-<td style="text-align: right;">75</td>
-<td style="text-align: right;">74</td>
-<td style="text-align: right;">98.7%</td>
-</tr>
-<tr class="odd">
-<td>think tank &gt; professional association</td>
-<td style="text-align: right;">37</td>
-<td style="text-align: right;">37</td>
-<td style="text-align: right;">100.0%</td>
-</tr>
-<tr class="even">
-<td>government &gt; regional assembly</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">75.0%</td>
-</tr>
-</tbody>
-</table>
-</details>
-</section>
-</section>
-<section id="repeat-share" class="level3">
-<h3 class="anchored" data-anchor-id="repeat-share">B2. Repeat-citation share (48.1%): definition</h3>
-<p><strong>What does “48.1% are repeatedly cited (&gt;=2)” mean in this analysis snapshot?</strong></p>
-<p>This metric summarizes, among unique cited works, how many are called repeatedly across different policy documents.</p>
-<ul>
-<li>Unit: unique cited works (OpenAlex works)</li>
-<li>Computation: after cleaning policy→work DOI links, count how many <strong>distinct policy documents (unique documents)</strong> cite each work</li>
-<li>Definition: “repeatedly cited (&gt;=2)” means cited by at least two distinct policy documents</li>
-</ul>
-<p>In the Overton 2025.02×OpenAlex 2025.06 linked data, 3,143,234 out of 6,532,365 unique cited works (48.1%) are cited by two or more policy documents.</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p><strong>Interpretation boundary</strong></p>
-<ul>
-<li>As with the 97.6% statistic, this number is limited to the DOI-linked <strong>observed scope</strong> in the snapshot.</li>
-<li>Citations without DOIs (reports, legislation, web sources, etc.) are not included in this repeated-call calculation.</li>
-</ul>
-</div>
-</div>
-</section>
-<section id="citations-vs-works" class="level3">
-<h3 class="anchored" data-anchor-id="citations-vs-works">B3. Citations vs works</h3>
-<p><strong>Why separate “citation counts” and “unique works”?</strong></p>
-<ul>
-<li><strong>Citation counts</strong>: total number of DOI citation records (how many times policy documents cite DOI works)</li>
-<li><strong>Unique works</strong>: the number of distinct cited works after deduplicating citations by work identity</li>
-</ul>
-<p>The questions “how often does policy cite evidence?” (frequency) and “how wide is the evidence pool?” (diversity) are different, so we interpret them separately.</p>
-</section>
-<section id="recency-intensity" class="level3">
-<h3 class="anchored" data-anchor-id="recency-intensity">B4. Recency / intensity</h3>
-<p><strong>How are “recency” and “citation intensity” computed?</strong></p>
-<ul>
-<li><strong>Recency</strong>: the share of policy citations to works published in <code>2022-2024</code></li>
-<li><strong>Citation intensity</strong>: average policy citations per unique work in the aggregation unit = <code>citations / unique works</code></li>
-</ul>
-</section>
-<section id="self-citation-share" class="level3">
-<h3 class="anchored" data-anchor-id="self-citation-share">B5. Domestic-citation share</h3>
-<p><strong>How is domestic-citation share computed?</strong></p>
-<p>We map policy source country tags to 2-letter country codes (e.g., USA → US, UK → GB), and compute country-level domestic-citation share using only citations with known first-author country codes as the denominator. That is, domestic-citation share is not a pattern over “all citations.” It is a pattern over citations where the first-author country code is available. The older internal label could be misleading; in this English SI, “domestic-citation share” is used to avoid confusion with author- or article-level citation behavior.</p>
-<details>
-<summary>
-<strong>More: expected-share definition and a comparison table</strong>
-</summary>
-<p><strong>How is expected domestic-citation share computed?</strong></p>
-<p>For each policy source country, we first compute its domain mix of cited research. For each domain, we multiply by the country’s <strong>global research production share</strong> in that domain (OpenAlex), then sum across domains. Conceptually:</p>
-<p><code>expected = sum( policy_citation_domain_share * global_production_share_in_domain )</code></p>
-<p><span id="self-citation-context"></span></p>
-<p>The table below summarizes domestic-citation share for a small comparison set. Since domestic-citation share is computed only over citations with known first-author country codes, it is better treated as a diagnostic metric rather than a ranking.</p>
-<table class="table">
-<colgroup>
-<col style="width: 20%">
-<col style="width: 26%">
-<col style="width: 26%">
-<col style="width: 26%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Policy source</th>
-<th style="text-align: right;">Citations with known first-author country</th>
-<th style="text-align: right;">Share known</th>
-<th style="text-align: right;">Domestic-citation share</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>USA</td>
-<td style="text-align: right;">4,480,233</td>
-<td style="text-align: right;">78.4%</td>
-<td style="text-align: right;">60.9%</td>
-</tr>
-<tr class="even">
-<td>UK</td>
-<td style="text-align: right;">1,197,057</td>
-<td style="text-align: right;">80.7%</td>
-<td style="text-align: right;">27.7%</td>
-</tr>
-<tr class="odd">
-<td>Germany</td>
-<td style="text-align: right;">1,143,950</td>
-<td style="text-align: right;">81.8%</td>
-<td style="text-align: right;">12.6%</td>
-</tr>
-<tr class="even">
-<td>Netherlands</td>
-<td style="text-align: right;">191,031</td>
-<td style="text-align: right;">80.7%</td>
-<td style="text-align: right;">14.3%</td>
-</tr>
-<tr class="odd">
-<td>Japan</td>
-<td style="text-align: right;">114,180</td>
-<td style="text-align: right;">85.6%</td>
-<td style="text-align: right;">32.3%</td>
-</tr>
-<tr class="even">
-<td>Republic of Korea</td>
-<td style="text-align: right;">23,170</td>
-<td style="text-align: right;">70.4%</td>
-<td style="text-align: right;">4.5%</td>
-</tr>
-</tbody>
-</table>
-<p>Here, “share known” is the fraction of DOI citation records for that policy source where the first-author country code is available. For sources with many sub-regional tags (e.g., USA, UK), we aggregated sub-tags back up to the parent country for this summary.</p>
-<p><strong>Why define policy-source → research-country flows by first-author country?</strong></p>
-<p>First-author affiliation country is the most consistently extractable country attribute. However, it does not reflect coauthor distributions, corresponding authors, or multi-affiliation cases, so it must be interpreted as an “approximation with limited representativeness.”</p>
-</details>
-</section>
-<section id="multilabel" class="level3">
-<h3 class="anchored" data-anchor-id="multilabel">B6. Multi-label topics</h3>
-<p><strong>Why can topic/domain shares exceed 100%?</strong></p>
-<p>OpenAlex topics are multi-label. A single work can belong to multiple topics simultaneously, so aggregations by topic/domain/subfield can double-count. Topic-based numbers should be read as “topic-instance based.”</p>
-<p>In the topic data used here, a single policy citation is linked to about 2.8 topics on average. Therefore, summing by domain/topic yields totals larger than raw citation counts.</p>
-<p>However, if we fractionally allocate each citation across the work’s topic count, the domain ranking is preserved and the top-3 domain share changes only slightly (e.g., 88.8% → 88.5%).</p>
-<p><strong>Can source-country / source-type totals also grow beyond 100%?</strong></p>
-<p>Yes. Overton source country/type labels are tag-based (including parent/child tags), so a single document can be counted in multiple categories.</p>
-</section>
-<section id="recent-years-decline" class="level3">
-<h3 class="anchored" data-anchor-id="recent-years-decline">B7. Recent-year decline caution</h3>
-<p><strong>Does the post-2022 decline in the time trend mean “policy cites science less”?</strong></p>
-<p>A direct conclusion is difficult here. Coverage delays (collection/processing lags) and the fact that citations accumulate after publication likely act together. It is safer to read recent years as signals mixed with observation lag, rather than as real-time decreases.</p>
-</section>
-<section id="why-2012" class="level3">
-<h3 class="anchored" data-anchor-id="why-2012">B8. Why 2012 looks high</h3>
-<p><strong>Why does “citations per policy document” look especially high around 2012?</strong></p>
-<p>When the distribution has a long tail, averages are strongly affected. When the average looks high, it is safer to first separate whether it is driven by a few extreme documents or whether the whole distribution shifted rightward.</p>
-<p>Trimmed means exclude extreme values and help diagnose whether the average is being pulled by outliers.</p>
-<p>The figure below shows, by year, the mean along with the median and trimmed mean. It also reports the share of citations contributed by the top 1% of documents.</p>
-<p><img src="../Assets/Figures/si/pubyear_citations_per_doc_diagnostics.png" class="img-fluid" style="width:92.0%" alt="Diagnostics for citations-per-document distribution by year (mean, median, trimmed mean, top 1% share)"></p>
-<p>Key messages:</p>
-<ul>
-<li>The rise around 2012 appears not only in the mean but also in the median and trimmed mean. This suggests a mixture of distribution-wide change, not only a handful of extreme documents.</li>
-<li>The top-1% contribution does not spike uniquely in 2012. Therefore, it is hard to attribute the 2012 peak to only a very small number of documents.</li>
-</ul>
-</section>
-<section id="oa-interpretation" class="level3">
-<h3 class="anchored" data-anchor-id="oa-interpretation">B9. OA interpretation</h3>
-<p><strong>Is higher OA (open access) share in policy citations causal?</strong></p>
-<p>Observationally, OA share tends to be higher in policy-cited works. But this does not immediately imply causality (“OA causes more policy citation”). Confounders include the likelihood that policy-relevant work is published OA, public funding structure, and domain composition.</p>
-<p>However, even when we split by domain and publication-year windows among policy-cited works, the pattern that OA works have higher average policy citations per paper largely remains. The table below compares 2000-2009 and 2010-2019. Recent years are excluded due to stronger observation-lag effects.</p>
-<table class="table">
-<colgroup>
-<col style="width: 15%">
-<col style="width: 21%">
-<col style="width: 21%">
-<col style="width: 21%">
-<col style="width: 21%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Domain</th>
-<th style="text-align: right;">2000-2009 OA</th>
-<th style="text-align: right;">2000-2009 non-OA</th>
-<th style="text-align: right;">2010-2019 OA</th>
-<th style="text-align: right;">2010-2019 non-OA</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Social Sciences</td>
-<td style="text-align: right;">10.51</td>
-<td style="text-align: right;">5.28</td>
-<td style="text-align: right;">5.89</td>
-<td style="text-align: right;">3.92</td>
-</tr>
-<tr class="even">
-<td>Health Sciences</td>
-<td style="text-align: right;">3.73</td>
-<td style="text-align: right;">2.98</td>
-<td style="text-align: right;">2.86</td>
-<td style="text-align: right;">2.30</td>
-</tr>
-<tr class="odd">
-<td>Physical Sciences</td>
-<td style="text-align: right;">5.09</td>
-<td style="text-align: right;">3.98</td>
-<td style="text-align: right;">3.88</td>
-<td style="text-align: right;">3.12</td>
-</tr>
-<tr class="even">
-<td>Life Sciences</td>
-<td style="text-align: right;">2.73</td>
-<td style="text-align: right;">2.66</td>
-<td style="text-align: right;">2.51</td>
-<td style="text-align: right;">2.36</td>
-</tr>
-</tbody>
-</table>
-<p>However, medians are mostly around 1-2 and show small differences. The mean gap may be influenced by the long tail (highly repeatedly cited works). Therefore, use this table only as supporting context for candidate explanatory factors.</p>
-<p>Additional OA reference figures are provided in Section C below.</p>
-<hr>
-</section>
-</section>
-<section id="appendix-c" class="level2">
-<h2 class="anchored" data-anchor-id="appendix-c">C. Additional figures</h2>
-<p>This section groups reference figures omitted from the main PDF for space reasons. Each item is folded by default for quick scanning. Some figures use presentation formats that differ from the main report.</p>
-<ul>
-<li>Usage: find the figure or topic that needs more context, then open only the matching C-item.</li>
-<li>Interpretation boundary: C-items are support material for interpretation, not additional headline conclusions.</li>
-</ul>
-<section id="c1.-extended-for-chapter-2-top-n-topics-subfields" class="level3">
-<h3 class="anchored" data-anchor-id="c1.-extended-for-chapter-2-top-n-topics-subfields">C1. Extended for Chapter 2: Top-N topics / subfields</h3>
-<p>This set provides a list view to quickly validate the pattern shown in the topic scatter plots.</p>
-<ul>
-<li><strong>One-line takeaway:</strong> A quick list view of “what actually sits on top” of the topic/subfield patterns.</li>
-<li><strong>Why included:</strong> To complement Figures 3-4 (topic scatter / two-speed view) with concrete top examples.</li>
-<li><strong>Interpretation boundary:</strong> Ranked by total citations and provided as reference material for interpretation, not as additional headline conclusions.</li>
-</ul>
-<details>
-<summary>
-<strong>Show figures</strong>
-</summary>
-<p><img src="../Assets/Figures/si/topic_top15.png" class="img-fluid" style="width:92.0%" alt="Top 15 topics by policy citations"></p>
-<p><img src="../Assets/Figures/si/subfield_top15.png" class="img-fluid" style="width:92.0%" alt="Top 15 subfields by policy citations"></p>
-</details>
-</section>
-<section id="c2.-extended-for-chapter-3-source-type-x-topic-heatmap" class="level3">
-<h3 class="anchored" data-anchor-id="c2.-extended-for-chapter-3-source-type-x-topic-heatmap">C2. Extended for Chapter 3: source type x topic (heatmap)</h3>
-<p>This extends Figure 7 to the topic level to check which topics are cited more by each source type.</p>
-<ul>
-<li><strong>One-line takeaway:</strong> A topic-level expansion of “what gets cited more” by each source type.</li>
-<li><strong>Why included:</strong> To go one level below Figure 7 (source type x domain composition) and see whether composition differences persist at the topic level.</li>
-<li><strong>Interpretation boundary:</strong> Use this heatmap to read composition patterns, not to infer causality or quality from magnitude alone.</li>
-</ul>
-<details>
-<summary>
-<strong>Show figure</strong>
-</summary>
-<p><img src="../Assets/Figures/si/source_type_topic_heatmap.png" class="img-fluid" style="width:100.0%" alt="Source type x topic citation heatmap"></p>
-</details>
-</section>
-<section id="c3.-oa-reference-figures-by-domain-source-type" class="level3">
-<h3 class="anchored" data-anchor-id="c3.-oa-reference-figures-by-domain-source-type">C3. OA reference figures (by domain / source type)</h3>
-<p>The OA discussion in the main report is kept at the level of “candidate explanatory factors.” The figures below summarize OA shares for reference.</p>
-<ul>
-<li><strong>One-line takeaway:</strong> A compact view of OA shares in policy-cited works by domain and by source type.</li>
-<li><strong>Why included:</strong> To let readers verify the observed OA distribution while keeping the main report cautious (as a candidate explanatory factor only).</li>
-<li><strong>Interpretation boundary:</strong> Do not infer OA effects causally from these figures alone (composition, selection, and publishing practice confounders).</li>
-</ul>
-<details>
-<summary>
-<strong>Show figures</strong>
-</summary>
-<p><img src="../Assets/Figures/si/domain_oa_share.png" class="img-fluid" style="width:92.0%" alt="OA vs non-OA citation shares by domain"></p>
-<p><img src="../Assets/Figures/si/source_type_oa_share.png" class="img-fluid" style="width:92.0%" alt="OA citation shares by source type"></p>
-</details>
-</section>
-<section id="c4.-domestic-citation-share-top-10" class="level3">
-<h3 class="anchored" data-anchor-id="c4.-domestic-citation-share-top-10">C4. Domestic-citation share (Top 10)</h3>
-<p>Figure 10 in the main report shows selected countries for comparison. The figure below expands it to the top 10 policy source countries.</p>
-<p>This metric is computed only over citations with known first-author country codes.</p>
-<ul>
-<li><strong>One-line takeaway:</strong> An expanded view of domestic-citation share beyond selected countries (top 10 policy sources).</li>
-<li><strong>Why included:</strong> To complement §3.3 / Figure 10, so the selected-country comparison is anchored to a broader range.</li>
-<li><strong>Interpretation boundary:</strong> The denominator includes only citations with known first-author country codes; read it as range/scale, not a definitive ranking.</li>
-</ul>
-<details>
-<summary>
-<strong>Show figure</strong>
-</summary>
-<p><img src="../Assets/Figures/si/policy_country_self_share_top10.png" class="img-fluid" style="width:92.0%" alt="Domestic-citation share for top 10 policy source countries"></p>
-</details>
-</section>
-<section id="c5.-openalex-subfield-overton-domain-network-top-100" class="level3">
-<h3 class="anchored" data-anchor-id="c5.-openalex-subfield-overton-domain-network-top-100">C5. OpenAlex subfield → Overton domain network (Top 100)</h3>
-<p>This network shows citation flows between OpenAlex subfields and Overton policy classes (2nd_class).</p>
-<ul>
-<li><strong>One-line takeaway:</strong> A network summary of “subfield → policy class” flows to surface major hub-like paths.</li>
-<li><strong>Why included:</strong> To support the “hub structure” narrative in Chapters 3-4 with an additional view at the classification level.</li>
-<li><strong>Interpretation boundary:</strong> Display rules (top nodes / top links) omit peripheral links; read together with the display-rule and sensitivity notes below.</li>
-</ul>
-<p><span id="display-rule-sensitivity"></span></p>
-<details>
-<summary>
-<strong>Display rules, interpretation caution, and sensitivity check</strong>
-</summary>
-<p><strong>Display rules</strong></p>
-<ul>
-<li>Show top 100 nodes only.</li>
-<li>To reduce complexity, keep only the top 3 links by volume from each node.</li>
-<li>Node size is defined as total flow within the selected node set. This is separate from link filtering.</li>
-</ul>
-<p><strong>Interpretation caution</strong></p>
-<ul>
-<li>These rules are for readability. Links shown are not the full set of links.</li>
-</ul>
-<p><strong>Quick sensitivity check</strong></p>
-<ul>
-<li>Compared to a smaller version (25 subfields, 25 policy classes), the top 20 subfields and top 20 policy classes by flow volume are all included in the current figure.</li>
-<li>In the smaller network, the median share captured by top-3 links per subfield was 89.8%.</li>
-<li>Therefore, use this figure to read major flows and hub structure, not to compare minor peripheral links.</li>
-</ul>
-</details>
-<details>
-<summary>
-<strong>Show figure</strong>
-</summary>
-<p><img src="../Assets/Figures/si/overton_domain_subfield_network_n100.png" class="img-fluid" style="width:100.0%" alt="OpenAlex subfield → Overton domain network"></p>
-</details>
-</section>
-<section id="c6.-uneven-and-repeated-citation-distributions-log-log-ccdf" class="level3">
-<h3 class="anchored" data-anchor-id="c6.-uneven-and-repeated-citation-distributions-log-log-ccdf">C6. Uneven and repeated-citation distributions (log-log CCDF)</h3>
-<p>This figure checks the distributions directly to see whether citations are spread evenly or concentrated in a small subset of documents/works.</p>
-<ul>
-<li><strong>One-line takeaway:</strong> A direct distribution view (tails) of unevenness and repeated citations.</li>
-<li><strong>Why included:</strong> To make “concentration” inspectable as a distribution shape, not only as summary statements in the main report.</li>
-<li><strong>Interpretation boundary:</strong> Log-log CCDFs are diagnostic and less intuitive; use it as a shape check rather than a standalone conclusion.</li>
-</ul>
-<details>
-<summary>
-<strong>Show figure</strong>
-</summary>
-<p><img src="../Assets/Figures/si/citation_distribution_ccdf.png" class="img-fluid" style="width:100.0%" alt="Citation concentration CCDF"></p>
-</details>
-</section>
-<section id="c7.-domain-demand-supply-composition-gap-delta-pp" class="level3">
-<h3 class="anchored" data-anchor-id="c7.-domain-demand-supply-composition-gap-delta-pp">C7. Domain demand-supply composition gap (Delta, pp)</h3>
-<p>To reduce the interpretation burden of Figure 8, this version simplifies it as <strong>policy demand share minus research supply share (percentage points)</strong>.</p>
-<ul>
-<li><strong>One-line takeaway:</strong> A direction-and-magnitude view of mismatch as a delta (pp) by country.</li>
-<li><strong>Why included:</strong> Figure 8 (scatter) requires multi-step reading; this delta view provides the same information in a simpler representation.</li>
-<li><strong>Interpretation boundary:</strong> Delta summarizes direction; read together with Figure 8 for the underlying absolute composition on both sides.</li>
-</ul>
-<details>
-<summary>
-<strong>Show figure</strong>
-</summary>
-<p><img src="../Assets/Figures/si/country_domain_demand_supply_delta_heatmap.png" class="img-fluid" style="width:96.0%" alt="Domain demand minus supply delta heatmap"></p>
-</details>
+<section id="missingness-caution" class="level2">
+<h2 class="anchored" data-anchor-id="missingness-caution">Missingness caution</h2>
+<p>Country-level interpretation should always check first-author country missingness. If the known-country denominator changes, the headline percentage can also change.</p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
