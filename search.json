@@ -39,7 +39,7 @@
     "href": "SI/interactive_en.html#short-interpretation",
     "title": "Selected Figures",
     "section": "Short interpretation",
-    "text": "Short interpretation\nThe interactive figures are intended for checking the structure behind the headline claims. They should not be read as a complete English replacement for the Korean report.\nMost comparisons require three safeguards:\n\nseparate volume from density;\nseparate inbound evidence routes from policy-sourcing routes;\ncheck whether the denominator changes before comparing percentages."
+    "text": "Short interpretation\nThe interactive figures are intended for checking the structure behind the headline claims. They are a compact orientation layer, not a substitute for the Korean report.\nMost comparisons require three safeguards:\n\nseparate volume from density;\nseparate inbound evidence routes from policy-sourcing routes;\ncheck whether the denominator changes before comparing percentages."
   },
   {
     "objectID": "SI/update_202603_en.html",
@@ -333,7 +333,7 @@
     "href": "SI/index_en.html#how-to-cite-this-layer",
     "title": "English Web Summary",
     "section": "How to cite this layer",
-    "text": "How to cite this layer\nUse this page as an English orientation layer only. For exact wording, full figure captions, detailed tables, and the complete argument, use the Korean PDF and Korean SI."
+    "text": "How to cite this layer\nThis English web summary is provided for orientation; the citable report text is the Korean PDF. For exact wording, full figure captions, detailed tables, and the complete argument, use the Korean PDF and Korean SI."
   },
   {
     "objectID": "SI/methods_en.html",
@@ -392,8 +392,8 @@
     "text": "Repeated-citation share\nRepeated-citation share asks how many distinct scholarly works are cited by more than one policy document. In the baseline data, 48.1% of unique cited works are cited by at least two policy documents.\nThis should be read as a breadth-and-reuse signal within the observed DOI-linked scope."
   },
   {
-    "objectID": "SI/appendix_en.html#self-citation-share",
-    "href": "SI/appendix_en.html#self-citation-share",
+    "objectID": "SI/appendix_en.html#domestic-citation-share",
+    "href": "SI/appendix_en.html#domestic-citation-share",
     "title": "Definitions Summary",
     "section": "Domestic-citation share",
     "text": "Domestic-citation share\nDomestic-citation share is a country-level same-country citation measure. For a policy source country, it asks what share of citations point to research whose first-author country is the same country.\nThis metric uses only citations with known first-author country codes. It is therefore better used as a diagnostic than as a simple country ranking."
