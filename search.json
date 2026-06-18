@@ -11,7 +11,7 @@
     "href": "SI/next_questions_en.html#four-recurring-questions",
     "title": "Next Questions Summary",
     "section": "Four recurring questions",
-    "text": "Four recurring questions\n\n\n\n\n\n\n\nQuestion\nWhat to monitor\n\n\n\n\nIs policy-source concentration easing, stable, or intensifying?\nTop-3 policy-source share, rank changes, overlap between volume hubs and density hubs.\n\n\nIs the repeat-cited evidence pool broadening or narrowing?\nRepeat-citation thresholds such as &gt;=2, &gt;=5, and &gt;=10 policy documents.\n\n\nIs research cited by Korean policy documents becoming more diversified?\nTop country share, domestic-citation share, and domain composition.\n\n\nAre policy-entry routes for Korean research becoming broader?\nTop inbound policy-source tags and route concentration for Korean research."
+    "text": "Four recurring questions\n\n\n\n\n\n\n\nQuestion\nWhat to monitor\n\n\n\n\nIs policy-source channel concentration easing, stable, or intensifying?\nTop-3 channel share, rank changes, overlap between volume hubs and density hubs.\n\n\nIs the repeat-cited evidence pool broadening or narrowing?\nRepeat-citation thresholds such as &gt;=2, &gt;=5, and &gt;=10 policy documents.\n\n\nIs research cited by Korean policy documents becoming more diversified?\nTop country share, domestic-citation share, and domain composition.\n\n\nAre routes into policy documents for Korean research becoming broader?\nTop inbound policy-source channels and route concentration for Korean research."
   },
   {
     "objectID": "SI/next_questions_en.html#completion-signal",
@@ -53,14 +53,14 @@
     "href": "SI/update_202603_en.html#what-changed",
     "title": "2026 Data Update Summary",
     "section": "What changed",
-    "text": "What changed\nThe newer data still supports the two headline patterns:\n\npolicy-document citations remain concentrated around a small set of policy sources;\nKorea should still be read through separate inbound and policy-sourcing routes.\n\nThe updated values mainly soften the strength of concentration and shift parts of the domain mix."
+    "text": "What changed\nThe newer data still supports the two headline patterns:\n\npolicy-document citations remain concentrated around a small set of policy-source channels;\nKorea should still be read through separate inbound and policy-sourcing routes.\n\nThe updated values mainly soften the strength of concentration and shift parts of the domain mix."
   },
   {
     "objectID": "SI/update_202603_en.html#headline-comparison",
     "href": "SI/update_202603_en.html#headline-comparison",
     "title": "2026 Data Update Summary",
     "section": "Headline comparison",
-    "text": "Headline comparison\n\n\n\n\n\n\n\n\n\nIndicator\nOriginal baseline\n2026 data update\nReading\n\n\n\n\nInbound policy citations to Korean research: top 3 policy-source tags\n54.8%\n51.1%\nConcentration remains, but is slightly weaker.\n\n\nU.S. research share in citations from Korean policy documents\n55.7%\n48.6%\nU.S. skew remains, but is weaker.\n\n\nKorean research share in citations from Korean policy documents\n4.5%\n3.8%\nDomestic share remains low.\n\n\nUnique works cited at least twice\n48.1%\n51.3%\nRepeat-citation structure remains a useful monitoring signal."
+    "text": "Headline comparison\n\n\n\n\n\n\n\n\n\nIndicator\nOriginal baseline\n2026 data update\nReading\n\n\n\n\nInbound policy citations to Korean research: top 3 policy-source channels\n54.8%\n51.1%\nConcentration remains, but is slightly weaker.\n\n\nU.S. research share in citations from Korean policy documents\n55.7%\n48.6%\nU.S. skew remains, but is weaker.\n\n\nKorean research share in citations from Korean policy documents\n4.5%\n3.8%\nDomestic share remains low.\n\n\nUnique works cited at least twice\n48.1%\n51.3%\nRepeat-citation structure remains a useful monitoring signal."
   },
   {
     "objectID": "SI/update_202603_en.html#reading-boundary",
@@ -312,14 +312,14 @@
     "href": "SI/index_en.html#core-message",
     "title": "English Web Summary",
     "section": "Core message",
-    "text": "Core message\nThe report examines DOI-linked citations from policy documents in Overton to scholarly works in OpenAlex. It does not measure every policy document or every form of evidence. It summarizes the observable policy-to-research citation structure in the current linked data.\nTwo findings organize the report:\n\nPolicy evidence is concentrated in a small set of hub channels.\nKorea’s inbound policy-citation route and Korea’s evidence-sourcing route are asymmetric."
+    "text": "Core message\nThe report examines DOI-linked citations from policy documents in Overton to scholarly works in OpenAlex. It does not measure every policy document or every form of evidence. It summarizes the observable policy-to-research citation structure in the current linked data.\nTwo findings organize the report:\n\nPolicy evidence is concentrated in a small set of hub channels.\nThe route by which Korean research enters policy documents differs from the route by which Korean policy documents source research."
   },
   {
     "objectID": "SI/index_en.html#key-numbers",
     "href": "SI/index_en.html#key-numbers",
     "title": "English Web Summary",
     "section": "Key numbers",
-    "text": "Key numbers\n\n\n\n\n\n\n\nSignal\nBaseline reading\n\n\n\n\nInbound policy citations to Korean research\nTop 3 policy-source tags account for 54.8%.\n\n\nResearch cited by Korean policy documents\nU.S.-authored research accounts for 55.7% among citations with known first-author country.\n\n\nKorean-authored research cited by Korean policy documents\n4.5% among citations with known first-author country.\n\n\nRepeatedly cited works\n48.1% of unique cited works are cited by at least two policy documents."
+    "text": "Key numbers\n\n\n\n\n\n\n\nSignal\nBaseline reading\n\n\n\n\nInbound policy citations to Korean research\nTop 3 policy-source channels account for 54.8%.\n\n\nResearch cited by Korean policy documents\nU.S.-authored research accounts for 55.7% among citations with known first-author country.\n\n\nKorean-authored research cited by Korean policy documents\n4.5% among citations with known first-author country.\n\n\nRepeatedly cited works\n48.1% of unique cited works are cited by at least two policy documents."
   },
   {
     "objectID": "SI/index_en.html#summary-pages",
