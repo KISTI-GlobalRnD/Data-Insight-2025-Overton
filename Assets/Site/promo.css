@@ -1264,24 +1264,24 @@ html.has-js [data-reveal].is-inview {
   }
 
   .promo-hero {
-    padding-top: 5.25rem;
+    padding-top: 4.6rem;
     padding-bottom: 4rem;
   }
 
   .promo-title {
-    margin-bottom: 1rem;
-    font-size: 1.92rem;
-    line-height: 1.04;
+    margin-bottom: 0.86rem;
+    font-size: 1.78rem;
+    line-height: 1.06;
     max-width: none;
   }
 
   .promo-lede {
-    font-size: 1rem;
-    line-height: 1.56;
+    font-size: 0.96rem;
+    line-height: 1.5;
   }
 
   .promo-lede--secondary {
-    font-size: 0.96rem;
+    font-size: 0.92rem;
   }
 
   .promo-stats {

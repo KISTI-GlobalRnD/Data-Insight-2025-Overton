@@ -80,8 +80,10 @@
     }
     if (SUPPORTED_LANGS.includes(paramLang)) return paramLang;
 
-    // English pages default to English unless explicitly overridden via ?lang=
+    // Explicit page variants win. This keeps direct links stable:
+    // *_en.html opens English, while the base .html pages remain Korean.
     if (typeof fileName === "string" && fileName.endsWith("_en.html")) return "en";
+    if (isSIPage(fileName)) return "ko";
 
     for (const k of LANG_KEYS) {
       try {
