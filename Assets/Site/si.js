@@ -33,7 +33,7 @@
     },
     en: {
       main: { text: "Main", href: "../index.html?lang=en" },
-      report: { text: "Korean Report (PDF)", href: "../Report/Report_final.pdf" },
+      report: { text: "Main Report (Korean PDF)", href: "../Report/Report_final.pdf" },
       menu: "Supplementary Information",
       items: [
         { text: "Overview", href: "../SI/index_en.html" },
