@@ -32,7 +32,7 @@
       ],
     },
     en: {
-      main: { text: "Main", href: "../index.html?lang=en" },
+      main: { text: "Main", href: "../index_en.html" },
       report: { text: "Main Report (Korean PDF)", href: "../Report/Report_final.pdf" },
       menu: "Supplementary Information",
       items: [
@@ -269,9 +269,8 @@
   function updateSearchVisibility(lang) {
     const search = document.getElementById("quarto-search");
     if (!search) return;
-    const hide = lang === "en";
-    search.hidden = hide;
-    search.setAttribute("aria-hidden", hide ? "true" : "false");
+    search.hidden = false;
+    search.setAttribute("aria-hidden", "false");
   }
 
   function applyLanguage(lang) {

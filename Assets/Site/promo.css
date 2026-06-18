@@ -88,6 +88,9 @@ header#title-block-header,
 }
 
 .promo-lang-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   appearance: none;
   border: none;
   border-radius: 999px;
@@ -99,6 +102,8 @@ header#title-block-header,
   text-transform: uppercase;
   font-size: 0.78rem;
   cursor: pointer;
+  text-decoration: none;
+  line-height: 1;
 }
 
 .promo-lang-btn:hover {

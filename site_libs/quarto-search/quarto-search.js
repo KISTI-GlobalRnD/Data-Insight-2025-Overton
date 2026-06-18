@@ -700,7 +700,8 @@ async function readSearchData() {
     const fuse = new window.Fuse([], kFuseIndexOptions);
 
     // fetch the main search.json
-    const response = await fetch(offsetURL("search.json"));
+    const searchIndexFile = document.documentElement.lang === "en" || document.documentElement.dataset.siLang === "en" ? "search_en.json" : "search.json";
+    const response = await fetch(offsetURL(searchIndexFile));
     if (response.status == 200) {
       return response.json().then(function (searchDocs) {
         searchDocs.forEach(function (searchDoc) {

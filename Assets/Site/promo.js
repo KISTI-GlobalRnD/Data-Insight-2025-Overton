@@ -209,6 +209,7 @@
   function initLanguage() {
     const switchEl = document.querySelector(".promo-lang-switch");
     if (!switchEl) return;
+    if (switchEl.dataset.staticLangSwitch === "true") return;
 
     captureBaseline();
 
@@ -251,6 +252,15 @@
       const btn = event.target.closest("[data-lang]");
       if (!btn) return;
       event.preventDefault();
+      if (btn.dataset.lang === "en") {
+        try {
+          window.localStorage.setItem(LANG_STORAGE_KEY, "en");
+        } catch (_err) {
+          // ignore
+        }
+        window.location.href = "./index_en.html";
+        return;
+      }
       setLanguage(btn.dataset.lang);
     });
 

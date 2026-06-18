@@ -6,6 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="English appendix for the Overton × OpenAlex evidence map, covering coverage notes, metric definitions, interpretation cautions, and additional diagnostic figures.">
 
 <title>Overton × OpenAlex - Appendix</title>
 <style>
@@ -79,7 +80,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../index.html?lang=en">
+    <a class="navbar-brand" href="../index_en.html">
     <span class="navbar-title">Overton × OpenAlex</span>
     </a>
   </div>
@@ -90,7 +91,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html?lang=en"> 
+    <a class="nav-link" href="../index_en.html"> 
 <span class="menu-text">Main</span></a>
   </li>  
   <li class="nav-item">
@@ -159,7 +160,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#repeat-share" id="toc-repeat-share" class="nav-link" data-scroll-target="#repeat-share">B2. Repeat-citation share (48.1%): definition</a></li>
   <li><a href="#citations-vs-works" id="toc-citations-vs-works" class="nav-link" data-scroll-target="#citations-vs-works">B3. Citations vs works</a></li>
   <li><a href="#recency-intensity" id="toc-recency-intensity" class="nav-link" data-scroll-target="#recency-intensity">B4. Recency / intensity</a></li>
-  <li><a href="#self-citation-share" id="toc-self-citation-share" class="nav-link" data-scroll-target="#self-citation-share">B5. Self-citation share</a></li>
+  <li><a href="#self-citation-share" id="toc-self-citation-share" class="nav-link" data-scroll-target="#self-citation-share">B5. Domestic-citation share</a></li>
   <li><a href="#multilabel" id="toc-multilabel" class="nav-link" data-scroll-target="#multilabel">B6. Multi-label topics</a></li>
   <li><a href="#recent-years-decline" id="toc-recent-years-decline" class="nav-link" data-scroll-target="#recent-years-decline">B7. Recent-year decline caution</a></li>
   <li><a href="#why-2012" id="toc-why-2012" class="nav-link" data-scroll-target="#why-2012">B8. Why 2012 looks high</a></li>
@@ -170,7 +171,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#c1.-extended-for-chapter-2-top-n-topics-subfields" id="toc-c1.-extended-for-chapter-2-top-n-topics-subfields" class="nav-link" data-scroll-target="#c1.-extended-for-chapter-2-top-n-topics-subfields">C1. Extended for Chapter 2: Top-N topics / subfields</a></li>
   <li><a href="#c2.-extended-for-chapter-3-source-type-x-topic-heatmap" id="toc-c2.-extended-for-chapter-3-source-type-x-topic-heatmap" class="nav-link" data-scroll-target="#c2.-extended-for-chapter-3-source-type-x-topic-heatmap">C2. Extended for Chapter 3: source type x topic (heatmap)</a></li>
   <li><a href="#c3.-oa-reference-figures-by-domain-source-type" id="toc-c3.-oa-reference-figures-by-domain-source-type" class="nav-link" data-scroll-target="#c3.-oa-reference-figures-by-domain-source-type">C3. OA reference figures (by domain / source type)</a></li>
-  <li><a href="#c4.-self-citation-share-top-10" id="toc-c4.-self-citation-share-top-10" class="nav-link" data-scroll-target="#c4.-self-citation-share-top-10">C4. Self-citation share (Top 10)</a></li>
+  <li><a href="#c4.-domestic-citation-share-top-10" id="toc-c4.-domestic-citation-share-top-10" class="nav-link" data-scroll-target="#c4.-domestic-citation-share-top-10">C4. Domestic-citation share (Top 10)</a></li>
   <li><a href="#c5.-openalex-subfield-overton-domain-network-top-100" id="toc-c5.-openalex-subfield-overton-domain-network-top-100" class="nav-link" data-scroll-target="#c5.-openalex-subfield-overton-domain-network-top-100">C5. OpenAlex subfield → Overton domain network (Top 100)</a></li>
   <li><a href="#c6.-uneven-and-repeated-citation-distributions-log-log-ccdf" id="toc-c6.-uneven-and-repeated-citation-distributions-log-log-ccdf" class="nav-link" data-scroll-target="#c6.-uneven-and-repeated-citation-distributions-log-log-ccdf">C6. Uneven and repeated-citation distributions (log-log CCDF)</a></li>
   <li><a href="#c7.-domain-demand-supply-composition-gap-delta-pp" id="toc-c7.-domain-demand-supply-composition-gap-delta-pp" class="nav-link" data-scroll-target="#c7.-domain-demand-supply-composition-gap-delta-pp">C7. Domain demand-supply composition gap (Delta, pp)</a></li>
@@ -186,6 +187,11 @@ ul.task-list li input[type="checkbox"] {
 <h1 class="title">Appendix</h1>
 </div>
 
+<div>
+  <div class="description">
+    English appendix for the Overton × OpenAlex evidence map, covering coverage notes, metric definitions, interpretation cautions, and additional diagnostic figures.
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
@@ -377,7 +383,7 @@ Note
 <li><strong>Citation counts vs unique works</strong>: “how often” vs “how widely” are different questions, so we separate them. See: <a href="#citations-vs-works">Citations vs works</a></li>
 <li><strong>Recency / intensity</strong>: recency is the share of policy citations to works published in <code>2022-2024</code>; intensity is average policy citations per unique work. See: <a href="#recency-intensity">Recency / intensity</a></li>
 <li><strong>Multi-label topics</strong>: OpenAlex topics are multi-label; a single work can belong to multiple topics, so shares can exceed 100%. See: <a href="#multilabel">Multi-label</a></li>
-<li><strong>Self-citation denominator</strong>: self-citation share is computed only over citations with known first-author country codes. See: <a href="#self-citation-share">Self-citation share</a></li>
+<li><strong>Domestic-citation denominator</strong>: domestic-citation share is a country-level same-country citation share, computed only over citations with known first-author country codes. See: <a href="#self-citation-share">Domestic-citation share</a></li>
 </ul>
 </section>
 <section id="data-fitness" class="level3">
@@ -728,18 +734,18 @@ Note
 </ul>
 </section>
 <section id="self-citation-share" class="level3">
-<h3 class="anchored" data-anchor-id="self-citation-share">B5. Self-citation share</h3>
-<p><strong>How is self-citation share computed?</strong></p>
-<p>We map policy source country tags to 2-letter country codes (e.g., USA → US, UK → GB), and compute self-citation share using only citations with known first-author country codes as the denominator. That is, self-citation share is not a pattern over “all citations.” It is a pattern over citations where the first-author country code is available.</p>
+<h3 class="anchored" data-anchor-id="self-citation-share">B5. Domestic-citation share</h3>
+<p><strong>How is domestic-citation share computed?</strong></p>
+<p>We map policy source country tags to 2-letter country codes (e.g., USA → US, UK → GB), and compute country-level domestic-citation share using only citations with known first-author country codes as the denominator. That is, domestic-citation share is not a pattern over “all citations.” It is a pattern over citations where the first-author country code is available. The older internal label could be misleading; in this English SI, “domestic-citation share” is used to avoid confusion with author- or article-level citation behavior.</p>
 <details>
 <summary>
 <strong>More: expected-share definition and a comparison table</strong>
 </summary>
-<p><strong>How is expected self-citation share computed?</strong></p>
+<p><strong>How is expected domestic-citation share computed?</strong></p>
 <p>For each policy source country, we first compute its domain mix of cited research. For each domain, we multiply by the country’s <strong>global research production share</strong> in that domain (OpenAlex), then sum across domains. Conceptually:</p>
 <p><code>expected = sum( policy_citation_domain_share * global_production_share_in_domain )</code></p>
 <p><span id="self-citation-context"></span></p>
-<p>The table below summarizes self-citation share for a small comparison set. Since self-citation share is computed only over citations with known first-author country codes, it is better treated as a diagnostic metric rather than a ranking.</p>
+<p>The table below summarizes domestic-citation share for a small comparison set. Since domestic-citation share is computed only over citations with known first-author country codes, it is better treated as a diagnostic metric rather than a ranking.</p>
 <table class="table">
 <colgroup>
 <col style="width: 20%">
@@ -752,7 +758,7 @@ Note
 <th>Policy source</th>
 <th style="text-align: right;">Citations with known first-author country</th>
 <th style="text-align: right;">Share known</th>
-<th style="text-align: right;">Self-citation share</th>
+<th style="text-align: right;">Domestic-citation share</th>
 </tr>
 </thead>
 <tbody>
@@ -938,12 +944,12 @@ Note
 <p><img src="../Assets/Figures/si/source_type_oa_share.png" class="img-fluid" style="width:92.0%" alt="OA citation shares by source type"></p>
 </details>
 </section>
-<section id="c4.-self-citation-share-top-10" class="level3">
-<h3 class="anchored" data-anchor-id="c4.-self-citation-share-top-10">C4. Self-citation share (Top 10)</h3>
+<section id="c4.-domestic-citation-share-top-10" class="level3">
+<h3 class="anchored" data-anchor-id="c4.-domestic-citation-share-top-10">C4. Domestic-citation share (Top 10)</h3>
 <p>Figure 10 in the main report shows selected countries for comparison. The figure below expands it to the top 10 policy source countries.</p>
 <p>This metric is computed only over citations with known first-author country codes.</p>
 <ul>
-<li><strong>One-line takeaway:</strong> An expanded view of self-citation share beyond selected countries (top 10 policy sources).</li>
+<li><strong>One-line takeaway:</strong> An expanded view of domestic-citation share beyond selected countries (top 10 policy sources).</li>
 <li><strong>Why included:</strong> To complement §3.3 / Figure 10, so the selected-country comparison is anchored to a broader range.</li>
 <li><strong>Interpretation boundary:</strong> The denominator includes only citations with known first-author country codes; read it as range/scale, not a definitive ranking.</li>
 </ul>
@@ -951,7 +957,7 @@ Note
 <summary>
 <strong>Show figure</strong>
 </summary>
-<p><img src="../Assets/Figures/si/policy_country_self_share_top10.png" class="img-fluid" style="width:92.0%" alt="Self-citation share for top 10 policy source countries"></p>
+<p><img src="../Assets/Figures/si/policy_country_self_share_top10.png" class="img-fluid" style="width:92.0%" alt="Domestic-citation share for top 10 policy source countries"></p>
 </details>
 </section>
 <section id="c5.-openalex-subfield-overton-domain-network-top-100" class="level3">

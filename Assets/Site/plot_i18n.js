@@ -13,7 +13,7 @@
     "Policy citations by domain (top 4; stacked by field)": "도메인별 정책 인용(상위 4; 분야별 누적)",
     "Republic of Korea evidence flows and domain portfolios (top 10; DOI-matched, first-author country)":
       "한국 근거 흐름과 도메인 포트폴리오(상위 10; DOI 매칭, 1저자 국가)",
-    "Self-citation share vs expected and domain portfolio (top 7 policy countries + Republic of Korea)":
+    "Domestic-citation share vs expected and domain portfolio (top 7 policy countries + Republic of Korea)":
       "자국 인용 비중(관측 vs 기대)과 도메인 구성(상위 7 + 한국)",
     "Policy–research evidence flows (top 3 imports/exports per node)": "정책-연구 근거 흐름(노드당 상위 3 유입/유출)",
     "Policy source → Research country citations": "정책 출처 → 연구국 인용",
@@ -61,8 +61,8 @@
     "B. Research countries cited by Republic of Korea policy": "B. 한국 정책이 인용하는 연구국",
     "C. Domain mix of cited research (KR vs non-KR)": "C. 피인용 연구 도메인 구성(한국 vs 비한국)",
     "D. Domain mix of cited research (KR vs non-KR policy)": "D. 피인용 연구 도메인 구성(한국 정책 vs 비한국 정책)",
-    "A. Self-citation share": "A. 자국 인용 비중",
-    "B. Self-citation vs expected": "B. 자국 인용(관측 vs 기대)",
+    "A. Domestic-citation share": "A. 자국 인용 비중",
+    "B. Domestic-citation vs expected": "B. 자국 인용(관측 vs 기대)",
     "C. Domain composition of cited research": "C. 피인용 연구 도메인 구성",
     "Overall: 32.7%": "전체: 32.7%",
     "A. Absolute citations (log10 scale)": "A. 절대 인용(log10)",
