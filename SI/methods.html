@@ -96,7 +96,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../Report/Report_final.pdf"> 
-<span class="menu-text">보고서(PDF)</span></a>
+<span class="menu-text">보고서 원고(PDF)</span></a>
   </li>  
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -148,9 +148,9 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#먼저-확인할-것-1분" id="toc-먼저-확인할-것-1분" class="nav-link active" data-scroll-target="#먼저-확인할-것-1분">먼저 확인할 것 (1분)</a></li>
   <li><a href="#method-scope" id="toc-method-scope" class="nav-link" data-scroll-target="#method-scope">1) 분석 범위</a></li>
   <li><a href="#method-matching" id="toc-method-matching" class="nav-link" data-scroll-target="#method-matching">2) 매칭·결측 점검</a></li>
-  <li><a href="#method-metrics" id="toc-method-metrics" class="nav-link" data-scroll-target="#method-metrics">3) 핵심 지표 정의(요약)</a></li>
-  <li><a href="#method-guardrails" id="toc-method-guardrails" class="nav-link" data-scroll-target="#method-guardrails">4) 해석 가드레일</a></li>
-  <li><a href="#method-protocol" id="toc-method-protocol" class="nav-link" data-scroll-target="#method-protocol">5) 재현·반복 점검 프로토콜</a></li>
+  <li><a href="#method-metrics" id="toc-method-metrics" class="nav-link" data-scroll-target="#method-metrics">3) 지표 정의(요약)</a></li>
+  <li><a href="#method-guardrails" id="toc-method-guardrails" class="nav-link" data-scroll-target="#method-guardrails">4) 해석 시 제한 사항</a></li>
+  <li><a href="#method-protocol" id="toc-method-protocol" class="nav-link" data-scroll-target="#method-protocol">5) 재계산 절차</a></li>
   </ul>
 </nav>
     </div>
@@ -181,7 +181,7 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><strong>바로가기:</strong> <a href="../Report/Report_final.pdf">보고서(PDF)</a> · <a href="../SI/index.html">확장 자료</a> · <strong>방법론·데이터 정합성</strong> · <a href="../SI/interactive.html">인터랙티브</a> · <a href="../SI/appendix.html">부록</a> · <a href="../SI/next_questions.html">다음 질문</a></p>
+<p><strong>바로가기:</strong> <a href="../Report/Report_final.pdf">보고서 원고(PDF)</a> · <a href="../SI/index.html">확장 자료</a> · <strong>방법론·데이터 정합성</strong> · <a href="../SI/interactive.html">인터랙티브</a> · <a href="../SI/appendix.html">부록</a> · <a href="../SI/next_questions.html">다음 질문</a></p>
 <p>이 페이지는 보고서 본문에서 짧게 다룬 방법론 설명을 해석에 필요한 기준 중심으로 다시 정리한 것이다. 상세 표와 추가 진단 그림은 <a href="../SI/appendix.html">부록</a>에서 이어서 확인할 수 있다.</p>
 <section id="먼저-확인할-것-1분" class="level2">
 <h2 class="anchored" data-anchor-id="먼저-확인할-것-1분">먼저 확인할 것 (1분)</h2>
@@ -213,7 +213,7 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li>본 결과는 Overton 전체 정책문헌의 완전한 센서스가 아니라, 이번 기준 시점과 매칭 범위에서 관측된 구조다.</li>
 <li>DOI 밖 근거(보고서, 법령, 웹 등)는 본 기본 지표에 포함되지 않는다.</li>
-<li>“DOI 인용 포함 비중(예: 97.6%)”은 “정책문헌이 DOI를 1건이라도 포함하는지”의 비율이며, 정책근거 전체에서 DOI가 차지하는 비율이 아니다.</li>
+<li>“DOI 인용 포함 비중(예: 97.6%)”은 “정책문헌이 DOI를 1건이라도 포함하는지”의 비율이며, 정책문헌의 연구 인용 전체에서 DOI가 차지하는 비율이 아니다.</li>
 </ul>
 </div>
 </div>
@@ -221,41 +221,41 @@ ul.task-list li input[type="checkbox"] {
 <section id="method-matching" class="level2">
 <h2 class="anchored" data-anchor-id="method-matching">2) 매칭·결측 점검</h2>
 <ul>
-<li>DOI → OpenAlex 매칭률과 국가코드 결측은 해석의 안전장치다.</li>
+<li>DOI → OpenAlex 매칭률과 국가코드 결측률을 결과와 함께 제시한다.</li>
 <li>특히 국가 비교는 1저자 국가코드가 확인되는 인용만을 대상으로 한 결과인지 먼저 확인해야 한다.</li>
 </ul>
 <p>관련 상세: - <a href="../SI/appendix.html#data-fitness">부록 B0-1. 매칭·결측 요약</a> - <a href="../SI/appendix.html#appendix-b-quick">부록 B0. 자주 찾는 정의</a></p>
 </section>
 <section id="method-metrics" class="level2">
-<h2 class="anchored" data-anchor-id="method-metrics">3) 핵심 지표 정의(요약)</h2>
-<p>아래 정의는 본문 핵심 수치를 같은 기준으로 다시 점검하기 위한 최소 기준이다.</p>
+<h2 class="anchored" data-anchor-id="method-metrics">3) 지표 정의(요약)</h2>
+<p>아래 정의는 본문 수치를 같은 기준으로 다시 계산하기 위한 최소 조건이다.</p>
 <ul>
-<li>인용 건수와 고유 논문 수: 빈도와 폭을 분리해서 본다.</li>
-<li>최근성: <code>2022-2024</code> 발행 논문으로 향한 정책문헌 인용 비중</li>
-<li>인용 강도: 집계 단위 내 <code>인용 건수 / 고유 논문 수</code></li>
+<li>인용 건수와 고유 논문 수: 전체 인용 횟수와 인용된 논문 수를 구분한다.</li>
+<li>최근 고유 논문 비중: 발행연도가 확인된 2024년 이하의 토픽별 고유 논문 가운데 <code>2022-2024</code> 발행 논문이 차지하는 비중</li>
+<li>논문당 정책문헌 인용 수: 집계 단위 내 <code>인용 건수 / 고유 논문 수</code></li>
 <li>자국 인용 비중: 1저자 국가코드 확인분만 분모에 포함</li>
 </ul>
-<p>관련 상세: - <a href="../SI/appendix.html#citations-vs-works">인용 건수와 고유 논문 수</a> - <a href="../SI/appendix.html#recency-intensity">최근성과 인용 강도</a> - <a href="../SI/appendix.html#self-citation-share">자국 인용 비중</a></p>
+<p>관련 상세: - <a href="../SI/appendix.html#citations-vs-works">인용 건수와 고유 논문 수</a> - <a href="../SI/appendix.html#recency-intensity">최근 고유 논문 비중과 논문당 정책문헌 인용 수</a> - <a href="../SI/appendix.html#self-citation-share">자국 인용 비중</a></p>
 </section>
 <section id="method-guardrails" class="level2">
-<h2 class="anchored" data-anchor-id="method-guardrails">4) 해석 가드레일</h2>
+<h2 class="anchored" data-anchor-id="method-guardrails">4) 해석 시 제한 사항</h2>
 <p>아래 항목은 본문 결론을 과하게 읽지 않기 위해 먼저 확인할 사항이다.</p>
 <ul>
 <li>다중라벨 토픽 합은 100%를 넘을 수 있다.</li>
-<li>최근 연도 하락은 관측 지연(수집·색인 시차) 신호일 수 있다.</li>
+<li>최근 연도 하락에는 관측 지연(수집·색인 시차)이 포함될 수 있다.</li>
 <li>2012년 평균 고점은 분포 진단(중앙값·절단평균)과 함께 해석해야 한다.</li>
-<li>국가·유형 비교에서 “문헌당 평균 인용”은 문서 길이·장르·참고문헌 관행을 함께 반영하므로, 평균만으로 우열을 판단하지 않는다(중앙값·절단평균 병기: <a href="../SI/appendix.html#appendix-c9-density-robustness">부록 C9</a>).</li>
+<li>국가·유형 비교에서 “문헌당 평균 인용 수”는 문서 길이·장르·참고문헌 관행을 함께 반영하므로, 평균만으로 우열을 판단하지 않는다(중앙값·절단평균 병기: <a href="../SI/appendix.html#appendix-c9-density-robustness">부록 C9</a>).</li>
 <li>“반복 인용(≥2)” 비중은 임계값 선택과 시간 지연(최근 논문 불리)에 민감하므로, 코호트/임계값 민감도와 함께 확인한다(<a href="../SI/appendix.html#appendix-c10-repeat-citation-sensitivity">부록 C10</a>).</li>
-<li>네트워크(그림 12)는 가독성을 위해 연결을 축약한 “구조 요약 지도”다. 표시 규칙(top-3/top-5/all) 민감도는 <a href="../SI/appendix.html#appendix-c8-policy-research-backbone">부록 C8</a>에서 확인한다.</li>
+<li>네트워크(그림 12)는 상위 50개 노드와 각 노드의 유입·유출 상위 3개 연결만 표시한다. 표시 규칙(top-3/top-5/all)별 결과는 <a href="../SI/appendix.html#appendix-c8-policy-research-backbone">부록 C8</a>에서 확인한다.</li>
 </ul>
 <p>관련 상세: - <a href="../SI/appendix.html#multilabel">다중라벨 해석</a> - <a href="../SI/appendix.html#recent-years-decline">최근 연도 하락 주의</a> - <a href="../SI/appendix.html#why-2012">2012년 평균 진단</a></p>
 </section>
 <section id="method-protocol" class="level2">
-<h2 class="anchored" data-anchor-id="method-protocol">5) 재현·반복 점검 프로토콜</h2>
+<h2 class="anchored" data-anchor-id="method-protocol">5) 재계산 절차</h2>
 <p>마지막으로, 같은 질문을 다음 점검 때도 같은 기준으로 다시 계산할 수 있어야 한다.</p>
 <ul>
-<li>동일 지표를 분기 또는 반기 단위로 재계산해 방향성(상승·유지·완화)을 점검한다.</li>
-<li>보고서(PDF)는 본문으로 유지하고, 계산식·민감도·보조 표는 확장 자료에서 업데이트한다.</li>
+<li>동일 지표를 분기 또는 반기 단위로 재계산해 기준값과 새 값의 차이(%p)를 제시한다.</li>
+<li>보고서 원고(PDF)는 본문으로 유지하고, 계산식·민감도·보조 표는 확장 자료에서 업데이트한다.</li>
 <li>기준값·분모·저자국가 규칙이 바뀌면 PDF와 확장 자료의 연결표를 함께 점검한다.</li>
 </ul>
 

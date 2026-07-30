@@ -7,28 +7,31 @@
   const KO = {
     // Plot titles
     "Policy citations by policy source country (top 10 + Republic of Korea)": "정책 출처 국가별 정책 인용(상위 10 + 한국)",
-    "Selected countries (top 50): domain mix mismatch (demand vs supply)": "선택 국가(상위 50): 도메인 구성 불일치(수요 vs 공급)",
+    "Selected countries (top 50): domain composition in two policy-citation directions":
+      "선택 국가(상위 50): 두 정책문헌 인용 방향의 도메인 구성",
     "Domain composition of policy citations (top 10 + Republic of Korea)": "정책 출처 국가별 도메인 구성(상위 10 + 한국)",
     "Overton coverage: policy documents by policy source country (log10 scale)": "Overton 커버리지: 정책 출처 국가별 정책문헌 수(log10)",
     "Policy citations by domain (top 4; stacked by field)": "도메인별 정책 인용(상위 4; 분야별 누적)",
-    "Republic of Korea evidence flows and domain portfolios (top 10; DOI-matched, first-author country)":
-      "한국 근거 흐름과 도메인 포트폴리오(상위 10; DOI 매칭, 1저자 국가)",
-    "Domestic-citation share vs expected and domain portfolio (top 7 policy countries + Republic of Korea)":
+    "Policy sources citing Republic of Korea-authored research and research countries cited by Republic of Korea policy documents (top 10; DOI-matched, first-author country)":
+      "한국 연구를 인용한 정책 출처와 한국 정책문헌이 인용한 연구국(상위 10; DOI 매칭, 1저자 국가)",
+    "Domestic-citation share vs expected and domain composition (top 7 policy countries + Republic of Korea)":
       "자국 인용 비중(관측 vs 기대)과 도메인 구성(상위 7 + 한국)",
-    "Policy–research evidence flows (top 3 imports/exports per node)": "정책-연구 근거 흐름(노드당 상위 3 유입/유출)",
+    "Policy source and research country citation network (top 3 incoming/outgoing links per node)":
+      "정책 출처-연구국 인용 네트워크(노드당 유입·유출 상위 3개 연결)",
     "Policy source → Research country citations": "정책 출처 → 연구국 인용",
     "Policy documents by publication year (DOI citations)": "발행연도별 정책문헌(DOI 인용)",
-    "Citations per policy document by policy source type (selected types)": "출처 유형별 문헌당 평균 인용(선택 유형)",
-    "Citations by policy source type (top 10)": "출처 유형별 총 인용(상위 10)",
+    "Citations per policy document by policy source type (selected types)": "출처 유형별 문헌당 평균 인용 수(선택 유형)",
+    "Citations by policy source type (top 10)": "출처 유형별 총 인용 수(상위 10)",
     "Share heatmap: domain × policy source type (selected; source-type normalized)":
       "비중 히트맵: 도메인 × 출처 유형(선택; 출처 유형 내 정규화)",
-    "Topics: intensity vs recency (color=domain)": "토픽: 인용 강도 vs 최근성(색=도메인)",
+    "Policy citations per paper and 2022-2024 unique-paper share by topic":
+      "토픽별 논문당 정책문헌 인용 수와 2022-2024년 발행 고유 논문 비중",
     "Topics: citations vs unique papers (size=OA share)": "토픽: 정책 인용 vs 고유 논문 수(크기=OA 비중)",
 
     // Axes / legend labels
     Citations: "인용(건수)",
     "Policy source country": "정책 출처 국가",
-    "Citations per policy document": "정책문헌당 평균 인용",
+    "Citations per policy document": "정책문헌당 평균 인용 수",
     "Share within policy source (normalized)": "출처 내부 비중(정규화)",
     "Cited research share by domain": "피인용 연구 비중(도메인별)",
     "Policy citations share by domain": "정책 인용 비중(도메인별)",
@@ -39,23 +42,25 @@
     "Policy citations": "정책 인용(건수)",
     "Policy documents": "정책문헌 수",
     "Publication year (policy documents)": "발행연도(정책문헌)",
-    "Citations per document": "문헌당 평균 인용",
+    "Citations per document": "문헌당 평균 인용 수",
     "Share (%)<br>(first-author country available only)": "비중(%)<br>(1저자 국가코드 확인 건만)",
-    "Actual − expected (pp)<br>(domain-weighted baseline)": "관측 − 기대(pp)<br>(도메인 가중 기준선)",
+    "Actual − expected (pp)<br>(domain-weighted baseline)": "관측 − 기대(pp)<br>(도메인 가중 기대값)",
     "Citations to KR research": "한국 연구로의 인용",
     "Citations from KR policy<br>(first-author country available only)": "한국 정책의 인용<br>(1저자 국가코드 확인 건만)",
-    "Share within inbound flow (normalized)": "유입 흐름 내부 비중(정규화)",
-    "Share within outbound flow (normalized)": "유출 흐름 내부 비중(정규화)",
+    "Domain share in citations to KR research (normalized)": "한국 연구 인용의 도메인 비중(정규화)",
+    "Domain share in citations by KR policy documents (normalized)": "한국 정책문헌 인용의 도메인 비중(정규화)",
     "Source type": "출처 유형",
     "Policy source type": "출처 유형",
     "Unique papers (log)": "고유 논문 수(log)",
     "Citations (log)": "정책 인용(log)",
-    "Citations per paper": "논문당 정책 인용",
-    "Recent share (2022–24)": "최근성(2022–24 비중)",
+    "Policy citations per paper": "논문당 정책문헌 인용 수",
+    "Share of unique papers published in 2022-2024": "2022-2024년 발행 고유 논문 비중",
+    "Unique papers published in 2022-2024": "2022-2024년 발행 고유 논문 수",
+    "Unique papers with known year through 2024": "발행연도 확인 고유 논문 수(2024년 이하)",
 
     // Annotations
-    "A. Total citations": "A. 총 인용",
-    "B. Citations per policy doc": "B. 문헌당 평균 인용",
+    "A. Total citations": "A. 총 인용 수",
+    "B. Citations per policy doc": "B. 문헌당 평균 인용 수",
     "C. Domain composition": "C. 도메인 구성",
     "A. Policy sources citing KR first-author research": "A. 한국 1저자 연구를 인용하는 정책 출처",
     "B. Research countries cited by Republic of Korea policy": "B. 한국 정책이 인용하는 연구국",
@@ -71,7 +76,7 @@
     // Trace names / categories (keep this list intentionally small)
     "Policy citations (count)": "정책 인용(건수)",
     "Policy documents (with DOI citations)": "정책문헌 수(DOI 인용 포함)",
-    "Citations per policy document": "정책문헌당 평균 인용",
+    "Citations per policy document": "정책문헌당 평균 인용 수",
     "Social Sciences": "사회과학",
     "Health Sciences": "보건/의학",
     "Physical Sciences": "물리/공학",
@@ -80,11 +85,14 @@
     Other: "기타",
     "Republic of Korea": "한국",
     "Policy source": "정책 출처",
+    "Research country": "연구국",
+    "Policy source & research country": "정책 출처·연구국 모두",
+    "Policy source only": "정책 출처만",
+    "Research country only": "연구국만",
     "Republic of Korea (highlight)": "한국(강조)",
-    Both: "양방향",
     "Node type": "노드 유형",
-    "Total flow": "총 흐름",
-    "A. Total flow": "A. 총 흐름",
+    "Total citation count": "총 인용 수",
+    "A. Total citation count": "A. 총 인용 수",
     "B. Top neighbors": "B. 주요 이웃",
     "C. Selected node": "C. 선택 노드"
   };

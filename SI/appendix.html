@@ -96,7 +96,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../Report/Report_final.pdf"> 
-<span class="menu-text">보고서(PDF)</span></a>
+<span class="menu-text">보고서 원고(PDF)</span></a>
   </li>  
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -146,7 +146,7 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#읽는-순서-2분" id="toc-읽는-순서-2분" class="nav-link active" data-scroll-target="#읽는-순서-2분">읽는 순서 (2분)</a></li>
-  <li><a href="#appendix-a" id="toc-appendix-a" class="nav-link" data-scroll-target="#appendix-a">A. 데이터 수집 범위·태깅</a>
+  <li><a href="#appendix-a" id="toc-appendix-a" class="nav-link" data-scroll-target="#appendix-a">A. 데이터 수집 범위·출처 분류</a>
   <ul class="collapse">
   <li><a href="#a1.-정책문헌-수집-범위-개요정책-출처-국가별-문헌-수" id="toc-a1.-정책문헌-수집-범위-개요정책-출처-국가별-문헌-수" class="nav-link" data-scroll-target="#a1.-정책문헌-수집-범위-개요정책-출처-국가별-문헌-수">A1. 정책문헌 수집 범위 개요(정책 출처 국가별 문헌 수)</a></li>
   <li><a href="#a2.-하위-태그a-b와-최상위-국가만을-쓴-이유" id="toc-a2.-하위-태그a-b와-최상위-국가만을-쓴-이유" class="nav-link" data-scroll-target="#a2.-하위-태그a-b와-최상위-국가만을-쓴-이유">A2. 하위 태그(<code>A &gt; B</code>)와 “최상위 국가만”을 쓴 이유</a></li>
@@ -159,7 +159,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#doi-share" id="toc-doi-share" class="nav-link" data-scroll-target="#doi-share">B1. DOI 인용 포함 비중(97.6%): 분모 정의</a></li>
   <li><a href="#repeat-share" id="toc-repeat-share" class="nav-link" data-scroll-target="#repeat-share">B2. 반복 인용 48.1%: 정의</a></li>
   <li><a href="#citations-vs-works" id="toc-citations-vs-works" class="nav-link" data-scroll-target="#citations-vs-works">B3. 인용 건수와 고유 논문 수</a></li>
-  <li><a href="#recency-intensity" id="toc-recency-intensity" class="nav-link" data-scroll-target="#recency-intensity">B4. 최근성과 인용 강도</a></li>
+  <li><a href="#recency-intensity" id="toc-recency-intensity" class="nav-link" data-scroll-target="#recency-intensity">B4. 최근 고유 논문 비중과 논문당 정책문헌 인용 수</a></li>
   <li><a href="#self-citation-share" id="toc-self-citation-share" class="nav-link" data-scroll-target="#self-citation-share">B5. 자국 인용 비중</a></li>
   <li><a href="#multilabel" id="toc-multilabel" class="nav-link" data-scroll-target="#multilabel">B6. 다중라벨 해석</a></li>
   <li><a href="#recent-years-decline" id="toc-recent-years-decline" class="nav-link" data-scroll-target="#recent-years-decline">B7. 최근 연도 하락 해석 주의</a></li>
@@ -170,17 +170,17 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#appendix-c1-topic-lists" id="toc-appendix-c1-topic-lists" class="nav-link" data-scroll-target="#appendix-c1-topic-lists">C1. 그림 3-4 보조: Top-N 토픽·세부분야</a></li>
   <li><a href="#appendix-c2-source-type-topics" id="toc-appendix-c2-source-type-topics" class="nav-link" data-scroll-target="#appendix-c2-source-type-topics">C2. 그림 7 확장: 출처 유형 × 토픽(열지도)</a></li>
-  <li><a href="#appendix-c3-oa-reference" id="toc-appendix-c3-oa-reference" class="nav-link" data-scroll-target="#appendix-c3-oa-reference">C3. 2장 OA 해석 보조: 도메인·출처 유형</a></li>
+  <li><a href="#appendix-c3-oa-reference" id="toc-appendix-c3-oa-reference" class="nav-link" data-scroll-target="#appendix-c3-oa-reference">C3. 정책문헌에 인용된 연구의 OA 비중: 도메인·출처 유형</a></li>
   <li><a href="#appendix-c4-self-share-top10" id="toc-appendix-c4-self-share-top10" class="nav-link" data-scroll-target="#appendix-c4-self-share-top10">C4. 그림 10 확장: 자국 인용 비중(Top10)</a></li>
-  <li><a href="#appendix-c5-subfield-domain-network" id="toc-appendix-c5-subfield-domain-network" class="nav-link" data-scroll-target="#appendix-c5-subfield-domain-network">C5. 허브 구조 보조: OpenAlex subfield → Overton domain 네트워크(Top 100)</a></li>
+  <li><a href="#appendix-c5-subfield-domain-network" id="toc-appendix-c5-subfield-domain-network" class="nav-link" data-scroll-target="#appendix-c5-subfield-domain-network">C5. OpenAlex 세부분야-Overton 정책 분류 인용 네트워크(Top 100)</a></li>
   <li><a href="#appendix-c6-ccdf" id="toc-appendix-c6-ccdf" class="nav-link" data-scroll-target="#appendix-c6-ccdf">C6. 반복 인용 분포 보조: 로그-로그 CCDF</a></li>
-  <li><a href="#appendix-c7-demand-supply-delta" id="toc-appendix-c7-demand-supply-delta" class="nav-link" data-scroll-target="#appendix-c7-demand-supply-delta">C7. 그림 8 보조: 수요–공급 도메인 구성 차이(Δ, pp)</a></li>
-  <li><a href="#appendix-c8-policy-research-backbone" id="toc-appendix-c8-policy-research-backbone" class="nav-link" data-scroll-target="#appendix-c8-policy-research-backbone">C8. 그림 12 보조: 정책–연구 근거 흐름 네트워크 백본 민감도</a></li>
-  <li><a href="#appendix-c9-density-robustness" id="toc-appendix-c9-density-robustness" class="nav-link" data-scroll-target="#appendix-c9-density-robustness">C9. 그림 5-6 보조: 밀도 지표 강건성(평균 vs 중앙값 vs 절단평균)</a></li>
-  <li><a href="#appendix-c10-repeat-citation-sensitivity" id="toc-appendix-c10-repeat-citation-sensitivity" class="nav-link" data-scroll-target="#appendix-c10-repeat-citation-sensitivity">C10. 4장 반복 점검 보조: 반복 인용(근거 표준화) 민감도</a></li>
-  <li><a href="#appendix-c11-korea-peers" id="toc-appendix-c11-korea-peers" class="nav-link" data-scroll-target="#appendix-c11-korea-peers">C11. 3장 한국 비교 보조: 절대 순위보다 비슷한 관측 규모의 비교군으로 해석하기</a></li>
+  <li><a href="#appendix-c7-demand-supply-delta" id="toc-appendix-c7-demand-supply-delta" class="nav-link" data-scroll-target="#appendix-c7-demand-supply-delta">C7. 그림 8 보조: 두 정책문헌 인용 방향의 도메인 구성 차이(Δ, pp)</a></li>
+  <li><a href="#appendix-c8-policy-research-backbone" id="toc-appendix-c8-policy-research-backbone" class="nav-link" data-scroll-target="#appendix-c8-policy-research-backbone">C8. 그림 12 보조: 정책 출처-연구국 인용 네트워크의 연결선 표시 규칙 비교</a></li>
+  <li><a href="#appendix-c9-density-robustness" id="toc-appendix-c9-density-robustness" class="nav-link" data-scroll-target="#appendix-c9-density-robustness">C9. 그림 5-6 보조: 문헌당 인용 수의 평균·중앙값·절단평균 비교</a></li>
+  <li><a href="#appendix-c10-repeat-citation-sensitivity" id="toc-appendix-c10-repeat-citation-sensitivity" class="nav-link" data-scroll-target="#appendix-c10-repeat-citation-sensitivity">C10. 반복 인용 임계값·발행연도 코호트별 비중</a></li>
+  <li><a href="#appendix-c11-korea-peers" id="toc-appendix-c11-korea-peers" class="nav-link" data-scroll-target="#appendix-c11-korea-peers">C11. 한국과 정책문헌 표본 규모가 비슷한 국가 비교</a></li>
   <li><a href="#appendix-c12-korea-author-country-sensitivity" id="toc-appendix-c12-korea-author-country-sensitivity" class="nav-link" data-scroll-target="#appendix-c12-korea-author-country-sensitivity">C12. 그림 9-11 보조: 한국 저자국가 규칙 민감도</a></li>
-  <li><a href="#appendix-c13-join-multiplicity" id="toc-appendix-c13-join-multiplicity" class="nav-link" data-scroll-target="#appendix-c13-join-multiplicity">C13. 그림 11 보조: 한국 유입 비중의 보정 전후 차이</a></li>
+  <li><a href="#appendix-c13-join-multiplicity" id="toc-appendix-c13-join-multiplicity" class="nav-link" data-scroll-target="#appendix-c13-join-multiplicity">C13. 그림 11 보조: 한국 연구 인용의 중복 보정 전후 차이</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -212,9 +212,9 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><strong>바로가기:</strong> <a href="../Report/Report_final.pdf">보고서(PDF)</a> · <a href="../SI/index.html">확장 자료</a> · <a href="../SI/methods.html">방법론·데이터 정합성</a> · <a href="../SI/interactive.html">인터랙티브</a> · <strong>부록</strong> · <a href="../SI/next_questions.html">다음 질문</a></p>
-<p>본문에서 언급한 수치와 패턴을 조금 더 차분하게 확인할 수 있도록 자료를 정리했다. 구성은 <strong>수집 범위·태깅</strong>, <strong>지표 정의·해석 주의</strong>, <strong>추가 그림</strong>의 세 부분이다.</p>
-<p><strong>바로가기</strong>: <a href="#appendix-a">A. 데이터 수집 범위·태깅</a> · <a href="#appendix-b">B. 정의·해석</a> · <a href="#appendix-c">C. 추가 그림</a></p>
+<p><strong>바로가기:</strong> <a href="../Report/Report_final.pdf">보고서 원고(PDF)</a> · <a href="../SI/index.html">확장 자료</a> · <a href="../SI/methods.html">방법론·데이터 정합성</a> · <a href="../SI/interactive.html">인터랙티브</a> · <strong>부록</strong> · <a href="../SI/next_questions.html">다음 질문</a></p>
+<p>본문에서 사용한 수치, 지표 정의, 추가 그림을 정리했다. 구성은 <strong>수집 범위·출처 분류</strong>, <strong>지표 정의·제한 사항</strong>, <strong>추가 그림</strong>의 세 부분이다.</p>
+<p><strong>바로가기</strong>: <a href="#appendix-a">A. 데이터 수집 범위·출처 분류</a> · <a href="#appendix-b">B. 정의·해석</a> · <a href="#appendix-c">C. 추가 그림</a></p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -225,11 +225,11 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><strong>이 페이지는 본문 어디를 보완하나</strong></p>
+<p><strong>수록 내용</strong></p>
 <ul>
-<li>국가 비교와 허브 구조를 해석하기 전에, Overton 수집 범위와 태깅 특성을 함께 확인한다.</li>
+<li>정책 출처별 총 인용 수와 상위 3개 비중을 비교하기 전에 Overton 수집 범위와 출처 분류 방식을 확인한다.</li>
 <li>본문 지표의 분모, 다중라벨, 국가코드 결측, 관측 시차 같은 해석 주의를 정리한다.</li>
-<li>본문에 넣지 않은 참고 그림을 묶어 제공한다.</li>
+<li>본문에 넣지 않은 참고 그림을 제공한다.</li>
 </ul>
 </div>
 </div>
@@ -245,7 +245,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="callout-body-container callout-body">
 <p><strong>최소로 보면 좋은 곳</strong></p>
 <ul>
-<li>국가·허브 비교를 해석할 때: <a href="#appendix-a">A. 수집 범위·태깅</a></li>
+<li>정책 출처 국가 비교를 해석할 때: <a href="#appendix-a">A. 수집 범위·출처 분류</a></li>
 <li>지표의 분모와 정의가 궁금할 때: <a href="#appendix-b-quick">B0. 자주 찾는 정의</a> · <a href="#data-fitness">B0-1. 매칭·결측</a></li>
 <li>최근 연도 하락 해석: <a href="#recent-years-decline">해석 주의: 최근 연도 하락</a> · <a href="#why-2012">특정 논점: 2012 평균</a></li>
 </ul>
@@ -254,15 +254,15 @@ ul.task-list li input[type="checkbox"] {
 <section id="읽는-순서-2분" class="level2">
 <h2 class="anchored" data-anchor-id="읽는-순서-2분">읽는 순서 (2분)</h2>
 <ul>
-<li>1단계(범위 확인): <a href="#appendix-a">A. 데이터 수집 범위·태깅</a>에서 관측 범위의 편차를 먼저 확인한다.</li>
+<li>1단계(범위 확인): <a href="#appendix-a">A. 데이터 수집 범위·출처 분류</a>에서 관측 범위의 편차를 먼저 확인한다.</li>
 <li>2단계(지표 확인): <a href="#appendix-b-quick">B0. 자주 찾는 정의</a>, <a href="#data-fitness">B0-1. 매칭·결측</a>에서 분모와 결측 조건을 고정한다.</li>
-<li>3단계(확장 확인): <a href="#appendix-c">C. 추가 그림</a>에서 필요한 그림만 선택해 본문 해석을 보강한다.</li>
+<li>3단계(추가 그림 확인): <a href="#appendix-c">C. 추가 그림</a>에서 필요한 그림을 확인한다.</li>
 </ul>
 <hr>
 </section>
 <section id="appendix-a" class="level2">
-<h2 class="anchored" data-anchor-id="appendix-a">A. 데이터 수집 범위·태깅</h2>
-<p>허브 구조를 해석하기 전에, Overton 정책문헌의 <strong>관측 범위가 균등하지 않을 수 있음</strong>을 먼저 확인할 필요가 있다. 국가·유형별 수집 범위 편차가 있으면 허브 순위 해석도 달라질 수 있기 때문이다. 이 절에서는 본문 비교에 앞서 태그 규칙(최상위·하위, 예외 처리)과 관측 편차를 먼저 정리한다.</p>
+<h2 class="anchored" data-anchor-id="appendix-a">A. 데이터 수집 범위·출처 분류</h2>
+<p>정책 출처별 총 인용 수와 상위 3개 비중에는 국가별 관측 범위의 차이가 반영될 수 있다. 국가·유형별 수집 범위 편차는 정책 출처 순위에 영향을 줄 수 있다. 이 절에서는 태그 규칙(최상위·하위, 예외 처리)과 국가·유형별 정책문헌 수를 정리한다.</p>
 <section id="a1.-정책문헌-수집-범위-개요정책-출처-국가별-문헌-수" class="level3">
 <h3 class="anchored" data-anchor-id="a1.-정책문헌-수집-범위-개요정책-출처-국가별-문헌-수">A1. 정책문헌 수집 범위 개요(정책 출처 국가별 문헌 수)</h3>
 <div class="callout callout-style-default callout-note callout-titled">
@@ -298,7 +298,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="a3.-hong-konggeorgia-예외-처리는-왜-필요했나" class="level3">
 <h3 class="anchored" data-anchor-id="a3.-hong-konggeorgia-예외-처리는-왜-필요했나">A3. Hong Kong/Georgia 예외 처리는 왜 필요했나</h3>
-<p>정책 출처 국가 태그는 <code>China &gt; Hong Kong</code>, <code>USA &gt; Georgia</code>처럼 <strong>하위 태그로 관측</strong>될 수 있다. 최상위 국가만 쓰면 이런 하위 태그는 정책 출처 쪽에서 필터링되어 누락될 수 있어, 네트워크에서 <strong>정책 출처가 없는 것처럼 보이는 효과</strong>가 생길 수 있다. 그래서 네트워크 그림에서는 <code>China &gt; Hong Kong</code>을 <code>Hong Kong</code>으로 분리했고, <code>USA &gt; Georgia</code>는 <code>Georgia (USA)</code>로 분리했다.</p>
+<p>정책 출처 국가 태그는 <code>China &gt; Hong Kong</code>, <code>USA &gt; Georgia</code>처럼 <strong>하위 태그로 관측</strong>될 수 있다. 최상위 국가만 사용하면 이런 하위 태그가 정책 출처 집계에서 제외된다. 그래서 네트워크 그림에서는 <code>China &gt; Hong Kong</code>을 <code>Hong Kong</code>으로 분리했고, <code>USA &gt; Georgia</code>는 <code>Georgia (USA)</code>로 분리했다.</p>
 <details>
 <summary>
 <strong>자세히 보기: 하위 태그 규모, 예시, Hong Kong 표기</strong>
@@ -381,20 +381,20 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="appendix-b" class="level2">
 <h2 class="anchored" data-anchor-id="appendix-b">B. 정의·해석</h2>
-<p>이 섹션은 본문 지표를 다시 확인할 때 필요한 분모·정의·해석 경계를 모아 둔 곳이다. 같은 수치라도 분모가 다르면 결론이 달라질 수 있으므로, 지표 정의와 결측 조건을 먼저 확인해야 한다.</p>
+<p>이 섹션은 본문 지표의 분모, 계산식, 제한 사항을 정리한다. 같은 수치라도 분모가 다르면 결론이 달라질 수 있으므로, 지표 정의와 결측 조건을 먼저 확인해야 한다.</p>
 <section id="appendix-b-quick" class="level3">
 <h3 class="anchored" data-anchor-id="appendix-b-quick">B0. 자주 찾는 정의(요약)</h3>
 <ul>
 <li><strong>분석 단위</strong>: Overton 정책문헌은 고유 문헌 기준으로 중복을 제거해 “고유 정책문헌” 단위로 본다. 자세히 보기: <a href="#doi-share">DOI 인용 포함 비중</a></li>
-<li><strong>인용 건수와 고유 논문 수</strong>: “얼마나 자주 인용했나”와 “얼마나 넓게 썼나”는 다른 질문이라 분리한다. 자세히 보기: <a href="#citations-vs-works">인용 건수와 고유 논문 수</a></li>
-<li><strong>최근성과 인용 강도</strong>: 최근성은 <code>2022–2024</code> 발행 논문의 정책문헌 인용 비중이고, 인용 강도는 고유 논문 1편당 평균 정책문헌 인용수다. 자세히 보기: <a href="#recency-intensity">최근성과 인용 강도</a></li>
+<li><strong>인용 건수와 고유 논문 수</strong>: 전체 인용 횟수와 인용된 논문 수를 구분한다. 자세히 보기: <a href="#citations-vs-works">인용 건수와 고유 논문 수</a></li>
+<li><strong>최근 고유 논문 비중과 논문당 정책문헌 인용 수</strong>: 최근 고유 논문 비중은 발행연도가 확인된 2024년 이하의 토픽별 고유 논문 가운데 <code>2022-2024</code> 발행 논문의 비중이고, 논문당 정책문헌 인용 수는 <code>인용 수 / 고유 논문 수</code>다. 자세히 보기: <a href="#recency-intensity">최근 고유 논문 비중과 논문당 정책문헌 인용 수</a></li>
 <li><strong>다중라벨</strong>: OpenAlex 토픽은 논문 1편이 여러 토픽에 동시에 속할 수 있어 합이 100%를 넘을 수 있다. 자세히 보기: <a href="#multilabel">다중라벨</a></li>
 <li><strong>자국 인용 비중 분모</strong>: 자국 인용 비중은 1저자 국가코드가 확인되는 인용만 분모로 쓴다. 자세히 보기: <a href="#self-citation-share">자국 인용 비중</a></li>
 </ul>
 </section>
 <section id="data-fitness" class="level3">
 <h3 class="anchored" data-anchor-id="data-fitness">B0-1. 매칭·결측 요약</h3>
-<p>이 보고서는 Overton의 DOI 기반 인용을 OpenAlex의 논문 레코드(works)와 연결해 토픽과 국가 정보를 붙인다. 따라서 “연결되는 범위”가 해석의 안전장치가 된다.</p>
+<p>이 보고서는 Overton의 DOI 기반 인용을 OpenAlex의 논문 레코드(works)와 연결해 토픽과 국가 정보를 붙인다. 따라서 DOI 매칭률과 국가코드 확인률을 결과와 함께 제시해야 한다.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -405,7 +405,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><strong>핵심 숫자(Overton DOI 인용 기록 기준)</strong></p>
+<p><strong>주요 수치(Overton DOI 인용 기록 기준)</strong></p>
 <ul>
 <li><strong>정책문헌→학술논문 DOI 인용 기록(citation rows)</strong>: 23,370,284건</li>
 <li><strong>1저자 국가코드가 확인되는 인용 비중</strong>: 76.6%(citation rows 기준)</li>
@@ -474,9 +474,9 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <p><strong>“중복 제거”는 무엇을 의미하나?</strong></p>
 <p>Overton 원본 정책문헌은 같은 문헌의 버전·재게시, 언어 변형, 메타데이터 중복 등으로 인해 중복이 포함될 수 있다. 이번 분석에서는 분석 단위를 “고유 정책문헌”으로 맞추기 위해 고유 문헌 기준으로 통합했다.</p>
-<section id="참고-출처-유형-태그별-doi-인용-포함-비중" class="level4">
-<h4 class="anchored" data-anchor-id="참고-출처-유형-태그별-doi-인용-포함-비중">참고: 출처 유형 태그별 DOI 인용 포함 비중</h4>
-<p>아래 표는 출처 유형 태그별로 DOI 기반 학술 인용을 1건 이상 포함한 문헌 비중을 요약한다. 출처 유형 태그는 다중라벨 구조이므로 문헌 1편이 여러 유형에 동시에 잡힐 수 있다. 따라서 표의 정책문헌 수 합은 전체 문헌 수와 일치하지 않을 수 있다.</p>
+<section id="참고-출처-유형별-doi-인용-포함-비중" class="level4">
+<h4 class="anchored" data-anchor-id="참고-출처-유형별-doi-인용-포함-비중">참고: 출처 유형별 DOI 인용 포함 비중</h4>
+<p>아래 표는 출처 유형별로 DOI 기반 학술 인용을 1건 이상 포함한 문헌 비중을 요약한다. 출처 유형 분류는 다중라벨 구조이므로 문헌 1편이 여러 유형에 포함될 수 있다. 따라서 표의 정책문헌 수 합은 전체 문헌 수와 일치하지 않을 수 있다.</p>
 <details>
 <summary>
 <strong>표 보기</strong>
@@ -484,7 +484,7 @@ ul.task-list li input[type="checkbox"] {
 <table class="table">
 <thead>
 <tr class="header">
-<th>출처 유형 태그</th>
+<th>출처 유형</th>
 <th style="text-align: right;">정책문헌 수</th>
 <th style="text-align: right;">DOI 인용 포함 문헌 수</th>
 <th style="text-align: right;">포함 비중</th>
@@ -723,14 +723,14 @@ ul.task-list li input[type="checkbox"] {
 <li><strong>인용 건수</strong>: 정책문헌이 DOI 논문을 몇 번 인용했는지의 총합. 즉 DOI 인용 기록의 개수</li>
 <li><strong>고유 논문 수</strong>: 인용된 논문을 “서로 다른 논문” 기준으로 중복 제거한 개수</li>
 </ul>
-<p>정책이 “몇 번이나 근거를 인용했나(빈도)”와 “얼마나 넓은 논문 풀을 썼나(폭)”는 다른 질문이다. 그래서 두 값을 분리해 해석한다.</p>
+<p>인용 건수는 중복을 포함한 전체 인용 횟수이고, 고유 논문 수는 중복 제거 후 논문 수다.</p>
 </section>
 <section id="recency-intensity" class="level3">
-<h3 class="anchored" data-anchor-id="recency-intensity">B4. 최근성과 인용 강도</h3>
-<p><strong>“최근성”과 “인용 강도”는 어떻게 계산했나?</strong></p>
+<h3 class="anchored" data-anchor-id="recency-intensity">B4. 최근 고유 논문 비중과 논문당 정책문헌 인용 수</h3>
+<p><strong>두 지표의 계산식</strong></p>
 <ul>
-<li><strong>최근성</strong>: <code>2022–2024</code> 발행 논문이 차지하는 정책문헌 인용 비중</li>
-<li><strong>인용 강도</strong>: 집계 단위 내 고유 논문 1편당 평균 정책문헌 인용수 = <code>인용수 / 고유 논문수</code></li>
+<li><strong>최근 고유 논문 비중</strong>: 발행연도가 확인된 2024년 이하의 토픽별 고유 논문 가운데 <code>2022-2024</code> 발행 논문의 비중</li>
+<li><strong>논문당 정책문헌 인용 수</strong>: 집계 단위 내 <code>인용 수 / 고유 논문 수</code></li>
 </ul>
 </section>
 <section id="self-citation-share" class="level3">
@@ -800,8 +800,8 @@ ul.task-list li input[type="checkbox"] {
 </tbody>
 </table>
 <p>여기서 1저자 국가코드 확인 비중은 해당 정책 출처의 DOI 인용 기록 가운데 1저자 국가코드가 확인되는 비중이다. 미국과 영국처럼 하위 지역 태그가 많은 경우, 하위 태그를 상위 국가로 합산해 요약했다.</p>
-<p><strong>왜 1저자 소속국으로 정책 출처 국가→연구국 흐름을 정의했나?</strong></p>
-<p>가장 일관되게 추출 가능한 국가 속성이 1저자(First author) 소속국이었기 때문이다. 다만 공동저자 분포, 교신저자, 다기관 소속 등을 반영하지 못하므로 “대표성 있는 근사”로 해석해야 한다.</p>
+<p><strong>연구국을 1저자 소속국으로 정의한 이유</strong></p>
+<p>가장 일관되게 추출 가능한 국가 속성이 1저자(First author) 소속국이었기 때문이다. 이 기준은 공동저자 분포, 교신저자, 다기관 소속을 반영하지 못한다.</p>
 </details>
 </section>
 <section id="multilabel" class="level3">
@@ -816,15 +816,15 @@ ul.task-list li input[type="checkbox"] {
 <section id="recent-years-decline" class="level3">
 <h3 class="anchored" data-anchor-id="recent-years-decline">B7. 최근 연도 하락 해석 주의</h3>
 <p><strong>연도 추세에서 2022년 이후 하락은 “정책문헌의 학술 DOI 인용이 줄어든다”는 뜻인가?</strong></p>
-<p>그렇게 단정하기 어렵다. 정책문헌 수집·정리의 시차(수집 지연)와 발행 직후 인용 기록이 완전히 누적되지 않는 효과가 함께 작동했을 가능성이 크다. 따라서 최근 연도 수치는 “실시간 감소”라기보다 관측 시차가 섞인 신호로 해석해야 한다.</p>
+<p>그렇게 단정하기 어렵다. 정책문헌 수집·정리의 시차(수집 지연)와 발행 직후 인용 기록이 완전히 누적되지 않는 효과가 함께 작동했을 가능성이 크다. 따라서 최근 연도 수치에는 수집·색인 지연이 포함될 수 있다.</p>
 </section>
 <section id="why-2012" class="level3">
 <h3 class="anchored" data-anchor-id="why-2012">B8. 2012년 평균 진단</h3>
 <p><strong>2012년 무렵 “문헌당 평균 인용 수”가 특히 높게 보이는 이유는?</strong></p>
-<p>문헌당 평균 인용 수는 분포의 꼬리가 긴 경우 영향을 크게 받는다. 그래서 “평균”이 높게 보일 때는, 일부 극단값의 영향인지 아니면 분포 전체가 오른쪽으로 이동했는지부터 분리해 확인해야 한다. 절단평균은 상위·하위 일부 극단값을 제외해 계산한 평균이다. “평균이 극단값에 끌린 것인지”를 구분하는 데 도움이 된다.</p>
+<p>문헌당 평균 인용 수는 소수 극단값의 영향을 크게 받을 수 있다. 평균이 높을 때는 중앙값, 절단평균, 상위 1% 문서의 인용 비중을 함께 확인해야 한다. 절단평균은 상위·하위 일부 극단값을 제외해 계산한 평균이다. “평균이 극단값에 끌린 것인지”를 구분하는 데 도움이 된다.</p>
 <p>아래 그림은 연도별로 평균과 함께 중앙값, 절단평균을 같이 보여준다. 또한 상위 1% 문서가 해당 연도 전체 인용에서 차지하는 비중을 함께 표시했다.</p>
 <p><img src="../Assets/Figures/si/pubyear_citations_per_doc_diagnostics.png" class="img-fluid" style="width:92.0%" alt="연도별 문헌당 인용 분포 진단: 평균·중앙값·절단평균과 상위 1% 기여"></p>
-<p>이 그림이 주는 핵심 메시지는 다음과 같다.</p>
+<p>이 그림에서 확인되는 결과는 다음과 같다.</p>
 <ul>
 <li>2012년의 상승은 평균만의 현상이라기보다 중앙값과 절단평균에서도 함께 나타난다. 즉 일부 극단값만으로 설명되기보다 분포 전반의 변화가 섞였을 가능성이 있다.</li>
 <li>상위 1% 문서의 인용 기여는 2012년이 단독으로 튀지 않는다. 따라서 “2012년 피크”를 단일한 소수 문서의 효과로만 해석하기는 어렵다.</li>
@@ -883,25 +883,25 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 </tbody>
 </table>
-<p>다만 중앙값은 대부분 1–2 수준으로 큰 차이가 없다. 평균 차이는 분포의 꼬리(상위 반복 인용 논문) 영향이 섞여 있을 가능성이 크다. 따라서 이 표는 인과 결론이 아니라 “가능한 설명 요인”을 점검하는 참고 근거로만 사용한다.</p>
+<p>다만 중앙값은 대부분 1–2 수준으로 큰 차이가 없다. 평균 차이에는 반복 인용 횟수가 큰 소수 논문의 영향이 포함될 수 있다. 따라서 이 표만으로 OA 여부의 인과효과를 판단할 수 없다.</p>
 <p>추가 참고 그림은 아래 C 섹션에 묶어서 제공한다.</p>
 <hr>
 </section>
 </section>
 <section id="appendix-c" class="level2">
 <h2 class="anchored" data-anchor-id="appendix-c">C. 추가 그림</h2>
-<p>이 섹션은 본문에서 지면상 생략된 참고 그림을 묶어서 제공한다. 필요한 항목만 빠르게 확인할 수 있도록 각 그림은 기본적으로 접어 두었다. 일부 그림은 본문 그림과 표현 방식이 다를 수 있다.</p>
+<p>이 섹션은 본문에 포함하지 않은 참고 그림을 제공한다. 필요한 항목만 빠르게 확인할 수 있도록 각 그림은 기본적으로 접어 두었다. 일부 그림은 본문 그림과 표현 방식이 다를 수 있다.</p>
 <ul>
 <li>사용 방법: 본문에서 막힌 그림 번호를 찾은 뒤, 해당 C항목만 열어 확인한다.</li>
-<li>해석 경계: C항목은 결론을 추가하는 자료가 아니라, 본문 해석을 보강하는 참고 자료다.</li>
+<li>제한 사항: C항목은 본문 지표의 정의와 민감도를 확인하기 위한 참고 자료다.</li>
 </ul>
 <section id="appendix-c1-topic-lists" class="level3">
 <h3 class="anchored" data-anchor-id="appendix-c1-topic-lists">C1. 그림 3-4 보조: Top-N 토픽·세부분야</h3>
-<p>이 그림은 메인 보고서의 두 속도 파트와 결과 해석 파트에서 다룬 토픽 패턴을 상위 목록으로 빠르게 확인하기 위한 참고 자료다.</p>
+<p>이 그림은 토픽별 정책문헌 인용 수와 세부분야별 정책문헌 인용 수의 상위 목록을 제시한다.</p>
 <ul>
-<li><strong>한 줄 요지:</strong> “상위에 실제로 무엇이 있나”를 목록으로 빠르게 확인한다.</li>
-<li><strong>왜 넣었나:</strong> 그림 3–4(토픽 산점도·두 속도)에서 상위 토픽·세부분야 예시가 궁금할 때 바로 참고할 수 있도록 했다.</li>
-<li><strong>해석 경계:</strong> 상위 목록은 “총 인용 기준”의 단면이며, 결론을 추가하기보다 본문 해석을 보강하는 참고 자료로만 활용한다.</li>
+<li><strong>내용:</strong> 총 인용 수 기준 상위 토픽과 세부분야 목록.</li>
+<li><strong>목적:</strong> 그림 3-4의 상위 토픽과 세부분야 명칭을 확인한다.</li>
+<li><strong>제한 사항:</strong> 총 인용 수 기준 순위이며 논문 수나 문헌당 평균 인용 수 순위가 아니다.</li>
 </ul>
 <details>
 <summary>
@@ -913,11 +913,11 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="appendix-c2-source-type-topics" class="level3">
 <h3 class="anchored" data-anchor-id="appendix-c2-source-type-topics">C2. 그림 7 확장: 출처 유형 × 토픽(열지도)</h3>
-<p>그림 7(출처 유형×도메인 구성)을 토픽 수준으로 확장해, 유형별로 어떤 토픽을 더 자주 인용하는지의 결을 확인하기 위한 참고 그림이다.</p>
+<p>그림 7의 출처 유형별 도메인 비중을 토픽 수준으로 세분화한 그림이다.</p>
 <ul>
-<li><strong>한 줄 요지:</strong> 출처 유형별로 어떤 토픽이 더 자주 인용되는지를 토픽 단위로 확장해 본다.</li>
-<li><strong>왜 넣었나:</strong> 메인 보고서의 허브 해석에서 본 구성 차이가 토픽 수준에서도 재현되는지 확인하기 위해서다.</li>
-<li><strong>해석 경계:</strong> 열지도는 구성의 “결”을 보는 용도다. 값의 크기만으로 인과나 품질을 단정하지 않는다.</li>
+<li><strong>내용:</strong> 출처 유형별 토픽 인용 비중.</li>
+<li><strong>목적:</strong> 출처 유형별 도메인 비중 차이를 토픽 수준에서 확인한다.</li>
+<li><strong>제한 사항:</strong> 인용 비중만 제시하며 차이의 원인이나 연구 품질은 평가하지 않는다.</li>
 </ul>
 <details>
 <summary>
@@ -927,12 +927,12 @@ ul.task-list li input[type="checkbox"] {
 </details>
 </section>
 <section id="appendix-c3-oa-reference" class="level3">
-<h3 class="anchored" data-anchor-id="appendix-c3-oa-reference">C3. 2장 OA 해석 보조: 도메인·출처 유형</h3>
-<p>메인 보고서 3.2의 OA 논의는 “가능한 설명 요인”을 남겨두는 수준으로만 다뤘다. 아래는 OA 비중을 요약한 참고 그림이다.</p>
+<h3 class="anchored" data-anchor-id="appendix-c3-oa-reference">C3. 정책문헌에 인용된 연구의 OA 비중: 도메인·출처 유형</h3>
+<p>아래 그림은 정책문헌에 인용된 연구의 OA 비중을 도메인과 출처 유형별로 제시한다.</p>
 <ul>
-<li><strong>한 줄 요지:</strong> 정책문헌 인용에서 나타나는 OA 비중을 도메인·출처 유형 기준으로 요약한다.</li>
-<li><strong>왜 넣었나:</strong> 본문에서 OA를 “가능한 설명 요인”으로만 다룰 때, 독자가 실제 분포를 한 번 더 확인할 수 있도록 했다.</li>
-<li><strong>해석 경계:</strong> 이 그림만으로 OA 효과를 인과로 단정하지 않는다(구성·선택·출판 관행 등 교란 가능).</li>
+<li><strong>내용:</strong> 도메인·출처 유형별 OA 비중.</li>
+<li><strong>목적:</strong> 정책문헌에 인용된 연구의 OA 분포를 확인한다.</li>
+<li><strong>제한 사항:</strong> 분야 구성, 발행연도, 출처 유형을 통제하지 않은 비중이므로 인과효과를 나타내지 않는다.</li>
 </ul>
 <details>
 <summary>
@@ -946,9 +946,9 @@ ul.task-list li input[type="checkbox"] {
 <h3 class="anchored" data-anchor-id="appendix-c4-self-share-top10">C4. 그림 10 확장: 자국 인용 비중(Top10)</h3>
 <p>그림 10은 비교를 위해 선택 국가만 제시했다. 아래 그림은 상위 10개 정책 출처 국가를 더 넓게 보여준다. 이 지표는 1저자 국가코드가 확인되는 인용만 대상으로 계산한다는 점에 유의해야 한다.</p>
 <ul>
-<li><strong>한 줄 요지:</strong> 선택 국가 바깥에서 자국 인용 비중이 어느 범위에 분포하는지(상위 10개 출처)로 확장해 확인한다.</li>
-<li><strong>왜 넣었나:</strong> 본문 3.3(그림 10)의 “선택 국가 비교”가 전부가 아니라는 점을 보완하기 위해서다.</li>
-<li><strong>해석 경계:</strong> 1저자 국가코드가 확인되는 인용만 분모에 포함된다. 따라서 “순위”보다 “범위와 스케일”을 읽는 용도다.</li>
+<li><strong>내용:</strong> 상위 10개 정책 출처 국가의 자국 인용 비중.</li>
+<li><strong>목적:</strong> 본문 선택 국가 외의 자국 인용 비중을 확인한다.</li>
+<li><strong>제한 사항:</strong> 1저자 국가코드가 확인되는 인용만 분모에 포함한다.</li>
 </ul>
 <details>
 <summary>
@@ -958,12 +958,12 @@ ul.task-list li input[type="checkbox"] {
 </details>
 </section>
 <section id="appendix-c5-subfield-domain-network" class="level3">
-<h3 class="anchored" data-anchor-id="appendix-c5-subfield-domain-network">C5. 허브 구조 보조: OpenAlex subfield → Overton domain 네트워크(Top 100)</h3>
-<p>OpenAlex 세부분야(subfield)와 Overton 정책 분류(2nd_class) 사이의 인용 흐름을 네트워크로 나타냈다.</p>
+<h3 class="anchored" data-anchor-id="appendix-c5-subfield-domain-network">C5. OpenAlex 세부분야-Overton 정책 분류 인용 네트워크(Top 100)</h3>
+<p>OpenAlex 세부분야(subfield)와 Overton 정책 분류(2nd_class) 사이의 인용 건수를 네트워크로 나타냈다.</p>
 <ul>
-<li><strong>한 줄 요지:</strong> “세부분야 → 정책 분류” 흐름을 네트워크로 요약해, 허브 구조의 큰 줄기를 본다.</li>
-<li><strong>왜 넣었나:</strong> 메인 보고서의 허브 파트와 한국 경로 파트를 분류 수준에서 한 번 더 확인할 수 있는 참고 그림이 필요했다.</li>
-<li><strong>해석 경계:</strong> 표시 규칙(상위 노드/상위 연결) 때문에 주변부 연결은 생략된다. 아래 접힘 박스의 ’표시 규칙·민감도 점검’을 함께 본다.</li>
+<li><strong>내용:</strong> 세부분야와 정책 분류 사이의 상위 인용 연결.</li>
+<li><strong>목적:</strong> 세부분야-정책 분류 연결 빈도를 비교한다.</li>
+<li><strong>제한 사항:</strong> 상위 노드와 상위 연결만 표시하므로 전체 연결을 포함하지 않는다.</li>
 </ul>
 <p><span id="display-rule-sensitivity"></span></p>
 <details>
@@ -974,7 +974,7 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li>노드는 상위 100개만 표시했다.</li>
 <li>연결선은 복잡도를 줄이기 위해, 각 노드에서 규모가 큰 상위 3개 연결만 남겼다.</li>
-<li>노드 크기는 선택된 노드 집합 안에서의 총 흐름으로 정의했다. 이는 연결선을 일부만 남기는 과정과는 별개다.</li>
+<li>노드 크기는 선택된 노드 집합 안에서의 총 인용 수로 정의했다. 이는 연결선을 일부만 남기는 과정과는 별개다.</li>
 </ul>
 <p><strong>해석 주의</strong></p>
 <ul>
@@ -982,9 +982,9 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <p><strong>간단 점검: 표시 규칙 민감도</strong></p>
 <ul>
-<li>세부분야 25개, 정책 분류 25개로 노드를 더 줄인 축약 버전과 비교해도, 흐름 규모 기준 상위 20개 세부분야와 상위 20개 정책 분류는 현재 그림에 모두 포함됐다.</li>
+<li>세부분야 25개, 정책 분류 25개로 노드를 더 줄인 축약 버전과 비교해도, 인용 건수 기준 상위 20개 세부분야와 상위 20개 정책 분류는 현재 그림에 모두 포함됐다.</li>
 <li>축약 버전 네트워크에서 세부분야 기준 상위 3개 연결이 차지하는 비중의 중앙값은 89.8%였다.</li>
-<li>따라서 이 그림은 주변부의 미세한 연결을 비교하기보다, 큰 흐름과 허브 구조를 빠르게 읽는 용도로 써야 한다.</li>
+<li>따라서 이 그림은 주변부의 미세한 연결을 비교하기보다, 연결 빈도가 큰 세부분야와 정책 분류를 확인하는 용도로 써야 한다.</li>
 </ul>
 </details>
 <details>
@@ -996,11 +996,11 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="appendix-c6-ccdf" class="level3">
 <h3 class="anchored" data-anchor-id="appendix-c6-ccdf">C6. 반복 인용 분포 보조: 로그-로그 CCDF</h3>
-<p>정책문헌이 “고르게” 논문을 인용하는지, 또는 일부 문헌·논문에 반복 인용이 집중되는지를 <strong>분포 자체로 확인</strong>하는 보조 그림이다.</p>
+<p>정책문헌별 DOI 인용 수와 논문별 정책문헌 인용 수의 누적분포(CCDF)를 제시한다.</p>
 <ul>
-<li><strong>한 줄 요지:</strong> “소수에 집중”을 요약 통계가 아니라 분포(꼬리)로 직접 확인한다.</li>
-<li><strong>왜 넣었나:</strong> 본문에서 불균등·반복 인용을 말할 때, 독자가 “얼마나 긴 꼬리인지”를 한 장에서 확인할 수 있도록 했다.</li>
-<li><strong>해석 경계:</strong> 로그-로그 CCDF는 비교에 유용하지만 직관적이지 않을 수 있다. 이 그림은 결론 추가가 아니라 “분포 형태 점검” 용도다.</li>
+<li><strong>내용:</strong> 정책문헌별 DOI 인용 수와 논문별 정책문헌 인용 수의 로그-로그 CCDF.</li>
+<li><strong>목적:</strong> 인용 횟수 상위 구간의 비중을 확인한다.</li>
+<li><strong>제한 사항:</strong> 로그 축을 사용하므로 원자료의 절대 빈도와 함께 해석해야 한다.</li>
 </ul>
 <details>
 <summary>
@@ -1010,44 +1010,44 @@ ul.task-list li input[type="checkbox"] {
 </details>
 </section>
 <section id="appendix-c7-demand-supply-delta" class="level3">
-<h3 class="anchored" data-anchor-id="appendix-c7-demand-supply-delta">C7. 그림 8 보조: 수요–공급 도메인 구성 차이(Δ, pp)</h3>
-<p>그림 8의 해석 부담을 줄이기 위해, <strong>정책 수요 비중 − 연구 공급 비중(percentage points)</strong>으로 단순화한 버전이다.</p>
+<h3 class="anchored" data-anchor-id="appendix-c7-demand-supply-delta">C7. 그림 8 보조: 두 정책문헌 인용 방향의 도메인 구성 차이(Δ, pp)</h3>
+<p>그림 8의 두 비중을 <strong>정책문헌이 인용한 연구의 도메인 비중 − 정책문헌에 인용된 자국 연구의 도메인 비중(percentage points)</strong>으로 계산한 자료다.</p>
 <ul>
-<li><strong>한 줄 요지:</strong> 국가별 불일치를 “차이(Δ, pp)”로 바꿔 방향과 크기를 빠르게 확인한다.</li>
-<li><strong>왜 넣었나:</strong> 본문 그림 8(산점도)은 해석에 단계가 필요하므로, 동일 내용을 더 단순한 표기로 한 번 더 확인할 수 있게 했다.</li>
-<li><strong>해석 경계:</strong> Δ는 방향을 보여주는 요약이다. 원래 구성(정책 수요/연구 공급)의 절대 비중은 본문 그림 8과 함께 확인한다.</li>
+<li><strong>내용:</strong> 국가·도메인별 두 인용 비중의 차이(Δ, pp).</li>
+<li><strong>목적:</strong> 산점도와 같은 값을 차이값으로 확인한다.</li>
+<li><strong>제한 사항:</strong> Δ만으로 두 비중의 절대값을 알 수 없으므로 본문 그림 8을 함께 확인한다.</li>
 </ul>
 <details>
 <summary>
 <strong>그림 보기</strong>
 </summary>
-<p><img src="../Assets/Figures/si/country_domain_demand_supply_delta_heatmap.png" class="img-fluid" style="width:96.0%" alt="Domain demand minus supply delta heatmap"></p>
+<p><img src="../Assets/Figures/si/country_domain_demand_supply_delta_heatmap.png" class="img-fluid" style="width:96.0%" alt="Domain-share difference between the two policy-citation directions"></p>
 </details>
 </section>
 <section id="appendix-c8-policy-research-backbone" class="level3">
-<h3 class="anchored" data-anchor-id="appendix-c8-policy-research-backbone">C8. 그림 12 보조: 정책–연구 근거 흐름 네트워크 백본 민감도</h3>
-<p>본문 그림 12는 가독성을 위해 “상위 노드 + 각 노드의 유입 상위 3개와 유출 상위 3개 연결”만 남긴 축약 네트워크다. 연결선은 backbone 규칙을 따른다. 노드 구분은 선택된 50개 노드 안에서 정책 출처 쪽과 연구 쪽에 실제로 나타나는 역할을 기준으로 해석한다. 표시 규칙이 바뀌면 보이는 연결선의 수는 달라지지만, 큰 축(반복적으로 나타나는 굵은 경로)이 얼마나 유지되는지는 별도로 점검할 필요가 있다.</p>
+<h3 class="anchored" data-anchor-id="appendix-c8-policy-research-backbone">C8. 그림 12 보조: 정책 출처-연구국 인용 네트워크의 연결선 표시 규칙 비교</h3>
+<p>본문 그림 12는 상위 50개 노드와 각 노드의 유입 상위 3개·유출 상위 3개 연결만 표시한다. 아래 그림은 같은 노드와 좌표에서 상위 3개, 상위 5개, 전체 연결을 각각 표시한다.</p>
 <ul>
-<li><strong>한 줄 요지:</strong> 백본 규칙(top-3/top-5/all links)을 바꿔도 큰 경로 축이 유지되는지 확인한다.</li>
-<li><strong>왜 넣었나:</strong> 그림 12가 “시각적으로 강하지만 검증이 약하다”는 지적에 답하기 위해, 동일 노드 집합·고정 레이아웃에서 연결선만 바꿔 비교한다.</li>
-<li><strong>해석 경계:</strong> 레이아웃은 비교를 돕기 위한 고정 좌표다. 아래 그림은 “세부 비율”이 아니라 “연결 구조가 유지되는가”를 확인하는 용도다.</li>
+<li><strong>내용:</strong> 연결선 표시 규칙별 네트워크 3종.</li>
+<li><strong>목적:</strong> 표시 규칙에 따라 포함되는 연결선을 비교한다.</li>
+<li><strong>제한 사항:</strong> 노드 좌표는 고정했으며 노드 간 거리는 정량 지표가 아니다.</li>
 </ul>
 <details>
 <summary>
 <strong>그림 보기</strong>
 </summary>
-<p><img src="../Assets/Figures/si/policy_research_flow_network_backbone_k3_drl.png" class="img-fluid" style="width:100.0%" alt="Backbone sensitivity (k=3): top-3 imports/exports per node"></p>
-<p><img src="../Assets/Figures/si/policy_research_flow_network_backbone_k5_drl.png" class="img-fluid" style="width:100.0%" alt="Backbone sensitivity (k=5): top-5 imports/exports per node"></p>
-<p><img src="../Assets/Figures/si/policy_research_flow_network_backbone_all_drl.png" class="img-fluid" style="width:100.0%" alt="Backbone sensitivity (all links): all links within selected nodes"></p>
+<p><img src="../Assets/Figures/si/policy_research_flow_network_backbone_k3_drl.png" class="img-fluid" style="width:100.0%" alt="Network with top 3 incoming and outgoing links per node"></p>
+<p><img src="../Assets/Figures/si/policy_research_flow_network_backbone_k5_drl.png" class="img-fluid" style="width:100.0%" alt="Network with top 5 incoming and outgoing links per node"></p>
+<p><img src="../Assets/Figures/si/policy_research_flow_network_backbone_all_drl.png" class="img-fluid" style="width:100.0%" alt="Network with all links among selected nodes"></p>
 </details>
 </section>
 <section id="appendix-c9-density-robustness" class="level3">
-<h3 class="anchored" data-anchor-id="appendix-c9-density-robustness">C9. 그림 5-6 보조: 밀도 지표 강건성(평균 vs 중앙값 vs 절단평균)</h3>
-<p>본문의 “문헌당 평균 인용(밀도)” 비교는 해석에 유용하지만, <strong>문서 길이·장르·참고문헌 관행의 영향</strong>을 함께 받는 지표다. 평균만 보면 긴 꼬리(outlier)에 민감하므로, <strong>중앙값/절단평균</strong>을 함께 확인해 “총량 허브 vs 밀도 허브” 해석이 얼마나 안정적인지 점검한다.</p>
+<h3 class="anchored" data-anchor-id="appendix-c9-density-robustness">C9. 그림 5-6 보조: 문헌당 인용 수의 평균·중앙값·절단평균 비교</h3>
+<p>문헌당 평균 인용 수는 <strong>문서 길이·장르·참고문헌 관행과 소수 극단값의 영향</strong>을 받는다. 아래 그림은 평균, 중앙값, 절단평균을 함께 제시한다.</p>
 <ul>
-<li><strong>한 줄 요지:</strong> 평균이 아닌 통계(중앙값/절단평균)로 봐도 “밀도 패턴”이 유지되는지 확인한다.</li>
-<li><strong>왜 넣었나:</strong> 국가/유형 간 밀도 비교가 “평균 1개”에 과도하게 의존하지 않도록, 분포 강건성 지표를 병기한다.</li>
-<li><strong>해석 경계:</strong> 아래 통계는 <strong>DOI 인용이 1건 이상 관측되는 정책문헌(citing docs)</strong> 기준이다(관측 가능한 범위). 또한 “citing share(전체 문헌 중 citing docs 비중)”이 낮은 집단은 분포 해석이 더 조건부가 된다.</li>
+<li><strong>내용:</strong> 정책 출처 국가·유형별 문헌당 인용 수의 평균, 중앙값, 절단평균.</li>
+<li><strong>목적:</strong> 평균 순위가 극단값에 민감한지 확인한다.</li>
+<li><strong>제한 사항:</strong> DOI 인용이 1건 이상 관측되는 정책문헌(citing docs)만 포함한다.</li>
 </ul>
 <p>CSV: - <code>policy_source_country_density_robust.csv</code>(국가/IGO): <a href="../Assets/Figures/si/policy_source_country_density_robust.csv">다운로드</a> - <code>policy_source_type_density_robust.csv</code>(유형): <a href="../Assets/Figures/si/policy_source_type_density_robust.csv">다운로드</a></p>
 <details>
@@ -1059,12 +1059,12 @@ ul.task-list li input[type="checkbox"] {
 </details>
 </section>
 <section id="appendix-c10-repeat-citation-sensitivity" class="level3">
-<h3 class="anchored" data-anchor-id="appendix-c10-repeat-citation-sensitivity">C10. 4장 반복 점검 보조: 반복 인용(근거 표준화) 민감도</h3>
-<p>본문의 “2회 이상 반복 인용(48.1%)”은 반복 인용 논문 비중을 읽는 출발점이지만, <strong>임계값 선택(≥2/≥5/≥10)</strong>과 <strong>시간 지연(최근 논문 불리)</strong>의 영향을 받는다. 그래서 같은 정의를 임계값과 발행연도 코호트로 확장해, 해석이 어디까지 안정적인지 함께 보여준다.</p>
+<h3 class="anchored" data-anchor-id="appendix-c10-repeat-citation-sensitivity">C10. 반복 인용 임계값·발행연도 코호트별 비중</h3>
+<p>본문의 “2회 이상 반복 인용(48.1%)”은 <strong>임계값 선택(≥2/≥5/≥10)</strong>과 <strong>발행연도별 관측 기간</strong>의 영향을 받는다.</p>
 <ul>
-<li><strong>한 줄 요지:</strong> “반복 인용” 지표는 임계값과 발행연도(지연효과)에 민감하므로, 최소한 3개 임계값과 코호트로 함께 확인한다.</li>
-<li><strong>왜 넣었나:</strong> 48.1% 단일 수치의 임의성을 줄이고, “반복 인용 논문 비중”을 반복 점검 가능한 지표로 만든다.</li>
-<li><strong>해석 경계:</strong> 여기서 반복 인용은 <strong>서로 다른 정책문헌이 같은 논문을 인용한 횟수(정책문헌 기준 반복)</strong>이며, “정책문헌 간 인용”이나 “DOI 밖 근거”는 포함하지 않는다.</li>
+<li><strong>내용:</strong> 2회·5회·10회 이상 반복 인용 비중과 발행연도 코호트별 비중.</li>
+<li><strong>목적:</strong> 임계값과 관측 기간에 따른 값의 차이를 확인한다.</li>
+<li><strong>제한 사항:</strong> 반복 인용은 서로 다른 정책문헌이 같은 논문을 인용한 횟수이며 정책문헌 간 인용이나 DOI가 없는 인용은 포함하지 않는다.</li>
 </ul>
 <p>CSV: - <code>repeat_citation_thresholds.csv</code>(전체): <a href="../Assets/Figures/si/repeat_citation_thresholds.csv">다운로드</a> - <code>repeat_citation_by_cohort.csv</code>(코호트): <a href="../Assets/Figures/si/repeat_citation_by_cohort.csv">다운로드</a></p>
 <details>
@@ -1075,12 +1075,12 @@ ul.task-list li input[type="checkbox"] {
 </details>
 </section>
 <section id="appendix-c11-korea-peers" class="level3">
-<h3 class="anchored" data-anchor-id="appendix-c11-korea-peers">C11. 3장 한국 비교 보조: 절대 순위보다 비슷한 관측 규모의 비교군으로 해석하기</h3>
-<p>국가별 순위를 그대로 비교하면, 실제 차이(정책 근거 구조)와 관측 차이(수집 범위·표본 규모)가 섞여 오독이 생기기 쉽다. 그래서 한국은 절대 순위로 “판정”하기보다, <strong>관측된 정책 출처 문헌 수(Overton 태깅 기준)</strong>가 비슷한 국가 묶음 안에서 패턴을 먼저 점검해야 한다.</p>
+<h3 class="anchored" data-anchor-id="appendix-c11-korea-peers">C11. 한국과 정책문헌 표본 규모가 비슷한 국가 비교</h3>
+<p>국가별 순위에는 수집 범위와 정책문헌 표본 규모의 차이가 포함된다. 아래 표는 <strong>관측된 정책 출처 문헌 수(Overton 출처 분류 기준)</strong>가 한국과 비슷한 국가를 제시한다.</p>
 <ul>
-<li><strong>한 줄 요지:</strong> 한국 비교는 “상위권 순위”보다 “관측 규모가 비슷한 비교군”에서 구조 신호를 먼저 확인한다.</li>
-<li><strong>왜 넣었나:</strong> “한국 수치가 조건부”라는 지적에 답하기 위해, 비교의 분모(표본 크기)를 먼저 맞춰 오독을 줄인다.</li>
-<li><strong>해석 경계:</strong> 아래 비교군은 <strong>정책의 실제 규모</strong>가 아니라, Overton에서 관측되는 <strong>정책 출처 문헌(국가 태깅) 표본 규모</strong>가 비슷한 국가들이다.</li>
+<li><strong>내용:</strong> 한국과 정책문헌 표본 수가 비슷한 국가의 문헌 수와 DOI 인용 지표.</li>
+<li><strong>목적:</strong> 표본 규모가 비슷한 국가에서 문헌당 평균 인용 수를 비교한다.</li>
+<li><strong>제한 사항:</strong> 정책의 실제 규모가 아니라 Overton의 정책 출처별 표본 규모를 기준으로 선정했다.</li>
 </ul>
 <p>CSV: - <code>korea_peer_group_by_policy_docs.csv</code>: <a href="../Assets/Figures/si/korea_peer_group_by_policy_docs.csv">다운로드</a></p>
 <table class="table">
@@ -1164,14 +1164,14 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="appendix-c12-korea-author-country-sensitivity" class="level3">
 <h3 class="anchored" data-anchor-id="appendix-c12-korea-author-country-sensitivity">C12. 그림 9-11 보조: 한국 저자국가 규칙 민감도</h3>
-<p>한국의 유입·조달 수치들은 기본적으로 “연구국=1저자 국가코드” 규칙으로 계산했다. 다만 국제공저가 많은 분야에서는 1저자 규칙이 분포를 더 한쪽으로 기울일 수 있다. 그래서 2025.06 OpenAlex 스냅샷 DB에서 저자국가 규칙을 바꿔도 한국 관련 결론이 얼마나 흔들리는지 최소 민감도 점검을 수행했다.</p>
+<p>한국 연구를 인용한 정책 출처와 한국 정책문헌이 인용한 연구국 관련 수치는 기본적으로 “연구국=1저자 국가코드” 규칙으로 계산했다. 다만 국제공저가 많은 분야에서는 1저자 규칙이 분포를 더 한쪽으로 기울일 수 있다. 2025.06 OpenAlex 스냅샷 DB에서 저자국가 규칙별 미국·영국·한국 연구 비중과 상위 정책 출처 비중을 다시 계산했다.</p>
 <ul>
-<li><strong>한 줄 요지:</strong> 규칙을 바꿔도 “조달의 미국 집중”과 “유입의 허브 채널 집중” 구조는 크게 유지되지만, 유입의 “규모”는 any-author 기준에서 약 0.84배로 보정된다.</li>
-<li><strong>왜 넣었나:</strong> “한국 수치가 조건부”라는 지적 중, <em>저자국가 규칙</em>에 따른 변동 폭을 최소 표로 제시하기 위해서다.</li>
-<li><strong>해석 경계:</strong> corresponding 정보는 결측이 커서(works 기준 60%+ 결측) <strong>부분집합 참고용</strong>으로만 쓴다.</li>
+<li><strong>내용:</strong> 1저자, any-author, corresponding 저자국가 규칙별 미국·영국·한국 연구 비중과 상위 정책 출처 비중.</li>
+<li><strong>목적:</strong> 저자국가 규칙에 따른 미국·영국·한국 연구 비중과 상위 정책 출처 비중의 차이를 확인한다.</li>
+<li><strong>제한 사항:</strong> corresponding 정보는 works 기준 60% 이상 결측이므로 해당 부분집합 결과만 제시한다.</li>
 </ul>
-<section id="한국-조달outbound-한국-정책문헌이-어떤-연구를-조달하는가" class="level4">
-<h4 class="anchored" data-anchor-id="한국-조달outbound-한국-정책문헌이-어떤-연구를-조달하는가">(1) 한국 조달(outbound): 한국 정책문헌이 어떤 연구를 조달하는가</h4>
+<section id="한국-정책문헌이-인용한-연구국-분포" class="level4">
+<h4 class="anchored" data-anchor-id="한국-정책문헌이-인용한-연구국-분포">(1) 한국 정책문헌이 인용한 연구국 분포</h4>
 <table class="table">
 <colgroup>
 <col style="width: 15%">
@@ -1215,14 +1215,14 @@ ul.task-list li input[type="checkbox"] {
 </table>
 <p>CSV: - <code>korea_author_country_outbound_first_author.csv</code>: <a href="../Assets/Figures/si/korea_author_country_outbound_first_author.csv">다운로드</a> - <code>korea_author_country_outbound_any_author_fractional.csv</code>: <a href="../Assets/Figures/si/korea_author_country_outbound_any_author_fractional.csv">다운로드</a> - <code>korea_author_country_outbound_corresponding_fractional.csv</code>: <a href="../Assets/Figures/si/korea_author_country_outbound_corresponding_fractional.csv">다운로드</a></p>
 </section>
-<section id="한국-유입inbound-한국-1저자-연구를-글로벌-정책문헌이-어떻게-인용하는가" class="level4">
-<h4 class="anchored" data-anchor-id="한국-유입inbound-한국-1저자-연구를-글로벌-정책문헌이-어떻게-인용하는가">(2) 한국 유입(inbound): “한국 1저자” 연구를 글로벌 정책문헌이 어떻게 인용하는가</h4>
-<p>유입은 기본 정의가 “한국 1저자 논문을 인용한 정책문헌”이므로, any-author 분수계수는 <strong>유입의 규모(한국 기여)</strong>를 보정하는 역할을 한다. 2025.06 DB 기준, 한국 1저자 works에 대한 정책문헌 인용 97,502건은 any-author 분수계수로 환산하면 유효 KR 인용 합이 82,308(0.844배)로 줄어든다.</p>
+<section id="한국-1저자-연구를-인용한-정책-출처-분포" class="level4">
+<h4 class="anchored" data-anchor-id="한국-1저자-연구를-인용한-정책-출처-분포">(2) 한국 1저자 연구를 인용한 정책 출처 분포</h4>
+<p>기본 정의는 “한국 1저자 논문을 인용한 정책문헌”이다. any-author 분수계수는 공저 논문에서 한국 저자의 기여 비중을 반영한다. 2025.06 DB 기준, 한국 1저자 works에 대한 정책문헌 인용 97,502건은 any-author 분수계수로 환산하면 유효 KR 인용 합이 82,308(0.844배)로 줄어든다.</p>
 <p>정책 출처 구조(국가)는 크게 유지된다(상위 3개 정책 출처 합계 약 55.0% → 55.0%).</p>
 <table class="table">
 <thead>
 <tr class="header">
-<th>채널(국가)</th>
+<th>정책 출처 국가</th>
 <th style="text-align: right;">1저자 기준</th>
 <th style="text-align: right;">한국 참여 저자 가중(any-author)</th>
 </tr>
@@ -1254,15 +1254,15 @@ ul.task-list li input[type="checkbox"] {
 </section>
 </section>
 <section id="appendix-c13-join-multiplicity" class="level3">
-<h3 class="anchored" data-anchor-id="appendix-c13-join-multiplicity">C13. 그림 11 보조: 한국 유입 비중의 보정 전후 차이</h3>
-<p>그림 11처럼 “정책 출처 × 연구국” 계열 지표는 조인 중복에 민감하다. 같은 인용이 여러 행으로 펼쳐지면 특정 채널의 비중이 과대 계수될 수 있으므로, 이번 버전은 <strong>논문별 1행 매핑</strong>과 <strong>정책 출처 태그 중복 제거</strong>를 적용한 기준표를 사용한다.</p>
-<p>보정 전후를 비교하면 한국 유입에서는 특히 일부 채널 비중이 크게 흔들렸다. 따라서 아래 표는 “예전 값이 왜 달랐는가”를 설명하는 참고 자료이며, 공개 해석은 중복 보정 이후 값(C12 및 본문 그림 11)을 우선 기준으로 해석해야 한다.</p>
-<p>아래 표는 주요 채널의 보정 전후 차이를 요약한다.</p>
+<h3 class="anchored" data-anchor-id="appendix-c13-join-multiplicity">C13. 그림 11 보조: 한국 연구 인용의 중복 보정 전후 차이</h3>
+<p>그림 11처럼 “정책 출처 × 연구국” 계열 지표는 조인 중복에 민감하다. 같은 인용이 여러 행으로 펼쳐지면 특정 정책 출처의 비중이 과대 계수될 수 있으므로, 이번 버전은 <strong>논문별 1행 매핑</strong>과 <strong>정책 출처 태그 중복 제거</strong>를 적용한 기준표를 사용한다.</p>
+<p>보정 전후를 비교하면 한국 연구를 인용한 일부 정책 출처의 비중이 크게 달라졌다. 따라서 아래 표는 “예전 값이 왜 달랐는가”를 설명하는 참고 자료이며, 공개 해석은 중복 보정 이후 값(C12 및 본문 그림 11)을 우선 기준으로 해석해야 한다.</p>
+<p>아래 표는 주요 정책 출처의 보정 전후 차이를 요약한다.</p>
 <p>CSV: - <code>korea_inbound_flow_vs_dedup.csv</code>: <a href="../Assets/Figures/si/korea_inbound_flow_vs_dedup.csv">다운로드</a></p>
 <table class="table">
 <thead>
 <tr class="header">
-<th>채널(정책 출처)</th>
+<th>정책 출처</th>
 <th style="text-align: right;">보정 전 비중</th>
 <th style="text-align: right;">보정 후 비중</th>
 <th style="text-align: right;">과대계수 배율</th>
@@ -1301,7 +1301,7 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 </tbody>
 </table>
-<p><strong>해석 팁:</strong> 보정 전 값은 구조 점검용 참고치로만 보고, 채널 비중 해석은 <strong>중복 보정 기준표(예: C12)</strong>를 우선 기준으로 해석해야 한다.</p>
+<p><strong>해석 기준:</strong> 공개 결과에는 <strong>중복 보정 기준표(예: C12)</strong>의 정책 출처 비중을 사용한다.</p>
 
 
 </section>

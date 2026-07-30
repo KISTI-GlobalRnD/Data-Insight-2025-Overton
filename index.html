@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Overton 정책문헌 인용 데이터와 OpenAlex 메타데이터를 결합해 정책문헌이 어떤 연구를 언제, 어떤 경로로 인용하는지 한 페이지로 정리한다.">
+<meta name="description" content="Overton 정책문헌 인용 데이터와 OpenAlex 메타데이터를 결합해 정책 출처, 연구국, 연구 분야, 발행연도별 인용 분포를 정리한다.">
 
-<title>과학에서 정책으로 | Overton × OpenAlex</title>
+<title>정책문헌의 연구 인용 구조 | Overton × OpenAlex</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -61,27 +61,28 @@ ul.task-list li input[type="checkbox"] {
       <img src="Assets/Landing/hero_network.png" alt="" loading="lazy">
     </div>
     <div class="promo-hero__inner">
-      <p class="promo-kicker" data-reveal="" data-reveal-delay="0" data-i18n="hero.kicker">핵심 결과</p>
-      <h1 class="promo-title" data-reveal="" data-reveal-delay="50" data-i18n="hero.title">정책근거는 소수 허브 채널에 집중된다.</h1>
+      <p class="promo-kicker" data-reveal="" data-reveal-delay="0" data-i18n="hero.kicker">분석 결과</p>
+      <h1 class="promo-title" data-reveal="" data-reveal-delay="50" data-i18n="hero.title">정책문헌의 연구 인용은 소수 정책 출처에 집중된다.</h1>
       <p class="promo-lede" data-reveal="" data-reveal-delay="110" data-i18n="hero.lede">
-        한국도 예외는 아니다. 한국 연구의 정책문헌 유입은 미국·국제기구·영국 등 소수 정책 출처에 집중된다.
-        반대로 한국 정책문헌 인용은 미국 연구에 더 크게 치우친다. 이 페이지는 허브 구조, 출처 유형, 한국, 두 속도의 순서로 그 차이를 정리한다.
+        한국 연구를 인용한 정책 출처 가운데 미국·국제기구·영국의 합계 비중은 54.8%다.
+        한국 정책문헌이 인용한 연구 가운데 미국 연구 비중은 55.7%다. 이 페이지는 정책 출처별 총 인용 수와 문헌당 평균 인용 수, 출처 유형별 도메인 구성, 한국 연구를 인용한 정책 출처, 한국 정책문헌이 인용한 연구국, 토픽별 논문당 정책문헌 인용 수와 최근 고유 논문 비중을 제시한다.
       </p>
 
       <div class="promo-actions" role="group" aria-label="바로 가기" data-reveal="" data-reveal-delay="160" data-i18n-attr="aria-label:hero.actions.aria">
-        <a class="promo-btn promo-btn--primary" href="./Report/Report_final.pdf" data-i18n="hero.cta.report">보고서(PDF) 보기</a>
+        <a class="promo-btn promo-btn--primary" href="./Report/Report_final.pdf" data-i18n="hero.cta.report">보고서 원고(PDF) 보기</a>
         <a class="promo-btn promo-btn--ghost" href="./SI/index.html" data-i18n="hero.cta.si" data-i18n-attr="href:hero.cta.si.href">확장 자료 보기</a>
       </div>
 
       <p class="promo-lede promo-lede--secondary" data-reveal="" data-reveal-delay="220" data-i18n-html="hero.lede2">
         이 페이지는 Overton에서 DOI로 연결되는 정책문헌→학술논문 인용을 바탕으로 한다.
-        정책 전체를 모두 포괄하지는 않으며, <strong>현재 관측 가능한 근거 연결 구조</strong>만 보여 준다.
+        정책문헌의 연구 인용 전체를 포괄하지 않으며, <strong>현재 데이터에 포함된 DOI 인용</strong>만 보여 준다.
+        현재 공개 파일은 편집 전 원고이며, 최종 편집본 공개 후 보고서 링크를 교체한다.
       </p>
 
-      <div class="promo-stats" aria-label="핵심 수치" data-reveal="" data-reveal-delay="260" data-i18n-attr="aria-label:hero.stats.aria">
+      <div class="promo-stats" aria-label="주요 수치" data-reveal="" data-reveal-delay="260" data-i18n-attr="aria-label:hero.stats.aria">
         <div class="promo-stat">
           <div class="promo-stat__value">54.8%</div>
-          <div class="promo-stat__label" data-i18n="hero.stat.inbound">한국 연구의 정책문헌 유입이 상위 3개 정책 출처에 집중</div>
+          <div class="promo-stat__label" data-i18n="hero.stat.inbound">한국 연구를 인용한 상위 3개 정책 출처의 합계 비중</div>
         </div>
         <div class="promo-stat">
           <div class="promo-stat__value">55.7%</div>
@@ -103,15 +104,15 @@ ul.task-list li input[type="checkbox"] {
 
   <section class="promo-scrolly" id="story" data-scrolly="">
     <div class="promo-scrolly__intro" data-reveal="">
-      <p class="promo-section-kicker" data-i18n="story.kicker">핵심 장면</p>
-      <h2 class="promo-section-title anchored" data-i18n="story.title">네 장면으로 보는 정책근거</h2>
+      <p class="promo-section-kicker" data-i18n="story.kicker">주요 비교</p>
+      <h2 class="promo-section-title anchored" data-i18n="story.title">네 가지 분석 결과</h2>
     </div>
 
     <div class="promo-scrolly__sticky">
       <div class="promo-stage-hud" aria-hidden="true">
         <div class="promo-stage-progress">
           <div class="promo-stage-progress__meta">
-            <span class="promo-stage-progress__label" data-i18n="story.progress.label">장면</span>
+            <span class="promo-stage-progress__label" data-i18n="story.progress.label">항목</span>
             <span class="promo-stage-progress__count" data-progress-count="">1 / 4</span>
           </div>
           <div class="promo-stage-progress__track">
@@ -123,7 +124,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="promo-scrolly__stage" data-scene="hub-country">
         <div class="promo-stage-focus" aria-hidden="true"></div>
         <figure class="promo-figure is-active figure" data-figure-id="hub-country" aria-hidden="false">
-          <img src="Assets/Landing/country_citations_top10.png" alt="정책 출처별 총 인용과 문헌당 평균 인용, 도메인 구성" loading="lazy" data-i18n-attr="alt:fig.hub_country.alt" class="figure-img">
+          <img src="Assets/Landing/country_citations_top10.png" alt="정책 출처별 총 인용 수와 문헌당 평균 인용 수, 도메인 구성" loading="lazy" data-i18n-attr="alt:fig.hub_country.alt" class="figure-img">
         </figure>
 
         <figure class="promo-figure figure" data-figure-id="hub-type" aria-hidden="true">
@@ -131,27 +132,27 @@ ul.task-list li input[type="checkbox"] {
         </figure>
 
         <figure class="promo-figure figure" data-figure-id="korea" aria-hidden="true">
-          <img src="Assets/Landing/korea_flows.png" alt="한국 연구의 정책문헌 유입과 한국 정책문헌의 연구 인용 흐름(상위 10개)" loading="lazy" data-i18n-attr="alt:fig.korea.alt" class="figure-img">
+          <img src="Assets/Landing/korea_flows.png" alt="한국 연구를 인용한 정책 출처와 한국 정책문헌이 인용한 연구국(상위 10개)" loading="lazy" data-i18n-attr="alt:fig.korea.alt" class="figure-img">
         </figure>
 
         <figure class="promo-figure figure" data-figure-id="two-speed" aria-hidden="true">
-          <img src="Assets/Landing/topic_intensity_vs_recency.png" alt="토픽별 인용 강도와 최근성" loading="lazy" data-i18n-attr="alt:fig.two_speed.alt" class="figure-img">
+          <img src="Assets/Landing/topic_intensity_vs_recency.png" alt="토픽별 논문당 정책문헌 인용 수와 2022-2024년 발행 고유 논문 비중" loading="lazy" data-i18n-attr="alt:fig.two_speed.alt" class="figure-img">
         </figure>
       </div>
     </div>
 
-    <div class="promo-scrolly__steps" aria-label="스토리 단계" data-i18n-attr="aria-label:story.steps.aria">
+    <div class="promo-scrolly__steps" aria-label="분석 항목" data-i18n-attr="aria-label:story.steps.aria">
       <div class="promo-step is-active" data-figure="hub-country" aria-current="step">
-        <p class="promo-step__kicker" data-i18n="story.hub_country.kicker">허브 · 총량과 밀도</p>
-        <h2 class="promo-step__title anchored" data-i18n="story.hub_country.title">많이 인용되는 곳과 촘촘히 인용되는 곳은 다르다</h2>
+        <p class="promo-step__kicker" data-i18n="story.hub_country.kicker">정책 출처 · 총 인용 수와 문헌당 평균 인용 수</p>
+        <h2 class="promo-step__title anchored" data-i18n="story.hub_country.title">총 인용 수 순위와 문헌당 평균 인용 수 순위는 다르다</h2>
         <p class="promo-step__body" data-i18n="story.hub_country.body">
-          총량 상단에는 국제기구·미국·영국이, 문헌당 인용 상단에는 독일·프랑스·캐나다가 나타난다.
+          총 인용 수는 국제기구·미국·영국 순으로 많고, 문헌당 평균 인용 수는 독일 24.5, 국제기구 21.4, 프랑스 18.7 순으로 높다.
         </p>
       </div>
 
       <div class="promo-step" data-figure="hub-type">
-        <p class="promo-step__kicker" data-i18n="story.hub_type.kicker">허브 · 출처 유형</p>
-        <h2 class="promo-step__title anchored" data-i18n="story.hub_type.title">출처가 달라지면 인용하는 연구도 달라진다</h2>
+        <p class="promo-step__kicker" data-i18n="story.hub_type.kicker">정책 출처 · 유형</p>
+        <h2 class="promo-step__title anchored" data-i18n="story.hub_type.title">출처 유형별로 인용 연구의 분야 비중이 다르다</h2>
         <p class="promo-step__body" data-i18n="story.hub_type.body">
           개발은행·싱크탱크는 사회과학 비중이 높고, 보건기관·자료 종합형 서비스는 보건과학 비중이 크게 나타난다.
         </p>
@@ -159,17 +160,17 @@ ul.task-list li input[type="checkbox"] {
 
       <div class="promo-step" data-figure="korea">
         <p class="promo-step__kicker" data-i18n="story.korea.kicker">한국</p>
-        <h2 class="promo-step__title anchored" data-i18n="story.korea.title">한국은 유입 경로와 인용하는 연구의 구조가 다르다</h2>
+        <h2 class="promo-step__title anchored" data-i18n="story.korea.title">한국 연구를 인용한 정책 출처와 한국 정책문헌이 인용한 연구국은 다르게 분포한다</h2>
         <p class="promo-step__body" data-i18n="story.korea.body">
-          한국 연구의 정책문헌 유입은 상위 3개 정책 출처 54.8%에 집중되고, 한국 정책문헌 인용은 미국 연구 55.7%에 집중된다.
+          한국 연구를 인용한 상위 3개 정책 출처의 합계 비중은 54.8%이고, 한국 정책문헌이 인용한 연구 중 미국 연구 비중은 55.7%다.
         </p>
       </div>
 
       <div class="promo-step" data-figure="two-speed">
-        <p class="promo-step__kicker" data-i18n="story.two_speed.kicker">두 속도</p>
-        <h2 class="promo-step__title anchored" data-i18n="story.two_speed.title">모든 토픽이 같은 속도로 움직이지는 않는다</h2>
+        <p class="promo-step__kicker" data-i18n="story.two_speed.kicker">논문당 정책문헌 인용 수와 최근 고유 논문 비중</p>
+        <h2 class="promo-step__title anchored" data-i18n="story.two_speed.title">두 지표의 값은 토픽별로 다르다</h2>
         <p class="promo-step__body" data-i18n="story.two_speed.body">
-          코로나19 관련 토픽은 최근성 높은 구간에, 경제·노동 토픽은 인용 강도 높은 구간에 놓인다.
+          코로나19 관련 토픽은 최근 고유 논문 비중이 높고, 경제·노동 토픽은 논문당 정책문헌 인용 수가 높다.
         </p>
       </div>
     </div>
@@ -178,35 +179,35 @@ ul.task-list li input[type="checkbox"] {
   <section class="promo-monitor" id="monitor">
     <div class="promo-monitor__inner">
       <p class="promo-section-kicker" data-i18n="monitor.kicker">반복 점검</p>
-      <h2 class="promo-section-title anchored" data-i18n="monitor.title">다음에 다시 확인할 네 가지 기준</h2>
-      <p class="promo-section-lede" data-i18n="monitor.lede">허브 구조와 한국의 변화 방향을 점검할 기준선이다.</p>
+      <h2 class="promo-section-title anchored" data-i18n="monitor.title">같은 정의로 다시 계산할 네 가지 지표</h2>
+      <p class="promo-section-lede" data-i18n="monitor.lede">정책 출처 상위 3개 비중, 한국 연구를 인용한 상위 3개 정책 출처 비중, 한국 정책문헌의 미국 연구 비중, 반복 인용 논문 비중을 같은 정의로 다시 계산한다.</p>
 
       <div class="promo-monitor__grid">
         <article class="promo-monitor-card">
-          <div class="promo-monitor-card__value" data-i18n="monitor.card1.value">허브 추세</div>
-          <div class="promo-monitor-card__title" data-i18n="monitor.card1.title">총량 허브 vs 밀도 허브</div>
-          <p class="promo-monitor-card__body" data-i18n="monitor.card1.body">총 인용 규모와 문헌당 인용이 함께 움직이는지 점검한다.</p>
+          <div class="promo-monitor-card__value" data-i18n="monitor.card1.value">정책 출처 순위</div>
+          <div class="promo-monitor-card__title" data-i18n="monitor.card1.title">총 인용 수와 문헌당 평균 인용 수</div>
+          <p class="promo-monitor-card__body" data-i18n="monitor.card1.body">총 인용 수 순위와 문헌당 평균 인용 수 순위를 비교한다.</p>
         </article>
         <article class="promo-monitor-card">
-          <div class="promo-monitor-card__value" data-i18n="monitor.card2.value">정책 출처 태그 기준 상위 3개 54.8%</div>
-          <div class="promo-monitor-card__title" data-i18n="monitor.card2.title">한국 연구의 정책문헌 유입</div>
-          <p class="promo-monitor-card__body" data-i18n="monitor.card2.body">미국·국제기구·영국 합계가 넓어지는지 줄어드는지 점검한다.</p>
+          <div class="promo-monitor-card__value" data-i18n="monitor.card2.value">상위 3개 정책 출처 합계 비중 54.8%</div>
+          <div class="promo-monitor-card__title" data-i18n="monitor.card2.title">한국 연구를 인용한 정책 출처</div>
+          <p class="promo-monitor-card__body" data-i18n="monitor.card2.body">미국·국제기구·영국의 합계 비중과 기준값의 차이(%p)를 기록한다.</p>
         </article>
         <article class="promo-monitor-card">
           <div class="promo-monitor-card__value" data-i18n="monitor.card3.value">연구 인용 상위 1개국 55.7%</div>
           <div class="promo-monitor-card__title" data-i18n="monitor.card3.title">한국 정책문헌의 연구 인용</div>
-          <p class="promo-monitor-card__body" data-i18n="monitor.card3.body">미국 연구 비중이 유지되는지 완화되는지 점검한다.</p>
+          <p class="promo-monitor-card__body" data-i18n="monitor.card3.body">미국 연구 비중과 기준값의 차이(%p)를 기록한다.</p>
         </article>
         <article class="promo-monitor-card">
-          <div class="promo-monitor-card__value" data-i18n="monitor.card4.value">반복 인용 기준선 48.1%</div>
-          <div class="promo-monitor-card__title" data-i18n="monitor.card4.title">반복 인용 논문의 범위</div>
-          <p class="promo-monitor-card__body" data-i18n="monitor.card4.body">폭이 넓어지는지, 상위 몇 편에 더 쏠리는지 함께 점검한다.</p>
+          <div class="promo-monitor-card__value" data-i18n="monitor.card4.value">2회 이상 반복 인용 48.1%</div>
+          <div class="promo-monitor-card__title" data-i18n="monitor.card4.title">반복 인용 논문 비중</div>
+          <p class="promo-monitor-card__body" data-i18n="monitor.card4.body">반복 인용 논문 비중과 상위 논문 집중도가 어떻게 변하는지 함께 점검한다.</p>
         </article>
       </div>
 
       <div class="promo-monitor__actions">
         <a class="promo-btn promo-btn--primary" href="./SI/next_questions.html" data-i18n="monitor.cta.next" data-i18n-attr="href:monitor.cta.next.href">다음 점검표 보기</a>
-        <a class="promo-btn promo-btn--ghost" href="./Report/Report_final.pdf" data-i18n="monitor.cta.report">보고서(PDF) 보기</a>
+        <a class="promo-btn promo-btn--ghost" href="./Report/Report_final.pdf" data-i18n="monitor.cta.report">보고서 원고(PDF) 보기</a>
       </div>
     </div>
   </section>
@@ -218,34 +219,34 @@ ul.task-list li input[type="checkbox"] {
 
       <div class="promo-cards" role="list">
         <a class="promo-card" role="listitem" href="./Report/Report_final.pdf">
-          <div class="promo-card__meta" data-i18n="explore.card.report.meta">보고서 본문 · 15분+</div>
-          <div class="promo-card__title" data-i18n="explore.card.report.title">보고서 PDF</div>
-          <div class="promo-card__desc" data-i18n="explore.card.report.desc">핵심 결과와 해석, 확장 과제를 담은 본문</div>
+          <div class="promo-card__meta" data-i18n="explore.card.report.meta">편집 전 원고 · 15분+</div>
+          <div class="promo-card__title" data-i18n="explore.card.report.title">보고서 원고 PDF</div>
+          <div class="promo-card__desc" data-i18n="explore.card.report.desc">분석 결과와 해석 제한 사항을 담은 최종 조판 전 원고</div>
         </a>
         <a class="promo-card" role="listitem" href="./SI/index.html" data-i18n-attr="href:explore.card.si.href">
           <div class="promo-card__meta" data-i18n="explore.card.si.meta">확장 자료 · 5분</div>
           <div class="promo-card__title" data-i18n="explore.card.si.title">SI 시작하기</div>
-          <div class="promo-card__desc" data-i18n="explore.card.si.desc">방법, 인터랙티브, 부록, 다음 질문으로 들어가는 입구</div>
+          <div class="promo-card__desc" data-i18n="explore.card.si.desc">방법, 인터랙티브, 부록, 반복 점검 질문 목록</div>
         </a>
         <a class="promo-card" role="listitem" href="./SI/update_202603.html" data-i18n-attr="href:explore.card.update.href">
           <div class="promo-card__meta" data-i18n="explore.card.update.meta">웹 업데이트</div>
           <div class="promo-card__title" data-i18n="explore.card.update.title">2026 데이터 업데이트</div>
-          <div class="promo-card__desc" data-i18n="explore.card.update.desc">공식 보고서 이후 최신 데이터에서 달라진 핵심 수치와 비교 결과</div>
+          <div class="promo-card__desc" data-i18n="explore.card.update.desc">2025 기준 원고와 2026 데이터의 주요 지표 비교</div>
         </a>
         <a class="promo-card" role="listitem" href="./SI/methods.html" data-i18n-attr="href:explore.card.methods.href">
-          <div class="promo-card__meta" data-i18n="explore.card.methods.meta">해석 경계 · 8분</div>
+          <div class="promo-card__meta" data-i18n="explore.card.methods.meta">범위와 분모 · 8분</div>
           <div class="promo-card__title" data-i18n="explore.card.methods.title">방법과 해석 범위</div>
           <div class="promo-card__desc" data-i18n="explore.card.methods.desc">해석 가능한 범위와 지표 정의를 정리한 페이지</div>
         </a>
         <a class="promo-card" role="listitem" href="./SI/interactive.html" data-i18n-attr="href:explore.card.interactive.href">
-          <div class="promo-card__meta" data-i18n="explore.card.interactive.meta">그림 탐색</div>
+          <div class="promo-card__meta" data-i18n="explore.card.interactive.meta">인터랙티브 그림</div>
           <div class="promo-card__title" data-i18n="explore.card.interactive.title">인터랙티브</div>
-          <div class="promo-card__desc" data-i18n="explore.card.interactive.desc">국가·유형·토픽 패턴을 직접 살펴보는 그림 탐색 페이지</div>
+          <div class="promo-card__desc" data-i18n="explore.card.interactive.desc">국가·출처 유형·토픽별 값을 확인하는 페이지</div>
         </a>
         <a class="promo-card" role="listitem" href="./SI/appendix.html" data-i18n-attr="href:explore.card.appendix.href">
           <div class="promo-card__meta" data-i18n="explore.card.appendix.meta">정의 · 부가 진단</div>
           <div class="promo-card__title" data-i18n="explore.card.appendix.title">부록</div>
-          <div class="promo-card__desc" data-i18n="explore.card.appendix.desc">정의, 추가 그림과 표, 보완 점검을 모아 둔 페이지</div>
+          <div class="promo-card__desc" data-i18n="explore.card.appendix.desc">지표 정의, 추가 그림과 표, 민감도 분석</div>
         </a>
       </div>
     </div>
@@ -254,11 +255,11 @@ ul.task-list li input[type="checkbox"] {
   <footer class="promo-footer">
     <div class="promo-footer__inner">
       <div class="promo-footer__col">
-        <div class="promo-footer__title" data-i18n="footer.title">과학에서 정책으로</div>
+        <div class="promo-footer__title" data-i18n="footer.title">정책문헌의 연구 인용 구조</div>
       </div>
       <div class="promo-footer__col">
         <a class="promo-footer__link" href="#top" data-i18n="footer.link.top">맨 위로</a>
-        <a class="promo-footer__link" href="./Report/Report_final.pdf" data-i18n="footer.link.report">보고서(PDF)</a>
+        <a class="promo-footer__link" href="./Report/Report_final.pdf" data-i18n="footer.link.report">보고서 원고(PDF)</a>
         <a class="promo-footer__link" href="./SI/index.html" data-i18n="footer.link.si" data-i18n-attr="href:footer.link.si.href">확장 자료</a>
       </div>
     </div>
