@@ -178,7 +178,7 @@ ul.task-list li input[type="checkbox"] {
   </ul>
 </nav>
 <p><strong>바로가기:</strong> <a href="../Report/Report_final.pdf">보고서 원고(PDF)</a> · <a href="../SI/index.html">확장 자료</a> · <a href="../SI/methods.html">방법론·데이터 정합성</a> · <strong>인터랙티브</strong> · <a href="../SI/appendix.html">부록</a> · <a href="../SI/next_questions.html">다음 질문</a></p>
-<p>보고서 그림의 세부 값, 확대·축소, 항목별 표시 여부를 인터랙티브로 제공한다. 아래 플롯은 <strong>버튼을 눌러야 불러와지므로</strong>, 페이지 자체는 가볍게 열린다.</p>
+<p>보고서 그림의 세부 값, 확대·축소, 항목별 표시 여부를 인터랙티브로 제공한다. 아래 플롯은 <strong>버튼을 눌러야 불러와지므로</strong>, 페이지 자체는 가볍게 열린다. 여기서 <strong>정책 출처</strong>는 정책문헌의 출처 국가와 국제기구·유럽연합 범주를, <strong>연구국</strong>은 인용 논문의 1저자 소속 국가를 뜻한다.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -202,7 +202,7 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li>논문당 정책문헌 인용 수와 최근 고유 논문 비중(그림 1–4): 시간·분야·토픽별 값을 확인한다.</li>
 <li>정책 출처별 지표(그림 5–7): 국가·유형별 총 인용 수와 문헌당 평균 인용 수를 확인한다.</li>
-<li>한국(그림 8–12): 한국 연구를 인용한 정책 출처, 한국 정책문헌이 인용한 연구국, 자국 인용 기대비중을 확인한다.</li>
+<li>한국(그림 8–12): 한국 연구를 인용한 정책 출처, 한국 정책문헌이 인용한 연구국, 자국 연구 인용 비중과 기대 비중을 확인한다.</li>
 </ul>
 <p><strong>확인 순서(공통)</strong></p>
 <ul>
@@ -356,10 +356,10 @@ ul.task-list li input[type="checkbox"] {
 <section id="한국-연구를-인용한-정책-출처와-한국-정책문헌이-인용한-연구국" class="level2">
 <h2 class="anchored" data-anchor-id="한국-연구를-인용한-정책-출처와-한국-정책문헌이-인용한-연구국">한국 연구를 인용한 정책 출처와 한국 정책문헌이 인용한 연구국</h2>
 <div class="si-section-ref">
-<p>보고서 원고(PDF): 2.3절 한국 관련 두 인용 분포 · 2.4절 한국의 분야별 인용 구성 · 관련: <a href="../SI/appendix.html#self-citation-share">부록: 자국 인용 비중</a></p>
+<p>보고서 원고(PDF): 2.3절 한국 연구를 인용한 정책 출처와 한국 정책문헌이 인용한 연구국 · 2.4절 한국 정책문헌이 인용한 연구와 정책문헌에 인용된 한국 연구의 분야 구성 · 관련: <a href="../SI/appendix.html#self-citation-share">부록: 자국 인용 비중</a></p>
 </div>
 <section id="si-fig-8" class="level3">
-<h3 class="anchored" data-anchor-id="si-fig-8">그림 8. 두 정책문헌 인용 방향의 국가별 분야 구성(상위 50개국; 초기에는 상위 10개와 한국만 표시)</h3>
+<h3 class="anchored" data-anchor-id="si-fig-8">그림 8. 정책문헌이 인용한 연구와 정책문헌에 인용된 자국 연구의 국가별 분야 구성(상위 50개국; 초기에는 상위 10개와 한국만 표시)</h3>
 <div class="si-guidance">
 <p><strong>확인할 것</strong></p>
 <ul>
@@ -368,7 +368,7 @@ ul.task-list li input[type="checkbox"] {
 <li>점검: 도메인별 비중 차이(pp)를 기준값과 같은 정의로 비교한다.</li>
 </ul>
 </div>
-<div class="si-plot" data-src="../Assets/Interactive/country_domain_demand_supply_scatter_top50.html" data-height="820" data-title="Interactive plot: Figure 8 — Domain composition in two policy-citation directions">
+<div class="si-plot" data-src="../Assets/Interactive/country_domain_demand_supply_scatter_top50.html" data-height="820" data-title="Interactive plot: Figure 8 — Domain shares by policy source country and research country">
   <div class="si-plot__actions">
     <a class="si-plot__link" href="../Assets/Interactive/country_domain_demand_supply_scatter_top50.html" target="_blank" rel="noopener">새 창으로 열기</a>
     <span class="si-plot__badge">로딩이 느릴 수 있음</span>
@@ -377,16 +377,16 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </section>
 <section id="si-fig-9" class="level3">
-<h3 class="anchored" data-anchor-id="si-fig-9">그림 9. 정책 출처 → 연구국 인용 행렬. 절대 규모와 출처 내부 비중</h3>
+<h3 class="anchored" data-anchor-id="si-fig-9">그림 9. 정책 출처 → 연구국 인용 행렬. 인용 건수와 출처 내부 비중</h3>
 <div class="si-guidance">
 <p><strong>확인할 것</strong></p>
 <ul>
-<li>관찰: 왼쪽(절대 규모)과 오른쪽(출처 내부 비중)의 패턴 차이를 확인한다.</li>
+<li>관찰: 왼쪽(인용 건수)과 오른쪽(출처 내부 비중)의 패턴 차이를 확인한다.</li>
 <li>해석: 많이 인용하는 출처와 특정 연구국 인용 비중이 높은 출처는 다를 수 있다.</li>
 <li>점검: 상위 1개국 비중과 상위 3개국 합계를 함께 보며 편중 변화를 추적한다.</li>
 </ul>
 </div>
-<p>왼쪽은 절대 인용 규모를 로그 스케일로 표시한다. 오른쪽은 정책 출처 내부에서의 비중을 보여준다. 정책 출처 목록에 없는 연구국은 지역 단위로 묶어 표시했다.</p>
+<p>왼쪽은 인용 건수를 로그 스케일로 표시한다. 오른쪽은 정책 출처 내부에서의 비중을 보여준다. 정책 출처 목록에 없는 연구국은 지역 단위로 묶어 표시했다.</p>
 <div class="si-plot" data-src="../Assets/Interactive/policy_to_research_country_heatmap.html" data-height="820" data-title="Interactive plot: Figure 9 — Policy source → research country citations">
   <div class="si-plot__actions">
     <a class="si-plot__link" href="../Assets/Interactive/policy_to_research_country_heatmap.html" target="_blank" rel="noopener">새 창으로 열기</a>
@@ -397,13 +397,13 @@ ul.task-list li input[type="checkbox"] {
 <hr>
 </section>
 <section id="si-fig-10" class="level3">
-<h3 class="anchored" data-anchor-id="si-fig-10">그림 10. 자국 인용 비중, 도메인 가중 기대비중과의 차이, 인용 도메인 구성. 정책 출처 국가 상위 7개국과 한국</h3>
+<h3 class="anchored" data-anchor-id="si-fig-10">그림 10. 자국 연구 인용 비중, 기대 비중과의 차이, 인용 도메인 구성. 정책 출처 국가 상위 7개국과 한국</h3>
 <div class="si-guidance">
 <p><strong>확인할 것</strong></p>
 <ul>
-<li>관찰: 자국 인용 비중과 기대비중 대비(actual-expected) 분포를 함께 확인한다.</li>
-<li>해석: 기대비중은 도메인 구성을 반영해 계산한 비교값이다.</li>
-<li>점검: 국가 비교 전에 1저자 국가코드가 확인되는 인용만을 대상으로 한 결과인지 먼저 확인한다.</li>
+<li>관찰: 자국 연구 인용 비중과 기대 비중 대비 차이(actual-expected) 분포를 함께 확인한다.</li>
+<li>해석: 기대 비중은 정책문헌의 도메인별 인용 구성과 각 도메인에서 국가별 1저자 논문이 차지하는 비중을 결합해 계산한 비교값이다.</li>
+<li>점검: 국가 비교 전에 1저자 소속 국가코드가 확인되는 인용만을 대상으로 한 결과인지 먼저 확인한다.</li>
 </ul>
 </div>
 <div class="si-plot" data-src="../Assets/Interactive/policy_country_self_share_selected.html" data-height="650" data-title="Interactive plot: Figure 10 — Self-citation share vs expected and domain composition">
@@ -435,9 +435,9 @@ ul.task-list li input[type="checkbox"] {
 <div class="si-guidance">
 <p><strong>확인할 것</strong></p>
 <ul>
-<li>관찰: 상위 노드와 상위 연결만 남긴 네트워크에서 한국과 연결된 정책 출처와 연구국을 확인한다.</li>
+<li>관찰: 선택된 정책 출처와 연구국 가운데 한국과 연결된 범주를 확인한다.</li>
 <li>해석: 이 그림은 전체 네트워크가 아니라 선택 규칙을 적용한 축약본이다.</li>
-<li>점검: 거리와 위치를 정량 해석하지 말고 연결 관계만 확인한다. 본문 그림은 각 노드의 유입 상위 3개와 유출 상위 3개 연결만 표시한다. 노드 구분은 선택된 50개 노드 안에서 정책 출처와 연구국으로 나타나는 역할을 기준으로 한다. 표시 규칙(top-3/top-5/all)별 결과는 <a href="../SI/appendix.html#appendix-c8-policy-research-backbone">부록 C8</a>에서 확인한다.</li>
+<li>점검: 거리와 위치를 정량 해석하지 말고 연결 관계만 확인한다. 본문 그림은 선택된 50개 범주에서 정책 출처별 상위 3개 연구국과 연구국별 상위 3개 정책 출처의 관계만 표시한다. 범주 구분은 정책 출처와 연구국 중 어느 역할로 나타나는지를 기준으로 한다. 상위 3개·상위 5개·전체 관계를 적용한 결과는 <a href="../SI/appendix.html#appendix-c8-policy-research-backbone">부록 C8</a>에서 확인한다.</li>
 </ul>
 </div>
 <p>노드 간 거리는 정량 지표가 아니다.</p>

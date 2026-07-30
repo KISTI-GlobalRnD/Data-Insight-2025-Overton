@@ -7,17 +7,17 @@
   const KO = {
     // Plot titles
     "Policy citations by policy source country (top 10 + Republic of Korea)": "정책 출처 국가별 정책 인용(상위 10 + 한국)",
-    "Selected countries (top 50): domain composition in two policy-citation directions":
-      "선택 국가(상위 50): 두 정책문헌 인용 방향의 도메인 구성",
+    "Selected countries (top 50): domain composition of research cited by policy documents and domestic research cited in policy documents":
+      "선택 국가(상위 50): 정책문헌이 인용한 연구와 정책문헌에 인용된 자국 연구의 도메인 구성",
     "Domain composition of policy citations (top 10 + Republic of Korea)": "정책 출처 국가별 도메인 구성(상위 10 + 한국)",
     "Overton coverage: policy documents by policy source country (log10 scale)": "Overton 커버리지: 정책 출처 국가별 정책문헌 수(log10)",
     "Policy citations by domain (top 4; stacked by field)": "도메인별 정책 인용(상위 4; 분야별 누적)",
     "Policy sources citing Republic of Korea-authored research and research countries cited by Republic of Korea policy documents (top 10; DOI-matched, first-author country)":
-      "한국 연구를 인용한 정책 출처와 한국 정책문헌이 인용한 연구국(상위 10; DOI 매칭, 1저자 국가)",
+      "한국 연구를 인용한 정책 출처와 한국 정책문헌이 인용한 연구국(상위 10; DOI 매칭, 1저자 소속 국가)",
     "Domestic-citation share vs expected and domain composition (top 7 policy countries + Republic of Korea)":
       "자국 인용 비중(관측 vs 기대)과 도메인 구성(상위 7 + 한국)",
-    "Policy source and research country citation network (top 3 incoming/outgoing links per node)":
-      "정책 출처-연구국 인용 네트워크(노드당 유입·유출 상위 3개 연결)",
+    "Policy source and research country citation network (top 3 research countries per policy source; top 3 policy sources per research country)":
+      "정책 출처-연구국 인용 네트워크(정책 출처별 연구국 상위 3개·연구국별 정책 출처 상위 3개)",
     "Policy source → Research country citations": "정책 출처 → 연구국 인용",
     "Policy documents by publication year (DOI citations)": "발행연도별 정책문헌(DOI 인용)",
     "Citations per policy document by policy source type (selected types)": "출처 유형별 문헌당 평균 인용 수(선택 유형)",
@@ -35,6 +35,9 @@
     "Share within policy source (normalized)": "출처 내부 비중(정규화)",
     "Cited research share by domain": "피인용 연구 비중(도메인별)",
     "Policy citations share by domain": "정책 인용 비중(도메인별)",
+    "Domain share of research cited by policy documents": "정책문헌이 인용한 연구의 도메인 비중",
+    "Domain share of each country's research cited by policy documents": "정책문헌에 인용된 각국 연구의 도메인 비중",
+    "Citation count\n(policy source + research country)": "인용 건수\n(정책 출처·연구국 집계 합계)",
     "Country (click to toggle)": "국가(클릭으로 토글)",
     Domain: "도메인",
     domain: "도메인",
@@ -43,10 +46,10 @@
     "Policy documents": "정책문헌 수",
     "Publication year (policy documents)": "발행연도(정책문헌)",
     "Citations per document": "문헌당 평균 인용 수",
-    "Share (%)<br>(first-author country available only)": "비중(%)<br>(1저자 국가코드 확인 건만)",
+    "Share (%)<br>(first-author country available only)": "비중(%)<br>(1저자 소속 국가코드 확인 건만)",
     "Actual − expected (pp)<br>(domain-weighted baseline)": "관측 − 기대(pp)<br>(도메인 가중 기대값)",
     "Citations to KR research": "한국 연구로의 인용",
-    "Citations from KR policy<br>(first-author country available only)": "한국 정책의 인용<br>(1저자 국가코드 확인 건만)",
+    "Citations from KR policy<br>(first-author country available only)": "한국 정책문헌의 인용<br>(1저자 소속 국가코드 확인 건만)",
     "Domain share in citations to KR research (normalized)": "한국 연구 인용의 도메인 비중(정규화)",
     "Domain share in citations by KR policy documents (normalized)": "한국 정책문헌 인용의 도메인 비중(정규화)",
     "Source type": "출처 유형",
@@ -70,8 +73,8 @@
     "B. Domestic-citation vs expected": "B. 자국 인용(관측 vs 기대)",
     "C. Domain composition of cited research": "C. 피인용 연구 도메인 구성",
     "Overall: 32.7%": "전체: 32.7%",
-    "A. Absolute citations (log10 scale)": "A. 절대 인용(log10)",
-    "B. Row-normalized share (cap at 30%)": "B. 행 정규화 비중(최대 30% 절단)",
+    "A. Citation count (log10 scale)": "A. 인용 건수(log10)",
+    "B. Share within policy source (cap at 30%)": "B. 정책 출처 내부 비중(최대 30% 절단)",
 
     // Trace names / categories (keep this list intentionally small)
     "Policy citations (count)": "정책 인용(건수)",
