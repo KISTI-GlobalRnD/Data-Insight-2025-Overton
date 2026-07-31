@@ -116,7 +116,7 @@
     "href": "SI/methods_en.html#analysis-scope",
     "title": "Methods Summary",
     "section": "Analysis scope",
-    "text": "Analysis scope\n\nData sources: Overton policy-document references and OpenAlex scholarly-work metadata.\nMain citation unit: DOI-linked policy-document -&gt; scholarly-work citation records.\nDocument unit: Overton policy documents deduplicated at the policy-document level.\nCountry comparisons use first-author country metadata where available."
+    "text": "Analysis scope\n\nData sources: Overton policy-document references and OpenAlex scholarly-work metadata.\nMain citation unit: DOI-linked policy-document -&gt; scholarly-work citation records.\nDocument unit: Overton policy documents deduplicated at the policy-document level.\nCountry comparisons use first-author country metadata where available. First-author country means the country of the first author’s affiliated institution, not the author’s nationality."
   },
   {
     "objectID": "SI/methods_en.html#interpretation-boundaries",
@@ -165,7 +165,7 @@
     "href": "SI/appendix_en.html#domestic-citation-share",
     "title": "Definitions Summary",
     "section": "Domestic-citation share",
-    "text": "Domestic-citation share\nDomestic-citation share is a country-level same-country citation measure. For a policy source country, it asks what share of citations point to research whose first-author country is the same country.\nThis metric uses only citations with known first-author country codes. It is therefore better used as a diagnostic than as a simple country ranking."
+    "text": "Domestic-citation share\nDomestic-citation share is a country-level same-country citation measure. For a policy source country, it asks what share of citations point to research whose first-author country is the same country. First-author country means the country of the first author’s affiliated institution, not the author’s nationality.\nThis metric uses only citations with known first-author country codes. It is therefore better used as a diagnostic than as a simple country ranking."
   },
   {
     "objectID": "SI/appendix_en.html#domain-adjusted-domestic-citation-reference-share",
