@@ -202,7 +202,7 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li>논문당 정책문헌 인용 수와 최근 고유 논문 비중(그림 1–4): 시간·분야·토픽별 값을 확인한다.</li>
 <li>정책 출처별 지표(그림 5–7): 국가·유형별 총 인용 수와 문헌당 평균 인용 수를 확인한다.</li>
-<li>한국(그림 8–12): 한국 연구를 인용한 정책 출처, 한국 정책문헌이 인용한 연구국, 자국 연구 인용 비중과 기대 비중을 확인한다.</li>
+<li>한국(그림 8–12): 한국 연구를 인용한 정책 출처, 한국 정책문헌이 인용한 연구국, 자국 연구 인용 비중과 도메인 조정 비교 비중을 확인한다.</li>
 </ul>
 <p><strong>확인 순서(공통)</strong></p>
 <ul>
@@ -243,7 +243,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="si-guidance">
 <p><strong>확인할 것</strong></p>
 <ul>
-<li>관찰: 도메인 내부에서 상위 3개 필드 집중도와 필드 정보 누락(field missing) 구간을 함께 확인한다.</li>
+<li>관찰: 도메인 내부에서 상위 3개 필드와 기타 필드의 구성을 함께 확인한다.</li>
 <li>해석: 누락 구간이 큰 도메인은 구성 비교 해석이 불안정할 수 있다.</li>
 <li>점검: <a href="../SI/appendix.html#data-fitness">부록: 매칭·결측</a>, <a href="../SI/appendix.html#multilabel">부록: 다중라벨</a>을 함께 확인한다.</li>
 </ul>
@@ -308,7 +308,7 @@ ul.task-list li input[type="checkbox"] {
 <li>점검: 두 상위군이 얼마나 겹치는지 확인한다.</li>
 </ul>
 </div>
-<div class="si-plot" data-src="../Assets/Interactive/country_citations_top10.html" data-height="650" data-title="Interactive plot: Figure 5 — Country citations (total, per policy doc, and domain composition)">
+<div class="si-plot" data-src="../Assets/Interactive/country_citations_top10.html" data-height="650" data-title="Interactive plot: Figure 5 — Country citations (total, per DOI-citing policy doc, and domain composition)">
   <div class="si-plot__actions">
     <a class="si-plot__link" href="../Assets/Interactive/country_citations_top10.html" target="_blank" rel="noopener">새 창으로 열기</a>
     <button type="button" class="si-plot__btn">플롯 불러오기</button>
@@ -325,8 +325,8 @@ ul.task-list li input[type="checkbox"] {
 <li>점검: 한 문헌이 여러 출처 유형에 포함될 수 있다는 점을 전제로 유형별 값을 비교한다.</li>
 </ul>
 </div>
-<p>출처 유형 분류는 상호 배타적이지 않아 문헌 1편이 여러 유형에 포함될 수 있다. 따라서 아래 값은 출처 유형별 집계이며, 유형별 합계를 전체 문헌 수와 직접 비교하지 않는다.</p>
-<div class="si-plot" data-src="../Assets/Interactive/source_type_citations_per_policy_doc.html" data-height="650" data-title="Interactive plot: Figure 6 — Citations per policy document by source type">
+<p>출처 유형 분류는 상호 배타적이지 않아 문헌 1편이 여러 유형에 포함될 수 있다. 따라서 아래 값은 출처 유형별 집계이며, 유형별 합계를 전체 문헌 수와 직접 비교하지 않는다. 문헌당 평균 인용 수는 각 유형의 DOI 연계 인용 건수를 DOI 연계 인용이 1건 이상인 정책문헌 수로 나눈 값이다.</p>
+<div class="si-plot" data-src="../Assets/Interactive/source_type_citations_per_policy_doc.html" data-height="650" data-title="Interactive plot: Figure 6 — Citations per DOI-citing policy document by source type">
   <div class="si-plot__actions">
     <a class="si-plot__link" href="../Assets/Interactive/source_type_citations_per_policy_doc.html" target="_blank" rel="noopener">새 창으로 열기</a>
     <button type="button" class="si-plot__btn">플롯 불러오기</button>
@@ -397,16 +397,16 @@ ul.task-list li input[type="checkbox"] {
 <hr>
 </section>
 <section id="si-fig-10" class="level3">
-<h3 class="anchored" data-anchor-id="si-fig-10">그림 10. 자국 연구 인용 비중, 기대 비중과의 차이, 인용 도메인 구성. 정책 출처 국가 상위 7개국과 한국</h3>
+<h3 class="anchored" data-anchor-id="si-fig-10">그림 10. 자국 연구 인용 비중, 도메인 조정 비교 비중과의 차이, 인용 도메인 구성. 정책 출처 국가 상위 7개국과 한국</h3>
 <div class="si-guidance">
 <p><strong>확인할 것</strong></p>
 <ul>
-<li>관찰: 자국 연구 인용 비중과 기대 비중 대비 차이(actual-expected) 분포를 함께 확인한다.</li>
-<li>해석: 기대 비중은 정책문헌의 도메인별 인용 구성과 각 도메인에서 국가별 1저자 논문이 차지하는 비중을 결합해 계산한 비교값이다.</li>
+<li>관찰: 자국 연구 인용 비중과 도메인 조정 비교 비중의 차이를 함께 확인한다.</li>
+<li>해석: 비교 비중은 정책문헌의 도메인별 인용 구성과 결합 표본에서 각 도메인의 국가별 1저자 논문 구성비를 결합한 값이다.</li>
 <li>점검: 국가 비교 전에 1저자 소속 국가코드가 확인되는 인용만을 대상으로 한 결과인지 먼저 확인한다.</li>
 </ul>
 </div>
-<div class="si-plot" data-src="../Assets/Interactive/policy_country_self_share_selected.html" data-height="650" data-title="Interactive plot: Figure 10 — Self-citation share vs expected and domain composition">
+<div class="si-plot" data-src="../Assets/Interactive/policy_country_self_share_selected.html" data-height="650" data-title="Interactive plot: Figure 10 — Domestic-citation share vs domain-adjusted reference and domain composition">
   <div class="si-plot__actions">
     <a class="si-plot__link" href="../Assets/Interactive/policy_country_self_share_selected.html" target="_blank" rel="noopener">새 창으로 열기</a>
     <button type="button" class="si-plot__btn">플롯 불러오기</button>

@@ -11,7 +11,7 @@
     "href": "SI/next_questions_en.html#four-indicators",
     "title": "Next Questions Summary",
     "section": "Four indicators",
-    "text": "Four indicators\n\n\n\n\n\n\n\nRecalculation question\nValues to compare\n\n\n\n\nHow far is the top-three policy-source share from its baseline?\nTop-three share, percentage-point difference, ranking changes, total citations, and average citations per document.\n\n\nHow far is the share of papers cited by at least two policy documents from its baseline?\nRepeat-citation thresholds such as &gt;=2, &gt;=5, and &gt;=10 policy documents, with publication-year cohorts.\n\n\nHow far is the U.S. research share in citations from Korean policy documents from its baseline?\nTop-country share, percentage-point difference, domestic-citation share, and domain composition.\n\n\nHow far is the top-three policy-source share for citations to Korean research from its baseline?\nTop-three policy-source share, percentage-point difference, and ranking changes."
+    "text": "Four indicators\n\n\n\n\n\n\n\nRecalculation question\nValues to compare\n\n\n\n\nHow far is the top-three policy-source share from its baseline?\nTop-three share using top-level policy sources, percentage-point difference, ranking changes, total citations, and average citations per DOI-citing policy document.\n\n\nHow far is the share of papers cited by at least two policy documents from its baseline?\nRepeat-citation thresholds such as &gt;=2, &gt;=5, and &gt;=10 policy documents, with publication-year cohorts.\n\n\nHow far is the U.S. research share in citations from Korean policy documents from its baseline?\nTop-country share, percentage-point difference, domestic-citation share, and domain composition.\n\n\nHow far is the top-three policy-source share for citations to Korean research from its baseline?\nTop-three policy-source share, percentage-point difference, and ranking changes."
   },
   {
     "objectID": "SI/next_questions_en.html#comparison-rule",
@@ -32,14 +32,14 @@
     "href": "SI/interactive_en.html#what-to-inspect",
     "title": "Selected Figures",
     "section": "What to inspect",
-    "text": "What to inspect\n\n\n\nQuestion\nSuggested figure\nReading point\n\n\n\n\nWhich policy sources account for the largest citation shares?\nPolicy-source citation counts\nCompare total citation volume with citations per policy document.\n\n\nDo source types cite different research domains?\nSource type x domain heatmap\nRead source roles by domain composition, not by total volume alone.\n\n\nHow do the two Korea-related citation distributions differ?\nKorea-related citation distributions\nSeparate citations to Korean research from citations made by Korean policy documents.\n\n\nWhich research countries do policy sources cite?\nPolicy source -&gt; research country matrix\nCompare absolute volume and within-source share separately.\n\n\nHow should domestic-citation share be read?\nDomestic-citation share\nUse it as a diagnostic among citations with known first-author country.\n\n\nHow do topics differ in citations per paper and recent unique-paper share?\nTopic indicator comparison\nCompare policy citations per paper with the share of unique papers published in 2022-2024."
+    "text": "What to inspect\n\n\n\nQuestion\nSuggested figure\nReading point\n\n\n\n\nWhich policy sources account for the largest citation shares?\nPolicy-source citation counts\nCompare total citation volume with citations per DOI-citing policy document.\n\n\nDo source types cite different research domains?\nSource type x domain heatmap\nRead source roles by domain composition, not by total volume alone.\n\n\nHow do the two Korea-related citation distributions differ?\nKorea-related citation distributions\nSeparate citations to Korean research from citations made by Korean policy documents.\n\n\nWhich research countries do policy sources cite?\nPolicy source -&gt; research country matrix\nCompare absolute volume and within-source share separately.\n\n\nHow should domestic-citation share be read?\nDomestic-citation share\nUse it as a diagnostic among citations with known first-author country.\n\n\nHow do topics differ in citations per paper and recent unique-paper share?\nTopic indicator comparison\nCompare policy citations per paper with the share of unique papers published in 2022-2024."
   },
   {
     "objectID": "SI/interactive_en.html#short-interpretation",
     "href": "SI/interactive_en.html#short-interpretation",
     "title": "Selected Figures",
     "section": "Short interpretation",
-    "text": "Short interpretation\nThe interactive figures provide the values used in the report comparisons. They do not replace the Korean report.\nMost comparisons require three safeguards:\n\nseparate total citation counts from citations per policy document;\nseparate citations to Korean research from citations made by Korean policy documents;\ncheck whether the denominator changes before comparing percentages."
+    "text": "Short interpretation\nThe interactive figures provide the values used in the report comparisons. They do not replace the Korean report.\nMost comparisons require three safeguards:\n\nseparate total citation counts from citations per DOI-citing policy document;\nseparate citations to Korean research from citations made by Korean policy documents;\ncheck whether the denominator changes before comparing percentages."
   },
   {
     "objectID": "SI/update_202603_en.html",
@@ -123,14 +123,14 @@
     "href": "SI/methods_en.html#interpretation-boundaries",
     "title": "Methods Summary",
     "section": "Interpretation boundaries",
-    "text": "Interpretation boundaries\n\nThe analysis covers observed DOI-linked policy-to-research citations, not the full policy universe.\nNon-DOI evidence such as reports, legislation, web pages, and narrative references is outside the default indicators.\nPolicy-source country and type labels can overlap, so totals should be read as tag-based summaries rather than mutually exclusive counts.\nCountry-level indicators should be read with missing first-author country codes in mind."
+    "text": "Interpretation boundaries\n\nThe analysis covers observed DOI-linked policy-to-research citations, not the full policy universe.\nNon-DOI evidence such as reports, legislation, web pages, and narrative references is outside the default indicators.\nHierarchical policy-source labels are collapsed to their top-level country, IGO, or EU category. Policy-source type labels can still overlap, so type totals are not mutually exclusive.\nCountry-level indicators should be read with missing first-author country codes in mind."
   },
   {
     "objectID": "SI/methods_en.html#indicator-definitions",
     "href": "SI/methods_en.html#indicator-definitions",
     "title": "Methods Summary",
     "section": "Indicator definitions",
-    "text": "Indicator definitions\n\n\n\n\n\n\n\nMetric\nSummary definition\n\n\n\n\nCitation count\nNumber of DOI-linked policy-to-research citation records.\n\n\nUnique works\nDistinct OpenAlex works cited by policy documents.\n\n\nRepeat-citation share\nShare of unique cited works cited by at least two policy documents.\n\n\nPolicy citations per paper\nPolicy citations divided by unique cited papers within a topic.\n\n\nShare of unique papers published in 2022-2024\nShare of unique cited papers published in 2022-2024 among papers with a known publication year through 2024 within a topic.\n\n\nDomestic-citation share\nCountry-level same-country citation share, among citations with known first-author country."
+    "text": "Indicator definitions\n\n\n\n\n\n\n\nMetric\nSummary definition\n\n\n\n\nCitation count\nNumber of DOI-linked policy-to-research citation records.\n\n\nUnique works\nDistinct OpenAlex works cited by policy documents.\n\n\nAverage citations per policy document\nDOI-linked citations divided by policy documents with at least one DOI-linked citation in the policy-source or source-type group.\n\n\nRepeat-citation share\nShare of unique cited works cited by at least two policy documents.\n\n\nPolicy citations per paper\nPolicy citations divided by unique cited papers within a topic.\n\n\nShare of unique papers published in 2022-2024\nShare of unique cited papers published in 2022-2024 among papers with a known publication year through 2024 within a topic.\n\n\nDomestic-citation share\nCountry-level same-country citation share, among citations with known first-author country."
   },
   {
     "objectID": "SI/methods_en.html#denominator-check",
@@ -168,11 +168,11 @@
     "text": "Domestic-citation share\nDomestic-citation share is a country-level same-country citation measure. For a policy source country, it asks what share of citations point to research whose first-author country is the same country.\nThis metric uses only citations with known first-author country codes. It is therefore better used as a diagnostic than as a simple country ranking."
   },
   {
-    "objectID": "SI/appendix_en.html#expected-domestic-citation-share",
-    "href": "SI/appendix_en.html#expected-domestic-citation-share",
+    "objectID": "SI/appendix_en.html#domain-adjusted-domestic-citation-reference-share",
+    "href": "SI/appendix_en.html#domain-adjusted-domestic-citation-reference-share",
     "title": "Definitions Summary",
-    "section": "Expected domestic-citation share",
-    "text": "Expected domestic-citation share\nExpected domestic-citation share adjusts for the domain mix of cited research. Conceptually, it asks whether a country’s observed domestic-citation share is higher or lower than what would be expected from its cited-domain composition and global research production share."
+    "section": "Domain-adjusted domestic-citation reference share",
+    "text": "Domain-adjusted domestic-citation reference share\nThe domain-adjusted reference share combines the domain mix of cited research with each country’s first-author article share in the DOI-linked article sample. Each article is counted at most once per domain. This reference describes the linked sample and is not a measure of total global research production in OpenAlex."
   },
   {
     "objectID": "SI/appendix_en.html#missingness-caution",

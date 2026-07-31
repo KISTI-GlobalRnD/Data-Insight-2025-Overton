@@ -149,8 +149,8 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#appendix-a" id="toc-appendix-a" class="nav-link" data-scroll-target="#appendix-a">A. 데이터 수집 범위·출처 분류</a>
   <ul class="collapse">
   <li><a href="#a1.-정책문헌-수집-범위-개요정책-출처-국가별-문헌-수" id="toc-a1.-정책문헌-수집-범위-개요정책-출처-국가별-문헌-수" class="nav-link" data-scroll-target="#a1.-정책문헌-수집-범위-개요정책-출처-국가별-문헌-수">A1. 정책문헌 수집 범위 개요(정책 출처 국가별 문헌 수)</a></li>
-  <li><a href="#a2.-하위-태그a-b와-최상위-국가만을-쓴-이유" id="toc-a2.-하위-태그a-b와-최상위-국가만을-쓴-이유" class="nav-link" data-scroll-target="#a2.-하위-태그a-b와-최상위-국가만을-쓴-이유">A2. 하위 태그(<code>A &gt; B</code>)와 “최상위 국가만”을 쓴 이유</a></li>
-  <li><a href="#a3.-hong-konggeorgia-예외-처리는-왜-필요했나" id="toc-a3.-hong-konggeorgia-예외-처리는-왜-필요했나" class="nav-link" data-scroll-target="#a3.-hong-konggeorgia-예외-처리는-왜-필요했나">A3. Hong Kong/Georgia 예외 처리는 왜 필요했나</a></li>
+  <li><a href="#a2.-하위-태그a-b를-최상위-범주에-통합한-이유" id="toc-a2.-하위-태그a-b를-최상위-범주에-통합한-이유" class="nav-link" data-scroll-target="#a2.-하위-태그a-b를-최상위-범주에-통합한-이유">A2. 하위 태그(<code>A &gt; B</code>)를 최상위 범주에 통합한 이유</a></li>
+  <li><a href="#a3.-hong-kong과-georgia-같은-하위-태그는-어떻게-처리했나" id="toc-a3.-hong-kong과-georgia-같은-하위-태그는-어떻게-처리했나" class="nav-link" data-scroll-target="#a3.-hong-kong과-georgia-같은-하위-태그는-어떻게-처리했나">A3. Hong Kong과 Georgia 같은 하위 태그는 어떻게 처리했나</a></li>
   </ul></li>
   <li><a href="#appendix-b" id="toc-appendix-b" class="nav-link" data-scroll-target="#appendix-b">B. 정의·해석</a>
   <ul class="collapse">
@@ -277,7 +277,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="callout-body-container callout-body">
 <p><strong>표시 기준(요약)</strong></p>
 <ul>
-<li>국가 태그 중 <strong>최상위 국가만</strong> 사용(예: <code>USA &gt; California</code> 같은 하위 태그 제외)</li>
+<li>국가 태그를 <strong>최상위 국가로 통합</strong>(예: <code>USA &gt; California</code>를 <code>USA</code>에 포함)</li>
 <li><code>IGO</code>·<code>EU</code> 제외</li>
 <li>국가 간 편차가 커서 <strong>로그 스케일</strong>로 색상 표시</li>
 </ul>
@@ -291,14 +291,14 @@ ul.task-list li input[type="checkbox"] {
   </div>
 </div>
 </section>
-<section id="a2.-하위-태그a-b와-최상위-국가만을-쓴-이유" class="level3">
-<h3 class="anchored" data-anchor-id="a2.-하위-태그a-b와-최상위-국가만을-쓴-이유">A2. 하위 태그(<code>A &gt; B</code>)와 “최상위 국가만”을 쓴 이유</h3>
-<p>Overton의 정책 출처 국가 태그는 <strong>국가 단위(예: USA, UK)</strong> 외에 <strong>하위 지역 단위(예: USA &gt; California)</strong>를 함께 포함한다. 이번 보고서는 OpenAlex의 국가코드와 의미를 맞추기 위해, 기본 집계에서 하위 태그를 제외하고 <strong>최상위 국가만</strong> 사용했다.</p>
-<p>이 선택은 “국가 단위 비교”를 단순화한다. 다만 하위 태그 기여가 큰 출처에서는 국가별 비교가 <strong>과소·과대 해석될 여지</strong>를 남긴다. 따라서 본문에서 국가 비교를 해석할 때는 수집 범위 자체를 함께 확인해야 한다.</p>
+<section id="a2.-하위-태그a-b를-최상위-범주에-통합한-이유" class="level3">
+<h3 class="anchored" data-anchor-id="a2.-하위-태그a-b를-최상위-범주에-통합한-이유">A2. 하위 태그(<code>A &gt; B</code>)를 최상위 범주에 통합한 이유</h3>
+<p>Overton의 정책 출처 국가 태그는 <strong>국가 단위(예: USA, UK)</strong> 외에 <strong>하위 지역 단위(예: USA &gt; California)</strong>를 함께 포함한다. 이번 보고서는 OpenAlex의 국가코드와 의미를 맞추기 위해 <code>A &gt; B</code>를 <code>A</code>에 통합하고 <strong>최상위 정책 출처만</strong> 사용했다. 같은 정책문헌에 최상위 범주와 하위 범주가 함께 부여돼도 최상위 범주에서 한 번만 계산한다.</p>
+<p>이 방식은 하위 지역 문헌을 부모 국가에서 제외하지 않으면서 상위·하위 태그의 중복 계산을 막는다. 다만 하위 지역 간 차이는 최상위 정책 출처 비교에 나타나지 않는다. 따라서 국가 비교를 해석할 때는 수집 범위와 집계 수준을 함께 확인해야 한다.</p>
 </section>
-<section id="a3.-hong-konggeorgia-예외-처리는-왜-필요했나" class="level3">
-<h3 class="anchored" data-anchor-id="a3.-hong-konggeorgia-예외-처리는-왜-필요했나">A3. Hong Kong/Georgia 예외 처리는 왜 필요했나</h3>
-<p>정책 출처 국가 태그는 <code>China &gt; Hong Kong</code>, <code>USA &gt; Georgia</code>처럼 <strong>하위 태그로 관측</strong>될 수 있다. 최상위 국가만 사용하면 이런 하위 태그가 정책 출처 집계에서 제외된다. 그래서 네트워크 그림에서는 <code>China &gt; Hong Kong</code>을 <code>Hong Kong</code>으로 분리했고, <code>USA &gt; Georgia</code>는 <code>Georgia (USA)</code>로 분리했다.</p>
+<section id="a3.-hong-kong과-georgia-같은-하위-태그는-어떻게-처리했나" class="level3">
+<h3 class="anchored" data-anchor-id="a3.-hong-kong과-georgia-같은-하위-태그는-어떻게-처리했나">A3. Hong Kong과 Georgia 같은 하위 태그는 어떻게 처리했나</h3>
+<p>정책 출처 국가 태그는 <code>China &gt; Hong Kong</code>, <code>USA &gt; Georgia</code>처럼 <strong>하위 태그로 관측</strong>될 수 있다. 본문과 네트워크에서는 각각 <code>China</code>와 <code>USA</code>에 통합한다. 따라서 정책 출처 쪽의 Hong Kong은 China에 포함되고, OpenAlex 연구국 코드가 <code>HK</code>인 논문은 연구국 Hong Kong으로 별도 집계된다.</p>
 <details>
 <summary>
 <strong>자세히 보기: 하위 태그 규모, 예시, Hong Kong 표기</strong>
@@ -366,14 +366,14 @@ ul.task-list li input[type="checkbox"] {
 </tbody>
 </table>
 </section>
-<section id="hong-kong은-중국으로-합쳐진-것인가" class="level4">
-<h4 class="anchored" data-anchor-id="hong-kong은-중국으로-합쳐진-것인가">Hong Kong은 “중국으로 합쳐진” 것인가?</h4>
+<section id="정책-출처-hong-kong은-중국에-통합되는가" class="level4">
+<h4 class="anchored" data-anchor-id="정책-출처-hong-kong은-중국에-통합되는가">정책 출처 Hong Kong은 중국에 통합되는가?</h4>
 <p>이번 기준 시점에서 Overton의 정책 출처에는 <code>Hong Kong</code>이 국가처럼 직접 등장하지 않는다. <code>China &gt; Hong Kong</code> 형태로만 관측된다(정책문헌 1,182편). 반면 OpenAlex의 연구국은 <code>HK → Hong Kong</code>으로 별도 코드를 쓴다.</p>
-<p>따라서 “최상위 국가만” 기준으로 정책 출처를 집계하면, <code>China &gt; Hong Kong</code>에서 발행된 문서는 정책 출처 쪽에서 빠진다. 이 경우 <code>Hong Kong</code>은 연구국 노드로만 남아 <strong>인용만 되는 노드처럼 보일 수 있다</strong>.</p>
+<p>따라서 최상위 정책 출처 기준에서는 <code>China &gt; Hong Kong</code> 문서를 China에 포함한다. 연구국 Hong Kong은 OpenAlex의 <code>HK</code> 코드를 유지하므로, 정책 출처와 연구국에서 사용하는 지리적 집계 수준이 다를 수 있다.</p>
 </section>
 <section id="주의-하위-태그를-단순-치환하면-충돌이-생길-수-있다" class="level4">
 <h4 class="anchored" data-anchor-id="주의-하위-태그를-단순-치환하면-충돌이-생길-수-있다">주의: 하위 태그를 단순 치환하면 충돌이 생길 수 있다</h4>
-<p>하위 태그를 무조건 <code>A &gt; B → B</code>로 치환하면, 예를 들어 <code>USA &gt; Georgia</code>(미국 조지아주)가 <code>Georgia</code>(국가)와 섞이는 동명이인 충돌이 생길 수 있다. 따라서 하위 태그를 국가 단위로 재귀속시키려면 두 단계를 분리해 설계해야 한다. (1) 부모 국가로 올리는 방식(<code>A &gt; B → A</code>) (2) 예외 처리(홍콩처럼 별도 단위로 둘지)</p>
+<p>하위 태그를 <code>A &gt; B → B</code>로 치환하면, 예를 들어 <code>USA &gt; Georgia</code>(미국 조지아주)가 <code>Georgia</code>(국가)와 섞이는 동명이인 충돌이 생길 수 있다. 이 보고서는 이런 충돌을 피하기 위해 일관되게 부모 범주로 통합하는 <code>A &gt; B → A</code> 규칙을 적용했다.</p>
 </section></details>
 <hr>
 </section>
@@ -389,7 +389,8 @@ ul.task-list li input[type="checkbox"] {
 <li><strong>인용 건수와 고유 논문 수</strong>: 전체 인용 횟수와 인용된 논문 수를 구분한다. 자세히 보기: <a href="#citations-vs-works">인용 건수와 고유 논문 수</a></li>
 <li><strong>최근 고유 논문 비중과 논문당 정책문헌 인용 수</strong>: 최근 고유 논문 비중은 발행연도가 확인된 2024년 이하의 토픽별 고유 논문 가운데 <code>2022-2024</code> 발행 논문의 비중이고, 논문당 정책문헌 인용 수는 <code>인용 수 / 고유 논문 수</code>다. 자세히 보기: <a href="#recency-intensity">최근 고유 논문 비중과 논문당 정책문헌 인용 수</a></li>
 <li><strong>다중라벨</strong>: OpenAlex 토픽은 논문 1편이 여러 토픽에 동시에 속할 수 있어 합이 100%를 넘을 수 있다. 자세히 보기: <a href="#multilabel">다중라벨</a></li>
-<li><strong>정책 출처와 연구국</strong>: 정책 출처는 정책문헌의 출처 국가와 국제기구·유럽연합 범주를, 연구국은 인용 논문의 1저자 소속 국가를 뜻한다.</li>
+<li><strong>정책 출처와 연구국</strong>: 정책 출처는 출처 국가·국제기구·유럽연합의 계층형 분류를 최상위 범주로 통합한 값이고, 연구국은 인용 논문의 1저자 소속 국가를 뜻한다.</li>
+<li><strong>문헌당 평균 인용 수</strong>: 정책 출처 또는 출처 유형별 DOI 연계 인용 건수를 DOI 연계 인용이 1건 이상인 정책문헌 수로 나눈 값이다.</li>
 <li><strong>자국 인용 비중 분모</strong>: 자국 인용 비중은 1저자 소속 국가코드가 확인되는 인용만 분모로 쓴다. 자세히 보기: <a href="#self-citation-share">자국 인용 비중</a></li>
 </ul>
 </section>
@@ -494,87 +495,87 @@ ul.task-list li input[type="checkbox"] {
 <tbody>
 <tr class="odd">
 <td>government</td>
-<td style="text-align: right;">783,189</td>
+<td style="text-align: right;">751,201</td>
 <td style="text-align: right;">724,759</td>
-<td style="text-align: right;">92.5%</td>
+<td style="text-align: right;">96.5%</td>
 </tr>
 <tr class="even">
 <td>think tank</td>
-<td style="text-align: right;">332,044</td>
+<td style="text-align: right;">316,463</td>
 <td style="text-align: right;">312,113</td>
-<td style="text-align: right;">94.0%</td>
+<td style="text-align: right;">98.6%</td>
 </tr>
 <tr class="odd">
 <td>igo</td>
-<td style="text-align: right;">321,168</td>
+<td style="text-align: right;">279,051</td>
 <td style="text-align: right;">276,468</td>
-<td style="text-align: right;">86.1%</td>
+<td style="text-align: right;">99.1%</td>
 </tr>
 <tr class="even">
 <td>government &gt; agency</td>
-<td style="text-align: right;">73,347</td>
+<td style="text-align: right;">69,527</td>
 <td style="text-align: right;">67,868</td>
-<td style="text-align: right;">92.5%</td>
+<td style="text-align: right;">97.6%</td>
 </tr>
 <tr class="odd">
 <td>igo &gt; development bank</td>
-<td style="text-align: right;">72,052</td>
+<td style="text-align: right;">66,259</td>
 <td style="text-align: right;">66,076</td>
-<td style="text-align: right;">91.7%</td>
+<td style="text-align: right;">99.7%</td>
 </tr>
 <tr class="even">
 <td>government &gt; healthcare agency</td>
-<td style="text-align: right;">54,234</td>
+<td style="text-align: right;">46,340</td>
 <td style="text-align: right;">45,961</td>
-<td style="text-align: right;">84.7%</td>
+<td style="text-align: right;">99.2%</td>
 </tr>
 <tr class="odd">
 <td>igo &gt; healthcare agency</td>
-<td style="text-align: right;">36,560</td>
+<td style="text-align: right;">36,393</td>
 <td style="text-align: right;">36,080</td>
-<td style="text-align: right;">98.7%</td>
+<td style="text-align: right;">99.1%</td>
 </tr>
 <tr class="even">
 <td>government &gt; bank</td>
-<td style="text-align: right;">36,238</td>
+<td style="text-align: right;">35,472</td>
 <td style="text-align: right;">35,051</td>
-<td style="text-align: right;">96.7%</td>
+<td style="text-align: right;">98.8%</td>
 </tr>
 <tr class="odd">
 <td>other</td>
-<td style="text-align: right;">35,053</td>
+<td style="text-align: right;">34,369</td>
 <td style="text-align: right;">34,223</td>
-<td style="text-align: right;">97.6%</td>
+<td style="text-align: right;">99.6%</td>
 </tr>
 <tr class="even">
 <td>think tank &gt; research center</td>
-<td style="text-align: right;">33,761</td>
+<td style="text-align: right;">33,121</td>
 <td style="text-align: right;">32,773</td>
-<td style="text-align: right;">97.1%</td>
+<td style="text-align: right;">98.9%</td>
 </tr>
 <tr class="odd">
 <td>자료 종합형 서비스(<code>other &gt; aggregator</code>)</td>
-<td style="text-align: right;">32,845</td>
+<td style="text-align: right;">32,208</td>
 <td style="text-align: right;">32,086</td>
-<td style="text-align: right;">97.7%</td>
+<td style="text-align: right;">99.6%</td>
 </tr>
 <tr class="even">
 <td>government &gt; city</td>
-<td style="text-align: right;">23,274</td>
+<td style="text-align: right;">23,248</td>
 <td style="text-align: right;">22,873</td>
-<td style="text-align: right;">98.3%</td>
+<td style="text-align: right;">98.4%</td>
 </tr>
 <tr class="odd">
 <td>think tank &gt; university affiliated</td>
-<td style="text-align: right;">21,687</td>
+<td style="text-align: right;">21,046</td>
 <td style="text-align: right;">20,730</td>
-<td style="text-align: right;">95.6%</td>
+<td style="text-align: right;">98.5%</td>
 </tr>
 <tr class="even">
 <td>government &gt; legislative research</td>
-<td style="text-align: right;">14,441</td>
+<td style="text-align: right;">14,224</td>
 <td style="text-align: right;">12,886</td>
-<td style="text-align: right;">89.2%</td>
+<td style="text-align: right;">90.6%</td>
 </tr>
 <tr class="odd">
 <td>government &gt; legislation</td>
@@ -584,81 +585,81 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 <tr class="even">
 <td>government &gt; research center</td>
-<td style="text-align: right;">6,722</td>
+<td style="text-align: right;">6,367</td>
 <td style="text-align: right;">6,178</td>
-<td style="text-align: right;">91.9%</td>
+<td style="text-align: right;">97.0%</td>
 </tr>
 <tr class="odd">
 <td>government &gt; food and drug safety</td>
-<td style="text-align: right;">5,539</td>
+<td style="text-align: right;">5,299</td>
 <td style="text-align: right;">5,279</td>
-<td style="text-align: right;">95.3%</td>
+<td style="text-align: right;">99.6%</td>
 </tr>
 <tr class="even">
 <td>think tank &gt; research centre</td>
-<td style="text-align: right;">4,406</td>
+<td style="text-align: right;">4,370</td>
 <td style="text-align: right;">4,347</td>
-<td style="text-align: right;">98.7%</td>
+<td style="text-align: right;">99.5%</td>
 </tr>
 <tr class="odd">
 <td>igo &gt; research center</td>
-<td style="text-align: right;">3,342</td>
+<td style="text-align: right;">3,236</td>
 <td style="text-align: right;">3,229</td>
-<td style="text-align: right;">96.6%</td>
+<td style="text-align: right;">99.8%</td>
 </tr>
 <tr class="even">
 <td>think tank &gt; industry association</td>
-<td style="text-align: right;">2,967</td>
+<td style="text-align: right;">2,001</td>
 <td style="text-align: right;">1,883</td>
-<td style="text-align: right;">63.5%</td>
+<td style="text-align: right;">94.1%</td>
 </tr>
 <tr class="odd">
 <td>igo &gt; bank</td>
-<td style="text-align: right;">2,297</td>
+<td style="text-align: right;">2,234</td>
 <td style="text-align: right;">2,218</td>
-<td style="text-align: right;">96.6%</td>
+<td style="text-align: right;">99.3%</td>
 </tr>
 <tr class="even">
 <td>think tank &gt; consultancy</td>
-<td style="text-align: right;">2,238</td>
+<td style="text-align: right;">2,221</td>
 <td style="text-align: right;">2,205</td>
-<td style="text-align: right;">98.5%</td>
+<td style="text-align: right;">99.3%</td>
 </tr>
 <tr class="odd">
 <td>think tank &gt; agency</td>
-<td style="text-align: right;">1,652</td>
+<td style="text-align: right;">1,509</td>
 <td style="text-align: right;">1,489</td>
-<td style="text-align: right;">90.1%</td>
+<td style="text-align: right;">98.7%</td>
 </tr>
 <tr class="even">
 <td>government &gt; technology assessment</td>
-<td style="text-align: right;">1,416</td>
+<td style="text-align: right;">1,371</td>
 <td style="text-align: right;">1,355</td>
-<td style="text-align: right;">95.7%</td>
+<td style="text-align: right;">98.8%</td>
 </tr>
 <tr class="odd">
 <td>government &gt; transcripts</td>
-<td style="text-align: right;">958</td>
+<td style="text-align: right;">534</td>
 <td style="text-align: right;">528</td>
-<td style="text-align: right;">55.1%</td>
+<td style="text-align: right;">98.9%</td>
 </tr>
 <tr class="even">
 <td>government &gt; academy</td>
-<td style="text-align: right;">835</td>
+<td style="text-align: right;">830</td>
 <td style="text-align: right;">816</td>
-<td style="text-align: right;">97.7%</td>
+<td style="text-align: right;">98.3%</td>
 </tr>
 <tr class="odd">
 <td>government &gt; auditor</td>
-<td style="text-align: right;">775</td>
+<td style="text-align: right;">638</td>
 <td style="text-align: right;">615</td>
-<td style="text-align: right;">79.4%</td>
+<td style="text-align: right;">96.4%</td>
 </tr>
 <tr class="even">
 <td>government &gt; court</td>
-<td style="text-align: right;">352</td>
+<td style="text-align: right;">347</td>
 <td style="text-align: right;">346</td>
-<td style="text-align: right;">98.3%</td>
+<td style="text-align: right;">99.7%</td>
 </tr>
 <tr class="odd">
 <td>government &gt; armed forces</td>
@@ -740,10 +741,10 @@ ul.task-list li input[type="checkbox"] {
 <p>정책 출처 국가 태그를 2자리 국가코드로 매핑한 뒤(예: USA→US, UK→GB), 1저자 소속 국가코드가 확인되는 인용만 분모로 삼아 계산했다. 즉 자국 인용 비중은 “전체 인용”이 아니라 <strong>1저자 소속 국가코드가 확인되는 인용</strong>에서의 패턴이다.</p>
 <details>
 <summary>
-<strong>자세히 보기: 기대 비중 계산과 비교 표</strong>
+<strong>자세히 보기: 도메인 조정 비교 비중 계산과 비교 표</strong>
 </summary>
-<p><strong>기대 자국 인용 비중(expected self-citation share)은 어떻게 계산했나?</strong></p>
-<p>정책 출처 국가별로 “어떤 도메인을 얼마나 인용했는지”를 먼저 계산했다. 그 다음 각 도메인에서 해당 국가의 <strong>세계 연구 생산 비중(OpenAlex 기준)</strong>을 가중치로 곱해 합산했다. 즉 정책문헌 인용이 도메인별 세계 생산 비중을 그대로 따른다고 가정했을 때의 기대 비중을 산출한 것이다. 개념적으로는 <code>기대 비중 = Σ(정책문헌 인용의 도메인 비중 × 해당 도메인에서 그 국가의 연구 생산 비중)</code>이다.</p>
+<p><strong>도메인 조정 자국 인용 비교 비중은 어떻게 계산했나?</strong></p>
+<p>정책 출처 국가별로 “어떤 도메인을 얼마나 인용했는지”를 먼저 계산했다. 그 다음 각 도메인에서 해당 국가의 1저자 논문이 차지하는 비중을 가중치로 곱해 합산했다. 국가별 논문 구성비는 이번 분석에서 Overton 인용과 연결된 고유 논문 표본으로 계산했으며, OpenAlex 전체 연구 생산 비중을 뜻하지 않는다. 같은 논문에 같은 도메인의 토픽이 여러 개 있어도 해당 도메인에서 한 번만 계산했다. 개념적으로는 <code>비교 비중 = Σ(정책문헌 인용의 도메인 비중 × 결합 표본에서 해당 도메인의 국가별 논문 구성비)</code>다.</p>
 <p><span id="self-citation-context"></span></p>
 <p>아래 표는 자국 인용 비중을 일부 비교 집단에서 요약한 것이다. 자국 인용 비중은 1저자 소속 국가코드가 확인되는 인용만 분모로 쓴다. 국가 간 비교는 정책문헌의 수집 범위와 출처 구성 차이가 섞일 수 있어, “높다”나 “낮다”로 단정하기보다 점검 지표로 두는 것이 좋다.</p>
 <table class="table">
@@ -808,11 +809,10 @@ ul.task-list li input[type="checkbox"] {
 <section id="multilabel" class="level3">
 <h3 class="anchored" data-anchor-id="multilabel">B6. 다중라벨 해석</h3>
 <p><strong>토픽과 도메인 집계에서 합이 100%를 넘는 이유는?</strong></p>
-<p>OpenAlex 토픽은 다중 라벨 구조다. 논문 1편이 여러 토픽에 동시에 속할 수 있어, 토픽·도메인·세부분야 기준으로 집계하면 중복 합산이 발생한다. 따라서 토픽 기반 수치는 “토픽 인스턴스 기준”으로 이해해야 한다.</p>
-<p>이번 분석에서 사용한 토픽 데이터에서는 정책문헌 인용 1건이 평균적으로 약 2.8개 토픽에 연결된다. 그래서 도메인·토픽 기준으로 인용을 합산하면, “인용 건수”보다 큰 합계가 나온다.</p>
-<p>다만 각 인용을 그 논문이 가진 토픽 수로 나눠 분할 집계해도, 도메인 순위는 유지된다. 상위 3개 도메인 점유율도 큰 폭으로 변하지 않는다(예: 88.8% → 88.5%).</p>
-<p><strong>출처 국가·출처 유형 집계도 합이 커질 수 있나?</strong></p>
-<p>그럴 수 있다. Overton의 출처 국가·유형 태그는 상호배타적 분류가 아니라 태그 기반(상위–하위 동시 부여 포함)이라서, 문헌 1편이 여러 범주에 동시에 잡힐 수 있다.</p>
+<p>OpenAlex 토픽은 다중 라벨 구조다. 논문 1편이 여러 토픽에 동시에 속할 수 있어 토픽별 합계를 단순히 더하면 중복이 발생한다. 따라서 토픽 기반 수치는 토픽별 집계 단위를 확인해 해석해야 한다.</p>
+<p>이번 분석에서 사용한 토픽 데이터에서는 정책문헌 인용 1건이 평균적으로 약 2.8개 토픽에 연결된다. 도메인별 집계에서는 같은 논문에 같은 도메인의 토픽이 여러 개 있어도 인용 1건을 해당 도메인에서 한 번만 계산했다. 한 논문이 서로 다른 도메인에 포함되면 각 도메인에 한 번씩 포함되므로 도메인별 합계는 고유 인용 건수보다 클 수 있다. 이 기준에서 사회과학·보건과학·물리과학의 합계는 도메인 정보가 없는 인용을 포함한 도메인별 인용 합계의 85.4%다.</p>
+<p><strong>정책 출처·출처 유형 집계도 합이 커질 수 있나?</strong></p>
+<p>정책 출처 비교에서는 계층형 출처 태그를 최상위 범주로 통합하고 같은 정책문헌의 상위·하위 태그를 한 번만 계산한다. 따라서 정책 출처의 총 인용 수 합은 DOI 연계 인용 건수와 일치한다. 반면 출처 유형 태그는 한 정책문헌에 둘 이상 부여될 수 있으므로 유형별 인용 건수 합은 전체 인용 건수보다 클 수 있다.</p>
 </section>
 <section id="recent-years-decline" class="level3">
 <h3 class="anchored" data-anchor-id="recent-years-decline">B7. 최근 연도 하락 해석 주의</h3>

@@ -14,13 +14,14 @@
     "Policy citations by domain (top 4; stacked by field)": "도메인별 정책 인용(상위 4; 분야별 누적)",
     "Policy sources citing Republic of Korea-authored research and research countries cited by Republic of Korea policy documents (top 10; DOI-matched, first-author country)":
       "한국 연구를 인용한 정책 출처와 한국 정책문헌이 인용한 연구국(상위 10; DOI 매칭, 1저자 소속 국가)",
-    "Domestic-citation share vs expected and domain composition (top 7 policy countries + Republic of Korea)":
-      "자국 인용 비중(관측 vs 기대)과 도메인 구성(상위 7 + 한국)",
+    "Domestic-citation share vs domain-adjusted reference and domain composition (top 7 policy countries + Republic of Korea)":
+      "자국 인용 비중과 도메인 조정 비교 비중, 도메인 구성(상위 7 + 한국)",
     "Policy source and research country citation network (top 3 research countries per policy source; top 3 policy sources per research country)":
       "정책 출처-연구국 인용 네트워크(정책 출처별 연구국 상위 3개·연구국별 정책 출처 상위 3개)",
     "Policy source → Research country citations": "정책 출처 → 연구국 인용",
     "Policy documents by publication year (DOI citations)": "발행연도별 정책문헌(DOI 인용)",
-    "Citations per policy document by policy source type (selected types)": "출처 유형별 문헌당 평균 인용 수(선택 유형)",
+    "Citations per citing policy document by policy source type (selected types)":
+      "출처 유형별 문헌당 평균 인용 수(선택 유형)",
     "Citations by policy source type (top 10)": "출처 유형별 총 인용 수(상위 10)",
     "Share heatmap: domain × policy source type (selected; source-type normalized)":
       "비중 히트맵: 도메인 × 출처 유형(선택; 출처 유형 내 정규화)",
@@ -32,6 +33,7 @@
     Citations: "인용(건수)",
     "Policy source country": "정책 출처 국가",
     "Citations per policy document": "정책문헌당 평균 인용 수",
+    "Citations per citing policy document": "DOI 연계 인용이 있는 정책문헌당 평균 인용 수",
     "Share within policy source (normalized)": "출처 내부 비중(정규화)",
     "Cited research share by domain": "피인용 연구 비중(도메인별)",
     "Policy citations share by domain": "정책 인용 비중(도메인별)",
@@ -47,7 +49,8 @@
     "Publication year (policy documents)": "발행연도(정책문헌)",
     "Citations per document": "문헌당 평균 인용 수",
     "Share (%)<br>(first-author country available only)": "비중(%)<br>(1저자 소속 국가코드 확인 건만)",
-    "Actual − expected (pp)<br>(domain-weighted baseline)": "관측 − 기대(pp)<br>(도메인 가중 기대값)",
+    "Observed − reference (pp)<br>(domain-adjusted linked-sample reference)":
+      "관측 − 비교 비중(pp)<br>(결합 표본의 도메인 조정 기준)",
     "Citations to KR research": "한국 연구로의 인용",
     "Citations from KR policy<br>(first-author country available only)": "한국 정책문헌의 인용<br>(1저자 소속 국가코드 확인 건만)",
     "Domain share in citations to KR research (normalized)": "한국 연구 인용의 도메인 비중(정규화)",
@@ -64,13 +67,14 @@
     // Annotations
     "A. Total citations": "A. 총 인용 수",
     "B. Citations per policy doc": "B. 문헌당 평균 인용 수",
+    "B. Citations per citing policy doc": "B. 문헌당 평균 인용 수",
     "C. Domain composition": "C. 도메인 구성",
     "A. Policy sources citing KR first-author research": "A. 한국 1저자 연구를 인용하는 정책 출처",
     "B. Research countries cited by Republic of Korea policy": "B. 한국 정책이 인용하는 연구국",
     "C. Domain mix of cited research (KR vs non-KR)": "C. 피인용 연구 도메인 구성(한국 vs 비한국)",
     "D. Domain mix of cited research (KR vs non-KR policy)": "D. 피인용 연구 도메인 구성(한국 정책 vs 비한국 정책)",
     "A. Domestic-citation share": "A. 자국 인용 비중",
-    "B. Domestic-citation vs expected": "B. 자국 인용(관측 vs 기대)",
+    "B. Domestic-citation vs domain-adjusted reference": "B. 자국 인용과 도메인 조정 비교 비중",
     "C. Domain composition of cited research": "C. 피인용 연구 도메인 구성",
     "Overall: 32.7%": "전체: 32.7%",
     "A. Citation count (log10 scale)": "A. 인용 건수(log10)",

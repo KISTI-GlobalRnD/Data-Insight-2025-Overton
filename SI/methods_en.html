@@ -207,7 +207,7 @@ Note
 <ul>
 <li>The analysis covers <strong>observed DOI-linked policy-to-research citations</strong>, not the full policy universe.</li>
 <li>Non-DOI evidence such as reports, legislation, web pages, and narrative references is outside the default indicators.</li>
-<li>Policy-source country and type labels can overlap, so totals should be read as tag-based summaries rather than mutually exclusive counts.</li>
+<li>Hierarchical policy-source labels are collapsed to their top-level country, IGO, or EU category. Policy-source type labels can still overlap, so type totals are not mutually exclusive.</li>
 <li>Country-level indicators should be read with missing first-author country codes in mind.</li>
 </ul>
 </section>
@@ -234,18 +234,22 @@ Note
 <td>Distinct OpenAlex works cited by policy documents.</td>
 </tr>
 <tr class="odd">
+<td>Average citations per policy document</td>
+<td>DOI-linked citations divided by policy documents with at least one DOI-linked citation in the policy-source or source-type group.</td>
+</tr>
+<tr class="even">
 <td>Repeat-citation share</td>
 <td>Share of unique cited works cited by at least two policy documents.</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Policy citations per paper</td>
 <td>Policy citations divided by unique cited papers within a topic.</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Share of unique papers published in 2022-2024</td>
 <td>Share of unique cited papers published in 2022-2024 among papers with a known publication year through 2024 within a topic.</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Domestic-citation share</td>
 <td>Country-level same-country citation share, among citations with known first-author country.</td>
 </tr>
