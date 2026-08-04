@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Overton × OpenAlex 보고서의 지표 정의, 방법론, 인터랙티브, 부록, 반복 점검 질문을 연결한다.">
+<meta name="description" content="Overton × OpenAlex 보고서의 선행연구 비교, 지표 정의, 방법론, 인터랙티브와 부록을 연결한다.">
 
 <title>Overton × OpenAlex - 확장 자료</title>
 <style>
@@ -18,7 +18,7 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */
   vertical-align: middle;
 }
 </style>
@@ -91,42 +91,46 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
+    <a class="nav-link" href="../index.html">
 <span class="menu-text">메인</span></a>
-  </li>  
+  </li>
   <li class="nav-item">
-    <a class="nav-link" href="../Report/Report_final.pdf"> 
+    <a class="nav-link" href="../Report/Report_final.pdf">
 <span class="menu-text">보고서 원고(PDF)</span></a>
-  </li>  
+  </li>
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-" role="button" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">확장 자료</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-">    
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-">
         <li>
     <a class="dropdown-item" href="../SI/index.html">
  <span class="dropdown-text">확장 자료</span></a>
-  </li>  
+  </li>
         <li>
     <a class="dropdown-item" href="../SI/update_202603.html">
  <span class="dropdown-text">2026 데이터 업데이트</span></a>
-  </li>  
+  </li>
         <li>
     <a class="dropdown-item" href="../SI/methods.html">
  <span class="dropdown-text">방법론·데이터 정합성</span></a>
-  </li>  
+  </li>
         <li>
     <a class="dropdown-item" href="../SI/interactive.html">
  <span class="dropdown-text">인터랙티브</span></a>
-  </li>  
+  </li>
         <li>
     <a class="dropdown-item" href="../SI/appendix.html">
  <span class="dropdown-text">부록</span></a>
-  </li>  
+  </li>
+        <li>
+    <a class="dropdown-item" href="../SI/reproducibility.html">
+ <span class="dropdown-text">공개 재현성</span></a>
+  </li>
         <li>
     <a class="dropdown-item" href="../SI/next_questions.html">
  <span class="dropdown-text">다음 질문</span></a>
-  </li>  
+  </li>
     </ul>
   </li>
 </ul>
@@ -143,12 +147,13 @@ ul.task-list li input[type="checkbox"] {
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">목차</h2>
-   
+
   <ul>
   <li><a href="#버전-안내" id="toc-버전-안내" class="nav-link active" data-scroll-target="#버전-안내">버전 안내</a></li>
   <li><a href="#보고서-지표-설명" id="toc-보고서-지표-설명" class="nav-link" data-scroll-target="#보고서-지표-설명">보고서 지표 설명</a>
   <ul class="collapse">
-  <li><a href="#bg-hubs" id="toc-bg-hubs" class="nav-link" data-scroll-target="#bg-hubs">총 인용 수와 문헌당 평균 인용 수</a></li>
+  <li><a href="#bg-scholarly-policy" id="toc-bg-scholarly-policy" class="nav-link" data-scroll-target="#bg-scholarly-policy">학술 인용과 정책 인용의 차이</a></li>
+  <li><a href="#bg-hubs" id="toc-bg-hubs" class="nav-link" data-scroll-target="#bg-hubs">정책 출처별 총 인용 수와 문헌당 평균 인용 수</a></li>
   <li><a href="#bg-korea" id="toc-bg-korea" class="nav-link" data-scroll-target="#bg-korea">한국 연구를 인용한 정책 출처와 한국 정책문헌이 인용한 연구국</a></li>
   <li><a href="#bg-two-speed" id="toc-bg-two-speed" class="nav-link" data-scroll-target="#bg-two-speed">논문당 정책문헌 인용 수와 최근 고유 논문 비중</a></li>
   <li><a href="#bg-nkis" id="toc-bg-nkis" class="nav-link" data-scroll-target="#bg-nkis">NKIS 참고문헌을 연결해 추가할 분석</a></li>
@@ -168,24 +173,24 @@ ul.task-list li input[type="checkbox"] {
 
 <div>
   <div class="description">
-    Overton × OpenAlex 보고서의 지표 정의, 방법론, 인터랙티브, 부록, 반복 점검 질문을 연결한다.
+    Overton × OpenAlex 보고서의 선행연구 비교, 지표 정의, 방법론, 인터랙티브와 부록을 연결한다.
   </div>
 </div>
 
 
 <div class="quarto-title-meta">
 
-    
-  
-    
+
+
+
   </div>
-  
+
 
 
 </header>
 
 
-<p><strong>바로가기:</strong> <a href="../Report/Report_final.pdf">보고서 원고(PDF)</a> · <strong>확장 자료</strong> · <a href="../SI/update_202603.html">2026 데이터 업데이트</a> · <a href="../SI/methods.html">방법론·데이터 정합성</a> · <a href="../SI/interactive.html">인터랙티브</a> · <a href="../SI/appendix.html">부록</a> · <a href="../SI/next_questions.html">다음 질문</a></p>
+<p><strong>바로가기:</strong> <a href="../Report/Report_final.pdf">보고서 원고(PDF)</a> · <strong>확장 자료</strong> · <a href="../SI/update_202603.html">2026 데이터 업데이트</a> · <a href="../SI/methods.html">방법론·데이터 정합성</a> · <a href="../SI/interactive.html">인터랙티브</a> · <a href="../SI/appendix.html">부록</a> · <a href="../SI/reproducibility.html">공개 재현성</a> · <a href="../SI/next_questions.html">다음 질문</a></p>
 <p>분석 결과는 <a href="../Report/Report_final.pdf">보고서 원고(PDF)</a>에서 확인한다. 이 페이지는 지표 정의와 추가 그림을 연결한다.</p>
 <p>확장 자료는 보고서 원고(PDF)의 <strong>배경 요약·방법론·인터랙티브·부록</strong>을 묶은 웹 보조자료다. 이 보조자료에서 <strong>정책 출처</strong>는 정책문헌을 발행한 출처 기관에 부여된 국가·국제기구·유럽연합 분류의 최상위 범주를, <strong>연구국</strong>은 인용된 논문의 1저자가 소속된 기관의 국가를 뜻한다. 국제기구와 유럽연합은 국가가 아니지만 출처 국가와 같은 수준의 정책 출처 범주로 함께 비교한다. 문헌당 평균 인용 수는 DOI 연계 인용 건수를 DOI 연계 인용이 1건 이상인 정책문헌 수로 나눈 값이다.</p>
 <section id="버전-안내" class="level2">
@@ -200,7 +205,7 @@ ul.task-list li input[type="checkbox"] {
 <tbody>
 <tr class="odd">
 <td><a href="../Report/Report_final.pdf">2025 기준 원고</a></td>
-<td>내용 기준일이 2025년 12월 31일인 편집 전 보고서 원고</td>
+<td>원고 발행일과 내용 기준일이 2025년 12월 31일인 편집 전 보고서 원고</td>
 </tr>
 <tr class="even">
 <td><a href="../SI/update_202603.html">2026 웹 업데이트</a></td>
@@ -211,17 +216,21 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="보고서-지표-설명" class="level2">
 <h2 class="anchored" data-anchor-id="보고서-지표-설명">보고서 지표 설명</h2>
+<section id="bg-scholarly-policy" class="level3">
+<h3 class="anchored" data-anchor-id="bg-scholarly-policy">학술 인용과 정책 인용의 차이</h3>
+<p>선행연구는 정책문헌 인용이 학술 인용의 단순한 복사본이 아니라고 설명한다. 정책문헌에 인용되는 논문은 전체 연구의 일부이고, 분야와 문헌 유형에 따라 선택되는 구성이 다르며, 논문 단위의 학술 인용 수와 정책문헌 인용 수도 같은 순위를 만들지 않을 수 있다. 보고서 원고는 이 비교 결과를 해석의 출발점으로 사용하되, 한국 논문의 학술 인용과 정책문헌 인용을 직접 맞비교하지 않는다.</p>
+</section>
 <section id="bg-hubs" class="level3">
-<h3 class="anchored" data-anchor-id="bg-hubs">총 인용 수와 문헌당 평균 인용 수</h3>
-<p>보고서에서는 정책 출처별 총 인용 수, 문헌당 평균 인용 수, 인용된 연구의 도메인 구성을 구분한다. 세 값은 정책 출처별로 다르게 나타난다.</p>
+<h3 class="anchored" data-anchor-id="bg-hubs">정책 출처별 총 인용 수와 문헌당 평균 인용 수</h3>
+<p>보고서에서는 정책 출처별 총 인용 수, 문헌당 평균 인용 수, 인용된 연구의 도메인 구성을 구분한다. 세 값은 정책 출처별로 다르게 나타난다. 이 결과는 독립적인 중심 결론이 아니라 한국 결과가 관측된 전체 자료의 정책 출처 구성을 설명한다.</p>
 </section>
 <section id="bg-korea" class="level3">
 <h3 class="anchored" data-anchor-id="bg-korea">한국 연구를 인용한 정책 출처와 한국 정책문헌이 인용한 연구국</h3>
-<p>54.8%는 한국 연구를 인용한 상위 3개 정책 출처의 합계 비중이고, 55.7%는 한국 정책문헌이 인용한 연구 중 미국 연구가 차지하는 비중이다. 두 값은 분모와 집계 단위가 다르므로 별도로 제시한다.</p>
+<p>54.9%는 한국 연구를 인용한 상위 3개 정책 출처의 합계 비중이고, 55.2%는 한국 정책문헌이 인용한 연구 중 미국 연구가 차지하는 비중이다. 두 값은 분모와 집계 단위가 다르므로 별도로 제시한다.</p>
 </section>
 <section id="bg-two-speed" class="level3">
 <h3 class="anchored" data-anchor-id="bg-two-speed">논문당 정책문헌 인용 수와 최근 고유 논문 비중</h3>
-<p>논문당 정책문헌 인용 수는 <code>정책문헌 인용 수 / 고유 논문 수</code>이고, 최근 고유 논문 비중은 발행연도가 확인된 2024년 이하의 토픽별 고유 논문 가운데 2022-2024년 발행 논문의 비중이다. 두 지표만으로 토픽별 재계산 주기를 정할 수는 없다.</p>
+<p>논문당 정책문헌 인용 수는 <code>정책문헌 인용 수 / 고유 논문 수</code>이고, 최근 고유 논문 비중은 발행연도가 확인된 2024년 이하의 토픽별 고유 논문 가운데 2022-2024년 발행 논문의 비중이다. 두 지표는 토픽의 성장률이나 중요도를 뜻하지 않는다.</p>
 </section>
 <section id="bg-nkis" class="level3">
 <h3 class="anchored" data-anchor-id="bg-nkis">NKIS 참고문헌을 연결해 추가할 분석</h3>
@@ -275,35 +284,35 @@ ul.task-list li input[type="checkbox"] {
 <tbody>
 <tr class="odd">
 <td>1장 Data Insight</td>
-<td><a href="../SI/appendix.html#doi-share">부록: 관측 범위 정의</a> · <a href="../SI/appendix.html#repeat-share">부록: 반복 인용 48.1% 정의</a> · <a href="../SI/methods.html#method-scope">방법론: 범위·분모</a></td>
+<td><a href="#bg-scholarly-policy">지표 설명: 학술 인용과 정책 인용의 차이</a> · <a href="../SI/appendix.html#doi-share">부록: 관측 범위 정의</a> · <a href="../SI/methods.html#method-scope">방법론: 범위·분모</a></td>
 </tr>
 <tr class="even">
-<td>2.1절 분석 범위와 질문</td>
-<td><a href="../SI/methods.html#method-scope">방법론: 범위·분모</a> · <a href="../SI/appendix.html#appendix-a">부록: 수집 범위·출처 분류</a></td>
+<td>2.1절 학술 인용과 정책 인용은 같은 패턴인가</td>
+<td><a href="#bg-scholarly-policy">지표 설명: 학술 인용과 정책 인용의 차이</a> · <a href="../SI/methods.html#method-scope">방법론: 범위·분모</a></td>
 </tr>
 <tr class="odd">
-<td>2.2절 정책 출처별 총 인용 수와 문헌당 평균 인용 수(그림 1)</td>
-<td><a href="#bg-hubs">지표 설명: 총 인용 수와 문헌당 평균 인용 수</a> · <a href="../SI/interactive.html#si-fig-5">인터랙티브: 그림 5</a> · <a href="../SI/interactive.html#si-fig-6">인터랙티브: 그림 6</a> · <a href="../SI/interactive.html#si-fig-7">인터랙티브: 그림 7</a></td>
+<td>2.2절 정책 출처별 차이는 한국 결과를 읽는 배경이다(그림 1)</td>
+<td><a href="#bg-hubs">지표 설명: 정책 출처별 총 인용 수와 문헌당 평균 인용 수</a> · <a href="../SI/interactive.html#si-fig-5">인터랙티브: 그림 5</a> · <a href="../SI/interactive.html#si-fig-6">인터랙티브: 그림 6</a> · <a href="../SI/interactive.html#si-fig-7">인터랙티브: 그림 7</a></td>
 </tr>
 <tr class="even">
-<td>2.3절 한국 연구를 인용한 정책 출처와 한국 정책문헌이 인용한 연구국(그림 2)</td>
-<td><a href="#bg-korea">지표 설명: 한국</a> · <a href="../SI/interactive.html#si-fig-8">인터랙티브: 그림 8</a> · <a href="../SI/interactive.html#si-fig-11">인터랙티브: 그림 11</a> · <a href="../SI/interactive.html#si-fig-12">인터랙티브: 그림 12</a></td>
+<td>2.3절 한국 연구는 어디에서 인용되고, 한국 정책문헌은 어떤 연구를 인용하는가(그림 2-3)</td>
+<td><a href="#bg-korea">지표 설명: 한국</a> · <a href="../SI/interactive.html#si-fig-8">인터랙티브: 그림 8</a> · <a href="../SI/interactive.html#si-fig-9">인터랙티브: 그림 9</a> · <a href="../SI/interactive.html#si-fig-10">인터랙티브: 그림 10</a> · <a href="../SI/interactive.html#si-fig-11">인터랙티브: 그림 11</a> · <a href="../SI/interactive.html#si-fig-12">인터랙티브: 그림 12</a></td>
 </tr>
 <tr class="odd">
-<td>2.4절 한국 정책문헌이 인용한 연구와 정책문헌에 인용된 한국 연구의 분야 구성(그림 3)</td>
-<td><a href="#bg-korea">지표 설명: 한국</a> · <a href="../SI/interactive.html#si-fig-9">인터랙티브: 그림 9</a> · <a href="../SI/interactive.html#si-fig-10">인터랙티브: 그림 10</a></td>
-</tr>
-<tr class="even">
-<td>2.5절 토픽별 논문당 정책문헌 인용 수와 최근 고유 논문 비중(그림 4, 표 1)</td>
+<td>2.4절 전체 자료의 배경 관측: 토픽의 시간 구성(그림 4, 표 1)</td>
 <td><a href="#bg-two-speed">지표 설명: 토픽별 두 지표</a> · <a href="../SI/interactive.html#si-fig-1">인터랙티브: 그림 1</a> · <a href="../SI/interactive.html#si-fig-2">인터랙티브: 그림 2</a> · <a href="../SI/interactive.html#si-fig-3">인터랙티브: 그림 3</a> · <a href="../SI/interactive.html#si-fig-4">인터랙티브: 그림 4</a></td>
 </tr>
-<tr class="odd">
-<td>2.6절 반복 인용 비중</td>
+<tr class="even">
+<td>2.4절 전체 자료의 배경 관측: 반복 인용</td>
 <td><a href="../SI/appendix.html#repeat-share">부록: 반복 인용 48.1% 정의</a> · <a href="../SI/appendix.html#appendix-c10-repeat-citation-sensitivity">부록 C10</a></td>
 </tr>
+<tr class="odd">
+<td>공개 범위에서 핵심 수치를 다시 확인하는 방법</td>
+<td><a href="../SI/reproducibility.html">공개 재현성</a></td>
+</tr>
 <tr class="even">
-<td>3장 결과 해석과 한계(표 2)</td>
-<td><a href="../SI/next_questions.html">다음 질문</a> · <a href="../SI/methods.html#method-protocol">방법론: 재계산 절차</a> · <a href="../SI/appendix.html">부록</a></td>
+<td>3장 결과 해석과 한계</td>
+<td><a href="#bg-scholarly-policy">지표 설명: 학술 인용과 정책 인용의 차이</a> · <a href="../SI/methods.html#method-scope">방법론: 범위·분모</a> · <a href="../SI/appendix.html">부록</a></td>
 </tr>
 <tr class="odd">
 <td>4장 웹 보조자료</td>
@@ -318,15 +327,15 @@ ul.task-list li input[type="checkbox"] {
 <td><a href="#bg-hubs">지표 설명: 총 인용 수와 문헌당 평균 인용 수</a> · <a href="../SI/interactive.html#si-fig-5">인터랙티브: 그림 5</a> · <a href="../SI/interactive.html#si-fig-6">인터랙티브: 그림 6</a> · <a href="../SI/interactive.html#si-fig-7">인터랙티브: 그림 7</a></td>
 </tr>
 <tr class="even">
-<td>부록 C. 한국의 정책 출처·연구국·자국 인용 비교(그림 10-12)</td>
+<td>부록 C. 한국의 정책 출처·연구국·자국 인용 비교(그림 10A·10B·11, 대표 관계 표)</td>
 <td><a href="#bg-korea">지표 설명: 한국</a> · <a href="../SI/interactive.html#si-fig-8">인터랙티브: 그림 8</a> · <a href="../SI/interactive.html#si-fig-9">인터랙티브: 그림 9</a> · <a href="../SI/interactive.html#si-fig-10">인터랙티브: 그림 10</a> · <a href="../SI/interactive.html#si-fig-11">인터랙티브: 그림 11</a> · <a href="../SI/interactive.html#si-fig-12">인터랙티브: 그림 12</a></td>
 </tr>
 <tr class="odd">
-<td>부록 D. 네 지표 재계산 시 확인할 조건</td>
-<td><a href="../SI/next_questions.html">다음 질문</a> · <a href="../SI/appendix.html#appendix-c10-repeat-citation-sensitivity">부록 C10</a></td>
+<td>부록 D. 핵심 지표의 정의와 산출 기준(표 3)</td>
+<td><a href="../SI/methods.html">방법론</a> · <a href="../SI/appendix.html#appendix-c10-repeat-citation-sensitivity">부록 C10</a></td>
 </tr>
 <tr class="even">
-<td>부록 E. 방법과 해석의 제한 사항</td>
+<td>부록 E. 방법과 분석 범위</td>
 <td><a href="../SI/methods.html">방법론·데이터 정합성</a> · <a href="../SI/appendix.html">부록</a></td>
 </tr>
 </tbody>
@@ -357,7 +366,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       toggleBodyColorMode(bsSheetEl);
     }
   }
-  toggleBodyColorPrimary();  
+  toggleBodyColorPrimary();
   const icon = "";
   const anchorJS = new window.AnchorJS();
   anchorJS.options = {
@@ -367,7 +376,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
-      if (clz.startsWith('code-annotation-')) {                     
+      if (clz.startsWith('code-annotation-')) {
         return true;
       }
     }
@@ -398,11 +407,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       button.setAttribute("data-bs-toggle", "tooltip");
       button.setAttribute("data-bs-placement", "left");
       button.setAttribute("data-bs-title", "복사완료!");
-      tooltip = new bootstrap.Tooltip(button, 
-        { trigger: "manual", 
+      tooltip = new bootstrap.Tooltip(button,
+        { trigger: "manual",
           customClass: "code-copy-button-tooltip",
           offset: [0, -8]});
-      tooltip.show();    
+      tooltip.show();
     }
     setTimeout(function() {
       if (tooltip) {
@@ -440,7 +449,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     if (onUntriggerFn) {
       config.onUntrigger = onUntriggerFn;
     }
-    window.tippy(el, config); 
+    window.tippy(el, config);
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
   for (var i=0; i<noterefs.length; i++) {
@@ -512,7 +521,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     tippyHover(xref, undefined, function(instance) {
       instance.disable();
       let url = xref.getAttribute('href');
-      let hash = undefined; 
+      let hash = undefined;
       if (url.startsWith('#')) {
         hash = url;
       } else {
@@ -540,7 +549,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             if (note !== null) {
               const html = processXRef(id, note);
               instance.setContent(html);
-            } 
+            }
           }).finally(() => {
             instance.enable();
             instance.show();
@@ -564,7 +573,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             const html = processXRef(null, note);
             instance.setContent(html);
-          } 
+          }
         }).finally(() => {
           instance.enable();
           instance.show();
@@ -604,7 +613,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             height = bottom - top;
           }
           if (top !== null && height !== null && parent !== null) {
-            // cook up a div (if necessary) and position it 
+            // cook up a div (if necessary) and position it
             let div = window.document.getElementById("code-annotation-line-highlight");
             if (div === null) {
               div = window.document.createElement("div");

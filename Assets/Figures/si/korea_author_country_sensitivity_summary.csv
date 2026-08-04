@@ -1,0 +1,10 @@
+metric,value
+outbound_citation_total,32935.0
+outbound_first_author_assigned,23943.0
+outbound_any_author_available,24592.0
+outbound_corresponding_available,10654.0
+inbound_first_author_kr_citations,92641.0
+inbound_first_author_kr_unique_works,45844.0
+inbound_authorship_rows_available,92541.0
+inbound_any_author_kr_weighted_sum,80425.47748552926
+inbound_corresponding_kr_weighted_sum,32378.526165955074

@@ -18,7 +18,7 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */
   vertical-align: middle;
 }
 </style>
@@ -91,42 +91,46 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index_en.html"> 
+    <a class="nav-link" href="../index_en.html">
 <span class="menu-text">Main</span></a>
-  </li>  
+  </li>
   <li class="nav-item">
-    <a class="nav-link" href="../Report/Report_final.pdf"> 
+    <a class="nav-link" href="../Report/Report_final.pdf">
 <span class="menu-text">Korean Report Manuscript (PDF)</span></a>
-  </li>  
+  </li>
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-" role="button" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">English Summary</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-">    
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-">
         <li>
     <a class="dropdown-item" href="../SI/index_en.html">
  <span class="dropdown-text">English Summary</span></a>
-  </li>  
+  </li>
         <li>
     <a class="dropdown-item" href="../SI/update_202603_en.html">
  <span class="dropdown-text">2026 Update Summary</span></a>
-  </li>  
+  </li>
         <li>
     <a class="dropdown-item" href="../SI/methods_en.html">
  <span class="dropdown-text">Methods Summary</span></a>
-  </li>  
+  </li>
         <li>
     <a class="dropdown-item" href="../SI/interactive_en.html">
  <span class="dropdown-text">Selected Figures</span></a>
-  </li>  
+  </li>
         <li>
     <a class="dropdown-item" href="../SI/appendix_en.html">
  <span class="dropdown-text">Definitions Summary</span></a>
-  </li>  
+  </li>
+        <li>
+    <a class="dropdown-item" href="../SI/reproducibility_en.html">
+ <span class="dropdown-text">Public Reproducibility</span></a>
+  </li>
         <li>
     <a class="dropdown-item" href="../SI/next_questions_en.html">
  <span class="dropdown-text">Next Questions Summary</span></a>
-  </li>  
+  </li>
     </ul>
   </li>
 </ul>
@@ -143,7 +147,7 @@ ul.task-list li input[type="checkbox"] {
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
-   
+
   <ul>
   <li><a href="#analysis-scope" id="toc-analysis-scope" class="nav-link active" data-scroll-target="#analysis-scope">Analysis scope</a></li>
   <li><a href="#interpretation-boundaries" id="toc-interpretation-boundaries" class="nav-link" data-scroll-target="#interpretation-boundaries">Interpretation boundaries</a></li>
@@ -169,11 +173,11 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="quarto-title-meta">
 
-    
-  
-    
+
+
+
   </div>
-  
+
 
 
 </header>
@@ -199,7 +203,7 @@ Note
 <li>Data sources: Overton policy-document references and OpenAlex scholarly-work metadata.</li>
 <li>Main citation unit: DOI-linked policy-document -&gt; scholarly-work citation records.</li>
 <li>Document unit: Overton policy documents deduplicated at the policy-document level.</li>
-<li>Country comparisons use first-author country metadata where available. First-author country means the country of the first author’s affiliated institution, not the author’s nationality.</li>
+<li>Country comparisons assign the country of the first author’s affiliated institution, not the author’s nationality. The assignment uses the standardized country mode first, then a single unambiguous two-letter raw country code when the standardized value is unavailable.</li>
 </ul>
 </section>
 <section id="interpretation-boundaries" class="level2">
@@ -208,7 +212,7 @@ Note
 <li>The analysis covers <strong>observed DOI-linked policy-to-research citations</strong>, not the full policy universe.</li>
 <li>Non-DOI evidence such as reports, legislation, web pages, and narrative references is outside the default indicators.</li>
 <li>Hierarchical policy-source labels are collapsed to their top-level country, IGO, or EU category. The policy-source country is the country assigned to the organization that published the policy document. The IGO and EU categories are not countries, but they are compared at the same top level as source countries. Policy-source type labels can still overlap, so type totals are not mutually exclusive.</li>
-<li>Country-level indicators should be read with missing first-author country codes in mind.</li>
+<li>Records with no raw country code or conflicting raw codes remain unassigned and are reported separately. For Korean policy documents, 23,943 of 32,935 DOI-linked citations are assigned a research country; 8,992 (27.3%) remain unassigned.</li>
 </ul>
 </section>
 <section id="indicator-definitions" class="level2">
@@ -251,14 +255,14 @@ Note
 </tr>
 <tr class="odd">
 <td>Domestic-citation share</td>
-<td>Country-level same-country citation share, among citations with known first-author country.</td>
+<td>Country-level same-country citation share, among citations assigned a first-author country under the sequential rule.</td>
 </tr>
 </tbody>
 </table>
 </section>
 <section id="denominator-check" class="level2">
 <h2 class="anchored" data-anchor-id="denominator-check">Denominator check</h2>
-<p>Do not compare indicator values until the denominator is clear. The most important denominator check is whether a metric uses all DOI-linked citation rows, unique works, policy documents, or only citations with known first-author country.</p>
+<p>Do not compare indicator values until the denominator is clear. The most important denominator check is whether a metric uses all DOI-linked citation rows, unique works, policy documents, or only citations assigned a first-author country.</p>
 
 
 </section>
@@ -284,7 +288,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       toggleBodyColorMode(bsSheetEl);
     }
   }
-  toggleBodyColorPrimary();  
+  toggleBodyColorPrimary();
   const icon = "";
   const anchorJS = new window.AnchorJS();
   anchorJS.options = {
@@ -294,7 +298,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
-      if (clz.startsWith('code-annotation-')) {                     
+      if (clz.startsWith('code-annotation-')) {
         return true;
       }
     }
@@ -325,11 +329,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       button.setAttribute("data-bs-toggle", "tooltip");
       button.setAttribute("data-bs-placement", "left");
       button.setAttribute("data-bs-title", "Copied!");
-      tooltip = new bootstrap.Tooltip(button, 
-        { trigger: "manual", 
+      tooltip = new bootstrap.Tooltip(button,
+        { trigger: "manual",
           customClass: "code-copy-button-tooltip",
           offset: [0, -8]});
-      tooltip.show();    
+      tooltip.show();
     }
     setTimeout(function() {
       if (tooltip) {
@@ -367,7 +371,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     if (onUntriggerFn) {
       config.onUntrigger = onUntriggerFn;
     }
-    window.tippy(el, config); 
+    window.tippy(el, config);
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
   for (var i=0; i<noterefs.length; i++) {
@@ -439,7 +443,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     tippyHover(xref, undefined, function(instance) {
       instance.disable();
       let url = xref.getAttribute('href');
-      let hash = undefined; 
+      let hash = undefined;
       if (url.startsWith('#')) {
         hash = url;
       } else {
@@ -467,7 +471,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             if (note !== null) {
               const html = processXRef(id, note);
               instance.setContent(html);
-            } 
+            }
           }).finally(() => {
             instance.enable();
             instance.show();
@@ -491,7 +495,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             const html = processXRef(null, note);
             instance.setContent(html);
-          } 
+          }
         }).finally(() => {
           instance.enable();
           instance.show();
@@ -531,7 +535,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             height = bottom - top;
           }
           if (top !== null && height !== null && parent !== null) {
-            // cook up a div (if necessary) and position it 
+            // cook up a div (if necessary) and position it
             let div = window.document.getElementById("code-annotation-line-highlight");
             if (div === null) {
               div = window.document.createElement("div");

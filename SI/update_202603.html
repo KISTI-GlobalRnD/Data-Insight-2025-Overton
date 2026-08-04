@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="2026년 데이터 업데이트에서 Overton × OpenAlex 주요 지표를 다시 계산하고 2025 기준 원고의 값과 비교한다.">
+<meta name="description" content="2026년 데이터로 계산한 기존 웹 비교의 상태와 재분석 기준을 정리한다.">
 
 <title>Overton × OpenAlex - 2026 데이터 업데이트</title>
 <style>
@@ -18,7 +18,7 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */
   vertical-align: middle;
 }
 </style>
@@ -91,42 +91,46 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
+    <a class="nav-link" href="../index.html">
 <span class="menu-text">메인</span></a>
-  </li>  
+  </li>
   <li class="nav-item">
-    <a class="nav-link" href="../Report/Report_final.pdf"> 
+    <a class="nav-link" href="../Report/Report_final.pdf">
 <span class="menu-text">보고서 원고(PDF)</span></a>
-  </li>  
+  </li>
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-" role="button" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">확장 자료</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-">    
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-">
         <li>
     <a class="dropdown-item" href="../SI/index.html">
  <span class="dropdown-text">확장 자료</span></a>
-  </li>  
+  </li>
         <li>
     <a class="dropdown-item" href="../SI/update_202603.html">
  <span class="dropdown-text">2026 데이터 업데이트</span></a>
-  </li>  
+  </li>
         <li>
     <a class="dropdown-item" href="../SI/methods.html">
  <span class="dropdown-text">방법론·데이터 정합성</span></a>
-  </li>  
+  </li>
         <li>
     <a class="dropdown-item" href="../SI/interactive.html">
  <span class="dropdown-text">인터랙티브</span></a>
-  </li>  
+  </li>
         <li>
     <a class="dropdown-item" href="../SI/appendix.html">
  <span class="dropdown-text">부록</span></a>
-  </li>  
+  </li>
+        <li>
+    <a class="dropdown-item" href="../SI/reproducibility.html">
+ <span class="dropdown-text">공개 재현성</span></a>
+  </li>
         <li>
     <a class="dropdown-item" href="../SI/next_questions.html">
  <span class="dropdown-text">다음 질문</span></a>
-  </li>  
+  </li>
     </ul>
   </li>
 </ul>
@@ -143,7 +147,7 @@ ul.task-list li input[type="checkbox"] {
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">목차</h2>
-   
+
   <ul>
   <li><a href="#데이터-업데이트-요약" id="toc-데이터-업데이트-요약" class="nav-link active" data-scroll-target="#데이터-업데이트-요약">2026 데이터 업데이트 요약</a></li>
   <li><a href="#업데이트-범위" id="toc-업데이트-범위" class="nav-link" data-scroll-target="#업데이트-범위">업데이트 범위</a></li>
@@ -171,18 +175,18 @@ ul.task-list li input[type="checkbox"] {
 
 <div>
   <div class="description">
-    2026년 데이터 업데이트에서 Overton × OpenAlex 주요 지표를 다시 계산하고 2025 기준 원고의 값과 비교한다.
+    2026년 데이터로 계산한 기존 웹 비교의 상태와 재분석 기준을 정리한다.
   </div>
 </div>
 
 
 <div class="quarto-title-meta">
 
-    
-  
-    
+
+
+
   </div>
-  
+
 
 
 </header>
@@ -195,20 +199,20 @@ ul.task-list li input[type="checkbox"] {
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-2025 기준 원고와 웹 업데이트
+기존 웹 비교의 상태
 </div>
 </div>
 <div class="callout-body-container callout-body">
 <ul>
-<li><a href="../Report/Report_final.pdf">보고서 원고(PDF)</a>는 내용 기준일이 2025년 12월 31일인 편집 전 원고다.</li>
-<li>이 페이지는 같은 분석 틀을 <code>Overton 2026-01-30</code>과 <code>OpenAlex 202602</code> 데이터에 다시 적용한 웹 업데이트다.</li>
-<li>이 페이지는 보고서 원고를 대체하지 않는다. 최신 데이터에서 무엇이 달라졌는지 확인하는 용도로만 사용한다.</li>
+<li><a href="../Report/Report_final.pdf">보고서 원고(PDF)</a>는 원고 발행일과 내용 기준일이 2025년 12월 31일인 편집 전 원고다.</li>
+<li>아래 수치는 <code>Overton 2026-01-30</code>과 <code>OpenAlex 202602</code>로 계산한 기존 웹 비교 결과이며, 현재 보고서에 적용한 연구국 순차 부여 규칙 이전에 산출됐다.</li>
+<li>따라서 아래 표의 기존 기준값과 2026 값은 현재 보고서 수치와 직접 비교하지 않는다. GitHub로 제공되는 Overton 데이터 갱신분을 반영해 동일한 순차 부여 규칙으로 재분석한 뒤 이 페이지를 업데이트할 예정이다.</li>
 </ul>
 </div>
 </div>
 <section id="데이터-업데이트-요약" class="level2">
 <h2 class="anchored" data-anchor-id="데이터-업데이트-요약">2026 데이터 업데이트 요약</h2>
-<p>최신 데이터에서도 한국 연구를 인용한 정책 출처, 한국 정책문헌이 인용한 연구국, 분야별 인용 구성, 반복 인용 비중을 같은 정의로 계산했다. 각 비중과 도메인 구성은 2025 기준 원고와 다르게 나타난다.</p>
+<p>아래 결과는 순차 부여 규칙을 적용하기 전의 기존 비교 기록이다. 현재 보고서의 기준값은 보고서 원고와 확장 자료 첫쪽에서 확인한다.</p>
 <table class="table">
 <colgroup>
 <col style="width: 21%">
@@ -463,8 +467,8 @@ ul.task-list li input[type="checkbox"] {
 <section id="해석-주의" class="level2">
 <h2 class="anchored" data-anchor-id="해석-주의">해석 주의</h2>
 <ul>
-<li>이 페이지는 2025 기준 원고와 같은 분석 틀을 최신 데이터에 다시 적용한 결과다.</li>
-<li>업데이트 수치는 웹 비교용이며, 보고서 원고 본문을 자동으로 대체하지 않는다.</li>
+<li>이 페이지의 수치는 현재 보고서의 연구국 순차 부여 규칙을 적용하기 전에 산출된 웹 비교 기록이다.</li>
+<li>업데이트 수치는 현재 보고서의 기준값으로 사용하지 않는다.</li>
 <li>특히 <code>first_author_country</code>와 <code>is_oa</code>는 local OpenAlex 202602에 없는 항목이 있어 remote <code>202506</code> 보완값을 사용했다.</li>
 </ul>
 </section>
@@ -472,8 +476,7 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="공개-자료-관리">공개 자료 관리</h2>
 <ul>
 <li>2025 기준 원고는 편집 전 상태로 유지한다.</li>
-<li>2026 웹 업데이트는 한국 연구 인용·한국 정책문헌 지표와 2025 기준 원고의 비교 결과를 제공한다.</li>
-<li>두 버전의 그림을 함께 제시할 경우 데이터 버전과 분모를 각각 표시한다.</li>
+<li>기존 웹 비교 결과에는 데이터 버전과 당시의 국가 부여 규칙을 함께 표시한다.</li>
 </ul>
 
 
@@ -500,7 +503,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       toggleBodyColorMode(bsSheetEl);
     }
   }
-  toggleBodyColorPrimary();  
+  toggleBodyColorPrimary();
   const icon = "";
   const anchorJS = new window.AnchorJS();
   anchorJS.options = {
@@ -510,7 +513,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
-      if (clz.startsWith('code-annotation-')) {                     
+      if (clz.startsWith('code-annotation-')) {
         return true;
       }
     }
@@ -541,11 +544,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       button.setAttribute("data-bs-toggle", "tooltip");
       button.setAttribute("data-bs-placement", "left");
       button.setAttribute("data-bs-title", "복사완료!");
-      tooltip = new bootstrap.Tooltip(button, 
-        { trigger: "manual", 
+      tooltip = new bootstrap.Tooltip(button,
+        { trigger: "manual",
           customClass: "code-copy-button-tooltip",
           offset: [0, -8]});
-      tooltip.show();    
+      tooltip.show();
     }
     setTimeout(function() {
       if (tooltip) {
@@ -583,7 +586,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     if (onUntriggerFn) {
       config.onUntrigger = onUntriggerFn;
     }
-    window.tippy(el, config); 
+    window.tippy(el, config);
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
   for (var i=0; i<noterefs.length; i++) {
@@ -655,7 +658,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     tippyHover(xref, undefined, function(instance) {
       instance.disable();
       let url = xref.getAttribute('href');
-      let hash = undefined; 
+      let hash = undefined;
       if (url.startsWith('#')) {
         hash = url;
       } else {
@@ -683,7 +686,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             if (note !== null) {
               const html = processXRef(id, note);
               instance.setContent(html);
-            } 
+            }
           }).finally(() => {
             instance.enable();
             instance.show();
@@ -707,7 +710,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             const html = processXRef(null, note);
             instance.setContent(html);
-          } 
+          }
         }).finally(() => {
           instance.enable();
           instance.show();
@@ -747,7 +750,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             height = bottom - top;
           }
           if (top !== null && height !== null && parent !== null) {
-            // cook up a div (if necessary) and position it 
+            // cook up a div (if necessary) and position it
             let div = window.document.getElementById("code-annotation-line-highlight");
             if (div === null) {
               div = window.document.createElement("div");

@@ -18,7 +18,7 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */
   vertical-align: middle;
 }
 </style>
@@ -91,42 +91,46 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
+    <a class="nav-link" href="../index.html">
 <span class="menu-text">메인</span></a>
-  </li>  
+  </li>
   <li class="nav-item">
-    <a class="nav-link" href="../Report/Report_final.pdf"> 
+    <a class="nav-link" href="../Report/Report_final.pdf">
 <span class="menu-text">보고서 원고(PDF)</span></a>
-  </li>  
+  </li>
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-" role="button" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">확장 자료</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-">    
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-">
         <li>
     <a class="dropdown-item" href="../SI/index.html">
  <span class="dropdown-text">확장 자료</span></a>
-  </li>  
+  </li>
         <li>
     <a class="dropdown-item" href="../SI/update_202603.html">
  <span class="dropdown-text">2026 데이터 업데이트</span></a>
-  </li>  
+  </li>
         <li>
     <a class="dropdown-item" href="../SI/methods.html">
  <span class="dropdown-text">방법론·데이터 정합성</span></a>
-  </li>  
+  </li>
         <li>
     <a class="dropdown-item" href="../SI/interactive.html">
  <span class="dropdown-text">인터랙티브</span></a>
-  </li>  
+  </li>
         <li>
     <a class="dropdown-item" href="../SI/appendix.html">
  <span class="dropdown-text">부록</span></a>
-  </li>  
+  </li>
+        <li>
+    <a class="dropdown-item" href="../SI/reproducibility.html">
+ <span class="dropdown-text">공개 재현성</span></a>
+  </li>
         <li>
     <a class="dropdown-item" href="../SI/next_questions.html">
  <span class="dropdown-text">다음 질문</span></a>
-  </li>  
+  </li>
     </ul>
   </li>
 </ul>
@@ -143,7 +147,7 @@ ul.task-list li input[type="checkbox"] {
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">목차</h2>
-   
+
   <ul>
   <li><a href="#읽는-순서-2분" id="toc-읽는-순서-2분" class="nav-link active" data-scroll-target="#읽는-순서-2분">읽는 순서 (2분)</a></li>
   <li><a href="#appendix-a" id="toc-appendix-a" class="nav-link" data-scroll-target="#appendix-a">A. 데이터 수집 범위·출처 분류</a>
@@ -155,7 +159,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#appendix-b" id="toc-appendix-b" class="nav-link" data-scroll-target="#appendix-b">B. 정의·해석</a>
   <ul class="collapse">
   <li><a href="#appendix-b-quick" id="toc-appendix-b-quick" class="nav-link" data-scroll-target="#appendix-b-quick">B0. 자주 찾는 정의(요약)</a></li>
-  <li><a href="#data-fitness" id="toc-data-fitness" class="nav-link" data-scroll-target="#data-fitness">B0-1. 매칭·결측 요약</a></li>
+  <li><a href="#data-fitness" id="toc-data-fitness" class="nav-link" data-scroll-target="#data-fitness">B0-1. 매칭·연구국 부여 요약</a></li>
   <li><a href="#doi-share" id="toc-doi-share" class="nav-link" data-scroll-target="#doi-share">B1. DOI 인용 포함 비중(97.6%): 분모 정의</a></li>
   <li><a href="#repeat-share" id="toc-repeat-share" class="nav-link" data-scroll-target="#repeat-share">B2. 반복 인용 48.1%: 정의</a></li>
   <li><a href="#citations-vs-works" id="toc-citations-vs-works" class="nav-link" data-scroll-target="#citations-vs-works">B3. 인용 건수와 고유 논문 수</a></li>
@@ -175,7 +179,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#appendix-c5-subfield-domain-network" id="toc-appendix-c5-subfield-domain-network" class="nav-link" data-scroll-target="#appendix-c5-subfield-domain-network">C5. OpenAlex 세부분야-Overton 정책 분류 인용 네트워크(Top 100)</a></li>
   <li><a href="#appendix-c6-ccdf" id="toc-appendix-c6-ccdf" class="nav-link" data-scroll-target="#appendix-c6-ccdf">C6. 반복 인용 분포 보조: 로그-로그 CCDF</a></li>
   <li><a href="#appendix-c7-demand-supply-delta" id="toc-appendix-c7-demand-supply-delta" class="nav-link" data-scroll-target="#appendix-c7-demand-supply-delta">C7. 인터랙티브 그림 8 보조: 정책문헌이 인용한 연구와 정책문헌에 인용된 자국 연구의 도메인 구성 차이(Δ, pp)</a></li>
-  <li><a href="#appendix-c8-policy-research-backbone" id="toc-appendix-c8-policy-research-backbone" class="nav-link" data-scroll-target="#appendix-c8-policy-research-backbone">C8. 그림 12 보조: 정책 출처-연구국 인용 네트워크의 연결선 표시 규칙 비교</a></li>
+  <li><a href="#appendix-c8-policy-research-backbone" id="toc-appendix-c8-policy-research-backbone" class="nav-link" data-scroll-target="#appendix-c8-policy-research-backbone">C8. 인터랙티브 그림 12 보조: 정책 출처-연구국 인용 네트워크의 연결선 표시 규칙 비교</a></li>
   <li><a href="#appendix-c9-density-robustness" id="toc-appendix-c9-density-robustness" class="nav-link" data-scroll-target="#appendix-c9-density-robustness">C9. 인터랙티브 그림 5-6 보조: 문헌당 인용 수의 평균·중앙값·절단평균 비교</a></li>
   <li><a href="#appendix-c10-repeat-citation-sensitivity" id="toc-appendix-c10-repeat-citation-sensitivity" class="nav-link" data-scroll-target="#appendix-c10-repeat-citation-sensitivity">C10. 반복 인용 임계값·발행연도 코호트별 비중</a></li>
   <li><a href="#appendix-c11-korea-peers" id="toc-appendix-c11-korea-peers" class="nav-link" data-scroll-target="#appendix-c11-korea-peers">C11. 한국과 정책문헌 표본 규모가 비슷한 국가 비교</a></li>
@@ -202,11 +206,11 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="quarto-title-meta">
 
-    
-  
-    
+
+
+
   </div>
-  
+
 
 
 </header>
@@ -228,7 +232,7 @@ ul.task-list li input[type="checkbox"] {
 <p><strong>수록 내용</strong></p>
 <ul>
 <li>정책 출처별 총 인용 수와 상위 3개 비중을 비교하기 전에 Overton 수집 범위와 출처 분류 방식을 확인한다.</li>
-<li>본문 지표의 분모, 다중라벨, 국가코드 결측, 관측 시차 같은 해석 주의를 정리한다.</li>
+<li>본문 지표의 분모, 다중라벨, 연구국 부여, 관측 시차 같은 해석 기준을 정리한다.</li>
 <li>본문에 넣지 않은 참고 그림을 제공한다.</li>
 </ul>
 </div>
@@ -389,14 +393,14 @@ ul.task-list li input[type="checkbox"] {
 <li><strong>인용 건수와 고유 논문 수</strong>: 전체 인용 횟수와 인용된 논문 수를 구분한다. 자세히 보기: <a href="#citations-vs-works">인용 건수와 고유 논문 수</a></li>
 <li><strong>최근 고유 논문 비중과 논문당 정책문헌 인용 수</strong>: 최근 고유 논문 비중은 발행연도가 확인된 2024년 이하의 토픽별 고유 논문 가운데 <code>2022-2024</code> 발행 논문의 비중이고, 논문당 정책문헌 인용 수는 <code>인용 수 / 고유 논문 수</code>다. 자세히 보기: <a href="#recency-intensity">최근 고유 논문 비중과 논문당 정책문헌 인용 수</a></li>
 <li><strong>다중라벨</strong>: OpenAlex 토픽은 논문 1편이 여러 토픽에 동시에 속할 수 있어 합이 100%를 넘을 수 있다. 자세히 보기: <a href="#multilabel">다중라벨</a></li>
-<li><strong>정책 출처와 연구국</strong>: 정책 출처는 정책문헌을 발행한 출처 기관에 부여된 국가·국제기구·유럽연합의 계층형 분류를 최상위 범주로 통합한 값이고, 연구국은 인용된 논문의 1저자가 소속된 기관의 국가를 뜻한다. 국제기구와 유럽연합은 국가가 아니지만 출처 국가와 같은 수준의 정책 출처 범주로 함께 비교한다. 저자의 국적이 아니라 논문에 기재된 소속 기관의 소재 국가다.</li>
+<li><strong>정책 출처와 연구국</strong>: 정책 출처는 정책문헌을 발행한 출처 기관에 부여된 국가·국제기구·유럽연합의 계층형 분류를 최상위 범주로 통합한 값이고, 연구국은 인용된 논문의 1저자가 소속된 기관의 국가를 뜻한다. 국제기구와 유럽연합은 국가가 아니지만 출처 국가와 같은 수준의 정책 출처 범주로 함께 비교한다. 저자의 국적이 아니라 논문에 기재된 소속 기관의 소재 국가다. 연구국은 표준화 국가값을 먼저 사용하고, 이 값이 없을 때 단일 2자리 원자료 국가코드를 적용한다.</li>
 <li><strong>문헌당 평균 인용 수</strong>: 정책 출처 또는 출처 유형별 DOI 연계 인용 건수를 DOI 연계 인용이 1건 이상인 정책문헌 수로 나눈 값이다.</li>
-<li><strong>자국 인용 비중 분모</strong>: 자국 인용 비중은 1저자 소속 국가코드가 확인되는 인용만 분모로 쓴다. 자세히 보기: <a href="#self-citation-share">자국 인용 비중</a></li>
+<li><strong>자국 인용 비중 분모</strong>: 자국 인용 비중은 순차 부여 규칙으로 1저자 소속 국가가 부여된 인용만 분모로 쓴다. 자세히 보기: <a href="#self-citation-share">자국 인용 비중</a></li>
 </ul>
 </section>
 <section id="data-fitness" class="level3">
-<h3 class="anchored" data-anchor-id="data-fitness">B0-1. 매칭·결측 요약</h3>
-<p>이 보고서는 Overton의 DOI 기반 인용을 OpenAlex의 논문 레코드(works)와 연결해 토픽과 국가 정보를 붙인다. 따라서 DOI 매칭률과 국가코드 확인률을 결과와 함께 제시해야 한다.</p>
+<h3 class="anchored" data-anchor-id="data-fitness">B0-1. 매칭·연구국 부여 요약</h3>
+<p>이 보고서는 Overton의 DOI 기반 인용을 OpenAlex의 논문 레코드(works)와 연결해 토픽과 국가 정보를 붙인다. 따라서 DOI 연결 범위와 연구국 부여율을 결과와 함께 제시한다.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -410,42 +414,42 @@ ul.task-list li input[type="checkbox"] {
 <p><strong>주요 수치(Overton DOI 인용 기록 기준)</strong></p>
 <ul>
 <li><strong>정책문헌→학술논문 DOI 인용 기록(citation rows)</strong>: 23,370,284건</li>
-<li><strong>1저자 소속 국가코드가 확인되는 인용 비중</strong>: 76.6%(citation rows 기준)</li>
+<li><strong>1저자 소속 국가가 부여된 인용 비중</strong>: 80.3%(citation rows 기준)</li>
 </ul>
 </div>
 </div>
 <p>이 수치는 “DOI 인용 기록” 단위의 요약이다. 보고서 본문처럼 중복 제거를 거친 분석용 인용 건수와는 집계 기준이 다를 수 있다.</p>
 <details>
 <summary>
-<strong>정책 출처별 예시(1저자 소속 국가코드 연결 비중)</strong>
+<strong>정책 출처별 예시(1저자 소속 국가 부여 비중)</strong>
 </summary>
 <table class="table">
 <thead>
 <tr class="header">
 <th>정책 출처(예시)</th>
-<th style="text-align: right;">1저자 소속 국가코드 연결 비중</th>
+<th style="text-align: right;">1저자 소속 국가 부여 비중</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td>전체</td>
-<td style="text-align: right;">76.6%</td>
+<td style="text-align: right;">80.3%</td>
 </tr>
 <tr class="even">
 <td>한국</td>
-<td style="text-align: right;">70.4%</td>
+<td style="text-align: right;">72.7%</td>
 </tr>
 <tr class="odd">
 <td>미국</td>
-<td style="text-align: right;">78.4%</td>
+<td style="text-align: right;">82.0%</td>
 </tr>
 <tr class="even">
 <td>영국</td>
-<td style="text-align: right;">80.7%</td>
+<td style="text-align: right;">84.5%</td>
 </tr>
 <tr class="odd">
 <td>국제기구</td>
-<td style="text-align: right;">70.0%</td>
+<td style="text-align: right;">73.5%</td>
 </tr>
 </tbody>
 </table>
@@ -738,7 +742,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="self-citation-share" class="level3">
 <h3 class="anchored" data-anchor-id="self-citation-share">B5. 자국 인용 비중</h3>
 <p><strong>자국 인용 비중(self-citation share)은 어떻게 계산했나?</strong></p>
-<p>정책 출처 국가 태그를 2자리 국가코드로 매핑한 뒤(예: USA→US, UK→GB), 1저자 소속 국가코드가 확인되는 인용만 분모로 삼아 계산했다. 즉 자국 인용 비중은 “전체 인용”이 아니라 <strong>1저자 소속 국가코드가 확인되는 인용</strong>에서의 패턴이다.</p>
+<p>정책 출처 국가 태그를 2자리 국가코드로 매핑한 뒤(예: USA→US, UK→GB), 순차 부여 규칙으로 1저자 소속 국가가 부여된 인용만 분모로 삼아 계산했다. 즉 자국 인용 비중은 “전체 인용”이 아니라 <strong>1저자 소속 국가가 부여된 인용</strong>에서의 패턴이다.</p>
 <details>
 <summary>
 <strong>자세히 보기: 도메인 조정 비교 비중 계산과 비교 표</strong>
@@ -746,7 +750,7 @@ ul.task-list li input[type="checkbox"] {
 <p><strong>도메인 조정 자국 인용 비교 비중은 어떻게 계산했나?</strong></p>
 <p>정책 출처 국가별로 “어떤 도메인을 얼마나 인용했는지”를 먼저 계산했다. 그 다음 각 도메인에서 해당 국가의 1저자 논문이 차지하는 비중을 가중치로 곱해 합산했다. 국가별 논문 구성비는 이번 분석에서 Overton 인용과 연결된 고유 논문 표본으로 계산했으며, OpenAlex 전체 연구 생산 비중을 뜻하지 않는다. 같은 논문에 같은 도메인의 토픽이 여러 개 있어도 해당 도메인에서 한 번만 계산했다. 개념적으로는 <code>비교 비중 = Σ(정책문헌 인용의 도메인 비중 × 결합 표본에서 해당 도메인의 국가별 논문 구성비)</code>다.</p>
 <p><span id="self-citation-context"></span></p>
-<p>아래 표는 자국 인용 비중을 일부 비교 집단에서 요약한 것이다. 자국 인용 비중은 1저자 소속 국가코드가 확인되는 인용만 분모로 쓴다. 국가 간 비교는 정책문헌의 수집 범위와 출처 구성 차이가 섞일 수 있어, “높다”나 “낮다”로 단정하기보다 점검 지표로 두는 것이 좋다.</p>
+<p>아래 표는 자국 인용 비중을 일부 비교 집단에서 요약한 것이다. 자국 인용 비중은 1저자 소속 국가가 부여된 인용만 분모로 쓴다. 국가 간 비교는 정책문헌의 수집 범위와 출처 구성 차이가 섞일 수 있어, “높다”나 “낮다”로 단정하기보다 점검 지표로 두는 것이 좋다.</p>
 <table class="table">
 <colgroup>
 <col style="width: 20%">
@@ -757,51 +761,51 @@ ul.task-list li input[type="checkbox"] {
 <thead>
 <tr class="header">
 <th>정책 출처</th>
-<th style="text-align: right;">1저자 소속 국가코드 확인 인용 수</th>
-<th style="text-align: right;">1저자 소속 국가코드 확인 비중</th>
+<th style="text-align: right;">1저자 소속 국가 부여 인용 수</th>
+<th style="text-align: right;">1저자 소속 국가 부여 비중</th>
 <th style="text-align: right;">자국 인용 비중</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td>미국</td>
-<td style="text-align: right;">4,480,233</td>
-<td style="text-align: right;">78.4%</td>
-<td style="text-align: right;">60.9%</td>
+<td style="text-align: right;">4,685,694</td>
+<td style="text-align: right;">82.0%</td>
+<td style="text-align: right;">60.4%</td>
 </tr>
 <tr class="even">
 <td>영국</td>
-<td style="text-align: right;">1,197,057</td>
-<td style="text-align: right;">80.7%</td>
-<td style="text-align: right;">27.7%</td>
+<td style="text-align: right;">1,252,893</td>
+<td style="text-align: right;">84.5%</td>
+<td style="text-align: right;">27.6%</td>
 </tr>
 <tr class="odd">
 <td>독일</td>
-<td style="text-align: right;">1,143,950</td>
-<td style="text-align: right;">81.8%</td>
-<td style="text-align: right;">12.6%</td>
+<td style="text-align: right;">1,183,278</td>
+<td style="text-align: right;">84.6%</td>
+<td style="text-align: right;">12.8%</td>
 </tr>
 <tr class="even">
 <td>네덜란드</td>
-<td style="text-align: right;">191,031</td>
-<td style="text-align: right;">80.7%</td>
-<td style="text-align: right;">14.3%</td>
+<td style="text-align: right;">199,983</td>
+<td style="text-align: right;">84.5%</td>
+<td style="text-align: right;">14.4%</td>
 </tr>
 <tr class="odd">
 <td>일본</td>
-<td style="text-align: right;">114,180</td>
-<td style="text-align: right;">85.6%</td>
-<td style="text-align: right;">32.3%</td>
+<td style="text-align: right;">119,610</td>
+<td style="text-align: right;">89.6%</td>
+<td style="text-align: right;">31.6%</td>
 </tr>
 <tr class="even">
 <td>한국</td>
-<td style="text-align: right;">23,170</td>
-<td style="text-align: right;">70.4%</td>
-<td style="text-align: right;">4.5%</td>
+<td style="text-align: right;">23,943</td>
+<td style="text-align: right;">72.7%</td>
+<td style="text-align: right;">4.7%</td>
 </tr>
 </tbody>
 </table>
-<p>여기서 1저자 소속 국가코드 확인 비중은 해당 정책 출처의 DOI 인용 기록 가운데 1저자 소속 국가코드가 확인되는 비중이다. 미국과 영국처럼 하위 지역 태그가 많은 경우, 하위 태그를 상위 국가로 합산해 요약했다.</p>
+<p>여기서 1저자 소속 국가 부여 비중은 해당 정책 출처의 DOI 인용 기록 가운데 순차 부여 규칙으로 연구국이 부여된 비중이다. 미국과 영국처럼 하위 지역 태그가 많은 경우, 하위 태그를 상위 국가로 합산해 요약했다.</p>
 <p><strong>연구국을 1저자 소속 국가로 정의한 이유</strong></p>
 <p>가장 일관되게 추출 가능한 국가 속성이 1저자(First author) 소속국이었기 때문이다. 이 기준은 공동저자 분포, 교신저자, 다기관 소속을 반영하지 못한다.</p>
 </details>
@@ -945,11 +949,11 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="appendix-c4-self-share-top10" class="level3">
 <h3 class="anchored" data-anchor-id="appendix-c4-self-share-top10">C4. 인터랙티브 그림 10 확장: 자국 인용 비중(Top10)</h3>
-<p>인터랙티브 그림 10은 비교를 위해 선택 국가만 제시했다. 아래 그림은 상위 10개 정책 출처 국가를 더 넓게 보여준다. 이 지표는 1저자 소속 국가코드가 확인되는 인용만 대상으로 계산한다는 점에 유의해야 한다.</p>
+<p>인터랙티브 그림 10은 비교를 위해 선택 국가만 제시했다. 아래 그림은 상위 10개 정책 출처 국가를 더 넓게 보여준다. 이 지표는 1저자 소속 국가가 부여된 인용만 대상으로 계산한다.</p>
 <ul>
 <li><strong>내용:</strong> 상위 10개 정책 출처 국가의 자국 인용 비중.</li>
 <li><strong>목적:</strong> 본문 선택 국가 외의 자국 인용 비중을 확인한다.</li>
-<li><strong>제한 사항:</strong> 1저자 소속 국가코드가 확인되는 인용만 분모에 포함한다.</li>
+<li><strong>산출 범위:</strong> 1저자 소속 국가가 부여된 인용만 분모에 포함한다.</li>
 </ul>
 <details>
 <summary>
@@ -1026,8 +1030,8 @@ ul.task-list li input[type="checkbox"] {
 </details>
 </section>
 <section id="appendix-c8-policy-research-backbone" class="level3">
-<h3 class="anchored" data-anchor-id="appendix-c8-policy-research-backbone">C8. 그림 12 보조: 정책 출처-연구국 인용 네트워크의 연결선 표시 규칙 비교</h3>
-<p>본문 그림 12는 선택된 50개 범주에서 정책 출처별 상위 3개 연구국과 연구국별 상위 3개 정책 출처의 관계만 표시한다. 아래 그림은 같은 범주와 좌표에서 상위 3개, 상위 5개, 전체 관계를 각각 표시한다.</p>
+<h3 class="anchored" data-anchor-id="appendix-c8-policy-research-backbone">C8. 인터랙티브 그림 12 보조: 정책 출처-연구국 인용 네트워크의 연결선 표시 규칙 비교</h3>
+<p>웹 인터랙티브 그림 12는 선택된 50개 범주에서 정책 출처별 상위 3개 연구국과 연구국별 상위 3개 정책 출처의 관계만 표시한다. 아래 그림은 같은 범주와 좌표에서 상위 3개, 상위 5개, 전체 관계를 각각 표시한다.</p>
 <ul>
 <li><strong>내용:</strong> 연결선 표시 규칙별 네트워크 3종.</li>
 <li><strong>목적:</strong> 표시 규칙에 따라 포함되는 연결선을 비교한다.</li>
@@ -1165,11 +1169,11 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="appendix-c12-korea-author-country-sensitivity" class="level3">
 <h3 class="anchored" data-anchor-id="appendix-c12-korea-author-country-sensitivity">C12. 인터랙티브 그림 9-11 보조: 한국 저자 국가 판정 규칙 민감도</h3>
-<p>한국 연구를 인용한 정책 출처와 한국 정책문헌이 인용한 연구국 관련 수치는 기본적으로 “연구국=1저자 소속 국가” 규칙으로 계산했다. 다만 국제공저가 많은 분야에서는 1저자 규칙이 분포를 더 한쪽으로 기울일 수 있다. 2025.06 OpenAlex 스냅샷 DB에서 저자 국가 판정 규칙별 미국·영국·한국 연구 비중과 상위 정책 출처 비중을 다시 계산했다.</p>
+<p>한국 연구를 인용한 정책 출처와 한국 정책문헌이 인용한 연구국 관련 수치는 기본적으로 순차 부여한 1저자 소속 국가를 사용한다. 민감도 분석에서는 본문과 같은 중복 제거 인용 집합을 고정하고 저자 국가 판정 규칙만 바꿨다. 한국 정책문헌 방향은 DOI 연결 인용 32,935건을, 한국 연구 방향은 주 분석에서 한국 1저자 연구로 분류된 인용 92,641건을 각각 고정했다.</p>
 <ul>
-<li><strong>내용:</strong> 1저자, any-author, corresponding 저자 국가 판정 규칙별 미국·영국·한국 연구 비중과 상위 정책 출처 비중.</li>
+<li><strong>내용:</strong> 1저자 순차 부여, 전체 저자 분수계수, 교신저자 분수계수에 따른 미국·영국·한국 연구 비중과 상위 정책 출처 비중.</li>
 <li><strong>목적:</strong> 저자 국가 판정 규칙에 따른 미국·영국·한국 연구 비중과 상위 정책 출처 비중의 차이를 확인한다.</li>
-<li><strong>제한 사항:</strong> corresponding 정보는 works 기준 60% 이상 결측이므로 해당 부분집합 결과만 제시한다.</li>
+<li><strong>제한 사항:</strong> 교신저자 정보는 인용 기준 32.4%에서만 사용할 수 있으므로 해당 부분집합 결과로 읽는다. 한국 연구 방향의 전체 저자·교신저자 값은 한국 1저자 연구 집합 안에서 저자 구성을 분수계수한 값이며, 한국이 1저자가 아닌 논문까지 분석 집합을 확장한 결과는 아니다.</li>
 </ul>
 <section id="한국-정책문헌이-인용한-연구국-분포" class="level4">
 <h4 class="anchored" data-anchor-id="한국-정책문헌이-인용한-연구국-분포">(1) 한국 정책문헌이 인용한 연구국 분포</h4>
@@ -1192,11 +1196,11 @@ ul.task-list li input[type="checkbox"] {
 </thead>
 <tbody>
 <tr class="odd">
-<td>1저자(분수계수)</td>
-<td style="text-align: right;">23,947 / 32,935 (72.7%)</td>
-<td style="text-align: right;">55.95%</td>
-<td style="text-align: right;">8.50%</td>
-<td style="text-align: right;">4.65%</td>
+<td>1저자 순차 부여(주 분석)</td>
+<td style="text-align: right;">23,943 / 32,935 (72.7%)</td>
+<td style="text-align: right;">55.20%</td>
+<td style="text-align: right;">8.61%</td>
+<td style="text-align: right;">4.72%</td>
 </tr>
 <tr class="even">
 <td>any-author(분수계수)</td>
@@ -1218,40 +1222,54 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="한국-1저자-연구를-인용한-정책-출처-분포" class="level4">
 <h4 class="anchored" data-anchor-id="한국-1저자-연구를-인용한-정책-출처-분포">(2) 한국 1저자 연구를 인용한 정책 출처 분포</h4>
-<p>기본 정의는 “한국 1저자 논문을 인용한 정책문헌”이다. any-author 분수계수는 공저 논문에서 한국 저자의 기여 비중을 반영한다. 2025.06 DB 기준, 한국 1저자 works에 대한 정책문헌 인용 97,502건은 any-author 분수계수로 환산하면 유효 KR 인용 합이 82,308(0.844배)로 줄어든다.</p>
-<p>정책 출처 구조(국가)는 크게 유지된다(상위 3개 정책 출처 합계 약 55.0% → 55.0%).</p>
+<p>기본 정의는 “한국 1저자 연구를 인용한 정책문헌”이다. 같은 한국 1저자 연구 집합에서 전체 저자와 교신저자의 한국 소속 비중을 분수계수해 정책 출처 구성을 다시 계산했다. 저자 정보가 없는 100건은 주 분석 인용 수에는 포함되지만 분수계수 합에는 기여하지 않는다.</p>
 <table class="table">
+<colgroup>
+<col style="width: 13%">
+<col style="width: 17%">
+<col style="width: 17%">
+<col style="width: 17%">
+<col style="width: 17%">
+<col style="width: 17%">
+</colgroup>
 <thead>
 <tr class="header">
-<th>정책 출처 국가</th>
-<th style="text-align: right;">1저자 기준</th>
-<th style="text-align: right;">한국 참여 저자 가중(any-author)</th>
+<th>집계 규칙</th>
+<th style="text-align: right;">유효 인용 합</th>
+<th style="text-align: right;">미국</th>
+<th style="text-align: right;">국제기구</th>
+<th style="text-align: right;">영국</th>
+<th style="text-align: right;">상위 3개 합계</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>USA</td>
-<td style="text-align: right;">27.6%</td>
-<td style="text-align: right;">28.0%</td>
+<td>1저자 순차 부여(주 분석)</td>
+<td style="text-align: right;">92,641</td>
+<td style="text-align: right;">27.68%</td>
+<td style="text-align: right;">19.63%</td>
+<td style="text-align: right;">7.59%</td>
+<td style="text-align: right;">54.90%</td>
 </tr>
 <tr class="even">
-<td>IGO</td>
-<td style="text-align: right;">19.8%</td>
-<td style="text-align: right;">19.1%</td>
+<td>전체 저자 한국 비중 분수계수</td>
+<td style="text-align: right;">80,425.5</td>
+<td style="text-align: right;">27.98%</td>
+<td style="text-align: right;">19.03%</td>
+<td style="text-align: right;">7.89%</td>
+<td style="text-align: right;">54.90%</td>
 </tr>
 <tr class="odd">
-<td>UK</td>
-<td style="text-align: right;">7.6%</td>
-<td style="text-align: right;">7.9%</td>
-</tr>
-<tr class="even">
-<td>Top3 합</td>
-<td style="text-align: right;">55.0%</td>
-<td style="text-align: right;">55.0%</td>
+<td>교신저자 한국 비중 분수계수</td>
+<td style="text-align: right;">32,378.5</td>
+<td style="text-align: right;">23.46%</td>
+<td style="text-align: right;">22.91%</td>
+<td style="text-align: right;">6.69%</td>
+<td style="text-align: right;">53.06%</td>
 </tr>
 </tbody>
 </table>
-<p>CSV: - <code>korea_author_country_inbound_policy_source_country.csv</code>: <a href="../Assets/Figures/si/korea_author_country_inbound_policy_source_country.csv">다운로드</a> - <code>korea_author_country_inbound_policy_source_type.csv</code>: <a href="../Assets/Figures/si/korea_author_country_inbound_policy_source_type.csv">다운로드</a></p>
+<p>CSV: - <code>korea_author_country_inbound_policy_source_country.csv</code>: <a href="../Assets/Figures/si/korea_author_country_inbound_policy_source_country.csv">다운로드</a> - <code>korea_author_country_inbound_policy_source_type.csv</code>: <a href="../Assets/Figures/si/korea_author_country_inbound_policy_source_type.csv">다운로드</a> - <code>korea_author_country_sensitivity_summary.csv</code>: <a href="../Assets/Figures/si/korea_author_country_sensitivity_summary.csv">다운로드</a></p>
 </section>
 </section>
 <section id="appendix-c13-join-multiplicity" class="level3">
@@ -1329,7 +1347,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       toggleBodyColorMode(bsSheetEl);
     }
   }
-  toggleBodyColorPrimary();  
+  toggleBodyColorPrimary();
   const icon = "";
   const anchorJS = new window.AnchorJS();
   anchorJS.options = {
@@ -1339,7 +1357,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
-      if (clz.startsWith('code-annotation-')) {                     
+      if (clz.startsWith('code-annotation-')) {
         return true;
       }
     }
@@ -1370,11 +1388,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       button.setAttribute("data-bs-toggle", "tooltip");
       button.setAttribute("data-bs-placement", "left");
       button.setAttribute("data-bs-title", "복사완료!");
-      tooltip = new bootstrap.Tooltip(button, 
-        { trigger: "manual", 
+      tooltip = new bootstrap.Tooltip(button,
+        { trigger: "manual",
           customClass: "code-copy-button-tooltip",
           offset: [0, -8]});
-      tooltip.show();    
+      tooltip.show();
     }
     setTimeout(function() {
       if (tooltip) {
@@ -1412,7 +1430,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     if (onUntriggerFn) {
       config.onUntrigger = onUntriggerFn;
     }
-    window.tippy(el, config); 
+    window.tippy(el, config);
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
   for (var i=0; i<noterefs.length; i++) {
@@ -1484,7 +1502,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     tippyHover(xref, undefined, function(instance) {
       instance.disable();
       let url = xref.getAttribute('href');
-      let hash = undefined; 
+      let hash = undefined;
       if (url.startsWith('#')) {
         hash = url;
       } else {
@@ -1512,7 +1530,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             if (note !== null) {
               const html = processXRef(id, note);
               instance.setContent(html);
-            } 
+            }
           }).finally(() => {
             instance.enable();
             instance.show();
@@ -1536,7 +1554,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             const html = processXRef(null, note);
             instance.setContent(html);
-          } 
+          }
         }).finally(() => {
           instance.enable();
           instance.show();
@@ -1576,7 +1594,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             height = bottom - top;
           }
           if (top !== null && height !== null && parent !== null) {
-            // cook up a div (if necessary) and position it 
+            // cook up a div (if necessary) and position it
             let div = window.document.getElementById("code-annotation-line-highlight");
             if (div === null) {
               div = window.document.createElement("div");

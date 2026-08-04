@@ -18,7 +18,7 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */
   vertical-align: middle;
 }
 </style>
@@ -91,42 +91,46 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
+    <a class="nav-link" href="../index.html">
 <span class="menu-text">메인</span></a>
-  </li>  
+  </li>
   <li class="nav-item">
-    <a class="nav-link" href="../Report/Report_final.pdf"> 
+    <a class="nav-link" href="../Report/Report_final.pdf">
 <span class="menu-text">보고서 원고(PDF)</span></a>
-  </li>  
+  </li>
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-" role="button" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">확장 자료</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-">    
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-">
         <li>
     <a class="dropdown-item" href="../SI/index.html">
  <span class="dropdown-text">확장 자료</span></a>
-  </li>  
+  </li>
         <li>
     <a class="dropdown-item" href="../SI/update_202603.html">
  <span class="dropdown-text">2026 데이터 업데이트</span></a>
-  </li>  
+  </li>
         <li>
     <a class="dropdown-item" href="../SI/methods.html">
  <span class="dropdown-text">방법론·데이터 정합성</span></a>
-  </li>  
+  </li>
         <li>
     <a class="dropdown-item" href="../SI/interactive.html">
  <span class="dropdown-text">인터랙티브</span></a>
-  </li>  
+  </li>
         <li>
     <a class="dropdown-item" href="../SI/appendix.html">
  <span class="dropdown-text">부록</span></a>
-  </li>  
+  </li>
+        <li>
+    <a class="dropdown-item" href="../SI/reproducibility.html">
+ <span class="dropdown-text">공개 재현성</span></a>
+  </li>
         <li>
     <a class="dropdown-item" href="../SI/next_questions.html">
  <span class="dropdown-text">다음 질문</span></a>
-  </li>  
+  </li>
     </ul>
   </li>
 </ul>
@@ -143,13 +147,13 @@ ul.task-list li input[type="checkbox"] {
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">목차</h2>
-   
+
   <ul>
   <li><a href="#먼저-확인할-것-1분" id="toc-먼저-확인할-것-1분" class="nav-link active" data-scroll-target="#먼저-확인할-것-1분">먼저 확인할 것 (1분)</a></li>
   <li><a href="#method-scope" id="toc-method-scope" class="nav-link" data-scroll-target="#method-scope">1) 분석 범위</a></li>
-  <li><a href="#method-matching" id="toc-method-matching" class="nav-link" data-scroll-target="#method-matching">2) 매칭·결측 점검</a></li>
+  <li><a href="#method-matching" id="toc-method-matching" class="nav-link" data-scroll-target="#method-matching">2) 매칭·연구국 부여 점검</a></li>
   <li><a href="#method-metrics" id="toc-method-metrics" class="nav-link" data-scroll-target="#method-metrics">3) 지표 정의(요약)</a></li>
-  <li><a href="#method-guardrails" id="toc-method-guardrails" class="nav-link" data-scroll-target="#method-guardrails">4) 해석 시 제한 사항</a></li>
+  <li><a href="#method-guardrails" id="toc-method-guardrails" class="nav-link" data-scroll-target="#method-guardrails">4) 자료 범위와 해석 기준</a></li>
   <li><a href="#method-protocol" id="toc-method-protocol" class="nav-link" data-scroll-target="#method-protocol">5) 재계산 절차</a></li>
   </ul>
 </nav>
@@ -171,11 +175,11 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="quarto-title-meta">
 
-    
-  
-    
+
+
+
   </div>
-  
+
 
 
 </header>
@@ -186,7 +190,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="먼저-확인할-것-1분" class="level2">
 <h2 class="anchored" data-anchor-id="먼저-확인할-것-1분">먼저 확인할 것 (1분)</h2>
 <ul>
-<li>국가 비교를 보기 전에는 1저자 소속 국가코드가 확인되는 인용만을 대상으로 한 결과인지 먼저 확인한다.</li>
+<li>국가 비교를 보기 전에는 1저자 소속 국가 부여 규칙과 부여된 인용 수를 먼저 확인한다.</li>
 <li>분모가 다른 지표끼리는 직접 비교하지 않는다.</li>
 <li>본문 해석이 애매하면 아래 5개 섹션을 위에서 아래 순서로 점검한다.</li>
 </ul>
@@ -219,10 +223,12 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </section>
 <section id="method-matching" class="level2">
-<h2 class="anchored" data-anchor-id="method-matching">2) 매칭·결측 점검</h2>
+<h2 class="anchored" data-anchor-id="method-matching">2) 매칭·연구국 부여 점검</h2>
 <ul>
-<li>DOI → OpenAlex 매칭률과 국가코드 결측률을 결과와 함께 제시한다.</li>
-<li>특히 국가 비교는 1저자 소속 국가코드가 확인되는 인용만을 대상으로 한 결과인지 먼저 확인해야 한다.</li>
+<li>연구국은 표준화된 1저자 소속 국가값의 최빈값을 먼저 사용하고, 이 값이 없을 때 원자료의 2자리 국가코드가 하나로만 확인되면 그 코드를 사용한다.</li>
+<li>원자료 국가코드가 없거나 둘 이상이면 연구국을 부여하지 않고 별도로 집계한다.</li>
+<li>한국 정책문헌의 DOI 연결 인용 32,935건 가운데 연구국 부여 인용은 23,943건, 미부여 인용은 8,992건(27.3%)이다.</li>
+<li>전체 저자와 교신저자 기준은 주 분석과 섞지 않고 민감도 분석에서 비교한다.</li>
 </ul>
 <p>관련 상세: - <a href="../SI/appendix.html#data-fitness">부록 B0-1. 매칭·결측 요약</a> - <a href="../SI/appendix.html#appendix-b-quick">부록 B0. 자주 찾는 정의</a></p>
 </section>
@@ -232,17 +238,17 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li>인용 건수와 고유 논문 수: 전체 인용 횟수와 인용된 논문 수를 구분한다.</li>
 <li>정책 출처: 정책문헌을 발행한 출처 기관에 부여된 국가·국제기구·유럽연합의 계층형 분류를 최상위 범주로 통합한 값</li>
-<li>연구국: 인용 논문 1저자가 소속된 기관의 국가(저자 국적이 아님)</li>
+<li>연구국: 인용 논문 1저자가 소속된 기관의 국가(저자 국적이 아님); 표준화 국가값과 단일 원자료 국가코드를 순서대로 적용</li>
 <li>문헌당 평균 인용 수: 정책 출처 또는 출처 유형별 DOI 연계 인용 건수를 DOI 연계 인용이 1건 이상인 정책문헌 수로 나눈 값</li>
 <li>최근 고유 논문 비중: 발행연도가 확인된 2024년 이하의 토픽별 고유 논문 가운데 <code>2022-2024</code> 발행 논문이 차지하는 비중</li>
 <li>논문당 정책문헌 인용 수: 집계 단위 내 <code>인용 건수 / 고유 논문 수</code></li>
-<li>자국 인용 비중: 1저자 소속 국가코드 확인분만 분모에 포함</li>
+<li>자국 인용 비중: 순차 부여 규칙으로 1저자 소속 국가가 부여된 인용만 분모에 포함</li>
 </ul>
 <p>관련 상세: - <a href="../SI/appendix.html#citations-vs-works">인용 건수와 고유 논문 수</a> - <a href="../SI/appendix.html#recency-intensity">최근 고유 논문 비중과 논문당 정책문헌 인용 수</a> - <a href="../SI/appendix.html#self-citation-share">자국 인용 비중</a></p>
 </section>
 <section id="method-guardrails" class="level2">
-<h2 class="anchored" data-anchor-id="method-guardrails">4) 해석 시 제한 사항</h2>
-<p>아래 항목은 본문 결론을 과하게 읽지 않기 위해 먼저 확인할 사항이다.</p>
+<h2 class="anchored" data-anchor-id="method-guardrails">4) 자료 범위와 해석 기준</h2>
+<p>아래 항목은 각 지표가 성립하는 자료 범위와 해석 기준이다.</p>
 <ul>
 <li>다중라벨 토픽 합은 100%를 넘을 수 있다.</li>
 <li>최근 연도 하락에는 관측 지연(수집·색인 시차)이 포함될 수 있다.</li>
@@ -250,7 +256,7 @@ ul.task-list li input[type="checkbox"] {
 <li>정책 출처 비교는 하위 분류를 최상위 범주에 통합하지만, 출처 유형 태그는 서로 중복될 수 있다.</li>
 <li>국가·유형 비교에서 “문헌당 평균 인용 수”는 문서 길이·장르·참고문헌 관행을 함께 반영하므로, 평균만으로 우열을 판단하지 않는다(중앙값·절단평균 병기: <a href="../SI/appendix.html#appendix-c9-density-robustness">부록 C9</a>).</li>
 <li>“반복 인용(≥2)” 비중은 임계값 선택과 시간 지연(최근 논문 불리)에 민감하므로, 코호트/임계값 민감도와 함께 확인한다(<a href="../SI/appendix.html#appendix-c10-repeat-citation-sensitivity">부록 C10</a>).</li>
-<li>네트워크(그림 12)는 선택된 50개 범주에서 정책 출처별 상위 3개 연구국과 연구국별 상위 3개 정책 출처의 관계만 표시한다. 상위 3개·상위 5개·전체 관계를 적용한 결과는 <a href="../SI/appendix.html#appendix-c8-policy-research-backbone">부록 C8</a>에서 확인한다.</li>
+<li>웹 인터랙티브 그림 12는 선택된 50개 범주에서 정책 출처별 상위 3개 연구국과 연구국별 상위 3개 정책 출처의 관계만 표시한다. 상위 3개·상위 5개·전체 관계를 적용한 결과는 <a href="../SI/appendix.html#appendix-c8-policy-research-backbone">부록 C8</a>에서 확인한다.</li>
 </ul>
 <p>관련 상세: - <a href="../SI/appendix.html#multilabel">다중라벨 해석</a> - <a href="../SI/appendix.html#recent-years-decline">최근 연도 하락 주의</a> - <a href="../SI/appendix.html#why-2012">2012년 평균 진단</a></p>
 </section>
@@ -287,7 +293,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       toggleBodyColorMode(bsSheetEl);
     }
   }
-  toggleBodyColorPrimary();  
+  toggleBodyColorPrimary();
   const icon = "";
   const anchorJS = new window.AnchorJS();
   anchorJS.options = {
@@ -297,7 +303,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
-      if (clz.startsWith('code-annotation-')) {                     
+      if (clz.startsWith('code-annotation-')) {
         return true;
       }
     }
@@ -328,11 +334,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       button.setAttribute("data-bs-toggle", "tooltip");
       button.setAttribute("data-bs-placement", "left");
       button.setAttribute("data-bs-title", "복사완료!");
-      tooltip = new bootstrap.Tooltip(button, 
-        { trigger: "manual", 
+      tooltip = new bootstrap.Tooltip(button,
+        { trigger: "manual",
           customClass: "code-copy-button-tooltip",
           offset: [0, -8]});
-      tooltip.show();    
+      tooltip.show();
     }
     setTimeout(function() {
       if (tooltip) {
@@ -370,7 +376,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     if (onUntriggerFn) {
       config.onUntrigger = onUntriggerFn;
     }
-    window.tippy(el, config); 
+    window.tippy(el, config);
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
   for (var i=0; i<noterefs.length; i++) {
@@ -442,7 +448,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     tippyHover(xref, undefined, function(instance) {
       instance.disable();
       let url = xref.getAttribute('href');
-      let hash = undefined; 
+      let hash = undefined;
       if (url.startsWith('#')) {
         hash = url;
       } else {
@@ -470,7 +476,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             if (note !== null) {
               const html = processXRef(id, note);
               instance.setContent(html);
-            } 
+            }
           }).finally(() => {
             instance.enable();
             instance.show();
@@ -494,7 +500,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             const html = processXRef(null, note);
             instance.setContent(html);
-          } 
+          }
         }).finally(() => {
           instance.enable();
           instance.show();
@@ -534,7 +540,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             height = bottom - top;
           }
           if (top !== null && height !== null && parent !== null) {
-            // cook up a div (if necessary) and position it 
+            // cook up a div (if necessary) and position it
             let div = window.document.getElementById("code-annotation-line-highlight");
             if (div === null) {
               div = window.document.createElement("div");

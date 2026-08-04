@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Overton 정책문헌 인용 데이터와 OpenAlex 메타데이터를 결합해 정책 출처, 연구국, 연구 분야, 발행연도별 인용 분포를 정리한다.">
+<meta name="description" content="정책 인용과 학술 인용의 차이에 관한 선행연구를 바탕으로, 한국 연구가 인용되는 정책 출처와 한국 정책문헌이 인용하는 연구국·분야를 살펴본다.">
 
-<title>정책문헌의 연구 인용 구조 | Overton × OpenAlex</title>
+<title>한국의 두 정책-연구 인용 방향 | Overton × OpenAlex</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -62,10 +62,9 @@ ul.task-list li input[type="checkbox"] {
     </div>
     <div class="promo-hero__inner">
       <p class="promo-kicker" data-reveal="" data-reveal-delay="0" data-i18n="hero.kicker">분석 결과</p>
-      <h1 class="promo-title" data-reveal="" data-reveal-delay="50" data-i18n="hero.title">정책문헌의 연구 인용은 소수 정책 출처에 집중된다.</h1>
+      <h1 class="promo-title" data-reveal="" data-reveal-delay="50" data-i18n="hero.title">한국 연구가 인용되는 곳과 한국 정책문헌이 인용하는 연구는 서로 다르다.</h1>
       <p class="promo-lede" data-reveal="" data-reveal-delay="110" data-i18n="hero.lede">
-        한국 연구를 인용한 정책 출처 가운데 미국·국제기구·영국의 합계 비중은 54.8%다.
-        한국 정책문헌이 인용한 연구 가운데 미국 연구 비중은 55.7%다. 이 페이지는 정책 출처별 총 인용 수와 문헌당 평균 인용 수, 출처 유형별 도메인 구성, 한국 연구를 인용한 정책 출처, 한국 정책문헌이 인용한 연구국, 토픽별 논문당 정책문헌 인용 수와 최근 고유 논문 비중을 제시한다.
+        선행연구는 정책문헌 인용이 학술 인용의 순위를 그대로 따르지 않는다고 설명한다. 이번 분석에서 미국·국제기구·영국 정책 출처는 한국 연구 인용의 54.9%를 차지하고, 한국 정책문헌이 인용한 연구에서는 미국 연구가 55.2%를 차지한다. 두 방향의 분야 구성도 서로 다르다.
       </p>
 
       <div class="promo-actions" role="group" aria-label="바로 가기" data-reveal="" data-reveal-delay="160" data-i18n-attr="aria-label:hero.actions.aria">
@@ -76,16 +75,16 @@ ul.task-list li input[type="checkbox"] {
       <p class="promo-lede promo-lede--secondary" data-reveal="" data-reveal-delay="220" data-i18n-html="hero.lede2">
         이 페이지는 Overton에서 DOI로 연결되는 정책문헌→학술논문 인용을 바탕으로 한다.
         정책문헌의 연구 인용 전체를 포괄하지 않으며, <strong>현재 데이터에 포함된 DOI 인용</strong>만 보여 준다.
-        현재 공개 파일은 편집 전 원고이며, 최종 편집본 공개 후 보고서 링크를 교체한다.
+        현재 공개 파일은 최종 조판 전 원고이며, 이 페이지의 보고서 링크는 해당 원고를 가리킨다.
       </p>
 
       <div class="promo-stats" aria-label="주요 수치" data-reveal="" data-reveal-delay="260" data-i18n-attr="aria-label:hero.stats.aria">
         <div class="promo-stat">
-          <div class="promo-stat__value">54.8%</div>
+          <div class="promo-stat__value">54.9%</div>
           <div class="promo-stat__label" data-i18n="hero.stat.inbound">한국 연구를 인용한 상위 3개 정책 출처의 합계 비중</div>
         </div>
         <div class="promo-stat">
-          <div class="promo-stat__value">55.7%</div>
+          <div class="promo-stat__value">55.2%</div>
           <div class="promo-stat__label" data-i18n="hero.stat.sourcing">한국 정책문헌 인용에서 미국 연구가 차지하는 비중</div>
         </div>
         <div class="promo-stat">
@@ -105,7 +104,7 @@ ul.task-list li input[type="checkbox"] {
   <section class="promo-scrolly" id="story" data-scrolly="">
     <div class="promo-scrolly__intro" data-reveal="">
       <p class="promo-section-kicker" data-i18n="story.kicker">주요 비교</p>
-      <h2 class="promo-section-title anchored" data-i18n="story.title">네 가지 분석 결과</h2>
+      <h2 class="promo-section-title anchored" data-i18n="story.title">정책 인용을 읽는 네 가지 장면</h2>
     </div>
 
     <div class="promo-scrolly__sticky">
@@ -144,9 +143,9 @@ ul.task-list li input[type="checkbox"] {
     <div class="promo-scrolly__steps" aria-label="분석 항목" data-i18n-attr="aria-label:story.steps.aria">
       <div class="promo-step is-active" data-figure="hub-country" aria-current="step">
         <p class="promo-step__kicker" data-i18n="story.hub_country.kicker">정책 출처 · 총 인용 수와 문헌당 평균 인용 수</p>
-        <h2 class="promo-step__title anchored" data-i18n="story.hub_country.title">총 인용 수 순위와 문헌당 평균 인용 수 순위는 다르다</h2>
+        <h2 class="promo-step__title anchored" data-i18n="story.hub_country.title">정책 출처별 차이는 한국 결과를 읽는 배경이다</h2>
         <p class="promo-step__body" data-i18n="story.hub_country.body">
-          총 인용 수는 국제기구·미국·영국 순으로 많고, 문헌당 평균 인용 수는 독일 24.5, 국제기구 21.4, 프랑스 18.7 순으로 높다.
+          총 인용 수와 문헌당 평균 인용 수의 순위가 다르다. 이는 한국 결과가 관측된 전체 자료의 정책 출처 구성이 고르지 않다는 배경을 보여준다.
         </p>
       </div>
 
@@ -160,9 +159,9 @@ ul.task-list li input[type="checkbox"] {
 
       <div class="promo-step" data-figure="korea">
         <p class="promo-step__kicker" data-i18n="story.korea.kicker">한국</p>
-        <h2 class="promo-step__title anchored" data-i18n="story.korea.title">한국 연구를 인용한 정책 출처와 한국 정책문헌이 인용한 연구국은 다르게 분포한다</h2>
+        <h2 class="promo-step__title anchored" data-i18n="story.korea.title">한국의 두 인용 방향은 국가와 분야 구성이 다르다</h2>
         <p class="promo-step__body" data-i18n="story.korea.body">
-          한국 연구를 인용한 상위 3개 정책 출처의 합계 비중은 54.8%이고, 한국 정책문헌이 인용한 연구 중 미국 연구 비중은 55.7%다.
+          정책문헌에 인용된 한국 연구에서는 보건과학 비중이 크고, 한국 정책문헌이 인용한 연구에서는 사회과학 비중이 크다. 주요 정책 출처와 연구국 구성도 서로 다르다.
         </p>
       </div>
 
@@ -178,35 +177,35 @@ ul.task-list li input[type="checkbox"] {
 
   <section class="promo-monitor" id="monitor">
     <div class="promo-monitor__inner">
-      <p class="promo-section-kicker" data-i18n="monitor.kicker">반복 점검</p>
-      <h2 class="promo-section-title anchored" data-i18n="monitor.title">같은 정의로 다시 계산할 네 가지 지표</h2>
-      <p class="promo-section-lede" data-i18n="monitor.lede">정책 출처 상위 3개 비중, 한국 연구를 인용한 상위 3개 정책 출처 비중, 한국 정책문헌의 미국 연구 비중, 반복 인용 논문 비중을 같은 정의로 다시 계산한다.</p>
+      <p class="promo-section-kicker" data-i18n="monitor.kicker">핵심 지표</p>
+      <h2 class="promo-section-title anchored" data-i18n="monitor.title">한국 결과를 읽는 네 가지 수치</h2>
+      <p class="promo-section-lede" data-i18n="monitor.lede">한국의 두 인용 방향을 중심으로 보고, 전체 정책 출처 구성과 반복 인용은 배경과 보완 관측으로 확인한다.</p>
 
       <div class="promo-monitor__grid">
         <article class="promo-monitor-card">
-          <div class="promo-monitor-card__value" data-i18n="monitor.card1.value">정책 출처 순위</div>
-          <div class="promo-monitor-card__title" data-i18n="monitor.card1.title">총 인용 수와 문헌당 평균 인용 수</div>
-          <p class="promo-monitor-card__body" data-i18n="monitor.card1.body">총 인용 수 순위와 문헌당 평균 인용 수 순위를 비교한다.</p>
+          <div class="promo-monitor-card__value" data-i18n="monitor.card1.value">상위 3개 정책 출처 55.9%</div>
+          <div class="promo-monitor-card__title" data-i18n="monitor.card1.title">전체 자료의 정책 출처 구성</div>
+          <p class="promo-monitor-card__body" data-i18n="monitor.card1.body">국제기구·미국·영국의 비중은 한국 결과가 관측된 전체 자료의 출처 배경을 보여준다.</p>
         </article>
         <article class="promo-monitor-card">
-          <div class="promo-monitor-card__value" data-i18n="monitor.card2.value">상위 3개 정책 출처 합계 비중 54.8%</div>
+          <div class="promo-monitor-card__value" data-i18n="monitor.card2.value">상위 3개 정책 출처 합계 비중 54.9%</div>
           <div class="promo-monitor-card__title" data-i18n="monitor.card2.title">한국 연구를 인용한 정책 출처</div>
-          <p class="promo-monitor-card__body" data-i18n="monitor.card2.body">미국·국제기구·영국의 합계 비중과 기준값의 차이(%p)를 기록한다.</p>
+          <p class="promo-monitor-card__body" data-i18n="monitor.card2.body">미국·국제기구·영국 정책 출처가 한국 연구 인용의 54.9%를 차지한다.</p>
         </article>
         <article class="promo-monitor-card">
-          <div class="promo-monitor-card__value" data-i18n="monitor.card3.value">연구 인용 상위 1개국 55.7%</div>
+          <div class="promo-monitor-card__value" data-i18n="monitor.card3.value">연구 인용 상위 1개국 55.2%</div>
           <div class="promo-monitor-card__title" data-i18n="monitor.card3.title">한국 정책문헌의 연구 인용</div>
-          <p class="promo-monitor-card__body" data-i18n="monitor.card3.body">미국 연구 비중과 기준값의 차이(%p)를 기록한다.</p>
+          <p class="promo-monitor-card__body" data-i18n="monitor.card3.body">한국 정책문헌의 연구 인용에서는 미국 연구의 비중이 크게 나타난다.</p>
         </article>
         <article class="promo-monitor-card">
           <div class="promo-monitor-card__value" data-i18n="monitor.card4.value">2회 이상 반복 인용 48.1%</div>
           <div class="promo-monitor-card__title" data-i18n="monitor.card4.title">반복 인용 논문 비중</div>
-          <p class="promo-monitor-card__body" data-i18n="monitor.card4.body">반복 인용 논문 비중과 상위 논문 집중도가 어떻게 변하는지 함께 점검한다.</p>
+          <p class="promo-monitor-card__body" data-i18n="monitor.card4.body">인용된 고유 논문의 48.1%는 서로 다른 정책문헌에서 2회 이상 인용된다.</p>
         </article>
       </div>
 
       <div class="promo-monitor__actions">
-        <a class="promo-btn promo-btn--primary" href="./SI/next_questions.html" data-i18n="monitor.cta.next" data-i18n-attr="href:monitor.cta.next.href">다음 점검표 보기</a>
+        <a class="promo-btn promo-btn--primary" href="./SI/index.html#report-extended-map" data-i18n="monitor.cta.next" data-i18n-attr="href:monitor.cta.next.href">지표 정의와 관련 자료 보기</a>
         <a class="promo-btn promo-btn--ghost" href="./Report/Report_final.pdf" data-i18n="monitor.cta.report">보고서 원고(PDF) 보기</a>
       </div>
     </div>
@@ -255,7 +254,7 @@ ul.task-list li input[type="checkbox"] {
   <footer class="promo-footer">
     <div class="promo-footer__inner">
       <div class="promo-footer__col">
-        <div class="promo-footer__title" data-i18n="footer.title">정책문헌의 연구 인용 구조</div>
+        <div class="promo-footer__title" data-i18n="footer.title">한국의 두 정책-연구 인용 방향</div>
       </div>
       <div class="promo-footer__col">
         <a class="promo-footer__link" href="#top" data-i18n="footer.link.top">맨 위로</a>

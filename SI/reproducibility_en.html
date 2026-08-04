@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="A compact web-only English definitions summary for the Overton × OpenAlex report.">
+<meta name="description" content="Public code, aggregate tables, environment details, and verification steps for the Overton × OpenAlex report.">
 
-<title>Overton × OpenAlex - Definitions Summary</title>
+<title>Overton × OpenAlex - Public Reproducibility</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -149,11 +183,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
 
   <ul>
-  <li><a href="#observed-doi-linked-scope" id="toc-observed-doi-linked-scope" class="nav-link active" data-scroll-target="#observed-doi-linked-scope">Observed DOI-linked scope</a></li>
-  <li><a href="#repeated-citation-share" id="toc-repeated-citation-share" class="nav-link" data-scroll-target="#repeated-citation-share">Repeated-citation share</a></li>
-  <li><a href="#domestic-citation-share" id="toc-domestic-citation-share" class="nav-link" data-scroll-target="#domestic-citation-share">Domestic-citation share</a></li>
-  <li><a href="#domain-adjusted-domestic-citation-reference-share" id="toc-domain-adjusted-domestic-citation-reference-share" class="nav-link" data-scroll-target="#domain-adjusted-domestic-citation-reference-share">Domain-adjusted domestic-citation reference share</a></li>
-  <li><a href="#country-assignment-denominator" id="toc-country-assignment-denominator" class="nav-link" data-scroll-target="#country-assignment-denominator">Country-assignment denominator</a></li>
+  <li><a href="#downloads" id="toc-downloads" class="nav-link active" data-scroll-target="#downloads">Downloads</a></li>
+  <li><a href="#verification-without-licensed-source-data" id="toc-verification-without-licensed-source-data" class="nav-link" data-scroll-target="#verification-without-licensed-source-data">Verification without licensed source data</a></li>
+  <li><a href="#additional-inputs-for-a-full-rebuild" id="toc-additional-inputs-for-a-full-rebuild" class="nav-link" data-scroll-target="#additional-inputs-for-a-full-rebuild">Additional inputs for a full rebuild</a></li>
+  <li><a href="#environment-and-version-identification" id="toc-environment-and-version-identification" class="nav-link" data-scroll-target="#environment-and-version-identification">Environment and version identification</a></li>
   </ul>
 </nav>
     </div>
@@ -162,12 +195,12 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Definitions Summary</h1>
+<h1 class="title">Public Reproducibility</h1>
 </div>
 
 <div>
   <div class="description">
-    A compact web-only English definitions summary for the Overton × OpenAlex report.
+    Public code, aggregate tables, environment details, and verification steps for the Overton × OpenAlex report.
   </div>
 </div>
 
@@ -184,42 +217,68 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><a href="../SI/index_en.html">English Summary</a> · <a href="../SI/appendix.html">Full Korean appendix</a> · <a href="../Report/Report_final.pdf">Korean Report Manuscript (PDF)</a></p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>This is a <strong>web-only English summary</strong>. The report manuscript and detailed SI are provided in Korean. It includes only the definitions needed to read the English summary pages.</p>
-</div>
-</div>
-<section id="observed-doi-linked-scope" class="level2">
-<h2 class="anchored" data-anchor-id="observed-doi-linked-scope">Observed DOI-linked scope</h2>
-<p>The report analyzes policy-document references that can be linked to scholarly works through DOIs. This observed linkage excludes references that are not DOI-linked.</p>
+<p><a href="../SI/index_en.html">English Summary</a> · <a href="../SI/methods_en.html">Methods Summary</a> · <a href="../Report/Report_final.pdf">Korean Report Manuscript</a> · <strong>Public Reproducibility</strong></p>
+<p>This page defines the report’s public reproducibility scope. Licensed Overton source data and derived record-level data are not distributed. The public materials allow readers to recompute headline values and reference values and to inspect the code, aggregate tables, and execution environment.</p>
+<section id="downloads" class="level2">
+<h2 class="anchored" data-anchor-id="downloads">Downloads</h2>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Material</th>
+<th>Contents</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="../Assets/Reproducibility/report_reproducibility_code.zip">Code archive</a></td>
+<td>Core aggregation, sensitivity, report, figure, and site-generation code plus the manuscript</td>
+</tr>
+<tr class="even">
+<td><a href="../Assets/Reproducibility/report_public_aggregates.zip">Public aggregate archive</a></td>
+<td>Public CSV aggregates for run tag <code>20251026</code></td>
+</tr>
+<tr class="odd">
+<td><a href="../Assets/Reproducibility/requirements-report.txt">Environment list</a></td>
+<td>Main Python packages and versions used to build the report</td>
+</tr>
+<tr class="even">
+<td><a href="../Assets/Reproducibility/REPRODUCIBILITY_MANIFEST.json">Reproducibility manifest</a></td>
+<td>Paths, sizes, SHA-256 values, data snapshots, country-assignment rule and cache-source metadata, and tool versions</td>
+</tr>
+<tr class="odd">
+<td><a href="../Assets/Reproducibility/SHA256SUMS.txt">SHA-256 checksums</a></td>
+<td>Exact archive identification and integrity checks</td>
+</tr>
+<tr class="even">
+<td><a href="../Assets/Reproducibility/README_KO.md">Korean README</a> · <a href="../Assets/Reproducibility/README_EN.md">English README</a></td>
+<td>Scope and quick verification instructions</td>
+</tr>
+</tbody>
+</table>
+<p>The published web assets are hosted in the <a href="https://github.com/KISTI-GlobalRnD/Data-Insight-2025-Overton">GitHub repository</a>. The checksums identify the exact distributed archives independently of a repository commit.</p>
 </section>
-<section id="repeated-citation-share" class="level2">
-<h2 class="anchored" data-anchor-id="repeated-citation-share">Repeated-citation share</h2>
-<p>Repeated-citation share measures the share of distinct scholarly works cited by more than one policy document. In the baseline data, 48.1% of unique cited works are cited by at least two policy documents.</p>
-<p>This value applies only to the observed DOI-linked citation scope.</p>
-<p><span id="self-citation-share"></span></p>
+<section id="verification-without-licensed-source-data" class="level2">
+<h2 class="anchored" data-anchor-id="verification-without-licensed-source-data">Verification without licensed source data</h2>
+<p>The public verification script recomputes:</p>
+<ul>
+<li>the combined U.S., IGO, and U.K. policy-source share for citations to Korean research;</li>
+<li>the U.S. research share cited by Korean policy documents;</li>
+<li>the social- and health-science shares in the two Korea-related directions;</li>
+<li>the 36.1% U.S. domain-adjusted reference value;</li>
+<li>baseline counts used in the author-country sensitivity analysis; and</li>
+<li>whether the country-domain cache matches the sequential country-assignment rule and the recorded parquet size and modification time.</li>
+</ul>
+<p>Extract both archives into the same directory and run:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> scripts/verify_public_report_aggregates.py <span class="at">--root</span> . <span class="at">--run-tag</span> 20251026</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>A successful run ends with <code>PUBLIC_AGGREGATE_VERIFICATION=PASS</code>. This audit verifies the report’s public aggregate layer; it does not recreate licensed Overton source records.</p>
 </section>
-<section id="domestic-citation-share" class="level2">
-<h2 class="anchored" data-anchor-id="domestic-citation-share">Domestic-citation share</h2>
-<p>Domestic-citation share is a country-level same-country citation measure. For a policy source country, it asks what share of citations point to research whose first-author country is the same country. First-author country means the country of the first author’s affiliated institution, not the author’s nationality.</p>
-<p>The country assignment first uses the standardized first-author country mode. If that is unavailable, it uses a single unambiguous two-letter raw country code. Records with no code or conflicting codes remain unassigned. This metric uses only citations assigned a first-author country under that sequential rule. It is therefore better used as a diagnostic than as a simple country ranking.</p>
+<section id="additional-inputs-for-a-full-rebuild" class="level2">
+<h2 class="anchored" data-anchor-id="additional-inputs-for-a-full-rebuild">Additional inputs for a full rebuild</h2>
+<p>A complete rebuild from source data requires licensed Overton policy-document and DOI-citation records, policy-source country and type metadata, and OpenAlex work, authorship, and topic data aligned to the report snapshot. The code archive’s <code>Data_Insight/Report/Report_Runbook.md</code> records the expected paths and build order. Credentials and local-only notebooks are not included.</p>
 </section>
-<section id="domain-adjusted-domestic-citation-reference-share" class="level2">
-<h2 class="anchored" data-anchor-id="domain-adjusted-domestic-citation-reference-share">Domain-adjusted domestic-citation reference share</h2>
-<p>The domain-adjusted reference share combines the domain mix of cited research with each country’s first-author article share in the DOI-linked article sample. Each article is counted at most once per domain. This reference describes the linked sample and is not a measure of total global research production in OpenAlex.</p>
-</section>
-<section id="country-assignment-denominator" class="level2">
-<h2 class="anchored" data-anchor-id="country-assignment-denominator">Country-assignment denominator</h2>
-<p>For Korean policy documents, 23,943 of 32,935 DOI-linked citations are assigned a research country; 8,992 (27.3%) remain unassigned and are reported separately. Country-level interpretation should therefore use the assigned-country denominator stated with each metric.</p>
+<section id="environment-and-version-identification" class="level2">
+<h2 class="anchored" data-anchor-id="environment-and-version-identification">Environment and version identification</h2>
+<p>The baseline environment uses Python 3.12, Quarto 1.4.550, Pandoc 3.1.3, and Google Chrome 150. Exact Python package versions are recorded in the environment list and manifest. The manuscript publication date is <code>2025-12-31</code>, the aggregate run tag is <code>20251026</code>, and the data snapshots are Overton 2025.02 and OpenAlex 2025.06.</p>
 
 
 </section>
