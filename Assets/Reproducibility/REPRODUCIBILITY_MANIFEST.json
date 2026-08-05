@@ -452,14 +452,14 @@
   },
   "code_files": [
     {
-      "bytes": 15747,
+      "bytes": 15969,
       "path": "Data_Insight/Report/Report_Runbook.md",
-      "sha256": "bb92497cf85fba0a7ebdd3fd720c0e46019fafe043b3216766bf91f49d4d10fe"
+      "sha256": "5775dfc4ce61fb18a9f3cfa9479d27d2bc7f1b21a45d59f800bd1e7a311f6e30"
     },
     {
-      "bytes": 57020,
+      "bytes": 69498,
       "path": "Data_Insight/Report/Report_final.md",
-      "sha256": "edb355ce7fcbd26d394336ccfbf6284d610990457bc90c681983b115f59a56c6"
+      "sha256": "06124e8dc4d29fe8a4c882c0b21c503c990655c6e10df1a6ed12105a7849c87e"
     },
     {
       "bytes": 2160,
@@ -537,9 +537,9 @@
       "sha256": "585c3e427b65f0b4490ad9c5f23ffe72d734fd82241b633bcfb1bbc0adfc2e28"
     },
     {
-      "bytes": 75605,
+      "bytes": 75884,
       "path": "scripts/make_landing_figures.py",
-      "sha256": "37d7b32cd4ec3bbceb680d9ffe8aee840fb2625a02c765b15395f0f93f4e6bcf"
+      "sha256": "afa4d7ca5c7e1f733b2a013136bc16579fbbf1ae5ba26a320fa83b332dfb22e6"
     },
     {
       "bytes": 2340,
@@ -547,14 +547,14 @@
       "sha256": "c7c45a5e76d8034cfd2fe9cb55fd5eb06a7751643b15fb131ac888640bd2b672"
     },
     {
-      "bytes": 6560,
+      "bytes": 6732,
       "path": "scripts/make_report_figures_extended.py",
-      "sha256": "5a8e7320827f9f4f8b30ed2af4dbcc930bf52eb758930bf8ff2400bcb2d449b7"
+      "sha256": "7c7b57b98bb3fbb087b69ad5d3d3695cc7ab00d6741a51a4797db4084fcf0d32"
     },
     {
-      "bytes": 104847,
+      "bytes": 105091,
       "path": "scripts/make_report_interactive_plots.py",
-      "sha256": "fbb0b3403b302892620bc4c2bb2644667755e007d3037e9342cdae290f74135b"
+      "sha256": "2d1295b6a841e605a2f1422d157e514e6be16357f42bd7dac9b977784d03da64"
     },
     {
       "bytes": 13287,
@@ -577,9 +577,9 @@
       "sha256": "164ac152f967c89fd0c613571c8c96a8efee02a2a4fcc7f54a9a0cf5aec81078"
     },
     {
-      "bytes": 18197,
+      "bytes": 18426,
       "path": "scripts/sync_data_insight_assets.py",
-      "sha256": "fa5c75c801299ca688653a9767c69404aa954bb25005190282782f2904d049b9"
+      "sha256": "19638b88b8983a15549c26dfe5eb1c08bd506c843d9d4aed96ed375fa991d7f4"
     },
     {
       "bytes": 7474,
@@ -617,9 +617,9 @@
       "sha256": "a0c67f585fdfd31d33222e1084c10a2663d0ce643e2729541bcd744034b1d3ca"
     },
     {
-      "bytes": 7245,
+      "bytes": 7756,
       "path": "scripts/viz/report/fig05_country_citations.py",
-      "sha256": "b03d4f19a80640a631151660ceb7e8e2171b76c7f82795cd84d203a20b4c0c44"
+      "sha256": "09dc4dae267b104ea69951178faf9e82dfa328c1ab1b673ce206a3e0ba762113"
     },
     {
       "bytes": 2905,
@@ -665,6 +665,11 @@
       "bytes": 17188,
       "path": "scripts/viz/report/fig14_policy_research_flow_network.py",
       "sha256": "b33a9bb3ad611eaaa8fb7b751200473c9520db32d2f07f13c17aa2c37b3c4f4c"
+    },
+    {
+      "bytes": 4265,
+      "path": "scripts/viz/report/fig15_prior_research_synthesis.py",
+      "sha256": "96e8511cf056fdba548158cfa686a5c5ffdc8bacc827340de440fd95919fefc7"
     },
     {
       "bytes": 4552,
