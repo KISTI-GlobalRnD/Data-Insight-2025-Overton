@@ -1,0 +1,13 @@
+variant,domain,weight,share_pct
+known_fractional_domain,Health Sciences,34889.16666666654,11.296768790082396
+known_fractional_domain,Life Sciences,11619.333333333374,3.7622257767186094
+known_fractional_domain,Physical Sciences,50845.16666666689,16.463164552316883
+known_fractional_domain,Social Sciences,211488.33333333553,68.47784088088211
+known_full_domain,Health Sciences,60475.0,14.475945634117034
+known_full_domain,Life Sciences,21547.0,5.157721382030918
+known_full_domain,Physical Sciences,78859.0,18.876537358591733
+known_full_domain,Social Sciences,256881.0,61.489795625260314
+legacy_all_full_domain,Health Sciences,73099.0,13.28275761815638
+legacy_all_full_domain,Life Sciences,25822.0,4.692093834608326
+legacy_all_full_domain,Physical Sciences,98019.0,17.81094979376011
+legacy_all_full_domain,Social Sciences,353390.0,64.21419875347519

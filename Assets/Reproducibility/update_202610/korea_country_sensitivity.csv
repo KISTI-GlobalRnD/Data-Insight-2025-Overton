@@ -1,0 +1,4 @@
+variant,total_citations,known_citations,us_citations,kr_citations,us_share_known_pct,kr_share_known_pct
+Unique DOI; ROR only,418179,308806,140285,12034,45.428197638646914,3.8969450075451904
+Unique DOI; waterfall,418179,308870,140288,12034,45.41975588435264,3.8961375335901836
+All DOI matches; waterfall,427236,313311,142083,12157,45.34887061099036,3.880170182342784

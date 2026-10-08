@@ -1,0 +1,22 @@
+{
+  "top3": 49.72038263428992,
+  "us": 45.41975588435264,
+  "kr": 3.8961375335901836,
+  "missing": 26.13928485170226,
+  "repeat": 50.413088917359275,
+  "socialout": 64.21419875347519,
+  "socialin": 23.081414309309157,
+  "healthout": 13.28275761815638,
+  "healthin": 36.04311097551995,
+  "socialgap": 41.132784444166035,
+  "expected": 35.09242053643516,
+  "institutional": 5.212361213738614,
+  "source_names": "미국·국제기구·한국",
+  "expected_observed": 45.42225474514477,
+  "expected_eligible_pairs": 308842,
+  "weighting_gap_min": 32.93281166918071,
+  "weighting_gap_max": 46.60348355549509,
+  "composition_pp": 16.642816115426484,
+  "within_pp": 24.48996832873955,
+  "common_institution_social_share": 67.64699668293507
+}

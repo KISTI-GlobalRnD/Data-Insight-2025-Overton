@@ -183,7 +183,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">목차</h2>
 
   <ul>
-  <li><a href="#다운로드" id="toc-다운로드" class="nav-link active" data-scroll-target="#다운로드">다운로드</a></li>
+  <li><a href="#년-10월-온라인-업데이트-집계표" id="toc-년-10월-온라인-업데이트-집계표" class="nav-link active" data-scroll-target="#년-10월-온라인-업데이트-집계표">2026년 10월 온라인 업데이트 집계표</a></li>
+  <li><a href="#다운로드" id="toc-다운로드" class="nav-link" data-scroll-target="#다운로드">다운로드</a></li>
   <li><a href="#원자료-없이-다시-확인할-수-있는-값" id="toc-원자료-없이-다시-확인할-수-있는-값" class="nav-link" data-scroll-target="#원자료-없이-다시-확인할-수-있는-값">원자료 없이 다시 확인할 수 있는 값</a></li>
   <li><a href="#전체-재생성에-필요한-추가-입력" id="toc-전체-재생성에-필요한-추가-입력" class="nav-link" data-scroll-target="#전체-재생성에-필요한-추가-입력">전체 재생성에 필요한 추가 입력</a></li>
   <li><a href="#실행환경과-버전-식별" id="toc-실행환경과-버전-식별" class="nav-link" data-scroll-target="#실행환경과-버전-식별">실행환경과 버전 식별</a></li>
@@ -217,8 +218,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
+<div id="online-version-notice" class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+노트
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>2025 기준판 · 제68호 교정 반영.</strong> 이 페이지는 2025 데이터의 설명에 해당하는 확정 교정 사항을 반영했다. 교정 반영일은 2026년 10월 8일이며, 연결된 PDF는 편집 전 원고다. 새 데이터의 결과와 집계 규칙은 <a href="../SI/update_202603.html">2026년 10월 온라인 업데이트</a>에서 별도로 확인한다.</p>
+</div>
+</div>
 <p><strong>바로가기:</strong> <a href="../Report/Report_final.pdf">보고서 원고(PDF)</a> · <a href="../SI/index.html">확장 자료</a> · <a href="../SI/methods.html">방법론·데이터 정합성</a> · <a href="../SI/interactive.html">인터랙티브</a> · <a href="../SI/appendix.html">부록</a> · <strong>공개 재현성</strong> · <a href="../SI/next_questions.html">다음 질문</a></p>
-<p>이 페이지는 보고서의 공개 가능한 재현 범위를 정확히 구분한다. Overton 원자료와 원자료에서 파생된 개별 기록은 이용 조건에 따라 배포하지 않는다. 공개 자료만으로는 핵심 수치와 보조 비교값을 다시 계산하고, 사용된 코드·집계표·환경을 확인할 수 있다.</p>
+<p>이 페이지는 보고서의 공개 가능한 재현 범위를 정확히 구분한다. Overton 원자료와 원자료에서 파생된 개별 기록은 이용 조건에 따라 배포하지 않는다. 공개 자료만으로는 핵심 수치와 결합 표본 구성 기반 기대 비중을 다시 계산하고, 결측치·가중 방식·기관 집중 보조값과 사용된 코드·집계표·환경을 확인할 수 있다.</p>
+<section id="년-10월-온라인-업데이트-집계표" class="level2">
+<h2 class="anchored" data-anchor-id="년-10월-온라인-업데이트-집계표">2026년 10월 온라인 업데이트 집계표</h2>
+<p>새 데이터의 집계표·DOI 연결 점검·국가 부여 민감도는 <a href="../SI/update_202603.html#update-downloads">온라인 업데이트</a>에서 제공한다. <a href="../Assets/Reproducibility/update_202610/README_KO.md">집계표 안내</a>와 <a href="../Assets/Reproducibility/update_202610/provenance.json">스냅샷·체크섬·집계 규칙</a>을 함께 확인한다. 아래 묶음과 검증 명령은 2025 기준판에 해당한다.</p>
+</section>
 <section id="다운로드" class="level2">
 <h2 class="anchored" data-anchor-id="다운로드">다운로드</h2>
 <table class="table">
@@ -243,7 +261,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tr>
 <tr class="even">
 <td><a href="../Assets/Reproducibility/REPRODUCIBILITY_MANIFEST.json">재현성 매니페스트</a></td>
-<td>파일별 경로·크기·SHA-256, 데이터 스냅샷, 연구국 부여 규칙과 캐시 원천 정보, 도구 버전</td>
+<td>파일별 경로·크기·SHA-256, 데이터 스냅샷, 연구 국가 부여 규칙과 캐시 원천 정보, 도구 버전</td>
 </tr>
 <tr class="odd">
 <td><a href="../Assets/Reproducibility/SHA256SUMS.txt">SHA-256 체크섬</a></td>
@@ -263,14 +281,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ul>
 <li>한국 연구를 인용한 미국·국제기구·영국 정책 출처의 합계 비중</li>
 <li>한국 정책문헌이 인용한 미국 연구 비중</li>
-<li>한국의 두 인용 방향에서 사회과학·보건과학이 차지하는 비중</li>
-<li>한국 정책문헌 도메인 구성과 도메인별 미국 논문 구성비를 결합한 36.1% 보조 비교값</li>
-<li>연구국 순차 부여와 민감도 분석의 기준 인용 수</li>
-<li>국가별 도메인 구성비 캐시가 연구국 순차 부여 규칙과 원천 parquet의 크기·수정시각에 일치하는지</li>
+<li>한국의 두 가지 인용 방향에서 사회과학·보건과학이 차지하는 비중</li>
+<li>한국의 사회과학 비중 차이, 출처 유형 구성 요소와 동일 출처 유형 내부 분야 구성 요소</li>
+<li>한국 정책문헌 방향의 KDI·KIEP 합계 비중과 두 가지 방향의 싱크탱크 비중</li>
+<li>비교한 11개국에서 한국의 네 가지 분야 구성 차이 절대값 합 순위</li>
+<li>비교 11개국의 싱크탱크 인용 비중·유형 내부 상위 2개 기관 집중도</li>
+<li>해외 싱크탱크 748곳·74개국의 사회과학 비중 분포와 KDI·KIEP의 위치</li>
+<li>KDI·KIEP 인용 토픽 유사 상위 25곳의 국가 수</li>
+<li>한국 정책문헌이 인용한 연구의 도메인 구성과 도메인별 미국 논문 구성비를 결합한 36.1% 기대 비중</li>
+<li>연구 국가 순차 부여와 민감도 분석의 기준 인용 수</li>
+<li>한국 정책문헌 연구 국가 미부여 비중의 전체·기관·도메인별 층화값과 미국 연구 비중의 40.1~67.4% 기계적 경계</li>
+<li>한국 사회과학 비중 차이의 인용 건수·고유 논문·정책문헌 동일·분수 도메인 가중 민감도(32.2~59.9%p)</li>
+<li>KDI·KIEP의 전체 문헌·DOI 연결 인용이 있는 문헌·인용 건수 비중과 문헌당 평균 인용 건수</li>
+<li>국가별 도메인 구성비 캐시가 연구 국가 순차 부여 규칙과 원천 parquet의 크기·수정시각에 일치하는지</li>
 </ul>
 <p>코드 묶음과 집계표 묶음을 같은 디렉터리에 풀고 다음 명령을 실행한다.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> scripts/verify_public_report_aggregates.py <span class="at">--root</span> . <span class="at">--run-tag</span> 20251026</span></code><button title="클립보드 복사" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>모든 검사가 통과하면 마지막 줄에 <code>PUBLIC_AGGREGATE_VERIFICATION=PASS</code>가 출력된다. 이 검증은 보고서의 핵심 관측값을 확인하는 절차이며 Overton 원자료의 완전한 재수집을 뜻하지 않는다.</p>
+<p>모든 검사가 통과하면 마지막 줄에 <code>PUBLIC_AGGREGATE_VERIFICATION=PASS</code>가 출력된다. 이는 공개 집계표에서 위 수치와 계산 관계가 다시 확인됐다는 뜻이며, Overton 원자료의 완전한 재수집이나 상류 추출 범위의 검증을 뜻하지 않는다.</p>
 </section>
 <section id="전체-재생성에-필요한-추가-입력" class="level2">
 <h2 class="anchored" data-anchor-id="전체-재생성에-필요한-추가-입력">전체 재생성에 필요한 추가 입력</h2>

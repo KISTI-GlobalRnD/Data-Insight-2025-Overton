@@ -1,0 +1,4 @@
+scenario,total_citations,assigned_citations,missing_citations,us_citations,denominator,us_share
+assigned_country_only,32935,23943,8992,13216,23943,0.5519776134987261
+all_unassigned_are_non_us,32935,23943,8992,13216,32935,0.40127523910733265
+all_unassigned_are_us,32935,23943,8992,22208,32935,0.6742978594200698

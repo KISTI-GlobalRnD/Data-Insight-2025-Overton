@@ -1,0 +1,175 @@
+policy_source_id,policy_source_title,domain,domain_assignments,share_pct
+aurikr,Architecture and Urban Research Institute,Health Sciences,267,11.788079470198676
+aurikr,Architecture and Urban Research Institute,Life Sciences,115,5.077262693156733
+aurikr,Architecture and Urban Research Institute,Physical Sciences,912,40.264900662251655
+aurikr,Architecture and Urban Research Institute,Social Sciences,971,42.86975717439294
+bankofkorea,Bank of Korea,Health Sciences,451,3.7636651923558375
+bankofkorea,Bank of Korea,Life Sciences,130,1.0848702328298423
+bankofkorea,Bank of Korea,Physical Sciences,1253,10.456480013352248
+bankofkorea,Bank of Korea,Social Sciences,10149,84.69498456146206
+cfekorea,Centre for Free Enterprise,Health Sciences,2,25.0
+cfekorea,Centre for Free Enterprise,Social Sciences,6,75.0
+cityofbusankr,Busan Metropolitan City,Health Sciences,16,18.6046511627907
+cityofbusankr,Busan Metropolitan City,Life Sciences,9,10.465116279069768
+cityofbusankr,Busan Metropolitan City,Physical Sciences,57,66.27906976744185
+cityofbusankr,Busan Metropolitan City,Social Sciences,4,4.651162790697675
+cityofdaegukr,Daegu Metropolitan City,Health Sciences,42,30.0
+cityofdaegukr,Daegu Metropolitan City,Life Sciences,10,7.142857142857143
+cityofdaegukr,Daegu Metropolitan City,Physical Sciences,12,8.571428571428571
+cityofdaegukr,Daegu Metropolitan City,Social Sciences,76,54.285714285714285
+cityofseoul,Seoul Metropolitan Government,Health Sciences,14,16.666666666666668
+cityofseoul,Seoul Metropolitan Government,Life Sciences,16,19.047619047619047
+cityofseoul,Seoul Metropolitan Government,Physical Sciences,43,51.19047619047619
+cityofseoul,Seoul Metropolitan Government,Social Sciences,11,13.095238095238095
+gggikr,Global Green Growth Institute (GGGI),Health Sciences,23,4.742268041237113
+gggikr,Global Green Growth Institute (GGGI),Life Sciences,86,17.7319587628866
+gggikr,Global Green Growth Institute (GGGI),Physical Sciences,188,38.76288659793814
+gggikr,Global Green Growth Institute (GGGI),Social Sciences,188,38.76288659793814
+governmentofsouthkorea,Government of South Korea,Health Sciences,426,36.597938144329895
+governmentofsouthkorea,Government of South Korea,Life Sciences,446,38.31615120274914
+governmentofsouthkorea,Government of South Korea,Physical Sciences,132,11.34020618556701
+governmentofsouthkorea,Government of South Korea,Social Sciences,160,13.745704467353951
+ietskr,"Korea University Institute for Economy, Technology, and Security",Health Sciences,101,2.2954545454545454
+ietskr,"Korea University Institute for Economy, Technology, and Security",Physical Sciences,202,4.590909090909091
+ietskr,"Korea University Institute for Economy, Technology, and Security",Social Sciences,4097,93.11363636363636
+ifans,Institute of Foreign Affairs and National Security,Health Sciences,1,0.9009009009009009
+ifans,Institute of Foreign Affairs and National Security,Life Sciences,4,3.6036036036036037
+ifans,Institute of Foreign Affairs and National Security,Physical Sciences,10,9.00900900900901
+ifans,Institute of Foreign Affairs and National Security,Social Sciences,96,86.48648648648648
+iiuskr,Institute for Interdisciplinary Unification Studies (IIUS),Health Sciences,4,36.36363636363637
+iiuskr,Institute for Interdisciplinary Unification Studies (IIUS),Life Sciences,2,18.181818181818183
+iiuskr,Institute for Interdisciplinary Unification Studies (IIUS),Physical Sciences,2,18.181818181818183
+iiuskr,Institute for Interdisciplinary Unification Studies (IIUS),Social Sciences,3,27.272727272727273
+kcdc,Korea Centers for Disease Control and Prevention,Health Sciences,4310,52.20445736434109
+kcdc,Korea Centers for Disease Control and Prevention,Life Sciences,2797,33.878391472868216
+kcdc,Korea Centers for Disease Control and Prevention,Physical Sciences,609,7.376453488372093
+kcdc,Korea Centers for Disease Control and Prevention,Social Sciences,540,6.540697674418604
+kdi,Korea Development Institute,Health Sciences,1413,6.760118648933116
+kdi,Korea Development Institute,Life Sciences,360,1.7223232226581189
+kdi,Korea Development Institute,Physical Sciences,2177,10.415271265907569
+kdi,Korea Development Institute,Social Sciences,16952,81.1022868625012
+kedikr,Korean Educational Development Institute,Health Sciences,494,7.258301498677637
+kedikr,Korean Educational Development Institute,Life Sciences,215,3.1589773729062594
+kedikr,Korean Educational Development Institute,Physical Sciences,902,13.25301204819277
+kedikr,Korean Educational Development Institute,Social Sciences,5195,76.32970908022334
+keeikr,Korea Energy Economics Institute,Health Sciences,147,0.9048381139972916
+keeikr,Korea Energy Economics Institute,Life Sciences,222,1.3664902129755017
+keeikr,Korea Energy Economics Institute,Physical Sciences,7594,46.74381386187369
+keeikr,Korea Energy Economics Institute,Social Sciences,8283,50.98485781115352
+keikr,Korea Environment Institute,Health Sciences,2487,7.973453880927191
+keikr,Korea Environment Institute,Life Sciences,3091,9.90990990990991
+keikr,Korea Environment Institute,Physical Sciences,17649,56.58362989323843
+keikr,Korea Environment Institute,Social Sciences,7964,25.533006315924464
+kiccekr,Korea Institute of Child Care and Education,Health Sciences,903,6.428418879476045
+kiccekr,Korea Institute of Child Care and Education,Life Sciences,426,3.032676016231224
+kiccekr,Korea Institute of Child Care and Education,Physical Sciences,1855,13.205666690396527
+kiccekr,Korea Institute of Child Care and Education,Social Sciences,10863,77.33323841389621
+kicekr,Korea Institute for Curriculum and Evaluation,Health Sciences,843,7.0567553992968355
+kicekr,Korea Institute for Curriculum and Evaluation,Life Sciences,822,6.880964339527876
+kicekr,Korea Institute for Curriculum and Evaluation,Physical Sciences,2866,23.991294157040013
+kicekr,Korea Institute for Curriculum and Evaluation,Social Sciences,7415,62.07098610413527
+kicjkr,Korean Institute of Criminology and Justice,Health Sciences,6447,16.82630823437296
+kicjkr,Korean Institute of Criminology and Justice,Life Sciences,2215,5.781025707947279
+kicjkr,Korean Institute of Criminology and Justice,Physical Sciences,3763,9.821218843794858
+kicjkr,Korean Institute of Criminology and Justice,Social Sciences,25890,67.5714472138849
+kiep,Korea Institute for International Economic Policy,Health Sciences,151,3.3267239480061686
+kiep,Korea Institute for International Economic Policy,Life Sciences,81,1.7845340383344348
+kiep,Korea Institute for International Economic Policy,Physical Sciences,409,9.010795329367703
+kiep,Korea Institute for International Economic Policy,Social Sciences,3898,85.8779466842917
+kietkr,Korea Institute for Industrial Economics & Trade,Health Sciences,670,2.516148415202043
+kietkr,Korea Institute for Industrial Economics & Trade,Life Sciences,374,1.4045365780381553
+kietkr,Korea Institute for Industrial Economics & Trade,Physical Sciences,3584,13.459516298633018
+kietkr,Korea Institute for Industrial Economics & Trade,Social Sciences,22000,82.61979870812678
+kihasakr,Korea Institute for Health and Social Affairs,Health Sciences,29709,32.08973763515192
+kihasakr,Korea Institute for Health and Social Affairs,Life Sciences,2906,3.1388729868979595
+kihasakr,Korea Institute for Health and Social Affairs,Physical Sciences,7578,8.185264795152353
+kihasakr,Korea Institute for Health and Social Affairs,Social Sciences,52388,56.586124582797765
+kinukr,Korea Institute for National Unification,Health Sciences,892,4.261825131390348
+kinukr,Korea Institute for National Unification,Life Sciences,833,3.979933110367893
+kinukr,Korea Institute for National Unification,Physical Sciences,1596,7.625418060200669
+kinukr,Korea Institute for National Unification,Social Sciences,17609,84.1328236980411
+kipakr,Korea Institute of Public Administration,Health Sciences,2660,8.809113789905949
+kipakr,Korea Institute of Public Administration,Life Sciences,647,2.1426679030335145
+kipakr,Korea Institute of Public Administration,Physical Sciences,4356,14.425751755199364
+kipakr,Korea Institute of Public Administration,Social Sciences,22533,74.62246655186118
+kipfkr,Korea Institute of Public Finance,Health Sciences,1545,12.199936828806065
+kipfkr,Korea Institute of Public Finance,Life Sciences,153,1.2081490840176878
+kipfkr,Korea Institute of Public Finance,Physical Sciences,1276,10.075805432722678
+kipfkr,Korea Institute of Public Finance,Social Sciences,9690,76.51610865445357
+kisdikr,Korea Information Society Development Institute,Health Sciences,366,2.358703357607785
+kisdikr,Korea Information Society Development Institute,Life Sciences,287,1.849584326867307
+kisdikr,Korea Information Society Development Institute,Physical Sciences,3316,21.370110201714247
+kisdikr,Korea Information Society Development Institute,Social Sciences,11548,74.42160211381066
+kistepkr,Korea Institute of Science and Technology Evaluation and Planning (KISTEP),Health Sciences,123,9.151785714285714
+kistepkr,Korea Institute of Science and Technology Evaluation and Planning (KISTEP),Life Sciences,128,9.523809523809524
+kistepkr,Korea Institute of Science and Technology Evaluation and Planning (KISTEP),Physical Sciences,409,30.43154761904762
+kistepkr,Korea Institute of Science and Technology Evaluation and Planning (KISTEP),Social Sciences,684,50.892857142857146
+klikr,Korea Labour Institute,Health Sciences,3450,16.859697991496848
+klikr,Korea Labour Institute,Life Sciences,249,1.2168303767775985
+klikr,Korea Labour Institute,Physical Sciences,1288,6.294287250158823
+klikr,Korea Labour Institute,Social Sciences,15476,75.62918438156673
+klrikr,Korea Legislation Research Institute,Health Sciences,283,8.457860131500299
+klrikr,Korea Legislation Research Institute,Life Sciences,174,5.200239091452481
+klrikr,Korea Legislation Research Institute,Physical Sciences,778,23.251643753735802
+klrikr,Korea Legislation Research Institute,Social Sciences,2111,63.090257023311416
+kmikr,Korea Maritime Institute,Health Sciences,609,3.430212909766813
+kmikr,Korea Maritime Institute,Life Sciences,1127,6.347865269798355
+kmikr,Korea Maritime Institute,Physical Sciences,7925,44.63782809507717
+kmikr,Korea Maritime Institute,Social Sciences,8093,45.58409372535767
+kotikr,Korea Transport Institute,Health Sciences,510,7.215619694397284
+kotikr,Korea Transport Institute,Life Sciences,112,1.5846066779852859
+kotikr,Korea Transport Institute,Physical Sciences,3207,45.373514431239386
+kotikr,Korea Transport Institute,Social Sciences,3239,45.82625919637804
+kreikr,Korea Rural Economic Institute,Health Sciences,862,6.861418451006925
+kreikr,Korea Rural Economic Institute,Life Sciences,3176,25.28058584732946
+kreikr,Korea Rural Economic Institute,Physical Sciences,2570,20.456897237920877
+kreikr,Korea Rural Economic Institute,Social Sciences,5955,47.401098463742734
+krihskr,Korea Research Institute for Human Settlements,Health Sciences,2275,8.335470633495769
+krihskr,Korea Research Institute for Human Settlements,Life Sciences,1018,3.729894112043381
+krihskr,Korea Research Institute for Human Settlements,Physical Sciences,7910,28.981790202616054
+krihskr,Korea Research Institute for Human Settlements,Social Sciences,16090,58.9528450518448
+krivetkr,Korea Research Institute for Vocational Education and Training,Health Sciences,2326,12.050564708320382
+krivetkr,Korea Research Institute for Vocational Education and Training,Life Sciences,316,1.6371360480779193
+krivetkr,Korea Research Institute for Vocational Education and Training,Physical Sciences,2179,11.288985597347425
+krivetkr,Korea Research Institute for Vocational Education and Training,Social Sciences,14481,75.02331364625428
+kuhrdkr,Korea University Research Institute for HRD Policy,Health Sciences,4,11.764705882352942
+kuhrdkr,Korea University Research Institute for HRD Policy,Physical Sciences,2,5.882352941176471
+kuhrdkr,Korea University Research Institute for HRD Policy,Social Sciences,28,82.3529411764706
+kwdikr,Korea Women's Development Institute,Health Sciences,3177,20.31200051147625
+kwdikr,Korea Women's Development Institute,Life Sciences,380,2.4295121795281633
+kwdikr,Korea Women's Development Institute,Physical Sciences,876,5.600664919122818
+kwdikr,Korea Women's Development Institute,Social Sciences,11208,71.65782238987278
+narskr,National Assembly Research Service,Health Sciences,40,14.084507042253522
+narskr,National Assembly Research Service,Life Sciences,9,3.1690140845070425
+narskr,National Assembly Research Service,Physical Sciences,29,10.211267605633802
+narskr,National Assembly Research Service,Social Sciences,206,72.53521126760563
+nypikr,National Youth Policy Institute,Health Sciences,2601,17.749419953596288
+nypikr,National Youth Policy Institute,Life Sciences,698,4.763204585778627
+nypikr,National Youth Policy Institute,Physical Sciences,1150,7.847686638460488
+nypikr,National Youth Policy Institute,Social Sciences,10205,69.6396888221646
+ojerikr,OJEong Resilience Institute (OJERI),Health Sciences,10,3.3003300330033003
+ojerikr,OJEong Resilience Institute (OJERI),Life Sciences,49,16.17161716171617
+ojerikr,OJEong Resilience Institute (OJERI),Physical Sciences,215,70.95709570957095
+ojerikr,OJEong Resilience Institute (OJERI),Social Sciences,29,9.570957095709572
+provinceofchungnamkr,Chungcheongnam-do Provincial Government,Health Sciences,38,28.35820895522388
+provinceofchungnamkr,Chungcheongnam-do Provincial Government,Life Sciences,13,9.701492537313433
+provinceofchungnamkr,Chungcheongnam-do Provincial Government,Physical Sciences,20,14.925373134328359
+provinceofchungnamkr,Chungcheongnam-do Provincial Government,Social Sciences,63,47.014925373134325
+provinceofgangwonkr,Gangwon State Government,Physical Sciences,1,50.0
+provinceofgangwonkr,Gangwon State Government,Social Sciences,1,50.0
+provinceofgyeongbukkr,Gyeongsangbuk-do Provincial Government,Health Sciences,66,19.879518072289155
+provinceofgyeongbukkr,Gyeongsangbuk-do Provincial Government,Life Sciences,120,36.144578313253014
+provinceofgyeongbukkr,Gyeongsangbuk-do Provincial Government,Physical Sciences,24,7.228915662650603
+provinceofgyeongbukkr,Gyeongsangbuk-do Provincial Government,Social Sciences,122,36.74698795180723
+provinceofgyeonggikr,Gyeonggi Provincial Government,Health Sciences,169,21.098626716604244
+provinceofgyeonggikr,Gyeonggi Provincial Government,Life Sciences,416,51.935081148564294
+provinceofgyeonggikr,Gyeonggi Provincial Government,Physical Sciences,197,24.594257178526842
+provinceofgyeonggikr,Gyeonggi Provincial Government,Social Sciences,19,2.3720349563046192
+sprikr,Software Policy & Research Institute,Health Sciences,108,4.808548530721282
+sprikr,Software Policy & Research Institute,Life Sciences,53,2.359750667853963
+sprikr,Software Policy & Research Institute,Physical Sciences,712,31.70080142475512
+sprikr,Software Policy & Research Institute,Social Sciences,1373,61.13089937666963
+stepikr,Science and Technology Policy Institute,Health Sciences,2064,5.852828583581455
+stepikr,Science and Technology Policy Institute,Life Sciences,1537,4.358429037289097
+stepikr,Science and Technology Policy Institute,Physical Sciences,6186,17.541471714164185
+stepikr,Science and Technology Policy Institute,Social Sciences,25478,72.24727066496526

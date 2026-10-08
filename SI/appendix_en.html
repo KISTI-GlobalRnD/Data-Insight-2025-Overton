@@ -150,10 +150,12 @@ ul.task-list li input[type="checkbox"] {
 
   <ul>
   <li><a href="#observed-doi-linked-scope" id="toc-observed-doi-linked-scope" class="nav-link active" data-scroll-target="#observed-doi-linked-scope">Observed DOI-linked scope</a></li>
-  <li><a href="#repeated-citation-share" id="toc-repeated-citation-share" class="nav-link" data-scroll-target="#repeated-citation-share">Repeated-citation share</a></li>
-  <li><a href="#domestic-citation-share" id="toc-domestic-citation-share" class="nav-link" data-scroll-target="#domestic-citation-share">Domestic-citation share</a></li>
-  <li><a href="#domain-adjusted-domestic-citation-reference-share" id="toc-domain-adjusted-domestic-citation-reference-share" class="nav-link" data-scroll-target="#domain-adjusted-domestic-citation-reference-share">Domain-adjusted domestic-citation reference share</a></li>
+  <li><a href="#share-of-papers-cited-by-multiple-policy-documents" id="toc-share-of-papers-cited-by-multiple-policy-documents" class="nav-link" data-scroll-target="#share-of-papers-cited-by-multiple-policy-documents">Share of papers cited by multiple policy documents</a></li>
+  <li><a href="#domestic-citation-share" id="toc-domestic-citation-share" class="nav-link" data-scroll-target="#domestic-citation-share">Share of citations to same-country research</a></li>
+  <li><a href="#linked-sample-composition-expected-share-for-same-country-research-cited" id="toc-linked-sample-composition-expected-share-for-same-country-research-cited" class="nav-link" data-scroll-target="#linked-sample-composition-expected-share-for-same-country-research-cited">Linked-sample composition expected share for same-country research cited</a></li>
   <li><a href="#country-assignment-denominator" id="toc-country-assignment-denominator" class="nav-link" data-scroll-target="#country-assignment-denominator">Country-assignment denominator</a></li>
+  <li><a href="#policy-source-composition-of-koreas-field-gap" id="toc-policy-source-composition-of-koreas-field-gap" class="nav-link" data-scroll-target="#policy-source-composition-of-koreas-field-gap">Policy-source composition of Korea’s field gap</a></li>
+  <li><a href="#foreign-think-tank-distribution-and-citation-profile-matches" id="toc-foreign-think-tank-distribution-and-citation-profile-matches" class="nav-link" data-scroll-target="#foreign-think-tank-distribution-and-citation-profile-matches">Foreign think-tank distribution and citation-profile matches</a></li>
   </ul>
 </nav>
     </div>
@@ -184,6 +186,19 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<div id="online-version-notice" class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>2025 baseline · issue 68 editorial corrections.</strong> Applicable editorial corrections were incorporated into this web explanation on 8 October 2026. The linked PDF remains the manuscript before publication editing. New-data results and their aggregation rules are provided separately in the <a href="../SI/update_202603_en.html">October 2026 online update</a>.</p>
+</div>
+</div>
 <p><a href="../SI/index_en.html">English Summary</a> · <a href="../SI/appendix.html">Full Korean appendix</a> · <a href="../Report/Report_final.pdf">Korean Report Manuscript (PDF)</a></p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -200,26 +215,37 @@ Note
 </div>
 <section id="observed-doi-linked-scope" class="level2">
 <h2 class="anchored" data-anchor-id="observed-doi-linked-scope">Observed DOI-linked scope</h2>
-<p>The report analyzes policy-document references that can be linked to scholarly works through DOIs. This observed linkage excludes references that are not DOI-linked.</p>
+<p>The report analyzes policy-document references that can be linked to scholarly works through DOIs. This observed linkage excludes references that are not DOI-linked. The policy-document input is the project-provided <code>dump_20250211.tar.gz</code> archive dated 11 February 2025. Because the upstream Overton export query and selection criteria are not recoverable from this repository, the 97.6% document-level statistic is conditional on the provided dump and is not an estimate of coverage of the full Overton index.</p>
 </section>
-<section id="repeated-citation-share" class="level2">
-<h2 class="anchored" data-anchor-id="repeated-citation-share">Repeated-citation share</h2>
-<p>Repeated-citation share measures the share of distinct scholarly works cited by more than one policy document. In the baseline data, 48.1% of unique cited works are cited by at least two policy documents.</p>
+<section id="share-of-papers-cited-by-multiple-policy-documents" class="level2">
+<h2 class="anchored" data-anchor-id="share-of-papers-cited-by-multiple-policy-documents">Share of papers cited by multiple policy documents</h2>
+<p>This measure is the share of distinct scholarly papers cited by more than one policy document. In the baseline data, 48.1% of unique cited papers are cited by at least two different policy documents.</p>
 <p>This value applies only to the observed DOI-linked citation scope.</p>
 <p><span id="self-citation-share"></span></p>
 </section>
 <section id="domestic-citation-share" class="level2">
-<h2 class="anchored" data-anchor-id="domestic-citation-share">Domestic-citation share</h2>
-<p>Domestic-citation share is a country-level same-country citation measure. For a policy source country, it asks what share of citations point to research whose first-author country is the same country. First-author country means the country of the first author’s affiliated institution, not the author’s nationality.</p>
+<h2 class="anchored" data-anchor-id="domestic-citation-share">Share of citations to same-country research</h2>
+<p>This is a country-level same-country citation measure. For a policy source country, it asks what share of citations point to research whose first-author country is the same country. First-author country means the country of the first author’s affiliated institution, not the author’s nationality.</p>
 <p>The country assignment first uses the standardized first-author country mode. If that is unavailable, it uses a single unambiguous two-letter raw country code. Records with no code or conflicting codes remain unassigned. This metric uses only citations assigned a first-author country under that sequential rule. It is therefore better used as a diagnostic than as a simple country ranking.</p>
 </section>
-<section id="domain-adjusted-domestic-citation-reference-share" class="level2">
-<h2 class="anchored" data-anchor-id="domain-adjusted-domestic-citation-reference-share">Domain-adjusted domestic-citation reference share</h2>
-<p>The domain-adjusted reference share combines the domain mix of cited research with each country’s first-author article share in the DOI-linked article sample. Each article is counted at most once per domain. This reference describes the linked sample and is not a measure of total global research production in OpenAlex.</p>
+<section id="linked-sample-composition-expected-share-for-same-country-research-cited" class="level2">
+<h2 class="anchored" data-anchor-id="linked-sample-composition-expected-share-for-same-country-research-cited">Linked-sample composition expected share for same-country research cited</h2>
+<p>The expected share combines the field mix of cited research with each country’s first-author unique-paper share in the DOI-linked article sample. Each article is counted at most once per domain. It is a technical linked-sample baseline. It is not a model-based forecast, a target, or a measure of total global research production in OpenAlex.</p>
 </section>
 <section id="country-assignment-denominator" class="level2">
 <h2 class="anchored" data-anchor-id="country-assignment-denominator">Country-assignment denominator</h2>
-<p>For Korean policy documents, 23,943 of 32,935 DOI-linked citations are assigned a research country; 8,992 (27.3%) remain unassigned and are reported separately. Country-level interpretation should therefore use the assigned-country denominator stated with each metric.</p>
+<p>For Korean policy documents, 23,943 of 32,935 DOI-linked citations are assigned a research country; 8,992 (27.3%) remain unassigned and are reported separately. The unassigned share is 28.7% for KDI, 24.2% for KIEP, and 15.4% for other institutions. Placing all unassigned citations outside or inside the U.S. category gives mechanical bounds of 40.1%-67.4% for the U.S. share. These are not model-based intervals. Country-level interpretation should therefore use the assigned-country denominator stated with each metric.</p>
+</section>
+<section id="policy-source-composition-of-koreas-field-gap" class="level2">
+<h2 class="anchored" data-anchor-id="policy-source-composition-of-koreas-field-gap">Policy-source composition of Korea’s field gap</h2>
+<p>The social-science share is 77.9% for research cited by Korean policy documents, 40.3 percentage points above the 37.6% share in the full Overton policy-document sample calculated with the same rule. The share is 23.1% for Korean-authored research cited by policy documents, producing a 54.8-point gap between the two Korea-centred directions. A symmetric two-group decomposition locates 38.2 percentage points in think-tank versus non-think-tank source composition and 16.6 points within those source-type groups.</p>
+<p>KDI and KIEP documents account for 71.4% of all Korean policy documents, 71.5% of DOI-citing documents, and 93.5% of DOI-linked citations in the Korean-policy-document direction. Their DOI-citing documents average 15.8 citations, compared with 2.7 for other institutions. Think tanks account for 93.6% in that direction, compared with 12.1% among policy documents citing Korean-authored research. These are descriptive composition results, not causal estimates or intrinsic national preferences.</p>
+<p>The social-science gap remains positive under alternative weighting rules: 58.4 percentage points with unique-work weighting, 32.2 points with equal policy-document weighting, and 59.9 points with fractional domain weighting, compared with 54.8 points in the primary analysis. These values answer different descriptive questions and do not form a single uncertainty interval.</p>
+</section>
+<section id="foreign-think-tank-distribution-and-citation-profile-matches" class="level2">
+<h2 class="anchored" data-anchor-id="foreign-think-tank-distribution-and-citation-profile-matches">Foreign think-tank distribution and citation-profile matches</h2>
+<p>Korea has the highest think-tank citation share among the 11 report comparison countries. Within Korean think-tank citations, KDI and KIEP account for 99.9%. The eligible foreign comparison contains 748 think tanks across 74 countries. Its median social-science share is 62.6% (range: 1.2-96.0%). KDI and KIEP have shares of 82.1% and 86.0%, placing them at the 91.3rd and 96.4th percentiles.</p>
+<p>The top 25 citation-profile matches span 17 countries: four are in the UK, three in the USA, two each in Belgium, France, and Germany, and one each in 12 other countries. Their median social-science share is 78.5%, but this is not an independent replication because the same cited-topic information selects the matches and defines the field shares. Korea’s country-level result combines high institution-level social-science shares with concentration of observed DOI-linked citations in those two institutions. Source-type or citation-profile similarity does not establish equivalent legal status, mandates, or organizational roles.</p>
 
 
 </section>

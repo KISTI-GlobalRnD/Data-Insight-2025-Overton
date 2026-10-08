@@ -31,14 +31,34 @@
       "sha256": "085d921fb7dcc97f1febd51c7003a31a27f3537a23cab446eb4fcc5128fbc7b2"
     },
     {
+      "bytes": 1199,
+      "path": "Data_Insight/Assets/Figures/si/korea_field_gap_weighting_sensitivity.csv",
+      "sha256": "3a2e995e99161840b13324ee8c1f67da9d654f98a0d8a0da4fc710badc5b1aa5"
+    },
+    {
       "bytes": 14192,
       "path": "Data_Insight/Assets/Figures/si/korea_inbound_flow_vs_dedup.csv",
       "sha256": "7eb2b85d5f2088c97c40926d696239efe79c993f5e2af8209d34150503d7424a"
     },
     {
+      "bytes": 411,
+      "path": "Data_Insight/Assets/Figures/si/korea_institution_concentration_summary.csv",
+      "sha256": "886aac90606b8b26a9cd744b9e1f5f242d588227caf2cc377b805012abd56be4"
+    },
+    {
       "bytes": 657,
       "path": "Data_Insight/Assets/Figures/si/korea_peer_group_by_policy_docs.csv",
       "sha256": "4761ee6f443d9fa04fb168a79bf370e61fc9b8496479538e4c752629effdfc6f"
+    },
+    {
+      "bytes": 583,
+      "path": "Data_Insight/Assets/Figures/si/korea_research_country_missingness.csv",
+      "sha256": "d77efbcd678e1699d2c4a3cd4239d3ffc0f84247620065b94f0b9c1179947317"
+    },
+    {
+      "bytes": 311,
+      "path": "Data_Insight/Assets/Figures/si/korea_us_share_missingness_bounds.csv",
+      "sha256": "747a6e37e67362cda8b4e6c43dfd23fffce44db246ed5a4379b914553961a6dd"
     },
     {
       "bytes": 1276,
@@ -266,6 +286,16 @@
       "sha256": "e6ccdd7c067fb699c4512304a654d2a16dbbfe694671f06a1e5e13a958c92af2"
     },
     {
+      "bytes": 814,
+      "path": "Output/Data_Insight/report_figures/20251026_country_field_gap_comparison.csv",
+      "sha256": "24f66c1c93d7785647aa1d385a45c542186f39e27f31dad892f5414e58240c26"
+    },
+    {
+      "bytes": 1551,
+      "path": "Output/Data_Insight/report_figures/20251026_country_think_tank_concentration.csv",
+      "sha256": "1590195918fd622df5f0a8d8015d41c167c5b2218fd27e97524f70122a469dc6"
+    },
+    {
       "bytes": 195,
       "path": "Output/Data_Insight/report_figures/20251026_domain_counts.csv",
       "sha256": "e99e5cbdcde5df32691902f8be3f06a2218bd897256d441ec3f4a9cf5d2eccc9"
@@ -276,9 +306,34 @@
       "sha256": "95bfb64d1b8282ec84e4d27f73189b086577352258430b5ec0c52d1b9cdc1d32"
     },
     {
+      "bytes": 125040,
+      "path": "Output/Data_Insight/report_figures/20251026_foreign_think_tank_field_distribution.csv",
+      "sha256": "7653b7a0bd8b774d37953a5184f53dd3a4cc63dc48c2af16af75a12c319f8983"
+    },
+    {
+      "bytes": 2191,
+      "path": "Output/Data_Insight/report_figures/20251026_kdi_kiep_peer_institution_summary.csv",
+      "sha256": "14401e1705faefedadff3ccc2a69a44d81b1290691bb1ce5b18d36a4d1902b7a"
+    },
+    {
+      "bytes": 4225,
+      "path": "Output/Data_Insight/report_figures/20251026_kdi_kiep_topic_similar_think_tanks.csv",
+      "sha256": "07210e688f559f3d6452a6df5cb1c0c3019f65b4ba483eeba6424bd03a1a41e8"
+    },
+    {
+      "bytes": 1199,
+      "path": "Output/Data_Insight/report_figures/20251026_korea_field_gap_weighting_sensitivity.csv",
+      "sha256": "3a2e995e99161840b13324ee8c1f67da9d654f98a0d8a0da4fc710badc5b1aa5"
+    },
+    {
       "bytes": 14192,
       "path": "Output/Data_Insight/report_figures/20251026_korea_inbound_flow_vs_dedup.csv",
       "sha256": "7eb2b85d5f2088c97c40926d696239efe79c993f5e2af8209d34150503d7424a"
+    },
+    {
+      "bytes": 411,
+      "path": "Output/Data_Insight/report_figures/20251026_korea_institution_concentration_summary.csv",
+      "sha256": "886aac90606b8b26a9cd744b9e1f5f242d588227caf2cc377b805012abd56be4"
     },
     {
       "bytes": 657,
@@ -289,6 +344,31 @@
       "bytes": 1821,
       "path": "Output/Data_Insight/report_figures/20251026_korea_policy_research_flows_top10.csv",
       "sha256": "7f5d6d9ab7a3689b0b46b5f4f958c54dec5d722ca5c3b989906a97f78e533530"
+    },
+    {
+      "bytes": 711,
+      "path": "Output/Data_Insight/report_figures/20251026_korea_policy_source_concentration.csv",
+      "sha256": "0f849f0ebf14b951ba7865651eefd525e1c37d9130d47d657a36af5ad3e0bb33"
+    },
+    {
+      "bytes": 375,
+      "path": "Output/Data_Insight/report_figures/20251026_korea_policy_source_type_composition.csv",
+      "sha256": "8755b76ca66286c82aa7142a7b2bdbcf1881b28b40da7a61bbb24eb3ef2974f4"
+    },
+    {
+      "bytes": 583,
+      "path": "Output/Data_Insight/report_figures/20251026_korea_research_country_missingness.csv",
+      "sha256": "d77efbcd678e1699d2c4a3cd4239d3ffc0f84247620065b94f0b9c1179947317"
+    },
+    {
+      "bytes": 1112,
+      "path": "Output/Data_Insight/report_figures/20251026_korea_social_science_gap_decomposition.csv",
+      "sha256": "761191442a701958555cc64ceba7ebf9bcb67f7bee2700f0c708a5b7281e7e14"
+    },
+    {
+      "bytes": 311,
+      "path": "Output/Data_Insight/report_figures/20251026_korea_us_share_missingness_bounds.csv",
+      "sha256": "747a6e37e67362cda8b4e6c43dfd23fffce44db246ed5a4379b914553961a6dd"
     },
     {
       "bytes": 274925,
@@ -423,7 +503,7 @@
     {
       "bytes": 2376833,
       "path": "Output/Data_Insight/report_figures/20251026_source_type_topic_counts_for_heatmap.csv",
-      "sha256": "595f9f11a31eec7d7a290b7b52452cb96805eed1b706f6142c266bf821d7849a"
+      "sha256": "4002ff1e72794377f242e47933f554d3135efc909e18202865db7c6e88ad7c28"
     },
     {
       "bytes": 36245,
@@ -448,33 +528,40 @@
       "works_source_bytes": "4041978658",
       "works_source_mtime_ns": "1785835669277900600",
       "works_source_name": "matched_openalex_with_oa_country_unique.parquet"
+    },
+    "overton_analysis_dump": {
+      "archive_name": "dump_20250211.tar.gz",
+      "parsed_rows": 1471454,
+      "snapshot_date": "2025-02-11",
+      "unique_policy_documents": 1381084,
+      "upstream_export_selection": "not recoverable from the report repository; all document-level coverage rates are conditional on the provided analysis dump"
     }
   },
   "code_files": [
     {
-      "bytes": 15969,
+      "bytes": 20618,
       "path": "Data_Insight/Report/Report_Runbook.md",
-      "sha256": "5775dfc4ce61fb18a9f3cfa9479d27d2bc7f1b21a45d59f800bd1e7a311f6e30"
+      "sha256": "0c5e69db94baa7fe0504d55974c690bf14eb36c13f7df5db46ae9188e6ed717b"
     },
     {
-      "bytes": 69498,
+      "bytes": 89258,
       "path": "Data_Insight/Report/Report_final.md",
-      "sha256": "06124e8dc4d29fe8a4c882c0b21c503c990655c6e10df1a6ed12105a7849c87e"
+      "sha256": "29430d9bbd4f103a8011f901ed075bdf8565d9f1938578c7513dd12481a59148"
     },
     {
-      "bytes": 2160,
+      "bytes": 2262,
       "path": "Data_Insight/Report/report_print.css",
-      "sha256": "bf184988c59a2729cbb83ca32f011218279580a0d3bb38c0c0c0d6d97a09f0d1"
+      "sha256": "4f9c9e483775a168563764dcd481ba8f7b4cebf181ef60529c67590cff5c25d0"
     },
     {
-      "bytes": 1739,
+      "bytes": 2378,
       "path": "Data_Insight/Reproducibility/README_EN.md",
-      "sha256": "c86e763dac3abb75166e7780860959ea103f3636241c7349f66b6656ccb040c6"
+      "sha256": "2860e926c24ffdee91c5dbac95a92f1ae50f80981f4be197b3d92702d823bee7"
     },
     {
-      "bytes": 1886,
+      "bytes": 2441,
       "path": "Data_Insight/Reproducibility/README_KO.md",
-      "sha256": "88de908df774131791e84b27489acdd2d17cfcee7222006a51e3032498125bed"
+      "sha256": "0180716cc9307e397cfd162855df171c4dc4d291956cd41744d358d914038a32"
     },
     {
       "bytes": 174,
@@ -482,29 +569,29 @@
       "sha256": "71b281a1088106a2a7c97df1456ed8212671a9e2eec8a18ec3f6b906999cd114"
     },
     {
-      "bytes": 39454,
+      "bytes": 49701,
       "path": "Data_Insight/SI/appendix.qmd",
-      "sha256": "81dce5e419b35d7e67db9f134e22a8fa3ed3e9e38623af9d42652d2328c947ae"
+      "sha256": "86b70e5c556771158f5719c7a54ae7b5ebc3ae20bb90380689df5de491d1163c"
     },
     {
-      "bytes": 5996,
+      "bytes": 12472,
       "path": "Data_Insight/SI/methods.qmd",
-      "sha256": "2707bf852291a708c84d0cb8c40dcd773ef75740f2311032e943339eb3d41a0b"
+      "sha256": "7175e43a0a133973ff409e3b68229426ceb56de91cf0d03166e5a0addd711c22"
     },
     {
-      "bytes": 4022,
+      "bytes": 6036,
       "path": "Data_Insight/SI/reproducibility.qmd",
-      "sha256": "ab659389e2a110b4f4cfad72c8067d2ba1b2c83908d2e3d34f31f91f8f850b06"
+      "sha256": "d3150e288fd86fc05f19e944ee26954b7ed22f41e794460a932a81c4ca9f1dcd"
     },
     {
-      "bytes": 3555,
+      "bytes": 5247,
       "path": "Data_Insight/SI/reproducibility_en.qmd",
-      "sha256": "83dd4dfaf133d80c2a1d9fa685cdc0aa92b549be4db51b453655a3701d9b365b"
+      "sha256": "fcd3ae8fcd5a6f321b9fd35e2a89f86f0341cbd760ef0aeda345a81e42ac5f01"
     },
     {
-      "bytes": 2098,
+      "bytes": 2136,
       "path": "Data_Insight/_quarto.yml",
-      "sha256": "22b8668e6b4bb09f6cf7b654f7d60f3fca8cb059e3b824d5e65e877158c0601c"
+      "sha256": "6397ba38fc9c986a33791776da7fa0e91a6b27b9521544c106678dd02a180191"
     },
     {
       "bytes": 5101,
@@ -517,14 +604,14 @@
       "sha256": "94b65f25ebb73c7071bd0eb47f60716c81329399ce52c30fb53adecf747e8ece"
     },
     {
-      "bytes": 1774,
+      "bytes": 2135,
       "path": "scripts/build_report_outputs.py",
-      "sha256": "55419d1b1f59bf2330a7460370fe6afe4eca1d327d7ab73c50181fb01ab3575e"
+      "sha256": "c8730c871529b361c0f8a2b94a0477c906e3ba05069085f2576d0f937ec528d8"
     },
     {
-      "bytes": 9997,
+      "bytes": 10437,
       "path": "scripts/build_report_reproducibility_bundle.py",
-      "sha256": "a71682537929b9070f07600684807b66101f2416e191186c4bdafa84b9a815a3"
+      "sha256": "f76df5c6f40579336996316ce0b2f4542ae298aef827ae86762ce86688c92054"
     },
     {
       "bytes": 4234,
@@ -532,29 +619,24 @@
       "sha256": "61444a8b88f09806d101a2c30797f3dd102c07aa43d456f81ed7af0f07d7314a"
     },
     {
-      "bytes": 5071,
+      "bytes": 10634,
       "path": "scripts/format_report_docx.py",
-      "sha256": "585c3e427b65f0b4490ad9c5f23ffe72d734fd82241b633bcfb1bbc0adfc2e28"
+      "sha256": "1ad435cd918a5ea22a4b13e8bce131732b576c8a7f4782b3d3836093eb39943f"
     },
     {
-      "bytes": 75884,
+      "bytes": 76307,
       "path": "scripts/make_landing_figures.py",
-      "sha256": "afa4d7ca5c7e1f733b2a013136bc16579fbbf1ae5ba26a320fa83b332dfb22e6"
+      "sha256": "e448565c253c137810c497e9c473761f3198e3c8de8b930ff5d9a9b10e659c84"
     },
     {
-      "bytes": 2340,
-      "path": "scripts/make_report_figure_panels.py",
-      "sha256": "c7c45a5e76d8034cfd2fe9cb55fd5eb06a7751643b15fb131ac888640bd2b672"
-    },
-    {
-      "bytes": 6732,
+      "bytes": 7470,
       "path": "scripts/make_report_figures_extended.py",
-      "sha256": "7c7b57b98bb3fbb087b69ad5d3d3695cc7ab00d6741a51a4797db4084fcf0d32"
+      "sha256": "a864217f2aa586610798f8e0d44850f7f4693eae31f32137b350dbe91d67d0dd"
     },
     {
-      "bytes": 105091,
+      "bytes": 106824,
       "path": "scripts/make_report_interactive_plots.py",
-      "sha256": "2d1295b6a841e605a2f1422d157e514e6be16357f42bd7dac9b977784d03da64"
+      "sha256": "f5a85231107dc0ebdbaf73c1bfed2d1927a90f313b48b1e2fd713a4e634a8f7d"
     },
     {
       "bytes": 13287,
@@ -577,14 +659,14 @@
       "sha256": "164ac152f967c89fd0c613571c8c96a8efee02a2a4fcc7f54a9a0cf5aec81078"
     },
     {
-      "bytes": 18426,
+      "bytes": 19129,
       "path": "scripts/sync_data_insight_assets.py",
-      "sha256": "19638b88b8983a15549c26dfe5eb1c08bd506c843d9d4aed96ed375fa991d7f4"
+      "sha256": "4c7720ba372d0798106aa4606266663db418d0c51784e9a16005df6c057958f6"
     },
     {
-      "bytes": 7474,
+      "bytes": 20114,
       "path": "scripts/verify_public_report_aggregates.py",
-      "sha256": "b6326b86945a21edf7ef7988fe7af34141cfe2d03e4d056d5dda567cd38236d4"
+      "sha256": "4899c8c17476bda8de867dbe733eade552d4c5f43ef4d6446712821f9929efe6"
     },
     {
       "bytes": 116,
@@ -592,39 +674,39 @@
       "sha256": "91c2761d0cfa9e06b01ba903c05f843dd3b86f486ed1d3b1f94be8ec9f704d2d"
     },
     {
-      "bytes": 25060,
+      "bytes": 25280,
       "path": "scripts/viz/report/common.py",
-      "sha256": "7e73e7bd92eb94d9313d7722cc31477dd21026bc19d3bbea19a561e13a26048f"
+      "sha256": "b1d2f48f464bc144e721a8e4e55acb5e91281d25de1b1e3ed6f4de2a3ebce650"
     },
     {
-      "bytes": 3811,
+      "bytes": 3973,
       "path": "scripts/viz/report/fig01_pubyear_trend.py",
-      "sha256": "99e53f0b96dc6647351b23caaec21edb5f9e0ecf6c83f68b4043ccd69af94b55"
+      "sha256": "d05d61dc8fb6a6833f44d2ec1749d0e13df69fab2c3c29018af0c0107ad1b10d"
     },
     {
-      "bytes": 12531,
+      "bytes": 12603,
       "path": "scripts/viz/report/fig02_domain_top10.py",
-      "sha256": "98c101d3a8667314e8b669a0f8126aa2c55b03b36121a62bb985b1ec3e354e3f"
+      "sha256": "a25e2b18fb93685d57993039c47df2f4bbb77860f44cd319a7efa8fa7791bc21"
     },
     {
-      "bytes": 5027,
+      "bytes": 5111,
       "path": "scripts/viz/report/fig03_topic_scatter.py",
-      "sha256": "65e0c527fa3b563a7cde2120f5328319db340c211e89261432dfdf36d44fb7ac"
+      "sha256": "068d43ff29fe7ac0eb9d300de892af1197e856db2912e6cb2d4fc29d46a1428b"
     },
     {
-      "bytes": 5269,
+      "bytes": 5736,
       "path": "scripts/viz/report/fig04_topic_intensity_vs_recency.py",
-      "sha256": "a0c67f585fdfd31d33222e1084c10a2663d0ce643e2729541bcd744034b1d3ca"
+      "sha256": "3e4893a0cdccb89a28516f53b76d2b8d6fa7fc6acb4aacac52f51d6dd6753b12"
     },
     {
-      "bytes": 7756,
+      "bytes": 7904,
       "path": "scripts/viz/report/fig05_country_citations.py",
-      "sha256": "09dc4dae267b104ea69951178faf9e82dfa328c1ab1b673ce206a3e0ba762113"
+      "sha256": "37126a799e35084096032c9dec7e6a2ac5d3271bf8204cbc8b600a8dd6397035"
     },
     {
-      "bytes": 2905,
+      "bytes": 2964,
       "path": "scripts/viz/report/fig06_country_domain_heatmap.py",
-      "sha256": "ca07fd870a0dc4857378ea547ecac81fac4161398dd2be7dc1b737209e6edd84"
+      "sha256": "f5f3bbd0b75ad57c69d0cb376616f3c965777a45b07494c2fbb81290c5288fbd"
     },
     {
       "bytes": 1302,
@@ -632,44 +714,59 @@
       "sha256": "07ee3461d785b5bd3b5ff6efb2bee2a43ac1c4f6fa182aa83fff78c681935454"
     },
     {
-      "bytes": 9076,
+      "bytes": 9149,
       "path": "scripts/viz/report/fig08_source_type_density.py",
-      "sha256": "cd132269a4359047f1340b3e6cd685ff16f5879aa54d2a69cbf0d27b0ecde877"
+      "sha256": "92e3c707f657b6e91deb54644ba4866565bb5a092821ba31ebaf659decd22c13"
     },
     {
-      "bytes": 8578,
+      "bytes": 8663,
       "path": "scripts/viz/report/fig09_source_type_domain_heatmap.py",
-      "sha256": "44352907b8f553e25b6f3dc8c1508e232c37093fdb83b98f0c0c33eb2cb13cf7"
+      "sha256": "f4ff8cf5003619907576e4e6ae21fe3113b2e2c16f7264297cf0eaf2414dfe0f"
     },
     {
-      "bytes": 10639,
+      "bytes": 11668,
       "path": "scripts/viz/report/fig10_policy_to_research_heatmap.py",
-      "sha256": "a2ff4f3f5a1f4c719a44de859cf03ec88d768f69e2b62f5968ed78dcb52623fe"
+      "sha256": "f30c9a1d67f09ac199d95ccc004444a12ce4efb0b292a28de5c435ce7c7bfc03"
     },
     {
-      "bytes": 14088,
+      "bytes": 15277,
       "path": "scripts/viz/report/fig11_self_share_selected.py",
-      "sha256": "61b9617051f633536a5f81b494bb13a906a6b53d9ed86b47d0a211e902678e1d"
+      "sha256": "60a83ef70df9ddf8b8833ecc056758cfe7d84dd5555b18dac595f3df6624407e"
     },
     {
-      "bytes": 22113,
+      "bytes": 22758,
       "path": "scripts/viz/report/fig12_korea_flows.py",
-      "sha256": "493e8db5a9b38c486d8f7d0ff3e46b28a094a732f487839a53cc9a38f66bd0e7"
+      "sha256": "e793db14bc5a47af36cd0137cfdd7e39270cf34f48a5c91d923e7cdcc8e0af78"
     },
     {
-      "bytes": 12520,
+      "bytes": 13614,
       "path": "scripts/viz/report/fig13_country_domain_demand_supply_scatter.py",
-      "sha256": "9921d3119603fc4d86631aea571256da83eb93f3e95860209af192f2ee9bae7d"
+      "sha256": "95398842cb2eb0eb27aeffe48dd1c8418b8e622103ed4587566acd1eab42d75c"
     },
     {
-      "bytes": 17188,
+      "bytes": 16974,
       "path": "scripts/viz/report/fig14_policy_research_flow_network.py",
-      "sha256": "b33a9bb3ad611eaaa8fb7b751200473c9520db32d2f07f13c17aa2c37b3c4f4c"
+      "sha256": "d6e05b0a53d2439e1c2503f2c5b3cb3a9a7eacb085406156872e419b29ce9e43"
     },
     {
-      "bytes": 4265,
+      "bytes": 4157,
       "path": "scripts/viz/report/fig15_prior_research_synthesis.py",
-      "sha256": "96e8511cf056fdba548158cfa686a5c5ffdc8bacc827340de440fd95919fefc7"
+      "sha256": "f1fa74e14a53c60908610e33fa144c3728a876329449c8c3e53d08dcb647c8a7"
+    },
+    {
+      "bytes": 19992,
+      "path": "scripts/viz/report/fig16_korea_gap_decomposition.py",
+      "sha256": "4333be6dd8cd1f8923f547217aae0b1fa35521ebd63b5d03839aa017e33c9635"
+    },
+    {
+      "bytes": 20600,
+      "path": "scripts/viz/report/fig17_kdi_kiep_peer_institutions.py",
+      "sha256": "ea93b2cb20d524f6012f09e9e4cf47f09832a3c7e0fbe9537ee9f6604b96f978"
+    },
+    {
+      "bytes": 15420,
+      "path": "scripts/viz/report/fig18_korea_integrated_source_structure.py",
+      "sha256": "e7bdd4194a71dc48f29574287269edb38cd52587d92b6dc9d6086b4dbffad314"
     },
     {
       "bytes": 4552,
@@ -677,19 +774,19 @@
       "sha256": "ad5e46a2efa92b78f0d3affab6b94f7e034d41d86b583eedef72036a3cc1a9b3"
     },
     {
-      "bytes": 3079,
+      "bytes": 3132,
       "path": "scripts/viz/report/si_country_domain_demand_supply_delta_heatmap.py",
-      "sha256": "f77a9325c53a0ab392b9800a74fb36dca388a35186e27ad9f9d03466596bb620"
+      "sha256": "f43e4b4d37f0fe1db389cd96cd5cc1833b05194cf0beef93881975309e72b548"
     },
     {
-      "bytes": 8324,
+      "bytes": 8333,
       "path": "scripts/viz/report/si_density_robustness_policy_source_country.py",
-      "sha256": "01de02d95dbd74a079c0557c824d1ebd04f75c9bc3fb8729df767ecb5a229a82"
+      "sha256": "1d6c4e45094c1fa7e03ade8bd1b5e2b71ddad776c5683687ae28d6d77682c0b2"
     },
     {
-      "bytes": 7964,
+      "bytes": 7973,
       "path": "scripts/viz/report/si_density_robustness_policy_source_type.py",
-      "sha256": "29d9756181dfe2186e241b80cdbe8bf422c7df69d79bb29d1882df16418977ae"
+      "sha256": "3064029ee7c96652f209c830f1acaab2e5f6d15a84dd5a5ea56d61ce7e6689d1"
     },
     {
       "bytes": 4454,
@@ -697,9 +794,14 @@
       "sha256": "bfe0f2a17c6d27071ea604a7ee79bd7f50ad376146e20c6a59f8f549a8b2c922"
     },
     {
-      "bytes": 17462,
+      "bytes": 15306,
+      "path": "scripts/viz/report/si_korea_robustness.py",
+      "sha256": "048de818acc09ace49e8ca77e0e6d39e641cec6b6df6810f77c1f7622c9128bf"
+    },
+    {
+      "bytes": 17502,
       "path": "scripts/viz/report/si_policy_research_flow_network_backbone_sensitivity.py",
-      "sha256": "48773ce99ade06cf667efa2eb0ddabaee5a2c280de1e0993c627fe4e4eeca2f1"
+      "sha256": "fc1063e28811178ecfd16d0899f64548b84992ed93e52b70700a8444525a8c62"
     },
     {
       "bytes": 8065,
@@ -717,7 +819,7 @@
     "Overton": "2025.02"
   },
   "environment": {
-    "chrome": "Google Chrome 150.0.7871.46",
+    "chrome": "Google Chrome 152.0.7977.82",
     "packages": {
       "Pillow": "12.0.0",
       "adjustText": "1.3.0",

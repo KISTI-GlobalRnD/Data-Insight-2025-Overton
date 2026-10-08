@@ -1,0 +1,117 @@
+{
+  "overton_snapshot": "2026-10-04",
+  "openalex_snapshot": "2026-06-25",
+  "analysis_date": "2026-10-08",
+  "doi_rule": "lowercase DOI; remove Unicode format controls and whitespace; input-bound fresh mapping; exclude DOIs mapping to multiple distinct work IDs; distinct document/work pairs",
+  "country_rule": "first author_position=first; ROR ISO2 mode by affiliation row frequency, alphabetical tie break; otherwise exactly one OA institution ISO2; otherwise unresolved",
+  "country_fallback_difference": "2025 baseline used raw_string_country_code; absent in 20260625, replaced by oaid_i_country_code",
+  "domain_rule": "distinct work/domain; multiple domains allowed",
+  "enrichment": {
+    "database": "openalex_20260625_raw",
+    "works": 8498349,
+    "chunks": 340,
+    "current_mapping_missing_works": 0,
+    "parquet_collection_sha256": "f39f9b13357de467377460fa4aa2f8a6ed8d5176f2cccad9e0771d37e6fb1c57"
+  },
+  "doi_mapping": {
+    "database": "openalex_20260625_raw",
+    "normalized_dois": 8767042,
+    "requested_sha256": "c577b0e595b09ba93cf7119aff565238dfa7b73787b4cd409aee35fbb9221c1d",
+    "normalization": "lowercase, remove Unicode format controls and whitespace",
+    "chunks": 176,
+    "mapping_rows": 8498331,
+    "matched_dois": 8386474,
+    "matched_works": 8498331,
+    "unexpected_returned_rows": 23
+  },
+  "inputs": [
+    {
+      "file": "doi_openalex.parquet",
+      "bytes": 185995642,
+      "sha256": "9d17e7de4d5f4f1aba33b9a05ada1497c5d0b2961b4d48aadc87adaedbfb3a91"
+    },
+    {
+      "file": "01__Overton_20261004_raw__MAIN.parquet",
+      "bytes": 4356228313,
+      "sha256": "12850b49522b2169e17ec93f90bf7c3aedba721f6a05313a92bc4824e3c1db6f"
+    },
+    {
+      "file": "09__Overton_20261004_raw__SUB__policy_source_country.parquet",
+      "bytes": 219556211,
+      "sha256": "065d6abcdd1c2279094cf60a57569ed8d8f0e4aabf9c67ef3e8d707b87084aa2"
+    },
+    {
+      "file": "10__Overton_20261004_raw__SUB__policy_source_type.parquet",
+      "bytes": 213854426,
+      "sha256": "2f58c155566f05e7231616aec1d05f7e18fb33c79052714621cf3e25591866c4"
+    },
+    {
+      "file": "12__Overton_20261004_raw__SUB__dois_cited.parquet",
+      "bytes": 1436362376,
+      "sha256": "5e5e2b4e7a7d3ab153ebe09570f7145c649119cf9156d4da45c5fa224962ebed"
+    }
+  ],
+  "scripts": {
+    "map_online_update_202610.py": "ec2878bc411e8144d8559d7cab60a7fdacf37a0d8ae6e46b78eca8bed1af2180",
+    "extract_online_update_202610.py": "e1e911cba13948ae537a7d250de7a1df817d00b9ca742ff9515a2bac9a0ea61e",
+    "analyze_online_update_202610.py": "b551e830008abbea4c44cabb3d59cc37616069776991a4ad413b9f6038654d59",
+    "plot_online_update_202610.py": "f1216a2574c23df972449b58f9b44b435f1ce033ef7c9fa1aa5baf09ca8fd088",
+    "refine_online_update_202610.py": "8ad6e17a6e9a02ceb1297200b29267c8839cea34d59e2c1a9695fb1bc60bdee7",
+    "write_online_update_202610.py": "29639d6af326b1bac2ae82c5e9bc395cba2bf115744370ff172c60ac99aa2aef",
+    "update_online_landing_202610.py": "d86ded06bfa47f3bb8bd70ea5a33ab7fb9ad10be5750c5aa9a2cede265fff356",
+    "package_online_update_202610.py": "d16923e136a853391e9de729422d591926766287c0351e5b616e6b052ea305a6"
+  },
+  "public_aggregate_sha256": {
+    "country_assignment.csv": "9f66870f6b768ea6d95d8b9947dd4eb16e898756bca8abc6deb118b8a057ef6d",
+    "country_coverage_by_policy_source.csv": "0f042244b7ba1297b6dfe3b63af424b329268ff8b5fab19ea3c79d8b4715d887",
+    "country_domain.csv": "dba5af72a1655b1f1e8342b39c2ef33a31b8ad6a01247c621b075997a4809fdf",
+    "country_ties.csv": "090431e3c1acf1ca10133cf7fe53d058190094d8bc75c5f1df6a3f2f4cdf7c16",
+    "data_profile.csv": "47e18fc7dc04f8dcfecb7fce1a2fde728b30298389e9a067d6a8bb1f95e3b9b0",
+    "direction_domains.csv": "db15eec9dce6af498b0901dcb00d772a77f576751948a0480923c340e90ca7c1",
+    "doi_linkage_audit.csv": "4e7916f38e8fd47d6ec49c3db07b7c0c5a8e18f326a9be28910fa2f1dc3b66b1",
+    "edition_indicator_comparison.csv": "0613af889b4877f00ec128d104c35c5688f81d8471d7176cce9872760b7cc15c",
+    "expected_country_domain_reference.csv": "ffd2c211722461002a9318e8870f7b380269c7846d8bebd897f860ba4918b66b",
+    "korea_common_institution_scopes.csv": "87373ec177d0e26d3dcd598d39449907806a24bcdf7ea2b83fde0e83e799acab",
+    "korea_common_institutions.csv": "8295dee15306b235fc4a3a3d86c8fb0aca4da74b44dd78b51ad930dd0bb546ef",
+    "korea_country_sensitivity.csv": "15ad828de918d143f8ad7d29d1921fb3502a9c8c7a295b203975b910810cd6df",
+    "korea_direction_source_groups.csv": "8da46eb1b9beccfe477f6a60107da62f825fb051b271d7911a04c9ff1d0a6df4",
+    "korea_domain_weighting_sensitivity.csv": "f3afca5dc8c8837681ffaf818ebfe557d3cedc289aec0d119d9769c2d9361e88",
+    "korea_expected_country_population.csv": "74b584cd245e04020367e50b8073c3d6f5d515c2af94ee897c5299551e2635e9",
+    "korea_expected_country_shares.csv": "91168038c8489bcf7b2084b5cdc55e77867a782bd3b9b601b019831f9dcf8d25",
+    "korea_expected_country_variants.csv": "43a06109866f3c9ec5f4148571a057e6bb70e208a025b269ff61e66937b79c3c",
+    "korea_expected_domain_weights.csv": "e16f926ff74efb219ef7715dbb87a5160354d7d51cb7ed4db1ff4820e0eea130",
+    "korea_inbound_sources.csv": "a80432381972120a878bc987dc9a0119e3a913c591d1a94fe5cea6e3c3e12f26",
+    "korea_institution_domains.csv": "0371b3bace35909bb087923f9c9a1862b1e532bf2e7f6a69300fbe51a6591420",
+    "korea_institutions.csv": "3d5183d5faa5a1e7054427dd8a03292f4d8b0907eed0b937f4ef176098cd2775",
+    "korea_outbound_countries.csv": "c633c8a73bcc3221577c8c7e90642cd27c72121d16e3d7ec39721955d7cabfb5",
+    "korea_source_group_decomposition.csv": "c00a0de8fa75b3183a420f900e06081c50835ffb4eb8922618b7cb0c3c49a711",
+    "policy_research_flow.csv": "43629ca5bdb5d72e8ee6e41ae84d76ad8b29b5718d1965c0f8566af418cd515d",
+    "policy_sources.csv": "796bba9b057140a3c80bee802244393cfd9044f95b81675c5a81ac4fced36249",
+    "publication_year.csv": "82297d26ffb0d3360c20b79626deb332829c5f00ba87b78949b50f5198f726ac",
+    "source_type_domains.csv": "08dd6684f2b2a895487ef0140f673875b459cf4eb91ae20e07d80be107da5a09",
+    "source_types.csv": "e1c922805882dbe5a412055762ff39ed88f85dfa4cf9db3f44d3f3282dbc24f7",
+    "topic_metrics.csv": "e8d1466291a4a62ddf0fe098a1d0eec867503e35421f12d9de22ccca3b5d4f21"
+  },
+  "refinement": {
+    "expected_country_rule": "Country+domain-known Korean citation pairs; each pair split equally over its distinct assigned domains; reference uses known-country cited unique works within each domain. Observed share uses exactly the same eligible pairs.",
+    "source_groups": "Exclusive: any top-level think tank tag versus all remaining documents, explicitly including type-unassigned documents. Symmetric two-group descriptive decomposition of domain-assignment social-science gap; not causal.",
+    "common_institutions": "Exact source ID intersection with all nine source IDs in the published baseline institution table; all comparisons restricted within the latest snapshot, not behavioral time trends.",
+    "weighting": "Full citation-domain assignments; distinct work-domain assignments; equal document weight among documents with domains; fractional citation-domain weight summing to one per citation.",
+    "baseline_inputs": {
+      "20251026_korea_policy_source_concentration.csv": "0f849f0ebf14b951ba7865651eefd525e1c37d9130d47d657a36af5ad3e0bb33",
+      "20251026_korea_field_gap_weighting_sensitivity.csv": "3a2e995e99161840b13324ee8c1f67da9d654f98a0d8a0da4fc710badc5b1aa5",
+      "20251026_korea_research_country_missingness.csv": "d77efbcd678e1699d2c4a3cd4239d3ffc0f84247620065b94f0b9c1179947317",
+      "20251026_korea_policy_research_flows_top10.csv": "7f5d6d9ab7a3689b0b46b5f4f958c54dec5d722ca5c3b989906a97f78e533530"
+    }
+  },
+  "web_source_sha256": {
+    "Data_Insight/SI/update_202603.qmd": "bdb066f19d69e7b3c376fa68d01e401f92c2ab4da60048dd924bab99dd8273ab",
+    "Data_Insight/SI/update_202603_en.qmd": "9c3239a51eed9f093f9a3a6d39ac010ecf436e9d839b32fb5e14bed96af27c7d",
+    "Data_Insight/index.html": "fa273d4db333773995c09ba112b84feae6ea249ebcd397434a177a1570d17d4d",
+    "Data_Insight/Assets/Site/promo.js": "8c7e4b7acff1ce0123d02eee9238b3766556abcd6b9790f2daa282a263a8726c"
+  },
+  "public_support_sha256": {
+    "README_KO.md": "188f0729b05b48d6749f0b7581acabc81427efc9c4e5ce03de8d9591911c0f3a",
+    "headline_metrics.json": "5d463f3a8ce9f1d92fc46fcb2c37f000e09ffe92b161378e7de2ed32d82f4872"
+  }
+}

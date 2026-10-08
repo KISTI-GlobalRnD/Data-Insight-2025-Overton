@@ -1,0 +1,9 @@
+dimension,stratum,citations,assigned,missing,missing_share
+overall,All Korea policy-document citations,32935,23943,8992,0.2730226203127372
+institution,KDI,26837,19133,7704,0.2870663636024891
+institution,KIEP,3965,3005,960,0.2421185372005044
+institution,Other institutions,2133,1805,328,0.1537740271917487
+domain assignments,Health Sciences,3619,2952,667,0.1843050566454822
+domain assignments,Life Sciences,1341,1174,167,0.12453392990305742
+domain assignments,Physical Sciences,3531,2698,833,0.23591050693854432
+domain assignments,Social Sciences,29920,21890,8030,0.26838235294117646

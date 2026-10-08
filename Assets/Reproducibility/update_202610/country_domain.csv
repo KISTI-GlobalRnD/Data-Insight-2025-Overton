@@ -1,0 +1,742 @@
+policy_country,domain,citation_rows
+UK,Health Sciences,928052
+USA,Physical Sciences,2950491
+Chile,Physical Sciences,15918
+Australia,Physical Sciences,451392
+Kenya,Social Sciences,40362
+Norway,Physical Sciences,152342
+Latvia,Social Sciences,24838
+Saudi Arabia,Social Sciences,3535
+Sweden,Physical Sciences,241923
+EU,Social Sciences,775289
+Japan,Physical Sciences,121245
+Finland,Health Sciences,170310
+Brazil,Life Sciences,178065
+France,Health Sciences,310653
+Germany,Health Sciences,544788
+Turkey,Social Sciences,59246
+Switzerland,Social Sciences,212603
+South Korea,Physical Sciences,98019
+IGO,Life Sciences,1161728
+Canada,Social Sciences,494570
+Spain,Social Sciences,379905
+New Zealand,Physical Sciences,138228
+Portugal,Life Sciences,33325
+Ireland,Physical Sciences,110788
+Belgium,Physical Sciences,95626
+Mexico,Health Sciences,6844
+Italy,Health Sciences,87778
+Namibia,Physical Sciences,4482
+Cambodia,Life Sciences,1331
+Uruguay,Social Sciences,14564
+Singapore,Physical Sciences,13793
+China,Social Sciences,10169
+Bosnia and Herzegovina,Social Sciences,1979
+North Macedonia,Life Sciences,2975
+Peru,Life Sciences,11432
+Poland,Social Sciences,128759
+Netherlands,Life Sciences,89315
+Austria,Physical Sciences,69152
+Mauritius,Health Sciences,940
+Estonia,Health Sciences,16002
+South Africa,Life Sciences,22609
+Croatia,Health Sciences,5236
+Denmark,Health Sciences,61723
+Kuwait,Social Sciences,2516
+Philippines,Life Sciences,24864
+Egypt,Physical Sciences,6879
+Malaysia,Physical Sciences,5070
+Colombia,Life Sciences,13720
+Czech Republic,Life Sciences,2735
+India,Physical Sciences,33178
+Lithuania,Social Sciences,4204
+Romania,Social Sciences,5988
+Paraguay,Social Sciences,7647
+Slovakia,Health Sciences,11021
+Hungary,Social Sciences,3913
+Moldova,Social Sciences,3025
+Qatar,Social Sciences,6311
+Nigeria,Physical Sciences,3601
+Bhutan,Physical Sciences,1344
+Liberia,Physical Sciences,397
+Slovenia,Physical Sciences,6327
+Uganda,Physical Sciences,7998
+Nepal,Social Sciences,10264
+Lebanon,Social Sciences,2314
+Costa Rica,Physical Sciences,2714
+Rwanda,Physical Sciences,4360
+Bulgaria,Health Sciences,2739
+Cyprus,Social Sciences,1552
+Argentina,Life Sciences,8844
+Sri Lanka,Social Sciences,16229
+Luxembourg,Health Sciences,6319
+Mongolia,Life Sciences,53
+Thailand,Life Sciences,4966
+Serbia,Life Sciences,5471
+Ghana,Physical Sciences,1467
+Benin,Social Sciences,733
+Indonesia,Life Sciences,9104
+Ethiopia,Physical Sciences,2848
+Bahamas,Social Sciences,446
+Malawi,Social Sciences,366
+Israel,Social Sciences,9207
+Bangladesh,Social Sciences,1564
+Iraq,Social Sciences,988
+Armenia,Social Sciences,651
+Venezuela,Health Sciences,3724
+Tanzania,Life Sciences,4823
+Pakistan,Social Sciences,5312
+Greece,Physical Sciences,5099
+Laos,Life Sciences,727
+Maldives,Health Sciences,972
+Russia,Physical Sciences,2130
+Taiwan,Physical Sciences,5281
+Morocco,Social Sciences,2698
+Afghanistan,Social Sciences,1702
+Kosovo,Health Sciences,2299
+Bolivia,Physical Sciences,1625
+Nicaragua,Social Sciences,800
+Dominican Republic,Health Sciences,744
+El Salvador,Physical Sciences,950
+Kyrgyzstan,Social Sciences,323
+Belarus,Health Sciences,139
+Ukraine,Physical Sciences,2343
+Jamaica,Physical Sciences,581
+Azerbaijan,Social Sciences,803
+Cape Verde,Social Sciences,433
+Mozambique,Health Sciences,989
+Montenegro,Physical Sciences,730
+Papua New Guinea,Health Sciences,367
+Oman,Physical Sciences,1341
+Georgia,Social Sciences,1412
+Iran,Physical Sciences,2427
+Botswana,Life Sciences,862
+Cuba,Physical Sciences,225
+Ecuador,Life Sciences,1073
+Yemen,Social Sciences,117
+Tunisia,Health Sciences,288
+Samoa,Health Sciences,196
+Timor Leste,Life Sciences,43
+Algeria,Physical Sciences,268
+Trinidad and Tobago,Health Sciences,447
+Eswatini,Social Sciences,1503
+Bahrain,Social Sciences,84
+Vietnam,Social Sciences,808
+Iceland,Life Sciences,1668
+Albania,Physical Sciences,378
+Somalia,Health Sciences,214
+Madagascar,Social Sciences,54
+Sierra Leone,Social Sciences,315
+Brunei,Social Sciences,685
+Panama,Life Sciences,1378
+Zimbabwe,Social Sciences,675
+Fiji,Life Sciences,673
+Tajikistan,Health Sciences,322
+Uzbekistan,Social Sciences,67
+Ivory Coast,Life Sciences,321
+Jordan,Physical Sciences,677
+Tonga,Social Sciences,50
+Zambia,Social Sciences,640
+Belize,Physical Sciences,1728
+Guinea,Health Sciences,366
+United Arab Emirates,Life Sciences,320
+Kazakhstan,Health Sciences,43
+Myanmar,Social Sciences,1112
+Barbados,Health Sciences,147
+Guyana,Health Sciences,223
+Micronesia,Life Sciences,24
+San Marino,Health Sciences,197
+Burundi,Life Sciences,19
+Burkina Faso,Health Sciences,82
+Democratic Republic Of The Congo,Social Sciences,259
+Andorra,Social Sciences,286
+Cameroon,Life Sciences,165
+Senegal,Health Sciences,405
+Suriname,Health Sciences,63
+Haiti,Health Sciences,138
+Togo,Physical Sciences,58
+Malta,Health Sciences,161
+Mauritania,Social Sciences,64
+Sao Tome and Principe,Life Sciences,149
+Seychelles,Life Sciences,124
+Guatemala,Life Sciences,198
+Lesotho,Health Sciences,17
+Mali,Social Sciences,60
+Vanuatu,Physical Sciences,66
+Honduras,Health Sciences,46
+Kiribati,Health Sciences,74
+Solomon Islands,Physical Sciences,38
+South Sudan,Physical Sciences,75
+Syria,Health Sciences,104
+Monaco,Physical Sciences,34
+Palestine,Life Sciences,11
+Niger,Health Sciences,13
+Palau,Health Sciences,5
+Saint Kitts and Nevis,Life Sciences,22
+Sudan,Life Sciences,77
+Central African Republic,Social Sciences,10
+Gambia,Social Sciences,34
+Liechtenstein,Social Sciences,25
+Angola,Physical Sciences,14
+Marshall Islands,Health Sciences,14
+Eritrea,Health Sciences,4
+Guinea-Bissau,Social Sciences,3
+Chad,Health Sciences,1
+Djibouti,Health Sciences,4
+Tuvalu,Social Sciences,2
+USA,Health Sciences,3537738
+Australia,Health Sciences,421337
+IGO,Social Sciences,3754240
+Argentina,Social Sciences,29266
+Croatia,Physical Sciences,8401
+Spain,Life Sciences,223315
+Japan,Health Sciences,122164
+EU,Life Sciences,392314
+France,Physical Sciences,341065
+South Africa,Social Sciences,62171
+Austria,Health Sciences,30891
+Indonesia,Social Sciences,30528
+Malaysia,Health Sciences,48616
+Brazil,Social Sciences,184736
+Estonia,Physical Sciences,34012
+Norway,Health Sciences,142320
+Germany,Physical Sciences,396495
+Peru,Social Sciences,62742
+Sweden,Health Sciences,185452
+Latvia,Life Sciences,13577
+Serbia,Social Sciences,5710
+New Zealand,Health Sciences,63782
+Canada,Life Sciences,342491
+UK,Physical Sciences,462140
+Netherlands,Social Sciences,280074
+Turkey,Life Sciences,28520
+Belgium,Health Sciences,99804
+Uganda,Health Sciences,25834
+Chile,Health Sciences,31127
+Czech Republic,Social Sciences,11232
+Colombia,Social Sciences,63552
+Portugal,Social Sciences,52351
+Switzerland,Life Sciences,136578
+Poland,Life Sciences,95552
+Bulgaria,Physical Sciences,28394
+Botswana,Social Sciences,7995
+Italy,Physical Sciences,93627
+Ireland,Health Sciences,99438
+South Korea,Health Sciences,73099
+Kenya,Life Sciences,8553
+Mongolia,Social Sciences,1107
+Finland,Physical Sciences,115165
+Venezuela,Physical Sciences,9462
+Uruguay,Life Sciences,13786
+Slovenia,Health Sciences,13747
+Cyprus,Life Sciences,3101
+Cameroon,Social Sciences,1066
+Nigeria,Health Sciences,2560
+Israel,Life Sciences,1906
+Ghana,Health Sciences,2257
+Mexico,Physical Sciences,12660
+Denmark,Physical Sciences,74782
+Ethiopia,Health Sciences,4279
+Philippines,Social Sciences,32698
+Trinidad and Tobago,Physical Sciences,1565
+North Macedonia,Social Sciences,1744
+Guatemala,Social Sciences,2722
+Syria,Physical Sciences,33
+Paraguay,Life Sciences,10998
+Nepal,Life Sciences,2384
+Senegal,Physical Sciences,1148
+India,Health Sciences,12272
+China,Life Sciences,3666
+Rwanda,Health Sciences,3987
+Russia,Health Sciences,6889
+Singapore,Health Sciences,15295
+Andorra,Life Sciences,130
+Hungary,Life Sciences,2306
+Moldova,Life Sciences,6021
+Mozambique,Physical Sciences,1033
+Luxembourg,Physical Sciences,2986
+Iceland,Social Sciences,6360
+Ecuador,Social Sciences,2459
+Egypt,Health Sciences,3560
+Taiwan,Health Sciences,11974
+Tanzania,Social Sciences,4431
+Qatar,Life Sciences,2810
+Myanmar,Life Sciences,1232
+Oman,Health Sciences,922
+Jamaica,Health Sciences,1124
+Sri Lanka,Life Sciences,2703
+Greece,Health Sciences,1414
+Mauritius,Physical Sciences,4151
+United Arab Emirates,Social Sciences,3099
+Maldives,Physical Sciences,2450
+Barbados,Physical Sciences,536
+Cambodia,Social Sciences,3910
+El Salvador,Health Sciences,4612
+Slovakia,Physical Sciences,5014
+Bhutan,Health Sciences,942
+Bolivia,Health Sciences,741
+Jordan,Health Sciences,1452
+Thailand,Social Sciences,6707
+Iran,Health Sciences,721
+Cape Verde,Life Sciences,266
+Kazakhstan,Physical Sciences,143
+Guyana,Physical Sciences,1158
+Malta,Physical Sciences,177
+Nicaragua,Life Sciences,551
+Eswatini,Life Sciences,223
+Costa Rica,Health Sciences,2756
+Iraq,Life Sciences,248
+Somalia,Physical Sciences,379
+Kiribati,Physical Sciences,452
+Lithuania,Life Sciences,524
+Liberia,Health Sciences,1057
+Kyrgyzstan,Life Sciences,261
+Laos,Social Sciences,60
+Romania,Life Sciences,2821
+Panama,Social Sciences,1093
+Lebanon,Life Sciences,642
+Belarus,Physical Sciences,169
+Ukraine,Health Sciences,660
+Ivory Coast,Social Sciences,1482
+Timor Leste,Social Sciences,525
+Bangladesh,Life Sciences,188
+Bosnia and Herzegovina,Life Sciences,395
+Bahamas,Life Sciences,416
+Vietnam,Life Sciences,157
+Tajikistan,Physical Sciences,132
+Georgia,Life Sciences,2090
+Uzbekistan,Life Sciences,77
+Sierra Leone,Life Sciences,140
+Brunei,Life Sciences,747
+Dominican Republic,Physical Sciences,1521
+Saudi Arabia,Life Sciences,1608
+Fiji,Social Sciences,509
+Kuwait,Life Sciences,627
+Pakistan,Life Sciences,854
+Montenegro,Health Sciences,591
+Afghanistan,Life Sciences,701
+Papua New Guinea,Physical Sciences,545
+Palau,Physical Sciences,177
+Togo,Health Sciences,102
+Honduras,Physical Sciences,244
+Burkina Faso,Physical Sciences,86
+Angola,Health Sciences,71
+Tunisia,Physical Sciences,191
+Vanuatu,Health Sciences,133
+Lesotho,Physical Sciences,53
+Micronesia,Social Sciences,75
+Palestine,Social Sciences,379
+San Marino,Physical Sciences,13
+Saint Kitts and Nevis,Social Sciences,850
+Bahrain,Life Sciences,65
+Albania,Health Sciences,142
+Seychelles,Social Sciences,193
+Democratic Republic Of The Congo,Life Sciences,68
+Sao Tome and Principe,Social Sciences,75
+Sudan,Social Sciences,188
+Morocco,Life Sciences,570
+Niger,Physical Sciences,14
+Haiti,Physical Sciences,327
+Malawi,Life Sciences,91
+Algeria,Health Sciences,71
+Suriname,Physical Sciences,142
+Burundi,Social Sciences,80
+Samoa,Physical Sciences,77
+Armenia,Life Sciences,26
+Namibia,Health Sciences,390
+Liechtenstein,Life Sciences,12
+Madagascar,Life Sciences,48
+Benin,Life Sciences,80
+Guinea,Physical Sciences,125
+Kosovo,Physical Sciences,371
+Zambia,Life Sciences,193
+Cuba,Health Sciences,134
+Mauritania,Life Sciences,42
+Zimbabwe,Life Sciences,52
+Belize,Health Sciences,63
+Marshall Islands,Physical Sciences,9
+Central African Republic,Life Sciences,18
+Azerbaijan,Life Sciences,51
+Yemen,Life Sciences,4
+Mali,Life Sciences,34
+Tonga,Life Sciences,13
+Gambia,Life Sciences,21
+South Sudan,Health Sciences,15
+Chad,Physical Sciences,8
+Solomon Islands,Health Sciences,7
+Eritrea,Physical Sciences,1
+Monaco,Health Sciences,1
+Turkmenistan,Health Sciences,3
+Djibouti,Physical Sciences,1
+Vatican City,Physical Sciences,2
+USA,Social Sciences,3209928
+Egypt,Social Sciences,31845
+Australia,Social Sciences,511638
+Sweden,Social Sciences,355960
+IGO,Health Sciences,1593064
+United Arab Emirates,Health Sciences,338
+Japan,Social Sciences,73623
+EU,Physical Sciences,574023
+Ireland,Social Sciences,129455
+Chile,Social Sciences,60621
+Germany,Life Sciences,226166
+Italy,Life Sciences,71372
+UK,Life Sciences,375854
+Latvia,Physical Sciences,17113
+France,Life Sciences,413940
+Portugal,Health Sciences,83065
+Switzerland,Physical Sciences,169122
+Romania,Physical Sciences,7582
+Canada,Physical Sciences,682679
+Finland,Life Sciences,96280
+Denmark,Life Sciences,32956
+South Korea,Social Sciences,353390
+Austria,Social Sciences,106022
+Norway,Social Sciences,237093
+Netherlands,Health Sciences,192715
+Czech Republic,Health Sciences,5904
+Uruguay,Physical Sciences,10853
+Singapore,Social Sciences,24380
+Peru,Health Sciences,15178
+Spain,Physical Sciences,237737
+South Africa,Health Sciences,51225
+Brazil,Health Sciences,100065
+Ghana,Social Sciences,9012
+Poland,Physical Sciences,297191
+New Zealand,Social Sciences,81844
+Colombia,Health Sciences,31805
+Belgium,Social Sciences,171809
+Russia,Social Sciences,7056
+Taiwan,Social Sciences,11366
+Pakistan,Physical Sciences,2644
+Malaysia,Social Sciences,12447
+Panama,Health Sciences,1653
+India,Social Sciences,26032
+Serbia,Health Sciences,17546
+Uganda,Social Sciences,19759
+Namibia,Social Sciences,912
+Mexico,Life Sciences,34258
+Cyprus,Physical Sciences,4167
+Philippines,Health Sciences,18653
+Andorra,Physical Sciences,108
+Kenya,Physical Sciences,9139
+Jamaica,Social Sciences,2700
+Paraguay,Physical Sciences,10655
+Greece,Social Sciences,8833
+Iran,Social Sciences,5960
+Slovenia,Social Sciences,13231
+Bulgaria,Life Sciences,6839
+Nepal,Physical Sciences,5925
+China,Physical Sciences,10029
+Nigeria,Social Sciences,12173
+Venezuela,Life Sciences,2380
+Turkey,Physical Sciences,24216
+Sri Lanka,Physical Sciences,4109
+Bolivia,Social Sciences,4889
+Cambodia,Health Sciences,2471
+El Salvador,Social Sciences,2064
+Ecuador,Health Sciences,1985
+Costa Rica,Social Sciences,1736
+Kuwait,Physical Sciences,3276
+Estonia,Life Sciences,15927
+Argentina,Health Sciences,16739
+Thailand,Health Sciences,10659
+Slovakia,Life Sciences,4056
+Tanzania,Health Sciences,4202
+Iceland,Health Sciences,4648
+Israel,Physical Sciences,2770
+Hungary,Physical Sciences,3906
+Indonesia,Health Sciences,8521
+Rwanda,Social Sciences,5899
+Mauritius,Life Sciences,902
+Bosnia and Herzegovina,Physical Sciences,533
+Lebanon,Physical Sciences,1094
+Bangladesh,Physical Sciences,426
+Ethiopia,Social Sciences,4985
+Mozambique,Life Sciences,1124
+Maldives,Life Sciences,571
+Croatia,Life Sciences,4265
+Cuba,Social Sciences,1222
+Myanmar,Physical Sciences,1518
+Moldova,Physical Sciences,2695
+North Macedonia,Health Sciences,7698
+Saudi Arabia,Physical Sciences,1106
+Fiji,Health Sciences,1358
+Luxembourg,Life Sciences,1385
+Liberia,Social Sciences,1108
+Azerbaijan,Physical Sciences,349
+Cape Verde,Physical Sciences,394
+Iraq,Physical Sciences,1029
+Ukraine,Social Sciences,1753
+Kosovo,Life Sciences,589
+Nicaragua,Physical Sciences,395
+Benin,Physical Sciences,257
+Qatar,Physical Sciences,1545
+Lithuania,Physical Sciences,817
+Trinidad and Tobago,Life Sciences,315
+Morocco,Physical Sciences,880
+Georgia,Physical Sciences,1319
+Eswatini,Physical Sciences,477
+Belize,Social Sciences,918
+Oman,Social Sciences,1300
+Guatemala,Health Sciences,415
+Uzbekistan,Physical Sciences,112
+Botswana,Health Sciences,765
+Brunei,Physical Sciences,297
+Madagascar,Physical Sciences,229
+Montenegro,Social Sciences,441
+Sierra Leone,Physical Sciences,326
+Zimbabwe,Physical Sciences,244
+Suriname,Life Sciences,34
+Dominican Republic,Life Sciences,698
+Afghanistan,Physical Sciences,700
+Bahamas,Physical Sciences,415
+Malta,Life Sciences,43
+Mongolia,Health Sciences,110
+Somalia,Life Sciences,237
+Jordan,Social Sciences,936
+Malawi,Physical Sciences,84
+Bhutan,Social Sciences,929
+Burkina Faso,Life Sciences,81
+Vanuatu,Social Sciences,234
+Bahrain,Physical Sciences,335
+Angola,Social Sciences,159
+Albania,Social Sciences,1035
+Cameroon,Health Sciences,435
+Kiribati,Life Sciences,116
+Barbados,Life Sciences,85
+Samoa,Life Sciences,61
+Papua New Guinea,Life Sciences,272
+Honduras,Life Sciences,81
+San Marino,Life Sciences,44
+Burundi,Health Sciences,73
+Sudan,Health Sciences,211
+Seychelles,Health Sciences,179
+Haiti,Life Sciences,183
+Sao Tome and Principe,Health Sciences,85
+Democratic Republic Of The Congo,Physical Sciences,164
+Vietnam,Physical Sciences,369
+Zambia,Physical Sciences,191
+Niger,Life Sciences,20
+Syria,Life Sciences,26
+Tunisia,Life Sciences,176
+Mauritania,Physical Sciences,84
+Guyana,Life Sciences,332
+Togo,Social Sciences,183
+Laos,Health Sciences,175
+Armenia,Physical Sciences,222
+Ivory Coast,Health Sciences,158
+Algeria,Social Sciences,172
+Belarus,Life Sciences,89
+Guinea,Life Sciences,113
+Solomon Islands,Social Sciences,96
+Saint Kitts and Nevis,Health Sciences,13
+Senegal,Life Sciences,522
+Tajikistan,Life Sciences,94
+Gambia,Physical Sciences,65
+Kyrgyzstan,Physical Sciences,86
+Palestine,Health Sciences,34
+Timor Leste,Health Sciences,41
+Tonga,Physical Sciences,53
+Lesotho,Life Sciences,6
+Central African Republic,Physical Sciences,6
+Mali,Physical Sciences,34
+Palau,Life Sciences,28
+Kazakhstan,Life Sciences,19
+South Sudan,Social Sciences,58
+Yemen,Physical Sciences,19
+Micronesia,Health Sciences,23
+Nauru,Social Sciences,3
+Guinea-Bissau,Physical Sciences,4
+Marshall Islands,Life Sciences,2
+Chad,Life Sciences,7
+Monaco,Social Sciences,5
+Eritrea,Life Sciences,2
+Libya,Life Sciences,2
+Liechtenstein,Physical Sciences,2
+Turkmenistan,Social Sciences,1
+Djibouti,Life Sciences,1
+USA,Life Sciences,1760466
+IGO,Physical Sciences,1993016
+Australia,Life Sciences,297607
+Norway,Life Sciences,87670
+Estonia,Social Sciences,40977
+UK,Social Sciences,1028381
+Switzerland,Health Sciences,235403
+Italy,Social Sciences,204957
+EU,Health Sciences,352081
+Bulgaria,Social Sciences,4086
+Turkey,Health Sciences,39470
+France,Social Sciences,347238
+Germany,Social Sciences,1256312
+Netherlands,Physical Sciences,121553
+Ireland,Life Sciences,57610
+New Zealand,Life Sciences,67688
+Canada,Health Sciences,532783
+Spain,Health Sciences,436816
+Belgium,Life Sciences,64799
+Finland,Social Sciences,289790
+Sweden,Life Sciences,96857
+Peru,Physical Sciences,17001
+Uruguay,Health Sciences,13350
+Portugal,Physical Sciences,25560
+Poland,Health Sciences,31936
+Brazil,Physical Sciences,164549
+Denmark,Social Sciences,87800
+China,Health Sciences,6155
+Japan,Life Sciences,101849
+Kenya,Health Sciences,11735
+Venezuela,Social Sciences,29025
+Colombia,Physical Sciences,19172
+Paraguay,Health Sciences,11492
+Philippines,Physical Sciences,44593
+South Africa,Physical Sciences,34940
+Dominican Republic,Social Sciences,3680
+Indonesia,Physical Sciences,14258
+Mongolia,Physical Sciences,512
+Slovakia,Social Sciences,10739
+Ethiopia,Life Sciences,3414
+Senegal,Social Sciences,3260
+Chile,Life Sciences,10137
+Croatia,Social Sciences,8929
+Saudi Arabia,Health Sciences,6736
+Cambodia,Physical Sciences,1786
+Israel,Health Sciences,5331
+Luxembourg,Social Sciences,23278
+Czech Republic,Physical Sciences,5850
+Brunei,Health Sciences,3248
+Singapore,Life Sciences,11204
+Mexico,Social Sciences,19299
+Moldova,Health Sciences,4984
+South Korea,Life Sciences,25822
+Slovenia,Life Sciences,4652
+Lebanon,Health Sciences,3243
+Rwanda,Life Sciences,3920
+Qatar,Health Sciences,7614
+Austria,Life Sciences,36245
+Andorra,Health Sciences,304
+Uganda,Life Sciences,9597
+Malaysia,Life Sciences,12198
+India,Life Sciences,10425
+Botswana,Physical Sciences,1569
+Hungary,Health Sciences,1942
+Argentina,Physical Sciences,13942
+Thailand,Physical Sciences,4808
+Costa Rica,Life Sciences,3611
+Romania,Health Sciences,1982
+Latvia,Health Sciences,19665
+Myanmar,Health Sciences,355
+Ecuador,Physical Sciences,2077
+Oman,Life Sciences,507
+Tanzania,Physical Sciences,3979
+North Macedonia,Physical Sciences,4654
+Barbados,Social Sciences,2589
+United Arab Emirates,Physical Sciences,1055
+Greece,Life Sciences,1641
+Sri Lanka,Health Sciences,4367
+Taiwan,Life Sciences,7584
+Namibia,Life Sciences,978
+Kosovo,Social Sciences,1942
+El Salvador,Life Sciences,1688
+Papua New Guinea,Social Sciences,2513
+Bhutan,Life Sciences,1293
+Kiribati,Social Sciences,518
+Afghanistan,Health Sciences,690
+Seychelles,Physical Sciences,409
+Iran,Life Sciences,831
+Bolivia,Life Sciences,917
+Nigeria,Life Sciences,1556
+Iceland,Physical Sciences,3094
+Kazakhstan,Social Sciences,1078
+Nepal,Health Sciences,2502
+Mauritius,Social Sciences,1583
+Cyprus,Health Sciences,1459
+Cape Verde,Health Sciences,331
+Panama,Physical Sciences,967
+Nicaragua,Health Sciences,2239
+Eswatini,Health Sciences,566
+Malta,Social Sciences,818
+Lithuania,Health Sciences,812
+Pakistan,Health Sciences,812
+Kyrgyzstan,Health Sciences,981
+Malawi,Health Sciences,366
+Trinidad and Tobago,Social Sciences,2710
+Mozambique,Social Sciences,967
+Georgia,Health Sciences,5681
+Laos,Physical Sciences,209
+Somalia,Social Sciences,531
+Russia,Life Sciences,1836
+Tunisia,Social Sciences,413
+Bangladesh,Health Sciences,163
+Liberia,Life Sciences,304
+Kuwait,Health Sciences,589
+Bahrain,Health Sciences,22
+Morocco,Health Sciences,498
+Egypt,Life Sciences,1560
+Vietnam,Health Sciences,155
+Maldives,Social Sciences,574
+Guyana,Social Sciences,394
+South Sudan,Life Sciences,38
+Haiti,Social Sciences,246
+Sudan,Physical Sciences,104
+Serbia,Physical Sciences,2333
+Ivory Coast,Physical Sciences,268
+Yemen,Health Sciences,71
+Jordan,Life Sciences,258
+Fiji,Physical Sciences,446
+Belize,Life Sciences,709
+Iraq,Health Sciences,374
+Guatemala,Physical Sciences,575
+Ghana,Life Sciences,752
+Sierra Leone,Health Sciences,164
+Guinea,Social Sciences,223
+Montenegro,Life Sciences,273
+Honduras,Social Sciences,319
+Bosnia and Herzegovina,Health Sciences,394
+Lesotho,Social Sciences,131
+Algeria,Life Sciences,44
+Samoa,Social Sciences,186
+Saint Kitts and Nevis,Physical Sciences,120
+Albania,Life Sciences,176
+Benin,Health Sciences,146
+Tajikistan,Social Sciences,209
+San Marino,Social Sciences,120
+Micronesia,Physical Sciences,104
+Jamaica,Life Sciences,337
+Suriname,Social Sciences,165
+Ukraine,Life Sciences,460
+Zambia,Health Sciences,223
+Belarus,Social Sciences,173
+Burkina Faso,Social Sciences,65
+Azerbaijan,Health Sciences,58
+Bahamas,Health Sciences,319
+Cameroon,Physical Sciences,227
+Sao Tome and Principe,Physical Sciences,62
+Liechtenstein,Health Sciences,39
+Mauritania,Health Sciences,38
+Syria,Social Sciences,91
+Democratic Republic Of The Congo,Health Sciences,65
+Timor Leste,Physical Sciences,161
+Cuba,Life Sciences,77
+Palestine,Physical Sciences,56
+Angola,Life Sciences,23
+Palau,Social Sciences,64
+Tonga,Health Sciences,18
+Zimbabwe,Health Sciences,37
+Togo,Life Sciences,32
+Armenia,Health Sciences,21
+Solomon Islands,Life Sciences,15
+Vanuatu,Life Sciences,39
+Djibouti,Social Sciences,8
+Gambia,Health Sciences,22
+Mali,Health Sciences,12
+Central African Republic,Health Sciences,10
+Niger,Social Sciences,5
+Marshall Islands,Social Sciences,12
+Burundi,Physical Sciences,14
+Eritrea,Social Sciences,3
+Vatican City,Social Sciences,6
+Madagascar,Health Sciences,11
+Uzbekistan,Health Sciences,3
+Libya,Social Sciences,1
+Monaco,Life Sciences,3

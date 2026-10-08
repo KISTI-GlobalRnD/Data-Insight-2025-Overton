@@ -153,6 +153,9 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#interpretation-boundaries" id="toc-interpretation-boundaries" class="nav-link" data-scroll-target="#interpretation-boundaries">Interpretation boundaries</a></li>
   <li><a href="#indicator-definitions" id="toc-indicator-definitions" class="nav-link" data-scroll-target="#indicator-definitions">Indicator definitions</a></li>
   <li><a href="#denominator-check" id="toc-denominator-check" class="nav-link" data-scroll-target="#denominator-check">Denominator check</a></li>
+  <li><a href="#source-composition-decomposition-of-koreas-field-gap" id="toc-source-composition-decomposition-of-koreas-field-gap" class="nav-link" data-scroll-target="#source-composition-decomposition-of-koreas-field-gap">Source-composition decomposition of Korea’s field gap</a></li>
+  <li><a href="#foreign-think-tank-distribution-and-citation-profile-matches" id="toc-foreign-think-tank-distribution-and-citation-profile-matches" class="nav-link" data-scroll-target="#foreign-think-tank-distribution-and-citation-profile-matches">Foreign think-tank distribution and citation-profile matches</a></li>
+  <li><a href="#weighting-sensitivity-and-institutional-concentration" id="toc-weighting-sensitivity-and-institutional-concentration" class="nav-link" data-scroll-target="#weighting-sensitivity-and-institutional-concentration">Weighting sensitivity and institutional concentration</a></li>
   </ul>
 </nav>
     </div>
@@ -183,6 +186,19 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<div id="online-version-notice" class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>2025 baseline · issue 68 editorial corrections.</strong> Applicable editorial corrections were incorporated into this web explanation on 8 October 2026. The linked PDF remains the manuscript before publication editing. New-data results and their aggregation rules are provided separately in the <a href="../SI/update_202603_en.html">October 2026 online update</a>.</p>
+</div>
+</div>
 <p><a href="../SI/index_en.html">English Summary</a> · <a href="../SI/methods.html">Full Korean methods page</a> · <a href="../Report/Report_final.pdf">Korean Report Manuscript (PDF)</a></p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -201,6 +217,7 @@ Note
 <h2 class="anchored" data-anchor-id="analysis-scope">Analysis scope</h2>
 <ul>
 <li>Data sources: Overton policy-document references and OpenAlex scholarly-work metadata.</li>
+<li>Analysis input: the project-provided archive <code>dump_20250211.tar.gz</code>, dated 11 February 2025, with 1,471,454 parsed rows. The upstream Overton export query and selection criteria are not recoverable from this report repository, so document-level coverage statistics are conditional on that dump.</li>
 <li>Main citation unit: DOI-linked policy-document -&gt; scholarly-work citation records.</li>
 <li>Document unit: Overton policy documents deduplicated at the policy-document level.</li>
 <li>Country comparisons assign the country of the first author’s affiliated institution, not the author’s nationality. The assignment uses the standardized country mode first, then a single unambiguous two-letter raw country code when the standardized value is unavailable.</li>
@@ -213,6 +230,7 @@ Note
 <li>Non-DOI evidence such as reports, legislation, web pages, and narrative references is outside the default indicators.</li>
 <li>Hierarchical policy-source labels are collapsed to their top-level country, IGO, or EU category. The policy-source country is the country assigned to the organization that published the policy document. The IGO and EU categories are not countries, but they are compared at the same top level as source countries. Policy-source type labels can still overlap, so type totals are not mutually exclusive.</li>
 <li>Records with no raw country code or conflicting raw codes remain unassigned and are reported separately. For Korean policy documents, 23,943 of 32,935 DOI-linked citations are assigned a research country; 8,992 (27.3%) remain unassigned.</li>
+<li>The unassigned share differs by institution: 28.7% for KDI, 24.2% for KIEP, and 15.4% for other institutions. Assigning all unassigned citations to non-U.S. or U.S. research gives mechanical bounds of 40.1%-67.4% for the U.S. share; these are not model-based intervals.</li>
 </ul>
 </section>
 <section id="indicator-definitions" class="level2">
@@ -231,31 +249,35 @@ Note
 <tbody>
 <tr class="odd">
 <td>Citation count</td>
-<td>Number of DOI-linked policy-to-research citation records.</td>
+<td>Number of DOI-linked scholarly-paper citations made by policy documents.</td>
 </tr>
 <tr class="even">
 <td>Unique works</td>
 <td>Distinct OpenAlex works cited by policy documents.</td>
 </tr>
 <tr class="odd">
-<td>Average citations per policy document</td>
-<td>DOI-linked citations divided by policy documents with at least one DOI-linked citation in the policy-source or source-type group.</td>
+<td>Average citations per citing policy document</td>
+<td>DOI-linked scholarly-paper citations divided by policy documents with at least one DOI-linked citation in the policy-source or source-type group.</td>
 </tr>
 <tr class="even">
-<td>Repeat-citation share</td>
-<td>Share of unique cited works cited by at least two policy documents.</td>
+<td>Share cited by multiple policy documents</td>
+<td>Share of unique cited papers cited by at least two different policy documents.</td>
 </tr>
 <tr class="odd">
-<td>Policy citations per paper</td>
-<td>Policy citations divided by unique cited papers within a topic.</td>
+<td>Citations from policy documents per cited paper</td>
+<td>DOI-linked citations from policy documents divided by unique cited papers within each of the 300 topics with the most DOI-linked citations.</td>
 </tr>
 <tr class="even">
 <td>Share of unique papers published in 2022-2024</td>
-<td>Share of unique cited papers published in 2022-2024 among papers with a known publication year through 2024 within a topic.</td>
+<td>Among the same top 300 topics, the share of unique cited papers published in 2022-2024 among papers with a known publication year through 2024. The incomplete 2025 publication year is excluded under the OpenAlex 2025.06 snapshot.</td>
 </tr>
 <tr class="odd">
-<td>Domestic-citation share</td>
-<td>Country-level same-country citation share, among citations assigned a first-author country under the sequential rule.</td>
+<td>Share of citations to same-country research</td>
+<td>Country-level share pointing to research with the same first-author country as the policy-document source country, among citations assigned a first-author country under the sequential rule.</td>
+</tr>
+<tr class="even">
+<td>Linked-sample composition expected share</td>
+<td>A technical baseline combining the field mix cited by policy documents with each country’s first-author unique-paper share within each field of the DOI-linked sample. It is not based on total OpenAlex research output and is not a model prediction or target.</td>
 </tr>
 </tbody>
 </table>
@@ -263,6 +285,20 @@ Note
 <section id="denominator-check" class="level2">
 <h2 class="anchored" data-anchor-id="denominator-check">Denominator check</h2>
 <p>Do not compare indicator values until the denominator is clear. The most important denominator check is whether a metric uses all DOI-linked citation rows, unique works, policy documents, or only citations assigned a first-author country.</p>
+</section>
+<section id="source-composition-decomposition-of-koreas-field-gap" class="level2">
+<h2 class="anchored" data-anchor-id="source-composition-decomposition-of-koreas-field-gap">Source-composition decomposition of Korea’s field gap</h2>
+<p>The report separates the 54.8 percentage-point social-science share gap between the two Korea-related citation directions into two descriptive components. Policy documents are grouped into think tank and non-think-tank sources. A symmetric two-group decomposition assigns 38.2 percentage points to differences in source-type composition and 16.6 points to differences in social-science shares within source-type groups.</p>
+<p>The calculation uses four-domain citation assignments, counting a citation at most once within the same domain. Every policy document in the two relevant direction-specific samples has exactly one top-level source type. The decomposition locates where the observed gap appears; it does not estimate a causal effect or an intrinsic national preference.</p>
+</section>
+<section id="foreign-think-tank-distribution-and-citation-profile-matches" class="level2">
+<h2 class="anchored" data-anchor-id="foreign-think-tank-distribution-and-citation-profile-matches">Foreign think-tank distribution and citation-profile matches</h2>
+<p>For the institution-level comparison, foreign candidates must be tagged as think tanks in Overton and have at least 500 cited-topic assignments. The main distribution includes all 748 eligible institutions across 74 countries. Social-science shares use four-domain citation assignments, counting a citation at most once within the same domain. Separately, each candidate’s cited-topic frequency vector is compared with KDI and KIEP using cosine similarity. The two similarities receive equal weight, and the top 25 candidates are reported as nearest profile examples.</p>
+<p>The top-25 field similarity is not an independent validation because the institutions are selected using the same cited-topic information that defines the field shares. Neither the broad source-type comparison nor the profile ranking establishes that the institutions have the same legal status, policy mandate, or organizational role as KDI or KIEP.</p>
+</section>
+<section id="weighting-sensitivity-and-institutional-concentration" class="level2">
+<h2 class="anchored" data-anchor-id="weighting-sensitivity-and-institutional-concentration">Weighting sensitivity and institutional concentration</h2>
+<p>The Korea social-science gap is 54.8 percentage points under the primary citation-row/full-domain weighting, 58.4 points with unique-work weighting, 32.2 points with equal policy-document weighting, and 59.9 points with fractional domain weighting. These are descriptive results for different units, not a single uncertainty interval. KDI and KIEP account for 71.4% of all Korean policy documents, 71.5% of DOI-citing documents, and 93.5% of DOI-linked citations. Their DOI-citing documents average 15.8 citations versus 2.7 for other institutions.</p>
 
 
 </section>

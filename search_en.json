@@ -4,14 +4,14 @@
     "href": "SI/next_questions_en.html",
     "title": "Next Questions Summary",
     "section": "",
-    "text": "English Summary · Full Korean next-questions page · Korean Report Manuscript (PDF)"
+    "text": "Note\n\n\n\n2025 baseline · issue 68 editorial corrections. Applicable editorial corrections were incorporated into this web explanation on 8 October 2026. The linked PDF remains the manuscript before publication editing. New-data results and their aggregation rules are provided separately in the October 2026 online update.\nEnglish Summary · Full Korean next-questions page · Korean Report Manuscript (PDF)"
   },
   {
     "objectID": "SI/next_questions_en.html#four-indicators",
     "href": "SI/next_questions_en.html#four-indicators",
     "title": "Next Questions Summary",
     "section": "Four indicators",
-    "text": "Four indicators\n\n\n\n\n\n\n\nRecalculation question\nValues to compare\n\n\n\n\nHow far is the top-three policy-source share from its baseline?\nTop-three share using top-level policy sources, percentage-point difference, ranking changes, total citations, and average citations per DOI-citing policy document.\n\n\nHow far is the share of papers cited by at least two policy documents from its baseline?\nRepeat-citation thresholds such as &gt;=2, &gt;=5, and &gt;=10 policy documents, with publication-year cohorts.\n\n\nHow far is the U.S. research share in citations from Korean policy documents from its baseline?\nTop-country share, percentage-point difference, domestic-citation share, and domain composition.\n\n\nHow far is the top-three policy-source share for citations to Korean research from its baseline?\nTop-three policy-source share, percentage-point difference, and ranking changes."
+    "text": "Four indicators\n\n\n\n\n\n\n\nRecalculation question\nValues to compare\n\n\n\n\nHow far is the top-three policy-source share from its baseline?\nTop-three share using top-level policy sources, percentage-point difference, ranking changes, total citations, and average citations per DOI-citing policy document.\n\n\nHow far is the share of papers cited by at least two different policy documents from its baseline?\nThresholds such as at least 2, 5, and 10 different policy documents, with publication-year cohorts.\n\n\nHow far is the U.S. research share among papers cited by Korean policy documents from its baseline?\nTop-country share, percentage-point difference, share citing same-country research, and field composition.\n\n\nHow far is the top-three policy-source share for citations to Korean research from its baseline?\nTop-three policy-source share, percentage-point difference, and ranking changes."
   },
   {
     "objectID": "SI/next_questions_en.html#comparison-rule",
@@ -25,70 +25,84 @@
     "href": "SI/appendix_en.html",
     "title": "Definitions Summary",
     "section": "",
-    "text": "English Summary · Full Korean appendix · Korean Report Manuscript (PDF)"
+    "text": "Note\n\n\n\n2025 baseline · issue 68 editorial corrections. Applicable editorial corrections were incorporated into this web explanation on 8 October 2026. The linked PDF remains the manuscript before publication editing. New-data results and their aggregation rules are provided separately in the October 2026 online update.\nEnglish Summary · Full Korean appendix · Korean Report Manuscript (PDF)"
   },
   {
     "objectID": "SI/appendix_en.html#observed-doi-linked-scope",
     "href": "SI/appendix_en.html#observed-doi-linked-scope",
     "title": "Definitions Summary",
     "section": "Observed DOI-linked scope",
-    "text": "Observed DOI-linked scope\nThe report analyzes policy-document references that can be linked to scholarly works through DOIs. This observed linkage excludes references that are not DOI-linked."
+    "text": "Observed DOI-linked scope\nThe report analyzes policy-document references that can be linked to scholarly works through DOIs. This observed linkage excludes references that are not DOI-linked. The policy-document input is the project-provided dump_20250211.tar.gz archive dated 11 February 2025. Because the upstream Overton export query and selection criteria are not recoverable from this repository, the 97.6% document-level statistic is conditional on the provided dump and is not an estimate of coverage of the full Overton index."
   },
   {
-    "objectID": "SI/appendix_en.html#repeated-citation-share",
-    "href": "SI/appendix_en.html#repeated-citation-share",
+    "objectID": "SI/appendix_en.html#share-of-papers-cited-by-multiple-policy-documents",
+    "href": "SI/appendix_en.html#share-of-papers-cited-by-multiple-policy-documents",
     "title": "Definitions Summary",
-    "section": "Repeated-citation share",
-    "text": "Repeated-citation share\nRepeated-citation share measures the share of distinct scholarly works cited by more than one policy document. In the baseline data, 48.1% of unique cited works are cited by at least two policy documents.\nThis value applies only to the observed DOI-linked citation scope."
+    "section": "Share of papers cited by multiple policy documents",
+    "text": "Share of papers cited by multiple policy documents\nThis measure is the share of distinct scholarly papers cited by more than one policy document. In the baseline data, 48.1% of unique cited papers are cited by at least two different policy documents.\nThis value applies only to the observed DOI-linked citation scope."
   },
   {
     "objectID": "SI/appendix_en.html#domestic-citation-share",
     "href": "SI/appendix_en.html#domestic-citation-share",
     "title": "Definitions Summary",
-    "section": "Domestic-citation share",
-    "text": "Domestic-citation share\nDomestic-citation share is a country-level same-country citation measure. For a policy source country, it asks what share of citations point to research whose first-author country is the same country. First-author country means the country of the first author’s affiliated institution, not the author’s nationality.\nThe country assignment first uses the standardized first-author country mode. If that is unavailable, it uses a single unambiguous two-letter raw country code. Records with no code or conflicting codes remain unassigned. This metric uses only citations assigned a first-author country under that sequential rule. It is therefore better used as a diagnostic than as a simple country ranking."
+    "section": "Share of citations to same-country research",
+    "text": "Share of citations to same-country research\nThis is a country-level same-country citation measure. For a policy source country, it asks what share of citations point to research whose first-author country is the same country. First-author country means the country of the first author’s affiliated institution, not the author’s nationality.\nThe country assignment first uses the standardized first-author country mode. If that is unavailable, it uses a single unambiguous two-letter raw country code. Records with no code or conflicting codes remain unassigned. This metric uses only citations assigned a first-author country under that sequential rule. It is therefore better used as a diagnostic than as a simple country ranking."
   },
   {
-    "objectID": "SI/appendix_en.html#domain-adjusted-domestic-citation-reference-share",
-    "href": "SI/appendix_en.html#domain-adjusted-domestic-citation-reference-share",
+    "objectID": "SI/appendix_en.html#linked-sample-composition-expected-share-for-same-country-research-cited",
+    "href": "SI/appendix_en.html#linked-sample-composition-expected-share-for-same-country-research-cited",
     "title": "Definitions Summary",
-    "section": "Domain-adjusted domestic-citation reference share",
-    "text": "Domain-adjusted domestic-citation reference share\nThe domain-adjusted reference share combines the domain mix of cited research with each country’s first-author article share in the DOI-linked article sample. Each article is counted at most once per domain. This reference describes the linked sample and is not a measure of total global research production in OpenAlex."
+    "section": "Linked-sample composition expected share for same-country research cited",
+    "text": "Linked-sample composition expected share for same-country research cited\nThe expected share combines the field mix of cited research with each country’s first-author unique-paper share in the DOI-linked article sample. Each article is counted at most once per domain. It is a technical linked-sample baseline. It is not a model-based forecast, a target, or a measure of total global research production in OpenAlex."
   },
   {
     "objectID": "SI/appendix_en.html#country-assignment-denominator",
     "href": "SI/appendix_en.html#country-assignment-denominator",
     "title": "Definitions Summary",
     "section": "Country-assignment denominator",
-    "text": "Country-assignment denominator\nFor Korean policy documents, 23,943 of 32,935 DOI-linked citations are assigned a research country; 8,992 (27.3%) remain unassigned and are reported separately. Country-level interpretation should therefore use the assigned-country denominator stated with each metric."
+    "text": "Country-assignment denominator\nFor Korean policy documents, 23,943 of 32,935 DOI-linked citations are assigned a research country; 8,992 (27.3%) remain unassigned and are reported separately. The unassigned share is 28.7% for KDI, 24.2% for KIEP, and 15.4% for other institutions. Placing all unassigned citations outside or inside the U.S. category gives mechanical bounds of 40.1%-67.4% for the U.S. share. These are not model-based intervals. Country-level interpretation should therefore use the assigned-country denominator stated with each metric."
+  },
+  {
+    "objectID": "SI/appendix_en.html#policy-source-composition-of-koreas-field-gap",
+    "href": "SI/appendix_en.html#policy-source-composition-of-koreas-field-gap",
+    "title": "Definitions Summary",
+    "section": "Policy-source composition of Korea’s field gap",
+    "text": "Policy-source composition of Korea’s field gap\nThe social-science share is 77.9% for research cited by Korean policy documents, 40.3 percentage points above the 37.6% share in the full Overton policy-document sample calculated with the same rule. The share is 23.1% for Korean-authored research cited by policy documents, producing a 54.8-point gap between the two Korea-centred directions. A symmetric two-group decomposition locates 38.2 percentage points in think-tank versus non-think-tank source composition and 16.6 points within those source-type groups.\nKDI and KIEP documents account for 71.4% of all Korean policy documents, 71.5% of DOI-citing documents, and 93.5% of DOI-linked citations in the Korean-policy-document direction. Their DOI-citing documents average 15.8 citations, compared with 2.7 for other institutions. Think tanks account for 93.6% in that direction, compared with 12.1% among policy documents citing Korean-authored research. These are descriptive composition results, not causal estimates or intrinsic national preferences.\nThe social-science gap remains positive under alternative weighting rules: 58.4 percentage points with unique-work weighting, 32.2 points with equal policy-document weighting, and 59.9 points with fractional domain weighting, compared with 54.8 points in the primary analysis. These values answer different descriptive questions and do not form a single uncertainty interval."
+  },
+  {
+    "objectID": "SI/appendix_en.html#foreign-think-tank-distribution-and-citation-profile-matches",
+    "href": "SI/appendix_en.html#foreign-think-tank-distribution-and-citation-profile-matches",
+    "title": "Definitions Summary",
+    "section": "Foreign think-tank distribution and citation-profile matches",
+    "text": "Foreign think-tank distribution and citation-profile matches\nKorea has the highest think-tank citation share among the 11 report comparison countries. Within Korean think-tank citations, KDI and KIEP account for 99.9%. The eligible foreign comparison contains 748 think tanks across 74 countries. Its median social-science share is 62.6% (range: 1.2-96.0%). KDI and KIEP have shares of 82.1% and 86.0%, placing them at the 91.3rd and 96.4th percentiles.\nThe top 25 citation-profile matches span 17 countries: four are in the UK, three in the USA, two each in Belgium, France, and Germany, and one each in 12 other countries. Their median social-science share is 78.5%, but this is not an independent replication because the same cited-topic information selects the matches and defines the field shares. Korea’s country-level result combines high institution-level social-science shares with concentration of observed DOI-linked citations in those two institutions. Source-type or citation-profile similarity does not establish equivalent legal status, mandates, or organizational roles."
   },
   {
     "objectID": "SI/methods_en.html",
     "href": "SI/methods_en.html",
     "title": "Methods Summary",
     "section": "",
-    "text": "English Summary · Full Korean methods page · Korean Report Manuscript (PDF)"
+    "text": "Note\n\n\n\n2025 baseline · issue 68 editorial corrections. Applicable editorial corrections were incorporated into this web explanation on 8 October 2026. The linked PDF remains the manuscript before publication editing. New-data results and their aggregation rules are provided separately in the October 2026 online update.\nEnglish Summary · Full Korean methods page · Korean Report Manuscript (PDF)"
   },
   {
     "objectID": "SI/methods_en.html#analysis-scope",
     "href": "SI/methods_en.html#analysis-scope",
     "title": "Methods Summary",
     "section": "Analysis scope",
-    "text": "Analysis scope\n\nData sources: Overton policy-document references and OpenAlex scholarly-work metadata.\nMain citation unit: DOI-linked policy-document -&gt; scholarly-work citation records.\nDocument unit: Overton policy documents deduplicated at the policy-document level.\nCountry comparisons assign the country of the first author’s affiliated institution, not the author’s nationality. The assignment uses the standardized country mode first, then a single unambiguous two-letter raw country code when the standardized value is unavailable."
+    "text": "Analysis scope\n\nData sources: Overton policy-document references and OpenAlex scholarly-work metadata.\nAnalysis input: the project-provided archive dump_20250211.tar.gz, dated 11 February 2025, with 1,471,454 parsed rows. The upstream Overton export query and selection criteria are not recoverable from this report repository, so document-level coverage statistics are conditional on that dump.\nMain citation unit: DOI-linked policy-document -&gt; scholarly-work citation records.\nDocument unit: Overton policy documents deduplicated at the policy-document level.\nCountry comparisons assign the country of the first author’s affiliated institution, not the author’s nationality. The assignment uses the standardized country mode first, then a single unambiguous two-letter raw country code when the standardized value is unavailable."
   },
   {
     "objectID": "SI/methods_en.html#interpretation-boundaries",
     "href": "SI/methods_en.html#interpretation-boundaries",
     "title": "Methods Summary",
     "section": "Interpretation boundaries",
-    "text": "Interpretation boundaries\n\nThe analysis covers observed DOI-linked policy-to-research citations, not the full policy universe.\nNon-DOI evidence such as reports, legislation, web pages, and narrative references is outside the default indicators.\nHierarchical policy-source labels are collapsed to their top-level country, IGO, or EU category. The policy-source country is the country assigned to the organization that published the policy document. The IGO and EU categories are not countries, but they are compared at the same top level as source countries. Policy-source type labels can still overlap, so type totals are not mutually exclusive.\nRecords with no raw country code or conflicting raw codes remain unassigned and are reported separately. For Korean policy documents, 23,943 of 32,935 DOI-linked citations are assigned a research country; 8,992 (27.3%) remain unassigned."
+    "text": "Interpretation boundaries\n\nThe analysis covers observed DOI-linked policy-to-research citations, not the full policy universe.\nNon-DOI evidence such as reports, legislation, web pages, and narrative references is outside the default indicators.\nHierarchical policy-source labels are collapsed to their top-level country, IGO, or EU category. The policy-source country is the country assigned to the organization that published the policy document. The IGO and EU categories are not countries, but they are compared at the same top level as source countries. Policy-source type labels can still overlap, so type totals are not mutually exclusive.\nRecords with no raw country code or conflicting raw codes remain unassigned and are reported separately. For Korean policy documents, 23,943 of 32,935 DOI-linked citations are assigned a research country; 8,992 (27.3%) remain unassigned.\nThe unassigned share differs by institution: 28.7% for KDI, 24.2% for KIEP, and 15.4% for other institutions. Assigning all unassigned citations to non-U.S. or U.S. research gives mechanical bounds of 40.1%-67.4% for the U.S. share; these are not model-based intervals."
   },
   {
     "objectID": "SI/methods_en.html#indicator-definitions",
     "href": "SI/methods_en.html#indicator-definitions",
     "title": "Methods Summary",
     "section": "Indicator definitions",
-    "text": "Indicator definitions\n\n\n\n\n\n\n\nMetric\nSummary definition\n\n\n\n\nCitation count\nNumber of DOI-linked policy-to-research citation records.\n\n\nUnique works\nDistinct OpenAlex works cited by policy documents.\n\n\nAverage citations per policy document\nDOI-linked citations divided by policy documents with at least one DOI-linked citation in the policy-source or source-type group.\n\n\nRepeat-citation share\nShare of unique cited works cited by at least two policy documents.\n\n\nPolicy citations per paper\nPolicy citations divided by unique cited papers within a topic.\n\n\nShare of unique papers published in 2022-2024\nShare of unique cited papers published in 2022-2024 among papers with a known publication year through 2024 within a topic.\n\n\nDomestic-citation share\nCountry-level same-country citation share, among citations assigned a first-author country under the sequential rule."
+    "text": "Indicator definitions\n\n\n\n\n\n\n\nMetric\nSummary definition\n\n\n\n\nCitation count\nNumber of DOI-linked scholarly-paper citations made by policy documents.\n\n\nUnique works\nDistinct OpenAlex works cited by policy documents.\n\n\nAverage citations per citing policy document\nDOI-linked scholarly-paper citations divided by policy documents with at least one DOI-linked citation in the policy-source or source-type group.\n\n\nShare cited by multiple policy documents\nShare of unique cited papers cited by at least two different policy documents.\n\n\nCitations from policy documents per cited paper\nDOI-linked citations from policy documents divided by unique cited papers within each of the 300 topics with the most DOI-linked citations.\n\n\nShare of unique papers published in 2022-2024\nAmong the same top 300 topics, the share of unique cited papers published in 2022-2024 among papers with a known publication year through 2024. The incomplete 2025 publication year is excluded under the OpenAlex 2025.06 snapshot.\n\n\nShare of citations to same-country research\nCountry-level share pointing to research with the same first-author country as the policy-document source country, among citations assigned a first-author country under the sequential rule.\n\n\nLinked-sample composition expected share\nA technical baseline combining the field mix cited by policy documents with each country’s first-author unique-paper share within each field of the DOI-linked sample. It is not based on total OpenAlex research output and is not a model prediction or target."
   },
   {
     "objectID": "SI/methods_en.html#denominator-check",
@@ -98,32 +112,53 @@
     "text": "Denominator check\nDo not compare indicator values until the denominator is clear. The most important denominator check is whether a metric uses all DOI-linked citation rows, unique works, policy documents, or only citations assigned a first-author country."
   },
   {
+    "objectID": "SI/methods_en.html#source-composition-decomposition-of-koreas-field-gap",
+    "href": "SI/methods_en.html#source-composition-decomposition-of-koreas-field-gap",
+    "title": "Methods Summary",
+    "section": "Source-composition decomposition of Korea’s field gap",
+    "text": "Source-composition decomposition of Korea’s field gap\nThe report separates the 54.8 percentage-point social-science share gap between the two Korea-related citation directions into two descriptive components. Policy documents are grouped into think tank and non-think-tank sources. A symmetric two-group decomposition assigns 38.2 percentage points to differences in source-type composition and 16.6 points to differences in social-science shares within source-type groups.\nThe calculation uses four-domain citation assignments, counting a citation at most once within the same domain. Every policy document in the two relevant direction-specific samples has exactly one top-level source type. The decomposition locates where the observed gap appears; it does not estimate a causal effect or an intrinsic national preference."
+  },
+  {
+    "objectID": "SI/methods_en.html#foreign-think-tank-distribution-and-citation-profile-matches",
+    "href": "SI/methods_en.html#foreign-think-tank-distribution-and-citation-profile-matches",
+    "title": "Methods Summary",
+    "section": "Foreign think-tank distribution and citation-profile matches",
+    "text": "Foreign think-tank distribution and citation-profile matches\nFor the institution-level comparison, foreign candidates must be tagged as think tanks in Overton and have at least 500 cited-topic assignments. The main distribution includes all 748 eligible institutions across 74 countries. Social-science shares use four-domain citation assignments, counting a citation at most once within the same domain. Separately, each candidate’s cited-topic frequency vector is compared with KDI and KIEP using cosine similarity. The two similarities receive equal weight, and the top 25 candidates are reported as nearest profile examples.\nThe top-25 field similarity is not an independent validation because the institutions are selected using the same cited-topic information that defines the field shares. Neither the broad source-type comparison nor the profile ranking establishes that the institutions have the same legal status, policy mandate, or organizational role as KDI or KIEP."
+  },
+  {
+    "objectID": "SI/methods_en.html#weighting-sensitivity-and-institutional-concentration",
+    "href": "SI/methods_en.html#weighting-sensitivity-and-institutional-concentration",
+    "title": "Methods Summary",
+    "section": "Weighting sensitivity and institutional concentration",
+    "text": "Weighting sensitivity and institutional concentration\nThe Korea social-science gap is 54.8 percentage points under the primary citation-row/full-domain weighting, 58.4 points with unique-work weighting, 32.2 points with equal policy-document weighting, and 59.9 points with fractional domain weighting. These are descriptive results for different units, not a single uncertainty interval. KDI and KIEP account for 71.4% of all Korean policy documents, 71.5% of DOI-citing documents, and 93.5% of DOI-linked citations. Their DOI-citing documents average 15.8 citations versus 2.7 for other institutions."
+  },
+  {
     "objectID": "SI/index_en.html",
     "href": "SI/index_en.html",
     "title": "English Summary",
     "section": "",
-    "text": "Full Korean SI · Korean Report Manuscript (PDF)"
+    "text": "Note\n\n\n\n2025 baseline · issue 68 editorial corrections. Applicable editorial corrections were incorporated into this web explanation on 8 October 2026. The linked PDF remains the manuscript before publication editing. New-data results and their aggregation rules are provided separately in the October 2026 online update.\nFull Korean SI · Korean Report Manuscript (PDF)"
   },
   {
     "objectID": "SI/index_en.html#analysis-summary",
     "href": "SI/index_en.html#analysis-summary",
     "title": "English Summary",
     "section": "Analysis summary",
-    "text": "Analysis summary\nThe report examines DOI-linked citations from policy documents in Overton to scholarly works in OpenAlex. It does not measure every policy document or every form of evidence. It summarizes the observable policy-to-research citation structure in the current linked data.\nPrior studies show that policy citations do not simply reproduce scholarly citation rankings. Policy citations reach a selective subset of research, differ by field and document type, and can have a low article-level correlation with scholarly citations. The report uses this literature as an interpretive starting point; it does not directly compare scholarly and policy citation counts for Korean papers.\nThe report’s main finding is that the policy sources and fields in which Korean research is cited differ from the research countries and fields cited by Korean policy documents. The overall policy-source distribution provides context for this Korea-focused result rather than serving as a separate headline conclusion."
+    "text": "Analysis summary\nThe report examines DOI-linked citations from policy documents in Overton to scholarly works in OpenAlex. It does not measure every policy document or every form of evidence. It summarizes the observable policy-to-research citation structure in the current linked data.\nPrior studies show that citation counts from policy documents do not simply reproduce scholarly citation rankings. Policy documents cite a selective subset of research, with differences by field and document type, and article-level counts can have a low correlation with scholarly citations. The report uses this literature as an interpretive starting point; it does not directly compare scholarly citation counts with citations from policy documents for Korean papers.\nThe report’s main finding is that the policy sources and fields in which Korean research is cited differ from the research countries and fields cited by Korean policy documents. U.S.-authored research accounts for an observed 55.2% of assigned-country citations from Korean policy documents, compared with a 36.1% linked-sample composition expected share. This technical baseline uses first-author unique-paper shares within the DOI-linked sample, not total OpenAlex research output. Research country is unassigned for 27.3% of the citations; mechanical extreme allocations give a U.S. share of 40.1%-67.4%. Korea also has the largest sum of absolute four-field differences among the 11 countries compared. This is not treated as an intrinsic national preference: KDI and KIEP account for 71.5% of DOI-citing Korean policy documents and 93.5% of their DOI-linked citations, and much of the social-science gap is observed in policy-source type composition. Alternative weighting rules leave the gap positive at 32.2-59.9 percentage points. Among all 748 eligible foreign think tanks across 74 countries, the median social-science share is 62.6%. KDI’s 82.1% and KIEP’s 86.0% are high, at the 91.3rd and 96.4th percentiles, but remain within the foreign range."
   },
   {
     "objectID": "SI/index_en.html#key-numbers",
     "href": "SI/index_en.html#key-numbers",
     "title": "English Summary",
     "section": "Key numbers",
-    "text": "Key numbers\n\n\n\n\n\n\n\nIndicator\nBaseline value\n\n\n\n\nPolicy sources citing Korean research\nThe top 3 policy sources account for 54.9%.\n\n\nResearch cited by Korean policy documents\nU.S.-authored research accounts for 55.2% among citations assigned a first-author country.\n\n\nField composition in the two directions\nHealth sciences account for 37.3% of policy-cited Korean research; social sciences account for 77.9% of research cited by Korean policy documents.\n\n\nRepeatedly cited works\n48.1% of unique cited works are cited by at least two policy documents."
+    "text": "Key numbers\n\n\n\n\n\n\n\nIndicator\nBaseline value\n\n\n\n\nPolicy sources citing Korean research\nThe top 3 policy sources account for 54.9%.\n\n\nResearch cited by Korean policy documents\nU.S.-authored research accounts for an observed 55.2% among citations assigned a first-author country, versus a 36.1% linked-sample composition expected share; 27.3% remain unassigned.\n\n\nField composition in the two directions\nHealth sciences account for 37.3% of policy-cited Korean research; social sciences account for 77.9% of research cited by Korean policy documents.\n\n\nWhere the social-science gap is observed\nOf the 54.8 percentage-point gap, 38.2 points are associated with policy-source type composition and 16.6 points with within-source-type field composition in a descriptive decomposition.\n\n\nInstitutional concentration in Korean policy documents\nKDI and KIEP account for 71.5% of DOI-citing documents and 93.5% of DOI-linked citations in this direction.\n\n\nForeign think-tank comparison\nThe eligible set contains 748 institutions across 74 countries; the top 25 citation-profile matches span 17 countries.\n\n\nPapers cited by multiple policy documents\n48.1% of unique cited papers are cited by at least two different policy documents.\n\n\n\nThe approved issue 68 chapter titles and supplement map are available in Korean. Their numbering differs from the linked manuscript before publication editing."
   },
   {
     "objectID": "SI/index_en.html#summary-pages",
     "href": "SI/index_en.html#summary-pages",
     "title": "English Summary",
     "section": "Summary pages",
-    "text": "Summary pages\n\n\n\nPage\nWhat it provides\n\n\n\n\nMethods summary\nScope, denominator, and interpretation boundaries.\n\n\nSelected figures\nShort guide to the main interactive evidence checks.\n\n\nDefinitions summary\nCompact definitions for repeated citation and domestic-citation share.\n\n\nPublic reproducibility\nCode and aggregate archives, environment details, verification commands, and checksums.\n\n\n2026 data update\nHigh-level comparison with the newer data update.\n\n\nNext questions\nFour indicators to recalculate."
+    "text": "Summary pages\n\n\n\nPage\nWhat it provides\n\n\n\n\nMethods summary\nScope, denominator, and interpretation boundaries.\n\n\nSelected figures\nShort guide to the main interactive evidence checks.\n\n\nDefinitions summary\nCompact definitions for papers cited by multiple policy documents and same-country research cited.\n\n\nPublic reproducibility\nCode and aggregate archives, environment details, verification commands, and checksums.\n\n\n2026 data update\nHigh-level comparison with the newer data update.\n\n\nNext questions\nFour indicators to recalculate."
   },
   {
     "objectID": "SI/index_en.html#how-to-cite-this-layer",
@@ -135,44 +170,72 @@
   {
     "objectID": "SI/update_202603_en.html",
     "href": "SI/update_202603_en.html",
-    "title": "2026 Data Update Summary",
+    "title": "October 2026 Data Update",
     "section": "",
-    "text": "English Summary · Full Korean update page · Korean Report Manuscript (PDF)"
+    "text": "English baseline summary · Full Korean update · 2025 Korean report PDF\nUpdated: 8 October 2026 · Overton: 2026-10-04 · OpenAlex: 2026-06-25"
   },
   {
-    "objectID": "SI/update_202603_en.html#what-changed",
-    "href": "SI/update_202603_en.html#what-changed",
-    "title": "2026 Data Update Summary",
-    "section": "What changed",
-    "text": "What changed\nThe earlier update produced the same two comparisons:\n\nA small number of policy sources account for a large share of policy-document citations;\nCitations to Korean research and citations made by Korean policy documents have different distributions.\n\nThe table below records those earlier values; it should not be compared directly with the revised report values."
+    "objectID": "SI/update_202603_en.html#koreas-two-citation-directions",
+    "href": "SI/update_202603_en.html#koreas-two-citation-directions",
+    "title": "October 2026 Data Update",
+    "section": "Korea’s two citation directions",
+    "text": "Korea’s two citation directions\nThe top three policy-source categories account for 49.7% of source-tagged citations to Korean research. Among citations from Korean policy documents with an assigned research country, U.S. research accounts for 45.4% and Korean research for 3.9%. These percentages describe different populations and directions.\n\n\n\n\n\n\n\nIndicator\nUpdated value\n\n\n\n\nUnique policy-document/work pairs\n31,940,050\n\n\nCiting policy documents\n1,870,148\n\n\nCited unique works\n8,281,510\n\n\nCitations from Korean policy documents\n418,179\n\n\nResearch-country missingness in Korean policy citations\n26.1%\n\n\nSocial sciences: Korean policy → research\n64.2%\n\n\nSocial sciences: policy → Korean research\n23.1%\n\n\nHealth sciences: Korean policy → research\n13.3%\n\n\nHealth sciences: policy → Korean research\n36.0%\n\n\nKDI/KIEP share of citations from Korean policy documents\n5.2%\n\n\nCited works appearing in at least two different policy documents\n50.4%\n\n\n\n\n\n\nFigure 1. Korea’s two citation directions. Left: shares of source-tagged citations to Korean research. Right: research-country shares among citations from Korean policy documents with a known country. Top ten shown.\n\n\n\n  \n    Open in new window\n    Load plot\n  \n\n\n\n\nFigure 2. Domain composition by direction. Each work/domain pair is counted once; different domains on the same work are included separately. Shares are normalized over domain assignments within each direction.\n\n\n\n  \n    Open in new window\n    Load plot"
   },
   {
-    "objectID": "SI/update_202603_en.html#indicator-comparison",
-    "href": "SI/update_202603_en.html#indicator-comparison",
-    "title": "2026 Data Update Summary",
-    "section": "Indicator comparison",
-    "text": "Indicator comparison\n\n\n\n\n\n\n\n\n\nIndicator\nEarlier 2025 value (old rule)\n2026 update (old rule)\nReading\n\n\n\n\nPolicy sources citing Korean research: top 3 policy sources\n54.8%\n51.1%\nThe share is 3.7 percentage points lower.\n\n\nU.S. research share in citations from Korean policy documents\n55.7%\n48.6%\nThe share is 7.1 percentage points lower.\n\n\nKorean research share in citations from Korean policy documents\n4.5%\n3.8%\nDomestic share remains low.\n\n\nUnique works cited at least twice\n48.1%\n51.3%\nThe share is 3.2 percentage points higher."
+    "objectID": "SI/update_202603_en.html#aligned-observed-and-expected-country-shares",
+    "href": "SI/update_202603_en.html#aligned-observed-and-expected-country-shares",
+    "title": "October 2026 Data Update",
+    "section": "Aligned observed and expected country shares",
+    "text": "Aligned observed and expected country shares\nThe comparison is restricted to 308,842 Korean-policy citation pairs with both an assigned research country and a domain. It excludes 28 otherwise country-known pairs without domains. Each citation’s weight is split equally across its distinct assigned domains, so its total weight is one. The reference country profile within each domain uses cited unique works with an assigned country in the joined sample.\nOn exactly this eligible population, the U.S. observed share is 45.4% and the expected share is 35.1%, a difference of 10.3 percentage points. This is a descriptive reference, not total OpenAlex research production or a policy target. Figure 1 includes all country-known citations, whether or not domains are available. The calculation variants, domain weights, domain-country reference profiles and eligible population make the scope and arithmetic explicit."
   },
   {
-    "objectID": "SI/update_202603_en.html#reading-boundary",
-    "href": "SI/update_202603_en.html#reading-boundary",
-    "title": "2026 Data Update Summary",
-    "section": "Reading boundary",
-    "text": "Reading boundary\nThe update uses newer observed data but predates the report’s sequential country-assignment rule. It does not replace the current report manuscript or provide its current baseline values."
+    "objectID": "SI/update_202603_en.html#domain-weighting-sensitivity",
+    "href": "SI/update_202603_en.html#domain-weighting-sensitivity",
+    "title": "October 2026 Data Update",
+    "section": "Domain weighting sensitivity",
+    "text": "Domain weighting sensitivity\n\n\n\n\n\n\n\n\n\nWeighting\nKorean policy → research %\nPolicy → Korean research %\nSocial-science gap, pp\n\n\n\n\nCitation-domain (primary)\n64.2\n23.1\n41.1\n\n\nUnique work-domain\n60.8\n16.8\n44.0\n\n\nEqual policy-document weight\n67.6\n34.7\n32.9\n\n\nFractional citation-domain\n71.2\n24.6\n46.6\n\n\n\nBoth share columns refer to social sciences. Document-equal weighting averages each document’s social-science share of full domain assignments, among documents with domains. Distinct-work weighting counts each work/domain once within each direction. Fractional weighting splits a citation’s unit weight across its assigned domains. The gap remains positive across all four definitions, ranging from 32.9 to 46.6 percentage points; this is a range across definitions, not a confidence interval."
+  },
+  {
+    "objectID": "SI/update_202603_en.html#institutions-and-source-group-composition",
+    "href": "SI/update_202603_en.html#institutions-and-source-group-composition",
+    "title": "October 2026 Data Update",
+    "section": "Institutions and source-group composition",
+    "text": "Institutions and source-group composition\n\n\n\n\n\n\n\n\n\nInstitution\nCitation pairs\nCiting documents\nSocial sciences %\n\n\n\n\nKorea Institute for Health and Social Affairs\n64,140\n3,589\n56.6\n\n\nScience and Technology Policy Institute\n28,609\n2,153\n72.2\n\n\nKorean Institute of Criminology and Justice\n28,127\n1,636\n67.6\n\n\nKorea Institute of Public Administration\n24,008\n1,669\n74.6\n\n\nKorea Institute for Industrial Economics & Trade\n23,046\n2,139\n82.6\n\n\nKorea Environment Institute\n21,378\n1,647\n25.5\n\n\nKorea Research Institute for Human Settlements\n19,426\n2,114\n59.0\n\n\nKorea Institute for National Unification\n18,264\n1,433\n84.1\n\n\nKorea Development Institute\n17,794\n1,220\n81.1\n\n\nKorea Labour Institute\n16,129\n1,044\n75.6\n\n\nKorea Institute for International Economic Policy\n4,003\n306\n85.9\n\n\n\nThese are the ten largest Korean institutions by citation count plus KDI/KIEP. Social-science shares use full domain assignments within institutions. Original names and identifiers remain in the downloadable aggregates.\n\n\n\n\n\n\n\n\n\nDirection\nSource group\nGroup weight %\nWithin-group social sciences %\n\n\n\n\nKorean policy → research\nOther sources\n4.7\n49.7\n\n\nKorean policy → research\nThink tank\n95.3\n64.9\n\n\nPolicy → Korean research\nOther sources\n80.8\n17.6\n\n\nPolicy → Korean research\nThink tank\n19.2\n46.1\n\n\n\nDocuments with any top-level think-tank tag form one exclusive group; all remaining documents, including unassigned types, form the other. There are 0 type-unassigned citation pairs in these two directions. Group weights use domain assignments. A symmetric descriptive decomposition of the 41.1 pp social-science gap attributes 16.6 pp to the source-group composition term and 24.5 pp to the within-group share term. This is an arithmetic decomposition, not a causal attribution. The terms are respectively the sum of group-weight differences times mean within-group shares, and within-group share differences times mean group weights across the two directions. Group-level decomposition."
+  },
+  {
+    "objectID": "SI/update_202603_en.html#baseline-comparison-and-common-institutions",
+    "href": "SI/update_202603_en.html#baseline-comparison-and-common-institutions",
+    "title": "October 2026 Data Update",
+    "section": "Baseline comparison and common institutions",
+    "text": "Baseline comparison and common institutions\n\n\n\nIndicator\n2025 baseline\nOctober 2026\n\n\n\n\nKorean policy citation pairs\n32,935\n418,179\n\n\nKorean citing policy documents\n2,726\n35,335\n\n\nU.S. share; research country known\n55.2\n45.4\n\n\nResearch country unassigned\n27.3\n26.1\n\n\nSocial sciences; Korean policy → research\n77.9\n64.2\n\n\nSocial sciences; policy → Korean research\n23.1\n23.1\n\n\nKDI/KIEP citation share\n93.5\n5.2\n\n\n\nPercent indicators are on a 0–100 scale. The baseline uses Overton February 2025 and OpenAlex June 2025, the existing DOI matching input, ROR with raw-affiliation country fallback, full domain assignments and a 2022–2024 recent-work window. The latest uses the snapshots above, freshly normalized DOI matching excluding multi-work matches, ROR with single-institution-country fallback, full domain assignments and a 2023–2025 recent-work window. Expected shares are omitted from this comparison because the population and weighting were refined here.\nExact source identifiers intersect in 9 institutions. The following rows all use the latest snapshot, comparing its full Korean source sample with restrictions to common institutions and to policy documents published in 2010–2024.\n\n\n\n\n\n\n\n\n\n\nLatest-snapshot scope\nCitation pairs\nSocial sciences %\nU.S. research %\nKDI/KIEP %\n\n\n\n\nAll latest Korean sources\n418,179\n64.2\n45.4\n5.2\n\n\nInstitutions present in both editions\n38,594\n67.6\n51.5\n56.5\n\n\nCommon institutions; policy years 2010–2024\n28,696\n66.5\n49.3\n54.1\n\n\n\nSocial-science shares use domain assignments, U.S. shares country-known citations, and KDI/KIEP shares all citations in each scope. Restricting institutions does not fix document identity, DOI mapping or OpenAlex metadata. Renamed identifiers are not inferred. These are coverage comparisons, not estimates of behavioral change. Institution-ID crosswalk."
+  },
+  {
+    "objectID": "SI/update_202603_en.html#data-linkage-and-comparability",
+    "href": "SI/update_202603_en.html#data-linkage-and-comparability",
+    "title": "October 2026 Data Update",
+    "section": "Data linkage and comparability",
+    "text": "Data linkage and comparability\n\n8,386,474 of 8,767,042 unique DOIs match OpenAlex. The 104,964 DOIs mapping to multiple work IDs are excluded from the primary analysis; an unrestricted-mapping sensitivity table is available.\nFirst-author country uses the mode of ROR country codes by affiliation-row frequency, with alphabetical ties. If unavailable, a single unambiguous OpenAlex institution country code is accepted. Unresolved works remain unassigned.\nThe 2025 baseline used a different fallback field. Snapshot coverage, DOI disambiguation and the fallback field all changed, so differences from the baseline must not be interpreted directly as behavioral trends.\nThe recent-work window is 2023–2025 among works with a known publication year up to 2025. Incomplete 2026 is excluded. This differs from the baseline’s 2022–2024 window.\nPolicy-source tags may overlap; citation counts do not measure causal policy impact."
+  },
+  {
+    "objectID": "SI/update_202603_en.html#interactive-figures-and-downloads",
+    "href": "SI/update_202603_en.html#interactive-figures-and-downloads",
+    "title": "October 2026 Data Update",
+    "section": "Interactive figures and downloads",
+    "text": "Interactive figures and downloads\n\nPolicy-source totals and averages\n\n\n\nFigure 3. Citation totals and citations per citing policy document for the same top ten policy sources, ranked by citation totals.\n\n\n\n  \n    Open in new window\n    Load plot\n  \n\n\n\nDomains by source type\n\n\n\nFigure 4. Domain shares within each of the seven policy-source types with the most domain assignments. Each source type sums to 100%.\n\n\n\n  \n    Open in new window\n    Load plot\n  \n\n\n\nTopic metrics\n\n\n\nFigure 5. Citations per cited work and the share of cited unique works published in 2023–2025 for the top 300 topics by citations. The recent-work share uses works with a known publication year up to 2025.\n\n\n\n  \n    Open in new window\n    Load plot\n  \n\n\n\nPublication years\n\n\n\nFigure 6. Citations by publication year of cited research, 1990–2026. The shaded 2026 interval is incomplete; this is not a series by policy-document publication year.\n\n\n\n  \n    Open in new window\n    Load plot\n  \n\nPublic aggregates and source code · Data profile · DOI audit · Domain aggregates · Country sensitivity · Weighting sensitivity · Institution domains · Source groups · Edition comparison · Common-institution scopes · Provenance\nSee the full Korean update for institution tables, source totals and averages, publication-year distributions and follow-up questions."
   },
   {
     "objectID": "SI/interactive_en.html",
     "href": "SI/interactive_en.html",
     "title": "Selected Figures",
     "section": "",
-    "text": "English Summary · Full Korean interactive page · Korean Report Manuscript (PDF)"
+    "text": "Note\n\n\n\n2025 baseline · issue 68 editorial corrections. Applicable editorial corrections were incorporated into this web explanation on 8 October 2026. The linked PDF remains the manuscript before publication editing. New-data results and their aggregation rules are provided separately in the October 2026 online update.\nEnglish Summary · Full Korean interactive page · Korean Report Manuscript (PDF)"
   },
   {
     "objectID": "SI/interactive_en.html#what-to-inspect",
     "href": "SI/interactive_en.html#what-to-inspect",
     "title": "Selected Figures",
     "section": "What to inspect",
-    "text": "What to inspect\n\n\n\nQuestion\nSuggested figure\nReading point\n\n\n\n\nWhich policy sources account for the largest citation shares?\nPolicy-source citation counts\nCompare total citation volume with citations per DOI-citing policy document.\n\n\nDo source types cite different research domains?\nSource type x domain heatmap\nRead source roles by domain composition, not by total volume alone.\n\n\nHow do the two Korea-related citation distributions differ?\nKorea-related citation distributions\nSeparate citations to Korean research from citations made by Korean policy documents.\n\n\nWhich research countries do policy sources cite?\nPolicy source -&gt; research country matrix\nCompare absolute volume and within-source share separately.\n\n\nHow should domestic-citation share be read?\nDomestic-citation share\nUse it as a diagnostic among citations assigned a first-author country.\n\n\nHow do topics differ in citations per paper and recent unique-paper share?\nTopic indicator comparison\nCompare policy citations per paper with the share of unique papers published in 2022-2024."
+    "text": "What to inspect\n\n\n\nQuestion\nSuggested figure\nReading point\n\n\n\n\nWhich policy-document sources account for the largest shares of scholarly-paper citations made?\nPolicy-document source citation counts\nCompare total citations made with citations per DOI-citing policy document.\n\n\nDo source types cite different research domains?\nSource type x domain heatmap\nRead source roles by domain composition, not by total volume alone.\n\n\nHow do the two Korea-related citation distributions differ?\nKorea-related citation distributions\nSeparate citations to Korean research from citations made by Korean policy documents.\n\n\nWhich first-author countries do policy-document sources cite?\nCiting policy-document source to cited paper country matrix\nCompare absolute volume and within-source share among citations assigned a first-author country.\n\n\nHow should the share of citations to same-country research be read?\nSame-country research cited\nUse it as a diagnostic among citations assigned a first-author country.\n\n\nHow do topics differ in citations from policy documents per cited paper and recent cited-paper share?\nTopic indicator comparison\nCompare the 300 topics with the most DOI-linked citations. Recent share uses 2022-2024 among papers with a known publication year through 2024; incomplete 2025 is excluded."
   },
   {
     "objectID": "SI/interactive_en.html#short-interpretation",
@@ -186,7 +249,14 @@
     "href": "SI/reproducibility_en.html",
     "title": "Public Reproducibility",
     "section": "",
-    "text": "English Summary · Methods Summary · Korean Report Manuscript · Public Reproducibility\nThis page defines the report’s public reproducibility scope. Licensed Overton source data and derived record-level data are not distributed. The public materials allow readers to recompute headline values and reference values and to inspect the code, aggregate tables, and execution environment."
+    "text": "Note\n\n\n\n2025 baseline · issue 68 editorial corrections. Applicable editorial corrections were incorporated into this web explanation on 8 October 2026. The linked PDF remains the manuscript before publication editing. New-data results and their aggregation rules are provided separately in the October 2026 online update.\nEnglish Summary · Methods Summary · Korean Report Manuscript · Public Reproducibility\nThis page defines the report’s public reproducibility scope. Licensed Overton source data and derived record-level data are not distributed. The public materials allow readers to recompute headline values and linked-sample composition expected shares, inspect missingness, weighting, and institution-concentration checks, and review the code, aggregate tables, and execution environment."
+  },
+  {
+    "objectID": "SI/reproducibility_en.html#october-2026-online-aggregates",
+    "href": "SI/reproducibility_en.html#october-2026-online-aggregates",
+    "title": "Public Reproducibility",
+    "section": "October 2026 online aggregates",
+    "text": "October 2026 online aggregates\nSee the online update and its provenance for the new aggregate tables. The archives and verification commands below refer to the 2025 baseline."
   },
   {
     "objectID": "SI/reproducibility_en.html#downloads",
@@ -200,7 +270,7 @@
     "href": "SI/reproducibility_en.html#verification-without-licensed-source-data",
     "title": "Public Reproducibility",
     "section": "Verification without licensed source data",
-    "text": "Verification without licensed source data\nThe public verification script recomputes:\n\nthe combined U.S., IGO, and U.K. policy-source share for citations to Korean research;\nthe U.S. research share cited by Korean policy documents;\nthe social- and health-science shares in the two Korea-related directions;\nthe 36.1% U.S. domain-adjusted reference value;\nbaseline counts used in the author-country sensitivity analysis; and\nwhether the country-domain cache matches the sequential country-assignment rule and the recorded parquet size and modification time.\n\nExtract both archives into the same directory and run:\npython scripts/verify_public_report_aggregates.py --root . --run-tag 20251026\nA successful run ends with PUBLIC_AGGREGATE_VERIFICATION=PASS. This audit verifies the report’s public aggregate layer; it does not recreate licensed Overton source records."
+    "text": "Verification without licensed source data\nThe public verification script recomputes:\n\nthe combined U.S., IGO, and U.K. policy-source share for citations to Korean research;\nthe U.S. research share cited by Korean policy documents;\nthe social- and health-science shares in the two Korea-related directions;\nKorea’s social-science share gap, its source-type composition and within-source-type components;\nthe combined KDI-KIEP share, the think-tank shares in both directions, and Korea’s rank among the 11-country field-gap comparison;\nthink-tank citation shares and top-two institution concentration across the 11 comparison countries;\nthe social-science distribution of 748 eligible foreign think tanks across 74 countries and the positions of KDI and KIEP;\nthe country count of the top 25 foreign KDI/KIEP citation-profile matches;\nthe 36.1% U.S. linked-sample composition expected share;\nbaseline counts used in the author-country sensitivity analysis;\noverall, institution-stratified, and domain-stratified country-assignment missingness and the 40.1%-67.4% mechanical U.S. bounds;\nweighting sensitivity of the Korea social-science gap (32.2-59.9 percentage points);\nKDI-KIEP document shares, citation share, and citations per DOI-citing document; and\nwhether the country-domain cache matches the sequential country-assignment rule and the recorded parquet size and modification time.\n\nExtract both archives into the same directory and run:\npython scripts/verify_public_report_aggregates.py --root . --run-tag 20251026\nA successful run ends with PUBLIC_AGGREGATE_VERIFICATION=PASS. This means the listed values and calculation relationships were confirmed from the public aggregate layer; it does not recreate licensed Overton source records or verify the upstream Overton export universe."
   },
   {
     "objectID": "SI/reproducibility_en.html#additional-inputs-for-a-full-rebuild",

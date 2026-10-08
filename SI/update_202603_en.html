@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="A concise web-only status note for the existing 2026 Overton × OpenAlex comparison.">
+<meta name="description" content="Recomputed online results using Overton 2026-10-04 and OpenAlex 2026-06-25.">
 
-<title>Overton × OpenAlex - 2026 Data Update Summary</title>
+<title>Overton × OpenAlex - October 2026 Data Update</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -149,9 +149,19 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
 
   <ul>
-  <li><a href="#what-changed" id="toc-what-changed" class="nav-link active" data-scroll-target="#what-changed">What changed</a></li>
-  <li><a href="#indicator-comparison" id="toc-indicator-comparison" class="nav-link" data-scroll-target="#indicator-comparison">Indicator comparison</a></li>
-  <li><a href="#reading-boundary" id="toc-reading-boundary" class="nav-link" data-scroll-target="#reading-boundary">Reading boundary</a></li>
+  <li><a href="#koreas-two-citation-directions" id="toc-koreas-two-citation-directions" class="nav-link active" data-scroll-target="#koreas-two-citation-directions">Korea’s two citation directions</a></li>
+  <li><a href="#aligned-observed-and-expected-country-shares" id="toc-aligned-observed-and-expected-country-shares" class="nav-link" data-scroll-target="#aligned-observed-and-expected-country-shares">Aligned observed and expected country shares</a></li>
+  <li><a href="#domain-weighting-sensitivity" id="toc-domain-weighting-sensitivity" class="nav-link" data-scroll-target="#domain-weighting-sensitivity">Domain weighting sensitivity</a></li>
+  <li><a href="#institutions-and-source-group-composition" id="toc-institutions-and-source-group-composition" class="nav-link" data-scroll-target="#institutions-and-source-group-composition">Institutions and source-group composition</a></li>
+  <li><a href="#baseline-comparison-and-common-institutions" id="toc-baseline-comparison-and-common-institutions" class="nav-link" data-scroll-target="#baseline-comparison-and-common-institutions">Baseline comparison and common institutions</a></li>
+  <li><a href="#data-linkage-and-comparability" id="toc-data-linkage-and-comparability" class="nav-link" data-scroll-target="#data-linkage-and-comparability">Data linkage and comparability</a></li>
+  <li><a href="#interactive-figures-and-downloads" id="toc-interactive-figures-and-downloads" class="nav-link" data-scroll-target="#interactive-figures-and-downloads">Interactive figures and downloads</a>
+  <ul class="collapse">
+  <li><a href="#policy-source-totals-and-averages" id="toc-policy-source-totals-and-averages" class="nav-link" data-scroll-target="#policy-source-totals-and-averages">Policy-source totals and averages</a></li>
+  <li><a href="#domains-by-source-type" id="toc-domains-by-source-type" class="nav-link" data-scroll-target="#domains-by-source-type">Domains by source type</a></li>
+  <li><a href="#topic-metrics" id="toc-topic-metrics" class="nav-link" data-scroll-target="#topic-metrics">Topic metrics</a></li>
+  <li><a href="#publication-years" id="toc-publication-years" class="nav-link" data-scroll-target="#publication-years">Publication years</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -160,12 +170,12 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">2026 Data Update Summary</h1>
+<h1 class="title">October 2026 Data Update</h1>
 </div>
 
 <div>
   <div class="description">
-    A concise web-only status note for the existing 2026 Overton × OpenAlex comparison.
+    Recomputed online results using Overton 2026-10-04 and OpenAlex 2026-06-25.
   </div>
 </div>
 
@@ -182,7 +192,8 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><a href="../SI/index_en.html">English Summary</a> · <a href="../SI/update_202603.html">Full Korean update page</a> · <a href="../Report/Report_final.pdf">Korean Report Manuscript (PDF)</a></p>
+<p><a href="../SI/index_en.html">English baseline summary</a> · <a href="../SI/update_202603.html">Full Korean update</a> · <a href="../Report/Report_final.pdf">2025 Korean report PDF</a></p>
+<p><strong>Updated:</strong> 8 October 2026 · <strong>Overton:</strong> 2026-10-04 · <strong>OpenAlex:</strong> 2026-06-25</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -193,68 +204,446 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>This is a <strong>web-only English summary</strong>. The report manuscript and detailed SI are provided in Korean. The values below were produced before the sequential first-author country assignment now used in the report. They are retained as an earlier comparison record and are not the current report baseline. The page will be updated after the GitHub-provided Overton update is reanalyzed with the same sequential assignment rule.</p>
+<p>This page reports the new online analysis. The linked report PDF and the other methods, appendix and interactive pages describe the 2025 baseline edition. The analysis covers observed DOI-linked policy-document → research citations, restricted to DOIs mapping to one OpenAlex work.</p>
 </div>
 </div>
-<section id="what-changed" class="level2">
-<h2 class="anchored" data-anchor-id="what-changed">What changed</h2>
-<p>The earlier update produced the same two comparisons:</p>
-<ol type="1">
-<li>A small number of policy sources account for a large share of policy-document citations;</li>
-<li>Citations to Korean research and citations made by Korean policy documents have different distributions.</li>
-</ol>
-<p>The table below records those earlier values; it should not be compared directly with the revised report values.</p>
-</section>
-<section id="indicator-comparison" class="level2">
-<h2 class="anchored" data-anchor-id="indicator-comparison">Indicator comparison</h2>
+<section id="koreas-two-citation-directions" class="level2">
+<h2 class="anchored" data-anchor-id="koreas-two-citation-directions">Korea’s two citation directions</h2>
+<p>The top three policy-source categories account for <strong>49.7%</strong> of source-tagged citations to Korean research. Among citations from Korean policy documents with an assigned research country, U.S. research accounts for <strong>45.4%</strong> and Korean research for <strong>3.9%</strong>. These percentages describe different populations and directions.</p>
 <table class="table">
 <colgroup>
-<col style="width: 21%">
-<col style="width: 28%">
-<col style="width: 28%">
-<col style="width: 21%">
+<col style="width: 42%">
+<col style="width: 57%">
 </colgroup>
 <thead>
 <tr class="header">
 <th>Indicator</th>
-<th style="text-align: right;">Earlier 2025 value (old rule)</th>
-<th style="text-align: right;">2026 update (old rule)</th>
-<th>Reading</th>
+<th style="text-align: right;">Updated value</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Policy sources citing Korean research: top 3 policy sources</td>
-<td style="text-align: right;">54.8%</td>
-<td style="text-align: right;">51.1%</td>
-<td>The share is 3.7 percentage points lower.</td>
+<td>Unique policy-document/work pairs</td>
+<td style="text-align: right;">31,940,050</td>
 </tr>
 <tr class="even">
-<td>U.S. research share in citations from Korean policy documents</td>
-<td style="text-align: right;">55.7%</td>
-<td style="text-align: right;">48.6%</td>
-<td>The share is 7.1 percentage points lower.</td>
+<td>Citing policy documents</td>
+<td style="text-align: right;">1,870,148</td>
 </tr>
 <tr class="odd">
-<td>Korean research share in citations from Korean policy documents</td>
-<td style="text-align: right;">4.5%</td>
-<td style="text-align: right;">3.8%</td>
-<td>Domestic share remains low.</td>
+<td>Cited unique works</td>
+<td style="text-align: right;">8,281,510</td>
 </tr>
 <tr class="even">
-<td>Unique works cited at least twice</td>
-<td style="text-align: right;">48.1%</td>
-<td style="text-align: right;">51.3%</td>
-<td>The share is 3.2 percentage points higher.</td>
+<td>Citations from Korean policy documents</td>
+<td style="text-align: right;">418,179</td>
+</tr>
+<tr class="odd">
+<td>Research-country missingness in Korean policy citations</td>
+<td style="text-align: right;">26.1%</td>
+</tr>
+<tr class="even">
+<td>Social sciences: Korean policy → research</td>
+<td style="text-align: right;">64.2%</td>
+</tr>
+<tr class="odd">
+<td>Social sciences: policy → Korean research</td>
+<td style="text-align: right;">23.1%</td>
+</tr>
+<tr class="even">
+<td>Health sciences: Korean policy → research</td>
+<td style="text-align: right;">13.3%</td>
+</tr>
+<tr class="odd">
+<td>Health sciences: policy → Korean research</td>
+<td style="text-align: right;">36.0%</td>
+</tr>
+<tr class="even">
+<td>KDI/KIEP share of citations from Korean policy documents</td>
+<td style="text-align: right;">5.2%</td>
+</tr>
+<tr class="odd">
+<td>Cited works appearing in at least two different policy documents</td>
+<td style="text-align: right;">50.4%</td>
 </tr>
 </tbody>
 </table>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../Assets/Figures/update_202610/korea_flows.png" class="img-fluid figure-img"></p>
+<figcaption>Figure 1. Korea’s two citation directions. Left: shares of source-tagged citations to Korean research. Right: research-country shares among citations from Korean policy documents with a known country. Top ten shown.</figcaption>
+</figure>
+</div>
+<div class="si-plot" data-src="../Assets/Interactive/update_202610/korea_flows.html" data-height="620" data-title="Figure 1. Korea's two citation directions: countries">
+  <div class="si-plot__actions">
+    <a class="si-plot__link" href="../Assets/Interactive/update_202610/korea_flows.html" target="_blank" rel="noopener">Open in new window</a>
+    <button type="button" class="si-plot__btn">Load plot</button>
+  </div>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../Assets/Figures/update_202610/korea_domains.png" class="img-fluid figure-img"></p>
+<figcaption>Figure 2. Domain composition by direction. Each work/domain pair is counted once; different domains on the same work are included separately. Shares are normalized over domain assignments within each direction.</figcaption>
+</figure>
+</div>
+<div class="si-plot" data-src="../Assets/Interactive/update_202610/korea_domains.html" data-height="620" data-title="Figure 2. Korea's two citation directions: domains">
+  <div class="si-plot__actions">
+    <a class="si-plot__link" href="../Assets/Interactive/update_202610/korea_domains.html" target="_blank" rel="noopener">Open in new window</a>
+    <button type="button" class="si-plot__btn">Load plot</button>
+  </div>
+</div>
 </section>
-<section id="reading-boundary" class="level2">
-<h2 class="anchored" data-anchor-id="reading-boundary">Reading boundary</h2>
-<p>The update uses newer observed data but predates the report’s sequential country-assignment rule. It does not replace the current report manuscript or provide its current baseline values.</p>
+<section id="aligned-observed-and-expected-country-shares" class="level2">
+<h2 class="anchored" data-anchor-id="aligned-observed-and-expected-country-shares">Aligned observed and expected country shares</h2>
+<p>The comparison is restricted to <strong>308,842 Korean-policy citation pairs with both an assigned research country and a domain</strong>. It excludes 28 otherwise country-known pairs without domains. Each citation’s weight is split equally across its distinct assigned domains, so its total weight is one. The reference country profile within each domain uses cited unique works with an assigned country in the joined sample.</p>
+<p>On exactly this eligible population, the U.S. observed share is <strong>45.4%</strong> and the expected share is <strong>35.1%</strong>, a difference of <strong>10.3 percentage points</strong>. This is a descriptive reference, not total OpenAlex research production or a policy target. Figure 1 includes all country-known citations, whether or not domains are available. The <a href="../Assets/Reproducibility/update_202610/korea_expected_country_variants.csv">calculation variants</a>, <a href="../Assets/Reproducibility/update_202610/korea_expected_domain_weights.csv">domain weights</a>, <a href="../Assets/Reproducibility/update_202610/expected_country_domain_reference.csv">domain-country reference profiles</a> and <a href="../Assets/Reproducibility/update_202610/korea_expected_country_population.csv">eligible population</a> make the scope and arithmetic explicit.</p>
+</section>
+<section id="domain-weighting-sensitivity" class="level2">
+<h2 class="anchored" data-anchor-id="domain-weighting-sensitivity">Domain weighting sensitivity</h2>
+<table class="table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Weighting</th>
+<th>Korean policy → research %</th>
+<th>Policy → Korean research %</th>
+<th>Social-science gap, pp</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Citation-domain (primary)</td>
+<td>64.2</td>
+<td>23.1</td>
+<td>41.1</td>
+</tr>
+<tr class="even">
+<td>Unique work-domain</td>
+<td>60.8</td>
+<td>16.8</td>
+<td>44.0</td>
+</tr>
+<tr class="odd">
+<td>Equal policy-document weight</td>
+<td>67.6</td>
+<td>34.7</td>
+<td>32.9</td>
+</tr>
+<tr class="even">
+<td>Fractional citation-domain</td>
+<td>71.2</td>
+<td>24.6</td>
+<td>46.6</td>
+</tr>
+</tbody>
+</table>
+<p>Both share columns refer to social sciences. Document-equal weighting averages each document’s social-science share of full domain assignments, among documents with domains. Distinct-work weighting counts each work/domain once within each direction. Fractional weighting splits a citation’s unit weight across its assigned domains. The gap remains positive across all four definitions, ranging from <strong>32.9 to 46.6 percentage points</strong>; this is a range across definitions, not a confidence interval.</p>
+</section>
+<section id="institutions-and-source-group-composition" class="level2">
+<h2 class="anchored" data-anchor-id="institutions-and-source-group-composition">Institutions and source-group composition</h2>
+<table class="table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Institution</th>
+<th>Citation pairs</th>
+<th>Citing documents</th>
+<th>Social sciences %</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Korea Institute for Health and Social Affairs</td>
+<td>64,140</td>
+<td>3,589</td>
+<td>56.6</td>
+</tr>
+<tr class="even">
+<td>Science and Technology Policy Institute</td>
+<td>28,609</td>
+<td>2,153</td>
+<td>72.2</td>
+</tr>
+<tr class="odd">
+<td>Korean Institute of Criminology and Justice</td>
+<td>28,127</td>
+<td>1,636</td>
+<td>67.6</td>
+</tr>
+<tr class="even">
+<td>Korea Institute of Public Administration</td>
+<td>24,008</td>
+<td>1,669</td>
+<td>74.6</td>
+</tr>
+<tr class="odd">
+<td>Korea Institute for Industrial Economics &amp; Trade</td>
+<td>23,046</td>
+<td>2,139</td>
+<td>82.6</td>
+</tr>
+<tr class="even">
+<td>Korea Environment Institute</td>
+<td>21,378</td>
+<td>1,647</td>
+<td>25.5</td>
+</tr>
+<tr class="odd">
+<td>Korea Research Institute for Human Settlements</td>
+<td>19,426</td>
+<td>2,114</td>
+<td>59.0</td>
+</tr>
+<tr class="even">
+<td>Korea Institute for National Unification</td>
+<td>18,264</td>
+<td>1,433</td>
+<td>84.1</td>
+</tr>
+<tr class="odd">
+<td>Korea Development Institute</td>
+<td>17,794</td>
+<td>1,220</td>
+<td>81.1</td>
+</tr>
+<tr class="even">
+<td>Korea Labour Institute</td>
+<td>16,129</td>
+<td>1,044</td>
+<td>75.6</td>
+</tr>
+<tr class="odd">
+<td>Korea Institute for International Economic Policy</td>
+<td>4,003</td>
+<td>306</td>
+<td>85.9</td>
+</tr>
+</tbody>
+</table>
+<p>These are the ten largest Korean institutions by citation count plus KDI/KIEP. Social-science shares use full domain assignments within institutions. Original names and identifiers remain in the downloadable aggregates.</p>
+<table class="table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Direction</th>
+<th>Source group</th>
+<th>Group weight %</th>
+<th>Within-group social sciences %</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Korean policy → research</td>
+<td>Other sources</td>
+<td>4.7</td>
+<td>49.7</td>
+</tr>
+<tr class="even">
+<td>Korean policy → research</td>
+<td>Think tank</td>
+<td>95.3</td>
+<td>64.9</td>
+</tr>
+<tr class="odd">
+<td>Policy → Korean research</td>
+<td>Other sources</td>
+<td>80.8</td>
+<td>17.6</td>
+</tr>
+<tr class="even">
+<td>Policy → Korean research</td>
+<td>Think tank</td>
+<td>19.2</td>
+<td>46.1</td>
+</tr>
+</tbody>
+</table>
+<p>Documents with any top-level think-tank tag form one exclusive group; all remaining documents, including unassigned types, form the other. There are 0 type-unassigned citation pairs in these two directions. Group weights use domain assignments. A symmetric descriptive decomposition of the <strong>41.1 pp</strong> social-science gap attributes <strong>16.6 pp</strong> to the source-group composition term and <strong>24.5 pp</strong> to the within-group share term. This is an arithmetic decomposition, not a causal attribution. The terms are respectively the sum of group-weight differences times mean within-group shares, and within-group share differences times mean group weights across the two directions. <a href="../Assets/Reproducibility/update_202610/korea_source_group_decomposition.csv">Group-level decomposition</a>.</p>
+</section>
+<section id="baseline-comparison-and-common-institutions" class="level2">
+<h2 class="anchored" data-anchor-id="baseline-comparison-and-common-institutions">Baseline comparison and common institutions</h2>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Indicator</th>
+<th>2025 baseline</th>
+<th>October 2026</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Korean policy citation pairs</td>
+<td>32,935</td>
+<td>418,179</td>
+</tr>
+<tr class="even">
+<td>Korean citing policy documents</td>
+<td>2,726</td>
+<td>35,335</td>
+</tr>
+<tr class="odd">
+<td>U.S. share; research country known</td>
+<td>55.2</td>
+<td>45.4</td>
+</tr>
+<tr class="even">
+<td>Research country unassigned</td>
+<td>27.3</td>
+<td>26.1</td>
+</tr>
+<tr class="odd">
+<td>Social sciences; Korean policy → research</td>
+<td>77.9</td>
+<td>64.2</td>
+</tr>
+<tr class="even">
+<td>Social sciences; policy → Korean research</td>
+<td>23.1</td>
+<td>23.1</td>
+</tr>
+<tr class="odd">
+<td>KDI/KIEP citation share</td>
+<td>93.5</td>
+<td>5.2</td>
+</tr>
+</tbody>
+</table>
+<p>Percent indicators are on a 0–100 scale. The baseline uses Overton February 2025 and OpenAlex June 2025, the existing DOI matching input, ROR with raw-affiliation country fallback, full domain assignments and a 2022–2024 recent-work window. The latest uses the snapshots above, freshly normalized DOI matching excluding multi-work matches, ROR with single-institution-country fallback, full domain assignments and a 2023–2025 recent-work window. Expected shares are omitted from this comparison because the population and weighting were refined here.</p>
+<p>Exact source identifiers intersect in <strong>9 institutions</strong>. The following rows all use the <strong>latest snapshot</strong>, comparing its full Korean source sample with restrictions to common institutions and to policy documents published in 2010–2024.</p>
+<table class="table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Latest-snapshot scope</th>
+<th>Citation pairs</th>
+<th>Social sciences %</th>
+<th>U.S. research %</th>
+<th>KDI/KIEP %</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>All latest Korean sources</td>
+<td>418,179</td>
+<td>64.2</td>
+<td>45.4</td>
+<td>5.2</td>
+</tr>
+<tr class="even">
+<td>Institutions present in both editions</td>
+<td>38,594</td>
+<td>67.6</td>
+<td>51.5</td>
+<td>56.5</td>
+</tr>
+<tr class="odd">
+<td>Common institutions; policy years 2010–2024</td>
+<td>28,696</td>
+<td>66.5</td>
+<td>49.3</td>
+<td>54.1</td>
+</tr>
+</tbody>
+</table>
+<p>Social-science shares use domain assignments, U.S. shares country-known citations, and KDI/KIEP shares all citations in each scope. Restricting institutions does not fix document identity, DOI mapping or OpenAlex metadata. Renamed identifiers are not inferred. These are coverage comparisons, not estimates of behavioral change. <a href="../Assets/Reproducibility/update_202610/korea_common_institutions.csv">Institution-ID crosswalk</a>.</p>
+</section>
+<section id="data-linkage-and-comparability" class="level2">
+<h2 class="anchored" data-anchor-id="data-linkage-and-comparability">Data linkage and comparability</h2>
+<ul>
+<li>8,386,474 of 8,767,042 unique DOIs match OpenAlex. The 104,964 DOIs mapping to multiple work IDs are excluded from the primary analysis; an unrestricted-mapping sensitivity table is available.</li>
+<li>First-author country uses the mode of ROR country codes by affiliation-row frequency, with alphabetical ties. If unavailable, a single unambiguous OpenAlex institution country code is accepted. Unresolved works remain unassigned.</li>
+<li>The 2025 baseline used a different fallback field. Snapshot coverage, DOI disambiguation and the fallback field all changed, so differences from the baseline must not be interpreted directly as behavioral trends.</li>
+<li>The recent-work window is 2023–2025 among works with a known publication year up to 2025. Incomplete 2026 is excluded. This differs from the baseline’s 2022–2024 window.</li>
+<li>Policy-source tags may overlap; citation counts do not measure causal policy impact.</li>
+</ul>
+</section>
+<section id="interactive-figures-and-downloads" class="level2">
+<h2 class="anchored" data-anchor-id="interactive-figures-and-downloads">Interactive figures and downloads</h2>
+<section id="policy-source-totals-and-averages" class="level3">
+<h3 class="anchored" data-anchor-id="policy-source-totals-and-averages">Policy-source totals and averages</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../Assets/Figures/update_202610/policy_sources.png" class="img-fluid figure-img"></p>
+<figcaption>Figure 3. Citation totals and citations per citing policy document for the same top ten policy sources, ranked by citation totals.</figcaption>
+</figure>
+</div>
+<div class="si-plot" data-src="../Assets/Interactive/update_202610/policy_sources.html" data-height="620" data-title="Figure 3. Policy-source totals and averages">
+  <div class="si-plot__actions">
+    <a class="si-plot__link" href="../Assets/Interactive/update_202610/policy_sources.html" target="_blank" rel="noopener">Open in new window</a>
+    <button type="button" class="si-plot__btn">Load plot</button>
+  </div>
+</div>
+</section>
+<section id="domains-by-source-type" class="level3">
+<h3 class="anchored" data-anchor-id="domains-by-source-type">Domains by source type</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../Assets/Figures/update_202610/source_type_domains.png" class="img-fluid figure-img"></p>
+<figcaption>Figure 4. Domain shares within each of the seven policy-source types with the most domain assignments. Each source type sums to 100%.</figcaption>
+</figure>
+</div>
+<div class="si-plot" data-src="../Assets/Interactive/update_202610/source_type_domains.html" data-height="620" data-title="Figure 4. Domains by policy-source type">
+  <div class="si-plot__actions">
+    <a class="si-plot__link" href="../Assets/Interactive/update_202610/source_type_domains.html" target="_blank" rel="noopener">Open in new window</a>
+    <button type="button" class="si-plot__btn">Load plot</button>
+  </div>
+</div>
+</section>
+<section id="topic-metrics" class="level3">
+<h3 class="anchored" data-anchor-id="topic-metrics">Topic metrics</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../Assets/Figures/update_202610/topic_intensity_recency.png" class="img-fluid figure-img"></p>
+<figcaption>Figure 5. Citations per cited work and the share of cited unique works published in 2023–2025 for the top 300 topics by citations. The recent-work share uses works with a known publication year up to 2025.</figcaption>
+</figure>
+</div>
+<div class="si-plot" data-src="../Assets/Interactive/update_202610/topic_intensity_recency.html" data-height="620" data-title="Figure 5. Topic citation intensity and recent-work share">
+  <div class="si-plot__actions">
+    <a class="si-plot__link" href="../Assets/Interactive/update_202610/topic_intensity_recency.html" target="_blank" rel="noopener">Open in new window</a>
+    <button type="button" class="si-plot__btn">Load plot</button>
+  </div>
+</div>
+</section>
+<section id="publication-years" class="level3">
+<h3 class="anchored" data-anchor-id="publication-years">Publication years</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../Assets/Figures/update_202610/research_publication_year.png" class="img-fluid figure-img"></p>
+<figcaption>Figure 6. Citations by publication year of cited research, 1990–2026. The shaded 2026 interval is incomplete; this is not a series by policy-document publication year.</figcaption>
+</figure>
+</div>
+<div class="si-plot" data-src="../Assets/Interactive/update_202610/research_publication_year.html" data-height="620" data-title="Figure 6. Publication years of cited research">
+  <div class="si-plot__actions">
+    <a class="si-plot__link" href="../Assets/Interactive/update_202610/research_publication_year.html" target="_blank" rel="noopener">Open in new window</a>
+    <button type="button" class="si-plot__btn">Load plot</button>
+  </div>
+</div>
+<p><a href="../Assets/Reproducibility/update_202610/online_update_aggregates.zip">Public aggregates and source code</a> · <a href="../Assets/Reproducibility/update_202610/data_profile.csv">Data profile</a> · <a href="../Assets/Reproducibility/update_202610/doi_linkage_audit.csv">DOI audit</a> · <a href="../Assets/Reproducibility/update_202610/direction_domains.csv">Domain aggregates</a> · <a href="../Assets/Reproducibility/update_202610/korea_country_sensitivity.csv">Country sensitivity</a> · <a href="../Assets/Reproducibility/update_202610/korea_domain_weighting_sensitivity.csv">Weighting sensitivity</a> · <a href="../Assets/Reproducibility/update_202610/korea_institution_domains.csv">Institution domains</a> · <a href="../Assets/Reproducibility/update_202610/korea_direction_source_groups.csv">Source groups</a> · <a href="../Assets/Reproducibility/update_202610/edition_indicator_comparison.csv">Edition comparison</a> · <a href="../Assets/Reproducibility/update_202610/korea_common_institution_scopes.csv">Common-institution scopes</a> · <a href="../Assets/Reproducibility/update_202610/provenance.json">Provenance</a></p>
+<p>See the <a href="../SI/update_202603.html">full Korean update</a> for institution tables, source totals and averages, publication-year distributions and follow-up questions.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

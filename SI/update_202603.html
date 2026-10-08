@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="2026년 데이터로 계산한 기존 웹 비교의 상태와 재분석 기준을 정리한다.">
+<meta name="description" content="Overton 2026-10-04와 OpenAlex 2026-06-25로 한국의 두 가지 정책-연구 인용 방향과 전체 자료의 주요 지표를 다시 계산했다.">
 
-<title>Overton × OpenAlex - 2026 데이터 업데이트</title>
+<title>Overton × OpenAlex - 2026년 10월 데이터 업데이트</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -149,19 +149,34 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">목차</h2>
 
   <ul>
-  <li><a href="#데이터-업데이트-요약" id="toc-데이터-업데이트-요약" class="nav-link active" data-scroll-target="#데이터-업데이트-요약">2026 데이터 업데이트 요약</a></li>
-  <li><a href="#업데이트-범위" id="toc-업데이트-범위" class="nav-link" data-scroll-target="#업데이트-범위">업데이트 범위</a></li>
-  <li><a href="#데이터-프로파일링" id="toc-데이터-프로파일링" class="nav-link" data-scroll-target="#데이터-프로파일링">데이터 프로파일링</a></li>
-  <li><a href="#주요-지표의-2025-2026-차이" id="toc-주요-지표의-2025-2026-차이" class="nav-link" data-scroll-target="#주요-지표의-2025-2026-차이">주요 지표의 2025-2026 차이</a></li>
-  <li><a href="#한국-연구-인용과-한국-정책문헌-지표-비교" id="toc-한국-연구-인용과-한국-정책문헌-지표-비교" class="nav-link" data-scroll-target="#한국-연구-인용과-한국-정책문헌-지표-비교">한국 연구 인용과 한국 정책문헌 지표 비교</a>
+  <li><a href="#한국의-두-인용-방향은-새-자료에서도-다르게-구성된다" id="toc-한국의-두-인용-방향은-새-자료에서도-다르게-구성된다" class="nav-link active" data-scroll-target="#한국의-두-인용-방향은-새-자료에서도-다르게-구성된다">한국의 두 인용 방향은 새 자료에서도 다르게 구성된다</a></li>
+  <li><a href="#분석에-포함된-자료" id="toc-분석에-포함된-자료" class="nav-link" data-scroll-target="#분석에-포함된-자료">1. 분석에 포함된 자료</a></li>
+  <li><a href="#한국-연구를-인용한-정책-출처와-한국-정책문헌이-인용한-연구-국가" id="toc-한국-연구를-인용한-정책-출처와-한국-정책문헌이-인용한-연구-국가" class="nav-link" data-scroll-target="#한국-연구를-인용한-정책-출처와-한국-정책문헌이-인용한-연구-국가">2. 한국 연구를 인용한 정책 출처와 한국 정책문헌이 인용한 연구 국가</a>
   <ul class="collapse">
-  <li><a href="#한국-연구를-인용한-정책-출처와-한국-정책문헌이-인용한-연구국" id="toc-한국-연구를-인용한-정책-출처와-한국-정책문헌이-인용한-연구국" class="nav-link" data-scroll-target="#한국-연구를-인용한-정책-출처와-한국-정책문헌이-인용한-연구국">1. 한국 연구를 인용한 정책 출처와 한국 정책문헌이 인용한 연구국</a></li>
-  <li><a href="#자국-인용" id="toc-자국-인용" class="nav-link" data-scroll-target="#자국-인용">2. 자국 인용</a></li>
-  <li><a href="#분야별-인용-구성" id="toc-분야별-인용-구성" class="nav-link" data-scroll-target="#분야별-인용-구성">3. 분야별 인용 구성</a></li>
+  <li><a href="#관측-비중과-기대-비중의-비교-대상-맞추기" id="toc-관측-비중과-기대-비중의-비교-대상-맞추기" class="nav-link" data-scroll-target="#관측-비중과-기대-비중의-비교-대상-맞추기">관측 비중과 기대 비중의 비교 대상 맞추기</a></li>
   </ul></li>
-  <li><a href="#두-데이터-버전에서-공통으로-확인되는-항목" id="toc-두-데이터-버전에서-공통으로-확인되는-항목" class="nav-link" data-scroll-target="#두-데이터-버전에서-공통으로-확인되는-항목">두 데이터 버전에서 공통으로 확인되는 항목</a></li>
-  <li><a href="#해석-주의" id="toc-해석-주의" class="nav-link" data-scroll-target="#해석-주의">해석 주의</a></li>
-  <li><a href="#공개-자료-관리" id="toc-공개-자료-관리" class="nav-link" data-scroll-target="#공개-자료-관리">공개 자료 관리</a></li>
+  <li><a href="#두-방향의-분야-구성" id="toc-두-방향의-분야-구성" class="nav-link" data-scroll-target="#두-방향의-분야-구성">3. 두 방향의 분야 구성</a>
+  <ul class="collapse">
+  <li><a href="#가중-방식에-따른-민감도" id="toc-가중-방식에-따른-민감도" class="nav-link" data-scroll-target="#가중-방식에-따른-민감도">가중 방식에 따른 민감도</a></li>
+  </ul></li>
+  <li><a href="#한국-정책문헌-표본의-기관-구성" id="toc-한국-정책문헌-표본의-기관-구성" class="nav-link" data-scroll-target="#한국-정책문헌-표본의-기관-구성">4. 한국 정책문헌 표본의 기관 구성</a>
+  <ul class="collapse">
+  <li><a href="#출처-유형-구성과-유형-안의-분야-구성" id="toc-출처-유형-구성과-유형-안의-분야-구성" class="nav-link" data-scroll-target="#출처-유형-구성과-유형-안의-분야-구성">출처 유형 구성과 유형 안의 분야 구성</a></li>
+  </ul></li>
+  <li><a href="#전체-자료의-정책-출처시간반복-인용" id="toc-전체-자료의-정책-출처시간반복-인용" class="nav-link" data-scroll-target="#전체-자료의-정책-출처시간반복-인용">5. 전체 자료의 정책 출처·시간·반복 인용</a>
+  <ul class="collapse">
+  <li><a href="#정책-출처별-총량과-문헌당-평균" id="toc-정책-출처별-총량과-문헌당-평균" class="nav-link" data-scroll-target="#정책-출처별-총량과-문헌당-평균">정책 출처별 총량과 문헌당 평균</a></li>
+  <li><a href="#토픽별-최근-논문-비중과-논문당-인용-건수" id="toc-토픽별-최근-논문-비중과-논문당-인용-건수" class="nav-link" data-scroll-target="#토픽별-최근-논문-비중과-논문당-인용-건수">토픽별 최근 논문 비중과 논문당 인용 건수</a></li>
+  <li><a href="#발행연도와-반복-인용" id="toc-발행연도와-반복-인용" class="nav-link" data-scroll-target="#발행연도와-반복-인용">발행연도와 반복 인용</a></li>
+  </ul></li>
+  <li><a href="#연결-품질과-해석-범위" id="toc-연결-품질과-해석-범위" class="nav-link" data-scroll-target="#연결-품질과-해석-범위">6. 연결 품질과 해석 범위</a>
+  <ul class="collapse">
+  <li><a href="#doi가-여러-논문에-연결되는-경우" id="toc-doi가-여러-논문에-연결되는-경우" class="nav-link" data-scroll-target="#doi가-여러-논문에-연결되는-경우">DOI가 여러 논문에 연결되는 경우</a></li>
+  <li><a href="#연구-국가의-순차-부여" id="toc-연구-국가의-순차-부여" class="nav-link" data-scroll-target="#연구-국가의-순차-부여">연구 국가의 순차 부여</a></li>
+  <li><a href="#기준판과-최신판의-값규칙-비교" id="toc-기준판과-최신판의-값규칙-비교" class="nav-link" data-scroll-target="#기준판과-최신판의-값규칙-비교">2025 기준판과 최신판의 값·규칙 비교</a></li>
+  <li><a href="#공통-기관으로-범위를-좁히면" id="toc-공통-기관으로-범위를-좁히면" class="nav-link" data-scroll-target="#공통-기관으로-범위를-좁히면">공통 기관으로 범위를 좁히면</a></li>
+  </ul></li>
+  <li><a href="#update-downloads" id="toc-update-downloads" class="nav-link" data-scroll-target="#update-downloads">7. 집계표와 다음 점검</a></li>
   </ul>
 </nav>
     </div>
@@ -170,12 +185,12 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">2026 데이터 업데이트</h1>
+<h1 class="title">2026년 10월 데이터 업데이트</h1>
 </div>
 
 <div>
   <div class="description">
-    2026년 데이터로 계산한 기존 웹 비교의 상태와 재분석 기준을 정리한다.
+    Overton 2026-10-04와 OpenAlex 2026-06-25로 한국의 두 가지 정책-연구 인용 방향과 전체 자료의 주요 지표를 다시 계산했다.
   </div>
 </div>
 
@@ -192,292 +207,594 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><strong>바로가기:</strong> <a href="../Report/Report_final.pdf">보고서 원고(PDF)</a> · <a href="../SI/index.html">확장 자료</a> · <a href="../SI/methods.html">방법론·데이터 정합성</a> · <a href="../SI/interactive.html">인터랙티브</a> · <a href="../SI/appendix.html">부록</a> · <a href="../SI/next_questions.html">다음 질문</a></p>
+<p><strong>바로가기:</strong> <a href="../SI/index.html">확장 자료</a> · <a href="../Report/Report_final.pdf">2025 기준 보고서 원고</a> · <a href="../SI/update_202603_en.html">English summary</a></p>
+<p><strong>웹 갱신일:</strong> 2026년 10월 8일 · <strong>Overton:</strong> 2026-10-04 · <strong>OpenAlex:</strong> 2026-06-25</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-기존 웹 비교의 상태
+이번에 갱신한 범위
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<ul>
-<li><a href="../Report/Report_final.pdf">보고서 원고(PDF)</a>는 원고 발행일과 내용 기준일이 2025년 12월 31일인 편집 전 원고다.</li>
-<li>아래 수치는 <code>Overton 2026-01-30</code>과 <code>OpenAlex 202602</code>로 계산한 기존 웹 비교 결과이며, 현재 보고서에 적용한 연구국 순차 부여 규칙 이전에 산출됐다.</li>
-<li>따라서 아래 표의 기존 기준값과 2026 값은 현재 보고서 수치와 직접 비교하지 않는다. GitHub로 제공되는 Overton 데이터 갱신분을 반영해 동일한 순차 부여 규칙으로 재분석한 뒤 이 페이지를 업데이트할 예정이다.</li>
-</ul>
+<p>이 페이지와 메인 첫 화면은 새 데이터로 다시 계산한 온라인 결과다. 연결된 PDF와 기존 방법론·부록·인터랙티브는 2025 기준판이다. 아래의 새 그림과 집계표는 해당 기준판과 구분해 제공한다.</p>
+<p>분석 모집단은 Overton에서 DOI로 연결되고 OpenAlex의 한 논문에 대응하는 정책문헌→학술논문 인용이다. 모든 정책문헌이나 모든 참고문헌을 포괄하지 않는다.</p>
 </div>
 </div>
-<section id="데이터-업데이트-요약" class="level2">
-<h2 class="anchored" data-anchor-id="데이터-업데이트-요약">2026 데이터 업데이트 요약</h2>
-<p>아래 결과는 순차 부여 규칙을 적용하기 전의 기존 비교 기록이다. 현재 보고서의 기준값은 보고서 원고와 확장 자료 첫쪽에서 확인한다.</p>
-<table class="table">
-<colgroup>
-<col style="width: 21%">
-<col style="width: 28%">
-<col style="width: 28%">
-<col style="width: 21%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>비교 항목</th>
-<th style="text-align: right;">기존 2025 비교값(구 규칙)</th>
-<th style="text-align: right;">2026 웹 업데이트(구 규칙)</th>
-<th>해석</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>한국 연구를 인용한 정책 출처</td>
-<td style="text-align: right;">상위 3개 정책 출처 54.8%</td>
-<td style="text-align: right;">상위 3개 정책 출처 51.1%</td>
-<td>상위 3개 비중이 3.7%p 낮아졌다.</td>
-</tr>
-<tr class="even">
-<td>한국 정책문헌이 인용하는 연구</td>
-<td style="text-align: right;">미국 연구 55.7% / 한국 연구 4.5%</td>
-<td style="text-align: right;">미국 연구 48.6% / 한국 연구 3.8%</td>
-<td>미국 연구 비중은 7.1%p, 한국 연구 비중은 0.8%p 낮아졌다.</td>
-</tr>
-<tr class="odd">
-<td>분야별 구성</td>
-<td style="text-align: right;">사회과학 77.9% / 물리과학 9.2%</td>
-<td style="text-align: right;">사회과학 66.2% / 물리과학 18.0%</td>
-<td>도메인별 차이는 유지되지만 구성은 더 분산되었다.</td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li>한국 연구를 인용한 상위 3개 정책 출처의 합계 비중은 51.1%다.</li>
-<li>한국 연구를 인용한 정책 출처와 한국 정책문헌이 인용한 연구국은 여전히 구분해서 봐야 한다.</li>
-<li>반복 인용 구조를 점검해야 한다는 기준도 유지된다.</li>
-</ul>
+<section id="한국의-두-인용-방향은-새-자료에서도-다르게-구성된다" class="level2">
+<h2 class="anchored" data-anchor-id="한국의-두-인용-방향은-새-자료에서도-다르게-구성된다">한국의 두 인용 방향은 새 자료에서도 다르게 구성된다</h2>
+<p>한국 연구를 인용한 정책 출처에서는 미국·국제기구·한국의 합계 비중이 <strong>49.7%</strong>였다. 한국 정책문헌이 인용한 연구에서는 국가가 확인되는 인용 가운데 미국 연구가 <strong>45.4%</strong>, 한국 연구가 <strong>3.9%</strong>였다. 두 비중은 각각 정책 출처와 연구 국가의 구성을 나타내므로 같은 모집단의 값처럼 비교하지 않는다.</p>
+<p>한국 정책문헌이 인용한 연구의 사회과학 비중은 <strong>64.2%</strong>, 정책문헌에 인용된 한국 연구에서는 <strong>23.1%</strong>였다. 보건과학 비중은 각각 <strong>13.3%</strong>, <strong>36.0%</strong>였다. 국가와 분야 구성을 인용 방향별로 구분해서 읽어야 한다는 보고서의 관찰은 이번 결합 자료에서도 확인된다.</p>
 </section>
-<section id="업데이트-범위" class="level2">
-<h2 class="anchored" data-anchor-id="업데이트-범위">업데이트 범위</h2>
-<ul>
-<li><strong>Overton:</strong> <code>2026-01-30 raw</code></li>
-<li><strong>OpenAlex:</strong> local <code>202602</code> meta/text/topics</li>
-<li><strong>fallback:</strong> <code>first_author_country</code>, <code>is_oa</code>는 remote <code>202506</code> 보완값 사용</li>
-<li><strong>비교 기준:</strong> 2025 기준 원고가 사용한 <code>Overton 2025.02 + OpenAlex 2025.06</code></li>
-</ul>
-</section>
-<section id="데이터-프로파일링" class="level2">
-<h2 class="anchored" data-anchor-id="데이터-프로파일링">데이터 프로파일링</h2>
-<p>이번 업데이트에서는 모수 자체가 함께 커졌다.</p>
+<section id="분석에-포함된-자료" class="level2">
+<h2 class="anchored" data-anchor-id="분석에-포함된-자료">1. 분석에 포함된 자료</h2>
 <table class="table">
 <thead>
 <tr class="header">
 <th>항목</th>
-<th style="text-align: right;">기존 2025 비교값(구 규칙)</th>
-<th style="text-align: right;">2026 웹 업데이트(구 규칙)</th>
-<th style="text-align: right;">변화</th>
+<th style="text-align: right;">이번 온라인 분석</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>정책문헌-논문 인용 행 수</td>
-<td style="text-align: right;">2,337만</td>
-<td style="text-align: right;">2,896만</td>
-<td style="text-align: right;">+23.9%</td>
+<td>Overton 원자료의 정책문헌</td>
+<td style="text-align: right;">4,587,998편</td>
 </tr>
 <tr class="even">
-<td>학술논문을 인용한 정책문헌 수</td>
-<td style="text-align: right;">134.8만</td>
-<td style="text-align: right;">165.0만</td>
-<td style="text-align: right;">+22.4%</td>
+<td>DOI가 관측된 고유 정책문헌–DOI 관계</td>
+<td style="text-align: right;">33,305,251건</td>
 </tr>
 <tr class="odd">
-<td>고유 논문 수</td>
-<td style="text-align: right;">653.2만</td>
-<td style="text-align: right;">742.5만</td>
-<td style="text-align: right;">+13.7%</td>
+<td>고유 DOI</td>
+<td style="text-align: right;">8,767,042개</td>
+</tr>
+<tr class="even">
+<td>OpenAlex와 연결된 DOI</td>
+<td style="text-align: right;">8,386,474개 · 95.7%</td>
+</tr>
+<tr class="odd">
+<td>한 논문에 대응하는 DOI</td>
+<td style="text-align: right;">8,281,510개</td>
+</tr>
+<tr class="even">
+<td>기본 분석의 정책문헌–논문 인용</td>
+<td style="text-align: right;">31,940,050건</td>
+</tr>
+<tr class="odd">
+<td>기본 분석에서 연구를 인용한 정책문헌</td>
+<td style="text-align: right;">1,870,148편</td>
+</tr>
+<tr class="even">
+<td>기본 분석에서 인용된 고유 논문</td>
+<td style="text-align: right;">8,281,510편</td>
 </tr>
 </tbody>
 </table>
-<p>최신 데이터에는 더 많은 정책문헌과 인용 행이 포함되어 분모와 표본이 함께 증가했다. 따라서 v1과 v2의 수치 차이에는 수집 범위와 표본 규모의 변화도 포함된다.</p>
-<p>한국 연구 인용과 한국 정책문헌 표본도 함께 증가했다.</p>
+<p>같은 정책문헌이 같은 논문을 여러 번 인용해도 한 관계로 센다. DOI는 공백·보이지 않는 서식 문자·대소문자를 정리해 연결하고, 여러 논문에 대응하는 DOI는 기본 분석에서 제외했다. DOI 연결률은 고유 DOI가 기준이며, 기본 분석의 인용 건수는 중복을 제거한 정책문헌–논문 관계가 기준이다. 여기서 논문은 DOI로 연결된 OpenAlex 연구 레코드를 뜻하며, 학술지 논문만으로 문헌 유형을 제한하지 않았다.</p>
+</section>
+<section id="한국-연구를-인용한-정책-출처와-한국-정책문헌이-인용한-연구-국가" class="level2">
+<h2 class="anchored" data-anchor-id="한국-연구를-인용한-정책-출처와-한국-정책문헌이-인용한-연구-국가">2. 한국 연구를 인용한 정책 출처와 한국 정책문헌이 인용한 연구 국가</h2>
+<p>한국 연구가 인용된 관계는 135,900건이고, 한국 정책문헌이 연구를 인용한 관계는 418,179건이었다. 한국 정책문헌 표본에는 연구 인용이 있는 문헌 35,335편이 포함됐다.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../Assets/Figures/update_202610/korea_flows.png" class="img-fluid figure-img"></p>
+<figcaption>그림 1. 정책 출처별 한국 연구 인용 비중과 한국 정책문헌이 인용한 연구 국가 비중. 왼쪽은 최상위 정책 출처별 인용 집계의 합계를 기준으로, 오른쪽은 연구 국가가 확인되는 인용을 기준으로 계산했다. 양쪽 모두 상위 10개만 표시했다.</figcaption>
+</figure>
+</div>
+<p>그림 양쪽의 국가는 같은 영문 국가명으로 표시했으며, 국제기구와 유럽연합은 별도의 정책 출처 범주다. 오른쪽의 국가 비중 계산에는 전체 418,179건 중 국가가 확인되는 308,870건을 사용했다. 국가를 부여하지 못한 인용은 109,309건으로 <strong>26.1%</strong>였다. 이 인용을 모두 미국 이외 또는 미국 연구로 배치하면 미국 연구 비중의 기계적 경계는 33.5–59.7%다. 이 범위는 통계적 신뢰구간이 아니다.</p>
+<p>한국 연구의 정책 출처별 집계 합계는 135,900건이다. 정책 출처의 최상위 태그는 상호 배타적이지 않을 수 있어, 고유 인용 관계의 수와 구분한다. 이번 자료에서 두 수의 차이는 0건이다. 출처 미부여와 복수 태그가 함께 있으면 차이만으로 복수 태그의 양을 확정할 수 없다.</p>
+<section id="관측-비중과-기대-비중의-비교-대상-맞추기" class="level3">
+<h3 class="anchored" data-anchor-id="관측-비중과-기대-비중의-비교-대상-맞추기">관측 비중과 기대 비중의 비교 대상 맞추기</h3>
+<p>기대 비중을 계산할 때는 <strong>연구 국가와 도메인이 모두 확인되는 한국 정책문헌의 인용 308,842건</strong>으로 비교 대상을 맞췄다. 국가가 확인되는 인용 가운데 분야 정보가 없는 28건은 이 비교에서 제외했다. 도메인이 여러 개 붙은 논문은 인용 1건의 가중치를 도메인 수로 나누어, 인용마다 가중치 합이 1이 되게 했다.</p>
+<p>이 분야 가중치와 <strong>결합 표본에서 인용된 고유 논문의 분야별 1저자 국가 구성</strong>을 결합한 미국 연구의 기대 비중은 <strong>35.1%</strong>, 같은 인용 모집단의 관측 비중은 <strong>45.4%</strong>로, 차이는 <strong>10.3%p</strong>였다. 이는 정책문헌에 인용된 표본 안에서 만든 기술적 비교 기준이며, OpenAlex 전체 연구 생산량이나 바람직한 인용 비중이 아니다. 그림 1의 국가 비중은 분야 정보의 유무와 관계없이 국가 확인 인용 전체를 사용한다.</p>
 <table class="table">
-<colgroup>
-<col style="width: 20%">
-<col style="width: 26%">
-<col style="width: 26%">
-<col style="width: 26%">
-</colgroup>
 <thead>
 <tr class="header">
-<th>한국 연구 인용·한국 정책문헌 표본</th>
-<th style="text-align: right;">기존 2025 비교값(구 규칙)</th>
-<th style="text-align: right;">2026 웹 업데이트(구 규칙)</th>
-<th style="text-align: right;">변화</th>
+<th>기대 비중 계산 조건</th>
+<th>미국 기대 비중 %</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>한국 연구가 인용된 행 수</td>
-<td style="text-align: right;">8.9만</td>
-<td style="text-align: right;">11.5만</td>
-<td style="text-align: right;">+29.0%</td>
+<td>이전 계산: 국가 미부여 포함 · 도메인별 각각 집계</td>
+<td>35.0</td>
 </tr>
 <tr class="even">
-<td><code>South Korea</code> 정책 출처 태그가 붙고 학술논문을 인용한 정책문헌 수</td>
-<td style="text-align: right;">2,726</td>
-<td style="text-align: right;">25,387</td>
-<td style="text-align: right;">+831.3%</td>
+<td>국가·분야 확인 · 도메인별 각각 집계</td>
+<td>34.9</td>
 </tr>
 <tr class="odd">
-<td><code>South Korea</code> 정책 출처 태그가 붙은 인용 행 수</td>
-<td style="text-align: right;">3.3만</td>
-<td style="text-align: right;">28.7만</td>
-<td style="text-align: right;">+770.4%</td>
+<td>국가·분야 확인 · 인용별 분할 가중 (채택)</td>
+<td>35.1</td>
 </tr>
 </tbody>
 </table>
-<p>한국 연구 인용과 한국 정책문헌 지표의 차이에도 관측 표본 증가가 반영되어 있다. 또한 정책 출처 분류는 상호 배타적이지 않을 수 있으므로, <code>South Korea</code>로 분류된 행 수가 증가하면 한국 정책문헌 비교의 분모와 포함 범위도 달라진다.</p>
+<p>이전 계산은 국가 미부여 인용까지 포함한 분야 구성을 사용했다. 중간 계산은 국가·분야 확인 인용으로 대상을 좁혔지만 도메인이 많은 인용에 더 큰 가중치를 부여한다. 마지막 행을 인용 단위의 관측 비중과 비교하는 기준으로 채택했다. 세 계산의 <a href="../Assets/Reproducibility/update_202610/korea_expected_domain_weights.csv">분야 가중치</a>와 <a href="../Assets/Reproducibility/update_202610/expected_country_domain_reference.csv">분야별 국가 구성</a>을 함께 제공한다.</p>
+<div class="si-plot" data-src="../Assets/Interactive/update_202610/korea_flows.html" data-height="620" data-title="그림 1. 한국의 두 인용 방향: 정책 출처와 연구 국가">
+  <div class="si-plot__actions">
+    <a class="si-plot__link" href="../Assets/Interactive/update_202610/korea_flows.html" target="_blank" rel="noopener">새 창으로 열기</a>
+    <button type="button" class="si-plot__btn">플롯 불러오기</button>
+  </div>
+</div>
 </section>
-<section id="주요-지표의-2025-2026-차이" class="level2">
-<h2 class="anchored" data-anchor-id="주요-지표의-2025-2026-차이">주요 지표의 2025-2026 차이</h2>
+</section>
+<section id="두-방향의-분야-구성" class="level2">
+<h2 class="anchored" data-anchor-id="두-방향의-분야-구성">3. 두 방향의 분야 구성</h2>
 <table class="table">
 <colgroup>
-<col style="width: 20%">
-<col style="width: 26%">
-<col style="width: 26%">
-<col style="width: 26%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>지표</th>
-<th style="text-align: right;">기존 2025 비교값(구 규칙)</th>
-<th style="text-align: right;">2026 웹 업데이트(구 규칙)</th>
-<th style="text-align: right;">변화폭</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>한국 연구를 인용한 정책 출처: 출처별 상위 3개 합계</td>
-<td style="text-align: right;">54.8%</td>
-<td style="text-align: right;">51.1%</td>
-<td style="text-align: right;">-3.7%p</td>
-</tr>
-<tr class="even">
-<td>한국 정책문헌 인용에서 미국 연구 비중</td>
-<td style="text-align: right;">55.7%</td>
-<td style="text-align: right;">48.6%</td>
-<td style="text-align: right;">-7.1%p</td>
-</tr>
-<tr class="odd">
-<td>한국 정책문헌 인용에서 한국 연구 비중</td>
-<td style="text-align: right;">4.5%</td>
-<td style="text-align: right;">3.8%</td>
-<td style="text-align: right;">-0.8%p</td>
-</tr>
-<tr class="even">
-<td>2회 이상 반복 인용된 고유 논문 비중</td>
-<td style="text-align: right;">48.1%</td>
-<td style="text-align: right;">51.3%</td>
-<td style="text-align: right;">+3.2%p</td>
-</tr>
-</tbody>
-</table>
-<p>한국 연구를 인용한 상위 3개 정책 출처 비중과 한국 정책문헌의 미국 연구 비중은 v1보다 각각 3.7%p, 7.1%p 낮아졌고, 2회 이상 반복 인용 논문 비중은 3.2%p 높아졌다.</p>
-</section>
-<section id="한국-연구-인용과-한국-정책문헌-지표-비교" class="level2">
-<h2 class="anchored" data-anchor-id="한국-연구-인용과-한국-정책문헌-지표-비교">한국 연구 인용과 한국 정책문헌 지표 비교</h2>
-<section id="한국-연구를-인용한-정책-출처와-한국-정책문헌이-인용한-연구국" class="level3">
-<h3 class="anchored" data-anchor-id="한국-연구를-인용한-정책-출처와-한국-정책문헌이-인용한-연구국">1. 한국 연구를 인용한 정책 출처와 한국 정책문헌이 인용한 연구국</h3>
-<ul>
-<li>한국 연구를 인용한 상위 3개 정책 출처의 합계는 <code>54.8% -&gt; 51.1%</code>로 낮아졌다.</li>
-<li>한국 정책문헌 인용에서 미국 연구 비중은 <code>55.7% -&gt; 48.6%</code>로 낮아졌다.</li>
-<li>한국 정책문헌 인용에서 한국 연구 비중은 <code>4.5% -&gt; 3.8%</code>로 낮아졌다.</li>
-</ul>
-<p>v2에서 두 비중은 모두 v1보다 낮다. 관련 배경은 <a href="../SI/appendix.html#appendix-c">부록</a>과 <a href="../SI/interactive.html#si-fig-8">인터랙티브</a>에서 이어서 확인할 수 있다.</p>
-</section>
-<section id="자국-인용" class="level3">
-<h3 class="anchored" data-anchor-id="자국-인용">2. 자국 인용</h3>
-<ul>
-<li>한국의 자국 연구 인용 비중은 <code>4.5% -&gt; 3.8%</code>로 낮아졌다.</li>
-<li>도메인 조정 비교 비중은 <code>0.62% -&gt; 0.70%</code>로 높아졌다.</li>
-</ul>
-<p>즉 자국 연구 인용 비중은 낮아졌고, 비교 비중은 약간 높아졌다. 따라서 비교 비중과의 차이는 2025 기준 원고보다 작아진다. 관련 해석은 <a href="../SI/appendix.html#appendix-c2">부록</a>과 <a href="../SI/interactive.html#si-fig-11">인터랙티브</a>에서 이어서 확인할 수 있다.</p>
-</section>
-<section id="분야별-인용-구성" class="level3">
-<h3 class="anchored" data-anchor-id="분야별-인용-구성">3. 분야별 인용 구성</h3>
-<table class="table">
-<colgroup>
-<col style="width: 15%">
-<col style="width: 21%">
-<col style="width: 21%">
-<col style="width: 21%">
-<col style="width: 21%">
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
 </colgroup>
 <thead>
 <tr class="header">
 <th>도메인</th>
-<th style="text-align: right;">2025 한국 정책문헌의 연구 인용 비중</th>
-<th style="text-align: right;">2026 한국 정책문헌의 연구 인용 비중</th>
-<th style="text-align: right;">2025 정책문헌에 인용된 한국 연구 비중</th>
-<th style="text-align: right;">2026 정책문헌에 인용된 한국 연구 비중</th>
+<th>한국 정책문헌이 인용한 연구 %</th>
+<th>정책문헌에 인용된 한국 연구 %</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Social Sciences</td>
-<td style="text-align: right;">77.9%</td>
-<td style="text-align: right;">66.2%</td>
-<td style="text-align: right;">22.7%</td>
-<td style="text-align: right;">23.7%</td>
-</tr>
-<tr class="even">
 <td>Health Sciences</td>
-<td style="text-align: right;">9.4%</td>
-<td style="text-align: right;">11.2%</td>
-<td style="text-align: right;">37.6%</td>
-<td style="text-align: right;">36.1%</td>
-</tr>
-<tr class="odd">
-<td>Physical Sciences</td>
-<td style="text-align: right;">9.2%</td>
-<td style="text-align: right;">18.0%</td>
-<td style="text-align: right;">23.3%</td>
-<td style="text-align: right;">23.4%</td>
+<td>13.3</td>
+<td>36.0</td>
 </tr>
 <tr class="even">
 <td>Life Sciences</td>
-<td style="text-align: right;">3.5%</td>
-<td style="text-align: right;">4.6%</td>
-<td style="text-align: right;">16.4%</td>
-<td style="text-align: right;">16.7%</td>
+<td>4.7</td>
+<td>16.7</td>
+</tr>
+<tr class="odd">
+<td>Physical Sciences</td>
+<td>17.8</td>
+<td>24.2</td>
+</tr>
+<tr class="even">
+<td>Social Sciences</td>
+<td>64.2</td>
+<td>23.1</td>
 </tr>
 </tbody>
 </table>
-<p>사회과학 비중은 11.7%p 낮고 물리과학 비중은 8.8%p 높다. 관련 배경은 <a href="../SI/appendix.html#appendix-c3">부록</a>과 <a href="../SI/interactive.html#si-fig-10">인터랙티브</a>에서 이어서 확인할 수 있다.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../Assets/Figures/update_202610/korea_domains.png" class="img-fluid figure-img"></p>
+<figcaption>그림 2. 한국의 두 가지 인용 방향별 도메인 구성. 같은 논문의 같은 도메인은 한 번만 세며, 서로 다른 도메인이 부여되면 각각 포함한다. 각 방향의 도메인 부여 건수 합계를 100%로 정규화했다.</figcaption>
+</figure>
+</div>
+<p>사회과학 비중 차이는 41.1%p였다. 도메인은 OpenAlex가 논문에 부여한 토픽에서 가져왔다. 같은 논문에 여러 도메인이 있을 수 있으므로, 이 비중은 논문을 하나의 분야에만 배정한 비중과 다르다. 전체 기본 분석에서 도메인을 부여하지 못한 인용은 100,093건이다.</p>
+<div class="si-plot" data-src="../Assets/Interactive/update_202610/korea_domains.html" data-height="620" data-title="그림 2. 한국의 두 인용 방향: 분야 구성">
+  <div class="si-plot__actions">
+    <a class="si-plot__link" href="../Assets/Interactive/update_202610/korea_domains.html" target="_blank" rel="noopener">새 창으로 열기</a>
+    <button type="button" class="si-plot__btn">플롯 불러오기</button>
+  </div>
+</div>
+<section id="가중-방식에-따른-민감도" class="level3">
+<h3 class="anchored" data-anchor-id="가중-방식에-따른-민감도">가중 방식에 따른 민감도</h3>
+<table class="table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>가중 방식</th>
+<th>한국 정책문헌 → 연구 %</th>
+<th>정책문헌 → 한국 연구 %</th>
+<th>사회과학 비중 차이 %p</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>인용 기준 (기본)</td>
+<td>64.2</td>
+<td>23.1</td>
+<td>41.1</td>
+</tr>
+<tr class="even">
+<td>고유 논문 기준</td>
+<td>60.8</td>
+<td>16.8</td>
+<td>44.0</td>
+</tr>
+<tr class="odd">
+<td>문헌 동일 가중</td>
+<td>67.6</td>
+<td>34.7</td>
+<td>32.9</td>
+</tr>
+<tr class="even">
+<td>인용별 도메인 분할</td>
+<td>71.2</td>
+<td>24.6</td>
+<td>46.6</td>
+</tr>
+</tbody>
+</table>
+<p>표의 두 비중은 모두 사회과학을 나타낸다. 기본 분석은 인용마다 부여된 도메인을 각각 센다. 고유 논문 방식은 여러 문헌에 인용된 논문도 방향별로 한 번만 세고, 문헌 동일 가중 방식은 분야 정보가 있는 문헌마다 사회과학 도메인 비중을 계산한 뒤 평균한다. 분할 가중 방식은 인용마다 가중치 합을 1로 맞춘다. 분야가 없는 인용은 각 방식의 분야 구성 계산에서 제외한다.</p>
+<p>사회과학 비중 차이는 네 방식에서 <strong>32.9–46.6%p</strong>였다. 차이의 크기는 가중 방식에 따라 달라졌지만, 한국 정책문헌이 인용한 연구에서 사회과학 비중이 더 높다는 방향은 유지됐다. 이 범위는 계산 방식에 따른 결과의 범위이며 신뢰구간이 아니다.</p>
 </section>
 </section>
-<section id="두-데이터-버전에서-공통으로-확인되는-항목" class="level2">
-<h2 class="anchored" data-anchor-id="두-데이터-버전에서-공통으로-확인되는-항목">두 데이터 버전에서 공통으로 확인되는 항목</h2>
+<section id="한국-정책문헌-표본의-기관-구성" class="level2">
+<h2 class="anchored" data-anchor-id="한국-정책문헌-표본의-기관-구성">4. 한국 정책문헌 표본의 기관 구성</h2>
+<p>KDI·KIEP 문헌에서 관측된 인용은 21,797건으로, 한국 정책문헌의 연구 인용 중 <strong>5.2%</strong>였다. 연구 인용이 있는 두 기관 문헌은 1,526편이다. 아래 표에는 인용 건수 상위 10곳과 KDI·KIEP를 제시했다. 나머지 기관은 <a href="../Assets/Reproducibility/update_202610/korea_institutions.csv">전체 집계표</a>에서 확인한다.</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>정책 출처 기관</th>
+<th>인용 건수</th>
+<th>인용 문헌 수</th>
+<th>사회과학 %</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>한국보건사회연구원 (KIHASA)</td>
+<td>64,140</td>
+<td>3,589</td>
+<td>56.6</td>
+</tr>
+<tr class="even">
+<td>과학기술정책연구원 (STEPI)</td>
+<td>28,609</td>
+<td>2,153</td>
+<td>72.2</td>
+</tr>
+<tr class="odd">
+<td>한국형사·법무정책연구원 (KICJ)</td>
+<td>28,127</td>
+<td>1,636</td>
+<td>67.6</td>
+</tr>
+<tr class="even">
+<td>한국행정연구원 (KIPA)</td>
+<td>24,008</td>
+<td>1,669</td>
+<td>74.6</td>
+</tr>
+<tr class="odd">
+<td>산업연구원 (KIET)</td>
+<td>23,046</td>
+<td>2,139</td>
+<td>82.6</td>
+</tr>
+<tr class="even">
+<td>한국환경연구원 (KEI)</td>
+<td>21,378</td>
+<td>1,647</td>
+<td>25.5</td>
+</tr>
+<tr class="odd">
+<td>국토연구원 (KRIHS)</td>
+<td>19,426</td>
+<td>2,114</td>
+<td>59.0</td>
+</tr>
+<tr class="even">
+<td>통일연구원 (KINU)</td>
+<td>18,264</td>
+<td>1,433</td>
+<td>84.1</td>
+</tr>
+<tr class="odd">
+<td>한국개발연구원 (KDI)</td>
+<td>17,794</td>
+<td>1,220</td>
+<td>81.1</td>
+</tr>
+<tr class="even">
+<td>한국노동연구원 (KLI)</td>
+<td>16,129</td>
+<td>1,044</td>
+<td>75.6</td>
+</tr>
+<tr class="odd">
+<td>대외경제정책연구원 (KIEP)</td>
+<td>4,003</td>
+<td>306</td>
+<td>85.9</td>
+</tr>
+</tbody>
+</table>
+<p>기관별 사회과학 비중은 해당 기관의 도메인 부여 건수를 기준으로 계산했다. 표시한 한국어 기관명과 약칭은 독자의 이해를 위한 표기이며, 집계표의 원래 기관명·식별자는 유지했다. 기관별 관측 범위가 다르면 표본의 구성도 달라질 수 있다. 이 수치만으로 국내 정책기관 전체의 연구 활용 성향이나 개별 기관의 정책 영향력을 판단할 수 없다. 해외 유사 싱크탱크와의 비교는 기존 2025 기준판의 분석이다.</p>
+<section id="출처-유형-구성과-유형-안의-분야-구성" class="level3">
+<h3 class="anchored" data-anchor-id="출처-유형-구성과-유형-안의-분야-구성">출처 유형 구성과 유형 안의 분야 구성</h3>
+<p>최상위 유형에 싱크탱크가 하나라도 부여된 문헌과 그 외 문헌으로 나눴다. 두 집단은 서로 겹치지 않으며, 유형 미부여 문헌은 그 외 출처에 포함한다. 이번 두 방향의 분석에 포함된 인용 중 유형 미부여는 0건이었다. 아래의 출처 비중과 사회과학 비중은 모두 <strong>도메인 부여 건수</strong>를 기준으로 한다.</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>인용 방향</th>
+<th>출처 집단</th>
+<th>출처 비중 %</th>
+<th>집단 내 사회과학 %</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>한국 정책문헌 → 연구</td>
+<td>그 외 출처</td>
+<td>4.7</td>
+<td>49.7</td>
+</tr>
+<tr class="even">
+<td>한국 정책문헌 → 연구</td>
+<td>싱크탱크</td>
+<td>95.3</td>
+<td>64.9</td>
+</tr>
+<tr class="odd">
+<td>정책문헌 → 한국 연구</td>
+<td>그 외 출처</td>
+<td>80.8</td>
+<td>17.6</td>
+</tr>
+<tr class="even">
+<td>정책문헌 → 한국 연구</td>
+<td>싱크탱크</td>
+<td>19.2</td>
+<td>46.1</td>
+</tr>
+</tbody>
+</table>
+<p>두 방향의 사회과학 비중 차이 41.1%p를 대칭 분해하면, 출처 집단의 구성비 차이에 해당하는 항이 <strong>16.6%p</strong>, 각 집단 안의 사회과학 비중 차이에 해당하는 항이 <strong>24.5%p</strong>였다. 싱크탱크의 비중 차이와 각 집단 안의 분야 구성 차이가 함께 관측된다. 이는 두 집단으로 나눈 기술적 분해이며 정책 수요의 원인이나 기관의 효과를 추정한 결과가 아니다.</p>
+<p>분해식은 구성 항 <code>Σ(출처 비중 차이 × 집단 내 사회과학 비중의 양방향 평균)</code>과 집단 내 항 <code>Σ(집단 내 사회과학 비중 차이 × 출처 비중의 양방향 평균)</code>의 합이다. 집단별 항은 <a href="../Assets/Reproducibility/update_202610/korea_source_group_decomposition.csv">분해 집계표</a>에서 확인한다.</p>
+</section>
+</section>
+<section id="전체-자료의-정책-출처시간반복-인용" class="level2">
+<h2 class="anchored" data-anchor-id="전체-자료의-정책-출처시간반복-인용">5. 전체 자료의 정책 출처·시간·반복 인용</h2>
+<section id="정책-출처별-총량과-문헌당-평균" class="level3">
+<h3 class="anchored" data-anchor-id="정책-출처별-총량과-문헌당-평균">정책 출처별 총량과 문헌당 평균</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../Assets/Figures/update_202610/policy_sources.png" class="img-fluid figure-img"></p>
+<figcaption>그림 3. 인용 총 건수 상위 10개 정책 출처의 인용 총량과 인용이 있는 정책문헌당 평균. 두 패널은 같은 출처를 같은 순서로 표시한다. 평균은 기본 분석에 포함된 인용이 한 건 이상인 문헌을 기준으로 계산했다.</figcaption>
+</figure>
+</div>
+<p>출처의 전체 인용 규모와 인용이 있는 정책문헌당 평균 학술논문 인용 건수는 구분해야 한다. 오른쪽은 왼쪽의 상위 10개 출처에 대한 평균이며, 평균 자체의 전체 순위가 아니다. <a href="../Assets/Reproducibility/update_202610/policy_sources.csv">정책 출처 집계표</a>에서 다른 출처도 확인할 수 있다.</p>
+<div class="si-plot" data-src="../Assets/Interactive/update_202610/policy_sources.html" data-height="620" data-title="그림 3. 정책 출처별 인용 총량과 문헌당 평균">
+  <div class="si-plot__actions">
+    <a class="si-plot__link" href="../Assets/Interactive/update_202610/policy_sources.html" target="_blank" rel="noopener">새 창으로 열기</a>
+    <button type="button" class="si-plot__btn">플롯 불러오기</button>
+  </div>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../Assets/Figures/update_202610/source_type_domains.png" class="img-fluid figure-img"></p>
+<figcaption>그림 4. 최상위 정책 출처 유형별 인용 연구의 도메인 구성. 최상위 유형 안에서 도메인 부여 건수의 합계를 100%로 정규화했다.</figcaption>
+</figure>
+</div>
+<div class="si-plot" data-src="../Assets/Interactive/update_202610/source_type_domains.html" data-height="620" data-title="그림 4. 정책 출처 유형별 인용 연구의 분야 구성">
+  <div class="si-plot__actions">
+    <a class="si-plot__link" href="../Assets/Interactive/update_202610/source_type_domains.html" target="_blank" rel="noopener">새 창으로 열기</a>
+    <button type="button" class="si-plot__btn">플롯 불러오기</button>
+  </div>
+</div>
+</section>
+<section id="토픽별-최근-논문-비중과-논문당-인용-건수" class="level3">
+<h3 class="anchored" data-anchor-id="토픽별-최근-논문-비중과-논문당-인용-건수">토픽별 최근 논문 비중과 논문당 인용 건수</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../Assets/Figures/update_202610/topic_intensity_recency.png" class="img-fluid figure-img"></p>
+<figcaption>그림 5. DOI 연결 인용 건수 상위 300개 토픽의 인용된 논문당 인용 건수와 최근 고유 논문 비중.</figcaption>
+</figure>
+</div>
+<p>최근 고유 논문 비중은 발행연도가 확인되는 <strong>2025년 이하</strong>의 고유 논문 가운데 <strong>2023–2025년</strong> 발행 논문의 비중이다. 2026년은 완결된 발행연도가 아니어서 제외했다. 2025 기준판의 2022–2024년 창과 다르므로 두 값을 그대로 성장률처럼 비교하지 않는다. 토픽의 최근 논문 비중과 논문당 인용 건수는 중요도나 정책 효과를 측정하지 않는다.</p>
+<div class="si-plot" data-src="../Assets/Interactive/update_202610/topic_intensity_recency.html" data-height="620" data-title="그림 5. 토픽별 논문당 인용 건수와 2023–2025년 발행 논문 비중">
+  <div class="si-plot__actions">
+    <a class="si-plot__link" href="../Assets/Interactive/update_202610/topic_intensity_recency.html" target="_blank" rel="noopener">새 창으로 열기</a>
+    <button type="button" class="si-plot__btn">플롯 불러오기</button>
+  </div>
+</div>
+</section>
+<section id="발행연도와-반복-인용" class="level3">
+<h3 class="anchored" data-anchor-id="발행연도와-반복-인용">발행연도와 반복 인용</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../Assets/Figures/update_202610/research_publication_year.png" class="img-fluid figure-img"></p>
+<figcaption>그림 6. 인용된 연구의 발행연도별 DOI 연결 인용 건수. 1990–2026년만 표시했으며, 회색 구간의 2026년은 완결되지 않은 연도다. 정책문헌의 발행연도별 추이가 아니다.</figcaption>
+</figure>
+</div>
+<div class="si-plot" data-src="../Assets/Interactive/update_202610/research_publication_year.html" data-height="620" data-title="그림 6. 인용된 연구의 발행연도별 인용 건수">
+  <div class="si-plot__actions">
+    <a class="si-plot__link" href="../Assets/Interactive/update_202610/research_publication_year.html" target="_blank" rel="noopener">새 창으로 열기</a>
+    <button type="button" class="si-plot__btn">플롯 불러오기</button>
+  </div>
+</div>
+<p>두 개 이상의 서로 다른 정책문헌에 인용된 고유 논문은 4,174,965편으로, 인용된 고유 논문의 <strong>50.4%</strong>였다. 같은 문헌 안의 반복 언급을 세는 지표가 아니며, 독립된 정책 채택이나 인과적 영향의 증거도 아니다. 서로 다른 문헌 ID 사이에 유사·중복 문헌이 포함될 가능성은 남아 있다.</p>
+</section>
+</section>
+<section id="연결-품질과-해석-범위" class="level2">
+<h2 class="anchored" data-anchor-id="연결-품질과-해석-범위">6. 연결 품질과 해석 범위</h2>
+<section id="doi가-여러-논문에-연결되는-경우" class="level3">
+<h3 class="anchored" data-anchor-id="doi가-여러-논문에-연결되는-경우">DOI가 여러 논문에 연결되는 경우</h3>
+<p>고유 DOI 104,964개가 여러 OpenAlex 논문에 연결됐다. 해당 DOI가 등장한 정책문헌–DOI 관계는 444,277건이었다. 이를 모두 포함하면 정책문헌–논문 관계는 32,914,262건, 기본 분석에서는 31,940,050건이다. 두 값의 차이는 중복 제거와 다른 DOI를 통한 연결도 반영하므로, 제외한 DOI 관계 수와 같을 필요가 없다. 한 논문에만 연결되더라도 DOI나 메타데이터에 오류가 없음을 보장하지는 않는다.</p>
+</section>
+<section id="연구-국가의-순차-부여" class="level3">
+<h3 class="anchored" data-anchor-id="연구-국가의-순차-부여">연구 국가의 순차 부여</h3>
+<p>1저자의 기관 소재 국가를 사용한다. 기관 식별 정보 ROR의 국가 코드에서 가장 자주 나타나는 값을 먼저 선택한다. 같은 빈도이면 국가 코드 순으로 결정한다. ROR 국가를 찾지 못하면 OpenAlex 기관 국가 코드가 하나로 일치할 때만 보완하고, 나머지는 미부여로 남긴다. 연구 국가의 부여 단계별 <a href="../Assets/Reproducibility/update_202610/country_assignment.csv">집계표</a>와 <a href="../Assets/Reproducibility/update_202610/country_ties.csv">동률 집계표</a>를 제공한다.</p>
+<p>2025 기준판의 보완 필드와 이번 스냅샷의 보완 필드는 다르다. 이번 OpenAlex에는 기존의 원문 소속 국가 코드 필드가 없어 OpenAlex 기관 국가 코드를 사용했다. 순차 부여 원칙을 유지하되 <strong>동일한 필드를 사용한 재현은 아니다</strong>. 아래 표는 ROR만 사용하거나 여러 논문에 연결되는 DOI를 포함했을 때 한국 정책문헌 지표가 어떻게 달라지는지 보여준다.</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>집계 조건</th>
+<th>전체 인용</th>
+<th>국가 확인 인용</th>
+<th>미국 연구 %</th>
+<th>한국 연구 %</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>기본 분석 · ROR 국가만 사용</td>
+<td>418,179</td>
+<td>308,806</td>
+<td>45.4</td>
+<td>3.9</td>
+</tr>
+<tr class="even">
+<td>기본 분석 · 국가 순차 부여</td>
+<td>418,179</td>
+<td>308,870</td>
+<td>45.4</td>
+<td>3.9</td>
+</tr>
+<tr class="odd">
+<td>다중 연결 DOI 포함 · 국가 순차 부여</td>
+<td>427,236</td>
+<td>313,311</td>
+<td>45.3</td>
+<td>3.9</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="기준판과-최신판의-값규칙-비교" class="level3">
+<h3 class="anchored" data-anchor-id="기준판과-최신판의-값규칙-비교">2025 기준판과 최신판의 값·규칙 비교</h3>
+<table class="table">
+<thead>
+<tr class="header">
+<th>지표</th>
+<th>2025 기준판</th>
+<th>2026년 10월 최신판</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>한국 정책문헌의 연구 인용 (건)</td>
+<td>32,935</td>
+<td>418,179</td>
+</tr>
+<tr class="even">
+<td>연구 인용이 있는 한국 정책문헌 (편)</td>
+<td>2,726</td>
+<td>35,335</td>
+</tr>
+<tr class="odd">
+<td>미국 연구 비중 · 국가 확인 인용 (%)</td>
+<td>55.2</td>
+<td>45.4</td>
+</tr>
+<tr class="even">
+<td>연구 국가 미부여 (%)</td>
+<td>27.3</td>
+<td>26.1</td>
+</tr>
+<tr class="odd">
+<td>사회과학 · 한국 정책문헌 → 연구 (%)</td>
+<td>77.9</td>
+<td>64.2</td>
+</tr>
+<tr class="even">
+<td>사회과학 · 정책문헌 → 한국 연구 (%)</td>
+<td>23.1</td>
+<td>23.1</td>
+</tr>
+<tr class="odd">
+<td>한국 정책문헌 인용 중 KDI·KIEP (%)</td>
+<td>93.5</td>
+<td>5.2</td>
+</tr>
+</tbody>
+</table>
+<table class="table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>집계 조건</th>
+<th>2025 기준판</th>
+<th>2026년 10월 최신판</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>자료 기준</td>
+<td>Overton 2025.02 · OpenAlex 2025.06</td>
+<td>Overton 2026-10-04 · OpenAlex 2026-06-25</td>
+</tr>
+<tr class="even">
+<td>인용 단위·DOI 연결</td>
+<td>중복을 제거한 문헌–논문 관계 · 기존 매칭 입력</td>
+<td>문헌–논문 관계 · 정규화 DOI를 새로 매칭하고 다중 논문 연결 DOI 제외</td>
+</tr>
+<tr class="odd">
+<td>국가 보완 정보</td>
+<td>ROR 국가 우선 · 원문 소속 국가 코드로 보완</td>
+<td>ROR 국가 우선 · 단일 OpenAlex 기관 국가 코드로 보완</td>
+</tr>
+<tr class="even">
+<td>분야 비중의 기본 단위</td>
+<td>도메인 부여 건수</td>
+<td>도메인 부여 건수</td>
+</tr>
+<tr class="odd">
+<td>최근 논문 창</td>
+<td>2022–2024년</td>
+<td>2023–2025년 · 미완결 2026년 제외</td>
+</tr>
+</tbody>
+</table>
+<p>자료 수집 범위, DOI 대응 관계, 기관·국가 정보와 최근 논문 기준 연도가 함께 바뀌었다. 따라서 위 수치의 차이를 정책 인용 행태의 시계열 변화로 단정하지 않는다. 기대 비중은 이번에 비교 모집단과 가중 방식을 보완했으므로 위 표의 직접 비교 항목에서 제외했다.</p>
+</section>
+<section id="공통-기관으로-범위를-좁히면" class="level3">
+<h3 class="anchored" data-anchor-id="공통-기관으로-범위를-좁히면">공통 기관으로 범위를 좁히면</h3>
+<p>기준판 기관 집계표의 모든 기관 식별자와 최신판의 식별자를 정확히 대조했다. 두 판에 공통으로 나타난 기관은 9곳이다. 아래 표는 <strong>모두 최신 스냅샷 안에서</strong> 계산했으며, 전체 한국 출처와 공통 기관으로 제한한 표본을 비교한다. 마지막 행은 공통 기관의 정책문헌 중 발행연도가 2010–2024년인 문헌만 남겼다.</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>분석 범위</th>
+<th>인용 건수</th>
+<th>사회과학 %</th>
+<th>미국 연구 %</th>
+<th>KDI·KIEP %</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>최신판 전체</td>
+<td>418,179</td>
+<td>64.2</td>
+<td>45.4</td>
+<td>5.2</td>
+</tr>
+<tr class="even">
+<td>공통 기관</td>
+<td>38,594</td>
+<td>67.6</td>
+<td>51.5</td>
+<td>56.5</td>
+</tr>
+<tr class="odd">
+<td>공통 기관 · 2010–2024년 문헌</td>
+<td>28,696</td>
+<td>66.5</td>
+<td>49.3</td>
+<td>54.1</td>
+</tr>
+</tbody>
+</table>
+<p>사회과학 비중은 도메인 부여 건수, 미국 연구 비중은 국가 확인 인용, KDI·KIEP 비중은 해당 범위의 전체 인용이 기준이다. 공통 기관의 사회과학 비중은 <strong>67.6%</strong>였다. 동일 기관을 제한해도 문헌 구성·DOI 매칭·OpenAlex 메타데이터까지 같아지는 것은 아니다. 기관 식별자가 바뀐 경우의 대응은 추정하지 않았다. <a href="../Assets/Reproducibility/update_202610/korea_common_institutions.csv">기관별 대조표</a>는 범위 확인용이며 기관별 증감률의 근거로 사용하지 않는다.</p>
+</section>
+</section>
+<section id="update-downloads" class="level2">
+<h2 class="anchored" data-anchor-id="update-downloads">7. 집계표와 다음 점검</h2>
 <ul>
-<li>한국 연구를 인용한 상위 3개 정책 출처의 합계 비중은 51.1%다.</li>
-<li>한국 연구를 인용한 정책 출처와 한국 정책문헌이 인용한 연구국은 여전히 구분해서 봐야 한다.</li>
-<li>반복 인용 구조를 점검해야 한다는 기준도 유지된다.</li>
+<li><a href="../Assets/Reproducibility/update_202610/online_update_aggregates.zip">공개 집계표·그림 생성 코드 묶음</a> · <a href="../Assets/Reproducibility/update_202610/plot_online_update_202610.py">그림 생성 코드</a> · <a href="../Assets/Reproducibility/update_202610/README_KO.md">이용 안내</a></li>
+<li><a href="../Assets/Reproducibility/update_202610/data_profile.csv">자료 규모</a> · <a href="../Assets/Reproducibility/update_202610/doi_linkage_audit.csv">DOI 연결 점검</a></li>
+<li><a href="../Assets/Reproducibility/update_202610/korea_inbound_sources.csv">한국 연구를 인용한 정책 출처</a> · <a href="../Assets/Reproducibility/update_202610/korea_outbound_countries.csv">한국 정책문헌이 인용한 연구 국가</a> · <a href="../Assets/Reproducibility/update_202610/direction_domains.csv">두 방향의 분야 구성</a></li>
+<li><a href="../Assets/Reproducibility/update_202610/policy_sources.csv">정책 출처별 집계</a> · <a href="../Assets/Reproducibility/update_202610/source_types.csv">출처 유형별 집계</a> · <a href="../Assets/Reproducibility/update_202610/topic_metrics.csv">토픽별 지표</a> · <a href="../Assets/Reproducibility/update_202610/publication_year.csv">연구 발행연도별 집계</a></li>
+<li><a href="../Assets/Reproducibility/update_202610/korea_country_sensitivity.csv">국가 부여 민감도</a> · <a href="../Assets/Reproducibility/update_202610/korea_expected_country_shares.csv">기대 비중</a> · <a href="../Assets/Reproducibility/update_202610/provenance.json">입력 스냅샷·체크섬·집계 규칙</a></li>
+<li><a href="../Assets/Reproducibility/update_202610/korea_domain_weighting_sensitivity.csv">분야 가중 방식 민감도</a> · <a href="../Assets/Reproducibility/update_202610/korea_institution_domains.csv">기관별 분야 구성</a> · <a href="../Assets/Reproducibility/update_202610/korea_direction_source_groups.csv">방향별 출처 집단 구성</a></li>
+<li><a href="../Assets/Reproducibility/update_202610/korea_expected_country_variants.csv">기대 비중 계산 조건 비교</a> · <a href="../Assets/Reproducibility/update_202610/korea_expected_country_population.csv">관측·기대 비교 모집단</a> · <a href="../Assets/Reproducibility/update_202610/edition_indicator_comparison.csv">기준판·최신판 지표 비교</a> · <a href="../Assets/Reproducibility/update_202610/korea_common_institution_scopes.csv">공통 기관 제한 집계</a></li>
 </ul>
-<p>각 비율의 정확한 값은 데이터 버전별로 구분해 제시해야 한다.</p>
-</section>
-<section id="해석-주의" class="level2">
-<h2 class="anchored" data-anchor-id="해석-주의">해석 주의</h2>
-<ul>
-<li>이 페이지의 수치는 현재 보고서의 연구국 순차 부여 규칙을 적용하기 전에 산출된 웹 비교 기록이다.</li>
-<li>업데이트 수치는 현재 보고서의 기준값으로 사용하지 않는다.</li>
-<li>특히 <code>first_author_country</code>와 <code>is_oa</code>는 local OpenAlex 202602에 없는 항목이 있어 remote <code>202506</code> 보완값을 사용했다.</li>
-</ul>
-</section>
-<section id="공개-자료-관리" class="level2">
-<h2 class="anchored" data-anchor-id="공개-자료-관리">공개 자료 관리</h2>
-<ul>
-<li>2025 기준 원고는 편집 전 상태로 유지한다.</li>
-<li>기존 웹 비교 결과에는 데이터 버전과 당시의 국가 부여 규칙을 함께 표시한다.</li>
-</ul>
+<p>다음 점검에서는 공통 기관에 더해 정책문헌 ID와 논문 메타데이터·연결 규칙까지 고정한 비교가 필요하다. DOI가 없는 국내 참고문헌을 포함하려면 NKIS 등 국내 정책문헌의 참고문헌 연결을 별도로 구축해야 한다.</p>
 
 
 </section>
