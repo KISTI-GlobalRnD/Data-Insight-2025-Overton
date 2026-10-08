@@ -228,11 +228,11 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><strong>2025 baseline · issue 68 editorial corrections.</strong> Applicable editorial corrections were incorporated into this web explanation on 8 October 2026. The linked PDF remains the manuscript before publication editing. New-data results and their aggregation rules are provided separately in the <a href="../SI/update_202603_en.html">October 2026 online update</a>.</p>
+<p><strong>2025 baseline · issue 68 editorial corrections.</strong> This page describes the 2025 analysis with editorial corrections incorporated on 8 October 2026. The linked PDF is the manuscript prepared before publication editing. Results from newer data and their calculation rules are reported separately in the <a href="../SI/update_202603_en.html">October 2026 online update</a>.</p>
 </div>
 </div>
 <p><a href="../SI/index_en.html">English Summary</a> · <a href="../SI/methods_en.html">Methods Summary</a> · <a href="../Report/Report_final.pdf">Korean Report Manuscript</a> · <strong>Public Reproducibility</strong></p>
-<p>This page defines the report’s public reproducibility scope. Licensed Overton source data and derived record-level data are not distributed. The public materials allow readers to recompute headline values and linked-sample composition expected shares, inspect missingness, weighting, and institution-concentration checks, and review the code, aggregate tables, and execution environment.</p>
+<p>This page explains which results can be checked using the public materials. Licensed Overton source data and derived record-level data are not distributed. The public materials support recalculation of the main values and expected shares based on the linked sample. They also document missing country information, alternative weighting methods, institutional concentration, and the code and environment used.</p>
 <section id="october-2026-online-aggregates" class="level2">
 <h2 class="anchored" data-anchor-id="october-2026-online-aggregates">October 2026 online aggregates</h2>
 <p>See the <a href="../SI/update_202603_en.html">online update</a> and its <a href="../Assets/Reproducibility/update_202610/provenance.json">provenance</a> for the new aggregate tables. The archives and verification commands below refer to the 2025 baseline.</p>
@@ -287,16 +287,16 @@ Note
 <li>think-tank citation shares and top-two institution concentration across the 11 comparison countries;</li>
 <li>the social-science distribution of 748 eligible foreign think tanks across 74 countries and the positions of KDI and KIEP;</li>
 <li>the country count of the top 25 foreign KDI/KIEP citation-profile matches;</li>
-<li>the 36.1% U.S. linked-sample composition expected share;</li>
+<li>the 36.1% U.S. expected share based on the linked sample;</li>
 <li>baseline counts used in the author-country sensitivity analysis;</li>
-<li>overall, institution-stratified, and domain-stratified country-assignment missingness and the 40.1%-67.4% mechanical U.S. bounds;</li>
-<li>weighting sensitivity of the Korea social-science gap (32.2-59.9 percentage points);</li>
+<li>overall, institution-stratified, and domain-stratified country-assignment missingness and the 40.1%–67.4% mechanical U.S. bounds;</li>
+<li>weighting sensitivity of the Korea social-science gap (32.2–59.9 percentage points);</li>
 <li>KDI-KIEP document shares, citation share, and citations per DOI-citing document; and</li>
-<li>whether the country-domain cache matches the sequential country-assignment rule and the recorded parquet size and modification time.</li>
+<li>whether the stored country–domain table matches the documented country-assignment rule and the recorded size and modification time of its source parquet files.</li>
 </ul>
 <p>Extract both archives into the same directory and run:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> scripts/verify_public_report_aggregates.py <span class="at">--root</span> . <span class="at">--run-tag</span> 20251026</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>A successful run ends with <code>PUBLIC_AGGREGATE_VERIFICATION=PASS</code>. This means the listed values and calculation relationships were confirmed from the public aggregate layer; it does not recreate licensed Overton source records or verify the upstream Overton export universe.</p>
+<p>A successful run ends with <code>PUBLIC_AGGREGATE_VERIFICATION=PASS</code>. This confirms the listed values and calculations using public aggregate tables. It does not reproduce licensed Overton source records or verify which records were selected for the original export.</p>
 </section>
 <section id="additional-inputs-for-a-full-rebuild" class="level2">
 <h2 class="anchored" data-anchor-id="additional-inputs-for-a-full-rebuild">Additional inputs for a full rebuild</h2>

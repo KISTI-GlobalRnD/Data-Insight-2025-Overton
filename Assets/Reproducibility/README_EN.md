@@ -6,7 +6,7 @@ These materials correspond to the manuscript publication date 2025-12-31 and run
 
 Licensed Overton source data and derived policy-document or article-level records are not included. The public materials therefore support the following tasks:
 
-- recompute the report's headline observations and linked-sample composition expected shares;
+- recompute the report's headline observations and expected shares based on the linked sample;
 - inspect the public aggregate tables and report-generation code; and
 - audit tables and figures that use the same public aggregates.
 
@@ -20,7 +20,9 @@ Extract the code and aggregate archives into the same directory, then run:
 python scripts/verify_public_report_aggregates.py --root . --run-tag 20251026
 ```
 
-The script recomputes the two Korea-related citation directions, the social- and health-science shares, the source-type composition and within-source-type components of Korea's social-science gap, the combined KDI-KIEP share, the think-tank shares in both directions, Korea's rank in the 11-country field-gap comparison, think-tank citation shares and within-type institution concentration across those countries, the country count and social-science range of the 25 foreign KDI/KIEP citation-profile matches, and the 36.1% U.S. linked-sample composition expected share. It also verifies country-assignment missingness and mechanical bounds, field-gap weighting sensitivity, institution document and citation density, baseline author-country sensitivity counts, and the recorded cache provenance. A successful run prints `PUBLIC_AGGREGATE_VERIFICATION=PASS`, meaning the public aggregate values and calculation relationships passed—not that licensed source data or the upstream Overton export universe were recreated.
+The script recomputes the two citation directions involving Korea and their social- and health-science shares. It checks the components of the social-science gap, the combined KDI-KIEP share, think-tank shares, and country comparisons. It also checks the country count and social-science range of the 25 foreign institutions with the most similar citation profiles, and the 36.1% U.S. expected share based on the linked sample.
+
+Further checks cover missing country information, mechanical bounds, alternative weighting methods, institutional citation and document counts, author-country sensitivity counts, and the recorded source metadata. A successful run prints `PUBLIC_AGGREGATE_VERIFICATION=PASS`. This confirms the public aggregate values and calculations; it does not reproduce licensed source data or the original Overton export selection.
 
 ## File versioning
 

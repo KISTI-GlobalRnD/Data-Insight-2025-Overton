@@ -19,6 +19,12 @@ OUT = ROOT / "Data_Insight/Assets/Figures/update_202610"
 HTML = ROOT / "Data_Insight/Assets/Interactive/update_202610"
 DOMAINS = ["Social Sciences", "Health Sciences", "Physical Sciences", "Life Sciences"]
 COLORS = ["#285f8f", "#b55d39", "#49867a", "#8d6b9d"]
+SOURCE_TYPE_NAMES = {
+    "government": "Government",
+    "think tank": "Think tanks",
+    "igo": "International organizations",
+    "other": "Other sources",
+}
 COUNTRY_NAMES = {
     "USA": "United States", "US": "United States",
     "UK": "United Kingdom", "GB": "United Kingdom",
@@ -61,9 +67,11 @@ def main():
     outbound = outbound[outbound.research_country != "Unassigned"].copy()
     outbound["share_pct"] = outbound.citation_rows / outbound.citation_rows.sum() * 100
     fig, axes = plt.subplots(1,2,figsize=(12,5.5),layout="constrained")
-    flow = make_subplots(rows=1,cols=2,subplot_titles=("Policy sources → Korean research", "Korean policy → research countries"),horizontal_spacing=.18)
+    flow_titles = ["Policy sources citing\nKorean research", "Research cited by\nKorean policy documents"]
+    flow = make_subplots(rows=1,cols=2,subplot_titles=[title.replace("\n", "<br>") for title in flow_titles],horizontal_spacing=.18)
+    flow.update_annotations(font_size=14)
     for ax,df,col,title,i in zip(axes,[inbound,outbound],["policy_country","research_country"],
-                                ["Policy sources → Korean research", "Korean policy → research countries"],[1,2]):
+                                flow_titles,[1,2]):
         top=df.head(10).iloc[::-1]
         labels=top[col].replace(COUNTRY_NAMES)
         ax.barh(labels,top.share_pct,color=COLORS[i-1])
@@ -91,7 +99,9 @@ def main():
     ax.legend(loc="lower right",frameon=False)
     save(fig,"korea_domains")
     dplot=px.bar(domains,x="share_pct",y="domain",color="direction",barmode="group",orientation="h",
-                 color_discrete_map={dirs[0]:COLORS[1],dirs[1]:COLORS[0]},labels={"share_pct":"Share of domain assignments (%)"},
+                 color_discrete_map={dirs[0]:COLORS[1],dirs[1]:COLORS[0]},
+                 labels={"share_pct":"Share of domain assignments (%)","domain":"Research domain",
+                         "direction":"Citation direction","citation_rows":"Domain assignments"},
                  hover_data=["citation_rows"],category_orders={"domain":DOMAINS},title="Korea's two citation directions: domain composition")
     dplot.update_xaxes(range=[0,70])
     interactive(dplot,"korea_domains")
@@ -122,7 +132,8 @@ def main():
     types=load("source_type_domains")
     tmat=types.pivot(index="source_type",columns="domain",values="citation_rows").fillna(0).reindex(columns=DOMAINS,fill_value=0)
     order=tmat.sum(axis=1).sort_values(ascending=False).head(7).index
-    tmat=tmat.loc[order]; shares=tmat.div(tmat.sum(axis=1),axis=0)*100
+    tmat=tmat.loc[order].rename(index=SOURCE_TYPE_NAMES)
+    shares=tmat.div(tmat.sum(axis=1),axis=0)*100
     fig,ax=plt.subplots(figsize=(11,5),layout="constrained")
     left=np.zeros(len(shares))
     for d,color in zip(DOMAINS,COLORS):
@@ -155,7 +166,11 @@ def main():
     topic_plot=px.scatter(topics,x="citations_per_work",y="recent_share_pct",color="domain",hover_name="topic",
                            hover_data=["citation_rows","cited_works","recent_works","eligible_year_works"],
                            color_discrete_map=dict(zip(DOMAINS,COLORS)),
-                           labels={"citations_per_work":"DOI-linked citations per cited work","recent_share_pct":"Cited works published in 2023–2025 (%)"},
+                           labels={"citations_per_work":"DOI-linked citations per cited work",
+                                   "recent_share_pct":"Cited works published in 2023–2025 (%)",
+                                   "domain":"Research domain","citation_rows":"DOI-linked citations",
+                                   "cited_works":"Unique cited works","recent_works":"Works published in 2023–2025",
+                                   "eligible_year_works":"Works with known year through 2025"},
                            title="Top 300 topics by DOI-linked citations")
     topic_plot.update_yaxes(range=[0,ymax])
     interactive(topic_plot,"topic_intensity_recency")

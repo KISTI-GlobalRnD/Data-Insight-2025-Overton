@@ -55,10 +55,10 @@
     "map_online_update_202610.py": "ec2878bc411e8144d8559d7cab60a7fdacf37a0d8ae6e46b78eca8bed1af2180",
     "extract_online_update_202610.py": "e1e911cba13948ae537a7d250de7a1df817d00b9ca742ff9515a2bac9a0ea61e",
     "analyze_online_update_202610.py": "b551e830008abbea4c44cabb3d59cc37616069776991a4ad413b9f6038654d59",
-    "plot_online_update_202610.py": "f1216a2574c23df972449b58f9b44b435f1ce033ef7c9fa1aa5baf09ca8fd088",
+    "plot_online_update_202610.py": "857f00c9523de0ac82dbdab4f302ff72a96b408fc1273c92ca7e6392e540680c",
     "refine_online_update_202610.py": "8ad6e17a6e9a02ceb1297200b29267c8839cea34d59e2c1a9695fb1bc60bdee7",
-    "write_online_update_202610.py": "29639d6af326b1bac2ae82c5e9bc395cba2bf115744370ff172c60ac99aa2aef",
-    "update_online_landing_202610.py": "d86ded06bfa47f3bb8bd70ea5a33ab7fb9ad10be5750c5aa9a2cede265fff356",
+    "write_online_update_202610.py": "36d999b4f11e39afe53247463edc3f86817f751b7c8259729369d27d1f0b13b4",
+    "update_online_landing_202610.py": "ddfe90d6bbc2b6502369bf73966b226ffef1943a02c048ce71885c378cd9c829",
     "package_online_update_202610.py": "d16923e136a853391e9de729422d591926766287c0351e5b616e6b052ea305a6"
   },
   "public_aggregate_sha256": {
@@ -106,9 +106,9 @@
   },
   "web_source_sha256": {
     "Data_Insight/SI/update_202603.qmd": "bdb066f19d69e7b3c376fa68d01e401f92c2ab4da60048dd924bab99dd8273ab",
-    "Data_Insight/SI/update_202603_en.qmd": "9c3239a51eed9f093f9a3a6d39ac010ecf436e9d839b32fb5e14bed96af27c7d",
-    "Data_Insight/index.html": "fa273d4db333773995c09ba112b84feae6ea249ebcd397434a177a1570d17d4d",
-    "Data_Insight/Assets/Site/promo.js": "8c7e4b7acff1ce0123d02eee9238b3766556abcd6b9790f2daa282a263a8726c"
+    "Data_Insight/SI/update_202603_en.qmd": "76ce08f9b31d0f8711774632f44a41ba590d69dbda033b9092719509e01dfac3",
+    "Data_Insight/index.html": "31c868ea999dfaf298d26fcd62f50e9cfe2727023024c1044f2ee86a5d011e0c",
+    "Data_Insight/Assets/Site/promo.js": "83cd219848e4d53555376f3bac0c0beb1bf6a42a1eea96543ccb773620630b11"
   },
   "public_support_sha256": {
     "README_KO.md": "188f0729b05b48d6749f0b7581acabc81427efc9c4e5ce03de8d9591911c0f3a",

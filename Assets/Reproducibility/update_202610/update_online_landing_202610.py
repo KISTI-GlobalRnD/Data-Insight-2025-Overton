@@ -58,46 +58,59 @@ def main():
     html=re.sub(r'(<p\b[^>]*data-i18n-html="hero.lede2"[^>]*>).*?(</p>)',
                 lambda x:x.group(1)+'이 페이지는 DOI로 한 논문에 연결되는 정책문헌→학술논문 인용을 분석한 <strong>2026년 10월 온라인 결과</strong>다. 모든 정책문헌·참고문헌을 포괄하지 않는다. 연결된 PDF와 기존 보조자료는 <strong>2025 기준판</strong>이다.'+x.group(2),html,flags=re.S)
     values=iter([m['top3']+'%',m['us']+'%',m['socialgap']+'%p'])
-    html=re.sub(r'(<div class="promo-stat__value">).*?(</div>)',lambda x:x.group(1)+next(values)+x.group(2),html)
+    html=re.sub(r'(<div class="promo-stat__value"[^>]*>).*?(</div>)',lambda x:x.group(1)+next(values)+x.group(2),html)
+    html=html.replace(f'<div class="promo-stat__value">{m["socialgap"]}%p</div>',
+                      f'<div class="promo-stat__value" data-i18n="hero.stat.gap.value">{m["socialgap"]}%p</div>')
     html=html.replace('href="./Report/Report_final.pdf" data-i18n="hero.cta.report"','href="./SI/update_202603.html" data-i18n="hero.cta.report" data-i18n-attr="href:hero.cta.report.href"')
     html=html.replace('href="./SI/index.html#report-extended-map" data-i18n="monitor.cta.next"','href="./SI/update_202603.html" data-i18n="monitor.cta.next"')
     for old,new in [('country_citations_top10','policy_sources'),('source_type_domain','source_type_domains'),('korea_flows','korea_flows'),('topic_intensity_vs_recency','topic_intensity_recency')]:
         html=html.replace(f'Assets/Landing/{old}.png',f'Assets/Figures/update_202610/{new}.png')
     page.write_text(html)
     en={
+      'meta.title':"Korea's Policy–Research Citations | Overton × OpenAlex",
       'hero.kicker':'October 2026 Online Update',
-      'hero.lede':f"The top three policy sources account for {m['top3']}% of source-tagged citations to Korean research. Among assigned-country citations from Korean policy documents, U.S. research accounts for {m['us']}%. Social sciences account for {m['socialout']}% of research cited by Korean policy documents and {m['socialin']}% of Korean research cited by policy documents, a gap of {m['socialgap']} percentage points.",
-      'hero.lede2':'This page summarizes the <strong>October 2026 online analysis</strong> of DOIs mapping to a single OpenAlex work. It does not cover every policy document or every reference. The linked PDF and other SI pages describe the <strong>2025 baseline edition</strong>.',
+      'hero.title':'The two citation directions differ in their country and field profiles.',
+      'hero.lede':f"The top three policy source categories account for {m['top3']}% of citations to Korean research, counted by source category. Among citations from Korean policy documents with an assigned research country, U.S. research accounts for {m['us']}%. Social sciences account for {m['socialout']}% of domain assignments in research cited by Korean policy documents and {m['socialin']}% in Korean research cited by policy documents, a gap of {m['socialgap']} percentage points.",
+      'hero.lede2':'This page presents the <strong>October 2026 online results</strong> for DOI-linked citations from policy documents to research. Each DOI must map to a single OpenAlex work. The analysis does not cover every policy document or reference. The linked PDF and baseline supplements describe the <strong>2025 edition</strong>. Research country refers to the first author’s institutional affiliation, not nationality.',
       'hero.cta.report':'Read Latest Online Results',
       'hero.cta.report.href':'./SI/update_202603_en.html',
       'hero.cta.si':'Read 2025 Baseline Summary',
-      'hero.stat.sourcing':'U.S. research share among assigned-country citations from Korean policy documents',
-      'hero.meta.snapshot':'Snapshots: Overton 2026-10-04 · OpenAlex 2026-06-25 · Unique DOI-linked citations',
+      'hero.stat.sourcing':'U.S. research share among citations from Korean policy documents with an assigned research country',
+      'hero.stat.gap.value':f"{m['socialgap']} pp",
+      'hero.meta.snapshot':'Snapshots: Overton 2026-10-04 · OpenAlex 2026-06-25 · Distinct policy document–work citations',
+      'story.title':'Four views of research cited by policy documents',
+      'story.hub_country.kicker':'Policy Sources: Citation Totals and Averages',
+      'story.hub_country.title':'Policy sources differ in citation totals and averages.',
+      'story.hub_type.title':'Research domains differ by policy source type.',
       'story.hub_country.body':'Citation totals and average citations per citing policy document measure different quantities. Both panels show the same ten sources ranked by total citations.',
-      'story.hub_type.body':'Domain composition is calculated within top-level source types. Each work/domain pair is counted once, allowing different domains on the same work.',
-      'story.korea.body':f"Social sciences account for {m['socialout']}% of research cited by Korean policy documents and {m['socialin']}% of Korean research cited in policy documents. Read country and domain composition separately for each direction.",
-      'story.two_speed.body':'The top 300 topics are compared using citations per cited work and the share published in 2023–2025 among works with a known year up to 2025.',
+      'story.hub_type.body':'The figure compares research domains within each policy source type. Each assigned domain is counted once per policy document–work citation. A citation to a work with several domains contributes to each domain.',
+      'story.korea.body':f"Social sciences account for {m['socialout']}% of domain assignments in research cited by Korean policy documents and {m['socialin']}% in Korean research cited by policy documents. Country and field profiles describe different aspects of each direction.",
+      'story.two_speed.kicker':'Citations per Cited Work and Share of Recent Works',
+      'story.two_speed.title':'Topics differ in citation frequency and the share of recent works.',
+      'story.two_speed.body':'The figure compares the top 300 topics by citation count. The recent-work share is the percentage published in 2023–2025 among cited works with a known publication year through 2025.',
       'fig.hub_country.alt':'October 2026: policy-source citation totals and averages per citing document',
       'fig.hub_type.alt':'October 2026: domain shares within top-level policy source types',
       'fig.korea.alt':'October 2026: policy sources citing Korean research and countries cited by Korean policy documents',
       'fig.two_speed.alt':'October 2026: citations per cited work and 2023–2025 work shares for the top 300 topics',
       'monitor.card1.value':f"Social-science share gap: {m['socialgap']} pp",
-      'monitor.card1.body':f"The difference between {m['socialout']}% in the Korean-policy direction and {m['socialin']}% in the Korean-research direction.",
+      'monitor.title':"Four key metrics for Korea's policy–research citations",
+      'monitor.lede':"Read the two citation directions alongside the composition of policy sources and the frequency with which works appear in different policy documents.",
+      'monitor.card1.body':f"Social sciences account for {m['socialout']}% of domain assignments in research cited by Korean policy documents and {m['socialin']}% in Korean research cited by policy documents.",
       'monitor.card2.value':f"Top three policy sources: {m['top3']}%",
-      'monitor.card2.body':'Combined share of the three largest categories among source-tagged citations to Korean research.',
+      'monitor.card2.body':'Combined share of the three largest policy source categories among citations to Korean research, counted by source category.',
       'monitor.card3.value':f"Observed {m['expected_observed']}% · expected {m['expected']}%",
-      'monitor.card3.body':'U.S. shares use Korean-policy citations with both country and domain assigned. Each citation has unit domain weight. The expected share is a descriptive reference, not total OpenAlex research production.',
+      'monitor.card3.body':'Both shares use citations from Korean policy documents with a country and domain assigned. For the expected share, each citation contributes a total weight of one across its domains. The reference describes the linked sample, not total OpenAlex research output.',
       'monitor.card4.value':f"KDI + KIEP: {m['institutional']}%",
-      'monitor.card4.body':'Combined share of citations from Korean policy documents observed in these two institutions. Collection coverage differs across institutions.',
-      'monitor.cta.next':'Open Latest Aggregates and Scope',
+      'monitor.card4.body':'Combined share of citations from Korean policy documents published by these two institutions. Coverage differs across institutions.',
+      'monitor.cta.next':'Explore the Latest Results and Data',
       'monitor.cta.next.href':'./SI/update_202603_en.html',
       'monitor.cta.report':'Open 2025 Baseline PDF',
       'explore.card.report.meta':'2025 baseline · Korean',
       'explore.card.report.title':'2025 Korean Report PDF',
-      'explore.card.report.desc':'The 2025 analysis and figures in the manuscript before publication editing',
+      'explore.card.report.desc':'The 2025 analysis and figures in the manuscript prepared before publication editing',
       'explore.card.si.meta':'2025 baseline · issue 68 corrections',
       'explore.card.si.title':'2025 Baseline Summary',
-      'explore.card.si.desc':'Web explanations with approved editorial corrections and a chapter-title map',
+      'explore.card.si.desc':'The 2025 findings with editorial corrections and links to the approved chapters',
       'explore.card.update.meta':'Overton 2026-10-04 · OpenAlex 2026-06-25',
       'explore.card.update.desc':'Recomputed results, figures, aggregates and linkage checks',
       'explore.card.interactive.desc':'Interactive country, source-type and topic figures for the 2025 baseline',
@@ -108,8 +121,8 @@ def main():
         pattern=r'("'+re.escape(key)+r'"\s*:\s*)"(?:[^"\\]|\\.)*"'
         js,n=re.subn(pattern,lambda x:x.group(1)+json.dumps(value,ensure_ascii=False),js)
         if not n:
-            assert key=='hero.cta.report.href'
-            js=js.replace('const en = {','const en = {\n    "hero.cta.report.href": "./SI/update_202603_en.html",')
+            assert key in {'hero.cta.report.href','hero.stat.gap.value'}
+            js=js.replace('const en = {','const en = {\n    '+json.dumps(key)+': '+json.dumps(value,ensure_ascii=False)+',')
     jsfile.write_text(js)
     print('Landing copy, English translations and four figure paths updated')
 
