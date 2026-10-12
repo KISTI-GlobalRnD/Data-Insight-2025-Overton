@@ -7,6 +7,15 @@
   --si-focus: rgba(122, 166, 255, 0.75);
 }
 
+/* Give explanatory text room beside compact numeric values in English summaries. */
+html[lang="en"] #four-indicators table col:nth-child(1) { width: 45% !important; }
+html[lang="en"] #four-indicators table col:nth-child(2) { width: 15% !important; }
+html[lang="en"] #four-indicators table col:nth-child(3) { width: 40% !important; }
+html[lang="en"] #full-linked-sample > table col:first-child,
+html[lang="en"] #korea-related-samples > table:first-of-type col:first-child { width: 75% !important; }
+html[lang="en"] #full-linked-sample > table col:last-child,
+html[lang="en"] #korea-related-samples > table:first-of-type col:last-child { width: 25% !important; }
+
 /* Language switch (SI pages) */
 .si-lang-switch {
   display: inline-flex;

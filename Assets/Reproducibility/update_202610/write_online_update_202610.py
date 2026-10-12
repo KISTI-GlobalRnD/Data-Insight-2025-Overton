@@ -76,6 +76,8 @@ def main():
     inbound=read('korea_inbound_sources')
     top3=inbound.head(3).citation_rows.sum()/inbound.citation_rows.sum()*100
     source_names='·'.join(inbound.head(3).policy_country.replace({'USA':'미국','UK':'영국','IGO':'국제기구','South Korea':'한국'}))
+    top_source_labels=inbound.head(3).policy_country.replace({'USA':'the United States','UK':'the United Kingdom','IGO':'international organizations'}).tolist()
+    source_names_en=', '.join(top_source_labels[:-1])+', and '+top_source_labels[-1]
     outbound=read('korea_outbound_countries').set_index('research_country').citation_rows
     total=int(outbound.sum()); unknown=int(outbound.get('Unassigned',0));known=total-unknown
     us=outbound.get('US',0)/known*100;kr=outbound.get('KR',0)/known*100
@@ -359,6 +361,8 @@ format:
 
 **Updated:** 8 October 2026 · **Overton:** 2026-10-04 · **OpenAlex:** 2026-06-25
 
+**English text revised:** 12 October 2026. The data and calculations are unchanged.
+
 ::: {{.callout-note}}
 This page presents the updated online analysis. The linked report PDF and baseline supplements describe the 2025 edition. The analysis covers observed citations from policy documents to research linked through DOIs. DOIs that map to more than one OpenAlex work are excluded.
 :::
@@ -367,23 +371,40 @@ This page presents the updated online analysis. The linked report PDF and baseli
 
 We compare policy sources that cite Korean research with the research cited by Korean policy documents. Research country refers to the first author's institutional affiliation, not nationality. Here, a work is an OpenAlex research record linked through a DOI; the sample is not restricted to journal articles.
 
-The top three policy source categories account for **{top3:.1f}%** of citations to Korean research, counted by source category. Among citations from Korean policy documents with an assigned research country, U.S. research accounts for **{us:.1f}%** and Korean research for **{kr:.1f}%**. These percentages describe different citation directions and use different denominators. Policy source categories can overlap, so counts by source category can differ from the number of distinct citations.
+The top three policy source categories—{source_names_en}—account for **{top3:.1f}%** of citations to Korean research, counted by source category. Among citations from Korean policy documents with an assigned research country, U.S. research accounts for **{us:.1f}%** and Korean research for **{kr:.1f}%**. These percentages describe different citation directions and use different denominators. Policy source categories can overlap, so counts by source category can differ from the number of distinct citations.
+
+Research country is unassigned for **{unknown:,} of {total:,} citations from Korean policy documents ({missing:.1f}%)**. If all unassigned citations were placed in the non-U.S. or U.S. category, the U.S. share among all citations in this direction would range from **{outbound.get('US',0)/total*100:.1f}% to {(outbound.get('US',0)+unknown)/total*100:.1f}%**. These are mechanical bounds, not confidence intervals. The reported **{us:.1f}%** uses only the **{known:,} citations with an assigned research country**.
+
+### Full linked sample
 
 | Indicator | Updated value |
 |---|---:|
 | Distinct policy document–work citations | {p['document_work_pairs']:,} |
 | Policy documents citing research | {p['citing_policy_documents']:,} |
 | Unique works cited | {p['cited_works']:,} |
-| Citations from Korean policy documents | {total:,} |
-| Citations from Korean policy documents without an assigned research country | {missing:.1f}% |
-| Social sciences: Korean policy → research | {socialout:.1f}% |
-| Social sciences: policy → Korean research | {socialin:.1f}% |
-| Health sciences: Korean policy → research | {healthout:.1f}% |
-| Health sciences: policy → Korean research | {healthin:.1f}% |
-| KDI/KIEP share of citations from Korean policy documents | {institutional:.1f}% |
 | Share of cited works appearing in at least two different policy documents | {repeat:.1f}% |
 
+Each citation is a distinct policy document–work pair; repeated references to the same work within one document count once.
+
+### Korea-related samples
+
+| Indicator | Updated value |
+|---|---:|
+| Policy documents citing Korean research: distinct citations | {p['citations_to_korean_research']:,} |
+| Korean policy documents citing research | {p['korean_policy_documents']:,} |
+| Citations from Korean policy documents | {total:,} |
+| Citations from Korean policy documents with an assigned research country | {known:,} |
+| Citations from Korean policy documents without an assigned research country | {missing:.1f}% |
+| KDI/KIEP share of citations from Korean policy documents | {institutional:.1f}% |
+
 KDI is the Korea Development Institute; KIEP is the Korea Institute for International Economic Policy.
+
+| Share of domain assignments (%) | Korean policy documents → research | Policy documents → Korean research |
+|---|---:|---:|
+| Social sciences | {socialout:.1f} | {socialin:.1f} |
+| Health sciences | {healthout:.1f} | {healthin:.1f} |
+
+The two columns compare the same domain across the two citation directions. Each assigned domain is counted once per citation, and a citation with multiple domains contributes to each domain separately. The denominator is the total number of domain assignments within each direction. Citations without a domain are excluded from these field shares.
 
 ![Korea's two citation directions. Left: citation shares by policy source category among citations to Korean research; categories can overlap. Right: research-country shares among citations from Korean policy documents with an assigned first-author affiliation country. The top ten categories are shown in each panel.]({FIG}/korea_flows.png)
 

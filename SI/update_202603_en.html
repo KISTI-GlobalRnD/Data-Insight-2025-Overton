@@ -149,7 +149,11 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
 
   <ul>
-  <li><a href="#koreas-two-citation-directions" id="toc-koreas-two-citation-directions" class="nav-link active" data-scroll-target="#koreas-two-citation-directions">Korea’s two citation directions</a></li>
+  <li><a href="#koreas-two-citation-directions" id="toc-koreas-two-citation-directions" class="nav-link active" data-scroll-target="#koreas-two-citation-directions">Korea’s two citation directions</a>
+  <ul class="collapse">
+  <li><a href="#full-linked-sample" id="toc-full-linked-sample" class="nav-link" data-scroll-target="#full-linked-sample">Full linked sample</a></li>
+  <li><a href="#korea-related-samples" id="toc-korea-related-samples" class="nav-link" data-scroll-target="#korea-related-samples">Korea-related samples</a></li>
+  </ul></li>
   <li><a href="#comparing-observed-and-expected-country-shares" id="toc-comparing-observed-and-expected-country-shares" class="nav-link" data-scroll-target="#comparing-observed-and-expected-country-shares">Comparing observed and expected country shares</a></li>
   <li><a href="#sensitivity-to-weighting-choices" id="toc-sensitivity-to-weighting-choices" class="nav-link" data-scroll-target="#sensitivity-to-weighting-choices">Sensitivity to weighting choices</a></li>
   <li><a href="#institutions-and-policy-source-types" id="toc-institutions-and-policy-source-types" class="nav-link" data-scroll-target="#institutions-and-policy-source-types">Institutions and policy source types</a></li>
@@ -194,6 +198,7 @@ ul.task-list li input[type="checkbox"] {
 
 <p><a href="../SI/index_en.html">English baseline summary</a> · <a href="../SI/update_202603.html">Full Korean update</a> · <a href="../Report/Report_final.pdf">2025 Korean report PDF</a></p>
 <p><strong>Updated:</strong> 8 October 2026 · <strong>Overton:</strong> 2026-10-04 · <strong>OpenAlex:</strong> 2026-06-25</p>
+<p><strong>English text revised:</strong> 12 October 2026. The data and calculations are unchanged.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -210,7 +215,10 @@ Note
 <section id="koreas-two-citation-directions" class="level2">
 <h2 class="anchored" data-anchor-id="koreas-two-citation-directions">Korea’s two citation directions</h2>
 <p>We compare policy sources that cite Korean research with the research cited by Korean policy documents. Research country refers to the first author’s institutional affiliation, not nationality. Here, a work is an OpenAlex research record linked through a DOI; the sample is not restricted to journal articles.</p>
-<p>The top three policy source categories account for <strong>49.7%</strong> of citations to Korean research, counted by source category. Among citations from Korean policy documents with an assigned research country, U.S. research accounts for <strong>45.4%</strong> and Korean research for <strong>3.9%</strong>. These percentages describe different citation directions and use different denominators. Policy source categories can overlap, so counts by source category can differ from the number of distinct citations.</p>
+<p>The top three policy source categories—the United States, international organizations, and South Korea—account for <strong>49.7%</strong> of citations to Korean research, counted by source category. Among citations from Korean policy documents with an assigned research country, U.S. research accounts for <strong>45.4%</strong> and Korean research for <strong>3.9%</strong>. These percentages describe different citation directions and use different denominators. Policy source categories can overlap, so counts by source category can differ from the number of distinct citations.</p>
+<p>Research country is unassigned for <strong>109,309 of 418,179 citations from Korean policy documents (26.1%)</strong>. If all unassigned citations were placed in the non-U.S. or U.S. category, the U.S. share among all citations in this direction would range from <strong>33.5% to 59.7%</strong>. These are mechanical bounds, not confidence intervals. The reported <strong>45.4%</strong> uses only the <strong>308,870 citations with an assigned research country</strong>.</p>
+<section id="full-linked-sample" class="level3">
+<h3 class="anchored" data-anchor-id="full-linked-sample">Full linked sample</h3>
 <table class="table">
 <colgroup>
 <col style="width: 42%">
@@ -236,40 +244,81 @@ Note
 <td style="text-align: right;">8,281,510</td>
 </tr>
 <tr class="even">
+<td>Share of cited works appearing in at least two different policy documents</td>
+<td style="text-align: right;">50.4%</td>
+</tr>
+</tbody>
+</table>
+<p>Each citation is a distinct policy document–work pair; repeated references to the same work within one document count once.</p>
+</section>
+<section id="korea-related-samples" class="level3">
+<h3 class="anchored" data-anchor-id="korea-related-samples">Korea-related samples</h3>
+<table class="table">
+<colgroup>
+<col style="width: 42%">
+<col style="width: 57%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Indicator</th>
+<th style="text-align: right;">Updated value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Policy documents citing Korean research: distinct citations</td>
+<td style="text-align: right;">135,900</td>
+</tr>
+<tr class="even">
+<td>Korean policy documents citing research</td>
+<td style="text-align: right;">35,335</td>
+</tr>
+<tr class="odd">
 <td>Citations from Korean policy documents</td>
 <td style="text-align: right;">418,179</td>
+</tr>
+<tr class="even">
+<td>Citations from Korean policy documents with an assigned research country</td>
+<td style="text-align: right;">308,870</td>
 </tr>
 <tr class="odd">
 <td>Citations from Korean policy documents without an assigned research country</td>
 <td style="text-align: right;">26.1%</td>
 </tr>
 <tr class="even">
-<td>Social sciences: Korean policy → research</td>
-<td style="text-align: right;">64.2%</td>
-</tr>
-<tr class="odd">
-<td>Social sciences: policy → Korean research</td>
-<td style="text-align: right;">23.1%</td>
-</tr>
-<tr class="even">
-<td>Health sciences: Korean policy → research</td>
-<td style="text-align: right;">13.3%</td>
-</tr>
-<tr class="odd">
-<td>Health sciences: policy → Korean research</td>
-<td style="text-align: right;">36.0%</td>
-</tr>
-<tr class="even">
 <td>KDI/KIEP share of citations from Korean policy documents</td>
 <td style="text-align: right;">5.2%</td>
-</tr>
-<tr class="odd">
-<td>Share of cited works appearing in at least two different policy documents</td>
-<td style="text-align: right;">50.4%</td>
 </tr>
 </tbody>
 </table>
 <p>KDI is the Korea Development Institute; KIEP is the Korea Institute for International Economic Policy.</p>
+<table class="table">
+<colgroup>
+<col style="width: 27%">
+<col style="width: 36%">
+<col style="width: 36%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Share of domain assignments (%)</th>
+<th style="text-align: right;">Korean policy documents → research</th>
+<th style="text-align: right;">Policy documents → Korean research</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Social sciences</td>
+<td style="text-align: right;">64.2</td>
+<td style="text-align: right;">23.1</td>
+</tr>
+<tr class="even">
+<td>Health sciences</td>
+<td style="text-align: right;">13.3</td>
+<td style="text-align: right;">36.0</td>
+</tr>
+</tbody>
+</table>
+<p>The two columns compare the same domain across the two citation directions. Each assigned domain is counted once per citation, and a citation with multiple domains contributes to each domain separately. The denominator is the total number of domain assignments within each direction. Citations without a domain are excluded from these field shares.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="../Assets/Figures/update_202610/korea_flows.png" class="img-fluid figure-img"></p>
@@ -294,6 +343,7 @@ Note
     <button type="button" class="si-plot__btn">Load plot</button>
   </div>
 </div>
+</section>
 </section>
 <section id="comparing-observed-and-expected-country-shares" class="level2">
 <h2 class="anchored" data-anchor-id="comparing-observed-and-expected-country-shares">Comparing observed and expected country shares</h2>

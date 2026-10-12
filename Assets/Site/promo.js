@@ -22,9 +22,9 @@
     "skip.link": "Skip to content",
     "lang.aria": "Language",
     "hero.kicker": "October 2026 Online Update",
-    "hero.title": "The two citation directions differ in their country and field profiles.",
+    "hero.title": "Who cites Korean research, and whose research does Korean policy cite?",
     "hero.lede":
-      "The top three policy source categories account for 49.7% of citations to Korean research, counted by source category. Among citations from Korean policy documents with an assigned research country, U.S. research accounts for 45.4%. Social sciences account for 64.2% of domain assignments in research cited by Korean policy documents and 23.1% in Korean research cited by policy documents, a gap of 41.1 percentage points.",
+      "Social sciences account for 64.2% of domain assignments in research cited by Korean policy documents, compared with 23.1% in Korean research cited by policy documents.",
     "hero.lede2":
       "This page presents the <strong>October 2026 online results</strong> for DOI-linked citations from policy documents to research. Each DOI must map to a single OpenAlex work. The analysis does not cover every policy document or reference. The linked PDF and baseline supplements describe the <strong>2025 edition</strong>. Research country refers to the first author’s institutional affiliation, not nationality.",
     "hero.actions.aria": "Quick links",
