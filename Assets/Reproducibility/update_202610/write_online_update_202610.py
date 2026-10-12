@@ -399,7 +399,7 @@ Each citation is a distinct policy document–work pair; repeated references to 
 
 KDI is the Korea Development Institute; KIEP is the Korea Institute for International Economic Policy.
 
-| Share of domain assignments (%) | Korean policy documents → research | Policy documents → Korean research |
+| Domain | Korean policy documents → research (%) | Policy documents → Korean research (%) |
 |---|---:|---:|
 | Social sciences | {socialout:.1f} | {socialin:.1f} |
 | Health sciences | {healthout:.1f} | {healthin:.1f} |

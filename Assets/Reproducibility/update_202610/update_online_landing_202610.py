@@ -69,7 +69,7 @@ def main():
     en={
       'meta.title':"Korea's Policy–Research Citations | Overton × OpenAlex",
       'hero.kicker':'October 2026 Online Update',
-      'hero.title':'Who cites Korean research, and whose research does Korean policy cite?',
+      'hero.title':'Who cites Korean research, and whose research do Korean policy documents cite?',
       'hero.lede':f"Social sciences account for {m['socialout']}% of domain assignments in research cited by Korean policy documents, compared with {m['socialin']}% in Korean research cited by policy documents.",
       'hero.lede2':'This page presents the <strong>October 2026 online results</strong> for DOI-linked citations from policy documents to research. Each DOI must map to a single OpenAlex work. The analysis does not cover every policy document or reference. The linked PDF and baseline supplements describe the <strong>2025 edition</strong>. Research country refers to the first author’s institutional affiliation, not nationality.',
       'hero.cta.report':'Read Latest Online Results',

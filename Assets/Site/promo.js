@@ -22,7 +22,7 @@
     "skip.link": "Skip to content",
     "lang.aria": "Language",
     "hero.kicker": "October 2026 Online Update",
-    "hero.title": "Who cites Korean research, and whose research does Korean policy cite?",
+    "hero.title": "Who cites Korean research, and whose research do Korean policy documents cite?",
     "hero.lede":
       "Social sciences account for 64.2% of domain assignments in research cited by Korean policy documents, compared with 23.1% in Korean research cited by policy documents.",
     "hero.lede2":
